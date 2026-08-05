@@ -35,6 +35,12 @@ jobs:
       - name: Check CRLF
         run: python3 Tools/check_crlf.py
 
+      - name: Test agent context validator
+        run: python3 -m unittest Tools.tests.test_validate_agent_context -v
+
+      - name: Validate agent context
+        run: python3 Tools/validate_agent_context.py
+
       - name: Reject RobustToolbox submodule updates in PRs
         if: github.event_name == 'pull_request'
         uses: actions/github-script@v9.0.0

@@ -1,0 +1,18 @@
+<Document>
+  #Acechador, nivel 2
+  <GuideEntityEmbed Entity="CMXenoLurker"/>
+  ##Jugar como Acechador
+  Lo que pierdes en velocidad lo ganas en salud e invisibilidad, lo que te permite arrastrar con rapidez a huéspedes desde el frente o la retaguardia para capturarlos.
+
+  Para ejecutar la combinación del Acechador, primero debes ser invisible y después abalanzarte sobre el objetivo. Calcula el zarpazo para golpear cuando conecte el salto y usa entonces Golpe incapacitante para llevártelo a rastras y placarlo. Como alternativa, también puedes continuar con una ráfaga de daño.
+
+  Recuerda vigilar tu invisibilidad, pues podría agotarse en el peor momento. Tampoco eres del todo invisible, así que limítate a zonas con poca luz.
+
+  ##Habilidades:
+  - [bold]Abalanzarse[/bold]: Salta contra un objetivo y lo fija al suelo solo si eres invisible. Este aturdimiento dura más que el de un Corredor, pero te inmoviliza sobre el objetivo a menos que ataques después con las garras.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoPounce"/>
+  - [bold]Volverse invisible[/bold]: Te vuelve parcialmente invisible y aumenta tu velocidad de movimiento, pero la invisibilidad desaparece si atacas o te abalanzas.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoTurnInvisible"/>
+  - [bold]Golpe incapacitante[/bold]: El próximo objetivo al que ataques con las garras recibirá más daño y quedará ralentizado.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoCripplingStrike"/>
+</Document>

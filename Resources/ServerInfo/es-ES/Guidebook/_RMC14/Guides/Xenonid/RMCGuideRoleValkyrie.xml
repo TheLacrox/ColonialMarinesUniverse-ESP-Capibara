@@ -1,0 +1,25 @@
+<Document>
+  #Valquiria, nivel 3
+
+  <GuideEntityEmbed Entity="RMCXenoPraetorianValkyrie"/>
+
+  ##Jugar como Valquiria
+  Todo tu arsenal de habilidades cambia al elegir esta cepa. Podrás curarte al golpear a cualquier huésped. También recibes una reserva de furia necesaria para activar ciertas habilidades. Perderás Aguijonazo de cola a cambio de otra habilidad: Fuente de Agua.
+
+  Como Valquiria, mantente detrás de tus hermanas: desempeñas una función de apoyo con tus feromonas y Recuperar. Si aturden a tus hermanas, usa Lucha o huida para salvarlas.
+
+  ##Habilidades:
+  - [bold][color=green]PASIVA[/color][/bold]: Tus zarpazos roban vida y curan a las hermanas cercanas durante el ataque; esta cantidad aumenta durante Rabieta.
+  - [bold]Fuente de Cola[/bold]: Extingue a un solo objetivo y tiene un tiempo de recarga relativamente corto. Sirve para apagar tanto a xenónidos como a huéspedes. Resulta útil para salvar del fuego a xenónidos al borde de la muerte o a capturas.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoTailFountain"/>
+  - [bold]Rabieta[/bold]: Se usa sobre una hermana para aumentar temporalmente tu defensa y la suya. Además, duplica la curación que obtienes al alcanzar a un objetivo. Las excepciones son el Devastador y el Triturador, que reciben una mejora de velocidad durante Rabieta.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoTantrum"/>
+  - [bold]Galope elevado[/bold]: Pisotea a huéspedes y granadas. Los huéspedes quedarán aturdidos temporalmente en el suelo. Al usar la habilidad, puedes devolver las granadas unas cuantas casillas en la dirección del cursor.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoHighGallop"/>
+  - [bold]Lucha o huida[/bold]: Al usarla, elimina las penalizaciones de otros xenónidos, incluidos el aturdimiento, la ralentización y el mareo. Su alcance efectivo puede aumentar todavía más si al activarla conservas la misma cantidad de furia que exige la habilidad. Debido a su elevado coste de furia y plasma y a su largo tiempo de recarga, se recomienda usarla con moderación.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoFightOrFlight"/>
+  - [bold]Recuperar[/bold]: Salva a xenónidos desde lejos arrastrándolos a un lugar seguro. Consume la mitad de tu furia para atraer a un xeno que necesite ayuda con urgencia. Puede no funcionar sobre ciertas castas mientras están en pie —principalmente la Reina y el Triturador—, por lo que deben tumbarse o tener la salud en estado crítico.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoRetrieve"/>
+  - [bold]Emitir feromonas[/bold]: Emite uno de los tres tipos de feromonas. Su intensidad depende de la casta y no se acumula con feromonas del mismo tipo.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoPheromones"/>
+</Document>

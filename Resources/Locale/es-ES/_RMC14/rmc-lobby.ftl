@@ -1,0 +1,10 @@
+rmc-lobby-join-xeno = Unirse a los monstruos
+rmc-lobby-join-colonists = Unirse a los colonos
+rmc-lobby-join-other = Unirse a otros
+rmc-lobby-join-opfor = Unirse a OPFOR
+rmc-lobby-join-govfor = Unirse a GOVFOR
+rmc-lobby-no-burrowed-larva = No hay larvas enterradas disponibles.
+rmc-lobby-burrowed-larva-available = La colmena dispone de larvas enterradas.
+rmc-lobby-join-as-larva = Unirse como larva
+au-lobby-join-govfor = Unirse a las fuerzas gubernamentales
+au-lobby-join-Colony = Unirse a los civiles

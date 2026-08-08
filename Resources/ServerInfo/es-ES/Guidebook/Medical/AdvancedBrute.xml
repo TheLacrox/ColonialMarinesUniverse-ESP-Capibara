@@ -1,0 +1,28 @@
+<Document>
+  
+  # Sustancias especializadas contra traumatismos
+
+  ¡Los mejores científicos de Nanotrasen han sintetizado tres sustancias químicas aún más específicas contra los traumatismos! Cada una cura un subtipo concreto de daño.
+
+  <GuideReagentEmbed Reagent="Bruizine"/>
+  <GuideReagentEmbed Reagent="Puncturase"/>
+  <GuideReagentEmbed Reagent="Lacerinol"/>
+
+  # Razorium
+
+  [color=red]TEN PRECAUCIÓN[/color] al usar las sustancias especializadas contra traumatismos mencionadas anteriormente. Si una de ellas se mezcla con otro tipo de sustancia contra traumatismos, la mezcla resultante creará una peligrosa sustancia llamada Razorium.
+  <GuideReagentEmbed Reagent="Razorium"/>
+  Para evitarlo, asegúrate de que el paciente haya terminado de metabolizar un medicamento contra traumatismos antes de administrarle otro. Vigila a qué ritmo cambia su salud.
+
+  [bold]Estas son algunas mezclas que crean Razorium:[/bold]
+
+  Bicaridine y Puncturase
+
+  Puncturase y Lacerinol
+
+  Bruizine y Bicaridine
+
+  Lacerinol y Bruizine
+
+  Ten en cuenta que [bold]cualquier[/bold] combinación de estas 4 sustancias probablemente se mezclará y creará Razorium. Ten cuidado al prepararlas, ya que contienen Bicaridine. Es muy probable que cualquier resto de Bicaridine se mezcle y cree Razorium.
+</Document>

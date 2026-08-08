@@ -1,0 +1,100 @@
+station-beacon-general = General
+
+station-beacon-command = Mando
+station-beacon-bridge = Puente
+station-beacon-vault = Cámara acorazada
+station-beacon-gateway = Portal
+station-beacon-captain = Capitán
+station-beacon-hop = Jefatura de Personal
+
+station-beacon-security = Seguridad
+station-beacon-brig = Calabozo
+station-beacon-brig-med = Enfermería del calabozo
+station-beacon-warden = Alcaide
+station-beacon-hos = Jefatura de Seguridad
+station-beacon-armory = Armería
+station-beacon-perma-brig = Prisión permanente
+station-beacon-detective = Detective
+station-beacon-courtroom = Sala del tribunal
+station-beacon-law = Bufete jurídico
+station-beacon-security-checkpoint = Puesto de control
+
+station-beacon-medical = Medicina
+station-beacon-medbay = Enfermería
+station-beacon-chemistry = Química
+station-beacon-cryonics = Criocápsulas
+station-beacon-cmo = Jefatura Médica
+station-beacon-morgue = Morgue
+station-beacon-surgery = Quirófano
+station-beacon-psychology = Psicología
+station-beacon-clinic = Clínica
+
+station-beacon-science = Ciencia
+station-beacon-research-and-development = Investigación
+station-beacon-research-server = Servidor
+station-beacon-research-director = Dirección de Investigación
+station-beacon-robotics = Robótica
+station-beacon-artifact-lab = Artefactos
+station-beacon-anomaly-gen = Anomalías
+
+station-beacon-supply = Suministros
+station-beacon-cargo = Logística
+station-beacon-cargo-bay = Almacén de carga
+station-beacon-qm = Intendencia
+station-beacon-salvage = Recuperación
+
+station-beacon-engineering = Ingeniería
+station-beacon-ce = Ingeniería Jefe
+station-beacon-ame = AME
+station-beacon-solars = Paneles solares
+station-beacon-solars-N = Paneles solares N
+station-beacon-solars-NE = Paneles solares NE
+station-beacon-solars-E = Paneles solares E
+station-beacon-solars-SE = Paneles solares SE
+station-beacon-solars-S = Paneles solares S
+station-beacon-solars-SW = Paneles solares SO
+station-beacon-solars-W = Paneles solares O
+station-beacon-solars-NW = Paneles solares NO
+station-beacon-gravgen = Generador de gravedad
+station-beacon-pa = Control del acelerador de partículas
+station-beacon-smes = SMES
+station-beacon-telecoms = Telecomunicaciones
+station-beacon-atmos = Atmósfera
+station-beacon-teg = TEG
+station-beacon-tech-vault = Cámara tecnológica
+station-beacon-anchor = Ancla
+
+station-beacon-service = Servicio
+station-beacon-kitchen = Cocina
+station-beacon-bar = Bar
+station-beacon-botany = Botánica
+station-beacon-janitor = Conserjería
+
+station-beacon-ai = IA
+station-beacon-ai-sat = Satélite de IA
+station-beacon-ai-core = Núcleo de IA
+station-beacon-ai-upload = Carga de IA
+station-beacon-ai-power = Energía de IA
+
+station-beacon-arrivals = Llegadas
+station-beacon-evac = Evacuación
+station-beacon-docking-arm = Brazo de acoplamiento
+station-beacon-eva-storage = Almacén EVA
+station-beacon-chapel = Capilla
+station-beacon-library = Biblioteca
+station-beacon-reporter = Reportero
+station-beacon-dorms = Dormitorios
+station-beacon-theater = Teatro
+station-beacon-tools = Herramientas
+station-beacon-disposals = Eliminación de residuos
+station-beacon-cryosleep = Criosueño
+station-beacon-escape-pod = Cápsula de escape
+station-beacon-escape-pod-N = Cápsula de escape N
+station-beacon-escape-pod-NE = Cápsula de escape NE
+station-beacon-escape-pod-E = Cápsula de escape E
+station-beacon-escape-pod-SE = Cápsula de escape SE
+station-beacon-escape-pod-S = Cápsula de escape S
+station-beacon-escape-pod-SW = Cápsula de escape SO
+station-beacon-escape-pod-W = Cápsula de escape O
+station-beacon-escape-pod-NW = Cápsula de escape NO
+station-beacon-vox = Sala de descanso Vox

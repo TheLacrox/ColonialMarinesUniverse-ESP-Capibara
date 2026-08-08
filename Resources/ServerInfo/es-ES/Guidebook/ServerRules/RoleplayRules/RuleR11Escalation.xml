@@ -1,0 +1,70 @@
+﻿<Document>
+  # Regla de interpretación 11 - Respeta una escalada razonable
+  Los antagonistas están totalmente exentos de las reglas de escalada. Los no antagonistas que se encuentren en un conflicto con antagonistas no están exentos. Por lo general, la escalada debe seguir pasos o un patrón de tipos de conflicto similar al siguiente:
+  - Verbal
+  - Sin daño
+  - No letal
+  - Letal
+  - Letal permanente
+
+  Todos los conflictos nuevos deben comenzar en el primer paso. Ningún jugador debe hacer avanzar un conflicto entre pasos sin que la otra parte implicada también lo escale. Los jugadores pueden saltarse pasos para igualar el nivel de escalada de la otra persona, pero casi nunca deben hacerlo por ningún otro motivo. Se concederá más margen para escalar a quienes intenten desescalar un conflicto si la otra parte sigue escalándolo pese al intento. No tienes obligación de intentar desescalar los conflictos, pero alguien que te observe durante toda una ronda o varias rondas no debe tener la impresión de que, por lo general, buscas escalarlos.
+
+  Los conflictos y su escalada pueden ser indirectos. Cuando alguien roba la ID de otra persona, el robo forma parte directa del conflicto; pero si la víctima queda atrapada porque no tiene su ID para abrir una puerta, eso también se considera parte del conflicto y de la escalada. No robes ID a personas al azar.
+
+  La escalada no tiene que dirigirse contra un jugador concreto para involucrarlo en un conflicto. Se considera que los operativos nucleares que intentan destruir la estación están en un nivel de conflicto letal permanente con toda la tripulación de la estación. Quien mata a una mascota de la estación ha iniciado cierto grado de conflicto con toda la tripulación. Quien mata a un ratón que cuidaba un chef ha iniciado cierto grado de conflicto con ese chef.
+
+  Se considerará que incumples esta regla si escalas un conflicto basándote en una suposición infundada o poco razonable.
+
+  Los conflictos casi nunca deben llegar a la fase «letal permanente». Solo deben alcanzarla si la otra parte lleva el conflicto hasta allí o si el mismo conflicto ha llegado a la fase letal varias veces durante la ronda.
+
+  Si una de las partes del conflicto entra en estado crítico o muere, la parte responsable debe llevarla a recibir tratamiento o a Seguridad. A efectos del conflicto, esto debe considerarse salvar a alguien de la muerte y debe desescalarlo. Si el conflicto se desescala de esta forma, ambas partes deben volver a escalar hasta el nivel letal para que el conflicto regrese a esa fase. Si no se desescala así, solo la parte que derrotó a la otra tendrá que volver a escalar para que el conflicto regrese a la fase letal.
+
+  Seguridad puede pasar inmediatamente a la fuerza no letal si es necesario para arrestar a alguien.
+
+  Por lo general, puede suponerse que las personas que usan o exhiben objetos del Sindicato tienen intención letal. Normalmente se puede responder de inmediato con un nivel letal contra alguien con intención letal; una excepción importante es que dispongas de medios para detenerlo sin peligro.
+
+  ## Escalada con animales
+  Consulta [textlink="Escalada con animales" link="RuleR11-1"].
+
+  ## Exenciones
+  Las reglas de escalada no se aplican contra personajes no controlados por jugadores, pero se responsabilizará a los jugadores de las infracciones aunque no sepan que otro jugador controlaba a un personaje o animal. Los personajes desconectados siguen considerándose jugadores. Los personajes cuyo texto de examen aparece en morado y dice «la recuperación es imposible» se consideran personajes no controlados por jugadores.
+
+  ## Enmienda MRP
+  Las reglas de escalada se aplican incluso contra personajes no controlados por jugadores.
+
+  ## Ejemplos de tipos de conflicto
+  Consulta [textlink="Ejemplos de tipos de conflicto" link="RuleR11-2"].
+
+  ## Situaciones de ejemplo
+  Estos ejemplos presuponen que no eres antagonista.
+
+  Aceptable:
+  - Un jugador empieza a darte puñetazos, así que respondes del mismo modo hasta que se detiene. Si entra en estado crítico, dejas de atacarlo y lo llevas a Seguridad o a recibir atención médica.
+  - Te burlas de un payaso, que después te lanza una tarta y te roba los zapatos. Haces resbalar al payaso y le robas la máscara.
+  - Eres agente de Seguridad y le dices a alguien que se detenga para poder interrogarlo. Sale corriendo, así que usas tu arma incapacitadora para aturdirlo y esposarlo.
+  - Eres agente de Seguridad y ves a alguien con un traje presurizado del Sindicato, así que le disparas hasta dejarlo en estado crítico, lo esposas y lo llevas a Seguridad.
+  - Eres tripulante y ves a un operativo nuclear, así que lo matas.
+  - Una persona sin autorización entra en una zona de alto riesgo de la estación, como la armería o el departamento de Atmósfera, así que la atacas hasta que se marcha.
+  - Causarle una molestia leve a alguien en beneficio propio.
+  - Como antagonista, matar a alguien que se interpuso en tu camino.
+  - Como antagonista, matar a alguien que no te dio lo que querías.
+  - Un chef y un camarero alcanzan el nivel de conflicto letal mediante una escalada apropiada. El chef deja al camarero en estado crítico y no lo lleva a Enfermería ni a Seguridad. La próxima vez que se encuentran, el camarero intenta de inmediato dejar al chef en estado crítico.
+  - Un chef y un camarero alcanzan el nivel de conflicto letal mediante una escalada apropiada. El chef deja al camarero en estado crítico y no lo lleva a Enfermería ni a Seguridad. La próxima vez que lo ve, el chef insulta al camarero.
+  - Un técnico de carga recibe una recompensa de Carga por un cerebro. Tras recibir de Medicina un cadáver cuyo texto morado de examen dice «Toda recuperación es imposible.», el técnico de carga destruye el cuerpo de forma permanente para extraerle el cerebro.
+
+  Prohibido:
+  - Un jugador empieza a darte puñetazos, así que lo despedazas.
+  - Un payaso te lanza una tarta y te roba los zapatos, así que lo apuñalas con un destornillador hasta dejarlo en estado crítico.
+  - Eres agente de Seguridad y le dices a alguien que se detenga para poder interrogarlo. Sale corriendo, así que usas una porra para golpearlo hasta dejarlo en estado crítico.
+  - Una persona autorizada, a quien consideras sin autorización de forma poco razonable o por descuido, entra en una zona de alto riesgo de la estación, como la armería o el departamento de Atmósfera, así que la atacas hasta que se marcha.
+  - Una persona sin autorización entra en una zona de bajo riesgo de la estación, como Carga, y empiezas a atacarla sin ninguna otra escalada.
+  - Hacer resbalar a miembros de Seguridad durante toda la ronda solo por ser de Seguridad.
+  - Encerrar al jefe de personal en su oficina usando muros porque no te dio lo que pediste.
+  - Ocultar el cuerpo de alguien porque te dio un puñetazo al principio de la ronda.
+  - Molestar en el bar o acosar al camarero entrando con frecuencia para romper vasos o muebles.
+  - Buscar peleas con personas al azar.
+  - Robar una ID a un jugador desconectado sin ser antagonista.
+  - Un chef y un camarero alcanzan el nivel de conflicto letal mediante una escalada apropiada. El chef deja al camarero en estado crítico y no lo lleva a Enfermería ni a Seguridad. La próxima vez que se encuentran, el chef intenta de inmediato dejar al camarero en estado crítico.
+  - Un chef y un camarero alcanzan el nivel de conflicto letal mediante una escalada apropiada. El chef deja al camarero en estado crítico y lo lleva a Enfermería o a Seguridad. La próxima vez que se encuentran, el camarero intenta de inmediato dejar al chef en estado crítico.
+  - Un técnico de carga recibe una recompensa de Carga por un cerebro. Tras encontrar en un pasillo a un pasajero muerto cuyo texto de examen no dice «Toda recuperación es imposible.», el técnico de carga destruye el cuerpo de forma permanente para extraerle el cerebro.
+</Document>

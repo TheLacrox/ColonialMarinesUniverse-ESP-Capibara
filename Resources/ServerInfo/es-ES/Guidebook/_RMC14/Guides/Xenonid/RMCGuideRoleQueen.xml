@@ -1,0 +1,54 @@
+<Document>
+
+  #¡Has ascendido al trono de la Colmena!
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookXenoQueen"/>
+  </Box>\n
+  - Como matriarca, tu deber consiste en expandir, defender y liderar. Sin ti, la Colmena se desmorona; contigo, prospera.
+  - Esta guía muestra a los jugadores de nivel intermedio que deseen probar la vertiente de mando de los xenónidos qué deben hacer al comienzo.
+
+  #¿Y ahora qué?
+  Primero debemos elegir dónde ubicar la Colmena. No es una decisión demasiado importante: puedes escoger el lugar donde apareces. Cuando hayas encontrado una ubicación, sigue estos pasos.
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookActionXenoOrderConstruction"/>
+    <GuideEntityEmbed Entity="HiveCoreXeno"/>
+    <GuideEntityEmbed Entity="RMCGuidebookActionXenoPheromones"/>
+  </Box>\n
+
+  - Usa la habilidad Ordenar construcción para crear un núcleo de colmena y después llénalo con tu plasma.
+  - Puedes emitir feromonas de recuperación para obtener el plasma con el que llenar el núcleo de colmena. ¡Recuerda que tus feromonas son las más potentes de la Colmena!
+  <Box>
+    <GuideEntityEmbed Entity="XenoHiveWeeds"/>
+    <GuideEntityEmbed Entity="RMCGuidebookActionXenoGrowOvipositor"/>
+  </Box>\n
+
+  - Cuando esté lleno, sitúate sobre la nueva maleza de la colmena que emite el núcleo y desarrolla el ovipositor.
+
+  Bien hecho: has desarrollado correctamente el ovipositor, lo que permite que tus hijas obtengan evolución y prosperen. Ahora puedes designar líderes de la Colmena que emitirán las mismas feromonas que tú.
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookActionXenoWatch"/>
+    <GuideEntityEmbed Entity="RMCGuidebookActionXenoLeader"/>
+  </Box>\n
+
+  - Usa la habilidad Observar a un xeno para encontrar al xenónido que quieras ascender a líder.
+  - Mientras lo observas, usa la habilidad Elegir líder para ascenderlo. Recuerda que solo puedes tener un máximo de 4.
+  - Pulsa ahora una tecla de movimiento para recuperar la vista normal y emite una feromona para tus líderes; por el momento, bastará con la de recuperación.
+
+  Ya puedes relajarte hasta que aterricen los huéspedes del cielo (marines de la nave). Mientras tanto, puedes dibujar un mapa táctico o entrar en el ojo de la Reina.
+
+  ##Ojo de la Reina
+  Esta forma solo puede usarse mientras estás en ovi. En ella asciendes a un plano superior desde el que puedes vigilar y secretar resina en cualquier lugar donde haya maleza propia.
+
+  Puedes emplearla para explorar las ubicaciones enemigas y reforzar la Colmena con resina.
+
+  ##Qué hacer cuando lleguen los huéspedes del cielo
+  - Reina guerrera
+
+  Si debes levantarte para ayudar en la batalla, prepárate para lanzar un escupitajo neurotóxico y chillar en cualquier momento. Combatir en el frente como Reina exige usar feromonas de frenesí y el escupitajo neurotóxico para arrastrar a huéspedes aislados. Si encuentras un grupo numeroso de huéspedes y puedes usar tu chillido contra ellos, tu mayor amenaza serán los especialistas, así que procura posicionarte en torno a ellos.
+
+  Recuerda que los xenónidos combaten mejor en espacios estrechos y sobre terreno fortificado; no intentes luchar en campo abierto.
+
+  - Reina en ovi
+
+  Esta estrategia consiste en permanecer en ovi, de ser posible, durante todo el combate. Mientras estés en ovi, tus líderes de la Colmena podrán emitir sin interrupción tus feromonas, que son 4x más potentes. También puedes curar a distancia a tus hijas para ayudarlas en combate y proporcionarás evolución y huevos de forma constante.
+</Document>

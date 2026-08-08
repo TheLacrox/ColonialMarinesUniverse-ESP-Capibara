@@ -1,0 +1,27 @@
+<Document>
+  #Devastador nivel 3
+  <GuideEntityEmbed Entity="CMXenoRavager"/>
+  ##Jugar como Devastador
+  Ya no necesitas esconderte.
+
+  Pasas de ser una casta de emboscada a una luchadora lenta, muy ofensiva en el frente y excelente infligiendo daño. Al usar Potenciar sobre 3 objetivos o más, alcanzas la superpotenciación, que mejora Corte de tijera y Embestida.
+
+  Tus habilidades pasivas aumentan el daño de tus zarpazos según la cantidad de objetivos de los que te estés potenciando, además de hacerte inmune al fuego y resistente a las explosiones.
+
+  La primera activación de Potenciar te concede un escudo; en la segunda, obtienes escudo adicional por cada objetivo cercano. Se recomienda usar Potenciar dos veces con rapidez en cuanto estés cerca de los huéspedes antes de desatar el resto de tus ataques.
+
+  Procura jugar teniendo en cuenta al especialista en demoliciones, pues serás su principal objetivo. Acércate a las hordas desde detrás de las puertas, usa rápidamente Potenciar dos veces y empieza a atacar con las garras y a usar Embestida. Cuando se agote Potenciar, retírate y cúrate.
+
+  Corte de tijera también permite atacar con las garras a huéspedes desde lejos, lo que reduce el riesgo.
+
+  ##Habilidades:
+  - [bold][color=green]PASIVA[/color][/bold]: Eres inmune al daño por fuego, aunque seguirás ardiendo y perderás armadura a causa del fuego verde.
+  - [bold]Potenciar[/bold]: La primera activación concede un escudo; la segunda otorga escudo adicional y daño con las garras por cada objetivo cercano que se encuentre en tu línea de visión.
+  - Potenciarte con 3 objetivos o más te superpotencia y mejora tus demás habilidades.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoEmpower"/>
+  - [bold]Embestida[/bold]: Arremete hacia delante. Si estás superpotenciada, lanzarás, derribarás y atacarás con las garras a cualquier objetivo alcanzado. Atacar a un objetivo con las garras reduce el tiempo de recarga de esta habilidad.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoAssault"/>
+  - [bold]Corte de tijera[/bold]: Ataca con las garras en una línea de 2x4.
+  - Si estás superpotenciada, todo aquel a quien alcances quedará ralentizado.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoScissorCut"/>
+</Document>

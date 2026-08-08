@@ -1,0 +1,59 @@
+﻿<Document>
+
+  #¡Acabas de nacer en la Colmena!
+  #¿Y ahora qué?
+
+  - ¡Regocíjate! Acabamos de unirnos a nuestra Colmena como larva. Ahora mismo no podemos hacer gran cosa, ¡pero nuestro potencial es ilimitado!
+  <Box>
+    <GuideEntityEmbed Entity="CMXenoLarva"/>
+  </Box>\n
+  - ¡Es hora de ponerse a trabajar! Debemos intentar evolucionar en cuanto podamos. Para ello, tendremos que adquirir cierta edad esperando.
+  - A los principiantes se les recomienda convertirse en Dron. Los Drones se encargan de construir las defensas de la Colmena.
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookActionXenoEvolve"/>
+    <GuideEntityEmbed Entity="CMXenoDrone"/>
+  </Box>\n
+
+  - ¡Estas son algunas de las cosas que podemos construir!
+
+  <Box>
+    <GuideEntityEmbed Entity="WallXenoResin"/>
+    <GuideEntityEmbed Entity="WallXenoMembrane"/>
+    <GuideEntityEmbed Entity="DoorXenoResin"/>
+  </Box>\n
+
+  - Otra tarea importante del Dron consiste en plantar maleza.
+  - ¡La maleza nos permite descansar para recuperar salud y energía!
+  - Además, solo podemos construir la Colmena sobre maleza.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoRest"/>
+  <Box>
+    <GuideEntityEmbed Entity="XenoWeeds"/>
+    <GuideEntityEmbed Entity="XenoWeedsSource"/>
+    <GuideEntityEmbed Entity="XenoWeeds"/>
+  </Box>\n
+
+  - ¡Nuestro objetivo final es proteger a la Reina y plantar sus huevos para que nuestra Colmena pueda crecer!
+  - Los huevos pueden colocarse sobre maleza de la colmena y contienen parásitos.
+  - Los parásitos pueden extraerse de los huevos, pero ten presente que viven poco tiempo lejos de la maleza.
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookXenoQueen"/>
+    <GuideEntityEmbed Entity="XenoEgg"/>
+    <GuideEntityEmbed Entity="XenoHiveWeeds"/>
+    <GuideEntityEmbed Entity="CMXenoParasite"/>
+  </Box>\n
+
+  - ¡También podemos devorar capturas y transportarlas hasta la Colmena para anidarlas!
+  - Busca a un alto y plácalo haciendo clic derecho sobre él con el modo de daño activado.
+  - Cuando esté inmovilizado, haz clic en su sprite y arrástralo hasta el tuyo para empezar a devorarlo. ¡Recuerda seguir placándolo después!
+  - Tras devorarlo, ve a la Colmena más cercana para infectarlo con un huevo; luego, para anidarlo, repite el mismo movimiento sobre una pared.
+
+  - Cuando se coloca un parásito sobre un huésped vivo, ¡nace una nueva larva! ¡Regocíjate!
+  - Los huéspedes que albergan una larva en crecimiento son muy valiosos y deben fijarse cuanto antes a una pared de resina sustentada por maleza de la colmena.
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookCorpseColonistBurst"/>
+    <GuideEntityEmbed Entity="CMXenoLarva"/>
+  </Box>\n
+
+</Document>

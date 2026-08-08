@@ -1,0 +1,50 @@
+﻿<Document>
+
+  # Recetas para microondas
+
+  ## Pizzas
+  <GuideMicrowaveGroupEmbed Group="Pizza"/>
+
+  ## Cocina salada
+  <GuideMicrowaveGroupEmbed Group="Savory"/>
+
+  ## Panes
+  <GuideMicrowaveGroupEmbed Group="Breads"/>
+
+  ## Desayunos
+  <GuideMicrowaveGroupEmbed Group="Breakfast"/>
+
+  ## Comida para polillas
+  <GuideMicrowaveGroupEmbed Group="Moth"/>
+
+  ## Pasta & fideos
+  <GuideMicrowaveGroupEmbed Group="Pasta"/>
+
+  ## Bollería & postres
+  <GuideMicrowaveGroupEmbed Group="Dessert"/>
+
+  ## Sopas & guisos
+  <GuideMicrowaveGroupEmbed Group="Soup"/>
+
+  ## Tartas & empanadas
+  <GuideMicrowaveGroupEmbed Group="Pie"/>
+
+  ## Barritas & galletas
+  <GuideMicrowaveGroupEmbed Group="BarsAndCookies"/>
+
+  ## Tartas
+  <GuideMicrowaveGroupEmbed Group="Cake"/>
+
+  ## Ensaladas
+  <GuideMicrowaveGroupEmbed Group="Salad"/>
+
+  ## Uso medicinal
+  <GuideMicrowaveGroupEmbed Group="Medicinal"/>
+
+  ## Otros
+  <GuideMicrowaveGroupEmbed Group="Other"/>
+
+  ## Secretas
+  <GuideMicrowaveGroupEmbed Group="Secret"/>
+
+</Document>

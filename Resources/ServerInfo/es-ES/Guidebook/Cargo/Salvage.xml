@@ -1,0 +1,194 @@
+<Document>
+  # Rescate
+
+  [color=cyan]Recuperación[/color] es una de las fuentes de ingresos más importantes de Carga, pero también una de las más peligrosas. Recuperación obtiene dinero de los [color=cyan]Escombros Espaciales[/color] y del enigmático [color=cyan]Asteroide Minero[/color].
+
+  Aunque el vacío espacial está lleno de peligros, con la preparación y coordinación adecuadas cualquier Equipo de Recuperación puede ganar mucho dinero para Carga.
+
+  ## Preparativos
+
+  Antes de abandonar la estación, asegúrate de llevar todo el equipo necesario. De lo contrario, ¡probablemente morirás antes de obtener beneficio alguno!
+
+  <Box>
+    <GuideEntityEmbed Entity="SuitStorageSalv"/>
+    <GuideEntityEmbed Entity="LockerSalvageSpecialist"/>
+    <GuideEntityEmbed Entity="VendingMachineSalvage"/>
+  </Box>
+
+  Todo lo necesario antes de salir de la estación está en la sala inicial de Recuperación. Aunque Ciencia puede investigar mejores armas y equipo, es preferible salir con tu equipo inicial que sin nada.
+
+  <Box>
+    <GuideEntityEmbed Entity="ClothingOuterHardsuitSpatio"/>
+    <GuideEntityEmbed Entity="ClothingShoesBootsMag"/>
+    <GuideEntityEmbed Entity="VendingMachineTankDispenserEVA"/>
+  </Box>
+
+  El equipo más básico que necesitas es el conjunto EVA.
+
+  - [color=cyan]Traje Presurizado de Espacionauta[/color]: Te mantiene con vida en el espacio. [italic]Recuerda activar el casco para poder respirar y encender su linterna integrada[/italic].
+  - [color=cyan]Botas Magnéticas[/color]: Te proporcionan gravedad al explorar escombros espaciales y evitan que resbales.
+  - [color=cyan]Oxígeno/Nitrógeno[/color]: Según tu especie, necesitarás [color=cyan]Nitrógeno[/color] (personas slime & Vox) u [color=cyan]Oxígeno[/color] (todas las demás especies). El [color=cyan]Dispensador de Botellas de Gas[/color] contiene todas las botellas necesarias, así que aprovisiónate.
+
+  <Box>
+    <GuideEntityEmbed Entity="WeaponProtoKineticAccelerator"/>
+  </Box>
+
+  Todos los Especialistas en Salvamento deben ir armados por si tienen que defenderse de enemigos.
+
+  - [color=cyan]Acelerador Protocinético[/color]: Esta arma tiene munición infinita, lo que te permite minar despacio y desplazarte por el espacio. Ciencia puede imprimir mejoras para aumentar el daño, el alcance y la cadencia de tiro.
+
+  <Box>
+    <GuideEntityEmbed Entity="Pickaxe"/>
+    <GuideEntityEmbed Entity="OreBag"/>
+  </Box>
+
+  Aunque técnicamente puedes extraer minerales y recoger mena solo con un PKA y una Mochila, los Especialistas en Salvamento empiezan con equipo más especializado para la tarea.
+
+  - [color=cyan]Pico[/color]: Es necesario para minar a una velocidad razonable cuando lo empuñas. ¡También sirve como práctica arma cuerpo a cuerpo!
+  - [color=cyan]Bolsa de Mineral[/color]: Si la equipas en la ranura del cinturón, magnetiza el mineral cercano y lo recoge automáticamente.
+
+  <Box>
+    <GuideEntityEmbed Entity="FireExtinguisher"/>
+    <GuideEntityEmbed Entity="WeaponGrapplingGun"/>
+    <GuideEntityEmbed Entity="SalvagePDA"/>
+    <GuideEntityEmbed Entity="ComputerRadar"/>
+  </Box>
+
+  Aunque puedes conseguir medios de transporte más avanzados, empezarás con otros más modestos.
+
+  - [color=cyan]Extintor[/color]: La mochila propulsora de los pobres. En el espacio puedes usar el retroceso de un Extintor para impulsarte en dirección contraria. Puede rellenarse con cualquier líquido.
+  - [color=cyan]Pistola de Gancho[/color]: Una herramienta de movimiento con posibilidades infinitas. Se dispara como cualquier otra arma y se retrae al recargarla. Cuando enganches algo, pulsa [color=yellow][bold][keybind="UseSecondary"][/bold][/color] para acercarte.
+  - [color=cyan]PDA de Recuperación[/color]: Tu PDA viene con el programa GPS AstroNav preinstalado, por lo que puedes usarla como GPS mientras la tengas en la mano. ¡No olvides anotar las coordenadas de la estación antes de partir!
+  - [color=cyan]Consola del escáner de masas[/color]: Una consola que ofrece una vista cenital de la estación y de las entidades cercanas en el espacio. Úsala para comprobar de nuevo la ubicación y dirección de los escombros o asteroides antes de ir hasta ellos.
+
+  <Box>
+    <GuideEntityEmbed Entity="RadioHandheld"/>
+    <GuideEntityEmbed Entity="HandheldGPSBasic"/>
+    <GuideEntityEmbed Entity="ClothingBeltUtilityFilled"/>
+  </Box>
+
+  Por último, Recuperación también dispone de equipo útil, aunque no imprescindible.
+
+  - [color=cyan]Radio Portátil[/color]: Te permite comunicarte con otros Especialistas en Salvamento aunque las comunicaciones habituales por radio no estén disponibles.
+  - [color=cyan]Sistema de Posicionamiento Global[/color]: Un sistema GPS de repuesto, idéntico al preinstalado en tu PDA. Resulta útil como reserva o como equipo para Especialistas en Salvamento recién contratados.
+  - [color=cyan]Cinturón de Herramientas[/color]: Guarda todo el equipo necesario para saquear máquinas y objetos similares de los pecios recuperables y el Asteroide Minero. Llévalo siempre que no tengas previsto extraer minerales.
+
+  ## Extracciones con el imán de recuperación
+
+  Una vez que estés listo, es hora de partir y explorar las estrellas.
+
+  <Box>
+    <GuideEntityEmbed Entity="SalvageMagnet"/>
+  </Box>
+
+  El [color=cyan]Imán de Recuperación[/color] es la máquina que atrae escombros espaciales hasta las inmediaciones de la estación.
+
+  El Imán de Recuperación ofrece cinco opciones: una combinación aleatoria de [color=cyan]Asteroides[/color], [color=cyan]Pecios recuperables[/color] y [color=cyan]Escombros Espaciales[/color]. Tras elegir una, la masa seleccionada será atraída y dispondrás de [bold]6 minutos[/bold] para saquearla. Al terminar ese tiempo, desaparecerá todo el botín que quede en la cuadrícula atraída. Si ninguna opción te interesa, se renovarán cada [bold]3 minutos[/bold] mientras nadie elija una.
+
+  Durante los 6 minutos, vuela hasta la cuadrícula atraída, hazte con todo el botín posible y vuelve a la estación.
+
+### Asteroides
+
+  <Box>
+    <GuideEntityEmbed Entity="Pickaxe"/>
+    <GuideEntityEmbed Entity="OreBag"/>
+    <GuideEntityEmbed Entity="OreProcessor"/>
+  </Box>
+
+  El Imán de Recuperación proporciona información sobre los tipos de recursos de un asteroide, lo que puede ayudarte a decidir cuáles priorizar según las necesidades actuales de la estación. Es una opción relativamente segura para minar, ya que no hay criaturas hostiles en los asteroides, aunque desde luego siguen existiendo peligros...
+
+  Solo tienes que volar por la zona y extraer el mineral con tu [color=cyan]Pico[/color] y [color=cyan]Bolsa de Mineral[/color]. Cuando hayas reunido todo, puedes refinarlo en materiales mediante el [color=cyan]Procesador de Minerales[/color].
+
+  Ve con cuidado: ocultos en rocas aparentemente normales, acechan fragmentos de [color=red]Gibtonita[/color] dispuestos a explotar ante la menor perturbación.
+
+### Escombros espaciales
+
+  <Box>
+    <GuideEntityEmbed Entity="Wrench"/>
+    <GuideEntityEmbed Entity="FireExtinguisher"/>
+    <GuideEntityEmbed Entity="Recycler"/>
+  </Box>
+
+  Los [color=cyan]Escombros Espaciales[/color] son una opción versátil que proporciona materiales básicos imprescindibles (como acero, vidrio, etc.) que escasean al principio del turno. Los objetos y la chatarra están dispersos por los escombros y hay que recogerlos. Plantéate arrastrar contigo algún armario o alguna caja que haya en los escombros para guardarlo todo con más facilidad.
+
+  Los escombros están plagados de numerosos peligros. Sanguinarias [color=red]Carpas Espaciales[/color] y [color=red]Sharkminnows[/color] los infestan y se lanzarán sobre cualquier Especialista en Salvamento que se acerque. También es posible encontrar [color=red]Minas Terrestres[/color] en raras ocasiones, capaces de incapacitar al explorador incauto.
+
+  Cuando regreses de los Escombros, introduce en el [color=cyan]Reciclador[/color] de tu departamento toda la chatarra que hayas encontrado allí para convertirla en materiales útiles, y entrégaselos a Carga para que los distribuya por la estación. Si encuentras objetos valiosos entre los Escombros, como [color=yellow]Monedas, Anillos y Relojes,[/color] dáselos a Carga para que los venda con beneficio en la [color=cyan]Estación Comercial Automatizada[/color].
+
+  ### Pecios recuperables
+
+  <Box>
+    <GuideEntityEmbed Entity="SurvivalKnife"/>
+    <GuideEntityEmbed Entity="Fulton"/>
+    <GuideEntityEmbed Entity="WeaponProtoKineticAccelerator"/>
+  </Box>
+
+  El Imán de Recuperación informa del tamaño de cada pecio recuperable. Los pecios recuperables varían muchísimo tanto en peligro como en valor, pero suelen albergar amenazas más diversas que los [color=cyan]Escombros Espaciales[/color]. Mantén las distancias con los enemigos y dispárales con el [color=cyan]Acelerador Protocinético[/color]. Busca botín y maquinaria valiosos y usa la [color=cyan]Herramienta de Tasación[/color] para comprobar cuánto valen las distintas cosas.
+
+  ## Progreso & mejoras
+
+  Aunque tu equipo inicial basta para realizar el trabajo a un nivel básico, el equipo avanzado lo facilita mucho y te proporciona lo necesario para enfrentarte al temido [color=red]Asteroide Minero[/color]
+
+  ### Tablón de trabajos de recuperación
+
+  <Box>
+    <GuideEntityEmbed Entity="ComputerSalvageJobBoard"/>
+  </Box>
+
+  El [color=cyan]Tablón de Trabajos de Recuperación[/color] es un ordenador situado en la Bahía de Recuperación. Es la versión para Recuperación de la [color=cyan]consola de recompensas de suministros[/color] y permite a los Especialistas en Salvamento completar encargos concretos con materiales propios de Recuperación para ganar spesos y desbloquear [color=yellow]Equipo Avanzado de Recuperación[/color].
+
+  Cuando reúnas los suministros necesarios para completar un encargo, imprime una [color=cyan]Etiqueta de Envío de Trabajo de Recuperación[/color] y pégala a la caja o armario que contenga los bienes. Puedes usar la [color=cyan]Herramienta de Tasación[/color] para comprobar que todo está listo para vender. Después puedes llevar el encargo preparado a la [color=cyan]Estación Comercial Automatizada[/color] para ganar spesos para Carga y desbloquear nuevas cajas exclusivas de Recuperación en la [color=cyan]consola de solicitudes de suministros[/color].
+
+  <Box>
+    <GuideEntityEmbed Entity="Fulton1"/>
+    <GuideEntityEmbed Entity="WeaponCrusher"/>
+    <GuideEntityEmbed Entity="SeismicCharge"/>
+  </Box>
+
+  Completar Trabajos de Recuperación aumentará tu rango y desbloqueará la compra de equipo nuevo en la [color=cyan]consola de solicitudes de suministros[/color], como:
+
+  - [color=cyan]Dispositivos Fulton[/color]: Una vez vinculado un dispositivo Fulton a una Baliza Fulton, puedes fijarlo a estructuras sin anclar, como cajas o máquinas, para teletransportarlas de vuelta a la Baliza tras una breve espera. Resulta excepcionalmente útil para transportar tanto objetos como personas.
+  - [color=cyan]Armas Crusher[/color]: Una serie de armas cuerpo a cuerpo mejoradas que los Especialistas en Salvamento pueden comprar. La [color=red]Daga Crusher[/color] mejora tu cuchillo de supervivencia: ataca automáticamente y mucho más rápido que un cuchillo normal. La [color=red]Crusher[/color] y la [color=red]Guja Crusher[/color] mejorada son armas de asta gigantescas capaces de disparar proyectiles especiales al empuñarlas. Estos proyectiles no infligen daño por sí solos, pero, si asestas a tiempo un golpe cuerpo a cuerpo a un enemigo marcado, absorberás parte de su vida para curarte. Todas las armas Crusher llevan incorporado un foco.
+  - [color=cyan]Cargas Sísmicas[/color]: Explosivos mineros pensados para fracturar asteroides o abrir brechas en pecios peligrosos. Recuerda que puedes vincularlas a un detonador remoto o configurarlas para que inicien la cuenta atrás al fijarlas a una pared, lo que permite demoler con más seguridad.
+
+  ### Colaborar con Ciencia
+
+  <Box>
+    <GuideEntityEmbed Entity="ToyFigurineScientist"/>
+    <GuideEntityEmbed Entity="ResearchDisk"/>
+  </Box>
+
+  El [color=purple]Departamento de Ciencia[/color] es un aliado fundamental para Recuperación. Ciencia depende de Recuperación tanto para los materiales básicos (acero, plástico y vidrio) como para los avanzados (plata, oro, plasma y uranio), y Recuperación depende de Ciencia para conseguir el equipo mejorado que facilita su trabajo.
+
+  Siempre que sea posible, comunícate con Ciencia e intenta dar prioridad a sus peticiones. Aunque Ciencia necesitará grandes cantidades de materiales básicos, depende por completo de ti para abastecerse de [color=yellow]Oro, Plata y Uranio,[/color] todos ellos necesarios para tu equipo avanzado. Si quieres que Ciencia te ayude, debes ayudarla tú también, y viceversa.
+
+  <Box>
+    <GuideEntityEmbed Entity="MiningDrill"/>
+    <GuideEntityEmbed Entity="HandHeldMassScanner"/>
+    <GuideEntityEmbed Entity="PKAUpgradeRange"/>
+  </Box>
+
+  Ciencia es la única fuente de varios tipos de equipo extremadamente útil, entre ellos:
+
+  - [color=cyan]Equipo de Minería[/color]: Ciencia puede proporcionarte [color=yellow]Taladros Mineros y Escáneres de Minerales[/color], que aceleran y facilitan la extracción. También puede construirte un [color=yellow]Procesador Industrial de Minerales[/color], que convierte el mineral en materiales acabados con un rendimiento mucho mayor.
+  - [color=cyan]Escáner de Masas Portátil[/color]: Una versión de bolsillo de la consola del escáner de masas. Aunque necesita una batería, te permite ver tu posición en cualquier parte del espacio.
+  - [color=cyan]Mejoras de PKA[/color]: Puedes mejorar tu PKA con hasta dos mejoras distintas de un conjunto de tres: [color=red]Daño,[/color] [color=yellow]Cadencia de Tiro[/color] y [color=green]Alcance[/color].
+
+  ## El asteroide minero
+
+  Cuando consideres que dominas el Imán de Recuperación, el lejano [color=red]Asteroide Minero[/color] será el siguiente paso en tu trayectoria como Especialista en Salvamento. Para llegar suelen hacer falta un transbordador o mochilas propulsoras y, debido a los peligros excepcionales de su interior, por lo general no debe explorarse a solas.
+
+  <Box>
+    <GuideEntityEmbed Entity="MobGoliath"/>
+    <GuideEntityEmbed Entity="MobHivelord"/>
+    <GuideEntityEmbed Entity="MobBasilisk"/>
+  </Box>
+
+  El Asteroide Minero consta de dos secciones: la [color=cyan]Mazmorra[/color], una estructura generada aleatoriamente llena de enemigos y materiales valiosos, y el [color=cyan]Asteroide[/color], que alberga enormes yacimientos minerales salpicados de alijos y monstruos.
+
+  Ten cuidado con los monstruos del Asteroide Minero, pues superan con creces las amenazas presentes en Pecios y Escombros.
+
+  - [color=cyan]Goliaths[/color]: Bestias titánicas capaces de incapacitar a sus objetivos con tentáculos retorcidos, dejándolos indefensos ante sus enormes garras y dientes rechinantes. Cuesta abatirlos, pero pueden despiezarse para obtener valiosas [color=cyan]Placas de Piel de Goliath,[/color] útiles tanto para completar Trabajos de Recuperación como para mejorar tu Traje de Espacionauta.
+  - [color=cyan]Hivelords[/color]: Anomalías rápidas y erráticas. Prefieren mantener las distancias en combate y expulsan pequeñas [color=cyan]Crías de Hivelord[/color] para atacar en enjambre a los Especialistas en Salvamento. No son especialmente resistentes, así que embóscalos rápido antes de que invoquen una horda que te abrume. Pueden despiezarse para obtener [color=cyan]Núcleos de Hivelord,[/color] que se pudren enseguida, se usan para completar Trabajos de Recuperación y también pueden comerse crudos para curarse rápidamente.
+  - [color=cyan]Basiliscos[/color]: Terrores cubiertos de hielo que acechan en las sombras. Los Basiliscos pueden disparar proyectiles de energía congelante que dañan y ralentizan a sus objetivos, y suelen usarlos para debilitarlos antes de acercarse para darles el golpe de gracia. Una vez derrotados, pueden despiezarse para obtener valiosa [color=cyan]Mena de Diamante[/color].
+</Document>

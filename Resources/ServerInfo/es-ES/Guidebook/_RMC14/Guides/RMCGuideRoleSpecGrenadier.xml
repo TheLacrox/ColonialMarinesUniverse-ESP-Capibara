@@ -1,0 +1,45 @@
+<Document>
+  # Especialista granadero pesado: «Fan de Michael Bay»
+
+  ## Dominio de la munición explosiva
+  Dificultad: [color=#FF8C00]Difícil[/color]
+
+  Cuando los marines necesitan efectuar un avance rápido y explosivo o despejar posiciones fortificadas, el especialista granadero pesado es la mejor elección.
+  Armado con el lanzagranadas M83, este especialista lanza una versátil selección de granadas con más precisión y alcance que los métodos convencionales, capaz de cambiar las tornas mediante una fuerza explosiva abrumadora.
+
+  ## Kit reglamentario
+  El equipo reglamentario de un granadero pesado incluye:
+  <Box> <GuideEntityEmbed Entity="WeaponLauncherM83"/> </Box>
+  El lanzagranadas M83 es un avanzado sistema de lanzamiento de munición, que destaca por su [bold]capacidad para seis disparos[/bold] y una [color=#00FF00]función IFF[/color].
+  Este sistema IFF permite que los proyectiles de granada disparados por el M83 [italic]atraviesen a los marines aliados sin peligro[/italic] y sin impactar contra ninguno, lo que garantiza que la munición alcance el punto previsto incluso en combates abarrotados de aliados.
+  <Box>  <GuideEntityEmbed Entity="RMCArmorM3G4"/> <GuideEntityEmbed Entity="RMCArmorHelmetM3G4"/></Box>
+  Este conjunto de combate especializado proporciona al granadero [italic]protección de armadura pesada[/italic] y reduce eficazmente el daño balístico, explosivo y por traumatismos en general.
+  Lo más importante es que ofrece esta sólida defensa con solo [italic]las penalizaciones de movimiento propias de una armadura media[/italic], por lo que conserva una buena agilidad en el campo de batalla. El casco incluido también permite desviar 6 abrazacaras.
+
+  ## Empleo táctico: la molestia resistente
+
+  El granadero actúa como una punta de lanza con armadura pesada o como un elemento resistente de apoyo de fuego. Tu increíble capacidad de supervivencia te permite atraer el fuego y mantener posiciones que otros no pueden, mientras tu lanzagranadas aporta un aturdimiento y un daño explosivo esenciales contra objetivos prioritarios.
+
+  <Box>[bold]Saca partido a tus puntos fuertes:[/bold]</Box>
+  -   [bold]Operaciones contra portadores[/bold]: aprovecha la resistencia del casco frente a los abrazacaras para enfrentarte a ellos de forma agresiva.
+  -   [bold]Interrupción de objetivos de gran valor[/bold]: concentra el fuego del lanzagranadas sobre amenazas prioritarias, como Pretorianos, Devastadores o grupos densos de Guerreros. La capacidad de encadenar aturdimientos contra estos objetivos puede crear oportunidades decisivas para tu equipo.
+  -   [bold]Abrir brechas y encabezar avances[/bold]: las granadas no sirven únicamente para atacar hostiles; son herramientas potentes para remodelar el campo de batalla. Emplea la munición explosiva para [italic]abrir brechas en las fortificaciones enemigas, destruir barricadas y crear nuevos caminos.[/italic] Esto permitirá que tu escuadra atraviese la abertura y dejará espacio para que tus compañeros te sigan y aprovechen el nuevo acceso.
+  -   [bold]Especialista en eliminar resina[/bold]: las granadas HEDP destacan al despejar grandes cantidades de resina pegajosa. Usa esta capacidad para abrir paso a los avances rápidos de los marines.
+
+  <Box>[bold]Compensa las debilidades & ahorra munición:[/bold]</Box>
+  -   [color=#FFD700][bold]RESISTENCIA DE NIVEL ALTO[/bold]: ten presente que xenónidos formidables como [bold]los Trituradores y la Reina poseen una resistencia considerable al daño y los efectos explosivos[/bold]. No esperes que un bombardeo indiscriminado de HEDP resulte muy eficaz contra estas amenazas de élite. Es probable que se sacudan gran parte del daño y vayan directos a por ti.[/color]
+  -   [bold]Ahorro extremo de munición[/bold]: cada granada debe contar. No gastes munición en objetivos triviales ni en situaciones que otros marines puedan resolver con eficacia. Tus granadas son un recurso valioso que conviene reservar para momentos críticos u objetivos de gran valor que *solo tú* puedas aturdir o abatir con una explosión.
+  -   [bold]El fuego amigo es crítico[/bold]: [color=#FF0000]tus granadas no distinguen objetivos y pueden aniquilar con facilidad un avance aliado.[/color] Nunca dispares contra grupos de marines. Es fundamental colocar cada tiro con cuidado.
+  -   [bold]Combinaciones estratégicas[/bold]: no dependas de un solo tipo de granada. Alterna entre HEDP para aturdir, HIDP para denegar zonas y HEFA en oportunidades claras que exijan mucho daño. Aturdir xenónidos con HEDP puede abrir la puerta a ataques posteriores más devastadores.
+  -   [color=#FF0000][bold]¡CUIDADO, LAS GRANADAS REBOTAN![/bold][/color] [bold]Asegúrate siempre de que las granadas tengan una línea de visión despejada. Disparar con un ángulo extraño cerca de una pared u obstáculo puede hacer que la granada rebote hacia tu posición o, peor aún, directamente contra tus compañeros mientras avanzan. Comprueba dos veces la trayectoria antes de cada disparo, especialmente en espacios cerrados.[/bold]
+
+  ## El desafío constante: vigilancia & adaptabilidad
+
+  Las mayores amenazas a largo plazo para el granadero son la autocomplacencia y un campo de batalla estático. Aunque al principio tu resistencia te haga sentir como un dios, recuerda que los xenónidos se adaptan y que la guerra evoluciona.
+
+  El exceso de confianza, nacido de superar sin esfuerzo los primeros enfrentamientos, puede llevarte a adoptar posiciones temerarias que expongan tus vulnerabilidades conocidas o a subestimar ataques coordinados.
+  El verdadero dominio de este kit no reside en su mera capacidad para aguantar daño, sino en jugar con disciplina, respetar tus limitaciones (sobre todo la munición) y adaptar tus tácticas constantemente.
+
+  El granadero es un rol potente, pero incluso los «dioses» pueden caer si se creen demasiado su propia leyenda y no perciben los cambios del campo de batalla. Mantente alerta, actúa con cabeza y quizá tu leyenda perdure.
+
+</Document>

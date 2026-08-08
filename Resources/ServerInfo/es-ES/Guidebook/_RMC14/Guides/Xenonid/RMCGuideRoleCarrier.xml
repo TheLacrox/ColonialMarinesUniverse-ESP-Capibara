@@ -1,0 +1,42 @@
+<Document>
+  #Portador, nivel 2
+
+  <GuideEntityEmbed Entity="CMXenoCarrier"/>
+
+  ##Jugar como Portador
+
+  Tu capacidad para almacenar 16 parásitos y 8 huevos te hace muy competente al gestionar la Colmena y sus capturas. También puedes permanecer cerca del frente, usar tus feromonas e infectar directamente a los huéspedes que arrastren otras hermanas, o quedarte en la retaguardia y colocar trampas de resina ocultas bajo objetos y llenas de parásitos para atrapar a víctimas desprevenidas.
+
+  Los Portadores también poseen el mejor placaje de todas las castas xenónidas, por lo que se les da bien mantener derribados a los huéspedes para después infectarlos con un parásito.
+
+  Recuerda que, para aumentar la producción de parásitos, debes colocar transformadores de huevos sobre maleza de la colmena y recoger los parásitos que produzcan. ¡No olvides pedírselo a la Reina, pues su número es limitado!
+
+  <GuideEntityEmbed Entity="HiveEggMorpherXeno"/>
+  <GuideEntityEmbed Entity="XenoHiveWeeds"/>
+
+  ##Parásitos
+
+  Los parásitos morirán si no están dentro de un huevo o no los transporta un Portador. Si un parásito está en el suelo o lo sostiene una hermana que no sea Portadora, morirá pasado un tiempo, salvo que sea sintiente. Los parásitos entran automáticamente en huevos abiertos o agujeros de resina cuando se encuentran sobre ellos.
+
+  <Box>
+    <GuideEntityEmbed Entity="XenoEgg"/>
+    <GuideEntityEmbed Entity="CMXenoParasite"/>
+    <GuideEntityEmbed Entity="XenoResinHole"/>
+  </Box>
+
+  \n
+
+  ##Habilidades:
+  - [bold]Emitir feromonas[/bold]: Emite uno de los tres tipos de feromonas. Su intensidad depende de la casta y no se acumula con feromonas del mismo tipo.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoPheromones"/>
+  - [bold]Plantar maleza[/bold]: Coloca un nodo de resina que extiende maleza por una zona amplia.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoPlantWeeds"/>
+  - [bold]Plantar agujero de resina[/bold]: Coloca sobre la maleza un agujero que después puede llenarse haciendo clic en él con un parásito. También puede ocultarse bajo restos como tablones de madera o láminas de metal.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoPlantResinHole"/>
+  - [bold]Lanzar parásito[/bold]: Si tienes la mano vacía, recupera de tu almacén un parásito, que es su uso principal; si ya tienes uno, lo lanza.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoThrowParasite"/>
+  - [bold]Recuperar huevo[/bold]: Recupera un huevo al usar la habilidad.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoRetrieveEgg"/>
+  - [bold]Fijar reserva de parásitos[/bold]: Fija cuántos parásitos no quieres que pasen a estar controlados por otros jugadores. Resulta útil cuando te quedan pocos y no quieres que los últimos salgan de tu almacén justo cuando los necesitas.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoSetParasiteReserve"/>
+</Document>

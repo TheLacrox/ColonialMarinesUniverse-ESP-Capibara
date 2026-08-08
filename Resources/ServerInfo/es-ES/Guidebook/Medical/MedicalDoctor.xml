@@ -1,0 +1,77 @@
+<Document>
+# Médico
+Es hora de curar. O, al menos, de intentarlo. Los médicos son los principales responsables de atender todos los golpes y heridas que sufra la tripulación en la estación, desde un pequeño rasguño hasta la piel escaldada.
+
+Esta guía ofrece una visión básica de las opciones de tratamiento disponibles, el triaje y otras formas de atención.
+
+## Conceptos básicos
+Hay dos formas de averiguar qué le ocurre a alguien: escanearlo (con un analizador de salud o una PDA médica) o examinarlo mediante Shift-clic y pulsando el símbolo del corazón.
+
+Un analizador de salud suele ser más eficaz que un examen, ya que algunos problemas (como el veneno o la radiación) no aparecen al examinar. Sin embargo, también tiene inconvenientes: hace ruido y consume batería.
+<Box>
+<GuideEntityEmbed Entity="SignExamroom" Caption="examinar al paciente"/>
+<GuideEntityEmbed Entity="MedicalPDA"/>
+<GuideEntityEmbed Entity="MedicalInternPDA" Caption="PDA de médico en prácticas"/>
+<GuideEntityEmbed Entity="HandheldHealthAnalyzer"/>
+</Box>
+
+## Medicación y opciones de tratamiento
+Antes de seguir, conviene repasar los tipos de daño y qué permite curarlos. La wiki contiene información más detallada, pero estos son los tratamientos habituales.
+
+Una advertencia importante: la mayoría de los medicamentos tienen un umbral de sobredosis que dañará al paciente. Además, las sustancias químicas en forma de pastilla tardan en metabolizarse; si necesitas que actúen deprisa, usa una jeringuilla.
+
+- Daño físico: Bicaridine o compresas para traumatismos
+- Daño por quemaduras: Dermaline o pomada
+- Toxinas (veneno): Dylovene
+- Toxinas (radiación): Hyronalin o Arithrazine
+- Falta de aire: Dexaline o Inaprovaline
+- Pérdida de sangre: Dexaline (Examina al paciente; si está pálido, aún necesita sangre o hierro).
+- Hemorragia: ácido tranexámico y gasa (También se puede cauterizar provocando daño por quemaduras).
+
+Muchas estaciones disponen de botiquines en el almacén, y todo el personal médico lleva algo de equipo en el cinturón inicial.
+
+<Box>
+<GuideEntityEmbed Entity="MedkitFilled"/>
+<GuideEntityEmbed Entity="MedkitBruteFilled" Caption="botiquín para traumatismos"/>
+<GuideEntityEmbed Entity="MedkitRadiationFilled" Caption="botiquín para radiación"/>
+<GuideEntityEmbed Entity="MedkitBurnFilled" Caption="botiquín para quemaduras"/>
+<GuideEntityEmbed Entity="MedkitToxinFilled" Caption="botiquín para toxinas"/>
+</Box>
+
+<Box>
+<GuideEntityEmbed Entity="Brutepack"/>
+<GuideEntityEmbed Entity="Ointment"/>
+<GuideEntityEmbed Entity="EmergencyMedipen"/>
+<GuideEntityEmbed Entity="Bloodpack"/>
+<GuideEntityEmbed Entity="Gauze"/>
+</Box>
+
+## Tratamiento básico y triaje
+Examina al paciente y anota los detalles importantes: ¿sigue con vida? ¿Sangra? ¿Qué tipo de daño tiene?
+
+Si sigue con vida, trátalo lo mejor que puedas. Los pacientes entran en estado crítico al alcanzar 100 de daño y mueren al llegar a 200. Tenlo en cuenta al elegir el tratamiento. Los autoinyectores de emergencia y la epinefrina se usan a menudo para mantener estables a los pacientes.
+
+Si es posible, abróchalo a una cama médica; si necesitas tiempo para tratarlo, sujétalo en su lugar a una cama de estasis. Recuerda que el metabolismo (y, por extensión, las sustancias curativas) se ralentiza enormemente durante la estasis: tendrás que sacarlo de ella para que el medicamento surta efecto. (Las bolsas de sangre, la pomada y las compresas para traumatismos funcionan con normalidad).
+<Box>
+<GuideEntityEmbed Entity="MedicalBed"/>
+<GuideEntityEmbed Entity="StasisBed"/>
+</Box>
+## Evaluación de cadáveres
+No puedes salvarlos a todos; a veces se produce una muerte. Según el [color=#a4885c]estado[/color] del cuerpo, hay varias cosas que pueden hacerse.
+
+1. ¿Sigue unida su alma? Puedes comprobarlo al examinarlo: si aparece la frase «Su alma se ha marchado», ya no está. Si no aparece, aún hay un jugador que puede ser reanimado.
+
+2. ¿Se está pudriendo el cuerpo? Si es así, por desgracia habrá que clonarlo. Un cuerpo putrefacto no puede reanimarse con un desfibrilador. (Consulta Clonación).
+
+3. Si conserva el alma y no está podrido, es posible reanimarlo. Si no tienes tiempo suficiente, considera guardar el cuerpo en una bandeja de la morgue, pues acabará pudriéndose si esperas demasiado.
+
+## Reanimación
+Sin contar la falta de aire, los desfibriladores pueden reanimar a pacientes con menos de 200 de daño total. Las sustancias químicas no se metabolizan en los muertos, pero las compresas para traumatismos y la pomada aún pueden curarlos. Úsalas para reducir bastante el daño y poder reanimarlos.
+
+<Box>
+<GuideEntityEmbed Entity="Brutepack"/>
+<GuideEntityEmbed Entity="Defibrillator"/>
+<GuideEntityEmbed Entity="Ointment"/>
+</Box>
+
+</Document>

@@ -1,0 +1,29 @@
+﻿<Document>
+  # Paneles de cableado
+  Algunos dispositivos de la estación, como las esclusas, las máquinas expendedoras y las recreativas, tienen paneles de cableado que controlan ciertos aspectos de su funcionamiento.
+
+  Estos paneles se pueden abrir con un destornillador para acceder al cableado interior.
+
+  <Box>
+    <GuideEntityEmbed Entity="Wirecutter"/>
+    <GuideEntityEmbed Entity="Screwdriver"/>
+    <GuideEntityEmbed Entity="Multitool"/>
+  </Box>
+
+  Después puedes usar el cortaalambres y una multiherramienta para manipular el cableado. Ten en cuenta que suele ser necesario llevar guantes aislantes: si el cable tiene corriente, puedes sufrir una descarga.
+
+  <Box>
+    <GuideEntityEmbed Entity="ClothingHandsGlovesColorYellow"/>
+  </Box>
+
+  Puedes cortar y reparar cables con el cortaalambres y aplicarles pulsos con la multiherramienta.
+
+  Cortar cables suele desactivar por completo una función del dispositivo o restablecerla.
+  También puede provocar efectos no deseados, como electrocutar a alguien, bajar los cerrojos de una puerta o causar una explosión.
+
+  Aplicar pulsos a los cables puede producir diversos efectos, aunque a menudo activa o desactiva temporalmente alguna función.
+
+  No puedes aplicar un pulso al cable que intentas manipular si está cortado. Primero debes repararlo.
+
+
+</Document>

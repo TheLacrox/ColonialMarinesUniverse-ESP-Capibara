@@ -1,0 +1,17 @@
+names-regal-rat-title-dataset-1 = Rey
+names-regal-rat-title-dataset-2 = Señor
+names-regal-rat-title-dataset-3 = Príncipe
+names-regal-rat-title-dataset-4 = Emperador
+names-regal-rat-title-dataset-5 = Supremo
+names-regal-rat-title-dataset-6 = Amo supremo
+names-regal-rat-title-dataset-7 = Maestro
+names-regal-rat-title-dataset-8 = Shogun
+names-regal-rat-title-dataset-9 = Boyardo
+names-regal-rat-title-dataset-10 = Zar
+names-regal-rat-title-dataset-11 = Fan #vs
+names-regal-rat-title-dataset-12 = Disfrutón
+names-regal-rat-title-dataset-13 = Presidente
+names-regal-rat-title-dataset-14 = Alcalde
+names-regal-rat-title-dataset-15 = Jefe
+names-regal-rat-title-dataset-16 = Profeta
+names-regal-rat-title-dataset-17 = Queso

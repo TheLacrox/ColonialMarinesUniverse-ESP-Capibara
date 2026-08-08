@@ -1,0 +1,334 @@
+<Document>
+  # Procedimiento radiotelefónico
+
+  El procedimiento radiotelefónico es una forma normalizada de transmitir información por una red de radio compartida.
+
+  El uso coherente de indicativos y palabras de procedimiento hace que las transmisiones sean más breves, claras y fáciles de confirmar.
+
+  ## Reglas básicas
+
+  - [bold]Escucha antes de transmitir.[/bold] No interrumpas el tráfico en curso salvo que el mensaje sea urgente.
+  - [bold]Prepara primero el mensaje.[/bold] Ten claro qué necesitas decir antes de abrir el canal.
+  - [bold]Usa indicativos.[/bold] No identifiques al personal por el nombre del personaje ni por el rango a través de la radio.
+  - [bold]Sé breve en las transmisiones.[/bold] Divide los mensajes largos en secciones claras.
+  - [bold]Confirma las órdenes y solicitudes.[/bold] Confirma que el tráfico importante se ha recibido y entendido.
+  - [bold]Usa un lenguaje claro.[/bold] Emplea las palabras de procedimiento cuando corresponda, pero evita la jerga innecesaria.
+
+  ## Formato básico de llamada
+
+  Dirígete primero a la estación receptora y después identifica la estación transmisora.
+
+  [color=#a4885c]HAVOC 6, this is SABRE ROMEO, mensaje, over.[/color]
+
+  Una llamada completa suele contener:
+
+  - El indicativo al que se llama.
+  - [bold]THIS IS[/bold].
+  - El indicativo transmisor.
+  - El mensaje.
+  - [bold]OVER[/bold] u [bold]OUT[/bold].
+
+  La estación receptora responde en el mismo orden:
+
+  [color=#a4885c]SABRE ROMEO, this is HAVOC 6, transmita, over.[/color]
+
+  Una vez establecido el contacto entre ambas estaciones, puede omitirse [bold]THIS IS[/bold]:
+
+  [color=#a4885c]SABRE ROMEO, HAVOC 6, transmita, over.[/color]
+
+  ## Palabras de procedimiento
+
+  Las palabras de procedimiento son términos normalizados con significados concretos.
+
+  <Table Columns="2" MinForcedColumnWidth="110">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Palabra de procedimiento[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Significado[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">THIS IS</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">El indicativo que sigue identifica la estación transmisora.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">OVER</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">La transmisión ha terminado y se espera una respuesta.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">OUT</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">El intercambio ha terminado y no se espera respuesta. No uses «over and out».</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">ROGER</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">La transmisión anterior se ha recibido y entendido. No significa que se vaya a cumplir la instrucción.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">WILCO</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">La instrucción se ha entendido y se cumplirá. WILCO ya incluye el significado de ROGER.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">SAY AGAIN</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Repite la transmisión anterior o una parte concreta de ella.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">CORRECTION</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Se ha cometido un error. A continuación se proporciona la información corregida.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">DISREGARD</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Ignora la transmisión anterior.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">BREAK</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Separa secciones de un mensaje o tráfico dirigido a distintas estaciones.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">WAIT</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Espera brevemente. La estación transmisora continuará en breve.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">WAIT OUT</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Se necesita una pausa más larga. La estación transmisora volverá a llamar más tarde.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">HOW COPY</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Confirma si el mensaje anterior se ha recibido con claridad.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">RADIO CHECK</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Informa de la intensidad y la legibilidad de la señal.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">LIMA CHARLIE</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Alto y claro.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">ACTUAL</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Identifica a la persona asignada a una estación de mando, en lugar de a alguien que transmite en su nombre.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">INTERROGATIVE</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">El tráfico que sigue es una pregunta.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">BE ADVISED</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">El tráfico que sigue es información que puede afectar a la estación receptora.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">ALL STATIONS</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">El mensaje se dirige a todas las estaciones de la red.</Box>
+    </ColorBox>
+  </Table>
+
+  Usa [bold]SAY AGAIN[/bold] en lugar de «repeat» cuando solicites que se repita un mensaje de radio. En una red de apoyo de fuego, [bold]REPEAT[/bold] puede interpretarse como una orden de volver a ejecutar la misión de fuego anterior.
+
+  ## Comprobación de radio
+
+  Una comprobación de radio confirma que dos estaciones pueden oírse entre sí.
+
+  [color=#a4885c]HAVOC ROMEO, this is SABRE ROMEO, radio check, over.[/color]
+
+  [color=#a4885c]SABRE ROMEO, this is HAVOC ROMEO, Lima Charlie. ¿Cómo me recibe? Over.[/color]
+
+  [color=#a4885c]Lima Charlie, out.[/color]
+
+  Cuando la señal no sea clara, describe el problema en su lugar:
+
+  - Débil, pero legible.
+  - Entrecortada.
+  - Distorsionada.
+  - Ilegible.
+
+  ## Informe de contacto
+
+  Un informe de contacto debe indicar:
+
+  - Qué se ha visto.
+  - Dónde se ha visto.
+  - Fuerza aproximada.
+  - Qué está haciendo el elemento que informa.
+
+  [color=#a4885c]HAVOC 6, this is SABRE ACTUAL, contacto. Infantería, efectivos equivalentes a una escuadra, línea de árboles al este cerca de la cuadrícula dos-cuatro-cinco. Entrando en combate, over.[/color]
+
+  [color=#a4885c]SABRE ACTUAL, HAVOC 6, roger. DAGGER se desplaza hacia tu flanco. Mantén la posición, over.[/color]
+
+  [color=#a4885c]HAVOC 6, SABRE ACTUAL, wilco, out.[/color]
+
+  ## Solicitud de apoyo de fuego
+
+  Establece contacto antes de transmitir la solicitud completa.
+
+  [color=#a4885c]HAVOC OPS, this is SABRE ROMEO, misión de fuego, over.[/color]
+
+  [color=#a4885c]SABRE ROMEO, HAVOC OPS, transmita, over.[/color]
+
+  La solicitud debe identificar:
+
+  - El objetivo.
+  - La ubicación del objetivo.
+  - La posición de las fuerzas amigas.
+  - El efecto solicitado.
+
+  [color=#a4885c]Posición enemiga de ametralladora en la cresta norte, junto a la torre de comunicaciones. Las fuerzas amigas están dos-cinco-cero metros al este, señalizadas con humo. Solicito supresión, over.[/color]
+
+  [color=#a4885c]SABRE ROMEO, HAVOC OPS, roger. Proyectiles disparados, impacto en tres-cero segundos, over.[/color]
+
+  [color=#a4885c]HAVOC OPS, SABRE ROMEO, impacto observado. Objetivo suprimido. Fin de la misión, out.[/color]
+
+  ## Solicitud de evacuación de bajas
+
+  Establece contacto antes de transmitir los datos de las bajas.
+
+  [color=#a4885c]HAVOC ROMEO, this is DAGGER ROMEO, solicitud de evacuación de bajas, over.[/color]
+
+  [color=#a4885c]DAGGER ROMEO, HAVOC ROMEO, transmita, over.[/color]
+
+  Incluye:
+
+  - Número de bajas.
+  - Prioridad médica.
+  - Lugar de recogida.
+  - Estado de la zona de recogida.
+  - Identificación o señalización.
+
+  [color=#a4885c]Dos bajas. Una requiere cirugía urgente y otra puede caminar. Recogida en la zona de aterrizaje al sur del puente. La zona es segura y está señalizada con humo verde, over.[/color]
+
+  [color=#a4885c]DAGGER ROMEO, HAVOC ROMEO, recibido. Aeronave de evacuación en camino, llegará en cinco minutos, out.[/color]
+
+  ## Uso de ACTUAL
+
+  [bold]ACTUAL[/bold] identifica a la persona al mando cuando habla personalmente, en lugar de a un RTO u otra persona que lo haga en su nombre.
+
+  Los líderes de escuadra lo llevan como estación asignada: [bold]SABRE ACTUAL[/bold] es el líder de la escuadra Sabre (Alpha). Las estaciones de mando lo añaden cuando el oficial toma personalmente el auricular.
+
+  [color=#a4885c]SABRE ACTUAL, this is HAVOC 6 ACTUAL. Avanza más allá de la línea de fase DODGE, over.[/color]
+
+  Sin [bold]ACTUAL[/bold], el tráfico de [bold]HAVOC 6[/bold] puede proceder del RTO que transmite en nombre del comandante. Con ACTUAL, el comandante habla personalmente.
+
+  ## Correcciones
+
+  Usa [bold]CORRECTION[/bold] cuando detectes un error durante la transmisión.
+
+  [color=#a4885c]Infantería enemiga al oeste del puente, CORRECTION, al este del puente, efectivos equivalentes a una escuadra, over.[/color]
+
+  Usa [bold]DISREGARD[/bold] cuando deba ignorarse por completo el mensaje anterior.
+
+  [color=#a4885c]DISREGARD mi último mensaje, out.[/color]
+
+  ## Errores comunes
+
+  <Table Columns="2" MinForcedColumnWidth="120">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Evita[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Motivo[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Usar nombres o rangos</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">El tráfico de radio debe identificar las estaciones mediante indicativos.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Llamar a «mando» sin un indicativo</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Puede no quedar claro cuál es la estación receptora prevista.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Transmisiones largas e ininterrumpidas</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Las demás estaciones no pueden confirmar ni transmitir tráfico urgente.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">«Over and out»</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">OVER solicita una respuesta, mientras que OUT pone fin al intercambio.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">«Roger wilco»</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">WILCO ya confirma la recepción y el cumplimiento.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">«¿Puede repetirlo?»</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Usa SAY AGAIN para evitar confusiones en las redes de apoyo de fuego.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Informes imprecisos</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Indica con claridad el suceso, la ubicación, la fuerza y la acción necesaria.</Box>
+    </ColorBox>
+  </Table>
+
+  Las transmisiones breves y estructuradas dejan la red disponible para las confirmaciones y el tráfico urgente.
+</Document>

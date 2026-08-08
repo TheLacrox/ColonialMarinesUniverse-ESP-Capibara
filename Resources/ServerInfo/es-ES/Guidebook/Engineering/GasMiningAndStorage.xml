@@ -1,0 +1,66 @@
+﻿<Document>
+  # Extracción y almacenamiento de gases
+  Los gases suelen consumirse de forma permanente. Tanto si se pierden en [textlink="el espacio" link="Spacing"] como si se utilizan en una cámara de combustión, la estación debe poder producir más gas para sustituir el que se pierde.
+  También debe almacenarlo de forma segura y eficiente.
+
+  ## Extractores de gas
+  Los extractores de gas se utilizan para reponer el suministro de gas de la estación. Se encuentran en los depósitos de almacenamiento de gas de Atmósfera.
+
+  <Box>
+    <GuideEntityEmbed Entity="GasMinerOxygenStation"/>
+    <GuideEntityEmbed Entity="GasMinerNitrogenStation"/>
+  </Box>
+
+  Los extractores de gas producen constantemente gas a temperatura ambiente y lo expulsan a la atmósfera expuesta. No necesitan energía para funcionar y nunca se detienen, salvo cuando alcanzan la [bold]presión de corte[/bold] definida.
+
+  Puedes consultar más información sobre los extractores de gas examinándolos con [color=yellow][bold][keybind="ExamineEntity"][/bold][/color].
+  Prueba a examinar los extractores de gas mostrados arriba.
+
+  Los extractores de gas se presentan en varios niveles; las versiones más grandes tienen una presión de corte superior a la de las más pequeñas.
+
+  <Box>
+    <GuideEntityEmbed Entity="GasMinerNitrogen" Caption="300 kPa"/>
+    <GuideEntityEmbed Entity="GasMinerNitrogenStation" Caption="1000 kPa"/>
+    <GuideEntityEmbed Entity="GasMinerNitrogenStationLarge" Caption="4500 kPa"/>
+  </Box>
+
+  Si alguna vez se desanclan los extractores de gas de la estación, pueden volver a anclarse con una llave inglesa normal.
+
+  ## Almacenamiento de gas
+  Los depósitos de almacenamiento de gas sirven para almacenar el gas producido por los extractores y ponerlo a disposición de otros procesos. Se encuentran en Atmósfera.
+
+  <Box>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ReinforcedPlasmaWindow" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="GasOutletInjector" Rotation="270" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="GasMinerOxygenStation" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="GasPassiveVent" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+  </Box>
+
+  <Box>
+    [color=#999999][italic]Ejemplo de un pequeño depósito de almacenamiento de gas[italic][/color]
+  </Box>
+
+  Diversos procesos atmosféricos introducen gases en los depósitos de almacenamiento y los extraen de ellos.
+  Por ejemplo:
+  - El extractor de gas aporta gases nuevos a los depósitos de almacenamiento si hay espacio.
+  - La red de reciclaje introduce gases recuperados en los depósitos de almacenamiento para reutilizarlos.
+  - Las instalaciones como la red Distro y la cámara de combustión extraen gases de los depósitos de almacenamiento.
+
+  Los depósitos de almacenamiento de gas están diseñados para poder medirse con un [textlink="analizador de gases" link="AtmosTools"].
+  Como el conducto de salida es un [textlink="conducto de ventilación pasivo" link="PassiveVent"], puedes utilizar un [textlink="analizador de gases" link="AtmosTools"] para medir el contenido gaseoso de la entrada de la [textlink="bomba" link="Pumps"], que extrae gas del depósito de almacenamiento.
+</Document>

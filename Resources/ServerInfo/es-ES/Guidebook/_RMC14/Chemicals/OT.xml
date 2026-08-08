@@ -1,0 +1,30 @@
+﻿<Document>
+
+  # Combustible para incinerador
+
+  <GuideReagentEmbed Reagent="RMCNapalmSticky"/>
+  <GuideReagentEmbed Reagent="RMCNapalmHighCombustion"/>
+
+  ## Limitado
+
+  ### Adquirible
+
+  <GuideReagentEmbed Reagent="WeldingFuel"/>
+  <GuideReagentEmbed Reagent="RMCNapalmUT"/>
+  <GuideReagentEmbed Reagent="RMCBGel"/>
+  <GuideReagentEmbed Reagent="RMCNapalmB"/>
+  <GuideReagentEmbed Reagent="RMCNapalmX"/>
+
+  ### No adquirible
+
+  <GuideReagentEmbed Reagent="RMCNapalmE"/>
+  <GuideReagentEmbed Reagent="RMCNapalmEX"/>
+  <GuideReagentEmbed Reagent="RMCR189"/>
+
+  # Precursores
+
+  <GuideReagentEmbed Reagent="RMCCLF3"/>
+  <GuideReagentEmbed Reagent="RMCSulphuricAcid"/>
+  <GuideReagentEmbed Reagent="RMCNapalm"/>
+
+</Document>

@@ -1,0 +1,90 @@
+<Document>
+  # Carga
+
+  El departamento de Suministros, también conocido como [color=cyan]Carga[/color], abastece a la estación de los recursos necesarios, como combustible y materias primas, y de artículos de ocio, como billetes de lotería y peluches.
+
+  Para ello recauda [color=cyan]spesos[/color] (la moneda de la estación) mediante muchos métodos, como completar recompensas, vender objetos diversos y recuperar chatarra, lo que le permite comprar fuera de la estación una amplia variedad de equipo para satisfacer las necesidades de cualquier tripulante. La labor de Carga es atender las necesidades del resto de la estación.
+
+  ## Personal
+
+  El personal de Carga está compuesto por [color=cyan]Técnicos de Carga[/color] y [color=cyan]Especialistas en Salvamento[/color], y lo dirige el [color=cyan]Intendente[/color].
+
+  <Box>
+    <GuideEntityEmbed Entity="ToyFigurineCargoTech" Caption="Téc. de carga"/>
+    <GuideEntityEmbed Entity="ToyFigurineSalvage" Caption="Recuperación"/>
+    <GuideEntityEmbed Entity="ToyFigurineQuartermaster" Caption="QM"/>
+  </Box>
+
+  ## Ganar dinero
+
+  El principal problema de cualquier departamento de Carga es no tener suficiente dinero.
+
+  Carga gana dinero vendiendo cosas en la [color=cyan]Estación Comercial[/color]. Casi todo lo que hay en la estación tiene un valor económico y puede venderse por ese importe, tal como muestra la [color=cyan]herramienta de tasación[/color]. Ese valor aumenta aún más si se vende como parte de una [textlink="recompensa" link="CargoBounties"].
+
+  <Box>
+    <GuideEntityEmbed Entity="AppraisalTool"/>
+    <GuideEntityEmbed Entity="CargoPallet"/>
+    <GuideEntityEmbed Entity="CrateGenericSteel"/>
+  </Box>
+
+  Cuando encuentres objetos valiosos, llévalos a la [color=cyan]Bahía de Carga[/color]. Si caben dentro de una [color=cyan]Caja[/color], busca una vacía y mételos en ella.
+
+  Si el [color=cyan]Transbordador de Carga[/color] está fuera, puedes colocar todos los objetos que quieras vender sobre los [color=cyan]Palés de Carga[/color]. Cuando el transbordador haya atracado en la estación, carga en él las cajas y todo lo demás que se vaya a vender.
+
+  <Box>
+    <GuideEntityEmbed Entity="ComputerPalletConsole"/>
+    <GuideEntityEmbed Entity="CargoPalletSell"/>
+    <GuideEntityEmbed Entity="ComputerCargoOrders"/>
+  </Box>
+
+  Una vez cargado el transbordador, pilótalo hasta la Estación Comercial. Allí, coloca los objetos vendibles sobre los [color=cyan]palés verdes de venta de suministros[/color] y ve a la [color=cyan]consola de venta de suministros[/color] para pulsar [italic]«Vender»[/italic].
+
+  Ahora puedes llevar esos spesos de vuelta a la estación y depositarlos en la [color=cyan]consola de solicitudes de suministros[/color].
+
+  También puedes ganar aún más dinero completando [textlink="recompensas" link="CargoBounties"] o vendiendo objetos valiosos obtenidos mediante [textlink="recuperación" link="Salvage"].
+
+  ## Pedidos
+
+  <Box>
+    <GuideEntityEmbed Entity="ComputerCargoOrders"/>
+  </Box>
+
+  Todo pedido comienza en una [color=cyan]consola de solicitudes de suministros[/color]. Ante todo, para hacer un pedido Carga debe tener suficientes spesos. Si Carga no tiene dinero, consigue más.
+
+  Además, queda a la entera discreción de Carga atender cada solicitud. Si anda escasa de spesos, puede denegar las que no sean necesarias de inmediato.
+
+  Para hacer un pedido, pulsa el nombre de lo que se solicita, indica el destinatario, escribe una razón adecuada por la que lo necesita y después pulsa «Aprobar» en el pedido.
+
+  A veces hay una consola pública de solicitudes de suministros; en ese caso, solo tienes que aprobar los pedidos que haga la gente.
+
+  <Box>
+    <GuideEntityEmbed Entity="CargoPalletBuy"/>
+    <GuideEntityEmbed Entity="PaperCargoInvoice"/>
+  </Box>
+
+  Después, para recoger el pedido, hay que transportarlo desde la [color=cyan]Estación Comercial[/color] hasta la estación.
+
+  En la Estación Comercial, sobre los [color=cyan]Palés de Compra de Carga[/color], hay una caja que contiene el pedido. Cárgala en el transbordador y regresa con ella.
+
+  Cuando llegue al muelle de Carga, puedes leer la etiqueta de la [color=cyan]Factura de Carga[/color] para saber a quién va dirigida. Por último, entrégasela.
+
+  ## Pilotaje
+
+  Los pedidos se entregan a la estación a través de la [color=cyan]Estación Comercial[/color] en órbita y se transportan a la estación principal mediante el [color=cyan]Transbordador de Carga[color]. El transbordador no vuela solo, así que debe pilotarse desde su interior o a distancia.
+
+  <Box>
+    <GuideEntityEmbed Entity="ComputerShuttleCargo"/>
+  </Box>
+
+  Para pilotar el transbordador, primero debes encontrar la [color=cyan]Consola del Transbordador de Carga[/color]. Hay una en la Bahía de Carga y otra dentro del Transbordador de Carga.
+
+  Tras interactuar con el ordenador, debería mostrarse una vista de navegación desde el transbordador. Estos son los pasos para pilotarlo hasta la Estación Comercial y volver:
+
+  - Primero, cambia a la pantalla [color=yellow]«ACOPLAR»[/color] y [color=yellow]desacopla[/color] todas las esclusas que haya entre el transbordador y la estación.
+  - Ahora, con el transbordador desacoplado, puedes pilotarlo. [italic]Recuerda que vuelas por el espacio y que el momento lineal se conserva[/italic].
+  - Los controles son [color=yellow][keybind="ShuttleStrafeUp"][/color] y [color=yellow][keybind="ShuttleStrafeDown"][/color] para desplazarte hacia arriba y abajo, [color=yellow][keybind="ShuttleStrafeLeft"][/color] y [color=yellow][keybind="ShuttleStrafeRight"][/color] para desplazarte a izquierda y derecha, y [color=yellow][keybind="ShuttleRotateLeft"][/color] y [color=yellow][keybind="ShuttleRotateRight"][/color] para girar a izquierda y derecha. Para frenar, pulsa [color=yellow][keybind="ShuttleBrake"][/color].
+  - Después, pilota el transbordador hasta la [color=cyan]Estación Comercial[/color].
+  - Cuando llegues, [color=yellow]acóplalo[/color] a las esclusas y habrás terminado.
+
+  [textlink="Descubre las recompensas, una forma de maximizar tus beneficios en la estación." link="CargoBounties"]
+</Document>

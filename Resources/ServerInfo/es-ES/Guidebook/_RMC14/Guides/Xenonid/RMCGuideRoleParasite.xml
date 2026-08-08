@@ -1,0 +1,19 @@
+<Document>
+  #Parásito
+  <GuideEntityEmbed Entity="CMXenoParasite" Caption="Cría / parásito"/>
+  ##Cómo jugar como Parásito
+  Los Parásitos se diferencian de la jugabilidad xenónida habitual: son prescindibles y ayudan a infectar a los huéspedes capturados, aunque también pueden intentar ocultarse bajo objetos para atrapar a víctimas desprevenidas.
+
+  Para convertirte en Parásito, puedes usar la habilidad Buscar parásito como fantasma o hacer clic en un huevo. Si has muerto hace poco, tendrás que esperar para encarnar en uno.
+
+  Cuando te hayas convertido en Parásito, puedes dirigirte al frente y esperar a que tus hermanas arrastren una captura. Para infectar a alguien que esté en el suelo, debes usar [color=yellow][bold][keybind="Use"][/bold][/color] sobre esa persona y esperar a que termine la acción.
+
+  Cada infección que completes te permitirá volver a convertirte en Parásito sin necesidad de esperar. También puedes infectar a objetivos de pie si saltas sobre ellos desde una distancia de una casilla. Si saltas desde lejos, no los infectarás: tan solo los aturdirás brevemente y quedarás expuesto.
+
+  ##Parásitos no controlados por jugadores
+  Los Drones, los Portadores y los Señores de la colmena pueden recoger parásitos sin controlar y usarlos para infectar capturas de la misma forma: deben sostenerlos y usar [color=yellow][bold][keybind="Use"][/bold][/color] sobre el objetivo.
+
+  - Si el objetivo está anidado en una pared, quizá tengas que acercarte con un parásito en la mano y usar [color=yellow][bold][keybind="UIRightClick"/][/bold][/color] para abrir el menú contextual; después, usa [color=yellow][bold][keybind="Use"][/bold][/color] sobre el objetivo.
+
+  Los parásitos sin controlar morirán si una hermana no los sostiene y permanecen abandonados durante 30 segundos. Procura mantenerlos en lugares seguros, como sobre un huésped o dentro de un transformador de huevos. También puedes introducirlos en huevos vacíos para rellenarlos o llenar agujeros de resina y convertirlos en trampas.
+</Document>

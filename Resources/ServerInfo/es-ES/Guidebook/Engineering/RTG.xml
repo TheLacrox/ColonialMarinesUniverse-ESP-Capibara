@@ -1,0 +1,25 @@
+<Document>
+  # Generador termoeléctrico de radioisótopos (RTG)
+
+  <Box>
+    <GuideEntityEmbed Entity="GeneratorRTG" Caption="RTG" />
+  </Box>
+
+  Un generador termoeléctrico de radioisótopos (RTG) es una fuente de energía pasiva que genera electricidad mediante la desintegración de isótopos radiactivos.
+
+  No necesitan mantenimiento y son una fuente de energía fiable, por lo que resultan ideales para alimentar sistemas esenciales que deben permanecer siempre conectados, como Telecomunicaciones, la IA o el servidor de supervisión de la tripulación.
+
+  Los RTG generan siempre [color=orange][protodata="GeneratorRTG" comp="PowerSupplier" member="MaxSupply" format="N0"/] W[/color] de potencia y, para funcionar, deben conectarse mediante [color=orange]alimentación de HV[/color] a una [textlink="red" link="VoltageNetworks"].
+
+  Sin embargo, solo se pueden conseguir si Salvamento encuentra uno en una expedición. Si traen alguno, ¡no olvides darles las gracias!
+
+  ## Daños en los RTG
+  <Box>
+    <GuideEntityEmbed Entity="GeneratorRTGDamaged" Caption="RTG dañado" />
+  </Box>
+  Si sufren suficientes daños, los RTG pueden quedar averiados.
+  Los RTG averiados funcionan igual que los normales, pero son [color=yellow]radiactivos[/color].
+
+  Eso significa que son más peligrosos, pero, por el lado bueno, puedes colocar colectores de radiación junto a ellos para convertir esa radiación en más energía.
+  Suele merecer más la pena, ya que la energía sigue siendo gratuita, siempre que encuentres un lugar seguro donde colocar los RTG.
+</Document>

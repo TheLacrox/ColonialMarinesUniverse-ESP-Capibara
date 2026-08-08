@@ -1,0 +1,14 @@
+advertisement-happyhonk-1 = ¡Honk! ¡Honk! ¿Por qué no pides hoy un Happy Honk Meal?
+advertisement-happyhonk-2 = Los payasos merecen un abrazo; si ves uno, no olvides demostrarle tu aprecio.
+advertisement-happyhonk-3 = Si encuentras el Golden Honker, reza a los dioses: tienes muchísima suerte.
+advertisement-happyhonk-4 = Happy Honk: es una comida, es una ganga y trae un juguete de plástico que te hará chillar.
+advertisement-happyhonk-5 = ¿Qué es blanco, negro y rojo por todas partes? La mimo, que murió por un traumatismo contundente en la cabeza.
+advertisement-happyhonk-6 = ¿Cuántos agentes de seguridad hacen falta para detenerte? Tres: uno para matarte a golpes, otro para esposarte y otro para tirar tu cuerpo en mantenimiento.
+advertisement-happyhonk-7 = Happy Honk no se responsabiliza de la calidad de la comida introducida en nuestras cajas Happy Honk Meal.
+advertisement-happyhonk-8 = ¿Por qué no pides nuestro Happy Honk Meal de Mimo de edición limitada?
+advertisement-happyhonk-9 = Happy Honk es una marca de Honk! co. y es muy superior a Robust Nukie Food corp.
+advertisement-happyhonk-10 = ¡Nuestros Happy Honk Meal te ofrecerán una gran sorpresa con toda seguridad!
+thankyou-happyhonk-1 = ¡Honk!
+thankyou-happyhonk-2 = ¡Honk honk!
+thankyou-happyhonk-3 = ¡Ve a compartir la diversión! ¡Honk!
+thankyou-happyhonk-4 = ¡Ve a hacer que la gente resbale! ¡Honk!

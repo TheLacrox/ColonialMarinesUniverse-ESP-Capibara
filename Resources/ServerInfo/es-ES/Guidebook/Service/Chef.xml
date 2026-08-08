@@ -1,0 +1,75 @@
+<Document>
+# Chef
+Hay que comer, y el trabajo del chef es asegurarse de que la gente tenga algo más que basura que llevarse a la boca.
+
+
+[textlink="Haz clic aquí para ver una lista de recetas de cocina." link="FoodRecipes"]
+
+Ante todo, tendrás que familiarizarte con la cocina y las herramientas a tu disposición.
+
+<Box>
+<GuideEntityEmbed Entity="KitchenKnife"/>
+<GuideEntityEmbed Entity="LargeBeaker"/>
+<GuideEntityEmbed Entity="ReagentContainerFlour"/>
+<GuideEntityEmbed Entity="FoodContainerEgg"/>
+<GuideEntityEmbed Entity="MobCow"/>
+</Box>
+<Box>
+<GuideEntityEmbed Entity="VendingMachineChefvend" Caption="Expendedor de cocina"/>
+<GuideEntityEmbed Entity="KitchenMicrowave"/>
+<GuideEntityEmbed Entity="KitchenSpike"/>
+<GuideEntityEmbed Entity="VendingMachineDinnerware" Caption="Expendedor de vajilla"/>
+</Box>
+
+## Preparación de la cocina:
+
+Es difícil explicar cómo jugar como chef sin que parezca que te estamos dando órdenes, pero aquí tienes algunas nociones básicas.
+
+- Comprueba qué ingredientes tienes a mano; la mayoría de las cocinas cuentan con algo de harina, arroz, huevos, cubos de mono y algunas cosas más con las que empezar.
+- Prueba a preparar masa mezclando agua y harina en un vaso de precipitados. (¡Usa los fregaderos!)
+- Consulta la wiki (o la guía «Recetas de cocina») para ver qué platos puedes preparar y mete en un microondas todos los ingredientes indicados para obtener el plato elegido.
+- Coloca ratoneras. Sí, de verdad. Es fácil ver cómo desaparece todo tu duro trabajo si no tomas precauciones contra las plagas de ratones.
+
+Cuando tengas algo más de experiencia y conozcas mejor lo que puedes preparar, quizá te convenga elaborar algunos menús o una «chuleta» para poder darle a Botánica una lista de ingredientes.
+
+## Mezclar masa:
+Mezcla harina y agua en un vaso de precipitados. (¡Usa el fregadero para conseguir agua!)
+<Box>
+<GuideEntityEmbed Entity="LargeBeaker"/>
+<GuideEntityEmbed Entity="ReagentContainerFlour"/>
+<GuideEntityEmbed Entity="DrinkWaterBottleFull" Caption="agua"/>
+<GuideEntityEmbed Entity="FoodDough"/>
+</Box>
+## Preparar harina:
+Pon trigo en una trituradora (con un vaso de precipitados dentro) y ¡tritúralo!
+<Box>
+<GuideEntityEmbed Entity="KitchenReagentGrinder"/>
+<GuideEntityEmbed Entity="LargeBeaker"/>
+<GuideEntityEmbed Entity="WheatBushel"/>
+<GuideEntityEmbed Entity="ReagentContainerFlour"/>
+</Box>
+## Conseguir plantas:
+Pide a Botánica lo que necesites; sin botánico, quizá tengas que cultivar más plantas por tu cuenta.
+<Box>
+<GuideEntityEmbed Entity="SignHydro1" Caption=" "/>
+<GuideEntityEmbed Entity="hydroponicsTray"/>
+<GuideEntityEmbed Entity="WheatBushel"/>
+</Box>
+## Recoger leche:
+Haz Alt-clic en una vaca con un recipiente en la mano. (Vasos de precipitados, cubos, jarras de leche, etc.)
+<Box>
+<GuideEntityEmbed Entity="Bucket"/>
+<GuideEntityEmbed Entity="MobCow"/>
+<GuideEntityEmbed Entity="DrinkMilkCarton"/>
+</Box>
+## Cómo despiezar:
+En la mayoría de los casos, deberías poder usar un cuchillo directamente sobre una criatura muerta. Es mejor hacerlo en el congelador, ya que el proceso deja... bastante suciedad.
+
+Sin embargo, debes arrastrar a los monos (y a otros humanoides) hasta un gancho de carnicero para despiezarlos.
+<Box>
+<GuideEntityEmbed Entity="KitchenSpike"/>
+<GuideEntityEmbed Entity="KitchenKnife"/>
+<GuideEntityEmbed Entity="MobMonkey"/>
+<GuideEntityEmbed Entity="FoodMeat"/>
+</Box>
+</Document>

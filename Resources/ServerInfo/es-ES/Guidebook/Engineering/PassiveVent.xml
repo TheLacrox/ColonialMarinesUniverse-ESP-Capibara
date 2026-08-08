@@ -1,0 +1,15 @@
+﻿<Document>
+  # Conducto de ventilación pasivo
+  El conducto de ventilación pasivo es un conducto extremadamente básico.
+  Sirve de conexión directa entre la red de tuberías a la que está conectado y la atmósfera a la que está expuesto.
+  <Box>
+    <GuideEntityEmbed Entity="GasPassiveVent"/>
+  </Box>
+  Los gases pueden desplazarse libremente entre el conducto pasivo y la atmósfera a la que está conectado.
+  El conducto pasivo no necesita [textlink="energía" link="Power"] para funcionar.
+
+  Este conducto suele encontrarse en los [textlink="depósitos de almacenamiento de gas" link="GasMiningAndStorage"] de la estación y conectado a la red Waste.
+  Es una forma sencilla y fiable de extraer gases de un extractor o expulsar al espacio gases no deseados de forma segura.
+
+  El conducto pasivo puede soldarse con cualquier herramienta de soldadura para impedir que funcione.
+</Document>

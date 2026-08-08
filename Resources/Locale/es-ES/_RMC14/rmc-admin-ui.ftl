@@ -1,0 +1,22 @@
+rmc-ui-cm-actions = Acciones de RMC
+rmc-ui-transform-tab = Transformar
+rmc-ui-open-rmc-actions = Abrir acciones de RMC
+rmc-ui-marine-tab = Marine
+rmc-ui-automated-vendor-points = Puntos de expendedor automático
+rmc-ui-points = Puntos:
+rmc-ui-specialist-points = Puntos de especialista:
+rmc-ui-weapons-specialist-skills = Habilidades de especialista en armas
+rmc-ui-create-squad = Crear escuadrón
+rmc-ui-members = Miembros: {$members} vivos
+rmc-ui-add-to-squad = Añadir al escuadrón
+rmc-ui-xeno-tab = Xeno
+rmc-ui-xeno-hive = Colmena:
+rmc-ui-create-new-hive = Crear una colmena nueva
+rmc-ui-create-hive-title = Nombre de la colmena nueva
+rmc-ui-humanoid = Humanoide
+rmc-ui-tier = Nivel {$tier}
+
+rmc-ui-admin = IU de administración de RMC
+rmc-ui-rejuvenate-nearby-marines = Rejuvenecer a todos los marines cercanos
+rmc-ui-chat-bans = Vetos de chat
+rmc-ui-delay-round-end = Retrasar el final de la ronda

@@ -1,0 +1,25 @@
+<Document>
+  # Personas de limo
+
+  <Box>
+    <GuideEntityEmbed Entity="MobSlimePerson" Caption=""/>
+  </Box>
+
+  Respiran nitrógeno en vez de oxígeno, que abunda en el aire de la estación, pero resulta más difícil encontrarlo comprimido en bombonas de gas. Sufren daños importantes si se las rocía o salpica con agua, pero
+  pueden beberla sin peligro (y, como las demás especies, necesitan hacerlo) para mantenerse hidratadas.
+  Exhalan óxido nitroso y este no les afecta.
+  Su cuerpo puede procesar 6 reactivos al mismo tiempo en vez de solo 2.
+
+  Las personas de limo tienen un [bold]inventario interno de 2x3[/bold] en la membrana de limo. Cualquiera puede ver lo que hay dentro y sacártelo sin permiso,
+  así que ten cuidado.
+
+  Las personas de limo se regeneran algo más rápido que otros humanoides. También pueden endurecer los puños y, por tanto, dan puñetazos más fuertes,
+  aunque golpean un poco más despacio.
+
+  Su «sangre» de limo no puede regenerarse a partir de hierro. La sangre de limo es, técnicamente, una fuente de
+  alimento bastante saciante para otras especies, aunque beber la sangre de tus compañeros de trabajo suele estar mal visto.
+  Se asfixian un 80% más despacio, pero sufren daño por presión un 9% más rápido. Esto las convierte, con diferencia, en la especie más capaz de sobrevivir en el vacío extremo. Durante un tiempo.
+
+  Reciben [color=#1e90ff]un 40% menos de daño contundente y un 20% menos de daño por veneno[/color], pero [color=#ffa500]un 50% más de daño por frío, un 20% más de daño cortante y un 20% más de daño perforante[/color].
+
+</Document>

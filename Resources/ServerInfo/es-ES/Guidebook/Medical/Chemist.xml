@@ -1,0 +1,51 @@
+<Document>
+# Químico
+Ya lo has hecho. Has elegido el único puesto en el que las matemáticas son obligatorias. Coge tu vaso de precipitados, acerca una silla y ponte manos a la obra: es hora de preparar sustancias químicas.
+
+Aunque los químicos se dedican principalmente a preparar medicamentos, se puede fabricar una enorme variedad de sustancias, todas ellas recogidas en la entrada «Sustancias químicas» de la guía.
+
+[textlink="Haz clic aquí para ver una lista completa de sustancias químicas." link="Chemicals"]
+
+## Equipo:
+
+  <Box>
+    <GuideEntityEmbed Entity="ChemDispenser"/>
+    <GuideEntityEmbed Entity="ChemBag"/>
+    <GuideEntityEmbed Entity="KitchenReagentGrinder"/>
+    <GuideEntityEmbed Entity="ChemMaster"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="LargeBeaker"/>
+    <GuideEntityEmbed Entity="ChemistryEmptyBottle01"/>
+    <GuideEntityEmbed Entity="HandLabeler"/>
+    <GuideEntityEmbed Entity="Syringe"/>
+    <GuideEntityEmbed Entity="PillCanister"/>
+  </Box>
+
+## Conceptos básicos:
+La química resulta bastante sencilla cuando sabes qué esperar. Estos pasos te permitirán empezar.
+
+- Coge un vaso de precipitados, un bote de pastillas y, si quieres, algunos frascos.
+- Coloca el vaso en el dispensador químico y el bote de pastillas (o el frasco) en el Chem Master.
+- Abre la interfaz del dispensador químico y prepara la mezcla. Encontrarás las recetas en otras secciones de la guía.
+- Haz Alt-clic en el dispensador para retirar el vaso y colócalo en el Chem Master.
+- Abre la interfaz del Chem Master. En la pestaña Entrada, transfiere la mezcla al depósito.
+- Ve a la pestaña Salida, personaliza la pastilla y pulsa el botón Crear.
+- Haz Alt-clic en el Chem Master para sacar el bote de pastillas. Quizá tengas que retirar primero el vaso.
+- Si quieres vaciar el bote de pastillas, haz clic en una mesa, una caja u otra superficie. También puedes guardarlo o vaciarlo en otro recipiente de almacenamiento.
+
+¡Eso es todo, ya has preparado tu primer lote de pastillas! Pregunta a los médicos y al resto de la tripulación si necesitan algo más, repón los botiquines del almacén de la enfermería o limítate a experimentar.
+
+También puedes usar la etiquetadora manual para organizar frascos o bolsas individuales sin recurrir al sistema de etiquetado del Chem Master.
+
+## Contenido adicional:
+
+Hablando de experimentar, tienes algunas herramientas más a tu disposición en el ámbito de la química. Este puesto exige mucho ensayo y error, pero conviene mencionar que estas herramientas existen. Depende de ti descubrir qué puedes fabricar con ellas.
+
+  <Box>
+    <GuideEntityEmbed Entity="ModularGrenade"/>
+    <GuideEntityEmbed Entity="CableApcStack"/>
+    <GuideEntityEmbed Entity="ChemicalPayload"/>
+    <GuideEntityEmbed Entity="TimerTrigger"/>
+  </Box>
+</Document>

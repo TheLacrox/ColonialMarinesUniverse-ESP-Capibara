@@ -1,0 +1,76 @@
+<Document>
+  # Motor de antimateria (AME)
+  El motor de antimateria es un generador auxiliar de corta duración para la estación que proporciona una cantidad considerable de energía durante un tiempo limitado.
+
+  Se utiliza principalmente para ayudar a los ingenieros a poner en marcha motores mayores, como el [textlink="motor de singularidad" link="SingularityEngine"] o el [textlink="motor Tesla" link="TeslaEngine"], complementando las [textlink="baterías" link="PowerStorage"] de la estación con energía parcial para prolongar su autonomía.
+
+  ## Construcción
+  <Box>Piezas necesarias:</Box>
+  <Box>
+  <GuideEntityEmbed Entity="AmeController"/>
+  <GuideEntityEmbed Entity="AmePartFlatpack"/>
+  <GuideEntityEmbed Entity="AmeJar"/>
+  </Box>
+
+  El controlador de AME es la parte del AME que suministra energía a la red de la estación mediante una [textlink="conexión HV" link="VoltageNetworks"].
+  Por este motivo, conviene empezar a construir el AME colocando el controlador sobre un [color=orange]cable HV[/color].
+
+  La mayoría de las estaciones tienen [color=orange]cableado HV[/color] expuesto o lugares designados donde fijar con una llave un controlador de AME para conectarlo a la red.
+
+  El blindaje de AME es la estructura física que forma el motor de antimateria. Se fabrica convirtiendo paquetes planos de AME en blindaje mediante una multiherramienta.
+
+  Para construir un AME, empieza colocando un cuadrado de paquetes planos de AME de 3x3 o más grande y procura maximizar el número de piezas «centrales» que estén rodeadas por los ocho lados.
+  Cuantas más piezas centrales haya, más núcleos tendrá el AME y más energía podrá suministrar de forma segura.
+
+  <Box>
+    <GuideEntityEmbed Entity="AmePartFlatpack" Caption=""/>
+    <GuideEntityEmbed Entity="AmePartFlatpack" Caption=""/>
+    <GuideEntityEmbed Entity="AmePartFlatpack" Caption=""/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="AmePartFlatpack" Caption=""/>
+    <GuideEntityEmbed Entity="AmePartFlatpack" Caption=""/>
+    <GuideEntityEmbed Entity="AmePartFlatpack" Caption=""/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="AmePartFlatpack" Caption=""/>
+    <GuideEntityEmbed Entity="AmePartFlatpack" Caption=""/>
+    <GuideEntityEmbed Entity="AmePartFlatpack" Caption=""/>
+  </Box>
+
+  Cuando termines, usa una multiherramienta para convertir cada paquete plano de AME en blindaje; así debería formarse una configuración de AME completa.
+
+  <GuideEntityEmbed Entity="AmeController" Caption=""/>
+  <Box>
+    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="0"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="0"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="AmeShielding" Caption="" Margin="0"/>
+  </Box>
+  <Box>
+    [color=#999999][italic]Ejemplo de configuración con un núcleo[italic][/color]
+  </Box>
+
+  ## Funcionamiento
+  Para poner en marcha el AME, introduce un recipiente de combustible en el controlador de AME y fija una tasa de inyección segura.
+
+  La tasa de inyección segura es el punto en el que el AME puede funcionar sin sobrecalentarse y generar la máxima potencia posible.
+
+  Esta tasa siempre equivale al doble del número de núcleos.
+
+  Por ejemplo, un AME con un núcleo tendrá una tasa de inyección segura de 2. Con dos núcleos, la tasa de inyección segura será de 4, y así sucesivamente.
+
+  Si superas esta proporción, el motor acabará [color=#ff0000]sobrecalentándose[/color] y, poco después, [color=#ff0000]explotará[/color].
+
+  El controlador de AME [textlink="informa" link="InspectingPower"] tanto de la energía que suministra a la red como de la potencia máxima teórica que podría suministrar si se le exigiera.
+
+</Document>

@@ -1,0 +1,23 @@
+﻿<Document>
+  # Condensación de gases
+  Los condensadores de gas toman gases y los condensan en sus formas líquidas (reactivos).
+
+  <Box>
+    <GuideEntityEmbed Entity="BaseGasCondenser"/>
+  </Box>
+
+  Por ejemplo, el vapor de agua puede condensarse en agua líquida, el oxígeno en oxígeno líquido, etcétera.
+
+  Dispone de una conexión a una [textlink="red de tuberías" link="PipeNetworks"] para introducir gas y de un depósito interno para almacenar el líquido condensado.
+
+  El condensador dejará de condensar gas si el depósito está lleno.
+  Puedes extraer líquido del condensador interactuando con él mediante cualquier recipiente vacío.
+
+  Los condensadores de gas pueden recibir varios gases y los condensarán en sus formas líquidas.
+  Por ejemplo, si introduces una mezcla de oxígeno y nitrógeno, obtendrás oxígeno líquido y nitrógeno líquido en el depósito de salida.
+
+  Como [textlink="Química" link="Chemist"] trabaja con un número limitado de reactivos en forma líquida, agradecerá mucho la labor de un técnico de atmósfera hábil que pueda proporcionarle los reactivos que necesite.
+
+
+
+</Document>

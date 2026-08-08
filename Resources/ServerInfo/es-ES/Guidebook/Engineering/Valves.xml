@@ -1,0 +1,16 @@
+﻿<Document>
+  # Válvulas
+  Las válvulas permiten detener o dejar pasar rápidamente el flujo de gas por una [textlink="red de tuberías" link="PipeNetworks"].
+  <Box>
+    <GuideEntityEmbed Entity="GasValve"/>
+    <GuideEntityEmbed Entity="SignalControlledValve"/>
+    <GuideEntityEmbed Entity="PressureControlledValve"/>
+    <GuideEntityEmbed Entity="GasPassiveGate"/>
+    <GuideEntityEmbed Entity="GasPressureRegulator"/>
+  </Box>
+  Ninguna válvula necesita [textlink="energía" link="Power"] para funcionar.
+
+  Las válvulas pueden parecer sencillas, pero permiten crear una gran variedad de sistemas de tuberías complejos, como:
+  - Válvulas de señal que responden a las salidas de una alarma atmosférica o una puerta lógica
+  - Válvulas neumáticas que controlan la expulsión variable de gases residuales desde una cámara de combustión
+</Document>

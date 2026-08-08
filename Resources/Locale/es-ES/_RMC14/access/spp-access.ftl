@@ -1,0 +1,10 @@
+rmc-access-spp-general = General SPP
+rmc-access-spp-medical = Medicina SPP
+rmc-access-spp-engineering = Ingeniería SPP
+rmc-access-spp-security = Seguridad SPP
+rmc-access-spp-armory = Armería SPP
+rmc-access-spp-flight = Vuelo SPP
+rmc-access-spp-research = Investigación SPP
+rmc-access-spp-commando = Comandos SPP
+rmc-access-spp-leadership = Liderazgo SPP
+rmc-access-spp-senior-lead = Mando superior SPP

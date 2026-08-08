@@ -1,0 +1,11 @@
+<Document>
+  # Humanos
+
+  <Box>
+    <GuideEntityEmbed Entity="MobHumanDummy" Caption=""/>
+  </Box>
+
+  Según a quién preguntes, los humanos son poco destacables o el patrón universal con el que se compara todo lo demás.
+  No tienen mecánicas especiales ni atributos notables.
+
+</Document>

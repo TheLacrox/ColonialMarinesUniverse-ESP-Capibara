@@ -1,0 +1,4 @@
+﻿<Document>
+  # Regla para silicios 8 - Tu HUD determina quién forma parte de la tripulación
+  Salvo que una ley redefina qué es la tripulación, cualquier persona a quien tu HUD muestre con un puesto, incluidos los pasajeros, forma parte de ella. No puedes hacer nada que provoque que alguien deje de considerarse parte de la tripulación, pero sí puedes permitir que otra persona haga algo que tenga ese efecto.
+</Document>

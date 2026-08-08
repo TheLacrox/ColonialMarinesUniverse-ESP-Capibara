@@ -1,0 +1,64 @@
+<Document>
+  # Robótica
+  El equipo de Ciencia puede crear varios tipos únicos de robots para satisfacer las necesidades de la estación. Para empezar, tendrás que investigar la tecnología de [color=#a4885c]Robótica[/color].
+
+  ## Fabricador de exotrajes
+<Box>
+<GuideEntityEmbed Entity="ExosuitFabricator" Caption="Fabricador de exotrajes"/>
+</Box>
+  El [color=#a4885c]fabricador de exotrajes[/color] es donde imprimirás la mayoría de las piezas para tus creaciones, como:
+  - Extremidades de [textlink="cíborg" link="Cyborgs"]
+  - Piezas y equipamiento de mecas
+  - Sensores de proximidad
+
+  El fabricador de exotrajes funciona como cualquier otro torno de la estación: haz clic en él para abrir la interfaz y, a continuación, en el icono de la pieza que quieras imprimir.
+  - ¿No aparece ninguna receta? Pulsa el botón [color=#a4885c]sincronizar[/color] de la interfaz para buscar planos nuevos. Si aun así no aparece nada, ¡es probable que todavía no hayas investigado la tecnología correspondiente!
+  - Si una receta aparece atenuada, probablemente falten materiales. Para insertar materiales nuevos (ya sean [color=#99A3A4]acero[/color], [color=#ECF0F1]plástico[/color] o [color=#AED6F1]vidrio[/color]), solo tienes que hacer clic en el fabricador mientras sostienes dicho material.
+
+  Todas las estaciones comienzan con un conjunto completo de equipamiento de robótica, pero puedes construir otro fabricador si está disponible la tecnología de [color=#a4885c]Robótica[/color], que te permitirá fabricar la placa de circuitos correspondiente.
+
+  ## Robots
+<Box>
+<GuideEntityEmbed Entity="MobCleanBot" Caption="Cleanbot"/>
+<GuideEntityEmbed Entity="MobMedibot" Caption="Medibot"/>
+</Box>
+<Box>
+<GuideEntityEmbed Entity="MobHonkBot" Caption="Honkbot"/>
+<GuideEntityEmbed Entity="MobMimeBot" Caption="Mimebot"/>
+</Box>
+  Los [color=#a4885c]robots[/color] son autómatas pequeños y sencillos capaces de realizar tareas simples, como limpiar. No utilizan baterías, pero son bastante frágiles. Para fabricarlos hacen falta piezas que pueden producirse en un fabricador de exotrajes.
+
+  Para fabricar un robot, abre el [color=#a4885c]menú de construcción[/color], ve a la categoría «Utilidades» (o busca simplemente «bot») y encontrarás la lista completa de recetas. Para montar el robot, debes tener cerca las piezas indicadas en la receta y pulsar [color=#a4885c]Construir[/color]; ¡al cabo de unos segundos, tu nuevo sirviente de silicio aparecerá a tus pies!
+
+  ## Mecas
+<Box>
+<GuideEntityEmbed Entity="MechRipley" Caption="Ripley APLU"/>
+<GuideEntityEmbed Entity="MechHonker" Caption="H.O.N.K."/>
+<GuideEntityEmbed Entity="MechHamtr" Caption="HAMTR"/>
+<GuideEntityEmbed Entity="MechVim" Caption="Vim"/>
+</Box>
+  Los [color=#a4885c]mecas[/color] son gigantescas moles de metal diseñadas para realizar distintas funciones según el modelo. Los pilotan los jugadores y necesitan baterías para funcionar.
+
+  Cada meca necesita su propio conjunto exclusivo de extremidades y piezas. Estas pueden fabricarse en el fabricador de exotrajes como cualquier otra pieza, salvo las [color=#a4885c]placas de circuitos[/color] necesarias, que se crean en una [color=#a4885c]impresora de placas de circuitos[/color], normalmente situada en el departamento de [textlink="Ciencia" link="Science"].
+<Box>
+<GuideEntityEmbed Entity="RipleyCentralElectronics" Caption="Módulo de control central Ripley"/>
+</Box>
+<Box>
+<GuideEntityEmbed Entity="RipleyPeripheralsElectronics" Caption="Módulo de control de periféricos Ripley"/>
+</Box>
+
+  Por ejemplo, las dos placas de circuitos anteriores son necesarias para crear un meca Ripley y no sirven para fabricar ningún otro meca.
+
+  Para empezar a fabricar un meca, imprime su arnés en el fabricador e inserta las extremidades; puedes [color=#a4885c]examinarlo[/color] para saber cómo continuar la construcción cuando todas estén colocadas.
+  - Después de montar el chasis, cada meca requiere cierta combinación de cables, el uso de herramientas y sus propias placas de circuitos exclusivas. La mayoría de los mecas tienen dos o más placas de circuitos únicas. Por ejemplo, el meca [color=#a4885c]Ripley[/color] necesita una placa de [color=#a4885c]módulo de control Ripley[/color] y otra de [color=#a4885c]módulo de periféricos Ripley[/color].
+  - Crear un meca exige grandes cantidades de material; ¡no olvides pedir a tus compañeros científicos y al personal de Carga cualquier material que te falte!
+  - El exotraje Vim requiere un par de piernas de cíborg y un casco EVA, normal o del Sindicato, además de un activador por voz y una batería.
+
+  ## Equipamiento
+    Un meca no es más que un caro montón de metal sin sus herramientas exclusivas. El equipamiento puede crearse en el fabricador como cualquier otra pieza.
+<Box>
+<GuideEntityEmbed Entity="MechEquipmentGrabber" Caption="Ejemplo: pinza hidráulica"/>
+</Box>
+  - Para instalar equipamiento, haz clic en el meca con el objeto en la mano.
+  - Para usar el equipamiento, ejecuta la acción «Cambiar equipo» hasta tener equipada la herramienta que quieras.
+</Document>

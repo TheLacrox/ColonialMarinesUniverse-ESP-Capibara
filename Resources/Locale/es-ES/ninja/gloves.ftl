@@ -1,0 +1,6 @@
+ninja-gloves-on = ¡Los guantes se cargan de energía!
+ninja-gloves-off = Los guantes se apagan...
+ninja-gloves-not-wearing-suit = No llevas puesto un traje ninja
+ninja-gloves-examine-on = Todas las habilidades están activadas.
+ninja-gloves-examine-off = Unos viejos guantes aburridos...
+ninja-doorjack-success = Los guantes descargan energía sobre algo de {THE($target)}.

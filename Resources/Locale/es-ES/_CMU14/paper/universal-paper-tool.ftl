@@ -1,0 +1,10 @@
+cmu-universal-paper-tool-window-title = Herramienta universal de papel
+cmu-universal-paper-tool-header = Plantillas de papel
+cmu-universal-paper-tool-paper-loaded = Papel cargado.
+cmu-universal-paper-tool-paper-missing = Introduce papel antes de imprimir.
+cmu-universal-paper-tool-paper-slot-name = Alimentador de papel
+cmu-universal-paper-tool-paper-inserted = Papel cargado.
+cmu-universal-paper-tool-paper-invalid = La herramienta solo acepta papel.
+cmu-universal-paper-tool-printed = Se imprimió {$paper}.
+cmu-universal-paper-tool-no-paper = Introduce papel primero.
+cmu-universal-paper-tool-invalid-template = Esa plantilla no es un prototipo de papel.

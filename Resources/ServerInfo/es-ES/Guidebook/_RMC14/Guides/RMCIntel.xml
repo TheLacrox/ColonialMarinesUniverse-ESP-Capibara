@@ -1,0 +1,111 @@
+<Document>
+  # Inteligencia
+
+  <Box>
+    «Las seis categorías de las operaciones de inteligencia son: planificación y dirección; obtención; procesamiento y explotación; análisis y producción; difusión e integración; y evaluación y retroalimentación».
+    \n- U.S. mil, JP 2-0
+  </Box>
+
+  ## Fuentes
+
+  - Cualquiera puede obtener información de inteligencia, aunque algunas fuentes requieren formación especializada.
+
+  [color=#A88B5E][bold]Enlace de datos[/bold][/color]
+
+  - Restablecer la [textlink="electricidad" link="RMCGuideRoleCombatTechnician"] y las [textlink="comunicaciones" link="RMCGuideCommunicationsTowers"] por primera vez concede puntos de inteligencia.
+
+  [color=#A88B5E][bold]Cadáveres[/bold][/color]
+
+  <Box>
+    <GuideEntityEmbed Entity="CMGuidebookRoleSurvivor" />
+    <GuideEntityEmbed Entity="RMCGuidebookCorpseColonistBurst" />
+  </Box>
+
+  - Los supervivientes otorgan puntos la primera vez que llegan al buque de guerra.
+  - Los colonos muertos deben guardarse en la morgue.
+
+  <Box>
+    <GuideEntityEmbed Entity="CMXenoDefender" />
+    <GuideEntityEmbed Entity="CMXenoWarrior" />
+    <GuideEntityEmbed Entity="RMCXenoCrusher" />
+    <GuideEntityEmbed Entity="RMCGuidebookXenoQueen" />
+  </Box>
+
+  - Los xenónidos deben guardarse en la sala de contención de investigación de la segunda planta de Medicina.
+  \n\t- Cuanto mayores sean, más puntos otorgarán.
+  \n\t- Ten en cuenta que los inmaduros (Parásitos, Larvas y Drones Menores) no otorgan ningún punto.
+
+  [color=#A88B5E][bold]Documentos y dispositivos[/bold][/color]
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCIntelPaperScrap" />
+    <GuideEntityEmbed Entity="RMCIntelProgressReport" />
+    <GuideEntityEmbed Entity="RMCIntelFolder" />
+    <GuideEntityEmbed Entity="RMCIntelTechnicalManual" />
+  </Box>
+
+  1. El personal cualificado debe leer estos documentos.
+  \n\t\t\t- Los documentos más complejos requieren haber leído antes los más sencillos.
+  \n\t\t\t- scrap -> report -> folder -> manual
+  \n2. Después, el conocimiento adquirido debe introducirse en el ordenador de inteligencia de la sala de inteligencia.
+  \n3. Por último, el documento leído debe guardarse en la sala de inteligencia.
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCIntelRetrieveHealthAnalyzer" />
+  </Box>
+
+  - Estos dispositivos deben guardarse en la sala de inteligencia.
+
+  ## Trabajo de inteligencia
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookRoleASO" />
+    <GuideEntityEmbed Entity="RMCGuidebookRoleIO" />
+    <GuideEntityEmbed Entity="CMGuidebookRoleYou" />
+  </Box>
+
+  Has elegido, o te han elegido, para trabajar en Inteligencia.
+  Tu cometido principal consiste en recopilar y procesar información procedente de las fuentes ya mencionadas.
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCPouchDocument" />
+    <GuideEntityEmbed Entity="RMCIntelDetector" />
+    <GuideEntityEmbed Entity="RMCFulton" />
+    <GuideEntityEmbed Entity="CMEncryptionKeyIntel" />
+  </Box>
+
+  Para ayudarte, se te han proporcionado las herramientas indicadas arriba.\nTen en cuenta que [textlink="Requisiciones" link="RMCRequisitions"] también dispone de ellas.
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCVisorNightVision" />
+    <GuideEntityEmbed Entity="RMCKitIntel" />
+  </Box>
+
+  Sin embargo, hay dos objetos «exclusivos» con los que Requisiciones no puede ayudarte.
+  Uno es el visor nocturno recargable, que permite ver en la oscuridad durante un tiempo limitado.
+  El otro es el kit de apoyo de inteligencia de campaña, que incluye las herramientas indicadas arriba y un folleto de inteligencia que enseña a utilizar el ordenador de inteligencia.
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCComputerIntel" />
+    <GuideEntityEmbed Entity="RMCTechTreeConsole" />
+  </Box>
+
+  Después de equiparte, familiarízate con los dispositivos de la sala de inteligencia y del CIC.
+  El ordenador de inteligencia sirve para registrar lo que has leído en los documentos, y la consola del árbol tecnológico permite gastar la inteligencia recopilada.
+
+  [color=#A88B5E][bold]Despliegue[/bold][/color]
+
+  O, mejor dicho: «[italic]Todo eso está muy bien, pero ¿cómo funcionará en la práctica?[/italic]»
+
+  - El ASO permanecerá en el laboratorio de inteligencia para leer y clasificar todos los documentos que lleguen e introducir el conocimiento adquirido en el ordenador de inteligencia.
+  - El CMO arrastrará los xenónidos muertos hasta el laboratorio de investigación.
+  - Los pilotos y DCC instalarán un sistema de recuperación Fulton, normalmente en la Normandy, aunque a veces también en la Alamo.
+  - Los IO formarán un escuadrón, a veces junto con un par de marines más, para recopilar información de inteligencia.
+  - Los marines que lleven sistemas Fulton deben extraer los xenónidos muertos.
+  - Los marines que encuentren material de inteligencia deben entregárselo a los IO que pasen, llevarlo a la FOB (base de operaciones avanzada) o enviarlo mediante Fulton dentro de cajas.
+
+  Habla con tu superior o con el SEA si tienes dudas o alguna pregunta.
+  <Box>
+    <GuideEntityEmbed Entity="CMGuidebookRoleSEA"/>
+  </Box>
+</Document>

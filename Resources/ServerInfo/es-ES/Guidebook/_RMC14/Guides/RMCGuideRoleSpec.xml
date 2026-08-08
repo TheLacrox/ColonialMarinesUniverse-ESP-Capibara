@@ -1,0 +1,47 @@
+<Document>
+  ## Recursos de élite de la UNMC
+  Los especialistas de escuadra se cuentan entre los recursos más potentes que despliega la UNMC. Desde el primer momento, estos operativos pueden influir de forma decisiva en el desenlace de cualquier batalla.
+
+  Aunque disponen de kits exclusivos y armas potentes para apoyar a la escuadra, [bold]no[/bold] son lobos solitarios ni «héroes de acción» y deben operar como parte integral del equipo.
+  Comprender la función de cada especialista es fundamental para maximizar su aportación a la maquinaria bélica de los marines.
+
+  Esta página ofrece consejos generales para los nuevos especialistas, seguidos de breves introducciones a cada kit concreto que conducen a guías individuales más detalladas.
+
+  ## Consejos generales para todos los especialistas
+
+   <Box>[bold]La munición es valiosa[/bold]: </Box>
+  - La mayor parte de la munición de especialista es potente y cara, ya sea por su coste en puntos de requisiciones o por su rareza. [color=#ffcc00]Consérvala.[/color]
+  - Para muchos kits, conviene solicitar munición adicional a Requisiciones al principio de la ronda y así evitar quedarte sin ella en un momento crítico.
+
+   <Box>[bold]Conoce tu equipo & tu función[/bold]: </Box>
+  - Comprende los puntos fuertes, las debilidades y los usos óptimos de tu kit de especialista y sus armas. No malgastes un cohete antiblindaje contra un dron solitario si tu equipo lo necesita para un Triturador.
+  - Antes del despliegue, familiarízate a fondo con cada pieza del kit. Aprende a cambiar con rapidez el tipo de munición, el alcance efectivo de tus armas y el radio de explosión o las propiedades especiales de tus municiones y habilidades.
+
+   <Box>[bold]La conciencia de la situación es esencial[/bold]: </Box>
+  - Al ser un objetivo de gran valor, es probable que los hostiles te [italic]señalen[/italic] como prioridad. Mantente siempre alerta, sobre todo ante posibles flanqueos.
+  - A veces, llevar la armadura normal de marine en vez de la de especialista reduce esa atención, pero a costa de las ventajas de tu armadura especializada.
+
+   <Box>[bold]Sigue con vida: eres un multiplicador de fuerza[/bold]: </Box>
+  - Aunque la vida de cada marine es valiosa, como especialista aportas capacidades exclusivas capaces de cambiar las tornas. Actúa con cabeza, no corras riesgos innecesarios y da prioridad a tu supervivencia para seguir apoyando al equipo. Tu pérdida suele perjudicar más a la capacidad global de la escuadra.
+
+
+  ## Kits de especialista disponibles
+  Haz clic en el nombre de un especialista para consultar una guía detallada sobre su equipo, sus tácticas y sus capacidades exclusivas.
+
+  - [bold][textlink="Especialista granadero pesado" link="RMCGuideRoleGrenadierSpec"][/textlink][/bold] - «Fan de Michael Bay»
+  - Derrochadores de munición explosiva, los granaderos pesados emplean el lanzagranadas multidisparo M83 para lanzar con precisión diversas granadas, abrir caminos y aturdir a grupos de enemigos. Su armadura M3-G4 ofrece una protección considerable.
+  <Box> <GuideEntityEmbed Entity="WeaponLauncherM83" Context=""/> <GuideEntityEmbed Entity="RMCArmorM3G4" Context=""/> <GuideEntityEmbed Entity="CMGrenadeFrag" Context=""/> <GuideEntityEmbed Entity="CMGrenadeHighExplosive" Context=""/> <GuideEntityEmbed Entity="RMCGrenadeIncendiary" Context=""/> </Box>
+
+  - [bold][textlink="Especialista en demoliciones" link="RMCGuideRoleDemoSpec"][/textlink][/bold] - «Antitodo»
+  - Cuando algo debe quedar completamente aniquilado, el especialista en demoliciones recurre al lanzador antitanque M5. Capaz de disparar cohetes HE y AP, es la pesadilla de los objetivos pesados y las posiciones fortificadas.
+  <Box> <GuideEntityEmbed Entity="RMCWeaponLauncherM5ATL" Context="" /> <GuideEntityEmbed Entity="RMCRocket84mm" Context=""/> <GuideEntityEmbed Entity="RMCRocket84mmAntiArmor" Context=""/> <GuideEntityEmbed Entity="RMCExplosivePlastic" Context=""/> </Box>
+
+  - [bold][textlink="Especialista francotirador" link="RMCGuideRoleSniperSpec"][/textlink][/bold] - «Disuasión a larga distancia»
+  - Armado con el fusil de francotirador M96S o el fusil de francotirador antimaterial XM43E1, este especialista proporciona un apoyo de fuego a larga distancia esencial, capaz de ralentizar objetivos clave y actuar como un potente elemento de disuasión psicológica frente a los avances xenónidos. Incluye un kit de observador para un fusilero.
+  <Box> <GuideEntityEmbed Entity="CMM96SSniperRifle" Context=""/> <GuideEntityEmbed Entity="RMCXM43E1AntiMaterielRifle" Context=""/> <GuideEntityEmbed Entity="RMCKitSpotter" Context=""/> </Box>
+
+  - [bold][textlink="Especialista explorador" link="RMCGuideRoleScoutSpec"][/textlink][/bold] - «Cazador silencioso & inteligencia»
+  - Armado con el contundente fusil de combate M4SPR personalizado y una capa térmica M68, el explorador destaca en reconocimiento, designación de objetivos mediante su designador de explorador y enfrentamientos quirúrgicos.
+  <Box> <GuideEntityEmbed Entity="WeaponRifleM4SPRCustom" Context=""/> <GuideEntityEmbed Entity="RMCBackpackScout" Context=""/> <GuideEntityEmbed Entity="RMCLaserDesignatorScout" Context=""/> </Box>
+
+</Document>

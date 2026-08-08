@@ -1,0 +1,86 @@
+<Document>
+  # Especialista en demoliciones: «Antitodo» (SADAR)
+
+  ## La solución definitiva a cualquier problema
+  Dificultad: [color=#FF0000]Difícil[/color]
+
+
+  Cuando amenazas colosales, como blindados enemigos o bioformas gigantescas, aparecen en el horizonte, el especialista en demoliciones es la respuesta definitiva de la UNMC.
+  Armado con el devastador M5-ATL, este operativo emplea la munición portátil de mayor potencia disponible, capaz de neutralizar los objetivos más formidables mediante cohetes bien colocados.
+  Su mera presencia es un arma psicológica que infunde miedo en el corazón del enemigo.
+
+  ## Kit reglamentario
+  El especialista en demoliciones se despliega con el siguiente equipo esencial:
+  <Box> <GuideEntityEmbed Entity="RMCWeaponLauncherM5ATL"/> </Box>
+
+  <Box> <GuideEntityEmbed Entity="RMCKitLoader"/> </Box>
+
+  ## Dominar el arsenal
+
+  ### El M5-ATL: devastación portátil
+  El M5-ATL (a menudo denominado SADAR) es la herramienta principal del especialista en demoliciones y el origen de su temible reputación. Se ha diseñado con un único propósito: la destrucción extrema.
+
+  -   [bold]Potencia de fuego abrumadora[/bold]: el M5-ATL lanza algunos de los cohetes de un solo disparo más potentes del juego. Un impacto directo de cualquier tipo de cohete matará a la mayoría de los humanos y a los xenónidos de castas inferiores. Los xenónidos de castas superiores serán derribados o quedarán en estado crítico.
+  -   [bold]Impacto psicológico[/bold]: la mera visión y el sonido de un ATL pueden sembrar el pánico y el desorden entre las filas enemigas. Los xenónidos, en particular, suelen recelar de la presencia de un especialista en demoliciones.
+
+  [bold]Consideraciones operativas & riesgos:[/bold]
+
+  -   [color=#FF0000][bold]SIN SISTEMA IFF[/bold][/color]: los cohetes no distinguen objetivos y dañarán o matarán todo lo que se encuentre en su radio de explosión, incluidos los marines aliados. Es imprescindible extremar la precaución.
+  -   [bold]Retraso al empuñar[/bold]: el RPG presenta un retraso perceptible al empuñarlo después de equiparlo. Tenlo en cuenta durante los combates rápidos.
+  -   [bold]Los cohetes pueden fallar[/bold]: a pesar de su potencia, los cohetes son proyectiles y pueden no alcanzar el objetivo, sobre todo a distancia o contra enemigos ágiles.
+
+  ### Tipos de cohete & efectos
+  El M5-RPG utiliza dos tipos principales de cohete:
+  <Box>   <GuideEntityEmbed Entity="RMCRocket84mm"/> </Box>
+  -Detona con una gran explosión (radio aproximado de 3 casillas), causa un daño considerable en el área e inflige daño adicional a todo lo que reciba el impacto directo del cohete.
+  - Este cohete sobresale contra xenónidos sin armadura; no debe descartarse su uso contra xenónidos de castas inferiores. Los cohetes HE son excelentes para controlar multitudes.
+  <Box>   <GuideEntityEmbed Entity="RMCRocket84mmAntiArmor"/> </Box>
+  -Casi no causa daño en el área, pero inflige [italic]un daño directo enorme[/italic] y un aturdimiento prolongado si el cohete alcanza físicamente el objetivo. Es ideal contra objetivos individuales con mucho blindaje, como xenónidos T3 o vehículos enemigos. Resulta sorprendentemente útil a corta distancia contra determinados objetivos gracias a su impacto concentrado.
+
+  ### El cargador: multiplica tu potencia
+
+  Un multiplicador de fuerza importante para el especialista en demoliciones es el uso eficaz de un cargador asignado.
+  Aunque [italic]cualquier compañero de escuadra puede ayudar a recargar[/italic] al especialista en demoliciones, contar con un cargador asignado y debidamente equipado aumenta de forma considerable tanto la seguridad como la capacidad de mantener el fuego.
+
+  <Box> <GuideEntityEmbed Entity="RMCKitLoader"/> </Box>
+  -   Este kit especializado puede entregarse a un fusilero normal para convertirlo en cargador del ATL. El cargador debe sostener el cohete mientras el operador empuña el ATL e interactuar con él para iniciar la recarga.
+
+  -   [bold]Aumento drástico de la velocidad de recarga[/bold]: con la ayuda de un fusilero equipado con el kit de cargador, el tiempo de recarga del M5-ATL se [italic]reduce drásticamente[/italic]. Esta sinergia convierte el ATL, que suele disparar despacio, en un arma capaz de lanzar cohetes en una sucesión mucho más rápida.
+  -   [bold]Potencia de fuego sostenida[/bold]: la enorme reducción del tiempo entre disparos permite al especialista en demoliciones mantener la presión sobre los objetivos, encadenar con rapidez un segundo ataque tras el impacto inicial o enfrentarse a varias amenazas en menos tiempo.
+  <Box>[bold]El cargador como compañero de combate[/bold]:</Box>
+  Para aprovechar esta ventaja, es absolutamente imprescindible que el especialista en demoliciones y su cargador se coordinen estrechamente y se comuniquen con claridad.
+  El cargador debe permanecer muy cerca, por lo general situado a salvo detrás del especialista en demoliciones, para facilitar una recarga inmediata después de cada disparo.
+  Además de permitir recargas más rápidas, un cargador asignado debe actuar como un auténtico [bold]compañero de combate[/bold]. Sus funciones también incluyen:
+  - [color=#FFA500]Proporcionar fuego de cobertura[/color] con su propia arma principal mientras el operador del ATL apunta o está expuesto.
+  - [color=#FFA500]Rematar los disparos del operador del ATL[/color] para ayudar a acabar con los objetivos debilitados o aturdidos por un cohete.
+  - [color=#FFA500]Vigilar activamente la espalda[/color] y los flancos del especialista en demoliciones, algo fundamental para impedir que lo capturen o le tiendan una emboscada, pues el operador del ATL suele estar concentrado en lo que tiene delante.
+  - El equipo de protección individual (EPI) del kit de cargador RMC ofrece mayor protección al ayudante asignado, lo que aumenta sus probabilidades de sobrevivir mientras cumple estas tareas de apoyo cercano. Su participación activa y su vigilancia protectora son esenciales para maximizar el rendimiento del ATL y la supervivencia del especialista en demoliciones.
+
+  ## Aplicación táctica & prácticas recomendadas
+
+  Como especialista en demoliciones, tu función principal consiste en neutralizar las amenazas más peligrosas del campo de batalla. Eres un objetivo prioritario para el enemigo debido a tu potencial destructivo.
+
+                                                                                    <Box> [bold]Consideraciones esenciales para operar con eficacia:[/bold]</Box>
+  -  [bold]La munición vale oro[/bold]: [color=#FFD700]tus cohetes son increíblemente potentes, pero también extremadamente escasos y difíciles de reponer.[/color] Haz que cada disparo cuente. Reserva estrictamente la munición para objetivos de gran valor o situaciones en las que ningún otro recurso pueda lograr el efecto deseado. En la práctica, eres especialista en «ataques decisivos iniciales».
+                                                                                       <Box>  [bold]Dar prioridad a los objetivos es primordial[/bold]:</Box>
+  <Box> [color=#DAA520]Reserva los cohetes AP (antiblindaje) sobre todo para xenónidos de nivel superior[/color], como los T3 (Trituradores, Pretorianos, Devastadores y Reinas), u otras amenazas individuales con mucho blindaje.</Box>
+  <Box> [color=#FFA500]Emplea los cohetes HE (alto explosivo) contra grupos peligrosos de xenónidos pequeños con poca armadura[/color] (T1-T2, como Guerreros, Drones y Corredores). El daño en el área de los cohetes HE resulta excelente para controlar multitudes y desbaratar estos grupos enemigos.</Box>
+
+  -  [bold]Cuenta con que te darán caza[/bold]: [color=#FF0000]los hostiles llegarán a extremos insospechados para eliminarte.[/color] Mantén una gran conciencia de la situación, colabora estrechamente con tu escuadra para que te proteja y evita las posiciones aisladas.
+  -  [bold]Vigila la trayectoria[/bold]: asegúrate de contar con una línea de tiro despejada. Los cohetes, como las granadas, pueden chocar con el terreno. No dispares si hay marines entre el objetivo y tú.
+  -  [bold]Gestión del inventario[/bold]: los cohetes son voluminosos. Usa las bolsas para cohetes o plantéate recurrir a un cargador para disponer de almacenamiento alternativo. Controla también la munición de tu arma secundaria.
+
+  ## Tácticas específicas
+
+  Como el M5-ATL carece de sistema IFF, [italic]debes[/italic] tener una visión directa y despejada del objetivo. Estas son algunas estrategias:
+
+  - [bold]Aprovecha los chillidos de la Reina[/bold]: uno de los mejores momentos para disparar un cohete es cuando la Reina chilla, aturde a los marines cercanos y los obliga a caer al suelo. Si puedes anticipar el chillido (p. ej., al oír que se acercan sus pisadas características antes de este ataque), intenta colocarte de forma que no te aturda (p. ej., saliendo brevemente de su alcance o rompiendo la línea de visión).
+    Inmediatamente después de que el chillido inmovilice a los marines, avanza deprisa (o cambia de posición) para colocar un disparo preciso en los objetivos vulnerables y desprevenidos. Esta táctica puede resultar muy eficaz para conseguir bajas decisivas o infligir un daño enorme.
+  - [bold]La movilidad es esencial[/bold]: como operador del SADAR, es fundamental ser rápido y móvil. Tu armadura ligera ayuda. Cambia de posición constantemente para encontrar líneas de visión despejadas, flanquear enemigos atrincherados o escapar de las represalias tras disparar. No seas un blanco inmóvil. Poder alcanzar rápidamente una posición de tiro óptima y reubicarte después puede garantizar muchos ataques con cohetes exitosos.
+  - [bold]Arma secundaria para rematar[/bold]: tras lanzar un cohete, sobre todo si no mata al instante a un objetivo con mucha salud (como un T3 que haya quedado aturdido o herido), cambia rápidamente a un arma secundaria fiable para rematarlo. La M63 es una opción excelente gracias a su funda de cinturón y te permitirá acabar con objetivos debilitados sin gastar otro cohete valioso.
+
+  ## El peso de las expectativas
+  El especialista en demoliciones porta la mayor potencia de fuego y, con ella, una responsabilidad inmensa. Tu capacidad para eliminar amenazas capaces de cambiar la partida puede marcar la diferencia entre la victoria y la derrota.
+  Sin embargo, la escasez de munición, los peligros inherentes del arma y la determinación del enemigo por neutralizarte hacen que este sea un rol difícil, que exige precisión, paciencia y nervios de acero.
+
+</Document>

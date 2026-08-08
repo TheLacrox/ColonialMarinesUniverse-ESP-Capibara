@@ -1,0 +1,20 @@
+﻿<Document>
+  #Defensor, nivel 1
+  <GuideEntityEmbed Entity="CMXenoDefender"/>
+  ##Jugar como Defensor
+  Tu gran armadura te permite actuar tanto en defensa como en ataque. Puedes irrumpir con Cabezazo para asestar un Barrido de cola, bajar la cresta para proteger a las hermanas que se retiran y, en ciertas situaciones, Fortificarte para romper barricadas o cubrir a los Bombarderos.
+
+  También transportas capturas con eficacia, pues puedes placar a los huéspedes, mantenerlos derribados, devorarlos y llevarlos hasta un nido.
+
+  Si eres principiante, basta con usar Cabezazo para impulsarte hacia los huéspedes, realizar después un Barrido de cola y retirarte. Recuerda bajar la cresta tras el barrido para que las escopetas no te aturdan.
+
+  ##Habilidades:
+  - [bold]Cabezazo[/bold]: Te lanza contra el objetivo, le inflige poco daño y lo empuja. Si tienes la cresta bajada, lo empujará más lejos.
+   <GuideEntityEmbed Entity="RMCGuidebookActionXenoHeadbutt"/>
+  - [bold]Barrido de cola[/bold]: Gira y usa la cola para derribar y lanzar a todos los objetivos situados en un radio de una casilla a tu alrededor. Inflige una pequeña cantidad de daño.
+   <GuideEntityEmbed Entity="RMCGuidebookActionXenoTailSweep"/>
+  - [bold]Alternar defensa con la cresta[/bold]: Bajar la cresta aumenta tu reserva de armadura y te vuelve inmune a casi todos los aturdimientos, como los de escopetas y granadas, aunque te ralentiza.
+   <GuideEntityEmbed Entity="RMCGuidebookActionXenoToggleCrestDefence"/>
+  - [bold]Fortificarse[/bold]: Te fija a una casilla, aumenta muchísimo tu reserva de armadura y concede resistencia a las explosiones a cambio de inmovilizarte.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoFortify"/>
+</Document>

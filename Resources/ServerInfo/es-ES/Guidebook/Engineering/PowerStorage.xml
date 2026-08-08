@@ -1,0 +1,50 @@
+﻿<Document>
+  # Almacenamiento de energía
+  Debido al [textlink="incremento gradual de potencia" link="Ramping"], es importante disponer de dispositivos de almacenamiento que ayuden a suavizar los picos y bajadas del consumo, además de suministrar energía en caso de déficit.
+
+  Cada transformador de su nivel de tensión correspondiente ([color=orange]HV[/color], [color=yellow]MV[/color] y [color=green]LV[/color]) tiene conectada una pequeña batería para gestionar picos y bajadas menores; sin embargo, esto no sirve ante un déficit grande de la red.
+
+  ## SMES
+
+  La unidad de almacenamiento de energía magnética superconductora (SMES) es un dispositivo capaz de almacenar una gran cantidad de energía y liberarla con rapidez.
+
+  <Box>
+    <GuideEntityEmbed Entity="SMESBasic"/>
+  </Box>
+
+  Para cargar la unidad SMES, debe suministrarse energía [color=orange]HV[/color] a un terminal de cable orientado hacia ella. El SMES extraerá energía del terminal y la enviará por debajo.
+
+  El terminal garantizará que la [color=orange]entrada HV[/color] y la [color=orange]salida HV[/color] no se conecten.
+
+  <Box HorizontalAlignment="Stretch">
+    <Box>
+      <GuideEntityEmbed Entity="CableTerminal"/>
+    </Box>
+
+    <Box>
+      <GuideEntityEmbed Entity="CableHV" Caption="Salida"/>
+      <GuideEntityEmbed Entity="SMESBasic" Caption="" Margin="0"/>
+      <GuideEntityEmbed Entity="CableTerminal" Caption="" Margin="0" Rotation="270"/>
+      <GuideEntityEmbed Entity="CableHV" Caption="Entrada"/>
+    </Box>
+  </Box>
+
+  Los SMES pueden almacenar [color=orange][protodata="SMESBasic" comp="Battery" member="MaxCharge" format="N0"/] J[/color] de energía y producir un máximo de [color=orange][protodata="SMESBasic" comp="PowerNetworkBattery" member="MaxSupply" format="N0"/] W[/color] de potencia.
+
+  Si la batería está llena, el SMES transferirá la energía que recibe del cable de entrada al de salida. En caso de déficit energético, el SMES aumentará su producción para complementar la demanda.
+
+  ## SMES avanzado
+  La unidad SMES avanzada es una versión mejorada de la unidad SMES que puede almacenar aún más energía.
+
+  <Box>
+    <GuideEntityEmbed Entity="SMESAdvanced"/>
+  </Box>
+
+  Se utilizan principalmente en conjuntos de SMES de la estación para almacenar grandes cantidades de energía destinadas a su red eléctrica.
+  Ayudan a dar tiempo a los ingenieros para instalar el suministro al inicio de la ronda o a proporcionar energía durante periodos prolongados en caso de déficit.
+
+  Los SMES avanzados pueden almacenar [color=orange][protodata="SMESAdvanced" comp="Battery" member="MaxCharge" format="N0"/] J[/color] de energía y producir un máximo de [color=orange][protodata="SMESAdvanced" comp="PowerNetworkBattery" member="MaxSupply" format="N0"/] W[/color] de potencia.
+
+  Ten en cuenta que no son una solución mágica a los déficits de energía y que no pueden almacenar una cantidad infinita.
+  La carga de una estación agotará estas baterías con rapidez si no hay ninguna fuente de energía que las apoye parcialmente.
+</Document>

@@ -1,0 +1,20 @@
+<Document>
+  #Saco de huevos, nivel 2
+  <GuideEntityEmbed Entity="RMCXenoCarrierEggsac"/>
+  ##Jugar como Saco de huevos
+  Has renunciado a la capacidad de almacenar parásitos. Puedes almacenar 12 huevos, producirlos con tu saco de huevos, colocar 4 huevos fuera de la maleza de la colmena —que se deterioran más despacio si estás cerca— y tus feromonas son más potentes.
+
+  Los Portadores Saco de huevos están especializados en producir huevos y pueden mantener abastecida a la Colmena cuando la Reina no los crea
+
+  Los huevos que plantas también son únicos, pues ahora pueden colocarse sobre maleza normal; sin embargo, se deterioran si te alejas de ellos. Puedes usarlos como trampas para los huéspedes o ayudar a los Opresores colocando huevos cerca del lugar hacia el que vayan a atraerlos.
+
+  ##Habilidades:
+  - [bold]Emitir feromonas[/bold]: Emite uno de los tres tipos de feromonas. Su intensidad depende de la casta y no se acumula con feromonas del mismo tipo.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoPheromones"/>
+  - [bold]Plantar maleza[/bold]: Coloca un nodo de resina que extiende maleza por una zona amplia.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoPlantWeeds"/>
+  - [bold]Recuperar huevo[/bold]: Recupera un huevo al usar la habilidad
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoRetrieveEgg"/>
+  - [bold]Generar huevos[/bold]: Produce huevos con el tiempo mediante un consumo pasivo de plasma
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoGenerateEggs"/>
+</Document>

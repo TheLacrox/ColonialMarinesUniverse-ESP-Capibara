@@ -1,0 +1,43 @@
+<Document>
+# Seguridad
+Garantizar la seguridad de la estación y de la tripulación es la máxima prioridad de [color=#cb0000]Seguridad[/color]. El personal de [color=#cb0000]Seguridad[/color] está preparado para cualquier situación y siempre disponible para mantener el orden y controlar a las multitudes.
+
+Se enfrenta a [textlink="Agentes del Sindicato" link="Traitors"], [textlink="Agentes nucleares" link="NuclearOperatives"], [textlink="Zombis" link="Zombies"] y miembros rebeldes del personal.
+
+## Personal
+El personal de [color=#cb0000]Seguridad[/color] se compone de cadetes de seguridad, oficiales de seguridad y el detective. El alcaide y el jefe de seguridad dirigen [color=#cb0000]Seguridad[/color].
+
+  <Box>
+    <GuideEntityEmbed Entity="ToyFigurineSecurity" Caption="Oficial de seguridad"/>
+    <GuideEntityEmbed Entity="ToyFigurineDetective" Caption="Detective"/>
+    <GuideEntityEmbed Entity="ToyFigurineWarden" Caption="Alcaide"/>
+    <GuideEntityEmbed Entity="ToyFigurineHeadOfSecurity" Caption="HoS"/>
+  </Box>
+
+## Equipo
+En primer lugar está el equipo no letal, un paso más allá de limitarse a ordenar a alguien que coopere. Tanto la porra eléctrica como el deshabilitador pueden limitar el movimiento de un agresor, mientras que las esposas impiden al delincuente moverse con libertad y usar las manos. Además, al quitarle las esposas, estas lo derribarán de un empujón si tienes activo el [color=red]modo de combate[/color].
+  <Box>
+    <GuideEntityEmbed Entity="Stunbaton"/>
+    <GuideEntityEmbed Entity="Handcuffs"/>
+   <GuideEntityEmbed Entity="WeaponDisabler"/>
+  </Box>
+
+## Flashes
+Los [color=#a4885c]flashes[/color] son herramientas eficaces para dispersar multitudes y detener objetivos especialmente escurridizos: su gran área de efecto ciega a cualquiera que no lleve protección.
+Cabe señalar que los flashes pueden usarse tanto en un área amplia (atajo [color=yellow]Z[/color]) como atacando directamente a alguien mientras esté activo el [color=red]modo de combate[/color]. Los destellos dirigidos duran [color=yellow]2.5[/color] veces más que los de área amplia.
+El personal de [color=#cb0000]Seguridad[/color] y [color=#a4885c]algunos[/color] otros tripulantes dispone de protección ocular contra granadas cegadoras y flashes.
+  <Box>
+    <GuideEntityEmbed Entity="Flash"/>
+    <GuideEntityEmbed Entity="ClothingEyesGlassesSecurity"/>
+    <GuideEntityEmbed Entity="GrenadeFlashBang"/>
+  </Box>
+
+## Armamento letal
+Si la situación lo exige, [color=#cb0000]Seguridad[/color] tiene acceso a rifles láser, escopetas, pistolas y rifles automáticos capaces de desatar una potencia de fuego considerable contra cualquiera que se enfrente a la estación.
+  <Box>
+    <GuideEntityEmbed Entity="WeaponLaserCarbine"/>
+    <GuideEntityEmbed Entity="WeaponShotgunKammerer"/>
+    <GuideEntityEmbed Entity="WeaponPistolMk58"/>
+    <GuideEntityEmbed Entity="WeaponRifleLecter"/>
+  </Box>
+</Document>

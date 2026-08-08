@@ -1,0 +1,37 @@
+# Baldosas de las estructuras Yautja
+
+tile-CMUYautjaTileHunterFloorsFloor-name = suelo Yautja
+tile-CMUYautjaTileHunterFloorsOuterhull-name = suelo Yautja del casco exterior
+tile-CMUYautjaTileHunterFloorsDamaged1-name = suelo Yautja dañado 1
+tile-CMUYautjaTileHunterFloorsDamaged2-name = suelo Yautja dañado 2
+tile-CMUYautjaTileHunterFloorsDamaged3-name = suelo Yautja dañado 3
+tile-CMUYautjaTileHunterFloorsDamaged4-name = suelo Yautja dañado 4
+tile-CMUYautjaTileHunterFloorsDamaged5-name = suelo Yautja dañado 5
+tile-CMUYautjaTileHunterFloorsOuterhullAlt-name = suelo Yautja alternativo del casco exterior
+tile-CMUYautjaTileHunterFloorsHunterGlow-name = suelo luminoso de cazador Yautja
+tile-CMUYautjaTileHunterFloorsHunterBridge-name = puente de cazador Yautja
+tile-CMUYautjaTileHunterFloorsHunterCatwalkAlpha-name = pasarela alfa de cazador Yautja
+tile-CMUYautjaTileHunterFloorsHunterCatwalk-name = pasarela de cazador Yautja
+tile-CMUYautjaTileHunterFloorsHunterCatwalkAltAlpha-name = pasarela alternativa alfa de cazador Yautja
+tile-CMUYautjaTileHunterFloorsHunterCatwalkAlt-name = pasarela alternativa de cazador Yautja
+tile-CMUYautjaTileHunterFloorsHunterCatwalkNewAlpha-name = pasarela nueva alfa de cazador Yautja
+tile-CMUYautjaTileHunterFloorsHunterCatwalkNew-name = pasarela nueva de cazador Yautja
+tile-CMUYautjaTileHunterFloorsHunterGrille-name = rejilla de cazador Yautja
+tile-CMUYautjaTileHunterFloorsHunterGrilleAlpha-name = rejilla alfa de cazador Yautja
+tile-CMUYautjaTileHunterFloorsN611-name = suelo Yautja 6,11
+tile-CMUYautjaTileHunterFloorsN612-name = suelo Yautja 6,12
+tile-CMUYautjaTileHunterFloorsCorner1-name = esquina 1 de suelo Yautja
+tile-CMUYautjaTileHunterFloorsCorner2-name = esquina 2 de suelo Yautja
+tile-CMUYautjaTileHunterFloorsCorner3-name = esquina 3 de suelo Yautja
+tile-CMUYautjaTileHunterFloorsCorner4-name = esquina 4 de suelo Yautja
+tile-CMUYautjaTileHunterFloorsCorner6-name = esquina 6 de suelo Yautja
+tile-CMUYautjaTileHunterFloorsCorner7-name = esquina 7 de suelo Yautja
+tile-CMUYautjaTileHunterFloorsCorner8-name = esquina 8 de suelo Yautja
+tile-CMUYautjaTileHunterFloorsHunterRed-name = suelo rojo de cazador Yautja
+tile-CMUYautjaTileHunterFloorsHunterRed2-name = suelo rojo 2 de cazador Yautja
+tile-CMUYautjaTileHunterFloorsHunterRed3-name = suelo rojo 3 de cazador Yautja
+tile-CMUYautjaTileHunterFloorsHunterRed4-name = suelo rojo 4 de cazador Yautja
+tile-CMUYautjaTileHunterFloorsHunterRed5-name = suelo rojo 5 de cazador Yautja
+tile-CMUYautjaTileHunterFloorsHunterRed6-name = suelo rojo 6 de cazador Yautja
+tile-CMUYautjaTileHunterFloorsBorderlessV-name = suelo Yautja vertical sin bordes
+tile-CMUYautjaTileHunterFloorsBorderlessH-name = suelo Yautja horizontal sin bordes

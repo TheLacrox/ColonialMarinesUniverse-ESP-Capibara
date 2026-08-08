@@ -1,0 +1,27 @@
+# superiores
+cm-job-supervisors-we-ya = la oficina corporativa de Weyland-Yutani
+cm-job-supervisors-aso = el oficial de apoyo auxiliar
+cm-job-supervisors-co = el oficial al mando
+rmc-job-supervisors-commander = quien ostente el mando
+cm-job-supervisors-cmo = el oficial médico jefe
+cm-job-supervisors-ares = ARES y APOLLO
+cm-job-supervisors-po = los pilotos de las naves de descenso y las cañoneras
+cm-job-supervisors-marine-high-command = el Alto Mando de los Marines
+cm-job-supervisors-cmp = el jefe de la Policía Militar
+cm-job-supervisors-qm = el oficial de logística
+cm-job-supervisors-ce = el ingeniero jefe
+cm-job-supervisors-sl = el líder de sección en funciones
+cm-job-supervisors-staff = el personal del servidor
+cm-job-supervisors-nobody = nadie; dependes de ti
+cm-job-supervisors-colonists = los colonos
+cm-job-supervisors-secserg = el sargento de sección
+cm-job-supervisors-platco = el comandante de pelotón
+cm-job-supervisors-company-command = el mando de la compañía
+cm-job-supervisors-royal-tl = el líder de equipo
+cm-job-supervisors-royal-lieutenant = el teniente
+cm-job-supervisors-royal-captain = el capitán
+cm-job-supervisors-royal-major = el comandante
+cm-job-supervisors-royal-section-leader = el líder de sección
+cm-job-supervisors-royal-troop-sergeant = el sargento de tropa
+cm-job-supervisors-royal-troop-commander = el comandante de tropa
+cm-job-supervisors-squadron-command = el mando del escuadrón

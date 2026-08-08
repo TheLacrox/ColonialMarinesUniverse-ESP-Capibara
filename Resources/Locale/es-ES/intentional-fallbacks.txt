@@ -1,0 +1,23 @@
+# Corpus nominales que es-ES resuelve deliberadamente mediante fallback en-US.
+# Estas rutas contienen nombres personales, taxonomía, nomenclatura mineral,
+# alfabetos/callsigns canónicos o nombres ficticios generados; copiarlas no
+# constituiría una traducción española real.
+datasets/names/arachnid_first.ftl
+datasets/names/arachnid_last.ftl
+datasets/names/borer.ftl
+datasets/names/fake_human_first.ftl
+datasets/names/fake_human_last.ftl
+datasets/names/first.ftl
+datasets/names/first_female.ftl
+datasets/names/first_male.ftl
+datasets/names/golem.ftl
+datasets/names/last.ftl
+datasets/names/military_last.ftl
+datasets/names/moth_first_female.ftl
+datasets/names/moth_first_male.ftl
+datasets/names/mushman_first.ftl
+datasets/names/mushman_last.ftl
+datasets/names/reptilian_female.ftl
+datasets/names/reptilian_male.ftl
+datasets/names/syndicate_normal.ftl
+datasets/names/vox.ftl

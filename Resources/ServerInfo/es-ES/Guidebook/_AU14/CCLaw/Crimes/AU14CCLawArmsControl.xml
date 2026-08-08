@@ -1,0 +1,21 @@
+<Document>
+  # CONTROL DE ARMAS & LEGISLACIÓN
+
+  La posesión de armas es un privilegio sujeto a licencia, no un derecho sin restricciones. Las armas no autorizadas se consideran una amenaza para la seguridad pública debido a los hábitats presurizados y la infraestructura inestable.
+
+  ## Clases de armas
+  - [bold]Clase A — Herramientas civiles[/bold] (cuchillos, hachas de mano, palancas, herramientas industriales, de minería o de soldadura). Son legales cuando se utilizan de forma lícita. Se vuelven ilegales si se blanden, se usan para amenazar, se llevan a zonas restringidas, se modifican para convertirlas en armas o se utilizan durante un delito.
+  - [bold]Clase B — Armas de fuego civiles[/bold] (pistolas, escopetas, rifles de caza, rifles de baja capacidad). Requieren una Licencia Colonial de Armas de Fuego. Deben estar registradas, llevar número de serie y almacenarse de forma segura. No pueden portarse de forma visible en público sin autorización. Portarlas ocultas requiere un permiso independiente.
+  - [bold]Clase C — Armas restringidas[/bold] (armas automáticas, armas inteligentes, lanzallamas, granadas, explosivos, munición perforante, lanzacohetes). Son ilegales para los civiles. Solo están autorizadas para fuerzas militares, alguaciles y seguridad autorizada, o para milicias autorizadas mediante una orden de emergencia.
+  - [bold]Clase D — Armas prohibidas[/bold] (armas químicas, biológicas o radiológicas, explosivos improvisados, patógenos creados artificialmente, organismos convertidos en armas, instrumentos de tortura). Son ilegales para todas las personas. Su posesión constituye un delito grave o capital en función del riesgo y del uso.
+
+  ## Cargos relacionados con armas
+  - [bold]Posesión ilegal:[/bold] 10 min, Clase B | 15 min, Clase C | 20 min, Clase D + confiscación
+  - [bold]Exhibición amenazante:[/bold] 10 min + confiscación + posible suspensión de la licencia
+  - [bold]Porte ilegal en una zona restringida:[/bold] 10 min + confiscación + posible suspensión
+  - [bold]Transferencia ilegal de armas de fuego:[/bold] 15 min + confiscación + revocación de la licencia
+  - [bold]Almacenamiento inseguro:[/bold] 10 min + confiscación hasta que se cumplan las normas
+  - [bold]Uso de un arma de fuego durante un delito:[/bold] +10 min + confiscación + revocación de la licencia
+  - [bold]Disparo no autorizado:[/bold] 15 min + confiscación + posible revocación
+  - [bold]Suspensión de armas durante emergencias:[/bold] Durante una emergencia declarada, el Alguacil y el Administrador de la colonia, actuando de forma conjunta, pueden ordenar la entrega de todas las armas civiles. Incumplimiento: 20 min + confiscación + revocación | Reclusión permanente si el arma se utiliza contra los equipos de respuesta o las autoridades legítimas.
+</Document>

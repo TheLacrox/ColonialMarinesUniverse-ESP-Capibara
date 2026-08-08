@@ -1,0 +1,64 @@
+<Document>
+# Canales de voz y texto
+Hablar es una parte fundamental de Space Station 14. Puedes pulsar [keybind="FocusChatInputWindow"/] para saltar al cuadro de texto.
+
+La palabra situada junto al cuadro de texto es el [color=#a4885c]canal de texto[/color] al que vas a enviar el mensaje o, mejor dicho, la forma en que vas a decir lo que has escrito.
+
+Local es el habla normal a un volumen normal.
+
+Susurro solo se oye cuando hay alguien cerca. Susurras automáticamente por la radio para enviar mensajes a través de ella.
+
+Los gestos son ademanes que realizas. Puede recibirlos cualquiera que no esté cegado. A menudo verás a los mimos hacer muchos gestos.
+
+Puedes enviar mensajes de Susurro empezándolos con [color=#a4885c][keybind="FocusWhisperChatWindow"/][/color] y puedes enviar Gestos empezándolos con ([color=#a4885c]@[/color]).
+También puedes recorrer todos estos canales de texto pulsando [keybind="CycleChatChannelForward"/].
+
+Puede que otras personas no entiendan todo lo que dices si estás demasiado lejos. Esto es especialmente importante si susurras.
+
+## Radio
+
+Tu radio te permite comunicarte con toda la estación y con tu [color=#a4885c]departamento[/color] concreto.
+
+<Box>
+  <GuideEntityEmbed Entity="ClothingHeadsetGrey"/>
+</Box>
+
+Para enviar un mensaje [color=#a4885c]a toda la estación[/color] por radio, usa el canal [color=#32cd32]Común[/color] empezando el texto con un [color=#32cd32]punto y coma (;)[/color].
+Quienes estén justo a tu lado podrían oír fragmentos de tu mensaje de radio aunque no tengan acceso al canal correspondiente. Ten cuidado con quienes escuchan a escondidas.
+
+## Radio departamental
+
+Puedes enviar mensajes por los canales de radio de tu departamento usando [color=#32cd32]dos puntos (:)[/color] seguidos de la letra del departamento, siempre que lleves unos auriculares con la clave de cifrado de tu departamento.
+
+Examina tus auriculares para ver los canales departamentales que tienes disponibles.
+
+<Box>
+  <GuideEntityEmbed Entity="ClothingHeadsetEngineering"/>
+</Box>
+
+Al examinar unos auriculares de ingeniería sin modificar, verías los prefijos de los canales [color=#32cd32]Común[/color] e [color=#f37746]Ingeniería[/color].
+
+También puedes usar [color=#a4885c]:h[/color]. Esta tecla rápida seleccionará automáticamente el canal de radio de tu departamento.
+Por ejemplo, si eres Ingeniero de la Estación, [color=#a4885c]:h[/color] seleccionará [color=#f37746]:e[/color].
+
+## Claves de cifrado
+Las [color=#a4885c]claves de cifrado[/color] te dan acceso a sus canales correspondientes.
+  
+Al examinar nuestros auriculares de ingeniería de antes, vemos [color=#32cd32]Común[/color] e [color=#f37746]Ingeniería[/color] porque los auriculares de un ingeniero incluyen esas [color=#a4885c]claves de cifrado[/color].
+  
+<Box>
+  <GuideEntityEmbed Entity="EncryptionKeyCommon"/>
+  <GuideEntityEmbed Entity="EncryptionKeyEngineering"/>
+</Box>
+  
+Puedes extraer las claves de cifrado usando un [color=#a4885c]destornillador[/color] en unos auriculares. Para introducir claves de cifrado nuevas en unos auriculares, haz clic sobre ellos con una clave en la mano.
+
+Todos los miembros del mando tienen copias adicionales de su clave de cifrado correspondiente, pero también puedes pedir una en la oficina del HoP cuando te cambien de puesto.
+
+## Canales OOC
+Los canales OOC (fuera de personaje) existen fuera del mundo del juego. Son LOOC, OOC y el chat de Muertos.
+
+LOOC está activo durante las rondas; OOC suele estar desactivado hasta que termina la ronda, y solo puedes ver el chat de Muertos y hablar en él cuando estás, bueno, muerto.
+
+No hables de la ronda actual en Discord ni en OOC si está activo durante la ronda.
+</Document>

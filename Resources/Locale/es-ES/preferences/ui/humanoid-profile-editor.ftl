@@ -1,0 +1,137 @@
+humanoid-profile-editor-randomize-everything-button = Aleatorizar todo
+humanoid-profile-editor-name-label = Nombre:
+humanoid-profile-editor-name-random-button = Aleatorizar
+humanoid-profile-editor-appearance-tab = Apariencia
+humanoid-profile-editor-regulation-appearance-tab = Apariencia reglamentaria
+humanoid-profile-editor-regulation-appearance-info = Define la apariencia de tu personaje al jugar con facciones militares.
+humanoid-profile-editor-clothing = Mostrar ropa
+humanoid-profile-editor-clothing-show = Mostrar
+humanoid-profile-editor-sex-label = Sexo:
+humanoid-profile-editor-sex-male-text = Masculino
+humanoid-profile-editor-sex-female-text = Femenino
+humanoid-profile-editor-sex-unsexed-text = Ninguno
+humanoid-profile-editor-age-label = Edad:
+humanoid-profile-editor-skin-color-label = Color de piel:
+humanoid-profile-editor-species-label = Especie:
+humanoid-profile-editor-pronouns-label = Pronombres:
+humanoid-profile-editor-pronouns-male-text = Él
+humanoid-profile-editor-pronouns-female-text = Ella
+humanoid-profile-editor-pronouns-epicene-text = Elle
+humanoid-profile-editor-pronouns-neuter-text = Ello
+humanoid-profile-editor-import-button = Importar
+humanoid-profile-editor-export-button = Exportar
+humanoid-profile-editor-export-image-button = Exportar imagen
+humanoid-profile-editor-open-image-button = Abrir imágenes
+humanoid-profile-editor-save-button = Guardar
+humanoid-profile-editor-reset-button = Restablecer
+humanoid-profile-editor-job-fallback-label = Puesto alternativo
+humanoid-profile-editor-spawn-priority-label = Prioridad de aparición:
+humanoid-profile-editor-preferred-squad-label = Escuadrón preferido:
+humanoid-profile-editor-preferred-armor-label = Armadura preferida:
+humanoid-profile-editor-enable-playtime-perks = Activar ventajas por tiempo de juego:
+humanoid-profile-editor-xeno-prefix = Prefijo xeno:
+humanoid-profile-editor-xeno-prefix-tooltip = Hasta 3 letras. No puedes usar un sufijo si el prefijo tiene 3 letras.
+humanoid-profile-editor-xeno-postfix = Sufijo xeno:
+humanoid-profile-editor-xeno-postfix-tooltip = Hasta 2 letras, o 1 letra y 1 dígito en la segunda posición. No puedes usar un sufijo si el prefijo tiene 3 letras.
+humanoid-profile-editor-enable = Activar
+humanoid-profile-editor-eyes-label = Color de ojos:
+humanoid-profile-editor-jobs-tab = Puestos
+humanoid-profile-editor-military-jobs-tab = Puestos militares
+humanoid-profile-editor-threat-jobs-tab = Puestos de amenazas
+humanoid-profile-editor-civilian-jobs-tab = Puestos civiles
+humanoid-profile-editor-insurgency-tab = Insurgencia
+humanoid-profile-editor-colony-fall-tab = Caída de la colonia
+humanoid-profile-editor-distress-signal-tab = Señal de socorro
+humanoid-profile-editor-government-jobs-tab = Puestos gubernamentales
+humanoid-profile-editor-insurgency-jobs-tab = Puestos de insurgencia
+humanoid-profile-editor-threat-roles-tab = Puestos de amenazas
+humanoid-profile-editor-allegiance-label = Lealtad:
+humanoid-profile-editor-allegiance-none = Ninguna
+humanoid-profile-editor-origin-label = Origen:
+humanoid-profile-editor-origin-none = Ninguno
+humanoid-profile-editor-character-description-tab = Personaje
+humanoid-profile-editor-short-examine-label = Texto de examen breve:
+humanoid-profile-editor-height-label = Estatura:
+humanoid-profile-editor-weight-label = Peso:
+humanoid-profile-editor-build-label = Complexión:
+humanoid-profile-editor-skin-tone-label = Tono de piel:
+humanoid-profile-editor-hair-color-label = Color de pelo:
+humanoid-profile-editor-eye-color-label = Color de ojos:
+humanoid-profile-editor-hide-meta-label = Ocultar metainformación:
+humanoid-profile-editor-hide-meta-true = Sí
+humanoid-profile-editor-hide-meta-false = No
+humanoid-profile-editor-full-description-label = Descripción completa del personaje:
+humanoid-profile-editor-medical-record-label = Historial médico:
+humanoid-profile-editor-criminal-record-label = Antecedentes penales:
+humanoid-profile-editor-general-record-label = Expediente general:
+
+humanoid-profile-editor-short-examine-tooltip = Una línea breve que se muestra cuando alguien examina a tu personaje normalmente. Debe tener menos de 100 caracteres.
+humanoid-profile-editor-age-tooltip = La edad de tu personaje.
+humanoid-profile-editor-origin-tooltip = El origen de tu personaje. Añade acentos, objetos, idiomas y rasgos pertinentes al aparecer. Se oculta a los demás si está activada la opción de ocultar metainformación.
+humanoid-profile-editor-allegiance-tooltip = La lealtad de tu personaje. Afecta a su aparición en pelotones o colonias. Se oculta a los demás si está activada la opción de ocultar metainformación.
+humanoid-profile-editor-pronouns-tooltip = Los pronombres de tu personaje.
+humanoid-profile-editor-height-tooltip = La estatura de tu personaje, en pies'pulgadas (de 4'0 a 6'11).
+humanoid-profile-editor-weight-tooltip = El peso de tu personaje en libras, entre 90 y 300.
+humanoid-profile-editor-build-tooltip = La complexión física de tu personaje.
+humanoid-profile-editor-skin-tone-tooltip = Se rellena automáticamente según el control deslizante de color de piel de la pestaña Apariencia.
+humanoid-profile-editor-hair-color-tooltip = Se rellena automáticamente según el control deslizante de color de pelo de la pestaña Apariencia.
+humanoid-profile-editor-eye-color-tooltip = Se rellena automáticamente según el control deslizante de color de ojos de la pestaña Apariencia.
+humanoid-profile-editor-hide-meta-tooltip = Oculta el origen, la lealtad, el historial médico, los antecedentes penales y el expediente general a otros jugadores que examinen tu personaje en detalle. Nunca oculta nada en las consolas de personal de las facciones.
+humanoid-profile-editor-full-description-tooltip = Una descripción completa de la apariencia y el comportamiento de tu personaje, mostrada al examinarlo en detalle.
+humanoid-profile-editor-medical-record-tooltip = El historial médico de tu personaje. Los rasgos de discapacidad y las alergias a medicamentos aparecen automáticamente. Se oculta a los demás si está activada la opción de ocultar metainformación.
+humanoid-profile-editor-criminal-record-tooltip = Los antecedentes penales de tu personaje. Se ocultan a los demás si está activada la opción de ocultar metainformación.
+humanoid-profile-editor-general-record-tooltip = El expediente general de tu personaje. Se oculta a los demás si está activada la opción de ocultar metainformación.
+humanoid-profile-editor-synthetic-title = Sintético
+humanoid-profile-editor-synthetic-description = Indica si este personaje es sintético. Los personajes sintéticos solo pueden acceder a roles sintéticos.
+humanoid-profile-editor-synthetic-yes-button = Sí
+humanoid-profile-editor-synthetic-no-button = No
+humanoid-profile-editor-synthetic-locked = No estás en la lista blanca del rol sintético.
+humanoid-profile-editor-synthetic-locked-job = Este personaje no está marcado como sintético.
+humanoid-profile-editor-synthetic-locked-job-non-synthetic = Este personaje está marcado como sintético y solo puede aceptar puestos sintéticos.
+humanoid-profile-editor-preference-unavailable-stay-in-lobby-button = Permanecer en la sala de espera si la preferencia no está disponible.
+humanoid-profile-editor-preference-unavailable-spawn-as-overflow-button = Usar el puesto predeterminado si la preferencia no está disponible.
+humanoid-profile-editor-preference-jumpsuit = Uniforme
+humanoid-profile-editor-preference-jumpskirt = Uniforme con falda
+humanoid-profile-editor-preference-backpack = Mochila
+humanoid-profile-editor-preference-satchel = Bolso
+humanoid-profile-editor-preference-duffelbag = Bolsa de viaje
+humanoid-profile-editor-guidebook-button-tooltip = Haz clic para obtener más información
+
+# Prioridad de aparición
+humanoid-profile-editor-preference-spawn-priority-none = Ninguna
+humanoid-profile-editor-preference-spawn-priority-arrivals = Llegadas
+humanoid-profile-editor-preference-spawn-priority-cryosleep = Criohibernación
+
+humanoid-profile-editor-jobs-amount-in-department-tooltip = Puestos del departamento {$departmentName}
+humanoid-profile-editor-department-jobs-label = Puestos de {$departmentName}
+humanoid-profile-editor-antags-tab = Antagonistas
+humanoid-profile-editor-antag-preference-yes-button = Sí
+humanoid-profile-editor-antag-preference-no-button = No
+
+humanoid-profile-editor-job-priority-high-button = Alta
+humanoid-profile-editor-job-priority-medium-button = Media
+humanoid-profile-editor-job-priority-low-button = Baja
+humanoid-profile-editor-job-priority-never-button = Nunca
+humanoid-profile-editor-naming-rules-warning = Advertencia: los nombres y descripciones IC ofensivos o de LRP conllevarán la intervención de la administración de este servidor. Lee nuestras \[Rules\] para obtener más información.
+humanoid-profile-editor-markings-tab = Marcas
+humanoid-profile-editor-flavortext-tab = Descripción
+
+# Rasgos
+humanoid-profile-editor-traits-tab = Rasgos
+humanoid-profile-editor-no-traits = No hay rasgos disponibles
+
+humanoid-profile-editor-trait-count-hint = Puntos disponibles: [{$current}/{$max}]
+
+trait-category-disabilities = Discapacidades
+trait-category-speech = Rasgos del habla
+trait-category-quirks = Peculiaridades
+
+
+humanoid-profile-editor-government-forces-label = Fuerzas gubernamentales / { $segmentTitle }
+
+humanoid-profile-editor-segment-command = Mando de la operación
+humanoid-profile-editor-segment-officer = Mando del departamento
+humanoid-profile-editor-segment-flight = Tripulación de vehículos
+humanoid-profile-editor-segment-support = Apoyo
+humanoid-profile-editor-segment-leader = Suboficial de infantería
+humanoid-profile-editor-segment-line = Infantería de línea

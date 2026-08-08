@@ -1,0 +1,34 @@
+<Document>
+# Servicios
+El departamento de [color=#9fed58]Servicios[/color] mantiene la estación limpia, eficiente y cuerda para que todos los demás departamentos puedan trabajar mejor y mantener contento a su personal. También acaba encargándose de la mayor parte del papeleo de la estación.
+
+## Personal
+El departamento de [color=#9fed58]Servicios[/color] cuenta con trabajadores de servicio, chefs, botánicos, camareros, conserjes, capellanes, payasos, mimos, músicos, abogados, bibliotecarios y pasajeros. Está bajo el mando del jefe de personal.
+
+  <Box>
+    <GuideEntityEmbed Entity="ToyFigurineChef" Caption="Chef"/>
+    <GuideEntityEmbed Entity="ToyFigurineBotanist" Caption="Botánico"/>
+    <GuideEntityEmbed Entity="ToyFigurineBartender" Caption="Camarero"/>
+    <GuideEntityEmbed Entity="ToyFigurineJanitor" Caption="Conserje"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ToyFigurineChaplain" Caption="Capellán"/>
+    <GuideEntityEmbed Entity="ToyFigurineClown" Caption="Payaso"/>
+    <GuideEntityEmbed Entity="ToyFigurineMime" Caption="Mimo"/>
+    <GuideEntityEmbed Entity="ToyFigurineMusician" Caption="Músico"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ToyFigurineLawyer" Caption="Abogado"/>
+    <GuideEntityEmbed Entity="ToyFigurineLibrarian" Caption="Bibliotecario"/>
+    <GuideEntityEmbed Entity="ToyFigurinePassenger" Caption="Pasajero"/>
+    <GuideEntityEmbed Entity="ToyFigurineHeadOfPersonnel" Caption="HoP"/>
+  </Box>
+
+## Colaboración
+El departamento de [color=#9fed58]Servicios[/color], pese a ser el más diverso, es con diferencia el más [color=#a4885c]interconectado[/color].
+La mayoría de los puestos del departamento de [color=#9fed58]Servicios[/color] requieren [color=#a4885c]cooperación[/color] entre trabajadores.
+Los chefs suelen necesitar ingredientes que solo los botánicos pueden cultivar de forma eficiente. El camarero puede pedir plátanos que solo los payasos llevan en abundancia.
+El abogado puede invitar al mimo a jugar a las películas para convencer al juez de que su cliente es inocente.
+
+Hace falta mucha [color=#a4885c]colaboración[/color] tanto dentro como fuera del departamento de [color=#9fed58]Servicios[/color]. A menudo, otros departamentos necesitan la ayuda de [color=#9fed58]Servicios[/color], así que mantente alerta.
+</Document>

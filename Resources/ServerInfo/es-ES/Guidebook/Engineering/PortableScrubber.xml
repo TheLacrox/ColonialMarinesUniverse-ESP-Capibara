@@ -1,0 +1,21 @@
+﻿<Document>
+  # Depurador portátil
+  El depurador portátil es una máquina transportable que permite depurar la atmósfera de una sala.
+  <Box>
+    <GuideEntityEmbed Entity="PortableScrubber"/>
+  </Box>
+
+  Resulta muy útil para eliminar con rapidez gases no deseados de una sala cuando los [textlink="depuradores" link="AirScrubber"] normales funcionan demasiado despacio o no hay ningún [textlink="depurador" link="AirScrubber"].
+
+  El depurador portátil necesita [textlink="energía" link="Power"] de un [textlink="cable LV" link="VoltageNetworks"] cercano para funcionar.
+
+  El depurador portátil comienza a retirar automáticamente de la sala todos los gases no respirables al fijarlo (con una llave inglesa) al suelo.
+
+  Dejará de depurar al soltarlo del suelo (con una llave inglesa) o cuando se llene su volumen interno. El depurador tiene una capacidad interna de [color=orange][protodata="PortableScrubber" comp="PortableScrubber" member="Volume"/] litros[/color].
+
+  ## Vaciado de residuos y almacenamiento
+  El volumen interno del depurador puede vaciarse anclándolo (con una llave inglesa) sobre un [textlink="conector" link="GasCanisters"].
+
+  Las estaciones suelen disponer de un punto de vaciado específico para transferir rápidamente los residuos del depurador a la red Waste de la estación.
+
+</Document>

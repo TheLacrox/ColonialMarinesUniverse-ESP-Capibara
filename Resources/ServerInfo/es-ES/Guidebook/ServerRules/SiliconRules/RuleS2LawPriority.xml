@@ -1,0 +1,9 @@
+﻿<Document>
+  # Regla para silicios 2 - Las leyes deben priorizarse según su orden
+  La mayoría de las leyes están numeradas, y las de números mayores aparecen al final. Las leyes con un número menor tienen prioridad sobre aquellas con números mayores.
+
+  En ocasiones puedes tener leyes que muestran texto desordenado en lugar de un número y aparecen delante de las demás; estas tienen prioridad sobre todas las otras leyes. Si tienes varias leyes de este tipo, el orden en que figuren determina su prioridad: las que aparezcan primero tienen prioridad sobre las demás.
+
+  ## Ejemplos
+  - La ley 1 dice que no mates a ningún miembro de la tripulación. La ley 2 dice que mates a todos los chefs. No puedes matar a ningún chef que forme parte de la tripulación, pero debes matar a cualquiera que no forme parte de ella.
+</Document>

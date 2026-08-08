@@ -1,0 +1,55 @@
+<Document>
+  # Mezcla y filtrado
+  Los mezcladores y filtros de gases son herramientas esenciales para manipular la composición de los gases dentro de una [textlink="red de tuberías" link="PipeNetworks"].
+  <Box>
+    <GuideEntityEmbed Entity="GasMixer"/>
+    <GuideEntityEmbed Entity="GasFilter"/>
+  </Box>
+
+  ## Mezclador de gases
+  Los mezcladores de gases sirven para combinar gases en proporciones específicas dentro de una [textlink="red de tuberías." link="PipeNetworks"]
+  Son esenciales para crear mezclas de gases controladas con distintas aplicaciones.
+
+  Los mezcladores de gases tienen 3 conexiones: 2 entradas y 1 salida, como se muestra a continuación:
+  <Box>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption="Principal" Rotation="90"/>
+    <GuideEntityEmbed Entity="GasMixer" Caption="" Rotation="90"/>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption="Salida" Rotation="90"/>
+  </Box>
+<Box>
+  <GuideEntityEmbed Entity="GasPipeStraight" Caption="Lateral"/>
+</Box>
+
+  Los mezcladores de gases respetarán la mezcla solicitada aunque uno de los gases de entrada no esté disponible. Por ejemplo:
+  - Si la mezcla solicitada es un 22% de oxígeno y un 78% de nitrógeno, pero no hay oxígeno disponible, el mezclador no funcionará hasta que lo haya.
+  - Si hay oxígeno disponible, pero a una presión inferior a la necesaria para crear la mezcla adecuada a la presión solicitada, el mezclador seguirá creando la mezcla, pero la salida tendrá una presión inferior a la solicitada.
+
+  Los mezcladores también combinan los gases en función de la presión, no de los moles. Esto puede causar problemas si los gases están a temperaturas distintas. Por ejemplo:
+  - Supongamos que se pide a un mezclador que combine oxígeno y nitrógeno en una proporción de 1:2 a una presión determinada.
+  - En este caso, el nitrógeno está al doble de temperatura que el oxígeno.
+  - El gas más caliente tiene mayor presión y, por tanto, menos moles por volumen que el oxígeno.
+  - Por ello, cuando el mezclador intente crear la mezcla, el nitrógeno tendrá la mitad de moles que el oxígeno.
+  - La salida será de 1:1 en lugar de 1:2. Tendrás 1 mol de nitrógeno por cada 1 mol de oxígeno, en vez de 2 moles de nitrógeno por cada 1 mol de oxígeno.
+
+  Los mezcladores de gases pueden utilizarse en diversas aplicaciones, por ejemplo:
+  - Mezclar oxígeno y nitrógeno para crear una atmósfera respirable
+  - Mezclar oxígeno y plasma para quemar plasma y crear tritio
+
+  ## Filtro de gases
+  Los filtros de gases sirven para separar gases de una mezcla dentro de una [textlink="red de tuberías." link="PipeNetworks"]
+
+  <Box>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption="Entrada" Rotation="90"/>
+    <GuideEntityEmbed Entity="GasFilter" Caption="" Rotation="90"/>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption="Salida" Rotation="90"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption="Salida filtrada"/>
+  </Box>
+
+  Los filtros de gases se bloquearán y no filtrarán gas si cualquiera de las salidas está bloqueada.
+
+  Los filtros de gases pueden utilizarse en diversas aplicaciones, por ejemplo:
+  - Filtrar gases no deseados de una [textlink="red de tuberías" link="PipeNetworks"]
+  - Separar gases concretos para almacenarlos en la red de reciclaje de una estación
+</Document>

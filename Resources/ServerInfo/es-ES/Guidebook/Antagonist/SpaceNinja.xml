@@ -1,0 +1,84 @@
+<Document>
+  # Ninja espacial
+  
+  <Box>
+    [color=#999999][italic]"Araña de la noche, silencioso es mi ataque."[/italic][/color]
+  </Box>
+
+  Eres un mercenario de élite enviado por [color=#66FF00]el Clan de la Araña[/color] para sembrar toda clase de caos en la estación. Tu equipo te permite actuar en silencio, pero de forma letal.
+
+  Tanto si te manchas las manos de sangre como si evitas los problemas, tu disciplina te ha enseñado que [italic]como mínimo debes intentar cumplir tus objetivos[/italic]. ¡Por el honor!
+
+  ## Equipo estándar
+  Llevas implantado un [color=cyan]acidificador mortal[/color], de modo que, si te capturan o resultas KIA, tu valioso equipo no caerá en manos enemigas.
+
+  Tu bolsa está llena de [bold]herramientas[/bold] y contiene una [bold]caja de supervivencia[/bold]. También llevas una [color=cyan]mochila propulsora[/color] y un [color=cyan]localizador[/color] que te guiará hasta la estación.
+
+  <Box>
+    <GuideEntityEmbed Entity="JetpackBlack"/>
+    <GuideEntityEmbed Entity="PinpointerStation"/>
+  </Box>
+  
+  ## Tu traje
+  
+  <Box>
+    <GuideEntityEmbed Entity="ClothingEyesVisorNinja" Caption="tu visor"/>
+    <GuideEntityEmbed Entity="ClothingOuterSuitSpaceNinja" Caption="tu traje"/>
+    <GuideEntityEmbed Entity="ClothingShoesSpaceNinja" Caption="tus botas"/>
+  </Box>
+
+  Tu objeto más importante con diferencia es [color=cyan]tu traje[/color]; sin él, ninguna de tus habilidades funcionaría.
+  El traje necesita energía para funcionar, que obtiene de su [bold]batería interna[/bold]. Puedes sustituirla, y una [italic]batería de gran capacidad[/italic] se traduce en un [italic]ninja muy eficaz[/italic].
+
+  [bold]Puedes recargar directamente la batería interna[/bold] usando [color=cyan]tus guantes[/color]. Consulta la carga actual examinando el traje o mirando el práctico aviso de batería en la pantalla.
+
+  Tu atuendo también incluye [color=cyan]botas especiales[/color] que te mantienen ágil, erguido y pegado al suelo sin consumir energía. Además, tu [color=cyan]visor[/color] te protege de los destellos.
+
+  ## Guantes ninja
+
+  <Box>
+    <GuideEntityEmbed Entity="ClothingHandsGlovesSpaceNinja" Caption="tus guantes"/>
+  </Box>
+
+  [color=#66FF00]Estas maravillas son tu herramienta fundamental.[/color] Están hechos de [bold]nanomáquinas aislantes[/bold] que te permiten colarte con elegancia en zonas restringidas sin dejar huellas dactilares.
+
+  Dispones de una acción para activar y desactivar los guantes. Cuando están activos, te permiten usar [bold]habilidades especiales[/bold] que se ejecutan al interactuar con objetos con una mano vacía y el modo de combate desactivado.
+
+  Las habilidades de tus guantes incluyen:
+  - Sabotear puertas y esclusas como con un emag.
+  - Drenar energía de [bold]transformadores[/bold] como los APC, las subestaciones o los SMES (los transformadores de mayor tensión se drenan con más eficacia).
+  - Aplicar una descarga eléctrica a una criatura, aturdiéndola y causándole daños leves.
+  - Manipular [bold]equipos de la estación[/bold] para completar [color=#66FF00]objetivos[/color].
+
+  ## Katana de energía
+
+  <Box>
+    <GuideEntityEmbed Entity="EnergyKatana"/>
+  </Box>
+
+  [bold]Has jurado lealtad a la espada y te niegas a usar armas de fuego.[/bold] Por suerte, tienes una espada realmente genial.
+
+  Tu [color=cyan]katana de energía[/color] causa mucho daño y puedes [bold]hacerla volver cuando quieras[/bold] a costa de la energía del traje. Cuanto más lejos esté de ti, más energía necesitarás para recuperarla.
+
+  Mientras la empuñas, también puedes [color=cyan]teletransportarte[/color] a cualquier lugar que veas, [bold]incluso a través de ventanas[/bold]. Las cargas necesarias se regeneran despacio, así que reserva una o dos por si necesitas escapar rápidamente.
+
+  ## Carga del Clan de la Araña
+  
+  <Box>
+    <GuideEntityEmbed Entity="SpiderCharge"/>
+  </Box>
+  
+  Es un [color=cyan]explosivo C-4 modificado[/color] que encontrarás en tu bolsillo. Produce una gran explosión, pero [bold]debes armarlo en la zona objetivo[/bold], ya que hacerlo es uno de tus objetivos.
+
+  No puede activarse manualmente, así que limítate a colocarlo en una pared o en algún mueble que no te inspire alegría. Elige bien: una vez colocado, no podrás despegarlo.
+
+  ## Objetivos
+
+  - Descarga \[9-13\] nodos de investigación: usa tus guantes en un servidor de R&D que tenga varias tecnologías desbloqueadas. Quizá tengas que desbloquearlas tú mismo si no hay suficientes para robar.
+  - Sabotea \[15-40\] puertas de la estación: usa tus guantes para sabotear varias puertas como con un emag.
+  - Detona la carga del Clan de la Araña: coloca la carga en el lugar indicado y ¡disfruta de la explosión!
+  - Provoca una [textlink="amenaza" link="MinorAntagonists"]: usa tus guantes en una consola de comunicaciones.
+  - Pon a todo el mundo en busca y captura: usa tus guantes en una consola de antecedentes penales.
+  - Sobrevive: no mueras.
+
+</Document>

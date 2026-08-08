@@ -1,0 +1,26 @@
+<Document>
+  #Pretoriano, nivel 3
+
+  <GuideEntityEmbed Entity="CMXenoPraetorian"/>
+
+  ##Jugar como Pretoriano
+
+  El Pretoriano básico se parece a un Escupidor mejorado: se especializa en ataques constantes a distancia y dispone de una habilidad de Carrera. Puede combinar varias habilidades, como Escupitajo ácido y Bola de ácido, para infligir ráfagas de daño desde las esquinas.
+
+  Su pasiva hace que los ataques ácidos apliquen a los objetivos una acumulación de ácido. Cuando alcancen 5 acumulaciones, sufrirán daño adicional por quemaduras y crepitarán. Puedes acumularlas fácilmente encadenando varias habilidades contra el mismo objetivo.
+
+  Se recomienda atacar desde las esquinas y encadenar con rapidez varias ráfagas. Aprovecha tu alcance para presionar a los huéspedes.
+
+  ##Habilidades:
+  - [bold][color=green]PASIVA[/color][/bold]: Los ataques ácidos aplican una acumulación de ácido al objetivo. Si un mismo objetivo alcanza 5 acumulaciones, sufrirá daño adicional por quemaduras.
+  - [bold][color=green]PASIVA[/color][/bold]: Los escupitajos ácidos conceden un escudo al impactar.
+  - [bold]Escupitajo ácido[/bold]: Lanza un glóbulo de ácido que inflige daño a cualquier objetivo y concede un escudo al impactar.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoSpit"/>
+  - [bold]Carrera[/bold]: Recorre rápidamente una distancia corta.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoDash"/>
+  - [bold]Pulverizar ácido[/bold]: Pulveriza ácido en línea por el suelo, cubre las barricadas e inflige daño a los huéspedes, además de aplicarles una acumulación de ácido.
+  - También extingue el fuego de cualquier hermana que esté ardiendo.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoSprayAcid"/>
+  - [bold]Ácido corrosivo[/bold]: Secreta sobre los objetos un glóbulo de ácido que los disuelve.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoCorrosiveAcid"/>
+</Document>

@@ -1,0 +1,57 @@
+﻿<Document>
+  [color=#5f698a]█    █ █▄ █[/color] [head=2][bold]UNITED NATIONS MARINE CORPS[/bold][/head]\n
+  [color=#5f698a]▀ ▄▀ █ ▀█ [/color]
+
+  #Conoce a tus superiores
+  ##Guía del personal de mando y las jefaturas de departamento
+
+  Así que estás despierto, has comido, te has vestido y vas armado. Has llegado a la reunión informativa y ahora te preguntas a quién hacer la pelota para conseguir esa medalla o ese ascenso. Aquí tienes un resumen de la cúpula para que puedas empezar a adular:
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookRoleCO"/>
+  </Box>
+  -El [bold]oficial al mando[/bold] (conocido habitualmente como CO) dirige el cotarro. Dará órdenes a los demás oficiales para que ellos puedan decirte a TI lo que debes hacer.
+  -El puesto de CO solo lo ocupan quienes han demostrado valor, lealtad y competencia. Tiene la máxima autoridad a bordo de esta nave y solo responde ante el Alto Mando.
+  \n
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookRoleXO"/>
+  </Box>
+  -El [bold]oficial ejecutivo[/bold] (o XO) es el segundo del oficial al mando. Si el CO es el cerebro, el XO es la mano.
+  \n
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookRoleSO"/>
+  </Box>
+  -Un [bold]oficial de Estado Mayor[/bold] (o SO) se coordina con los líderes de escuadra y transmite órdenes e información al XO y al CO. Supervisa a la escuadra y puede ver a través de la cámara de tu casco (que LLEVAS puesto, ¿verdad?).
+  \n
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookRoleCMP"/>
+  </Box>
+  -El [bold]jefe de la Policía Militar[/bold] supervisa a la Policía Militar y garantiza que la Ley Militar se respete y se haga cumplir.
+  \n
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookRoleCMO"/>
+  </Box>
+  -El [bold]oficial médico jefe[/bold] supervisa la enfermería y garantiza que el personal médico trabaje con eficiencia y que la investigación se realice de forma segura y ética.
+  \n
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookRoleASO"/>
+  </Box>
+  -El [bold]oficial de apoyo auxiliar[/bold] supervisa los departamentos de Hangar, Inteligencia e Ingeniería. Aunque Ingeniería tiene su propia jefatura de sección, el ASO ejerce autoridad directa sobre ella.
+  \n
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookRoleCE"/>
+  </Box>
+  -El [bold]ingeniero jefe[/bold] supervisa a los técnicos de mantenimiento y de armamento.
+  \n
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookRoleQM"/>
+  </Box>
+  -El [bold]oficial de logística[/bold] dirige el departamento de Requisiciones y supervisa a sus técnicos.
+  <Box>
+  Consulta la sucesión del mando para conocer el orden jerárquico y recuerda:
+  </Box>
+  <Box>
+    [bold]¡SALUDA![/bold]
+  </Box>
+
+  ### Guía de teatotaltemplar
+</Document>

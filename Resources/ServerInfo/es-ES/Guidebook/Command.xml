@@ -1,0 +1,56 @@
+<Document>
+# Mando
+Los jefes de cada departamento se reúnen para formar el departamento de [color=#1b67a5]Mando[/color], una fuerza temible que dirige la estación. Suelen tener acceso a equipo especial y despachos propios. A menudo hay quien los quiere muertos.
+
+## Personal
+El [color=#1b67a5]Mando[/color] se compone de los jefes de cada departamento: el [color=#9fed58]jefe de personal[/color], el [color=#cb0000]jefe de seguridad[/color], el [color=#5b97bc]jefe médico[/color], el [color=#f39f27]ingeniero jefe[/color], el [color=#c96dbf]director de investigación[/color], el [color=#b18644]intendente[/color] y, por encima de todos, el [color=#1b67a5]capitán[/color].
+  <Box>
+    <GuideEntityEmbed Entity="ToyFigurineCaptain" Caption="Capitán"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ToyFigurineHeadOfPersonnel" Caption="HoP"/>
+    <GuideEntityEmbed Entity="ToyFigurineHeadOfSecurity" Caption="HoS"/>
+    <GuideEntityEmbed Entity="ToyFigurineChiefMedicalOfficer" Caption="CMO"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ToyFigurineChiefEngineer" Caption="CE"/>
+    <GuideEntityEmbed Entity="ToyFigurineResearchDirector" Caption="RD"/>
+    <GuideEntityEmbed Entity="ToyFigurineQuartermaster" Caption="QM"/>
+  </Box>
+
+## Asumir el mando
+¡Enhorabuena por tu ascenso! Además de todo el papeleo adicional, tus nuevas [color=#a4885c]responsabilidades[/color] incluyen dirigir el departamento, aplicar cambios y elegir prioridades, mantener a salvo al personal y el equipo, y holgazanear mientras tus compinches hacen todo el trabajo.
+
+No lo olvides: todavía tienes un trabajo. Tus sofisticadas herramientas no te dan el día libre; tendrás que cubrir cualquier falta de personal, ayudar a quienes tengan dificultades y enseñar a los novatos.
+
+Quizá logres pasarte el día sentado mientras todos te guardan rencor, pero es más sensato mantenerte activo y trabajar a su lado.
+Recuerda reasignar a tus trabajadores para que hagan lo que les guste o aquello que mejor se les dé.
+
+## Tu taquilla
+
+Para afrontar tus nuevas y demoledoras tareas, cada jefe recibe objetos especiales con los que dirigir a sus subordinados. La mayoría de tus relucientes herramientas nuevas está en tu [color=#a4885c]taquilla[/color].
+  <Box>
+    <GuideEntityEmbed Entity="LockerCaptain"/>
+  </Box>
+
+Tu [color=#a4885c]mando remoto[/color] es muy sencillo, pero está enormemente infravalorado. Aunque pequeño, es potente: permite abrir y cerrar [color=#a4885c]esclusas[/color], accionar los [color=#a4885c]pernos[/color] para bloquearlas o alternar el [color=#a4885c]acceso de emergencia[/color]. Y todo ello a distancia.
+  <Box>
+    <GuideEntityEmbed Entity="DoorRemoteCommand"/>
+  </Box>
+El mando remoto determina por dónde puede moverse la gente. Los jefes pueden impedir que el personal entre en zonas peligrosas o permitir que alguien acceda rápidamente para recoger algo.
+
+También tienes acceso a tu propio canal de [color=#1b67a5]Mando[/color], igual que los demás departamentos. Sin embargo, el tuyo es especialmente importante, pues quienes pueden oírte tienen [color=#a4885c]departamentos enteros[/color] bajo su responsabilidad.
+Úsalo para comunicarte con los demás jefes y representar lo que tus trabajadores quieren o necesitan.
+
+El [color=#1b67a5]capitán[/color] y el [color=#9fed58]jefe de personal[/color] tienen acceso a la valiosa [color=#a4885c]clave maestra de cifrado[/color], que les permite sintonizar todos los canales de radio de la estación. Resulta extremadamente útil, pues permite coordinar directamente los departamentos.
+[color=#a4885c]¡No desperdicies esta ventaja vital![/color]
+  <Box>
+    <GuideEntityEmbed Entity="ClothingHeadsetCommand"/>
+    <GuideEntityEmbed Entity="EncryptionKeyStationMaster"/>
+  </Box>
+
+Para complicar aún más el pantano de papeleo (que sin duda te desbordará), se te ha concedido generosamente un [color=#a4885c]sello[/color] en la taquilla. Úsalo para firmar documentos. Después de sellarlos no se pueden editar, así que revísalos primero.
+  <Box>
+    <GuideEntityEmbed Entity="RubberStampCaptain"/>
+  </Box>
+</Document>

@@ -1,0 +1,3 @@
+### Mensajes que aparecen al metabolizar aceite gélido.
+
+frost-oil-effect-light-cold = Sientes un leve cosquilleo frío en la garganta...

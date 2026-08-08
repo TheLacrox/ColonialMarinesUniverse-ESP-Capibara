@@ -1,0 +1,15 @@
+rmc-autoinjector-ez-1 = Autoinyector (e-u) (1x1)
+rmc-autoinjector-ez-5 = Autoinyector (e-t) (5x1)
+rmc-autoinjector-ez-10 = Autoinyector (e-xxs) (10x1)
+rmc-autoinjector-ez-15 = Autoinyector (e-xs) (15x1)
+rmc-autoinjector-ez-30 = Autoinyector (e-s) (30x1)
+rmc-autoinjector-ez-45 = Autoinyector (e-m) (45x1)
+rmc-autoinjector-ez-60 = Autoinyector (e-l) (60x1)
+
+rmc-autoinjector-medic-15 = Autoinyector (m-xl) (15x6)
+rmc-autoinjector-medic-30 = Autoinyector (m-xxl) (30x6)
+
+rmc-autoinjector-custom-5 = Autoinyector (c-xs) (5x3)
+rmc-autoinjector-custom-15 = Autoinyector (c-m) (15x3)
+rmc-autoinjector-custom-30 = Autoinyector (c-xl) (30x3)
+rmc-autoinjector-custom-60 = Autoinyector (c-xxl) (60x3)

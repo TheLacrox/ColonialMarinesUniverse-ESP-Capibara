@@ -1,0 +1,104 @@
+<Document>
+  # Especialista explorador: el cazador silencioso
+
+  ## Ojos sobre el enemigo, fuego preciso
+  Dificultad: [color=#FF8C00]Difícil[/color]
+
+  El especialista explorador actúa como el filo silencioso de la UNMC: sabe infiltrarse tras las líneas enemigas, reunir información crucial del campo de batalla y eliminar con precisión objetivos de alto valor.
+  Gracias a la avanzada capa térmica M68 para camuflarse y al versátil rifle de combate personalizado M4SPR para librar enfrentamientos decisivos, el explorador ofrece capacidades incomparables de reconocimiento y ataque quirúrgico.
+
+  ## Equipo reglamentario
+  El explorador se despliega con el siguiente equipo importante:
+  <Box> <GuideEntityEmbed Entity="WeaponRifleM4SPRCustom"/> <GuideEntityEmbed Entity="RMCBackpackScout"/> <GuideEntityEmbed Entity="RMCLaserDesignatorScout"/></Box>
+
+  ## Capacidades básicas & equipo
+
+  ### Capa térmica M68: el arte de la invisibilidad
+  <GuideEntityEmbed Entity="RMCBackpackScout" HorizontalAlignment="Left"/>
+  Lo primero que notarás es tu [bold]dispositivo de camuflaje permanente que no necesita carga[/bold]. Es tu herramienta principal para infiltrarte y sobrevivir. Suena genial, ¿verdad? Sin embargo, presenta limitaciones esenciales:
+
+  - [bold]Restricción de disparo[/bold]: [italic]no puedes disparar armas mientras estás camuflado[/italic] [color=#FF0000]ni durante unos 2-3 segundos justo después de desactivar el camuflaje[/color]. Planifica tus enfrentamientos en consecuencia.
+  - [bold]Cebado de granadas desactivado[/bold]: no puedes cebar granadas mientras estás camuflado.
+
+  - Pese a ello, el camuflaje permite interactuar de muchas formas:
+
+  - [bold]Puedes recoger objetos[/bold] mientras estás camuflado.
+  - [bold]Puedes lanzar objetos[/bold].
+  - [bold]Puedes realizar ataques cuerpo a cuerpo[/bold] (por ejemplo, apuñalar con el cuchillo de combate) contra xenónidos heridos de gravedad mientras estás camuflado.
+  - [bold]Puedes designar blancos con láser[/bold] para el apoyo aéreo cercano (CAS) o el bombardeo orbital (OB).
+
+  ### Rifle de combate personalizado M4SPR: la herramienta quirúrgica
+  <GuideEntityEmbed Entity="WeaponRifleM4SPRCustom" HorizontalAlignment="Left"/>
+  Aunque no sea necesariamente el arma con mayor daño bruto, el rifle de combate personalizado M4SPR destaca por su precisión, versatilidad y efectos incapacitantes. Su munición exclusiva y la compatibilidad con accesorios permiten adaptar su rendimiento.
+
+  <Box>[bold]Tipos de munición[/bold]:</Box>
+  <Box>[bold]HV Standard[/bold]: [color=#ADD8E6]la más precisa[/color], con gran capacidad perforante, para trabajos generales de precisión y daño constante.</Box>
+  <Box>[bold]HV Impact[/bold]: [color=#FFFF00]derriba a los objetivos[/color] (resulta eficaz contra xenónidos de hasta nivel 2); es excelente para desorganizar, detener cargas y crear oportunidades de seguimiento.</Box>
+  <Box>[bold]HV Incendiary[/bold]: [color=#FFA500]prende fuego a los objetivos[/color] y causa daño prolongado; sirve para rematar a quienes huyen u obligar al enemigo a retirarse o cambiar de posición. [italic]No surte efecto contra objetivos inmunes al fuego, como Reinas y Devastadores[/italic].</Box>
+  -   [bold]Disparos incapacitantes[/bold]: los impactos del M4SPR suelen causar daños graves. Esto lo vuelve especialmente eficaz contra enemigos ágiles o peligrosos, aunque no los mate de un solo disparo. [color=#FFD700]Controla la disciplina de fuego; el fuego amigo de esta arma resulta devastador.[/color]
+  -   [bold]Gestión de la munición[/bold]: la munición especializada del M4SPR es escasa y cara. Resérvala para los objetivos en los que sus efectos exclusivos tengan mayor repercusión (por ejemplo, xenos prioritarios o especialistas enemigos peligrosos). Usa el arma secundaria contra amenazas menores.
+
+  ## Jugabilidad: el arte del reconocimiento
+
+  ### Sigilo & evasión:
+
+  -   [bold]Domina el camuflaje[/bold]: a la mayoría de los xenos les cuesta muchísimo detectar tu camuflaje, sobre todo entre la maleza o con poca luz. A menudo podrás pasar junto a fuerzas enemigas enteras sin que te vean.
+  -   [bold]El cazador se convierte en presa[/bold]: si sospechas que un xenónido te está cazando *a ti* de forma activa y competente (y no se limita a registrar la zona), suele ser más prudente retirarse y cambiar de posición que esperar a que se marche. Tu supervivencia es primordial.
+  -   [bold]Vigilancia constante[/bold]: comprueba siempre lo que te rodea. Ten siempre una ruta de escape o un plan alternativo.
+
+  ### Coordinación de inteligencia & apoyo de fuego:
+  -   [bold]El poder de la información[/bold]: los designadores del explorador te otorgan un poder enorme si los recursos de Mortero y CAS responden.
+  -   [bold]Designación habitual de blancos[/bold]: aunque los líderes de escuadrón o de equipo de fuego suelen dirigir el CAS hacia el frente, tu puesto resulta idóneo para ayudar a recursos de apoyo de fuego como el Mortero con coordenadas o a los OB contra objetivos esenciales de la retaguardia, como los nodos de recuperación xenónidos. Así los obligas a replegarse o alteras su infraestructura.
+
+  ##  Estrategias: el arte del sabotaje
+
+  Hay varias formas eficaces de jugar como explorador. Un enfoque común y de gran impacto consiste en centrarse en las emboscadas:
+ <Box> «Quemar y aturdir» </Box>
+  Ejecuta emboscadas devastadoras: primero [italic]alcanza al objetivo con un solo disparo incendiario[/italic] para aplicarle una quemadura persistente.
+  Acto seguido, [bold]cambia rápidamente al cargador HV Impact[/bold] y desata una ráfaga. Esto obliga al xenónido a soportar daño continuo por quemadura mientras los proyectiles de impacto lo castigan y aturden, o bien a rodar para apagar las llamas, lo que hará que se aturda a sí mismo y quede listo para rematarlo.
+  Además, los proyectiles de impacto [italic]aturden a los objetivos[/italic], con lo que neutralizan habilidades especiales como Salto o Abalanzarse y los dejan vulnerables y bajo control.
+
+  <Box>¡Tú la llevas... y estás ardiendo!</Box>
+  No se trata de matar al instante, sino de convertirse en una molestia constante, sobre todo para xenos solitarios o grupos pequeños y vulnerables.
+   - Asegúrate de tener preparados esos proyectiles HV Incendiary. Un silenciador en el M4SPR será tu mejor aliado.
+   - Camúflate y acércate (pero no *demasiado*) a un xeno aislado o a un grupo pequeño algo separado. Desactiva el camuflaje el tiempo justo para acertar uno o dos disparos incendiarios a un objetivo; vuelve a camuflarte de inmediato y *muévete*. No te quedes allí admirando tu obra.
+   - Ahora el xeno arde, sufre daño prolongado y probablemente se ha puesto algo nervioso. Tal vez intente rodar o quizá solo se irrite y resulte más fácil de abatir para tu frente.
+   - Busca otro ángulo, otro objetivo o incluso el mismo si no ha aprendido la lección. La clave es ser impredecible y no ofrecerles una posición constante desde la que puedan cazarte. Esta táctica sirve para debilitar patrullas o lograr que quienes flanquean solos lamenten sus decisiones sin comprometerte a un tiroteo en toda regla. Es guerra psicológica con un extra incendiario.
+
+  # Errores comunes & cómo evitarlos
+
+  Para convertirte en un explorador eficaz, no basta con saber qué hacer: también debes saber qué *no* hacer. Estos son algunos errores habituales:
+
+  <Box>[bold]Dependencia excesiva del camuflaje / «síndrome de invencibilidad»[/bold]:</Box>
+  -   [color=#FF0000]Crees que el camuflaje te convierte literalmente en un dios. Empiezas a pasearte por fiestas xeno como si el lugar fuera tuyo o acampas siglos en el mismo sitio.[/color]
+  -   [color=#00FF00] Recuerda que el camuflaje tiene limitaciones (los ojos atentos pueden verte parcialmente). Evalúa siempre el riesgo, muévete con decisión y ten presente que los xenos hábiles *pueden* detectarte. No te confíes.[/color]
+
+  <Box>[bold]Síndrome de Hotel California (sin estrategia de salida)[/bold]:</Box>
+  -   [color=#FF0000]Te infiltras hasta lo más profundo de la colmena sintiéndote como un campeón y, cuando todo se tuerce, descubres que no tienes ni idea de cómo salir.[/color]
+  -   [color=#00FF00] Antes de cualquier maniobra arriesgada, localiza varias rutas de escape. ¿Cuál es el plan B si un Triturador decide saludarte? Ensaya mentalmente qué harás si te descubren. Tu agilidad y tu camuflaje sirven para sobrevivir, no solo para infiltrarte.[/color]
+
+  <Box>[bold]Matar moscas a cañonazos (mala gestión de la munición)[/bold]:</Box>
+  -   [color=#FF0000]Vacías tus valiosos proyectiles de impacto o incendiarios del M4SPR contra un Dron solitario que ya se está muriendo.[/color]
+  -   [color=#00FF00] Trata la munición del M4SPR como un recurso precioso. Úsala contra objetivos de alto valor (HVT), blancos que requieran perjuicios concretos o situaciones en las que su precisión sea absolutamente necesaria. Recurre al arma secundaria en enfrentamientos menores.[/color]
+
+  <Box>[bold]La ley del silencio (pero no en el buen sentido)[/bold]:</Box>
+  -   [color=#FF0000]Ves a la Reina, tres Trituradores y un autobús de fiesta lleno de Guerreros rumbo a la FOB... y no se lo cuentas a nadie. O solicitas un OB justo encima de tus compañeros.[/color]
+  -   [color=#00FF00] Eres los ojos y los oídos del equipo. Una comunicación eficaz y concisa resulta tan importante como tus habilidades de combate. Cuenta a tu equipo lo que ves y lo que pretendes hacer, sobre todo si le afecta.[/color]
+
+  <Box>[bold]Arruinar la emboscada (limitaciones al desactivar el camuflaje & conducta predecible)[/bold]:</Box>
+  -   [color=#FF0000]Desactivas el camuflaje y machacas al instante el botón de disparo, olvidando esos 2-3 segundos que el arma necesita para «despertar». O apareces siempre detrás de la *misma* roca.[/color]
+  -   [color=#00FF00] Practica el intervalo entre desactivar el camuflaje y disparar. En una emboscada, desactívalo un poco *antes* de tener que abrir fuego. Varía los lugares donde apareces para resultar menos predecible.[/color]
+
+  <Box>[bold]El error «¡Mírame, soy una luciérnaga!»:[/bold]:</Box>
+  -   [color=#FF0000]Dejas encendida sin querer la luz de la armadura, con lo que tu silueta «invisible» se convierte en una baliza luminosa.[/color]
+  -   [color=#00FF00]Comprueba a menudo el estado de la luz de la armadura, sobre todo después de que te reanimen o de cambiar de equipo. Un error tan sencillo puede anular por completo tu sigilo.[/color]
+
+  ## Despedida
+
+  Ahí lo tienes: un vistazo al sombrío mundo del especialista explorador. Sin duda es un puesto exigente, que requiere algo más que rapidez con el gatillo.
+  Eres en parte saboteador, en parte agente de inteligencia, en parte asesino de precisión y, por completo, un experto en juegos mentales. Dominar el camuflaje, el rifle y el arte de no estar donde el enemigo espera exige aprender sin descanso.
+
+  Cometerás errores —nos pasa a todos—, pero conocer algunos de los tropiezos habituales debería ayudarte a esquivar unos cuantos. Recuerda estas palabras: tu mente es tu mejor arma. Lo demás no es más que equipo.
+  Sal ahí fuera, permanece oculto y da a esos xenos nuevos motivos para tener pesadillas. Buena caza. Procura que no te pisen.
+
+</Document>

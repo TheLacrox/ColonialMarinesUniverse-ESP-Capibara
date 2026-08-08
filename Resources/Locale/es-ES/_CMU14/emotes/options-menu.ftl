@@ -1,0 +1,9 @@
+ui-options-header-cmu-emotes = Gestos
+ui-options-function-cmu-emote-slot1 = Ranura de gesto 1
+ui-options-function-cmu-emote-slot2 = Ranura de gesto 2
+ui-options-function-cmu-emote-slot3 = Ranura de gesto 3
+ui-options-function-cmu-emote-slot4 = Ranura de gesto 4
+ui-options-function-cmu-emote-slot5 = Ranura de gesto 5
+ui-options-function-cmu-emote-slot6 = Ranura de gesto 6
+ui-options-function-cmu-emote-slot7 = Ranura de gesto 7
+ui-options-function-cmu-emote-slot8 = Ranura de gesto 8

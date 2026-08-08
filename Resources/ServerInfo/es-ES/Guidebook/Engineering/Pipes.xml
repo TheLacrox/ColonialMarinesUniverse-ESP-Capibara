@@ -1,0 +1,25 @@
+﻿<Document>
+  # Tuberías
+  Las tuberías se utilizan para distribuir gases de un lugar a otro.
+  Hay una gran variedad de tuberías disponibles para construir:
+
+  <Box>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption="recta"/>
+    <GuideEntityEmbed Entity="GasPipeHalf" Caption="media"/>
+    <GuideEntityEmbed Entity="GasPipeBend" Caption="codo"/>
+    <GuideEntityEmbed Entity="GasPipeTJunction" Caption="unión en T"/>
+    <GuideEntityEmbed Entity="GasPipeFourway" Caption="cuádruple"/>
+  </Box>
+
+  Las tuberías se [color=#a4885c]conectarán automáticamente[/color] a otras tuberías al anclarlas (o fijarlas con una llave inglesa) al casco para formar una [textlink="red de tuberías." link="PipeNetworks"]
+  Una red de este tipo se denomina habitualmente [textlink="red de tuberías" link="PipeNetworks"].
+
+  Las tuberías [color=red]no se conectarán[/color] a otras que ya estén conectadas a una tubería distinta.
+  Por ejemplo, construir una tubería acodada sobre una recta para formar una unión en T improvisada no funcionará.
+
+  Sin embargo, dos tuberías pueden compartir una baldosa siempre que una no obstruya la conexión de la otra con otra tubería.
+  Por ejemplo, pueden colocarse dos tuberías acodadas en la misma baldosa, una que transporte gas de norte a este y otra de oeste a sur.
+
+  Puedes colorear las tuberías (y la mayoría de los equipos que manipulan gases) con un pintor de espray.
+  Esto suele hacerse para distinguir los componentes de aire y residuos de la red Distro de la estación.
+</Document>

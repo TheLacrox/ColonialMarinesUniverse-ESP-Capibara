@@ -1,0 +1,23 @@
+﻿<Document>
+  # Regulador de presión de entrada
+  El regulador de presión de entrada es un dispositivo pasivo que permite liberar gas de una [textlink="red de tuberías" link="PipeNetworks"] cuando la presión supera un umbral determinado.
+
+  <Box>
+    <GuideEntityEmbed Entity="GasPressureRegulator"/>
+  </Box>
+
+  ## Funcionamiento
+  La válvula se [color=green]abrirá[/color] automáticamente cuando la presión de la tubería supere el umbral establecido, lo que permitirá que el gas escape hacia la tubería de salida conectada.
+
+  La válvula volverá a [color=red]cerrarse[/color] cuando la presión descienda por debajo del umbral establecido.
+
+  El caudal de la válvula está limitado a [color=orange][protodata="GasPressureRegulator" comp="GasPressureRegulator" member="MaxTransferRate"/] L/s[/color].
+
+  ## Ejemplos de uso
+  La válvula suele utilizarse para evitar situaciones de sobrepresión en sistemas de gases, como los circuitos de refrigeración del [textlink="TEG" link="TEG"] y las [textlink="tuberías" link="Pipes"], que provocarían un fallo del sistema ([textlink="bombas" link="Pumps"] obstruidas).
+
+  La válvula también puede utilizarse para extraer gas caliente listo para usar de una cámara de combustión.
+  Por ejemplo, puede no ser conveniente dejar que una cámara de combustión permanezca mucho tiempo por debajo de una presión concreta, ya que el gas podría enfriarse y enrarecerse demasiado, lo que apagaría la llama.
+
+  Un regulador de presión de entrada puede liberar el exceso de gas y mantener a la vez la presión de la cámara de combustión por encima de un umbral determinado, lo que puede ayudar a sostener el fuego en la cámara.
+</Document>

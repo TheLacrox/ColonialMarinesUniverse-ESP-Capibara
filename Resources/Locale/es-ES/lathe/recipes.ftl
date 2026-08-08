@@ -1,0 +1,8 @@
+lathe-recipe-Medkit-name = botiquín de primeros auxilios (vacío)
+lathe-recipe-MedkitBurn-name = botiquín para quemaduras (vacío)
+lathe-recipe-MedkitToxin-name = botiquín para intoxicaciones (vacío)
+lathe-recipe-MedkitO2-name = botiquín para falta de oxígeno (vacío)
+lathe-recipe-MedkitBrute-name = botiquín para traumatismos físicos (vacío)
+lathe-recipe-MedkitAdvanced-name = botiquín avanzado de primeros auxilios (vacío)
+lathe-recipe-MedkitRadiation-name = botiquín para radiación (vacío)
+lathe-recipe-MedkitCombat-name = botiquín médico de combate (vacío)

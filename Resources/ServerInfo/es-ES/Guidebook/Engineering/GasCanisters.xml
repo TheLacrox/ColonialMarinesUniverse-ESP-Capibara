@@ -1,0 +1,30 @@
+<Document>
+  # Bombonas de gas
+  <Box>
+    <GuideEntityEmbed Entity="AirCanister"/>
+    <GuideEntityEmbed Entity="OxygenCanister"/>
+    <GuideEntityEmbed Entity="NitrogenCanister"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="CarbonDioxideCanister"/>
+    <GuideEntityEmbed Entity="StorageCanister"/>
+    <GuideEntityEmbed Entity="GasPort"/>
+  </Box>
+
+  Las bombonas de gas permiten almacenar gas en un recipiente portátil para transportarlo con facilidad.
+  Pueden almacenar [color=orange][protodata="StorageCanister" comp="GasCanister" member="Volume"/] litros[/color] de gas.
+
+  Puedes conectar depósitos portátiles a una bombona de gas para rellenarlos mediante la válvula de salida de la bombona.
+  La válvula de salida también dispone de un regulador de presión ajustable para controlar la presión del depósito portátil conectado.
+
+  Abrir la válvula de salida de una bombona sin un depósito portátil conectado liberará gas en la atmósfera a la presión indicada por el regulador.
+
+  [bold]¡Asegúrate de cerrar la válvula de salida antes de extraer el depósito portátil![/bold]
+
+  ## Puertos de conexión
+  Las bombonas de gas y los [textlink="depuradores portátiles" link="PortableScrubber"] pueden conectarse a una [textlink="red de tuberías" link="PipeNetworks"] anclando (fijando con una llave inglesa) el dispositivo sobre un conector.
+  Una vez conectado, el gas podrá entrar y salir libremente de la bombona para equilibrar la presión, la temperatura y la composición.
+
+  Puede utilizarse una bomba para introducir o extraer gas de una bombona, lo que resulta útil para llenarla o vaciarla por completo.
+
+</Document>

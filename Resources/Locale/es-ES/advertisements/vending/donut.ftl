@@ -1,0 +1,10 @@
+advertisement-donut-1 = ¡Todos llevamos un pequeño policía dentro!
+advertisement-donut-2 = ¡Espero que tengas hambre!
+advertisement-donut-3 = ¡Más de 1 millón de donuts vendidos!
+advertisement-donut-4 = ¡Nos enorgullece la regularidad de nuestros productos!
+advertisement-donut-5 = ¡Dulces, azucarados y deliciosos!
+advertisement-donut-6 = ¡Sin preocupaciones: donuts y felicidad!
+thankyou-donut-1 = ¡Disfruta de tu donut!
+thankyou-donut-2 = ¡Otro donut vendido!
+thankyou-donut-3 = ¡Que tenga un buen día, agente!
+thankyou-donut-4 = ¡Espero que te vuelvas adicto!

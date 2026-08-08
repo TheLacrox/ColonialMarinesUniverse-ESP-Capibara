@@ -1,0 +1,25 @@
+<Document>
+  # CARGOS ADICIONALES OPCIONALES
+
+  Estos cargos pueden sumarse a un delito existente y se cumplen además de la condena base.
+
+  ## Resistencia al arresto
+  Negarse o huir de un arresto o registro legal.
+  - 5 min (negarse a obedecer órdenes) | 10 min (huir o emplear la fuerza)
+
+  ## Complicidad
+  Ayudar materialmente a otra persona a cometer un delito.
+  - La misma pena que corresponda al delito al que se prestó ayuda.
+
+  ## Alteración del orden durante la detención
+  Perturbación considerable mientras se está bajo detención legal.
+  - 5 min
+
+  ## Posesión durante un delito
+  Llevar armas ilegales, contrabando o equipo no autorizado mientras se comete otro delito.
+  - +5 min + confiscación
+
+  ## Aprovechamiento de situaciones de emergencia
+  Usar una emergencia como cobertura para cometer otro delito (p. ej., saquear durante una evacuación, robar armas durante un cierre, hacerse pasar por personal de emergencias).
+  - +5 min | El cargo subyacente puede agravarse si se pone en peligro la seguridad de la colonia.
+</Document>

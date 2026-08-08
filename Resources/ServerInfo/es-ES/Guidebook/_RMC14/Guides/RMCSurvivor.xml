@@ -1,0 +1,223 @@
+<Document>
+
+  Guía de frog6645 en Discord
+
+  [bold]Si estás leyendo esto al inicio de la ronda sin tener ni idea de qué hacer, busca a alguien que sí lo sepa, consigue una escopeta y síguelo. Es probable que mueras. ¡Buena suerte![/bold]
+
+  #Superviviente
+
+  El puesto de superviviente no está pensado para jugadores nuevos. Morirás decenas de veces por causas ajenas a tu voluntad. Para disfrutar de la mejor experiencia, asegúrate de dominar la medicina, la ingeniería y el combate antes de intentar jugar como superviviente.
+
+  ##Notas importantes
+
+  Los supervivientes son colonos atrapados en una colonia con xenónidos. Todos tienen un cometido. Asegúrate de saber qué haces antes de elegir uno. Si nunca has jugado como superviviente, ¡elige el de seguridad!
+
+  Como superviviente, el tiempo juega en tu contra. Cada segundo que dedicas a saquear permite que los xenónidos organicen un ataque contra ti. A los 50 segundos de comenzar la partida, es probable que decenas de drones ya estén a punto de abalanzarse sobre ti.
+
+  Tu primera prioridad debe ser informar por radio. Saluda, di cuál es tu trabajo y cuenta dónde estás. Lo ideal es que intentes acercarte a otro superviviente para no quedarte a solas. Lo único que tienes a tu favor frente a cualquier xenónido es el trabajo en equipo; no olvides aprovecharlo.
+
+  Otra prioridad esencial es conseguir una escopeta. Gracias a sus aturdimientos, las escopetas te permiten matar xenónidos. Casi cualquier xenónido contra el que tengas alguna posibilidad se puede aturdir con una escopeta. Resultan muy útiles para combatir mientras te desplazas.
+
+  [bold]Actúa deprisa[/bold]. A medida que avance la ronda, ya no podrás llegar a ciertos lugares con la misma facilidad que al principio. Por ejemplo, Medicina de Trijent está muy cerca de la colmena. Saquea primero las zonas cercanas a la colmena y después ve acercándote al lugar donde estableceréis la posición defensiva.
+
+  ##Primeros pasos
+
+  ¡Lo primero que debes hacer es revisar tu bolsa de supervivencia!
+
+  <GuideEntityEmbed Entity="RMCPouchSurvival"/>
+
+  Tu bolsa de supervivencia contiene varios objetos necesarios para seguir con vida. Según tu trabajo, puedes aparecer con distintos artículos, pero la bolsa de supervivencia es el elemento principal que no cambia.
+
+  [bold]¡El objeto más importante es la linterna![/bold]
+
+  <GuideEntityEmbed Entity="RMCFlashlight"/>
+
+  Nada de lo que lleves servirá si no puedes ver qué estás haciendo. Sostén la linterna, guárdala en el espacio de almacenamiento del traje o métela en uno de los bolsillos para poder orientarte por el mapa. El [bold]superviviente de ingeniería[/bold] aparece con un casco de obra, que ilumina algo peor pero te deja libres las manos y los bolsillos.
+
+  [bold]¡Si estás atrapado en una sala, usa la palanca![/bold]
+
+  <GuideEntityEmbed Entity="CMCrowbarRed"/>
+
+  Una palanca puede forzar al instante cualquier puerta o persiana sin electricidad.
+
+  [bold] ¡Apareces con medicamentos básicos![/bold]
+
+  <GuideEntityEmbed Entity="CMPacketPillsTricordrazine"/>
+
+  La tricordrazina es pésima para curar, pero hay que aprovechar cualquier cosa disponible. Cura una cantidad minúscula de daño físico y por quemaduras, y cada pastilla contiene 15u. Puedes tomar dos pastillas sin riesgo de sobredosis, pero no olvides que también puedes combinar la tricordrazina con otros medicamentos para curarte mucho más rápido. Usa las pastillas como complemento.
+
+  ##Navegación
+
+  [bold]Orientarse por el mapa depende en gran medida de conocerlo. ¡Consulta los mapas web para saber adónde vas![/bold]
+
+  Como superviviente, es probable que la colonia no tenga electricidad salvo que hagas algo para restablecerla. Esto significa que tendrás que usar la [bold]palanca[/bold] para desplazarte por el mapa. En caso de apuro, una escopeta cargada con postas puede derribar una puerta con dos disparos. Las puertas con electricidad no pueden forzarse con una palanca, así que procura conocer una ruta alternativa. A veces podrás romper una ventana y desmontar el marco.
+
+  Un consejo útil: las [bold]zonas de aterrizaje[/bold] suelen quedar pegadas a uno de los lados del mapa. En el lado opuesto casi siempre se encuentra la [bold]Colmena[/bold]. Debes evitar la colmena, salvo que busques pelea o quieras conseguir el botín que contiene. Nadie puede explicarte cómo valorar si conviene entrar en lugares controlados por los xenónidos: solo se aprende con la experiencia. Elige bien tu camino.
+
+  Avanza con mucho cuidado por las zonas cubiertas de maleza. Como superviviente, dependes de actuar con rapidez y no tienes tiempo para esperar a que la maleza desaparezca después de destruir los nodos. Si vas a desplazarte, hazlo tan rápido como puedas y no pierdas tiempo intentando asegurar tu retaguardia. No tienes medios para hacerlo.
+
+  Por último, la mayoría de las colonias presentan cierta organización. Aunque no conozcas el mapa, comprobarás que las zonas residenciales suelen estar cerca de las áreas médicas y que las zonas de seguridad también suelen encontrarse próximas. No siempre es así, pero recuerda que el sentido común puede llevarte lejos incluso sin conocimientos previos.
+
+  ##Puestos de superviviente
+
+  Todos los supervivientes desempeñan alguna función, ¡e incluso los peores son bastante poderosos en comparación con los marines! Todos pueden [bold]cargar con una persona[/bold] y cuentan con [bold]Resistencia 2[/bold]. Para cargar con alguien, agárralo, vuelve a agarrarlo y después pulsa su personaje y arrástralo sobre el tuyo. Tras una breve acción con barra de progreso, te lo echarás a la espalda. Y lo mejor es que solo ocupa una mano.
+
+  Este es un resumen rápido de lo que puede hacer cada puesto de superviviente.
+
+  [bold]Superviviente de seguridad[/bold]
+  <GuideEntityEmbed Entity="RMCWeaponRevolverSpearhead"/>
+
+  El [bold]superviviente de seguridad[/bold] es quien combate en el grupo. No posee ninguna habilidad tan importante como para que su muerte resulte catastrófica y cuenta con ventajas innatas para el combate. Inflige más daño cuerpo a cuerpo, tiene formación en combate cuerpo a cuerpo (CQC) y puede utilizar autoinyectores al instante. Además, aparece con mejores suministros. En general, debes proteger a los demás supervivientes y ayudarles a saquear lugares peligrosos. [bold]¡Este es el mejor puesto para tu primera partida![/bold]
+
+  [bold]Superviviente de ingeniería[/bold]
+  <GuideEntityEmbed Entity="RMCHardhatWhite"/>
+
+  El [bold]superviviente de ingeniería[/bold] puede reparar los APC, los generadores y las comunicaciones. Al igual que el superviviente de seguridad, no es tan imprescindible como para que su muerte condene al equipo, pero debe actuar con cuidado y atender sus tareas de ingeniería antes de ponerse a combatir. Construye y repara barricadas y arregla los generadores si el equipo lo necesita. [bold]No olvides que reparar los generadores en mapas muy urbanizados puede perjudicar a tu equipo más de lo que lo ayuda.[/bold]
+
+  [bold]Superviviente médico[/bold]
+  <GuideEntityEmbed Entity="CMSurgicalCase"/>
+
+  El [bold]superviviente médico[/bold] es el sostén vital del grupo. Si eliges este puesto, debes extremar la cautela. Si mueren todos los supervivientes médicos, nadie podrá devolverlos a la vida. Tu trabajo consiste en curar a los demás y asegurarte de que estén en condiciones de cumplir sus funciones. Cuando todo el mundo goce de buena salud, puedes intercalar algún cóctel molotov. [bold]Da prioridad absoluta a estabilizar a los supervivientes en estado crítico y reanimar a quienes hayan muerto.[/bold]
+
+  [bold]Superviviente corporativo[/bold]
+  <GuideEntityEmbed Entity="CMPen"/>
+
+  El [bold]superviviente corporativo[/bold] es un puesto orientado al juego de rol. Se parece mucho al superviviente civil; la única diferencia es su cargo. Sin embargo, no puedes hacer juego de rol si has muerto. Busca un lugar que defender junto a los demás supervivientes o, si todo sale mal, un escondite. Lucha codo con codo con el superviviente de seguridad y gánate el sueldo, o deja atrás a todo el mundo para ocultarte en una taquilla y acaba capturado por un dron menor. [bold]Cuando te rescaten, busca al enlace corporativo del Almayer y preséntate.[/bold]
+
+  [bold]Superviviente civil[/bold]
+  <GuideEntityEmbed Entity="CMJumpsuitColonist"/>
+
+  El [bold]superviviente civil[/bold] no dispone de ninguna ventaja particular. Eres un fusilero capaz de cargar con personas y resulta apenas un poco más difícil derribarte. Haz todo lo posible por sobrevivir.
+
+
+  ##Saqueo
+
+  Saquear es el paso más importante para un superviviente. Aunque elijas la mejor posición defensiva y combatas a la perfección, fracasarás si no tienes equipo. Las siguientes afirmaciones suelen cumplirse y te ayudarán a decidir dónde saquear.
+
+  Medicina cuenta con expendedores que contienen casi todo lo necesario. Lo ideal es llevarte el expendedor médico entero: desatorníllalo y arrástralo contigo. Aunque no haya ninguno, es probable que en Medicina quede equipo improvisado que pueda sacarte de un apuro.
+
+  Seguridad dispone de armas y armaduras. Además, los cadáveres pueden llevar armaduras y suministros médicos.
+
+  Carga y los almacenes suelen contener suministros variados.
+
+  Los edificios administrativos suelen tener papel, que sirve para fabricar cócteles molotov. ¡Puedes recoger las papeleras pulsándolas con el botón derecho! Además, caben en mochilas y cajones.
+  El bar tiene alcohol para fabricar cócteles molotov. Lo ideal es llevarte contigo todo el expendedor de bebidas alcohólicas.
+
+
+  Muchas de estas cosas pueden parecer inútiles, pero, sin ellas, tus probabilidades de sobrevivir se desploman. Conviene disponer de un equipo equilibrado, con abundantes medicamentos y munición, además de barricadas resistentes.
+
+  [bold]¡El saqueo es la parte más importante de la supervivencia! ¡Tu habilidad no sirve de nada si no tienes medios para demostrarla![/bold]
+
+  ##Armas
+
+  Los supervivientes tienen acceso a armas que los marines no pueden conseguir y es probable que muchas no te resulten familiares. A menudo poseen alguna mecánica o característica peculiar que las distingue de las variantes de los marines. Algunas armas de la colonia son iguales a las que emplean los marines, pero también se explican porque un superviviente les da un uso diferente.
+
+  [bold]Las escopetas serán probablemente tu arma principal mientras recorres el mapa, pues pueden aturdir y destruir a los xenónidos aislados.[/bold]
+
+  <GuideEntityEmbed Entity="WeaponShotgunM42A2"/>
+
+  La escopeta de corredera M42A2 es el arma más fiable para un superviviente. Con una bayoneta instalada, permite combatir a corta distancia, destruir maleza y rechazar a casi cualquier enemigo. Debe usarse con una mano y cargarse con postas. Cuando la utilices, extrema las precauciones para no disparar a tus aliados. Un disparo de postas mal dirigido puede matar al instante a cualquiera que no lleve armadura y aturdir durante mucho tiempo a quien sobreviva al impacto. Por suerte, las postas también pueden aturdir brevemente a los xenónidos y ralentizarlos durante bastante tiempo tras alcanzarlos. Muévete entre los enemigos, elimina los objetivos más débiles y crea oportunidades para tus aliados.
+
+  <GuideEntityEmbed Entity="RMCWeaponShotgunHG3712"/>
+
+  La escopeta de corredera HG 37-12 es una versión menos fiable y más especializada de la M42A2. En la actualidad, la HG 37 está muy limitada porque no dispone de su sistema de dos tubos, que permitiría cambiar de munición sobre la marcha. La HG 37 debe empuñarse con ambas manos y cargarse con la munición que prefieras. Con balas, la HG 37 es muy precisa. Si usas postas, maneja la HG 37 como la otra escopeta de corredera, pero asegúrate de empuñarla con ambas manos antes de disparar para impedir que el objetivo esquive el tiro.
+
+  <GuideEntityEmbed Entity="WeaponShotgunCustomBuilt"/>
+
+  Podría decirse que esta es el arma más mortífera que puede obtenerse sin intervención administrativa. La escopeta artesanal, que dentro del personaje suele llamarse «artesanal», tiene capacidad para 6 cartuchos. Dispone de un modo de ráfaga capaz de disparar rápidamente dos cartuchos de postas seguidos. Puede matar al instante a casi cualquier T1 o dejar gravemente herido a cualquier T2. Extrema las precauciones al usarla cerca de aliados.
+
+  <GuideEntityEmbed Entity="WeaponShotgunM890"/>
+
+  La M890 es una escopeta muy robusta que admite ocho cartuchos en el tubo y no necesita accionar la corredera. Un marine quizá la conozca por las escopetas de la armería de código rojo del Almayer. La M890 tiene una cadencia superior a la escopeta de corredera M42A2, lo que la hace muy eficaz en una pelea a corta distancia. En la práctica es una mejora directa de las escopetas de corredera y compite con la escopeta artesanal.
+
+
+  [bold]Los fusiles son opciones muy eficaces, aunque muchos de los modelos exclusivos de supervivientes resultan poco útiles salvo que se empleen de una forma concreta.[/bold]
+
+  <GuideEntityEmbed Entity="WeaponRifleAR10"/>
+
+  La comunidad de supervivientes conoce el fusil de asalto AR10 por ser ridículamente malo, aunque tiene algunas virtudes. Pese a su bajo daño por segundo (DPS), cada bala inflige mucho daño, por lo que aprovecha muy bien la munición y sirve para mantener a los xenónidos alejados de tus barricadas durante bastante tiempo. Además, cualquier AR10 del mapa tiene [bold]garantizado[/bold] aparecer con accesorios que puedes retirar e instalar en un arma menos mala. Aprovecha lo que tengas, aunque sea un AR10.
+
+  <GuideEntityEmbed Entity="WeaponRifleM16"/>
+
+  El M16 es una mejora directa del AR10. Cuenta con mayor cadencia y precisión, además de un daño por bala parecido al del AR10, lo que lo convierte en un arma fiable. El M16 también conserva el daño a mucha distancia y responde bien a los accesorios. Es una de las armas más fiables que puede encontrar un superviviente y, cuando aparece, suele haber munición abundante. Usa el M16 para combatir a corta distancia desde la retaguardia del grupo o para disparar contra los xenónidos que ataquen tus barricadas con intención de causarles mucho daño.
+
+  <GuideEntityEmbed Entity="RMCWeaponRifleM54C"/> <GuideEntityEmbed Entity="RMCWeaponRifleM54CMK1"/> <GuideEntityEmbed Entity="WeaponRifleM4SPRCustom"/>
+
+  Armas de los marines muy estandarizadas. Es mejor reservar su munición para los enfrentamientos más importantes y la fase de defensa, aunque resultan tremendamente útiles para combatir a corta distancia si se usan bien. El M4SPR permite moverse a máxima velocidad mientras se empuña, el MK2 tiene un DPS elevado y el MK1 se parece al MK2, pero es algo mejor en general. Úsalos como lo harías siendo marine, aunque de manera más conservadora. No puedes llamar a Requisiciones para pedir una entrega de suministros... normalmente.
+
+  <GuideEntityEmbed Entity="WeaponRifleMAR40"/>
+
+  Es un arma muy poco fiable, a pesar de lo que afirma su descripción dentro del juego. El MAR40 tiene una precisión pésima y no sirve fuera de distancias extremadamente cortas, parecidas a las de una escopeta. Si decides usarlo, que sea porque hay munición de sobra y puede mantener un fuego constante. Además, un bípode y una mira réflex permiten que dispare con bastante precisión y aproveche sus potentes balas. Utilízalo como último recurso, al igual que el AR10, o cuando estés en una pelea a corta distancia y necesites herir algo que no se pueda aturdir con una escopeta.
+
+
+  [bold] Los supervivientes tienen acceso a pistolas muy potentes y a otras realmente pésimas. [/bold]
+
+
+  <GuideEntityEmbed Entity="RMCWeaponPistolMK45"/>
+
+  La MK45 es una pistola lenta y fiable, conocida por su capacidad perforante. Es poco eficaz contra objetivos sin blindaje y la MK45 funciona mejor como complemento o arma de reserva. También resulta muy útil al defender una posición si no tienes ninguna otra forma de enfrentarte al blindaje.
+
+  <GuideEntityEmbed Entity="RMCWeaponRevolverSpearhead"/>
+
+  El Spearhead es un revólver conocido por su dispersión extremadamente baja y puede utilizarse con una sola mano con gran eficacia. Es especialmente deficiente contra enemigos con [bold]evasión[/bold] debido a su baja estadística de precisión, pero muy potente contra objetivos con blindaje moderado. Emplea munición de punta hueca que casi rivaliza con la mejor disponible. Además, el Spearhead apenas pierde daño con la distancia. Úsalo para abatir a cualquier objetivo que huya de ti.
+
+
+  [bold]El MAR50, la pistola de clavos y el Basira Armstrong no son comparables con las demás armas, pues desempeñan funciones más especializadas.[/bold]
+
+
+  <GuideEntityEmbed Entity="RMCWeaponMar50LMG"/>
+
+  El MAR50 es una de las armas más peligrosas que podrían caer en manos de un superviviente o de cualquier marine. Al igual que el MAR40, el MAR50 dispara munición 7.62x39, lo que significa que admite los cargadores del MAR40. Además, el MAR50 tiene una precisión milimétrica, una cadencia aceptable y un impacto tremendo. El MAR50 también dispone de cargadores de tambor especializados con capacidad para 100 cartuchos. Instalado sobre un bípode, el MAR50 puede aniquilar todo lo que se cruce en su camino. Incluso sin bípode, es la opción más potente de la que dispones. No lo pierdas.
+
+  <GuideEntityEmbed Entity="RMCWeaponBoltActionRifle"/>
+
+  El fusil de caza Basira es un arma bastante situacional. Dispara balas perforantes que apenas pierden daño con la distancia y puede hacerlo a bastante velocidad. Debes accionar el cerrojo después de cada disparo, de forma parecida a la corredera de una escopeta. [INSERT CÓMO HACERLO CON LA TECLA ESPECIAL CUANDO LO AVERIGÜE]. Úsalo al defender la posición para hostigar a los enemigos más resistentes y obligarlos a alejarse de tus barricadas. Ten mucho cuidado de no alcanzar a tus aliados: no les hará ninguna gracia recibir un disparo AP por la espalda.
+
+  <GuideEntityEmbed Entity="WeaponNailgun"/>
+
+  A diferencia de su equivalente de los marines, ¡la pistola de clavos puede disparar clavos! Cada uno inflige un daño AP moderado y el arma puede configurarse para disparar ráfagas con bastante rapidez. La pistola de clavos pierde eficacia con la distancia, pero sirve para mantener a las castas más resistentes lejos de las barricadas o incluso perseguirlas. Y lo más destacable: ¡también puede reparar barricadas! Sostén en una mano el material del que esté hecha la barricada y púlsala mientras tienes seleccionada la pistola de clavos. Consumirás unos cuantos clavos y un poco de material, pero repararás rápidamente la barricada.
+
+
+  ##Combate en célula
+
+  Al luchar como superviviente no intentas exterminar a los xenónidos, sino quebrar su moral y conseguir que sean menos los que puedan volver para matarte más adelante. En una ronda normal no vencerás a los xenónidos. Son demasiados, demasiado fuertes y, llegado el momento, no tienes forma de enfrentarte a los enemigos más poderosos. Dicho esto, no estás indefenso.
+
+  Durante los primeros 15 minutos de la ronda puedes combatir contra los xenónidos mediante un [bold]combate en célula[/bold] adecuado. Un marine suele desplazarse junto a un grupo numeroso y arrollar a los xenónidos gracias a una potencia de fuego superior. Como tú no cuentas con eso, tendrás que recurrir a tácticas superiores. Haz que todo el mundo equipe el arma más adecuada para su función. Proporciona a los supervivientes de seguridad las mejores escopetas y las armaduras más protectoras, y coloca en retaguardia a los médicos con fusiles para mantenerlos fuera de peligro. Los demás deben ser flexibles y ayudar en combate allí donde haga falta.
+
+  No libras una batalla de desgaste contra los xenónidos, sino que buscas victorias rápidas que hundan su moral o reduzcan su número. Por tanto, si un enfrentamiento se prolonga, debes retirarte antes de que los xenónidos regresen con refuerzos.
+
+  El fuego es una herramienta fundamental en el combate en célula porque permite controlar el campo de batalla, algo que de otro modo no puedes hacer. Inflige daño continuado e impide que los xenónidos se curen por cualquier medio. Esto significa que un xenónido que decida atravesar el fuego para atacar confía en poder entrar, golpearte y retirarse sin curarse mientras sufre daño constante. Demuéstrale que se equivoca.
+
+  El fuego sirve para impedir que los xenónidos ataquen y no suele utilizarse contra quienes se retiran. Si prendes fuego a un xenónido que está solo, en la práctica queda marcado para morir porque tendrá que rodar por el suelo o arderá. Varios xenónidos pueden huir y apagarse las llamas unos a otros. Esto significa que el fuego sirve de poco salvo que amenaces con infligir daño continuado durante un enfrentamiento activo. Además, prender fuego a un xenónido en combate le plantea el mismo ultimátum: «huye o enfréntate a mí en desventaja». Como mínimo, obligará a sus aliados a dedicar tiempo a apagarlo en vez de atacarte.
+
+  Debido a tu menor daño, dar prioridad a los objetivos correctos es crucial. [bold]Cuando alguien ataque a un xenónido concreto, intenta atacarlo tú también.[/bold] Procura causar el mínimo fuego amigo posible. Intenta conseguir tantas bajas como puedas para inclinar la ventaja numérica a tu favor durante el enfrentamiento.
+
+  Por último, este podría ser el lema más importante para un superviviente: [bold]¡¡¡SACUDE ANTES DE DISPARAR!!![/bold] Sacudir a tus aliados hace que vuelvan a ponerse en pie. Así podrán sacudirte a ti y disparar sus armas, devolviéndote la ventaja numérica. Un aliado aturdido resulta tan útil como uno muerto, así que sacúdelo para que podáis ayudaros mutuamente. El combate en célula gira en torno a la cohesión y el trabajo en equipo. Debes cuidar de tus aliados para que ellos cuiden de ti.
+
+
+  ##Elegir una posición defensiva
+
+  Es muy importante decidir pronto dónde establecer la posición defensiva para evitar dividir los recursos. Si alguien propone un lugar viable, no pierdas tiempo discutiendo. Tu objetivo debe ser llevar el botín hasta allí y sobrevivir durante el trayecto.
+
+  Evidentemente, cualquier lugar en el que establezcas una posición debe poder defenderse. Intenta situarte cerca de una zona de aterrizaje (LZ), en un lugar con cuellos de botella pero con espacio suficiente para esquivar ataques de área, como el escupitajo del Bombardero. Para sobrevivir es esencial elegir un espacio abierto que ofrezca poca cobertura a los atacantes y suficientes puntos desde los que concentrar el fuego.
+
+  También debes plantearte lo difícil que será transportar el botín hasta allí. Si tienes que cruzar todo el mapa con un expendedor de bebidas alcohólicas, el lugar resulta de inmediato menos conveniente.
+
+  Los cócteles molotov son fundamentales para defender una posición. En los mapas con más cócteles molotov puedes permitirte ocupar espacios más abiertos, pues defenderlos exige usar una cantidad mayor. En los mapas donde escasean, compensa ser más vulnerable a los ataques de área para poder conservarlos.
+
+  La última consideración principal son los recursos. ¿Tienes suficiente metal y plastiacero para fortificar bien el lugar? Si no es así, no intentes defenderlo. Los xenónidos son muy hábiles para encontrar el eslabón más débil. No olvides que pueden derretir paredes. Siempre hallarán una forma de entrar.
+
+  ##Defender la posición
+
+  <GuideEntityEmbed Entity="RMCGrenadeMolotov"/>
+
+  [bold]Antes que nada, la forma de manipular los cócteles molotov es el aspecto más importante de la defensa. Tienen una mecha aleatoria de 1-4 segundos, lo que significa que uno puede estallarte en la mano durante el mismo segundo en que lo enciendes. Antes de prenderlo, decide exactamente dónde vas a lanzarlo y hazlo sin distraerte con nada. Pase lo que pase, debes arrojarlo allí o podrías quedarte paralizado con él en la mano. Es literalmente una bomba de relojería.[/bold]
+
+  Uno de los aspectos más importantes al defender la posición es el uso de cócteles molotov. Son bombas incendiarias que pueden fabricarse sosteniendo un trozo de papel y pulsando sobre una botella de alcohol compatible. Si examinas una botella, indicará que puede convertirse en cóctel molotov cuando sea posible. Los cócteles molotov crean una zona de fuego que inflige un daño por quemaduras bastante leve a cualquier xenónido que la toque. Todo fuego, incluido el de los cócteles molotov, puede apagarse dando palmadas, pero de lo contrario durará bastante tiempo.
+
+  Los cócteles molotov resultan muy útiles para ganar tiempo. Ten presente que su funcionamiento no es demasiado intuitivo. Antes de crear el fuego, producen una explosión inicial. Esta daña las barricadas e inflige directamente daño por quemaduras, además del que cause el propio fuego. No lances cócteles molotov directamente contra tus barricadas salvo que estés desesperado.
+  También es muy importante disponer de una forma de controlar el fuego. Asegúrate de usar extintores y de acumularlos debidamente para subsanar cualquier error provocado por los cócteles molotov.
+
+  Por lo demás, construir barricadas es muy sencillo. Levántalas para retrasar al enemigo, no para que duren. Convierte todas las que puedas en barricadas de riesgo biológico. Lanza cócteles molotov, dispara a los xenónidos y cura cuando puedas. No olvides racionar los recursos. Una vez que estés defendiendo la posición, es probable que no consigas ninguna baja salvo que decidas contraatacar, lo cual a veces es correcto. Hazlo todo con la idea de conseguir mucho con poco.
+
+</Document>

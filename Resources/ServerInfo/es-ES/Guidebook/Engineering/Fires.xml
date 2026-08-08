@@ -1,0 +1,25 @@
+﻿<Document>
+  # Incendios
+  Los incendios son posiblemente la alteración atmosférica más peligrosa que puede producirse en la estación.
+
+  <Box>
+    <GuideEntityEmbed Entity="Firelock" Caption=""/>
+    <GuideEntityEmbed Entity="FirelockGlass" Caption=""/>
+  </Box>
+
+  Suelen producir gases a alta presión y temperatura, que pueden propagarse rápidamente por toda la estación si se abren las compuertas cortafuegos o las puertas sin cuidado, aunque solo sea un instante.
+
+  Si alguien queda atrapado en un incendio, puede quedar incapacitado, morir e incluso reducido a cenizas, lo que impide reanimarlo.
+
+  ## Cómo combatir incendios
+  Los elementos esenciales de un incendio son el combustible y el oxígeno.
+  Eliminar cualquiera de estos dos elementos apagará el incendio.
+  Por ejemplo, los incendios a los que no llega oxígeno se extinguirán lentamente, y los que no tengan combustible también se apagarán.
+
+  Exponer el incendio al vacío lo apagará, ya que todo el gas se perderá en el espacio.
+  Después puedes [textlink="reparar" link="ExpandingRepairingStation"] la [textlink="brecha al vacío" link="Spacing"] y volver a presurizar la zona.
+
+  ## Consejos
+  - [bold]Reconoce las señales de un futuro incendio.[/bold] Si una zona está llena de gases muy inflamables, solo es cuestión de tiempo que un pasajero descuidado los prenda. Intenta aislar la zona y depurar los gases lo antes posible.
+  - [bold]Impide que los gases se propaguen con un proyector holofán.[/bold] Dejar que los gases atraviesen una compuerta cortafuegos puede volver peligrosas otras salas, aunque solo sea un instante. Esto aumenta el número de salas que tendrás que reparar.
+</Document>

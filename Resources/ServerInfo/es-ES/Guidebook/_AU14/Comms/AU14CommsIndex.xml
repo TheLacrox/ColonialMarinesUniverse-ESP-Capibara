@@ -1,0 +1,56 @@
+<Document>
+  # Referencia de comunicaciones
+
+  Esta sección explica los sistemas de radio que utilizan las fuerzas terrestres.
+
+  <Box>
+    <GuideEntityEmbed Entity="ANPRC117GRadio" Caption="AN/PRC-117G"/>
+    <GuideEntityEmbed Entity="AU14HeadsetGovforMarineFTL" Caption="Auriculares de campaña"/>
+  </Box>
+
+  ## Guías
+
+  - [textlink="Radio AN/PRC-117G" link="AU14CommsANPRC"] - instrucciones de uso de la radio de mochila: configuración de redes, modos de funcionamiento, claves COMSEC, estaciones de retransmisión, interceptación y registro de red.
+  - [textlink="Auriculares de campaña" link="AU14CommsHeadsets"] - auriculares asignados: redes con nombre, cobertura de relé, interferencias y sintonización de frecuencias directas.
+  - [textlink="Procedimiento radiotelefónico" link="AU14CommsVoiceProcedure"] - formato estándar de los mensajes de radio, palabras de procedimiento y ejemplos completos de informes de contacto, misiones de fuego y solicitudes de evacuación de bajas.
+  - [textlink="Referencia rápida de comunicaciones" link="AU14CommsQuickRef"] - prefijos de chat, alcances de señal, antenas, modos de funcionamiento, potencia de transmisión, silenciador y controles COMSEC.
+
+  ## Buscar un tema
+
+  <Table Columns="2" MinForcedColumnWidth="120">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Tema[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Guía[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Configurar o utilizar un AN/PRC</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">[textlink="Radio AN/PRC-117G" link="AU14CommsANPRC"]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Usar unos auriculares asignados</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">[textlink="Auriculares de campaña" link="AU14CommsHeadsets"]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Aprender llamadas y palabras de procedimiento de radio</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">[textlink="Procedimiento radiotelefónico" link="AU14CommsVoiceProcedure"]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Consultar un control, un alcance o un prefijo</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">[textlink="Referencia rápida de comunicaciones" link="AU14CommsQuickRef"]</Box>
+    </ColorBox>
+  </Table>
+</Document>

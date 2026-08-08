@@ -1,0 +1,83 @@
+<Document>
+  # DELITOS GRAVES
+
+  ## Alteración grave del orden
+  Perturbar gravemente las operaciones de la colonia, la respuesta ante emergencias o los servicios esenciales (bloquear la respuesta ante emergencias, obstaculizar una evacuación, provocar pánico durante operaciones de emergencia, entorpecer el triaje médico).
+  - 10 min
+
+  ## Agresión
+  Amenazar con emplear fuerza física o emplearla con intención hostil.
+  - 10 min sin armas | 15 min con un arma letal
+
+  ## Homicidio involuntario
+  Matar a alguien sin intención maliciosa debido a una conducta temeraria o negligente.
+  - 20 min + posible revocación de licencias, destitución del puesto o reclusión permanente si la persona sigue siendo un peligro
+
+  ## Detención ilegal
+  Inmovilizar, secuestrar o encarcelar ilegalmente a otra persona. No se aplica a cuarentenas, arrestos o custodias de protección legales.
+  - 20 min
+
+  ## Robo grave
+  Robar fondos de la colonia, suministros de emergencia, armas, vehículos, tarjetas de acceso o equipo restringido.
+  - 15 min + devolución de los bienes
+
+  ## Acceso no autorizado a propiedad corporativa
+  Acceder sin autorización a equipo, laboratorios, registros o zonas restringidas de la empresa.
+  - 7 min (acceso leve) | 15 min si hay materiales, vehículos, registros o sistemas restringidos implicados
+
+  ## Uso indebido de la infraestructura de la colonia
+  Utilizar, inutilizar o modificar indebidamente sistemas de la colonia (procesadores atmosféricos, sistemas del reactor, esclusas, procesadores de agua, refugios de emergencia, sistemas de combustible).
+  - 15 min | 20 min si se pone en peligro la seguridad pública | Reclusión permanente si existe riesgo de muertes masivas o colapso de la colonia
+
+  ## Sabotaje
+  Dañar, inutilizar o comprometer la infraestructura, los servicios públicos o los sistemas de protección y seguridad de la colonia.
+  - 20 min | Reclusión permanente si el acto genera un peligro masivo
+
+  ## Posesión de contrabando restringido
+  Poseer drogas restringidas, equipo militar, explosivos, armas ilegales, material clasificado u organismos peligrosos.
+  - 15-20 min + confiscación
+
+  ## Señal de socorro no autorizada
+  Enviar una llamada de socorro, una baliza de emergencia o una señal de evacuación sin autorización legal.
+  - 15 min | 20 min si provoca pánico, un despliegue militar o una interrupción operativa
+
+  ## Interferencia en la respuesta ante emergencias
+  Obstaculizar a alguaciles, personal médico, equipos de evacuación u otros equipos de respuesta ante emergencias que actúen legalmente.
+  - 15 min | 20 min si provoca lesiones, muertes, contaminación o un retraso importante
+
+  ## Incumplimiento de medidas contra riesgos biológicos
+  Negarse a cumplir procedimientos legales de cuarentena, descontaminación, examen médico o aislamiento.
+  - 20 min | Reclusión permanente si la infracción entraña riesgo de brote, infección masiva o contaminación en toda la colonia
+
+  ## Posesión de material biológico restringido
+  Poseer, ocultar, transportar o vender material biológico peligroso sin autorización (huevos desconocidos, organismos parasitarios, muestras de patógenos, tejidos infectados, restos de formas de vida invasoras, material orgánico desconocido procedente de zonas restringidas).
+  - 20 min + confiscación o destrucción + cuarentena obligatoria | Reclusión permanente si se pone en peligro la seguridad de la colonia
+
+  ## Ocultación de una persona contaminada
+  Ocultar o ayudar a sabiendas a una persona en cuarentena o sospechosa de portar un patógeno peligroso.
+  - 20 min | Reclusión permanente si se genera riesgo de brote
+
+  ## Espionaje corporativo
+  Robar, copiar o transmitir datos corporativos, científicos o de investigación biológica restringidos.
+  - 20 min | Reclusión permanente si está relacionado con potencias hostiles, grupos terroristas o investigaciones biológicas peligrosas
+
+  ## Divulgación no autorizada
+  Difundir información restringida de carácter colonial, científico, militar o biológico sin autorización.
+  - 10 min (leve) | 20 min si provoca pánico o una interrupción operativa | Reclusión permanente si existe riesgo de víctimas masivas o colapso de la colonia
+
+  ## Corrupción
+  Usar la autoridad pública, policial o administrativa para obtener un beneficio personal o imponer un castigo ilegal.
+  - 15 min + destitución del puesto
+
+  ## Abuso de autoridad
+  Ordenar arrestos, registros, incautaciones, órdenes administrativas o directrices de emergencia ilegales.
+  - 15 min + destitución del puesto
+
+  ## Encubrimiento de un fugitivo
+  Ocultar o ayudar a sabiendas a una persona buscada por un delito grave o capital.
+  - 15 min
+
+  ## Disturbios violentos
+  Participar en desórdenes públicos violentos que impliquen daños a la propiedad, agresión, robo, incendio provocado u obstrucción de servicios de emergencia.
+  - 20 min
+</Document>

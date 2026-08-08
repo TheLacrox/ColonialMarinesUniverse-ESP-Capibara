@@ -1,0 +1,168 @@
+<Document>
+  <Box>
+    [color=goldenrod][head=2]GUÍA DE LA POLICÍA MILITAR[/head][/color]
+  </Box>
+  <Box>
+    [color=white]✧✧✦✧✧[/color]
+  </Box>
+  <Box>
+    [bolditalic][head=2]Redactada por la Academia de Policía de la Oficina del Mariscal Preboste[/bolditalic]
+  </Box>
+  <Box>
+    [color=#134975]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+  </Box>
+
+  ## ¿Qué hace la Policía Militar?
+
+
+  La Policía Militar es el cuerpo al que se encomienda hacer cumplir dentro del juego la [textlink="Ley de los Marines" link="RMCMarineLaw"] y los [textlink="SOP (procedimientos operativos estándar)" link="RMCMarineSOP"]. [bold]El objetivo de ser MP no es enviar al calabozo a tantos marines como puedas.[/bold] Eso está mal visto. El objetivo de la [color=#ff000d][bold]MP[/bold][/color] es hacer del servidor un lugar más inmersivo y agradable para todos. Esfuérzate por cumplirlo: media en los conflictos y atiende las necesidades de la tripulación y los marines empleando la mínima fuerza necesaria.
+
+
+  <Box>
+    <GuideEntityEmbed Entity="AU14GuidebookLawMarine"/>
+    <GuideEntityEmbed Entity="AU14GuidebookSOP"/>
+  </Box>
+
+  ## Los distintos miembros de la Policía Militar en el Almayer
+
+
+  <Box Orientation="Vertical">
+    [bold]Jefe de la Policía Militar[/bold]
+    <GuideEntityEmbed Entity="RMCGuidebookRoleCMP" Caption=""/>
+  </Box>
+  <Box>
+    [color=#8B0000][bold]El jefe de la Policía Militar[/bold][/color], denominado [color=#8B0000][bold]jefe de la MP[/bold][/color], dirige la Policía Militar a bordo del UNS Almayer. Es la segunda autoridad más alta de la nave en cuestiones de [textlink="Ley de los Marines" link="RMCMarineLaw"], solo por debajo de un [color=#00CBFE][bold]oficial al mando[/bold][/color] autorizado. Su cometido es garantizar que la Ley de los Marines y los [textlink="SOP" link="RMCMarineSOP"] se apliquen correctamente y que los miembros de la [color=#ff000d][bold]MP[/bold][/color] desempeñen bien su labor. El [color=#8B0000][bold]jefe de la MP[/bold][/color] suele ser un [color=#ff000d][bold]MP[/bold][/color] con más experiencia, capaz de resolver dudas e inquietudes. [color=#8B0000][bold]El jefe de la Policía Militar[/bold][/color] puede ostentar desde el rango de teniente segundo (O1) hasta el de teniente primero (O2)
+  </Box>
+
+
+  <Box Orientation="Vertical">
+    [bold]Alcaide militar[/bold]
+    <GuideEntityEmbed Entity="RMCGuidebookRoleMW" Caption=""/>
+  </Box>
+  <Box>
+    [bold]El alcaide militar,[/bold] o simplemente [bold]alcaide[/bold], es la persona responsable de administrar el calabozo, imponer condenas a los presos y encargarse de la mayor parte del papeleo. Lleva los registros y realiza el trabajo de oficina que permite que el calabozo funcione sin contratiempos. El [bold]alcaide[/bold] militar puede ostentar desde el rango de sargento (E5) hasta el de sargento de artillería (E7)
+  </Box>
+
+
+  <Box Orientation="Vertical">
+    [bold]Policía Militar[/bold]
+    <GuideEntityEmbed Entity="RMCGuidebookRoleMP" Caption=""/>
+  </Box>
+  <Box>
+    [bold]La Policía Militar[/bold], o [color=#ff000d][bold]MP[/bold][/color], constituye la mayor parte del departamento y se ocupa de todo el trabajo policial. Esto incluye detenciones, registros, patrullas y cualquier otra tarea que se le encomiende. [bold]Obedece al [bold]alcaide[/bold] y al [color=#8B0000][bold]jefe de la MP[/bold][/color].[/bold] Los miembros ordinarios de la Policía Militar pueden ostentar desde el rango de cabo (E4) hasta el de sargento de personal (E6)
+  </Box>
+
+
+  ## ¿Ante quién responde la MP? ¡Ante el Preboste!
+  <Box Orientation="Vertical">
+    [bold]Mariscal preboste[/bold]
+    <GuideEntityEmbed Entity="CMUGuidebookRolePvM" Caption=""/>
+  </Box>
+  La [color=#ffa500][bold]Oficina del Mariscal Preboste,[/bold][/color] abreviada a menudo como «Preboste», es la organización que garantiza la correcta interpretación de la ley y que además la redacta. [bold]Si ves a uno de sus miembros a bordo del Almayer, trátalo con el máximo respeto.[/bold]
+
+  ## Niveles de alerta de seguridad
+  La nave cuenta con varios niveles de alerta, que pueden modificarse en el C.I.C. Son los siguientes.
+
+  ## Equipo de la MP
+  La Policía Militar dispone de un amplio surtido de equipo especializado para cumplir sus funciones. A continuación se enumera, con un código de color que indica las restricciones de alerta aplicables a la [color=#ff000d][bold]MP[/bold][/color].
+
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCHandcuffs"/>
+  </Box>
+  [bold]Las esposas son una herramienta esencial para la [color=#ff000d][bold]MP[/bold][/color]: permiten inmovilizar a alguien si haces clic sobre esa persona mientras las sostienes.[/bold] La acción se cancela si se mueve, así que aturde primero a los marines que no colaboren. Mientras estén esposados, no podrán moverse si los tienes sujetos.
+
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCZipties"/>
+  </Box>
+  Las bridas funcionan igual que las esposas, [bold]salvo que, al quitárselas a alguien, se rompen y quedan inutilizadas.[/bold] Resultan útiles si no quieres preocuparte por dejar esposas tiradas. [bold]Son de un solo uso: ¡pon la brida y olvídate![/bold]
+
+
+  <Box>
+    <GuideEntityEmbed Entity="CMStunbaton"/>
+  </Box>
+  [bold]La porra eléctrica es un arma de aturdimiento cuerpo a cuerpo y corto alcance que aturde a un marine de un solo golpe.[/bold] Debe activarse (pulsando [keybind="ActivateItemInHand"]) para aturdir a alguien. Puedes saber si está encendida examinándola o comprobando si su imagen está iluminada. Se recarga introduciéndola en un cargador.
+
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCWeaponTaser"/>
+  </Box>
+  El incapacitador es una herramienta de aturdimiento similar a un arma corta que dispara descargas eléctricas. Varios impactos consecutivos aturdirán a un objetivo a distancia y te permitirán acercarte. Ten presente que el aturdimiento dura algo menos que el de la porra, así que quizá debas volver a aturdirlo cuando lo alcances, según la distancia. Se recarga en un cargador. [bold]El incapacitador también puede usarse como porra aturdidora golpeando al sospechoso cuerpo a cuerpo.[/bold]
+
+
+  <Box>
+    <GuideEntityEmbed Entity="CMFlash"/>
+  </Box>
+  El dispositivo cegador es un aparato de mano que puede utilizarse de dos formas.
+  - Con el modo de daño activo, puedes hacer clic directamente sobre alguien para cegarle. Esto lo aturdirá y derribará
+  - También puedes pulsar [keybind="ActivateItemInHand"] mientras lo sostienes para producir un destello de corto alcance que desorienta y ralentiza, pero no aturde. No puede recargarse en un cargador, aunque recupera usos lentamente con el tiempo.
+
+
+  <Box>
+    <GuideEntityEmbed Entity="CMArmorM2MP"/>
+  </Box>
+  La armadura reglamentaria de la Policía Militar. Ofrece una protección adecuada y pesa menos que su equivalente para marines. [bold]Su protección está muy equilibrada y rinde decentemente en todas las categorías, aunque no destaca en ninguna.[/bold]
+
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCArmorVestMP"/>
+  </Box>
+  Una armadura ligera que los miembros de la [color=#ff000d][bold]MP[/bold][/color] pueden elegir en su expendedor de equipo. [bold]No ralentiza en absoluto y permite correr muy deprisa; sin embargo, ofrece una protección mínima y no te protegerá en modo alguno frente al ácido ni las amenazas biológicas.[/bold]
+
+
+  <Box>
+    <GuideEntityEmbed Entity="CMArmorRiot"/>
+  </Box>
+  [bold]Esta armadura pesada y voluminosa aguanta castigos considerables de amenazas convencionales, como cuchillos, balas y similares. A cambio, te ralentizará mucho mientras la lleves.[/bold] Ten en cuenta que no sirve en absoluto contra el ácido ni las amenazas biológicas. (En la armería del calabozo hay un total de 6 conjuntos)
+
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCGrenadeFlashBang"/>
+  </Box>
+  Las granadas aturdidoras son muy eficaces en zonas amplias o contra multitudes. Una vez lanzadas, detonan y aturden durante mucho tiempo a los objetivos dentro de un radio considerable. [bold]También aturden a los miembros de la [color=#ff000d][bold]MP[/bold][/color], así que lánzalas desde detrás de una cobertura o aléjate tras arrojarlas.[/bold] Pueden llevarse con alerta verde, pero solo para la defensa propia o de terceros. ¡No las lances sin necesidad!
+
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCVendorSecArmory"/>
+  </Box>
+  La munición de goma consiste en [bold]balas menos letales[/bold] que pueden dispararse con la mayoría de las armas reglamentarias. Tras recibir cierto número de impactos, el objetivo queda aturdido durante un breve periodo. ¡Controla con mucho cuidado qué tipo de munición llevas! Resulta útil contra prisioneros de guerra y otros no marines que puedan resistir el incapacitador.
+
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCBoxShotgunBeanbag"/>
+  </Box>
+  Los cartuchos antidisturbios de saco son una herramienta eficaz para controlar disturbios y pueden aturdir a un objetivo con unos pocos disparos. Se disparan exclusivamente con la escopeta antidisturbios de la armería. Resultan útiles contra prisioneros de guerra y otros no marines que puedan resistir el incapacitador.
+
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCWeaponShotgunM890Riot"/>
+  </Box>
+  La escopeta táctica antidisturbios es un arma semiautomática de ocho (8) disparos que se encuentra en la armería del calabozo. Puede disparar los cartuchos antidisturbios de saco disponibles en la armería, pero no admite cartuchos convencionales, como postas o balas de una pieza.
+
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCWeaponLauncherM81"/>
+  </Box>
+  El lanzagranadas antidisturbios es un arma de un solo disparo que admite granadas no letales (como la aturdidora) en la recámara, pero no otras granadas como HEDP o HIDP. [bold]Usa [keybind="CMUniqueAction"] mientras lo sostienes para abrir la recámara; después introduce la granada y ciérrala. Ten en cuenta que debes empuñarlo con ambas manos para disparar.[/bold] En la armería del calabozo hay un total de 2
+
+
+  <Box>
+    <GuideEntityEmbed Entity="WeaponShotgunM890"/>
+  </Box>
+  La escopeta táctica es un arma de fuego letal semiautomática que se encuentra en la armería del calabozo. No admite cartuchos antidisturbios de saco, pero SÍ puede cargar postas, dardos y balas de una pieza. El lanzagranadas acoplado admite granadas HEDP, HIDP y HEFA convencionales (en la armería del calabozo hay un total de 9)
+
+
+  <Box>
+    <GuideEntityEmbed Entity="WeaponRifleM4SPR"/>
+  </Box>
+  En la armería del calabozo hay dos armarios M4SPR con munición letal y fusiles M4SPR. Son idénticos a los fusiles reglamentarios que pueden obtener los marines. El armario contiene munición letal, y el Riot-Tech también dispone de munición de goma. En la armería del calabozo hay un total de 8 fusiles.
+
+
+  <Box>
+    <GuideEntityEmbed Entity="WeaponSMGM63"/>
+  </Box>
+  En la armería del calabozo hay dos armarios M63 con munición letal y 4 M63. Son idénticos a los subfusiles reglamentarios que pueden obtener los marines. El armario contiene munición letal, y el Riot-Tech también dispone de munición de goma. En la armería del calabozo hay un total de 8 subfusiles.
+
+  ### Guía creada por WithinElysium
+</Document>

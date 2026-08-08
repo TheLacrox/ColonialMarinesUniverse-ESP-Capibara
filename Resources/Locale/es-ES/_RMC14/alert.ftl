@@ -1,0 +1,12 @@
+rmc-alert-level-blue-elevated = Atención: nivel de seguridad elevado a AZUL; existe posible actividad hostil a bordo.
+rmc-alert-level-blue-lowered = Atención: nivel de seguridad reducido a AZUL; existe posible actividad hostil a bordo.
+rmc-alert-level-green = Atención: nivel de seguridad reducido a VERDE; todo despejado.
+rmc-alert-level-red-elevated = Atención: nivel de seguridad elevado a ROJO; existe una amenaza inmediata para la nave.
+rmc-alert-level-red-lowered = Atención: nivel de seguridad reducido a ROJO; existe una amenaza inmediata para la nave.
+rmc-alert-red-alert = Alerta roja
+rmc-alert-level = Nivel de alerta
+rmc-alert-level-which = ¿Qué nivel de alerta quieres establecer?
+rmc-alert-green = Verde
+rmc-alert-blue = Azul
+rmc-alert-red = Rojo
+rmc-alert-change-level = Cambiar nivel de alerta

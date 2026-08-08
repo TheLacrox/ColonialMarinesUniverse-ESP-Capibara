@@ -1,0 +1,112 @@
+<Document>
+  # Traidores
+
+  <Box>
+    [color=#999999][italic]"WHISKEY. ECHO. WHISKEY. LIMA. ALPHA. DELTA. AGENTE, HAS SIDO ACTIVADO."[/italic][/color]
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="PosterContrabandSyndicateRecruitment" Caption=""/>
+  </Box>
+  Los traidores son antagonistas al servicio del [color=#ff0000]Sindicato.[/color] Eres un agente durmiente con acceso a distintas herramientas y armas mediante tu [bold]enlace[/bold].
+  También recibes [bold]palabras clave[/bold] para identificar a otros agentes, y un equipo de traidores bien coordinado puede lograr [italic]resultados brutales.[/italic]
+
+  Cualquiera que no sea uno de los [textlink="jefes de departamento" link="Command"] o miembro de [textlink="Seguridad" link="Security"] puede ser traidor.
+
+  ## Enlace & activación
+  El [color=cyan]enlace[/color] es tu herramienta más importante como traidor. Puedes canjear los 20 [color=red]telecristales[/color] (TC) con los que empiezas por objetos que te ayudarán a cumplir tus objetivos.
+
+  Al pulsar [color=yellow][bold][keybind="OpenCharacterMenu"][/bold][/color], verás el código personal de tu enlace. [bold]Configurar el tono de llamada de tu PDA con este código abrirá el enlace.[/bold]
+  Pulsar [color=yellow][bold][keybind="OpenCharacterMenu"][/bold][/color] también te permite consultar tus objetivos y las palabras clave.
+
+  Si no tienes una PDA cuando te activan, recibirás un [color=cyan]implante de enlace[/color] [bold]por el precio íntegro del implante en [color=red]TC[/color].[/bold]
+  Puedes acceder a él desde la barra rápida.
+  <Box>
+    <GuideEntityEmbed Entity="PassengerPDA" Caption="PDA"/>
+    <GuideEntityEmbed Entity="Telecrystal" Caption="Telecristales"/>
+    <GuideEntityEmbed Entity="BaseUplinkRadio" Caption="Implante de enlace"/>
+  </Box>
+
+  [bold]Asegúrate de cerrar el enlace de tu PDA para impedir que alguien más lo vea.[/bold] ¡No querrás que [color=#cb0000]Seguridad[/color] descubra que lo tienes y te lo confisque!
+
+  Normalmente, otras personas no pueden acceder a los enlaces implantados, por lo que carecen de medidas de seguridad. Sin embargo, pueden extraértelos con un implantador vacío.
+
+  <Box>
+    <GuideEntityEmbed Entity="WeaponPistolCobra" Caption="Armamento"/>
+    <GuideEntityEmbed Entity="MagazineBoxLightRifle" State="icon" Caption="Munición"/>
+    <GuideEntityEmbed Entity="C4" Caption="Explosivos"/>
+    <GuideEntityEmbed Entity="ClothingOuterHardsuitSyndie" Caption="Equipamiento"/>
+    <GuideEntityEmbed Entity="Stimpack" Caption="Sustancias químicas"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ChameleonProjector" Caption="Engaño"/>
+    <GuideEntityEmbed Entity="Emag" Caption="Sabotaje"/>
+    <GuideEntityEmbed Entity="StorageImplanter" Caption="Implantes"/>
+    <GuideEntityEmbed Entity="MobMonkeySyndicateAgentNukeops" Caption="Aliados"/>
+    <GuideEntityEmbed Entity="ClothingEyesGlassesOutlawGlasses" Caption="Inútil"/>
+  </Box>
+
+  Las compras que hagas deberían ayudarte a cumplir tus objetivos. Puede que parte del equipo no te resulte útil, y tendrás que elegir entre actuar con sigilo y armar ruido.
+
+  ## Coordinación
+  Las palabras clave son palabras o frases que todos los traidores conocen. Permiten identificar o contactar discretamente con otro traidor, lo que puede ser útil si tus objetivos incluyen [italic][color=cyan]mantenerlo con vida[/color][/italic] o [italic][color=cyan]ayudarlo a cumplir sus objetivos.[/color][/italic]
+
+  Cuando encuentres amigos, [bold]puedes retirar [color=red]telecristales[/color] de tu enlace para dárselos.[/bold] Podrán introducirlos en sus propios enlaces y gastarlos.
+
+  Algunas ofertas de tu enlace cuestan más de 20 TC, así que tendrás que compartir si quieres comprarlas.
+
+  ## Asesinato
+  Uno de tus objetivos podría ser [italic][color=cyan]matar o abandonar a un tripulante.[/color][/italic]
+
+  Puedes [color=cyan]abandonar[/color] a tu objetivo [bold]impidiendo que llegue a CentComm[/bold] en la lanzadera de evacuación o en una cápsula de escape.
+
+  Si no puedes abandonarlo o es demasiado importante como para dejarlo con vida, tendrás que ensuciarte las manos y [color=cyan]asesinarlo[/color]. Asegúrate de que tu objetivo no siga vivo cuando la [bold]lanzadera de evacuación llegue a CentComm[/bold] y no permitas que lo reanimen.
+
+  Recuerda que el Sindicato solo quiere muertos a tus objetivos. [color=red]Intenta evitar las matanzas o causar daños graves a la estación,[/color] pues cuantas más vidas inocentes arrebates, mayor será el lastre que representes.
+
+  ## Evasión & autoeliminación
+  Tus objetivos podrían exigirte [italic][color=cyan]llegar a CentComm sin que te maten ni te capturen.[/color][/italic] No permitas que [color=#cb0000]Seguridad[/color] te detenga: completa tus demás objetivos y [bold]regresa con vida.[/bold]
+
+  Como alternativa, tus objetivos podrían exigirte [italic][color=cyan]tener una muerte gloriosa.[/color][/italic] [bold]Asegúrate de no volver de entre los muertos[/bold] o podrías despertar esposado.
+
+  ## Apropiación
+  Lo más habitual es que tengas que [italic][color=cyan]robar una posesión de un jefe de departamento.[/color][/italic]
+
+  El objeto puede estar en su despacho o llevarlo encima. Si no puedes sustraérselo, quizá tengas que matar a quien lo porte.
+
+  Estas son algunas de las cosas que podrían encargarte:
+  - Robar al [color=yellow]Capitán[/color] su [bold]tarjeta ID[/bold], su [bold]pistola láser antigua[/bold], su [bold]mochila propulsora[/bold] o su [bold]disco de autenticación nuclear[/bold].
+  <Box>
+    <GuideEntityEmbed Entity="CaptainIDCard" Caption=""/>
+    <GuideEntityEmbed Entity="WeaponAntiqueLaser" Caption=""/>
+    <GuideEntityEmbed Entity="JetpackCaptainFilled" Caption=""/>
+    <GuideEntityEmbed Entity="NukeDisk" Caption=""/>
+  </Box>
+  - Robar al [color=#5b97bc]Director médico[/color] su [bold]hipoespray[/bold] o su [bold]monitor de tripulación portátil[/bold].
+  <Box>
+    <GuideEntityEmbed Entity="Hypospray" Caption=""/>
+    <GuideEntityEmbed Entity="HandheldCrewMonitorEmpty" Caption=""/>
+  </Box>
+  - Robar al [color=#c96dbf]Director de Investigación[/color] su [bold]traje presurizado experimental[/bold] o su [bold]teletransportador de mano[/bold].
+  <Box>
+    <GuideEntityEmbed Entity="ClothingOuterHardsuitRd" Caption=""/>
+    <GuideEntityEmbed Entity="HandTeleporter" Caption=""/>
+  </Box>
+  - Robar al [color=#cb0000]Jefe de Seguridad[/color] su [bold]escopeta de energía[/bold].
+  <Box>
+    <GuideEntityEmbed Entity="WeaponEnergyShotgun" Caption=""/>
+  </Box>
+  - Robar al [color=#f39f27]Ingeniero jefe[/color] sus [bold]botas magnéticas avanzadas[/bold].
+  <Box>
+    <GuideEntityEmbed Entity="ClothingShoesBootsMagAdv" Caption=""/>
+  </Box>
+  - Robar al [color=#b18644]Intendente[/color] su [bold]tablilla digital de requisiciones[/bold].
+  <Box>
+    <GuideEntityEmbed Entity="BoxFolderQmClipboard" Caption=""/>
+  </Box>
+  - Descuartizar a Ian, el perro del [color=#9fed58]Jefe de Personal[/color], y conseguir la [bold]carne de corgi[/bold].
+  <Box>
+    <GuideEntityEmbed Entity="MobCorgiIan" Caption=""/>
+    <GuideEntityEmbed Entity="FoodMeatCorgi" Caption=""/>
+  </Box>
+
+</Document>

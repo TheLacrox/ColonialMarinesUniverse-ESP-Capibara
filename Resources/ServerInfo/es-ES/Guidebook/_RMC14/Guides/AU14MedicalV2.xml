@@ -1,0 +1,37 @@
+<Document>
+
+  # Medicina V2
+
+  ## Resumen
+  - El sistema médico ha cambiado considerablemente.
+  - Ahora los pacientes sufren heridas concretas en las extremidades.
+  - Las heridas sin tratar reducen la salud máxima de la extremidad afectada.
+  - Los kits de trauma, las gasas, los kits para quemaduras, la pomada y la gasa hemostática tratan las heridas de la forma habitual.
+  - Cuando se tratan todas las heridas de una extremidad, estas se recuperan de forma pasiva y la extremidad puede volver a tener toda su salud.
+
+  ## Fabricación de tratamientos de campaña
+  - Usa [keybind="CMUOpenMedicalCraftingMenu"] para fabricar tratamientos médicos rápidamente.
+  - La fabricación utiliza un ingrediente y un kit de trauma empaquetado.
+  - El polvo coagulante y un kit de trauma empaquetado crean un kit de trauma normal.
+  - El gel para quemaduras y un kit de trauma empaquetado crean un kit para quemaduras normal.
+
+  ## Ingredientes
+  <Box>
+    <GuideEntityEmbed Entity="CMUCoagulantPowder1"/>
+    <GuideEntityEmbed Entity="CMUBurnGel1"/>
+  </Box>\n
+
+  ## Objetos básicos
+  <Box>
+    <GuideEntityEmbed Entity="CMUPlainTraumaDressing10"/>
+    <GuideEntityEmbed Entity="CMTraumaKit10"/>
+    <GuideEntityEmbed Entity="CMBurnKit10"/>
+  </Box>
+
+  ## Hilo quirúrgico e injerto sintético
+  - El hilo quirúrgico ahora solo restaura la salud de las extremidades.
+  - El injerto sintético ahora solo restaura la salud de las extremidades.
+  - Ninguno de los dos trata heridas ni restaura por sí solo la salud máxima de una extremidad.
+  - Trata primero las heridas y después usa el hilo o el injerto si la extremidad aún necesita recuperar salud.
+
+</Document>

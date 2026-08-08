@@ -1,0 +1,120 @@
+<Document>
+  # Operativos nucleares
+
+  <Box>
+    [color=#999999][italic]"OPERATIVOS, PREPARADOS. VUESTROS OBJETIVOS SON SENCILLOS.[/italic][/color]
+  </Box>
+  <Box>
+    [color=#999999][italic]ENTREGAD LA CARGA Y SALID ANTES DE QUE DETONE. COMIENZA LA MISIÓN."[/italic][/color]
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="PosterContrabandEnlistGorlex" Caption=""/>
+  </Box>
+
+  Te acaban de elegir como operativo nuclear del [color=#ff0000]Sindicato[/color]. Solo tienes un objetivo: hacer volar una de las mejores naves de Nanotrasen con un explosivo de fisión nuclear.
+
+  ## Operativos
+  Tu equipo estará formado por varios roles distintos:
+  - [bold]Operativos[/bold], soldados comunes que se encargan del trabajo pesado.
+  - El [bold]Sanitario[/bold], que trabaja con reactivos para elaborar medicamentos o armas químicas.
+  - El [bold]Comandante[/bold], que prepara el plan y dirige al equipo.
+
+  <Box>
+    <GuideEntityEmbed Entity="ClothingOuterHardsuitSyndie"/>
+    <GuideEntityEmbed Entity="ClothingOuterHardsuitSyndieMedic" Caption="traje presurizado del sanitario"/>
+    <GuideEntityEmbed Entity="ClothingOuterHardsuitSyndieCommander" Caption="traje presurizado del comandante"/>
+  </Box>
+
+  Si te han elegido como Sanitario o Comandante, pero no te sientes preparado, uno de tus compañeros puede asumir tus responsabilidades.
+
+  ## El disco
+
+  Cada operativo comienza con un [color=cyan]localizador[/color] que debes encender y llevar contigo en todo momento. Siempre apuntará hacia el [color=cyan]disco de autenticación nuclear.[/color]
+  El disco pertenece al [color=yellow]Capitán[/color], que casi siempre lo llevará encima. Sigue la dirección de la flecha del localizador hasta el disco y [italic]haz lo que sea necesario para conseguirlo[/italic].
+
+  <Box>
+    <GuideEntityEmbed Entity="PinpointerNuclear"/>
+    <GuideEntityEmbed Entity="NukeDisk"/>
+  </Box>
+
+  ## Preparativos
+  Cada miembro de tu escuadrón ha recibido un [color=cyan]enlace de comunicaciones[/color] para comprar todo lo necesario para la misión, igual que los [textlink="traidores." link="Traitors"]
+
+  <Box>
+    <GuideEntityEmbed Entity="BaseUplinkRadio40TC" Caption="tu enlace"/>
+  </Box>
+
+  Puedes comprar el mismo tipo de equipo que los traidores, pero tienes acceso a material de mayor calidad y más telecristales para gastar.
+  <Box>
+    <GuideEntityEmbed Entity="WeaponLightMachineGunL6" Caption="Armamento"/>
+    <GuideEntityEmbed Entity="MagazineLightRifleBox" State="icon" Caption="Munición"/>
+    <GuideEntityEmbed Entity="C4" Caption="Explosivos"/>
+    <GuideEntityEmbed Entity="ClothingOuterHardsuitJuggernaut" Caption="Equipo"/>
+    <GuideEntityEmbed Entity="Stimpack" Caption="Sustancias químicas"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ChameleonProjector" Caption="Engaño"/>
+    <GuideEntityEmbed Entity="Emag" Caption="Sabotaje"/>
+    <GuideEntityEmbed Entity="MacroBombImplanter" Caption="Implantes"/>
+    <GuideEntityEmbed Entity="BorgChassisSyndicateAssault" Caption="Aliados"/>
+    <GuideEntityEmbed Entity="ClothingEyesGlassesOutlawGlasses" Caption="Inútil"/>
+  </Box>
+
+  También tendrás que decidir si quieres [color=red]declarar la guerra[/color]. Si lo haces, cada integrante del equipo recibirá [bold]40 telecristales adicionales[/bold].
+  Sin embargo, la tripulación conocerá vuestra existencia de inmediato y tendrá mucho tiempo para prepararse antes de vuestra llegada.
+
+  El [bold]Comandante[/bold] es la única persona que puede declarar la guerra. Decide rápido: [italic]¡la oferta es por tiempo limitado![/italic]
+  <Box>
+    <GuideEntityEmbed Entity="NukeOpsDeclarationOfWar"/>
+  </Box>
+
+  ## Cómo llegar a la estación
+  Tienes el plan y tienes el equipo. Ahora ejecútalo.
+
+  Coge una [bold]mochila propulsora[/bold] de la armería y ve con los demás operativos hasta vuestra [color=cyan]lanzadera[/color].
+  Entre otras cosas que quizá necesites, en la lanzadera encontrarás un [bold]ordenador IFF[/bold]. Te permite ocultarte de otras naves y de los escáneres de masas cuando [italic]Mostrar IFF[/italic] y [italic]Mostrar nave[/italic] están desactivados.
+
+  Cuando todos estéis preparados, viajad por FTL hasta la estación y acercaos con las mochilas propulsoras. No olvidéis el código, los localizadores ni la bomba si vais a llevarla.
+
+  <Box>
+    <GuideEntityEmbed Entity="JetpackBlack"/>
+    <GuideEntityEmbed Entity="ComputerIFFSyndicate"/>
+  </Box>
+
+  ## La bomba nuclear & procedimiento de armado
+  En tu lanzadera hay un papel con los [color=cyan]códigos de autenticación nuclear[/color]. [bold]Comprueba si el ID de la bomba coincide con el de tu lanzadera.[/bold] Si no coincide, armarás la bomba de la estación en su lugar.
+
+  - Consigue el [bold]disco de autenticación nuclear[/bold] e introdúcelo en la bomba.
+  - Introduce el [bold]código de autenticación nuclear[/bold] y pulsa "[bold]E[/bold]" en el teclado numérico para confirmarlo.
+  - [bold]Para iniciar la secuencia de autodestrucción, pulsa [color=#EB2D3A]ARM[/color][/bold]. La bomba explotará tras 300 segundos.
+  - [bold]Defiende la bomba[/bold], ¡aunque te cueste la vida! Los requisitos de la misión no incluyen que regreses.
+  - Alguien tarda 30 segundos en [bold]desarmar[/bold] la bomba. Es posible volver a armarla, pero las probabilidades de éxito de la misión disminuyen si permites que ocurra.
+  - Si se vuelve a armar la bomba, el temporizador continuará desde el punto en que se detuvo.
+
+  <Box>
+    <GuideEntityEmbed Entity="NuclearBomb" Caption="El explosivo de fisión nuclear"/>
+  </Box>
+
+  ## Condiciones de victoria
+
+  El [color=#00ff00]vencedor[/color] de la ronda se anuncia en la pantalla final, junto con la magnitud de su victoria.
+
+  [bold][color=red]¡Victoria mayor del Sindicato![/color][/bold]
+  - La bomba detona en la estación.
+  - La tripulación escapa en la lanzadera de evacuación, pero la bomba sigue armada.
+  - La bomba está armada y llega a Mando Central en la lanzadera de evacuación.
+
+  [bold][color=red]Victoria menor del Sindicato[/color][/bold]
+  - La tripulación escapa en la lanzadera de evacuación, pero sobreviven todos los operativos.
+  - La tripulación escapa y mueren algunos operativos, pero la tripulación pierde el disco.
+
+  [bold][color=#999999]Victoria neutral[/color][/bold]
+  - La bomba detona fuera de la estación.
+
+  [bold][color=green]Victoria menor de la tripulación[/color][/bold]
+  - La tripulación escapa en la lanzadera de evacuación con el disco y mueren algunos operativos.
+
+  [bold][color=green]¡Victoria mayor de la tripulación![/color][/bold]
+  - Mueren todos los operativos.
+  - La tripulación hace estallar con la bomba el puesto avanzado de los operativos nucleares.
+</Document>

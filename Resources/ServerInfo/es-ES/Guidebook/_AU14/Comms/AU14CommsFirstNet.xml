@@ -1,0 +1,355 @@
+<Document>
+  # Primer acceso a la red
+
+  Esta página te guía desde que apareces hasta que consigues mantener una conversación por una red de radio. Da por hecho que nunca has usado el sistema de comunicaciones y te explica cada paso a medida que avanzas.
+
+  Si algo no funciona, en la última sección de esta página encontrarás las causas más habituales.
+
+  <Box>
+    <GuideEntityEmbed Entity="AU14HeadsetGovforMarineFTL" Caption="Auriculares de campaña"/>
+    <GuideEntityEmbed Entity="ANPRC117GRadio" Caption="AN/PRC-117G"/>
+  </Box>
+
+  ## Paso 1: averigua qué llevas encima
+
+  Casi todo el mundo aparece con unos [bold]auriculares de campaña[/bold] en la ranura de las orejas. Son tu radio personal y lo único que necesitará la mayoría de los roles.
+
+  Un reducido número de roles también aparece con una radio de mochila [bold]AN/PRC-117G[/bold] en la ranura de la espalda. Es grande, salta a la vista en el inventario y es lo que permite que funcionen los auriculares de todos los demás.
+
+  Abre el inventario y comprueba ambas ranuras antes de hacer nada más.
+
+  - [bold]Solo auriculares[/bold]: lee el paso 2, después el paso 3 y pasa directamente a la sección del microteléfono.
+  - [bold]Auriculares y radio de mochila[/bold]: lee la página entera. Las comunicaciones de tu escuadra dependen de ti.
+
+  ## Paso 2: entiende por qué las radios dejan de funcionar
+
+  Esto es lo que más confunde a los jugadores nuevos, así que léelo antes de intentar transmitir.
+
+  Tus auriculares no son un teléfono. Por sí solos no llegan al otro extremo del mapa. Las redes de combate [bold]dependen de un relé[/bold]: tus auriculares solo funcionan si están cerca de algo que sirva de anclaje para la red.
+
+  Cualquiera de los siguientes elementos sirve de anclaje para una red:
+
+  - Un AN/PRC encendido que lleve un operador cualificado.
+  - Una estación de retransmisión desplegada.
+  - Un mástil de antena de puesto de mando.
+  - Un conjunto de comunicaciones de a bordo que tenga alimentación.
+  - Una radio instalada en una lanzadera o un vehículo, cuya cobertura apenas supera el casco.
+  - Un mástil de antena de campaña que haya levantado personal con formación de ingeniería usando diez láminas de metal.
+  - Una estación base clandestina o un equipo de relé fijado al suelo, si perteneces a la CLF.
+  - Cualquier mástil o conjunto al que la CLF haya instalado una toma.
+
+  Si no tienes ninguno de ellos dentro de tu alcance, la red de tu escuadra está caída. No degradada: caída. Hablarás y no ocurrirá nada.
+
+  Por eso es importante el operador de radio y por eso te quedas incomunicado si te alejas de la persona que lleva la radio de mochila. En una escuadra suele ser el [bold]jefe de equipo de fuego[/bold].
+
+  Los canales colony y civilian son la excepción. No dependen de un relé y funcionan en cualquier parte, lo que también permite que cualquiera los escuche.
+
+  ### Qué distancia se considera «cerca»
+
+  <Table Columns="2" MinForcedColumnWidth="120">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Distancia al anclaje[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Qué obtienes[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">0-30 casillas</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Tráfico nítido en ambos sentidos.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">30-45 casillas</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Legible, pero degradado. Se pierden palabras.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Más de 45 casillas</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Nada en absoluto.</Box>
+    </ColorBox>
+  </Table>
+
+  La cobertura llega a un nivel por encima o por debajo del anclaje, por lo que un túnel o una cubierta inferior suelen necesitar su propio relé. Solo un conjunto de a bordo cubre verticalmente todo un emplazamiento.
+
+  ### Si perteneces a la CLF
+
+  La CLF no tiene ningún conjunto de comunicaciones y nunca recibe uno. Tu cobertura procede de algo que construyas o de algo que ya haya construido el enemigo y que tú pinches.
+
+  <Box>
+    <GuideEntityEmbed Entity="AU14CLFNetSpliceKit" Caption="Kit de empalme"/>
+    <GuideEntityEmbed Entity="AU14CommsMastField" Caption="Mástil de campaña"/>
+    <GuideEntityEmbed Entity="AU14CLFBaseStation" Caption="Estación base"/>
+    <GuideEntityEmbed Entity="AU14CLFClandestineRelay" Caption="Equipo de relé"/>
+  </Box>
+
+  #### Pinchar el mástil de otra persona
+
+  Todo mástil o conjunto fijo tiene una caja de alimentación, y esta se puede empalmar. Al hacerlo, las redes de tu célula funcionarán a través de ese mástil y con el alcance de este. Un mástil de puesto de mando te proporciona 75 casillas. Un conjunto del emplazamiento, 200.
+
+  Una toma [bold]añade[/bold] tus redes y no elimina nada. El mástil sigue transportando lo que ya transportaba para quien lo construyó. Instalar un empalme no lo derriba, no lo inhibe ni deja incomunicada a su guarnición. Si quieres acabar con un mástil, destrúyelo.
+
+  Necesitas un [bold]kit de empalme de red[/bold], fabricado en el banco de trabajo del zapador, y debes ser el [bold]operador de radio[/bold]. Nadie más tiene la formación necesaria.
+
+  Usa el kit en el mástil. Retirar la cubierta tarda varios segundos; después se abrirá el panel de empalme. Las portadoras troncales están ocultas en algún punto de la banda y tendrás que encontrar cada una:
+
+  - Usa [bold]PROBE[/bold] en una posición y el panel te indicará qué ha detectado. Una lectura intensa significa que estás cerca. Un cero significa que no hay ninguna portadora a menos de treinta posiciones de donde has sondeado.
+  - Usa [bold]LOCK[/bold] cuando creas que la has encontrado. Si estás a tres posiciones o menos, la portadora será tuya. Si fallas, perderás dos sondeos y el medidor de detección aumentará mucho.
+  - Los sondeos se comparten durante todo el trabajo, en lugar de asignarse por portadora. Cada uno aumenta un poco la detección. Un bloqueo fallido cuesta veinte veces más, así que vuelve a sondear en vez de adivinar.
+
+  Haz primero un barrido aproximado. Tres sondeos repartidos de manera uniforme por la banda siempre alcanzarán una portadora; a partir de ahí, acércate a la que haya devuelto la señal más intensa.
+
+  Si agotas los sondeos o llenas el medidor de detección, el trabajo fracasará. Perderás el kit y la caja sufrirá una avería durante noventa segundos; durante ese tiempo nadie podrá volver a empalmarla. Lleva un segundo kit si quieres intentarlo otra vez y cuenta con que tendrás que esperar.
+
+  El mástil suelta chispas mientras trabajas en él y sigue haciéndolo durante la avería. Ninguna de las dos cosas es discreta. Pon a alguien a vigilar la ruta de acceso antes de empezar.
+
+  #### Construir tu propia infraestructura
+
+  - Un [bold]mástil de antena de campaña[/bold] cuesta diez láminas de metal y ocho segundos de trabajo, y ofrece 75 casillas de señal nítida y 100 de señal degradada. El jefe de célula, el operador de radio, los guerrilleros y los ametralladores cuentan con la habilidad de ingeniería necesaria. También es alto, solo se puede colocar al aire libre y cualquiera puede pincharlo o destruirlo, incluidos los marines.
+  - Una [bold]estación base clandestina[/bold] alcanza 55 casillas con señal nítida y 80 con señal degradada, y permite usar su microteléfono, algo que ningún relé puede hacer. Es demasiado pesada para ocultarla encima de una persona, así que vale la pena defender el lugar donde la escondas.
+  - Un [bold]equipo de relé[/bold] alcanza 35 casillas con señal nítida y 50 con señal degradada, y carece por completo de controles. Es el elemento más débil de esta lista. Úsalo cuando no haya ningún mástil que pinchar ni espacio para levantar uno, como dentro de un edificio o en un túnel.
+
+  Solo el jefe de célula y el operador de radio pueden fijar al suelo un relé o una estación base.
+
+  #### Lo que te cuesta
+
+  Nada de esto queda oculto para el enemigo.
+
+  Una [bold]toma[/bold] queda al pie del mástil, a la vista de cualquiera que pase por allí. Se le puede disparar y cualquiera puede arrancarla en ocho segundos. Quien lo haga obtendrá su módulo de claves, que le permitirá leer el tráfico de tu célula hasta que tus mandos ordenen una recodificación.
+
+  Un [bold]relé[/bold] está fijado al suelo, no anclado de forma permanente. Cualquiera puede recogerlo en tres segundos y llevarse consigo esa parte de tu cobertura.
+
+  Coloca ambos donde nadie tenga motivos para pasar.
+
+  ## Paso 3: di algo por tus auriculares
+
+  Con los auriculares puestos en la ranura de las orejas, escribe dos puntos, la letra h, un espacio y tu mensaje:
+
+  [color=#a4885c]:h Radio check, over.[/color]
+
+  Si la red tiene un anclaje y alguien está escuchando, verá tu mensaje precedido de tu indicativo.
+
+  Tus auriculares pueden incluir más de una red. Examínalos para ver qué prefijos tienen. Algunos habituales son:
+
+  - [color=#a4885c]:v[/color] para command, si tus auriculares tienen la clave de command.
+  - [color=#a4885c]:a[/color] para Alpha, si tus auriculares tienen la clave de Alpha.
+
+  Unos auriculares no pueden usar una red para la que no tengan la clave. No hay forma de añadir una sobre el terreno.
+
+  Ten en cuenta que [bold]tu nombre nunca se transmite[/bold]. Todos los que estén en la red verán tu indicativo, sean amigos u hostiles. Esto no afecta al habla cara a cara, así que quienes estén a tu lado seguirán oyéndote con normalidad.
+
+  ## Paso 4: abre el panel de la radio
+
+  A partir de aquí necesitas llevar un AN/PRC a la espalda y tener la formación necesaria para usarlo.
+
+  Solo los siguientes roles pueden abrir el panel y transmitir mediante la radio:
+
+  <Table Columns="2" MinForcedColumnWidth="110">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Facción[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Roles cualificados[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]GOVFOR y OPFOR[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Comandante, ayudante, oficiales de Estado Mayor, oficiales de ingeniería, oficiales de inteligencia, sintéticos, jefes de escuadra, jefes de equipo de fuego y operadores de tráfico de radio.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]CLF[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Jefe de célula y operador de radio.</Box>
+    </ColorBox>
+  </Table>
+
+  Las dos facciones regulares despliegan el mismo conjunto de roles cualificados, por lo que una radio de mochila enemiga capturada resulta útil para las mismas personas de tu bando.
+
+  Si no estás en esa lista, el panel no se abrirá para ti. Tienes dos alternativas: usar el microteléfono de otra persona, como se explica más abajo, o leer un [bold]manual del operador de radio de campaña[/bold], si encuentras uno; te proporcionará la formación de manera permanente.
+
+  Para abrirlo:
+
+  - Lleva la radio en la [bold]ranura de la espalda[/bold]. No funciona dentro de una bolsa ni en el suelo.
+  - Haz Alt-click en la radio o abre su menú de acciones.
+  - Selecciona [bold]Abrir panel de la radio[/bold].
+
+  El panel se abre con una línea de estado en la parte superior. Léela, porque te indica qué falla antes de que pierdas el tiempo buscando la causa.
+
+  - [bold]READY[/bold] significa que llevas puesta la radio y que tiene una red activa. Esto es lo que buscas.
+  - [bold]NOT WORN[/bold] significa que no está en la ranura de la espalda.
+  - [bold]NO NET[/bold] significa que aún no has configurado ninguna ranura. Es normal en una radio nueva.
+  - [bold]STBY[/bold] significa que alguna parte de la configuración sigue incompleta.
+
+  ## Paso 5: añade tu primera red
+
+  Una radio nueva no tiene ninguna red cargada. Debes configurarlas tú en lo que el panel denomina ranuras. La radio admite hasta [bold]cuatro[/bold].
+
+  Sigue estos pasos en orden:
+
+  - Selecciona [bold]+ ADD NET[/bold]. Aparecerá una ranura vacía.
+  - Ponle una etiqueta corta, como [bold]CMD[/bold] o [bold]ALPHA[/bold]. La etiqueta es meramente visual. Solo aparece en tu propia radio y no selecciona la red por ti.
+  - Selecciona [bold]TUNE[/bold] en esa ranura.
+  - Abre la pestaña [bold]NET[/bold] y elige de la lista una red de facción con nombre.
+  - Selecciona la propia fila de la ranura para que pase a ser la ranura [bold]activa[/bold].
+
+  Ese último paso causa problemas constantemente. Añadir una red no la selecciona. La ranura activa es aquella por la que realmente transmites y corresponde a la fila resaltada.
+
+  En lugar de una red con nombre, puedes introducir una frecuencia sin procesar en la pestaña [bold]FREQ[/bold]. Las frecuencias funcionan con o sin punto decimal, por lo que [color=#a4885c]1606[/color] y [color=#a4885c]1.606[/color] son equivalentes. Úsalo para sintonizar la red de otra persona, como se explica en la guía del AN/PRC.
+
+  Cada ranura tiene otros dos botones:
+
+  - [bold]CLEAR[/bold] vacía la ranura, pero conserva tanto la ranura como su etiqueta.
+  - [bold]DEL[/bold] elimina la ranura por completo.
+
+  ## Paso 6: carga tus claves COMSEC
+
+  La mayoría de las redes de facción deben estar cifradas, pero el AN/PRC no lleva sus propias claves. Las lee de una tarjeta física.
+
+  - Busca en tu equipo la [bold]tarjeta de claves[/bold] que te hayan asignado.
+  - Introdúcela en la ranura de tarjetas de claves de la radio.
+  - Comprueba el panel COMSEC. Debería mostrar [bold]SECURED[/bold].
+
+  Si transmites por una red de facción cifrada sin las claves correspondientes, la radio te avisa y [bold]envía el mensaje de todos modos, en claro[/bold]. No te lo impide. Cualquiera que escuche esa frecuencia podrá leerlo y, mientras transmites, quedarás expuesto a la radiogoniometría enemiga.
+
+  Considera un aviso sobre las claves como un error que debes corregir, no como un mensaje que puedas ignorar.
+
+  ## Paso 7: transmite
+
+  Con una ranura activa, transmite por la radio igual que usarías los auriculares, pero con [color=#a4885c]:r[/color]:
+
+  [color=#a4885c]:r HAVOC 6, this is ALPHA ROMEO, radio check, over.[/color]
+
+  [color=#a4885c]:r[/color] siempre transmite por la ranura que esté activa. Si tienes cuatro redes cargadas y hablas por la equivocada, casi siempre se debe a que no has cambiado antes la ranura activa.
+
+  Tu transmisión se envía bajo tu indicativo. Una radio puesta adopta automáticamente el indicativo asignado a quien la lleva, que aparece como [bold]AUTO[/bold] en el panel. Si no tienes ningún indicativo asignado, transmitirás como [bold]UNKNOWN STATION[/bold], algo que conviene solucionar antes de que alguien te necesite.
+
+  ## Paso 8: confirma que funciona de verdad
+
+  No lo des por hecho. Selecciona [bold]RADIO CHECK[/bold] en el panel.
+
+  La radio envía [bold]RADIO CHECK, HOW COPY, OVER[/bold] por la red activa y después te entrega un informe privado que indica qué estaciones te oyen con claridad y cuáles reciben la señal degradada.
+
+  Es la forma más rápida de responder a «¿funciona mi red?» sin molestar a nadie; deberías usarla antes de trasladarte a un lugar nuevo y después de completar la configuración.
+
+  Si la usas mientras estás dentro de las interferencias enemigas, el informe también te da la demora del inhibidor más potente, un dato que ya de por sí es información de inteligencia útil.
+
+  ## El microteléfono: cómo usan los demás tu radio
+
+  El microteléfono permite que alguien sin formación de radio hable por una red a la que no tendría acceso de otro modo. El caso habitual es el de un jefe de escuadra que accede a command mediante el jefe de equipo de fuego.
+
+  Para cogerlo:
+
+  - Colócate a unas [bold]dos casillas y media[/bold] de la radio o de quien la lleve.
+  - Asegúrate de tener una [bold]mano libre[/bold]. No puedes cogerlo con ambas manos ocupadas.
+  - Haz Alt-click en quien lleve la radio o en la radio desplegada.
+  - Selecciona [bold]Take Handset[/bold].
+
+  Lee ahora esta parte con atención, porque sorprende a la gente y tiene consecuencias.
+
+  [bold]Mientras sostengas el microteléfono, cualquier cosa que digas en voz alta se transmitirá por la red.[/bold] No necesitas ningún prefijo. Si hablas con normalidad a la persona que tienes al lado, lo transmitirás a todas las estaciones de esa red.
+
+  Para hablar sin transmitir, [bold]susurra[/bold]. Los susurros no salen al aire.
+
+  El resto del comportamiento del microteléfono es el siguiente:
+
+  - Transmite por la [bold]ranura activa[/bold] de la radio, sea cual sea la última que haya seleccionado el operador.
+  - Utiliza [bold]tu[/bold] indicativo, no el del operador de radio.
+  - Solo puede sostenerlo una persona a la vez.
+  - Si sales del alcance, el cable te lo arrancará de la mano y te desconectará.
+  - Selecciona [bold]Hang Up Handset[/bold] para devolverlo.
+
+  Hay una excepción: si llevas puesto tu propio AN/PRC, sostener el microteléfono de otra persona no abrirá tu micrófono. Tu propia radio de mochila tiene prioridad y se aplica la disciplina habitual con [color=#a4885c]:r[/color].
+
+  ## Cuando no funciona
+
+  Recorre esta lista en orden. Está ordenada aproximadamente según la frecuencia con la que cada punto resulta ser el problema real.
+
+  <Table Columns="2" MinForcedColumnWidth="120">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Síntoma[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Comprobación[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Nadie responde en una red de escuadra o de command</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">No hay ningún anclaje al alcance. Busca a tu jefe de equipo de fuego, un mástil o un conjunto de comunicaciones. Esta suele ser la respuesta.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[color=#a4885c]:r[/color] transmite por la red equivocada</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Está activa la ranura equivocada. Selecciona primero la fila que quieras.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">El panel no se abre</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Tu rol no tiene formación de radio o la radio no está en la ranura de la espalda.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">El tráfico llega entrecortado o lleno de estática</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Estás en el límite de la cobertura o sufres interferencias. Acércate al anclaje.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">El tráfico del AN/PRC llega como pura estática</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Una de las dos radios no tiene las mismas claves COMSEC.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Falta una clave de red en tus auriculares</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Examínalos para confirmarlo. No puedes añadir claves sobre el terreno. Usa un microteléfono.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Transmites como UNKNOWN STATION</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">No tienes ningún indicativo asignado. El mando puede asignarte uno desde el directorio de la red.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Has dicho algo privado y se ha transmitido por la red</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Estás sosteniendo un microteléfono. Devuélvelo o susurra.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">La radio ha dejado de funcionar por completo</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Comprueba la batería de su ranura interna. Las búsquedas y una potencia de transmisión alta la agotan con rapidez.</Box>
+    </ColorBox>
+  </Table>
+
+  ## Próximos pasos
+
+  - [textlink="Radio AN/PRC-117G" link="AU14CommsANPRC"] - todo lo demás que ofrece la radio de mochila: modos de funcionamiento, potencia de transmisión, estaciones de retransmisión, búsqueda de bandas e interceptación del tráfico enemigo.
+  - [textlink="Auriculares de campaña" link="AU14CommsHeadsets"] - frecuencias directas, sintonización y comportamiento específico de los auriculares.
+  - [textlink="Procedimiento radiotelefónico" link="AU14CommsVoiceProcedure"] - cómo redactar una transmisión para que se entienda a la primera.
+  - [textlink="Referencia rápida de comunicaciones" link="AU14CommsQuickRef"] - todas las tablas en una página, para cuando ya sabes qué haces y solo necesitas consultar un dato.
+</Document>

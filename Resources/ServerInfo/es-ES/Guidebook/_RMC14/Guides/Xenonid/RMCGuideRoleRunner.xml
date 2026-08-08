@@ -1,0 +1,18 @@
+<Document>
+  #Corredor, nivel 1
+  <GuideEntityEmbed Entity="CMXenoRunner"/>
+  ##Jugar como Corredor
+  Eres la casta más rápida y débil. Usa tu velocidad para transportar huéspedes desde el frente y explorar la retaguardia; puedes pasar por encima de marcos de ventana y por debajo de mesas. Usa Abalanzarse para atacar con las garras o empezar a placar huéspedes, pero ten cuidado con las escopetas, pues te matarán al instante a corta distancia.
+
+  Si eres principiante, la forma más sencilla de contribuir consiste en centrarte en arrastrar las capturas desde el frente hasta la retaguardia. Recuerda que, si te apuñalan desde dentro, puedes regurgitarlas, volver a placarlas hasta derribarlas y devorarlas de nuevo.
+
+  ##Habilidades:
+  - [bold]Ocultarse[/bold]: Ocúltate bajo objetos como mesas.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoHide"/>
+  - [bold]Abalanzarse[/bold]: Salta contra un objetivo, lo derriba durante un instante y limita un poco tu movimiento. También sirve para desplazarte.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoPounce"/>
+  - [bold]Esquirlas óseas[/bold]: Lanza esquirlas de hueso contra el objetivo para ralentizarlo.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoBoneChips"/>
+  - [bold]Alternar visión de largo alcance[/bold]: Amplía tu visión.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoToggleLongRangeSight"/>
+</Document>

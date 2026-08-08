@@ -1,0 +1,80 @@
+﻿<Document>
+
+  # Guías para nuevos jugadores
+
+  - Puedes usar la tecla de examinar [color=yellow][bold][keybind="ExamineEntity"][/bold][/color] para examinar cualquier entidad de la guía.
+  - Configura las asignaciones de teclas a tu gusto y consulta las específicas de CMU. ¡A quienes vengan de CM13 les resultará muy útil!
+
+  ## Marine
+  - [textlink="¡Tu primer día como fusilero!" link="RMCGuideRoleRifleman"]
+
+  ## Xenónidos
+  - [textlink="Acabas de nacer en la colmena... ¿y ahora qué?" link="RMCGuideRoleDrone"]
+
+  # Controles
+
+  <Box>Puedes cambiar tus asignaciones de teclas en cualquier momento desde aquí:</Box>
+  <Box Orientation="Vertical"><CommandButton Text="ui-options-tab-controls" Command="options 2"/></Box>
+
+  ## Teclas especiales de CMU
+  - [color=yellow][bold][keybind="CMUniqueAction"][/bold][/color]: Acción del arma (accionar la corredera de las escopetas, abrir lanzagranadas).
+  - [color=yellow][bold][keybind="CMXenoWideSwing"][/bold][/color]: Ataque cuerpo a cuerpo amplio del xenónido.
+  - [color=yellow][bold][keybind="RMCActivateAttachableUnderbarrel"][/bold][/color]: Activar el accesorio bajo el cañón.
+  - [color=yellow][bold][keybind="RMCCycleFireMode"][/bold][/color]: Cambiar el modo de disparo.
+  - [color=yellow][bold][keybind="CMHolsterPrimary"][/bold][/color]: Enfundar el arma principal.
+  - [color=yellow][bold][keybind="CMHolsterSecondary"][/bold][/color]: Enfundar el arma secundaria.
+  - [color=yellow][bold][keybind="RMCPickUpDroppedItems"][/bold][/color]: Recoger el último objeto soltado.
+  - [color=yellow][bold][keybind="RMCInteractWithOtherHand"][/bold][/color]: Interactuar con la mano inactiva.
+  - [color=yellow][bold][keybind="RMCActivateAttachableRail"][/bold][/color]: Activar el accesorio del riel (miras).
+  - [color=yellow][bold][keybind="RMCActivateAttachableStock"][/bold][/color]: Activar el accesorio de la culata.
+
+  ## Movimiento
+  Puedes desplazarte por el mundo del juego con [color=yellow][bold][keybind="MoveUp"][keybind="MoveLeft"][keybind="MoveDown"][keybind="MoveRight"][/bold][/color].
+  Si mantienes pulsado [color=yellow][bold][keybind="Walk"][/bold][/color], caminarás.
+
+  En el menú de controles puedes hacer que caminar se [color=cyan]active y desactive[/color] con una pulsación.
+
+  Para [color=cyan]tirar[/color] de objetos, usa [color=yellow][bold][keybind="TryPullObject"][/bold][/color].
+  Mientras tiras de un objeto, puedes arrastrarlo hasta el cursor con [color=yellow][bold][keybind="MovePulledObject"][/bold][/color].
+  Al pulsar [color=yellow][bold][keybind="ReleasePulledObject"][/bold][/color], soltarás el objeto que estés arrastrando.
+
+  ## Interacciones
+  Las interacciones generales se realizan con [color=yellow][bold][keybind="Use"][/bold][/color].
+  Estas [bold]dependen del contexto[/bold] y del objeto que tengas en la mano activa.
+  También puedes usar [color=yellow][bold][keybind="AltActivateItemInWorld"][/bold][/color] para realizar [bold]interacciones alternativas[/bold].
+
+  Para realizar [color=cyan]interacciones básicas[/color], usa [color=yellow][bold][keybind="ActivateItemInWorld"][/bold][/color].
+  Es como [bold]interactuar sin nada en las manos[/bold].
+  Al pulsar [color=yellow][bold][keybind="ActivateItemInHand"][/bold][/color], conseguirás el mismo efecto con el objeto que sostengas.
+  Se usa sobre todo para realizar una interacción básica mientras sostienes algo, como abrir una puerta cuando tienes las manos ocupadas.
+
+  Si colocas el cursor sobre una entidad y pulsas [color=yellow][bold][keybind="UIRightClick"/][/bold][/color], se abrirá el [color=cyan]menú contextual[/color].
+  Este no solo permite seleccionar entre grandes montones de objetos, sino también realizar [bold]interacciones adicionales.[/bold]
+
+  Para [color=cyan]examinar[/color] algo, usa [color=yellow][bold][keybind="ExamineEntity"][/bold][/color]. Se abrirá una ventana con el nombre del objeto, una breve descripción y cualquier otro detalle pertinente.
+  [italic]Examinar lo que te rodea puede ayudarte a descubrir para qué sirve y qué propiedades tiene[/italic].
+
+  ## Manos
+  Al usar [color=yellow][bold][keybind="Use"][/bold][/color] sobre objetos del mundo, los recogerás y pasarán a tu mano activa.
+  Puedes cambiar de mano activa con [color=yellow][bold][keybind="SwapHands"][/bold][/color].
+
+  Puedes [color=cyan]soltar[/color] el objeto que sostienes con [color=yellow][bold][keybind="Drop"][/bold][/color] o [color=cyan]lanzarlo[/color] hacia el cursor con [color=yellow][bold][keybind="ThrowItemInHand"][/bold][/color].
+
+  ## Inventario
+  Puedes [color=cyan]abrir[/color] el inventario con [color=yellow][bold][keybind="OpenInventoryMenu"][/bold][/color].
+  Cada ranura del HUD admite un [bold]objeto[/bold] o una [bold]prenda[/bold] apropiados.
+
+  Dos de las ranuras de la barra rápida corresponden a la [bold]mochila y el cinturón[/bold].
+  Puedes abrirlos usando [color=yellow][bold][keybind="ActivateItemInWorld"][/bold][/color] sobre ellos o pulsando el icono de la esquina [bold]inferior derecha[/bold].
+
+  Al pulsar [color=yellow][bold][keybind="MoveStoredItem"][/bold][/color], [color=cyan]sacarás un objeto[/color] de la mochila.
+  Mientras lo arrastras, pulsa [color=yellow][bold][keybind="RotateStoredItem"][/bold][/color] para [color=cyan]girar[/color] el objeto.
+
+  Puedes seguir realizando todas las interacciones habituales con los objetos de la mochila, incluido [color=cyan]examinarlos[/color] y abrir el [color=cyan]menú contextual[/color].
+
+  ## Cámara
+  Puedes [color=cyan]cambiar el zoom[/color] de la cámara para acercarla y alejarla con [color=yellow][bold][keybind="ZoomIn"][/bold][/color] y [color=yellow][bold][keybind="ZoomOut"][/bold][/color], y restablecerlo con [color=yellow][bold][keybind="ResetZoom"][/bold][/color].
+  También puedes [color=cyan]girarla[/color] a izquierda y derecha con [color=yellow][bold][keybind="CameraRotateLeft"][/bold][/color] y [color=yellow][bold][keybind="CameraRotateRight"][/bold][/color].
+  Puedes volver a alinearla con la rotación del mapa mediante [color=yellow][bold][keybind="CameraReset"][/bold][/color].
+
+</Document>

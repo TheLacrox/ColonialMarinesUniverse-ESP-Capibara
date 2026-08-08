@@ -4777,7 +4777,7 @@ ent-RMCBoxBullets458 = caja de lotes de balas (.458 SOCOM x 297)
 ent-RMCBoxBullets458Empty = caja de lotes de balas (.458 SOCOM x 297)
     .desc = Una caja con cartuchos .458 SOCOM agrupados.
 
-ent-RMCBoxFlamerTank = Caja de depósitos de lanzallamas (combustible UT-Napthal x 8)
+ent-RMCBoxFlamerTankUTNapthal = Caja de depósitos de lanzallamas (combustible UT-Napthal x 8)
     .desc = Una caja de depósitos para incinerador.
     .suffix = lleno
 

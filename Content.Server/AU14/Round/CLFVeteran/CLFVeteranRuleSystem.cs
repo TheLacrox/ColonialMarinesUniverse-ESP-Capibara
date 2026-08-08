@@ -6,6 +6,7 @@ using Content.Server.Station.Systems;
 using Content.Server.StationRecords.Systems;
 using Content.Shared.Fax.Components;
 using Content.Shared.GameTicking.Components;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs;
 using Content.Shared.Paper;
@@ -53,10 +54,17 @@ public sealed partial class CLFVeteranRuleSystem : GameRuleSystem<CLFVeteranRule
 
         _wantedSystem.SendFax(_entitySystemManager, _entityManager, "Colony Marshal Bureau", "AUPaperCLFVeteran");
 
-        var veteranName = _entityManager.GetComponentOrNull<MetaDataComponent>(uid)?.EntityName ?? "Unknown";
+        var veteranName = _entityManager.GetComponentOrNull<MetaDataComponent>(uid)?.EntityName ??
+                          CMULocalization.GetTargetStringOrFallback(
+                              Loc,
+                              "cmu-clf-veteran-unknown-name",
+                              "Unknown");
         _wantedSystem.SendCustomFax(
             "Colony Liberation Front",
-            "Encrypted Message",
+            CMULocalization.GetTargetStringOrFallback(
+                Loc,
+                "cmu-clf-veteran-fax-title",
+                "Encrypted Message"),
             BuildVeteranFaxContent(veteranName),
             "paper_stamp-clf",
             new System.Collections.Generic.List<StampDisplayInfo>
@@ -102,10 +110,17 @@ public sealed partial class CLFVeteranRuleSystem : GameRuleSystem<CLFVeteranRule
         if (!TryComp(uid, out FaxMachineComponent? faxComp))
             return;
 
-        var veteranName = _entityManager.GetComponentOrNull<MetaDataComponent>(_veteranUid.Value)?.EntityName ?? "Unknown";
+        var veteranName = _entityManager.GetComponentOrNull<MetaDataComponent>(_veteranUid.Value)?.EntityName ??
+                          CMULocalization.GetTargetStringOrFallback(
+                              Loc,
+                              "cmu-clf-veteran-unknown-name",
+                              "Unknown");
         var printout = new FaxPrintout(
             BuildVeteranFaxContent(veteranName),
-            "Encrypted Message",
+            CMULocalization.GetTargetStringOrFallback(
+                Loc,
+                "cmu-clf-veteran-fax-title",
+                "Encrypted Message"),
             null,
             "CMPaper",
             "paper_stamp-clf",
@@ -117,9 +132,9 @@ public sealed partial class CLFVeteranRuleSystem : GameRuleSystem<CLFVeteranRule
         _fax.Receive(uid, printout, null, faxComp);
     }
 
-    private static string BuildVeteranFaxContent(string veteranName)
+    private string BuildVeteranFaxContent(string veteranName)
     {
-        return "[head=3][color=#2e5a1e]Colony Liberation Front[/color][/head]\n\n" +
+        var fallback = "[head=3][color=#2e5a1e]Colony Liberation Front[/color][/head]\n\n" +
             "[color=#2e5a1e]▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄[/color]\n\n" +
             "[bold]To:[/bold] [italic]Field Operatives[/italic]\n" +
             "[bold]From:[/bold] [bold]CLF Regional Command[/bold]\n" +
@@ -130,6 +145,12 @@ public sealed partial class CLFVeteranRuleSystem : GameRuleSystem<CLFVeteranRule
             "Freedom or death,\n" +
             "[color=#2e5a1e][bolditalic]CLF Command[/bolditalic][/color]\n" +
             "[color=#2e5a1e]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]";
+
+        return CMULocalization.GetTargetStringOrFallback(
+            Loc,
+            "cmu-clf-veteran-fax-body",
+            fallback,
+            ("veteran", veteranName));
     }
 
     protected override void ActiveTick(EntityUid uid, CLFVeteranRuleComponent component, GameRuleComponent gameRule, float frameTime)

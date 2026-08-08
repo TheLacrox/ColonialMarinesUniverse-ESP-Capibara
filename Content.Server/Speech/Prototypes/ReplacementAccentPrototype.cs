@@ -24,6 +24,13 @@ public sealed partial class ReplacementAccentPrototype : IPrototype
     public Dictionary<string, string>? WordReplacements;
 
     /// <summary>
+    /// Localization IDs whose resolved triggers must preserve case when matching.
+    /// This is useful for abbreviations that collide with ordinary words in some cultures.
+    /// </summary>
+    [DataField]
+    public HashSet<string> CaseSensitiveReplacements = [];
+
+    /// <summary>
     /// Allows you to substitute words, not always, but with some chance
     /// </summary>
     [DataField]

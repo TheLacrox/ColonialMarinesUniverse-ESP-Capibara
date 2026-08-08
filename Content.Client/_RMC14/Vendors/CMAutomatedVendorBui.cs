@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._RMC14.Holiday;
 using Content.Shared._RMC14.Marines.Roles.Ranks;
 using Content.Shared._RMC14.Medical.Refill;
@@ -12,6 +13,7 @@ using Robust.Client.Player;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.CustomControls;
 using Robust.Shared.GameObjects;
+using Robust.Shared.Localization;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using static System.StringComparison;
@@ -24,6 +26,7 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
 {
     [Dependency] private IPlayerManager _player = default!;
     [Dependency] private IPrototypeManager _prototype = default!;
+    [Dependency] private ILocalizationManager _localization = default!;
 
     private readonly SharedJobSystem _job;
     private readonly SharedMindSystem _mind;
@@ -104,7 +107,13 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
                         uiEntry.Texture.Modulate = firstLayer.Color;
                     }
 
-                    uiEntry.Panel.Button.TextLabel.Text = entry.Name?.Replace("\\n", "\n") ?? entity.Name;
+                    uiEntry.Panel.Button.TextLabel.Text = entry.Name is { } entryName
+                        ? CMUPrototypeLocalization.GetLiteralText(
+                            _localization,
+                            "CMAutomatedVendor",
+                            "name",
+                            entryName).Replace("\\n", "\n")
+                        : entity.Name;
 
                     var name = entity.Name;
                     var color = CMAutomatedVendorPanel.DefaultColor;
@@ -399,9 +408,14 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
 
     private FormattedMessage GetSectionName(CMVendorUserComponent? user, CMVendorSection section)
     {
+        var sectionName = CMUPrototypeLocalization.GetLiteralText(
+            _localization,
+            "CMAutomatedVendor",
+            "name",
+            section.Name).ToUpperInvariant();
         var name = new FormattedMessage();
-        name.PushTag(new MarkupNode("bold", new MarkupParameter(section.Name.ToUpperInvariant()), null));
-        name.AddText(section.Name.ToUpperInvariant());
+        name.PushTag(new MarkupNode("bold", new MarkupParameter(sectionName), null));
+        name.AddText(sectionName);
 
         if (section.TakeAll != null)
         {

@@ -1,6 +1,7 @@
 using System;
 using Content.Server._CMU14.ZLevels.Core;
 using Content.Shared._CMU14.Blackfoot;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._CMU14.ZLevels.Core.Components;
 using Content.Shared._RMC14.Vehicle;
 using Content.Shared._RMC14.Vehicle.Viewport;
@@ -66,14 +67,23 @@ public sealed partial class BlackfootRearDoorSystem : EntitySystem
             vehicle is not { } vehicleUid ||
             !TryComp(vehicleUid, out BlackfootRearDoorComponent? rearDoor))
         {
-            _popup.PopupEntity("This control is not linked to a Blackfoot rear door.", args.User, args.User, PopupType.SmallCaution);
+            _popup.PopupEntity(
+                Ui("cmu-blackfoot-rear-door-control-not-linked", "This control is not linked to a Blackfoot rear door."),
+                args.User,
+                args.User,
+                PopupType.SmallCaution);
             return;
         }
 
         rearDoor.Open = !rearDoor.Open;
         Dirty(vehicleUid, rearDoor);
 
-        _popup.PopupEntity(rearDoor.Open ? "Rear door opened." : "Rear door closed.", args.User, args.User);
+        _popup.PopupEntity(
+            rearDoor.Open
+                ? Ui("cmu-blackfoot-rear-door-opened", "Rear door opened.")
+                : Ui("cmu-blackfoot-rear-door-closed", "Rear door closed."),
+            args.User,
+            args.User);
         args.Handled = true;
     }
 
@@ -93,7 +103,7 @@ public sealed partial class BlackfootRearDoorSystem : EntitySystem
         var source = ent.Owner;
         args.Verbs.Add(new AlternativeVerb
         {
-            Text = Loc.GetString("cmu-blackfoot-look-outside"),
+            Text = Ui("cmu-blackfoot-look-outside", "Look outside"),
             Act = () => ToggleLookOutside(user, vehicleUid, source),
         });
     }
@@ -139,7 +149,11 @@ public sealed partial class BlackfootRearDoorSystem : EntitySystem
         if (ent.Comp.Open || args.EntryIndex != ent.Comp.RearEntryIndex)
             return;
 
-        _popup.PopupEntity("Open the rear door before boarding from the back.", args.User, args.User, PopupType.SmallCaution);
+        _popup.PopupEntity(
+            Ui("cmu-blackfoot-rear-door-open-before-boarding", "Open the rear door before boarding from the back."),
+            args.User,
+            args.User,
+            PopupType.SmallCaution);
         args.Cancelled = true;
     }
 
@@ -150,7 +164,11 @@ public sealed partial class BlackfootRearDoorSystem : EntitySystem
 
         if (!ent.Comp.Open)
         {
-            _popup.PopupEntity("Open the rear door before exiting from the back.", args.User, args.User, PopupType.SmallCaution);
+            _popup.PopupEntity(
+                Ui("cmu-blackfoot-rear-door-open-before-exiting", "Open the rear door before exiting from the back."),
+                args.User,
+                args.User,
+                PopupType.SmallCaution);
             args.Cancelled = true;
             return;
         }
@@ -162,7 +180,11 @@ public sealed partial class BlackfootRearDoorSystem : EntitySystem
             return;
         }
 
-        _popup.PopupEntity("The Blackfoot is moving too fast to jump out.", args.User, args.User, PopupType.SmallCaution);
+        _popup.PopupEntity(
+            Ui("cmu-blackfoot-rear-door-too-fast", "The Blackfoot is moving too fast to jump out."),
+            args.User,
+            args.User,
+            PopupType.SmallCaution);
         args.Cancelled = true;
     }
 
@@ -199,5 +221,10 @@ public sealed partial class BlackfootRearDoorSystem : EntitySystem
             BlackfootFlightState.VTOL or
             BlackfootFlightState.Flight or
             BlackfootFlightState.Landing;
+    }
+
+    private string Ui(string id, string fallback)
+    {
+        return CMULocalization.GetTargetStringOrFallback(Loc, id, fallback);
     }
 }

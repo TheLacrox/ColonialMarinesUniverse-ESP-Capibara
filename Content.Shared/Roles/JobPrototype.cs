@@ -1,9 +1,12 @@
 using Content.Shared.Access;
 using Content.Shared.AU14.Allegiance;
 using Content.Shared.AU14.Origin;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Guidebook;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.StatusIcon;
+using Robust.Shared.IoC;
+using Robust.Shared.Localization;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
@@ -35,7 +38,15 @@ namespace Content.Shared.Roles
         public string Name { get; private set; } = string.Empty;
 
         [ViewVariables(VVAccess.ReadOnly)]
-        public string LocalizedName => Loc.GetString(Name);
+        public string LocalizedName
+        {
+            get
+            {
+                // CMU14: allow es-ES to localize legacy literal job names without changing en-US.
+                var localization = IoCManager.Resolve<ILocalizationManager>();
+                return CMUPrototypeLocalization.GetJobName(localization, ID, localization.GetString(Name));
+            }
+        }
 
         /// <summary>
         ///     The name of this job as displayed to players.
@@ -44,7 +55,21 @@ namespace Content.Shared.Roles
         public string? Description { get; private set; }
 
         [ViewVariables(VVAccess.ReadOnly)]
-        public string? LocalizedDescription => Description is null ? null : Loc.GetString(Description);
+        public string? LocalizedDescription
+        {
+            get
+            {
+                if (Description is null)
+                    return null;
+
+                // CMU14: preserve existing LocId resolution as the fallback for target-only overrides.
+                var localization = IoCManager.Resolve<ILocalizationManager>();
+                return CMUPrototypeLocalization.GetJobDescription(
+                    localization,
+                    ID,
+                    localization.GetString(Description));
+            }
+        }
 
         /// <summary>
         ///     Requirements for the job.

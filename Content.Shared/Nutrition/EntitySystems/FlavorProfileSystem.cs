@@ -1,5 +1,6 @@
 using System.Linq;
 using Content.Shared.CCVar;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Nutrition.Components;
 using Robust.Shared.Configuration;
@@ -64,17 +65,28 @@ public sealed partial class FlavorProfileSystem : EntitySystem
 
         if (flavors.Count == 1 && !string.IsNullOrEmpty(flavors[0].FlavorDescription))
         {
-            return Loc.GetString("flavor-profile", ("flavor", Loc.GetString(flavors[0].FlavorDescription)));
+            return Loc.GetString("flavor-profile", ("flavor", LocalizeFlavor(flavors[0])));
         }
 
         if (flavors.Count > 1)
         {
-            var lastFlavor = Loc.GetString(flavors[^1].FlavorDescription);
-            var allFlavors = string.Join(", ", flavors.GetRange(0, flavors.Count - 1).Select(i => Loc.GetString(i.FlavorDescription)));
+            var lastFlavor = LocalizeFlavor(flavors[^1]);
+            var allFlavors = string.Join(", ", flavors.GetRange(0, flavors.Count - 1).Select(LocalizeFlavor));
             return Loc.GetString("flavor-profile-multiple", ("flavors", allFlavors), ("lastFlavor", lastFlavor));
         }
 
         return Loc.GetString(BackupFlavorMessage);
+    }
+
+    private string LocalizeFlavor(FlavorPrototype flavor)
+    {
+        var fallback = Loc.GetString(flavor.FlavorDescription);
+        return CMUPrototypeLocalization.GetStringOrFallback(
+            Loc,
+            "flavor",
+            flavor.ID,
+            "description",
+            fallback);
     }
 
     private HashSet<string> GetFlavorsFromReagents(Solution solution, int desiredAmount, HashSet<string>? toIgnore = null)

@@ -1,4 +1,5 @@
-﻿using Content.Shared.Examine;
+﻿using Content.Shared._CMU14.Localizations;
+using Content.Shared.Examine;
 using Robust.Shared.Utility;
 
 namespace Content.Shared.Construction.Steps
@@ -15,13 +16,13 @@ namespace Content.Shared.Construction.Steps
             if (string.IsNullOrEmpty(Name))
                 return;
 
-            var stepName = Loc.GetString(Name);
+            var stepName = CMUPrototypeLocalization.GetConstructionStepName(Name);
             examinedEvent.PushMarkup(Loc.GetString("construction-insert-arbitrary-entity", ("stepName", stepName)));
         }
 
         public override ConstructionGuideEntry GenerateGuideEntry()
         {
-            var stepName = Loc.GetString(Name);
+            var stepName = CMUPrototypeLocalization.GetConstructionStepName(Name);
             return new ConstructionGuideEntry
             {
                 Localization = "construction-presenter-arbitrary-step",

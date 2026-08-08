@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Content.Server.Database;
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Presets;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._CMU14.BalanceRating;
 using Content.Shared._RMC14.Rules;
 using Content.Shared.AU14.util;
@@ -365,7 +366,12 @@ public sealed partial class CMUBalanceRatingSystem : EntitySystem
         var planetName = string.IsNullOrWhiteSpace(planet.VoteName)
             ? planetPrototype.Name
             : planet.VoteName;
-        return $"{planetName} — {preset.ModeTitle}";
+        var presetName = CMUPrototypeLocalization.GetPrototypeText(
+            "game-preset",
+            preset.ID,
+            "name",
+            preset.ModeTitle);
+        return $"{planetName} — {presetName}";
     }
 
     private void OnGameRunLevelChanged(GameRunLevelChangedEvent ev)

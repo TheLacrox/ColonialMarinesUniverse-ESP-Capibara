@@ -1,5 +1,6 @@
 using System.Numerics;
 using Content.Client._RMC14.UserInterface;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._RMC14.Intel.Tech;
 using Content.Shared.FixedPoint;
 using Content.Shared.GameTicking;
@@ -8,6 +9,7 @@ using Robust.Client.GameObjects;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.Utility;
+using Robust.Shared.Localization;
 using Robust.Shared.Timing;
 
 namespace Content.Client._RMC14.Intel;
@@ -16,6 +18,7 @@ namespace Content.Client._RMC14.Intel;
 public sealed partial class TechControlConsoleBui : BoundUserInterface
 {
     [Dependency] private IEntityManager _entities = default!;
+    [Dependency] private ILocalizationManager _localization = default!;
 
     private TechControlConsoleWindow? _window;
     private TechControlConsoleOptionWindow? _optionWindow;
@@ -90,7 +93,7 @@ public sealed partial class TechControlConsoleBui : BoundUserInterface
                 {
                     OpenOptionWindow(option, tier, optionIndex, console.Tree.Points, console.Tree.Tier);
                 };
-                optionButton.ToolTip = option.Name;
+                optionButton.ToolTip = GetOptionName(option);
                 optionButton.TooltipDelay = 0.1f;
 
                 optionContainer.AddChild(new Control { HorizontalExpand = true });
@@ -113,10 +116,14 @@ public sealed partial class TechControlConsoleBui : BoundUserInterface
         _optionWindow = new TechControlConsoleOptionWindow();
         _optionWindow.OpenCentered();
         _optionWindow.OnClose += () => _optionWindow = null;
-        _optionWindow.Title = option.Name;
+        _optionWindow.Title = GetOptionName(option);
         _optionWindow.CurrentPointsLabel.Text = Loc.GetString("rmc-ui-tech-points-value", ("value", points.Double().ToString("F1")));
-        _optionWindow.NameLabel.Text = option.Name;
-        _optionWindow.DescriptionLabel.Text = option.Description;
+        _optionWindow.NameLabel.Text = GetOptionName(option);
+        _optionWindow.DescriptionLabel.Text = CMUPrototypeLocalization.GetLiteralText(
+            _localization,
+            "IntelTechTree",
+            "description",
+            option.Description);
         _optionWindow.CostLabel.Text = $"{option.CurrentCost}";
 
         _optionWindow.Statistics.DisposeAllChildren();
@@ -159,5 +166,14 @@ public sealed partial class TechControlConsoleBui : BoundUserInterface
             SendPredictedMessage(msg);
             _optionWindow.Close();
         };
+    }
+
+    private string GetOptionName(TechOption option)
+    {
+        return CMUPrototypeLocalization.GetLiteralText(
+            _localization,
+            "IntelTechTree",
+            "name",
+            option.Name);
     }
 }

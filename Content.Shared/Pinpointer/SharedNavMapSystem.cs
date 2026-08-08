@@ -1,6 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
 using System.Runtime.CompilerServices;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Tag;
 using Robust.Shared.GameStates;
 using Robust.Shared.Network;
@@ -75,6 +76,8 @@ public abstract partial class SharedNavMapSystem : EntitySystem
         var name = component.Text;
         if (string.IsNullOrEmpty(name))
             name = meta.EntityName;
+        else
+            name = CMUPrototypeLocalization.GetLiteralText(Loc, "NavMapBeacon", "text", name);
 
         beaconData = new NavMapBeacon(meta.NetEntity, component.Color, name, xform.LocalPosition);
 

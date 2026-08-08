@@ -73,7 +73,8 @@ namespace Content.Client.Access.UI
 
                 foreach (string tag in state.MissingPrivilegesList)
                 {
-                    var privilege = Loc.GetString(protoManager.Index<AccessLevelPrototype>(tag)?.Name ?? "generic-unknown");
+                    var privilege = protoManager.Index<AccessLevelPrototype>(tag)?.GetAccessLevelName()
+                        ?? Loc.GetString("generic-unknown");
                     missingPrivileges.Add(privilege);
                 }
 

@@ -3,6 +3,7 @@ using System.Numerics;
 using Content.Server._RMC14.Announce.Core;
 using Content.Server._RMC14.Announce.Validation;
 using Content.Server.Administration.Logs;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._RMC14.Announce;
 using Content.Shared.Database;
 using Robust.Server.GameStates;
@@ -122,7 +123,11 @@ public sealed partial class GeneralAnnounceSystem : EntitySystem
             SpriteScale = request.SpriteScale,
             SpriteOffset = request.SpriteOffset ?? Vector2.Zero,
             TextOffset = request.TextOffset ?? preset.TextOffset,
-            Title = request.Title,
+            Title = request.Title ?? CMUPrototypeLocalization.GetPrototypeText(
+                "announcement-preset",
+                preset.ID,
+                "title",
+                style.TitleConfig.Title),
             Sound = request.SoundOverride ?? preset.Sound,
             SoundVolume = request.VolumeOverride ?? preset.SoundVolume,
             DecalRsi = request.DecalRsi ?? preset.DecalRsi,

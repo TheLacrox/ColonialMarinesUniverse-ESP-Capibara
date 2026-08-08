@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._CMU14.Round.Objectives;
 using Content.Shared._CMU14.Round.Objectives.Component;
 using Content.Shared._CMU14.Round.Objectives.Type;
@@ -40,8 +41,12 @@ public sealed partial class ObjectiveConsoleSystem : SharedObjectiveConsoleSyste
         for (var i = Math.Min(tierIndex, objComp.IntelTiersProtos.Count - 1); i >= 0; i--)
         {
             if (!_proto.TryIndex(objComp.IntelTiersProtos[i], out var proto)) continue;
-            if (title == null && !string.IsNullOrEmpty(proto.TitleText)) title = proto.TitleText;
-            if (desc == null && !string.IsNullOrEmpty(proto.DescriptionText)) desc = proto.DescriptionText;
+            if (title == null && !string.IsNullOrEmpty(proto.TitleText))
+                title = CMUPrototypeLocalization.GetPrototypeText(
+                    "objective-intel-tier", proto.ID, "title", proto.TitleText);
+            if (desc == null && !string.IsNullOrEmpty(proto.DescriptionText))
+                desc = CMUPrototypeLocalization.GetPrototypeText(
+                    "objective-intel-tier", proto.ID, "description", proto.DescriptionText);
             if (title != null && desc != null) break;
         }
         return (title ?? objComp.Id, desc ?? objComp.ObjectiveDescription);

@@ -6,6 +6,7 @@ using System.IO.Compression;
 using System.Linq;
 using ClosedXML.Excel;
 using Content.Shared._AU14.Insurgency;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._RMC14.Vendors;
 using Content.Shared.AU14.util;
 using Content.Shared.Roles;
@@ -100,9 +101,12 @@ public static class InsforSpreadsheet
         }
 
         foreach (var p in protos.EnumeratePrototypes<PlatoonPrototype>()
-                     .OrderBy(p => p.Name, StringComparer.InvariantCultureIgnoreCase))
+                     .OrderBy(p => CMUPrototypeLocalization.GetPrototypeText(
+                         "platoon", p.ID, "name", p.Name),
+                         StringComparer.InvariantCultureIgnoreCase))
         {
-            var name = string.IsNullOrWhiteSpace(p.Name) ? p.ID : p.Name;
+            var fallback = string.IsNullOrWhiteSpace(p.Name) ? p.ID : p.Name;
+            var name = CMUPrototypeLocalization.GetPrototypeText("platoon", p.ID, "name", fallback);
             var d = Disp(name, p.ID);
             c.Platoons.Add((d, p.ID));
             c.PlatoonDisp[p.ID] = d;

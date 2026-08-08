@@ -1,3 +1,4 @@
+using Content.Shared._CMU14.Localizations;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Access
@@ -26,10 +27,8 @@ namespace Content.Shared.Access
 
         public string GetAccessLevelName()
         {
-            if (Name is { } name)
-                return Loc.GetString(name);
-
-            return ID;
+            var fallback = Name is { } name ? Loc.GetString(name) : ID;
+            return CMUPrototypeLocalization.GetAccessLevelName(ID, fallback);
         }
     }
 }

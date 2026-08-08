@@ -1,5 +1,6 @@
 <DefaultWindow xmlns="https://spacestation14.io"
-               Title="Working Joe Voice Synthesizer"
+               xmlns:loc="clr-namespace:Content.Client._CMU14.Localizations"
+               Title="{loc:CMULoc 'cmu-working-joe-voice-window-title', 'Working Joe Voice Synthesizer'}"
                MinSize="750 550"
                SetSize="750 550">
 
@@ -21,7 +22,7 @@
 
             <LineEdit
                 Name="SearchBar"
-                PlaceHolder="Search voicelines..."
+                PlaceHolder="{loc:CMULoc 'cmu-voice-search-placeholder', 'Search voicelines...'}"
                 HorizontalExpand="True" />
 
             <ScrollContainer

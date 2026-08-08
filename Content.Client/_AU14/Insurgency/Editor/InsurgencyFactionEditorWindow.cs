@@ -4,8 +4,10 @@ using System.IO;
 using System.Linq;
 using System.Numerics;
 using Content.Client._AU14.Insurgency.CustomFactions;
+using Content.Client._CMU14.Localizations;
 using Content.Shared._AU14.Insurgency;
 using Content.Shared._AU14.Insurgency.Editor;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._RMC14.Vendors;
 using Content.Shared.AU14.util;
 using Content.Shared.Roles;
@@ -68,34 +70,47 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
         _onImportFaction = onImportFaction;
         _prototype = IoCManager.Resolve<IPrototypeManager>();
 
-        Title = "INSFOR Faction Editor";
+        Title = Target("cmu-insfor-tools-editor-window-title", "INSFOR Faction Editor");
         MinSize = new Vector2(980, 660);
 
         var root = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Horizontal, HorizontalExpand = true, VerticalExpand = true };
 
         // Left: help button, faction list + New button.
         var left = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical, MinSize = new Vector2(230, 0) };
-        var help = new Button { Text = "Help - what do these fields mean?" };
+        var help = new Button
+        {
+            Text = Target("cmu-insfor-tools-editor-help", "Help - what do these fields mean?"),
+        };
         help.OnPressed += _ => new InsurgencyEditorHelpWindow().OpenCentered();
         left.AddChild(help);
 
         // The custom flag pipeline (template export + PNG import) was cancelled as too logically
         // complicated; its code was removed entirely (see git history to resurrect it).
-        left.AddChild(new Label { Text = "Factions", StyleClasses = { "LabelHeading" } });
+        left.AddChild(new Label
+        {
+            Text = Target("cmu-insfor-tools-editor-factions", "Factions"),
+            StyleClasses = { "LabelHeading" },
+        });
         _list = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical, VerticalExpand = true };
         left.AddChild(new ScrollContainer { Children = { _list }, VerticalExpand = true, HorizontalExpand = true });
-        var newButton = new Button { Text = "New faction" };
+        var newButton = new Button { Text = Target("cmu-insfor-tools-editor-new-faction", "New faction") };
         newButton.OnPressed += _ => BuildPane(null);
         left.AddChild(newButton);
 
         // Spreadsheet workflow: export a ready-to-fill blank sheet to hand to a player, and import the
         // filled sheet they send back. No setup or macros - the server bakes the dropdowns and reads the
         // file, and validates the import like any untrusted payload. (Per-faction export is in the pane.)
-        var exportTemplate = new Button { Text = "Export blank sheet (for a player)" };
+        var exportTemplate = new Button
+        {
+            Text = Target("cmu-insfor-tools-editor-export-blank-sheet", "Export blank sheet (for a player)"),
+        };
         exportTemplate.OnPressed += _ => _onExportTemplate();
         left.AddChild(exportTemplate);
 
-        var importFaction = new Button { Text = "Import filled sheet" };
+        var importFaction = new Button
+        {
+            Text = Target("cmu-insfor-tools-editor-import-filled-sheet", "Import filled sheet"),
+        };
         importFaction.OnPressed += _ => ImportFactionFromFile();
         left.AddChild(importFaction);
 
@@ -112,7 +127,9 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
         _factions = state.Factions;
         _govforPlatoon = state.GovforPlatoon;
         _scope = state.Scope;
-        Title = _scope == InsurgencyEditorScope.Custom ? "INSFOR Custom Faction Editor" : "INSFOR Faction Editor";
+        Title = _scope == InsurgencyEditorScope.Custom
+            ? Target("cmu-insfor-tools-editor-custom-window-title", "INSFOR Custom Faction Editor")
+            : Target("cmu-insfor-tools-editor-window-title", "INSFOR Faction Editor");
         RebuildList();
         InsforUiStyle.Apply(this); // improved-construction-menu look; re-run safe
     }
@@ -126,7 +143,10 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
                           entry.Definition.Metadata.OpposedGovforFactions.Any(g => string.Equals(g, _govforPlatoon, StringComparison.OrdinalIgnoreCase));
             var label = entry.Definition.Metadata.Title;
             if (string.IsNullOrWhiteSpace(label))
-                label = $"(untitled #{entry.Id})";
+                label = Target(
+                    "cmu-insfor-tools-editor-untitled-id",
+                    $"(untitled #{entry.Id})",
+                    ("id", entry.Id));
             if (opposes)
                 label += "  *"; // matches the round's GOVFOR
 
@@ -144,42 +164,68 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
         var def = entry?.Definition ?? new FactionDefinition();
         var meta = def.Metadata;
 
-        _pane.AddChild(Header(entry == null ? "New faction" : $"Editing: {NonEmpty(meta.Title, "(untitled)")}"));
+        var paneTitle = entry == null
+            ? Target("cmu-insfor-tools-editor-new-faction", "New faction")
+            : Target(
+                "cmu-insfor-tools-editor-editing",
+                $"Editing: {NonEmpty(meta.Title, "(untitled)")}",
+                ("title", NonEmpty(meta.Title, Target("cmu-insfor-tools-editor-untitled", "(untitled)"))));
+        _pane.AddChild(Header(paneTitle));
 
         // These four are free-form prose players read, so they get roomy multi-line boxes rather than a
         // single cramped line. Nudge MultilineHeight below to change how tall the boxes start.
-        var title = LabeledMultiline("Title", meta.Title);
-        var recruited = LabeledMultiline("Recruited message", meta.RecruitedMessage);
-        var description = LabeledMultiline("Description", meta.Description);
-        var roleplay = LabeledMultiline("Roleplay style", meta.RoleplayText);
+        var title = LabeledMultiline(Target("cmu-insfor-tools-editor-field-title", "Title"), meta.Title);
+        var recruited = LabeledMultiline(
+            Target("cmu-insfor-tools-editor-field-recruited-message", "Recruited message"),
+            meta.RecruitedMessage);
+        var description = LabeledMultiline(
+            Target("cmu-insfor-tools-editor-field-description", "Description"),
+            meta.Description);
+        var roleplay = LabeledMultiline(
+            Target("cmu-insfor-tools-editor-field-roleplay-style", "Roleplay style"),
+            meta.RoleplayText);
         // Flag: pick any catalog entity to use as the faction flag. Its sprite shows on the leader's
         // faction-selection rows and in the member reveal popup. This is the catalog picker only - the old
         // live upload / import-export pipeline stays retired.
-        var flag = EntityField("Flag entity", meta.FlagEntity?.Id);
-        var icon = IconField("Status icon", meta.StatusIcon?.Id);
+        var flag = EntityField(Target("cmu-insfor-tools-editor-field-flag-entity", "Flag entity"), meta.FlagEntity?.Id);
+        var icon = IconField(Target("cmu-insfor-tools-editor-field-status-icon", "Status icon"), meta.StatusIcon?.Id);
         // Icon for members recruited in-round (tattooed) who have no per-job icon - without it they keep the
         // default CLF icon. Falls back to the Status icon above when left empty.
-        var recruitIcon = IconField("Recruited-member icon (no per-job icon)", meta.RecruitStatusIcon?.Id);
+        var recruitIcon = IconField(
+            Target("cmu-insfor-tools-editor-field-recruited-icon", "Recruited-member icon (no per-job icon)"),
+            meta.RecruitStatusIcon?.Id);
         var jobIcons = JobIconListEditor(meta.JobStatusIcons);
-        var dollars = LabeledLine("Dollars to points rate", def.Economy.DollarsToPointsRate.ToString(System.Globalization.CultureInfo.InvariantCulture));
+        var dollars = LabeledLine(
+            Target("cmu-insfor-tools-editor-field-dollar-rate", "Dollars to points rate"),
+            def.Economy.DollarsToPointsRate.ToString(System.Globalization.CultureInfo.InvariantCulture));
 
         // The Custom editor can only author Custom factions, so the toggle disappears and stays off.
         var isDefault = new CheckBox
         {
-            Text = "Default faction (host-authored, DB stored)",
+            Text = Target(
+                "cmu-insfor-tools-editor-default-faction",
+                "Default faction (host-authored, DB stored)"),
             Pressed = _scope == InsurgencyEditorScope.Default && (entry?.IsDefault ?? true),
             Visible = _scope == InsurgencyEditorScope.Default,
         };
 
-        var opposed = PlatoonListEditor("Opposed GOVFOR factions", meta.OpposedGovforFactions);
+        var opposed = PlatoonListEditor(
+            Target("cmu-insfor-tools-editor-opposed-govfor", "Opposed GOVFOR factions"),
+            meta.OpposedGovforFactions);
         // The well-known CLF machines are ticked on/off here; everything else is a free entity list.
         var machines = DefaultMachinesEditor(def.CellKit.PlaceableEntities.Select(p => p.Id));
-        var placeables = EntityListEditor("Cell kit: other placeable entities",
+        var placeables = EntityListEditor(Target(
+                "cmu-insfor-tools-editor-other-placeables",
+                "Cell kit: other placeable entities"),
             def.CellKit.PlaceableEntities.Select(p => p.Id).Where(id => !IsDefaultMachine(id)));
         // What the analyzer machine accepts for points, and at what ratio. Empty = plain dollars.
         var submissions = PointsSubmissionListEditor(def.Economy.PointsSubmissions);
         // Dollars stay valid alongside any custom submittables unless the author turns them off.
-        var includeDollars = new CheckBox { Text = "Also accept plain dollars for points", Pressed = def.Economy.IncludeDollars };
+        var includeDollars = new CheckBox
+        {
+            Text = Target("cmu-insfor-tools-editor-accept-dollars", "Also accept plain dollars for points"),
+            Pressed = def.Economy.IncludeDollars,
+        };
         var vendors = VendorListEditor(def.CellKit.VendorDefinitions);
         var loadouts = RoleLoadoutListEditor(def.RoleLoadouts);
 
@@ -189,12 +235,12 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
         var tabs = new TabContainer { HorizontalExpand = true, VerticalExpand = true, MinSize = new Vector2(0, 560) };
         var pages = new (string Title, Control[] Controls)[]
         {
-            ("Faction Info", new Control[] { title.Control, recruited.Control, description.Control,
+            (Target("cmu-insfor-tools-editor-tab-faction-info", "Faction Info"), new Control[] { title.Control, recruited.Control, description.Control,
                 roleplay.Control, flag.Control, icon.Control, recruitIcon.Control, jobIcons.Control, isDefault, opposed.Control }),
-            ("Economy", new Control[] { dollars.Control, submissions.Control, includeDollars }),
-            ("Cell Kit", new Control[] { machines.Control, placeables.Control }),
-            ("Vendors", new Control[] { vendors.Control }),
-            ("Loadouts", new Control[] { loadouts.Control }),
+            (Target("cmu-insfor-tools-editor-tab-economy", "Economy"), new Control[] { dollars.Control, submissions.Control, includeDollars }),
+            (Target("cmu-insfor-tools-editor-tab-cell-kit", "Cell Kit"), new Control[] { machines.Control, placeables.Control }),
+            (Target("cmu-insfor-tools-editor-tab-vendors", "Vendors"), new Control[] { vendors.Control }),
+            (Target("cmu-insfor-tools-editor-tab-loadouts", "Loadouts"), new Control[] { loadouts.Control }),
         };
         for (var i = 0; i < pages.Length; i++)
         {
@@ -244,13 +290,21 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
             RoleLoadouts = loadouts.Read(),
         };
 
-        var save = new Button { Text = _scope == InsurgencyEditorScope.Custom ? "Save (server / Custom)" : "Save (server / Default)" };
+        var save = new Button
+        {
+            Text = _scope == InsurgencyEditorScope.Custom
+                ? Target("cmu-insfor-tools-editor-save-server-custom", "Save (server / Custom)")
+                : Target("cmu-insfor-tools-editor-save-server-default", "Save (server / Default)"),
+        };
         save.OnPressed += _ => _onSave(entry?.Id, isDefault.Pressed, BuildDef());
         buttons.AddChild(save);
 
         // Local save: writes the definition to this machine as a Custom faction, so it shows up in the
         // leader's Custom list. Never touches the server DB.
-        var saveLocal = new Button { Text = "Save as local Custom" };
+        var saveLocal = new Button
+        {
+            Text = Target("cmu-insfor-tools-editor-save-local-custom", "Save as local Custom"),
+        };
         saveLocal.OnPressed += _ =>
         {
             var def = BuildDef();
@@ -262,7 +316,10 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
         {
             // Export this faction to a filled-in spreadsheet, for editing outside the game or handing a
             // ready-made faction to a player to tweak. The server builds the workbook.
-            var exportSheet = new Button { Text = "Export to sheet" };
+            var exportSheet = new Button
+            {
+                Text = Target("cmu-insfor-tools-editor-export-sheet", "Export to sheet"),
+            };
             exportSheet.OnPressed += _ => _onExportFaction(entry.Id);
             buttons.AddChild(exportSheet);
 
@@ -270,14 +327,17 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
             // also cannot touch host-authored rows. The server enforces both regardless.
             if (_scope == InsurgencyEditorScope.Default)
             {
-                var select = new Button { Text = "Apply for round" };
+                var select = new Button
+                {
+                    Text = Target("cmu-insfor-tools-editor-apply-round", "Apply for round"),
+                };
                 select.OnPressed += _ => _onSelect(entry.Id);
                 buttons.AddChild(select);
             }
 
             if (_scope == InsurgencyEditorScope.Default || !entry.IsDefault)
             {
-                var delete = new Button { Text = "Delete" };
+                var delete = new Button { Text = Target("cmu-insfor-tools-editor-delete", "Delete") };
                 delete.OnPressed += _ => _onDelete(entry.Id);
                 buttons.AddChild(delete);
             }
@@ -366,7 +426,12 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
     // GOVFOR "factions" are Platoons (USMC, TWE RMC, UPP, and so on). A faction author picks which
     // of these platoons their cell opposes; the round's selected GOVFOR platoon drives the match.
     private List<(string Id, string Display)> PlatoonOptions() => _prototype.EnumeratePrototypes<PlatoonPrototype>()
-        .Select(p => (p.ID, string.IsNullOrWhiteSpace(p.Name) ? p.ID : $"{p.Name}  [{p.ID}]"))
+        .Select(p =>
+        {
+            var fallback = string.IsNullOrWhiteSpace(p.Name) ? p.ID : p.Name;
+            var name = CMUPrototypeLocalization.GetPrototypeText("platoon", p.ID, "name", fallback);
+            return (p.ID, $"{name}  [{p.ID}]");
+        })
         .OrderBy(x => x.Item2, StringComparer.InvariantCultureIgnoreCase)
         .ToList();
 
@@ -414,7 +479,7 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
             setIcon(id);
         });
 
-        var clear = new Button { Text = "Clear" };
+        var clear = new Button { Text = Target("cmu-insfor-tools-editor-clear", "Clear") };
         clear.OnPressed += _ =>
         {
             selected = string.Empty;
@@ -477,7 +542,7 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
         foreach (var s in initial)
             AddRow(s);
 
-        var add = new Button { Text = "+ Add" };
+        var add = new Button { Text = Target("cmu-insfor-tools-editor-add", "+ Add") };
         add.OnPressed += _ => openPicker(AddRow);
 
         box.AddChild(rows);
@@ -497,7 +562,9 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
     private Editor<List<PointsSubmissionEntry>> PointsSubmissionListEditor(IEnumerable<PointsSubmissionEntry> initial)
     {
         var box = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical };
-        box.AddChild(Header("Analyzer: submittable for points (empty = plain dollars)"));
+        box.AddChild(Header(Target(
+            "cmu-insfor-tools-editor-analyzer-submittables",
+            "Analyzer: submittable for points (empty = plain dollars)")));
         var rows = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical };
         var readers = new List<Func<PointsSubmissionEntry>>();
 
@@ -515,13 +582,18 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
 
             // Mode 0 = this many items make one point. Mode 1 = one item is worth this many points.
             var mode = new OptionButton();
-            mode.AddItem("items per point", 0);
-            mode.AddItem("points per item", 1);
+            mode.AddItem(Target("cmu-insfor-tools-editor-items-per-point", "items per point"), 0);
+            mode.AddItem(Target("cmu-insfor-tools-editor-points-per-item", "points per item"), 1);
             mode.SelectId(entry.PointsPerItemMode ? 1 : 0);
             mode.OnItemSelected += args => mode.SelectId(args.Id);
 
             var startValue = entry.PointsPerItemMode ? entry.PointsPerItem : entry.AmountPerPoint;
-            var value = new LineEdit { Text = startValue.ToString(), MinSize = new Vector2(60, 0), PlaceHolder = "ratio" };
+            var value = new LineEdit
+            {
+                Text = startValue.ToString(),
+                MinSize = new Vector2(60, 0),
+                PlaceHolder = Target("cmu-insfor-tools-editor-placeholder-ratio", "ratio"),
+            };
 
             var remove = new Button { Text = "X" };
             Func<PointsSubmissionEntry> reader = () =>
@@ -554,7 +626,10 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
         foreach (var e in initial)
             AddRow(e);
 
-        var add = new Button { Text = "+ Add submittable item" };
+        var add = new Button
+        {
+            Text = Target("cmu-insfor-tools-editor-add-submittable", "+ Add submittable item"),
+        };
         add.OnPressed += _ => AddRow(new PointsSubmissionEntry());
 
         box.AddChild(rows);
@@ -570,7 +645,7 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
     private Editor<List<FactionVendorDefinition>> VendorListEditor(IEnumerable<FactionVendorDefinition> initial)
     {
         var box = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical };
-        box.AddChild(Header("Cell kit: vendors"));
+        box.AddChild(Header(Target("cmu-insfor-tools-editor-cell-kit-vendors", "Cell kit: vendors")));
         var rows = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical };
         var readers = new List<Func<FactionVendorDefinition>>();
 
@@ -578,17 +653,44 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
         {
             var panel = new PanelContainer();
             var inner = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical };
-            var name = LabeledLine("Vendor name", vendor.Name);
-            var model = EntityField("Base model", vendor.BaseModel.Id);
-            var wrenchable = new CheckBox { Text = "Wrenchable (can be wrenched down and moved)", Pressed = vendor.Wrenchable };
-            var invulnerable = new CheckBox { Text = "Invulnerable (base entity won't break / change on damage)", Pressed = vendor.Invulnerable };
-            var intelPoints = new CheckBox { Text = "Uses cell intel points (money at the intel computer stocks this vendor)", Pressed = vendor.UsesIntelPoints };
+            var name = LabeledLine(Target("cmu-insfor-tools-editor-vendor-name", "Vendor name"), vendor.Name);
+            var model = EntityField(Target("cmu-insfor-tools-editor-base-model", "Base model"), vendor.BaseModel.Id);
+            var wrenchable = new CheckBox
+            {
+                Text = Target(
+                    "cmu-insfor-tools-editor-vendor-wrenchable",
+                    "Wrenchable (can be wrenched down and moved)"),
+                Pressed = vendor.Wrenchable,
+            };
+            var invulnerable = new CheckBox
+            {
+                Text = Target(
+                    "cmu-insfor-tools-editor-vendor-invulnerable",
+                    "Invulnerable (base entity won't break / change on damage)"),
+                Pressed = vendor.Invulnerable,
+            };
+            var intelPoints = new CheckBox
+            {
+                Text = Target(
+                    "cmu-insfor-tools-editor-vendor-intel-points",
+                    "Uses cell intel points (money at the intel computer stocks this vendor)"),
+                Pressed = vendor.UsesIntelPoints,
+            };
             // For built-in vendors that reuse a fully authored prototype (the CLF requisitions rack): keep
             // the base entity's own arsenal instead of the sections below. Leave off for normal vendors.
-            var useBaseSections = new CheckBox { Text = "Use base model's own arsenal (ignore the sections below)", Pressed = vendor.UseBaseModelSections };
+            var useBaseSections = new CheckBox
+            {
+                Text = Target(
+                    "cmu-insfor-tools-editor-vendor-use-base-arsenal",
+                    "Use base model's own arsenal (ignore the sections below)"),
+                Pressed = vendor.UseBaseModelSections,
+            };
             var sections = SectionListEditor(vendor.Sections);
 
-            var remove = new Button { Text = "Remove vendor" };
+            var remove = new Button
+            {
+                Text = Target("cmu-insfor-tools-editor-remove-vendor", "Remove vendor"),
+            };
             Func<FactionVendorDefinition> reader = () => new FactionVendorDefinition
             {
                 Name = name.Read(),
@@ -621,7 +723,7 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
         foreach (var v in initial)
             AddVendor(v);
 
-        var add = new Button { Text = "+ Add vendor" };
+        var add = new Button { Text = Target("cmu-insfor-tools-editor-add-vendor", "+ Add vendor") };
         add.OnPressed += _ => AddVendor(new FactionVendorDefinition());
 
         box.AddChild(rows);
@@ -632,7 +734,7 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
     private Editor<List<CMVendorSection>> SectionListEditor(IEnumerable<CMVendorSection> initial)
     {
         var box = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical };
-        box.AddChild(new Label { Text = "Sections" });
+        box.AddChild(new Label { Text = Target("cmu-insfor-tools-editor-sections", "Sections") });
         var rows = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical };
         var readers = new List<Func<CMVendorSection>>();
 
@@ -640,20 +742,37 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
         {
             var panel = new PanelContainer();
             var inner = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical };
-            var name = LabeledLine("Section name", section.Name);
+            var name = LabeledLine(Target("cmu-insfor-tools-editor-section-name", "Section name"), section.Name);
 
             // Category take-limits (independent of price/stock): how many items one player may take from
             // this category, and how many all players together may take. Blank means unlimited.
-            var perPlayer = new LineEdit { Text = section.Choices?.Amount.ToString() ?? string.Empty, MinSize = new Vector2(70, 0), PlaceHolder = "per-player" };
-            var global = new LineEdit { Text = section.SharedJOLimit?.ToString() ?? string.Empty, MinSize = new Vector2(70, 0), PlaceHolder = "global" };
+            var perPlayer = new LineEdit
+            {
+                Text = section.Choices?.Amount.ToString() ?? string.Empty,
+                MinSize = new Vector2(70, 0),
+                PlaceHolder = Target("cmu-insfor-tools-editor-placeholder-per-player", "per-player"),
+            };
+            var global = new LineEdit
+            {
+                Text = section.SharedJOLimit?.ToString() ?? string.Empty,
+                MinSize = new Vector2(70, 0),
+                PlaceHolder = Target("cmu-insfor-tools-editor-placeholder-global", "global"),
+            };
             var limitsRow = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Horizontal };
-            limitsRow.AddChild(new Label { Text = "Category limit  ", VerticalAlignment = VAlignment.Center });
+            limitsRow.AddChild(new Label
+            {
+                Text = Target("cmu-insfor-tools-editor-category-limit", "Category limit  "),
+                VerticalAlignment = VAlignment.Center,
+            });
             limitsRow.AddChild(perPlayer);
             limitsRow.AddChild(global);
 
             var entries = EntryListEditor(section.Entries);
 
-            var remove = new Button { Text = "Remove section" };
+            var remove = new Button
+            {
+                Text = Target("cmu-insfor-tools-editor-remove-section", "Remove section"),
+            };
             Func<CMVendorSection> reader = () =>
             {
                 var sectionName = name.Read();
@@ -686,7 +805,7 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
         foreach (var s in initial)
             AddSection(s);
 
-        var add = new Button { Text = "+ Add section" };
+        var add = new Button { Text = Target("cmu-insfor-tools-editor-add-section", "+ Add section") };
         add.OnPressed += _ => AddSection(new CMVendorSection());
 
         box.AddChild(rows);
@@ -697,7 +816,12 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
     private Editor<List<CMVendorEntry>> EntryListEditor(IEnumerable<CMVendorEntry> initial)
     {
         var box = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical };
-        box.AddChild(new Label { Text = "Items (pick entity / points / amount / max)" });
+        box.AddChild(new Label
+        {
+            Text = Target(
+                "cmu-insfor-tools-editor-items-heading",
+                "Items (pick entity / points / amount / max)"),
+        });
         var rows = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical };
         var readers = new List<Func<CMVendorEntry>>();
 
@@ -713,9 +837,24 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
                 idButton.Text = PickerText(id);
             });
 
-            var points = new LineEdit { Text = entry.Points?.ToString() ?? string.Empty, MinSize = new Vector2(70, 0), PlaceHolder = "points" };
-            var amount = new LineEdit { Text = entry.Amount?.ToString() ?? string.Empty, MinSize = new Vector2(70, 0), PlaceHolder = "amount" };
-            var max = new LineEdit { Text = entry.Max?.ToString() ?? string.Empty, MinSize = new Vector2(70, 0), PlaceHolder = "max" };
+            var points = new LineEdit
+            {
+                Text = entry.Points?.ToString() ?? string.Empty,
+                MinSize = new Vector2(70, 0),
+                PlaceHolder = Target("cmu-insfor-tools-editor-placeholder-points", "points"),
+            };
+            var amount = new LineEdit
+            {
+                Text = entry.Amount?.ToString() ?? string.Empty,
+                MinSize = new Vector2(70, 0),
+                PlaceHolder = Target("cmu-insfor-tools-editor-placeholder-amount", "amount"),
+            };
+            var max = new LineEdit
+            {
+                Text = entry.Max?.ToString() ?? string.Empty,
+                MinSize = new Vector2(70, 0),
+                PlaceHolder = Target("cmu-insfor-tools-editor-placeholder-max", "max"),
+            };
             var remove = new Button { Text = "X" };
 
             Func<CMVendorEntry> reader = () => new CMVendorEntry
@@ -743,7 +882,7 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
         foreach (var e in initial)
             AddEntry(e);
 
-        var add = new Button { Text = "+ Add item" };
+        var add = new Button { Text = Target("cmu-insfor-tools-editor-add-item", "+ Add item") };
         add.OnPressed += _ => AddEntry(new CMVendorEntry());
 
         box.AddChild(rows);
@@ -755,7 +894,9 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
     private Editor<List<FactionRoleLoadout>> RoleLoadoutListEditor(IEnumerable<FactionRoleLoadout> initial)
     {
         var box = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical };
-        box.AddChild(Header("Role loadouts (A Package contents)"));
+        box.AddChild(Header(Target(
+            "cmu-insfor-tools-editor-role-loadouts",
+            "Role loadouts (A Package contents)")));
         var rows = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical };
         var readers = new List<Func<FactionRoleLoadout>>();
 
@@ -763,10 +904,15 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
         {
             var panel = new PanelContainer();
             var inner = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical };
-            var role = JobField("Role (job)", loadout.Role);
-            var contents = EntityListEditor("Contents", loadout.Contents.Select(c => c.Id));
+            var role = JobField(Target("cmu-insfor-tools-editor-role-job", "Role (job)"), loadout.Role);
+            var contents = EntityListEditor(
+                Target("cmu-insfor-tools-editor-contents", "Contents"),
+                loadout.Contents.Select(c => c.Id));
 
-            var remove = new Button { Text = "Remove loadout" };
+            var remove = new Button
+            {
+                Text = Target("cmu-insfor-tools-editor-remove-loadout", "Remove loadout"),
+            };
             Func<FactionRoleLoadout> reader = () => new FactionRoleLoadout
             {
                 Role = role.Read(),
@@ -789,7 +935,7 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
         foreach (var l in initial)
             AddLoadout(l);
 
-        var add = new Button { Text = "+ Add loadout" };
+        var add = new Button { Text = Target("cmu-insfor-tools-editor-add-loadout", "+ Add loadout") };
         add.OnPressed += _ => AddLoadout(new FactionRoleLoadout());
 
         box.AddChild(rows);
@@ -803,7 +949,9 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
     private Editor<List<FactionJobIcon>> JobIconListEditor(IEnumerable<FactionJobIcon> initial)
     {
         var box = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical };
-        box.AddChild(Header("Per-job status icons (empty = all jobs use the faction icon above)"));
+        box.AddChild(Header(Target(
+            "cmu-insfor-tools-editor-per-job-icons",
+            "Per-job status icons (empty = all jobs use the faction icon above)")));
         var rows = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical };
         var readers = new List<Func<FactionJobIcon>>();
 
@@ -849,7 +997,10 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
         foreach (var e in initial)
             AddRow(e);
 
-        var add = new Button { Text = "+ Add per-job icon" };
+        var add = new Button
+        {
+            Text = Target("cmu-insfor-tools-editor-add-per-job-icon", "+ Add per-job icon"),
+        };
         add.OnPressed += _ => AddRow(new FactionJobIcon());
 
         box.AddChild(rows);
@@ -865,13 +1016,13 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
     // The machines the original heavy CLF cell kit deployed. Ticking one adds it to the faction's
     // placeables; their in-game wiring (money at the intel computer -> cell points -> vendors) is the
     // existing CLF behavior, so no extra linking is needed here.
-    private static readonly (string Label, string Proto)[] DefaultMachines =
+    private static readonly (string Key, string Fallback, string Proto)[] DefaultMachines =
     {
-        ("Analyzer machine", "AU14AnalyzerMachineCLF"),
-        ("CLF intel computer", "CMUComputerIntelCLFClaimable"),
-        ("CLF objectives console", "ComputerObjectivesCLF"),
-        ("CLF tech tree console", "RMCTechTreeConsoleCLF"),
-        ("Fax machine", "CMFaxCLF"),
+        ("cmu-insfor-tools-editor-machine-analyzer", "Analyzer machine", "AU14AnalyzerMachineCLF"),
+        ("cmu-insfor-tools-editor-machine-intel-computer", "CLF intel computer", "CMUComputerIntelCLFClaimable"),
+        ("cmu-insfor-tools-editor-machine-objectives-console", "CLF objectives console", "ComputerObjectivesCLF"),
+        ("cmu-insfor-tools-editor-machine-tech-tree-console", "CLF tech tree console", "RMCTechTreeConsoleCLF"),
+        ("cmu-insfor-tools-editor-machine-fax", "Fax machine", "CMFaxCLF"),
     };
 
     private static bool IsDefaultMachine(string proto) =>
@@ -881,12 +1032,14 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
     {
         var present = currentPlaceables.ToHashSet(StringComparer.OrdinalIgnoreCase);
         var box = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical };
-        box.AddChild(Header("Default cell-kit machines"));
+        box.AddChild(Header(Target(
+            "cmu-insfor-tools-editor-default-machines",
+            "Default cell-kit machines")));
 
         var checks = new List<(string Proto, CheckBox Box)>();
-        foreach (var (label, proto) in DefaultMachines)
+        foreach (var (key, fallback, proto) in DefaultMachines)
         {
-            var cb = new CheckBox { Text = label, Pressed = present.Contains(proto) };
+            var cb = new CheckBox { Text = Target(key, fallback), Pressed = present.Contains(proto) };
             box.AddChild(cb);
             checks.Add((proto, cb));
         }
@@ -939,7 +1092,17 @@ public sealed class InsurgencyFactionEditorWindow : DefaultWindow
         return new Editor<string>(box, () => Rope.Collapse(edit.TextRope).Trim());
     }
 
-    private static string PickerText(string? id) => string.IsNullOrEmpty(id) ? "Choose..." : id;
+    private static string PickerText(string? id) => string.IsNullOrEmpty(id)
+        ? Target("cmu-insfor-tools-editor-choose", "Choose...")
+        : id;
+
+    private static string Target(
+        string key,
+        string fallback,
+        params (string, object)[] arguments)
+    {
+        return CMULocExtension.GetString(key, fallback, arguments);
+    }
 
     private static string NonEmpty(string? value, string fallback) => string.IsNullOrWhiteSpace(value) ? fallback : value;
 

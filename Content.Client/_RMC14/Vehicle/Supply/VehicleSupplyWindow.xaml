@@ -1,5 +1,6 @@
 <controls:VehicleSupplyWindow
     xmlns="https://spacestation14.io"
+    xmlns:loc="clr-namespace:Content.Client._CMU14.Localizations"
     xmlns:controls="clr-namespace:Content.Client._RMC14.Vehicle.Supply"
     xmlns:ui="clr-namespace:Robust.Client.UserInterface.Controls;assembly=Robust.Client"
     xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
@@ -30,7 +31,7 @@
                 </PanelContainer.PanelOverride>
 
                 <BoxContainer Orientation="Vertical" SeparationOverride="6" Margin="10" HorizontalExpand="True" VerticalExpand="True">
-                    <Label Text="Stored Vehicles" FontColorOverride="#C7D7EA"/>
+                    <Label Text="{loc:CMULoc 'cmu-rmc-vehicle-supply-stored-vehicles', 'Stored Vehicles'}" FontColorOverride="#C7D7EA"/>
                     <ScrollContainer VerticalExpand="True" HorizontalExpand="True">
                         <BoxContainer Name="AvailableRows" Access="Public" Orientation="Vertical" SeparationOverride="4" HorizontalExpand="True" />
                     </ScrollContainer>
@@ -46,7 +47,7 @@
                     </PanelContainer.PanelOverride>
 
                     <BoxContainer Orientation="Vertical" SeparationOverride="6" Margin="10" HorizontalExpand="True" VerticalExpand="True">
-                        <Label Text="Vehicle Loadout" FontColorOverride="#C7D7EA"/>
+                        <Label Text="{loc:CMULoc 'cmu-rmc-vehicle-supply-loadout', 'Vehicle Loadout'}" FontColorOverride="#C7D7EA"/>
                         <BoxContainer Name="LoadoutColumns" Access="Public" Orientation="Horizontal" SeparationOverride="8" HorizontalExpand="True" VerticalExpand="True"/>
                     </BoxContainer>
                 </PanelContainer>
@@ -60,7 +61,7 @@
                     </PanelContainer.PanelOverride>
 
                     <BoxContainer Orientation="Vertical" SeparationOverride="4" Margin="8" HorizontalExpand="True" VerticalExpand="True">
-                        <Label Name="PreviewTitle" Access="Public" Text="Vehicle" FontColorOverride="#C7D7EA"/>
+                        <Label Name="PreviewTitle" Access="Public" Text="{loc:CMULoc 'cmu-rmc-vehicle-supply-preview-default', 'Vehicle'}" FontColorOverride="#C7D7EA"/>
                         <PanelContainer Name="VehiclePreviewContainer" HorizontalExpand="True" VerticalExpand="True">
                             <ui:EntityPrototypeView Name="VehiclePreview"
                                                     MinSize="120 120"
@@ -75,8 +76,8 @@
             </BoxContainer>
 
             <BoxContainer Orientation="Horizontal" SeparationOverride="6">
-                <rmcui:HardpointButton Name="RaiseButton" Access="Public" LabelText="Raise" MinSize="98 26" />
-                <rmcui:HardpointButton Name="LowerButton" Access="Public" LabelText="Lower" MinSize="98 26" />
+                <rmcui:HardpointButton Name="RaiseButton" Access="Public" LabelText="{loc:CMULoc 'cmu-rmc-vehicle-supply-raise', 'Raise'}" MinSize="98 26" />
+                <rmcui:HardpointButton Name="LowerButton" Access="Public" LabelText="{loc:CMULoc 'cmu-rmc-vehicle-supply-lower', 'Lower'}" MinSize="98 26" />
                 <BoxContainer Name="LiftActivity" Access="Public" Orientation="Horizontal" SeparationOverride="4" VerticalAlignment="Center" Margin="6,0,0,0">
                     <PanelContainer Name="LiftDot1" Access="Public" MinSize="8 8" MaxSize="8 8" />
                     <PanelContainer Name="LiftDot2" Access="Public" MinSize="8 8" MaxSize="8 8" />

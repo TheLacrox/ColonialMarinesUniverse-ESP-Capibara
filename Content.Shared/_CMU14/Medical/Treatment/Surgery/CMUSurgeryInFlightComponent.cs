@@ -1,4 +1,5 @@
 using Robust.Shared.GameStates;
+using Robust.Shared.Localization;
 
 namespace Content.Shared._CMU14.Medical.Treatment.Surgery;
 
@@ -19,6 +20,9 @@ public sealed partial class CMUSurgeryInFlightComponent : Component
 
     [DataField, AutoNetworkedField]
     public string LeafSurgeryDisplayName = string.Empty;
+
+    [DataField, AutoNetworkedField]
+    public LocId? LeafSurgeryDisplayNameLocId;
 
     /// <summary>
     ///     Historical credit for the most recent completed step. This is not

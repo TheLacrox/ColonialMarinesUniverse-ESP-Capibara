@@ -1,11 +1,12 @@
 <controls:ColonyAtmWindow
     xmlns="https://spacestation14.io"
+    xmlns:loc="clr-namespace:Content.Client._CMU14.Localizations"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:controls="clr-namespace:Content.Client.AU14.ColonyEconomy"
-    Title="Colony ATM" MinSize="350 220">
+    Title="{loc:CMULoc 'cmu-colony-economy-atm-title', 'Colony ATM'}" MinSize="350 220">
     <BoxContainer Orientation="Vertical">
-        <Label Name="OwnerLabel" Access="Public" Text="Account: Unknown" />
-        <Label Name="BalanceLabel" Access="Public" Text="Balance: $0" />
+        <Label Name="OwnerLabel" Access="Public" Text="{loc:CMULoc 'cmu-colony-economy-account-unknown-placeholder', 'Account: Unknown'}" />
+        <Label Name="BalanceLabel" Access="Public" Text="{loc:CMULoc 'cmu-colony-economy-balance-placeholder', 'Balance: $0'}" />
         <Label Name="IncomeTaxLabel" Access="Public" Text="" StyleClasses="LabelSubText" Margin="0 2" />
         <BoxContainer Orientation="Horizontal">
             <Control HorizontalExpand="True" />

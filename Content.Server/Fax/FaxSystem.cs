@@ -1,3 +1,4 @@
+using System.Linq;
 using Content.Server.Administration;
 using Content.Server.Administration.Managers;
 using Content.Server.Chat.Managers;
@@ -5,6 +6,7 @@ using Content.Server.DeviceNetwork.Systems;
 using Content.Server.Popups;
 using Content.Server.Power.Components;
 using Content.Server.Tools;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Database;
@@ -379,7 +381,11 @@ public sealed partial class FaxSystem : EntitySystem
         var canCopy = isPaperInserted &&
                       component.SendTimeoutRemaining <= 0 &&
                       component.InsertingTimeRemaining <= 0;
-        var state = new FaxUiState(component.FaxName, component.KnownFaxes, canSend, canCopy, isPaperInserted, component.DestinationFaxAddress);
+        var faxName = CMUPrototypeLocalization.GetLiteralText(Loc, "FaxMachine", "name", component.FaxName);
+        var knownFaxes = component.KnownFaxes.ToDictionary(
+            pair => pair.Key,
+            pair => CMUPrototypeLocalization.GetLiteralText(Loc, "FaxMachine", "name", pair.Value));
+        var state = new FaxUiState(faxName, knownFaxes, canSend, canCopy, isPaperInserted, component.DestinationFaxAddress);
         _userInterface.SetUiState(uid, FaxUiKey.Key, state);
     }
 

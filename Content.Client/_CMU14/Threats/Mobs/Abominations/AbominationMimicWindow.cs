@@ -43,7 +43,7 @@ public sealed class AbominationMimicWindow : DefaultWindow
 
             var button = new Button
             {
-                Text = string.IsNullOrWhiteSpace(name) ? "<unknown>" : name,
+                Text = string.IsNullOrWhiteSpace(name) ? $"<{Loc.GetString("generic-unknown")}>" : name,
                 ToggleMode = true,
                 Pressed = activeIndex == index,
                 HorizontalExpand = true

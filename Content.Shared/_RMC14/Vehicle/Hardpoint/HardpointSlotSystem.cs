@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._RMC14.PowerLoader;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.DoAfter;
@@ -378,7 +379,9 @@ public sealed partial class HardpointSlotSystem : EntitySystem
 
         if (args.Cancelled || args.Handled)
         {
-            SetErrorAndRefresh(args.Cancelled ? "Hardpoint removal cancelled." : null);
+            SetErrorAndRefresh(args.Cancelled
+                ? Ui("cmu-rmc-vehicle-hardpoint-removal-cancelled", "Hardpoint removal cancelled.")
+                : null);
             return;
         }
 
@@ -387,20 +390,26 @@ public sealed partial class HardpointSlotSystem : EntitySystem
         if (resolvedLocation is not { } finalLocation &&
             !_hardpoints.TryResolveSlotLocation(ent.Owner, ent.Comp, args.SlotId, out finalLocation))
         {
-            SetErrorAndRefresh("Unable to access hardpoint slots.");
+            SetErrorAndRefresh(Ui(
+                "cmu-rmc-vehicle-hardpoint-slots-inaccessible",
+                "Unable to access hardpoint slots."));
             return;
         }
 
         if (finalLocation.Slot.Item is not { } installed)
         {
-            SetErrorAndRefresh("No hardpoint is installed in that slot.");
+            SetErrorAndRefresh(Ui(
+                "cmu-rmc-vehicle-hardpoint-none-installed",
+                "No hardpoint is installed in that slot."));
             return;
         }
 
         var needsPowerLoader = HasComp<PowerLoaderGrabbableComponent>(installed);
         if (needsPowerLoader && !_powerLoader.CanPickupWithActiveHand(args.User))
         {
-            SetErrorAndRefresh("Free your power loader's active arm before removing that hardpoint.");
+            SetErrorAndRefresh(Ui(
+                "cmu-rmc-vehicle-hardpoint-free-loader-arm",
+                "Free your power loader's active arm before removing that hardpoint."));
             return;
         }
 
@@ -411,7 +420,9 @@ public sealed partial class HardpointSlotSystem : EntitySystem
 
         if (!ejected || ejectedItem == null)
         {
-            SetErrorAndRefresh("Couldn't remove the hardpoint. Free a hand and try again.");
+            SetErrorAndRefresh(Ui(
+                "cmu-rmc-vehicle-hardpoint-remove-free-hand",
+                "Couldn't remove the hardpoint. Free a hand and try again."));
             return;
         }
 
@@ -422,7 +433,9 @@ public sealed partial class HardpointSlotSystem : EntitySystem
                 finalLocation.State.CompletingInserts.Add(finalLocation.Definition.Id);
                 _itemSlots.TryInsert(finalLocation.Owner, finalLocation.Slot, ejectedItem.Value, null);
                 finalLocation.State.CompletingInserts.Remove(finalLocation.Definition.Id);
-                SetErrorAndRefresh("Couldn't move the hardpoint into the power loader. Free the active arm and try again.");
+                SetErrorAndRefresh(Ui(
+                    "cmu-rmc-vehicle-hardpoint-move-loader-failed",
+                    "Couldn't move the hardpoint into the power loader. Free the active arm and try again."));
                 return;
             }
         }
@@ -459,21 +472,23 @@ public sealed partial class HardpointSlotSystem : EntitySystem
 
         if (string.IsNullOrWhiteSpace(slotId))
         {
-            SetError("Invalid hardpoint slot.");
+            SetError(Ui("cmu-rmc-vehicle-hardpoint-invalid-slot", "Invalid hardpoint slot."));
             RefreshUi();
             return;
         }
 
         if (!_hardpoints.TryResolveSlotLocation(uid, component, slotId, out var location))
         {
-            SetError("That hardpoint slot does not exist.");
+            SetError(Ui("cmu-rmc-vehicle-hardpoint-slot-missing", "That hardpoint slot does not exist."));
             RefreshUi();
             return;
         }
 
         if (location.Slot.Item is not { } installed)
         {
-            SetError("No hardpoint is installed in that slot.");
+            SetError(Ui(
+                "cmu-rmc-vehicle-hardpoint-none-installed",
+                "No hardpoint is installed in that slot."));
             RefreshUi();
             return;
         }
@@ -482,7 +497,9 @@ public sealed partial class HardpointSlotSystem : EntitySystem
             TryComp(installed, out ItemSlotsComponent? attachedItemSlots) &&
             _hardpoints.HasAttachedHardpoints(installed, attachedSlots, attachedItemSlots))
         {
-            const string error = "Remove the turret attachments before removing the turret.";
+            var error = Ui(
+                "cmu-rmc-vehicle-hardpoint-remove-turret-attachments-first",
+                "Remove the turret attachments before removing the turret.");
             _popup.PopupEntity(error, location.Owner, user);
             SetError(error);
             RefreshUi();
@@ -492,7 +509,9 @@ public sealed partial class HardpointSlotSystem : EntitySystem
         if (location.State.PendingInserts.Contains(location.Definition.Id) ||
             location.State.CompletingInserts.Contains(location.Definition.Id))
         {
-            const string error = "Finish installing that hardpoint before removing it.";
+            var error = Ui(
+                "cmu-rmc-vehicle-hardpoint-finish-install-first",
+                "Finish installing that hardpoint before removing it.");
             _popup.PopupEntity(error, user, user);
             SetError(error);
             RefreshUi();
@@ -507,7 +526,9 @@ public sealed partial class HardpointSlotSystem : EntitySystem
         {
             if (!_powerLoader.TryGetActivePowerLoader(user, out _))
             {
-                const string error = "You need to be operating a power loader to remove this hardpoint.";
+                var error = Ui(
+                    "cmu-rmc-vehicle-hardpoint-need-power-loader",
+                    "You need to be operating a power loader to remove this hardpoint.");
                 _popup.PopupEntity(error, user, user);
                 SetError(error);
                 RefreshUi();
@@ -516,7 +537,9 @@ public sealed partial class HardpointSlotSystem : EntitySystem
 
             if (!_powerLoader.CanPickupWithActiveHand(user))
             {
-                const string error = "Free your power loader's active arm before removing that hardpoint.";
+                var error = Ui(
+                    "cmu-rmc-vehicle-hardpoint-free-loader-arm",
+                    "Free your power loader's active arm before removing that hardpoint.");
                 _popup.PopupEntity(error, user, user);
                 SetError(error);
                 RefreshUi();
@@ -525,7 +548,9 @@ public sealed partial class HardpointSlotSystem : EntitySystem
 
             if (!location.State.PendingRemovals.Add(location.Definition.Id))
             {
-                SetError("That hardpoint is already being removed.");
+                SetError(Ui(
+                    "cmu-rmc-vehicle-hardpoint-already-removing",
+                    "That hardpoint is already being removed."));
                 RefreshUi();
                 return;
             }
@@ -545,7 +570,9 @@ public sealed partial class HardpointSlotSystem : EntitySystem
         {
             if (!TryGetHardpointRemovalTool(user, location.Slots, out var tool))
             {
-                const string error = "You need a prying tool to remove this hardpoint.";
+                var error = Ui(
+                    "cmu-rmc-vehicle-hardpoint-need-prying-tool",
+                    "You need a prying tool to remove this hardpoint.");
                 _popup.PopupEntity(error, user, user);
                 SetError(error);
                 RefreshUi();
@@ -554,7 +581,9 @@ public sealed partial class HardpointSlotSystem : EntitySystem
 
             if (!location.State.PendingRemovals.Add(location.Definition.Id))
             {
-                SetError("That hardpoint is already being removed.");
+                SetError(Ui(
+                    "cmu-rmc-vehicle-hardpoint-already-removing",
+                    "That hardpoint is already being removed."));
                 RefreshUi();
                 return;
             }
@@ -575,7 +604,9 @@ public sealed partial class HardpointSlotSystem : EntitySystem
         if (!_doAfter.TryStartDoAfter(doAfter))
         {
             location.State.PendingRemovals.Remove(location.Definition.Id);
-            SetError("Couldn't start hardpoint removal.");
+            SetError(Ui(
+                "cmu-rmc-vehicle-hardpoint-removal-start-failed",
+                "Couldn't start hardpoint removal."));
             RefreshUi();
             return;
         }
@@ -606,6 +637,11 @@ public sealed partial class HardpointSlotSystem : EntitySystem
 
         tool = default;
         return false;
+    }
+
+    private string Ui(string key, string fallback)
+    {
+        return CMULocalization.GetTargetStringOrFallback(Loc, key, fallback);
     }
 
     private static bool IsVanHardpointFamily(HardpointSlotsComponent slots)

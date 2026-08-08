@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Content.Server.GameTicking.Presets;
 using Content.Server.Maps;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.CCVar;
 using JetBrains.Annotations;
 using Robust.Shared.Player;
@@ -38,7 +39,10 @@ public sealed partial class GameTicker
         if (!startAttempt.Cancelled)
             return true;
 
-        var presetTitle = CurrentPreset != null ? Loc.GetString(CurrentPreset.ModeTitle) : string.Empty;
+        var presetTitle = CurrentPreset != null
+            ? CMUPrototypeLocalization.GetPrototypeText(
+                "game-preset", CurrentPreset.ID, "name", CurrentPreset.ModeTitle)
+            : string.Empty;
 
         void FailedPresetRestart()
         {

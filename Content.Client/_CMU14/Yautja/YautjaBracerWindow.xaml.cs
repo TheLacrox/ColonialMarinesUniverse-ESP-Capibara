@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Client._CMU14.Localizations;
 using Content.Shared._CMU14.Yautja;
 using Robust.Client.Graphics;
 using Robust.Client.UserInterface;
@@ -10,14 +11,14 @@ namespace Content.Client._CMU14.Yautja;
 
 public sealed class YautjaBracerWindow : DefaultWindow
 {
-    private static readonly string[] DirectionNames =
+    private static readonly (string Key, string Fallback)[] DirectionNames =
     {
-        "N",
-        "NE",
-        "SE",
-        "S",
-        "SW",
-        "NW",
+        ("cmu-yautja-direction-north", "N"),
+        ("cmu-yautja-direction-northeast", "NE"),
+        ("cmu-yautja-direction-southeast", "SE"),
+        ("cmu-yautja-direction-south", "S"),
+        ("cmu-yautja-direction-southwest", "SW"),
+        ("cmu-yautja-direction-northwest", "NW"),
     };
 
     private Label _powerValue = default!;
@@ -560,12 +561,16 @@ public sealed class YautjaBracerWindow : DefaultWindow
             ? "--"
             : $"{nearest[direction]}m";
 
-        return $"{DirectionNames[direction]}  {counts[direction]}  {range}";
+        return $"{DirectionName(direction)}  {counts[direction]}  {range}";
     }
 
-    private static string DirectionName(byte direction)
+    private static string DirectionName(int direction)
     {
-        return direction < DirectionNames.Length ? DirectionNames[direction] : "?";
+        if (direction < 0 || direction >= DirectionNames.Length)
+            return "?";
+
+        var (key, fallback) = DirectionNames[direction];
+        return CMULocExtension.GetString(key, fallback);
     }
 
     private void Bind(Button button, YautjaBracerPanelCommand command)

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
+using Content.Client._CMU14.Localizations;
 using Content.Shared._AU14.Insurgency.Sapper;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.CustomControls;
@@ -29,7 +30,7 @@ public sealed class SapperWorkbenchWindow : DefaultWindow
     {
         _prototype = IoCManager.Resolve<IPrototypeManager>();
 
-        Title = "Sapper's Workbench";
+        Title = Target("cmu-insfor-tools-sapper-window-title", "Sapper's Workbench");
         MinSize = new Vector2(720, 520);
 
         var root = new BoxContainer
@@ -46,7 +47,11 @@ public sealed class SapperWorkbenchWindow : DefaultWindow
             Margin = new Thickness(0, 0, 0, 8),
         };
 
-        _gunsmithingButton = new Button { Text = "Gunsmithing", HorizontalExpand = true };
+        _gunsmithingButton = new Button
+        {
+            Text = Target("cmu-insfor-tools-sapper-tab-gunsmithing", "Gunsmithing"),
+            HorizontalExpand = true,
+        };
         _gunsmithingButton.OnPressed += _ =>
         {
             _tab = WorkbenchTab.Gunsmithing;
@@ -56,7 +61,11 @@ public sealed class SapperWorkbenchWindow : DefaultWindow
 
         // "Fabrication", not "Trap Crafting": the tab also builds the spy-camera net, the siphon
         // rig, and the Switch chip.
-        _craftingButton = new Button { Text = "Fabrication", HorizontalExpand = true };
+        _craftingButton = new Button
+        {
+            Text = Target("cmu-insfor-tools-sapper-tab-fabrication", "Fabrication"),
+            HorizontalExpand = true,
+        };
         _craftingButton.OnPressed += _ =>
         {
             _tab = WorkbenchTab.Crafting;
@@ -126,12 +135,18 @@ public sealed class SapperWorkbenchWindow : DefaultWindow
 
         weaponRow.AddChild(new Label
         {
-            Text = state.WeaponName ?? "No weapon loaded",
+            Text = state.WeaponName == null
+                ? Target("cmu-insfor-tools-sapper-no-weapon", "No weapon loaded")
+                : EntityName(state.WeaponPrototype, state.WeaponName),
             HorizontalExpand = true,
             VerticalAlignment = VAlignment.Center,
         });
 
-        var take = new Button { Text = "Take Weapon", Disabled = state.WeaponName == null };
+        var take = new Button
+        {
+            Text = Target("cmu-insfor-tools-sapper-take-weapon", "Take Weapon"),
+            Disabled = state.WeaponName == null,
+        };
         take.OnPressed += _ => OnTakeWeapon?.Invoke();
         weaponRow.AddChild(take);
         _body.AddChild(weaponRow);
@@ -144,7 +159,7 @@ public sealed class SapperWorkbenchWindow : DefaultWindow
         };
         _body.AddChild(columns);
 
-        var slotsPanel = CreatePanel("Attachment Slots");
+        var slotsPanel = CreatePanel(Target("cmu-insfor-tools-sapper-attachment-slots", "Attachment Slots"));
         slotsPanel.HorizontalExpand = true;
         columns.AddChild(slotsPanel);
 
@@ -152,16 +167,28 @@ public sealed class SapperWorkbenchWindow : DefaultWindow
             AddSlotRow(slotsPanel, slot);
 
         if (state.Slots.Count == 0)
-            slotsPanel.AddChild(new Label { Text = "Load a weapon to show its slots.", Margin = new Thickness(4) });
+            slotsPanel.AddChild(new Label
+            {
+                Text = Target(
+                    "cmu-insfor-tools-sapper-load-weapon-for-slots",
+                    "Load a weapon to show its slots."),
+                Margin = new Thickness(4),
+            });
 
-        var statsPanel = CreatePanel("Buffs / Debuffs");
+        var statsPanel = CreatePanel(Target("cmu-insfor-tools-sapper-modifiers", "Buffs / Debuffs"));
         statsPanel.HorizontalExpand = true;
         statsPanel.Margin = new Thickness(8, 0, 0, 0);
         columns.AddChild(statsPanel);
 
         if (state.Stats.Count == 0)
         {
-            statsPanel.AddChild(new Label { Text = "No attachment modifiers applied.", Margin = new Thickness(4) });
+            statsPanel.AddChild(new Label
+            {
+                Text = Target(
+                    "cmu-insfor-tools-sapper-no-modifiers",
+                    "No attachment modifiers applied."),
+                Margin = new Thickness(4),
+            });
             return;
         }
 
@@ -169,7 +196,7 @@ public sealed class SapperWorkbenchWindow : DefaultWindow
         {
             statsPanel.AddChild(new Label
             {
-                Text = stat.Text,
+                Text = LocalizeStat(stat.Text),
                 Modulate = stat.Buff ? Color.Green : Color.Red,
                 Margin = new Thickness(4, 2),
             });
@@ -185,18 +212,36 @@ public sealed class SapperWorkbenchWindow : DefaultWindow
             Margin = new Thickness(4, 2),
         };
 
+        var slotName = LocalizeSlot(slot.SlotId, slot.SlotName);
+        var attachmentName = slot.AttachmentName == null
+            ? Target("cmu-insfor-tools-sapper-empty", "empty")
+            : EntityName(slot.AttachmentPrototype, slot.AttachmentName);
         row.AddChild(new Label
         {
-            Text = $"{slot.SlotName}: {slot.AttachmentName ?? "empty"}",
+            Text = Target(
+                "cmu-insfor-tools-sapper-slot-summary",
+                $"{slotName}: {attachmentName}",
+                ("slot", slotName),
+                ("attachment", attachmentName)),
             HorizontalExpand = true,
             VerticalAlignment = VAlignment.Center,
         });
 
-        var add = new Button { Text = "+Add", Disabled = !slot.CanAdd, MinWidth = 70 };
+        var add = new Button
+        {
+            Text = Target("cmu-insfor-tools-sapper-add", "+Add"),
+            Disabled = !slot.CanAdd,
+            MinWidth = 70,
+        };
         add.OnPressed += _ => OnAddAttachment?.Invoke(slot.SlotId);
         row.AddChild(add);
 
-        var remove = new Button { Text = "-Remove", Disabled = !slot.CanRemove, MinWidth = 82 };
+        var remove = new Button
+        {
+            Text = Target("cmu-insfor-tools-sapper-remove", "-Remove"),
+            Disabled = !slot.CanRemove,
+            MinWidth = 82,
+        };
         remove.OnPressed += _ => OnRemoveAttachment?.Invoke(slot.SlotId);
         row.AddChild(remove);
 
@@ -205,13 +250,17 @@ public sealed class SapperWorkbenchWindow : DefaultWindow
 
     private void BuildCrafting(SapperWorkbenchBuiState state)
     {
-        var materialsPanel = CreatePanel("Materials");
+        var materialsPanel = CreatePanel(Target("cmu-insfor-tools-sapper-materials", "Materials"));
         materialsPanel.Margin = new Thickness(0, 0, 0, 8);
         _body.AddChild(materialsPanel);
 
         if (state.Materials.Count == 0)
         {
-            materialsPanel.AddChild(new Label { Text = "No materials loaded", Margin = new Thickness(4) });
+            materialsPanel.AddChild(new Label
+            {
+                Text = Target("cmu-insfor-tools-sapper-no-materials-loaded", "No materials loaded"),
+                Margin = new Thickness(4),
+            });
         }
 
         foreach (var material in state.Materials)
@@ -222,14 +271,23 @@ public sealed class SapperWorkbenchWindow : DefaultWindow
                 HorizontalExpand = true,
                 Margin = new Thickness(4, 1),
             };
+            var materialName = LocalizeMaterial(material.Id, material.Name);
             row.AddChild(new Label
             {
-                Text = $"{material.Name}: {material.Count}",
+                Text = Target(
+                    "cmu-insfor-tools-sapper-material-count",
+                    $"{materialName}: {material.Count}",
+                    ("material", materialName),
+                    ("count", material.Count)),
                 HorizontalExpand = true,
                 VerticalAlignment = VAlignment.Center,
             });
 
-            var eject = new Button { Text = "Eject", MinWidth = 60 };
+            var eject = new Button
+            {
+                Text = Target("cmu-insfor-tools-sapper-eject", "Eject"),
+                MinWidth = 60,
+            };
             var id = material.Id;
             eject.OnPressed += _ => OnEjectMaterial?.Invoke(id);
             row.AddChild(eject);
@@ -276,7 +334,13 @@ public sealed class SapperWorkbenchWindow : DefaultWindow
                     view.SetPrototype(new EntProtoId(ing.Icon));
                     entry.AddChild(view);
                 }
-                entry.AddChild(new Label { Text = ing.Name, Modulate = Color.Gray, VerticalAlignment = VAlignment.Center, Margin = new Thickness(2, 0, 0, 0) });
+                entry.AddChild(new Label
+                {
+                    Text = LocalizeIngredient(ing.Name),
+                    Modulate = Color.Gray,
+                    VerticalAlignment = VAlignment.Center,
+                    Margin = new Thickness(2, 0, 0, 0),
+                });
                 rows.AddChild(entry);
             }
         }
@@ -285,10 +349,16 @@ public sealed class SapperWorkbenchWindow : DefaultWindow
             return;
 
         var help = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical, Margin = new Thickness(4, 0, 4, 6) };
-        help.AddChild(new Label { Text = "Loose Ingredients Help", StyleClasses = { "LabelKeyText" } });
         help.AddChild(new Label
         {
-            Text = "These must lie loose on or next to the bench to be consumed:",
+            Text = Target("cmu-insfor-tools-sapper-loose-ingredients", "Loose Ingredients Help"),
+            StyleClasses = { "LabelKeyText" },
+        });
+        help.AddChild(new Label
+        {
+            Text = Target(
+                "cmu-insfor-tools-sapper-loose-ingredients-help",
+                "These must lie loose on or next to the bench to be consumed:"),
             Modulate = Color.Gray,
         });
         help.AddChild(rows);
@@ -320,7 +390,11 @@ public sealed class SapperWorkbenchWindow : DefaultWindow
         };
         // ClipText keeps long cost lines from forcing the row wider than the window, which used to
         // push the Craft button out of view.
-        nameAndCost.AddChild(new Label { Text = recipe.Name, ClipText = true });
+        nameAndCost.AddChild(new Label
+        {
+            Text = EntityName(recipe.Prototype, recipe.Name),
+            ClipText = true,
+        });
         nameAndCost.AddChild(new Label
         {
             Text = FormatMaterials(recipe.Materials),
@@ -342,7 +416,11 @@ public sealed class SapperWorkbenchWindow : DefaultWindow
                 }
                 ingredients.AddChild(new Label
                 {
-                    Text = $"x{ing.Count} {ing.Name}",
+                    Text = Target(
+                        "cmu-insfor-tools-sapper-ingredient-count",
+                        $"x{ing.Count} {LocalizeIngredient(ing.Name)}",
+                        ("count", ing.Count),
+                        ("ingredient", LocalizeIngredient(ing.Name))),
                     Modulate = Color.Gray,
                     VerticalAlignment = VAlignment.Center,
                     Margin = new Thickness(2, 0, 8, 0),
@@ -355,7 +433,7 @@ public sealed class SapperWorkbenchWindow : DefaultWindow
 
         var craft = new Button
         {
-            Text = "Craft",
+            Text = Target("cmu-insfor-tools-sapper-craft", "Craft"),
             Disabled = !recipe.CanBuild,
             VerticalAlignment = VAlignment.Center,
             MinWidth = 60,
@@ -365,6 +443,93 @@ public sealed class SapperWorkbenchWindow : DefaultWindow
 
         panel.AddChild(row);
         parent.AddChild(panel);
+    }
+
+    private string EntityName(string? prototypeId, string fallback)
+    {
+        return prototypeId != null &&
+               _prototype.TryIndex<EntityPrototype>(prototypeId, out var prototype) &&
+               !string.IsNullOrWhiteSpace(prototype.Name)
+            ? prototype.Name
+            : fallback;
+    }
+
+    private static string LocalizeSlot(string slotId, string fallback)
+    {
+        return slotId switch
+        {
+            "rmc-aslot-rail" => Target("cmu-insfor-tools-sapper-slot-rail", fallback),
+            "rmc-aslot-barrel" => Target("cmu-insfor-tools-sapper-slot-barrel", fallback),
+            "rmc-aslot-underbarrel" => Target("cmu-insfor-tools-sapper-slot-underbarrel", fallback),
+            "rmc-aslot-stock" => Target("cmu-insfor-tools-sapper-slot-stock", fallback),
+            _ => fallback,
+        };
+    }
+
+    private static string LocalizeStat(string text)
+    {
+        var separator = text.IndexOf(": ", StringComparison.Ordinal);
+        if (separator <= 0)
+            return text;
+
+        var name = text[..separator];
+        var value = text[(separator + 2)..];
+        var key = name switch
+        {
+            "Accuracy" => "cmu-insfor-tools-sapper-stat-accuracy",
+            "Damage falloff" => "cmu-insfor-tools-sapper-stat-damage-falloff",
+            "Burst scatter" => "cmu-insfor-tools-sapper-stat-burst-scatter",
+            "Shots per burst" => "cmu-insfor-tools-sapper-stat-shots-per-burst",
+            "Damage" => "cmu-insfor-tools-sapper-stat-damage",
+            "Recoil" => "cmu-insfor-tools-sapper-stat-recoil",
+            "Scatter" => "cmu-insfor-tools-sapper-stat-scatter",
+            "Fire delay" => "cmu-insfor-tools-sapper-stat-fire-delay",
+            "Projectile speed" => "cmu-insfor-tools-sapper-stat-projectile-speed",
+            "Range" => "cmu-insfor-tools-sapper-stat-range",
+            "Walk speed" => "cmu-insfor-tools-sapper-stat-walk-speed",
+            "Sprint speed" => "cmu-insfor-tools-sapper-stat-sprint-speed",
+            "Item size" => "cmu-insfor-tools-sapper-stat-item-size",
+            "Wield delay" => "cmu-insfor-tools-sapper-stat-wield-delay",
+            _ => null,
+        };
+
+        return key == null
+            ? text
+            : Target(key, text, ("value", value));
+    }
+
+    private static string LocalizeMaterial(string material, string fallback)
+    {
+        return material switch
+        {
+            "CMSteel" or "Metal Sheets" => Target("cmu-insfor-tools-sapper-material-metal", fallback),
+            "CMPlasteel" or "Plasteel Sheets" => Target("cmu-insfor-tools-sapper-material-plasteel", fallback),
+            "RMCWood" or "Wooden Planks" => Target("cmu-insfor-tools-sapper-material-wood", fallback),
+            "RMCPlastic" or "Plastic Sheets" => Target("cmu-insfor-tools-sapper-material-plastic", fallback),
+            _ => fallback,
+        };
+    }
+
+    private static string LocalizeIngredient(string ingredient)
+    {
+        return ingredient switch
+        {
+            "any cable coil" => Target("cmu-insfor-tools-sapper-ingredient-cable", ingredient),
+            "any electronics" => Target("cmu-insfor-tools-sapper-ingredient-electronics", ingredient),
+            "power cell" => Target("cmu-insfor-tools-sapper-ingredient-power-cell", ingredient),
+            "buckshot shells" => Target("cmu-insfor-tools-sapper-ingredient-buckshot", ingredient),
+            "IED" => Target("cmu-insfor-tools-sapper-ingredient-ied", ingredient),
+            "any handcuffs" => Target("cmu-insfor-tools-sapper-ingredient-handcuffs", ingredient),
+            _ => ingredient,
+        };
+    }
+
+    private static string Target(
+        string key,
+        string fallback,
+        params (string, object)[] arguments)
+    {
+        return CMULocExtension.GetString(key, fallback, arguments);
     }
 
     private static BoxContainer CreatePanel(string title)
@@ -387,8 +552,12 @@ public sealed class SapperWorkbenchWindow : DefaultWindow
     private static string FormatMaterials(Dictionary<string, int> materials)
     {
         return materials.Count == 0
-            ? "No materials"
-            : string.Join(", ", materials.Select(kvp => $"{kvp.Key} {kvp.Value}"));
+            ? Target("cmu-insfor-tools-sapper-no-materials", "No materials")
+            : string.Join(", ", materials.Select(kvp => Target(
+                "cmu-insfor-tools-sapper-material-cost",
+                $"{LocalizeMaterial(kvp.Key, kvp.Key)} {kvp.Value}",
+                ("material", LocalizeMaterial(kvp.Key, kvp.Key)),
+                ("count", kvp.Value))));
     }
 
     private enum WorkbenchTab : byte

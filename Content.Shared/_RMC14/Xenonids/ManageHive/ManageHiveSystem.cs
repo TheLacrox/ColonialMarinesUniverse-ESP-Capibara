@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._CMU14.Threats.Mobs.Xeno;
 using Content.Shared._CMU14.Threats.Mobs.Xeno.ManageHive;
 using Content.Shared._RMC14.CCVar;
@@ -338,7 +339,12 @@ public sealed partial class ManageHiveSystem : EntitySystem
             if (item.Name is null)
                 continue;
 
-            string text = item.Name;
+            var factionName = CMUPrototypeLocalization.GetPrototypeText(
+                "npc-faction",
+                item.ID,
+                "name",
+                item.Name);
+            var text = factionName;
             ProtoId<NpcFactionPrototype> facId = item.ID;
             bool state;
             if (_hive.HasFaction(hivem.Hive.Value, facId))
@@ -351,7 +357,7 @@ public sealed partial class ManageHiveSystem : EntitySystem
                 text += " ( )";
                 state = true;
             }
-            var ev = new HiveSetFactionAllyStatusEvent(facId, item.Name, state);
+            var ev = new HiveSetFactionAllyStatusEvent(facId, factionName, state);
             choices.Add(new DialogOption(text, ev));
         }
         _dialog.OpenOptions(ent, Loc.GetString("xeno-manage-hive-allies-factions-window-name"), choices);

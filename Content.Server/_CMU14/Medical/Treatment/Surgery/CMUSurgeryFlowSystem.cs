@@ -458,6 +458,7 @@ public sealed partial class CMUSurgeryFlowSystem : SharedCMUSurgeryFlowSystem
         armed.StepIndex = resolved.StepIndex;
         armed.RequiredToolCategory = resolved.ToolCategory;
         armed.StepLabel = resolved.StepLabel;
+        armed.StepLabelLocId = resolved.StepLabelLocId;
         armed.ArmedAt = Timing.CurTime;
         Dirty(patient, armed);
         ScheduleArmedExpiry(patient, armed);
@@ -582,7 +583,9 @@ public sealed partial class CMUSurgeryFlowSystem : SharedCMUSurgeryFlowSystem
         var display = ResolveLeafDisplayName(best.SurgeryId);
         EnsureSurgeryInFlight(patient, stepPart, surgeon, best.SurgeryId, display, armed.TargetPartType, armed.TargetSymmetry);
         Popup.PopupEntity(
-            Loc.GetString("cmu-medical-surgery-auto-continue", ("surgery", display)),
+            Loc.GetString(
+                "cmu-medical-surgery-auto-continue",
+                ("surgery", LocalizeSurgeryDisplayName(best.SurgeryId))),
             patient,
             surgeon,
             PopupType.Medium);

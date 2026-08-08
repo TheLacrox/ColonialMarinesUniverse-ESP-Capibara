@@ -4,6 +4,7 @@ using System.Linq;
 using Content.Server.Materials;
 using Content.Server.Stack;
 using Content.Shared._AU14.Insurgency.Sapper;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._RMC14.Attachable.Components;
 using Content.Shared._RMC14.Attachable.Systems;
 using Content.Shared.Construction.Components;
@@ -532,11 +533,13 @@ public sealed partial class SapperWorkbenchSystem : EntitySystem
             foreach (var slotId in weapon.Value.Comp.Slots.Keys)
             {
                 string? attachmentName = null;
+                string? attachmentPrototype = null;
                 var canRemove = false;
                 if (_container.TryGetContainer(weapon.Value, slotId, out var container) && container.Count > 0)
                 {
                     var attachment = container.ContainedEntities[0];
                     attachmentName = Name(attachment);
+                    attachmentPrototype = MetaData(attachment).EntityPrototype?.ID;
                     canRemove = true;
                     AddStats(statTotals, attachment);
                 }
@@ -546,7 +549,13 @@ public sealed partial class SapperWorkbenchSystem : EntitySystem
                 // OnAddAttachment still validates category fit server-side with a popup.
                 var canAdd = SlotCategoryTags.ContainsKey(slotId) && !canRemove;
 
-                slots.Add(new SapperWorkbenchSlotState(slotId, SlotDisplay(slotId), attachmentName, canAdd, canRemove));
+                slots.Add(new SapperWorkbenchSlotState(
+                    slotId,
+                    SlotDisplay(slotId),
+                    attachmentName,
+                    attachmentPrototype,
+                    canAdd,
+                    canRemove));
             }
         }
 
@@ -579,7 +588,7 @@ public sealed partial class SapperWorkbenchSystem : EntitySystem
                 i,
                 recipe.Name,
                 recipe.Prototype.Id,
-                recipe.Materials.ToDictionary(kvp => MaterialDisplay(kvp.Key), kvp => kvp.Value),
+                recipe.Materials.ToDictionary(kvp => kvp.Key, kvp => kvp.Value),
                 recipe.Items.Select(req => new SapperWorkbenchIngredientState(req.Name, req.Count, req.IconPrototype)).ToList(),
                 CanBuildRecipe(ent, recipe, nearby)));
         }
@@ -643,14 +652,19 @@ public sealed partial class SapperWorkbenchSystem : EntitySystem
         stats[name] = (total, goodWhenPositive);
     }
 
-    private static string SlotDisplay(string slotId) => slotId switch
+    private string SlotDisplay(string slotId) => slotId switch
     {
-        "rmc-aslot-rail" => "Rail",
-        "rmc-aslot-barrel" => "Barrel",
-        "rmc-aslot-underbarrel" => "Underbarrel",
-        "rmc-aslot-stock" => "Stock",
+        "rmc-aslot-rail" => Target("cmu-insfor-tools-sapper-slot-rail", "Rail"),
+        "rmc-aslot-barrel" => Target("cmu-insfor-tools-sapper-slot-barrel", "Barrel"),
+        "rmc-aslot-underbarrel" => Target("cmu-insfor-tools-sapper-slot-underbarrel", "Underbarrel"),
+        "rmc-aslot-stock" => Target("cmu-insfor-tools-sapper-slot-stock", "Stock"),
         _ => slotId,
     };
+
+    private string Target(string key, string fallback)
+    {
+        return CMULocalization.GetTargetStringOrFallback(Loc, key, fallback);
+    }
 
     private int GetDisplayMaterialAmount(EntityUid uid, string material)
     {

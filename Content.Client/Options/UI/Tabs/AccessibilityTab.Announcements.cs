@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Content.Client._RMC14.Announce;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._RMC14.Announce;
 using Content.Shared._RMC14.CCVar;
 using Robust.Client.UserInterface;
@@ -31,7 +32,11 @@ public sealed partial class AccessibilityTab
     private void AddPerAnnouncementOverrides()
     {
         var presets = GetRootPresets()
-            .OrderBy(preset => preset.Name)
+            .OrderBy(preset => CMUPrototypeLocalization.GetPrototypeText(
+                "announcement-preset",
+                preset.ID,
+                "name",
+                preset.Name))
             .ToList();
 
         if (presets.Count == 0)
@@ -46,9 +51,14 @@ public sealed partial class AccessibilityTab
             if (availablePreferences.Count == 0)
                 continue;
 
+            var presetName = CMUPrototypeLocalization.GetPrototypeText(
+                "announcement-preset",
+                preset.ID,
+                "name",
+                preset.Name);
             var dropDown = new OptionDropDown
             {
-                Title = preset.Name
+                Title = presetName
             };
 
             AnnouncementPresetOverridesContainer.AddChild(dropDown);

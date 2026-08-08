@@ -1,6 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Client.Popups;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._RMC14.Construction;
 using Content.Shared.Construction;
 using Content.Shared.Construction.Prototypes;
@@ -147,8 +148,8 @@ namespace Content.Client.Construction
                     if (!PrototypeManager.TryIndex(entityId, out var proto))
                         continue;
 
-                    var name = recipe.SetName != null ? Loc.GetString(recipe.SetName) : proto.Name;
-                    var desc = recipe.SetDescription != null ? Loc.GetString(recipe.SetDescription) : proto.Description;
+                    var name = LocalizeRecipeField(recipe, "name", recipe.SetName, proto.Name);
+                    var desc = LocalizeRecipeField(recipe, "description", recipe.SetDescription, proto.Description);
 
                     recipe.Name = name;
                     recipe.Description = desc;
@@ -176,8 +177,8 @@ namespace Content.Client.Construction
                 if (node.Entity.GetId(null, null, new(EntityManager)) is { } entityId &&
                     PrototypeManager.TryIndex(entityId, out EntityPrototype? proto))
                 {
-                    constructionProto.Name = constructionProto.SetName != null ? Loc.GetString(constructionProto.SetName) : proto.Name;
-                    constructionProto.Description = constructionProto.SetDescription != null ? Loc.GetString(constructionProto.SetDescription) : proto.Description;
+                    constructionProto.Name = LocalizeRecipeField(constructionProto, "name", constructionProto.SetName, proto.Name);
+                    constructionProto.Description = LocalizeRecipeField(constructionProto, "description", constructionProto.SetDescription, proto.Description);
                     _recipesMetadataCache[constructionProto.ID] = entityId;
                     targetProtoId = entityId;
                     return true;
@@ -191,6 +192,24 @@ namespace Content.Client.Construction
             }
 
             return false;
+        }
+
+        private string LocalizeRecipeField(
+            ConstructionPrototype prototype,
+            string field,
+            string? configuredValue,
+            string fallback)
+        {
+            var current = configuredValue is null
+                ? fallback
+                : Loc.GetString(configuredValue);
+
+            return CMUPrototypeLocalization.GetStringOrFallback(
+                Loc,
+                "construction",
+                prototype.ID,
+                field,
+                current);
         }
 
         private void OnConstructionGuideReceived(ResponseConstructionGuide ev)

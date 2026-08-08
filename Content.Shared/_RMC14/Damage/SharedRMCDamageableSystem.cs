@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._RMC14.Armor;
 using Content.Shared._RMC14.Entrenching;
 using Content.Shared._RMC14.Map;
@@ -769,7 +770,14 @@ public abstract partial class SharedRMCDamageableSystem : EntitySystem
                 }
 
                 if (damage.Popup is { } popup && _random.Prob(0.5f))
-                    _popup.PopupEntity(popup, user, user, PopupType.SmallCaution);
+                {
+                    var localizedPopup = CMUPrototypeLocalization.GetLiteralText(
+                        Loc,
+                        "DamageOverTime",
+                        "popup",
+                        popup);
+                    _popup.PopupEntity(localizedPopup, user, user, PopupType.SmallCaution);
+                }
 
                 _audio.PlayPvs(damage.Sound, user);
 

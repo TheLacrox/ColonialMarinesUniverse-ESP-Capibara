@@ -1,6 +1,7 @@
 using System.Linq;
 using Robust.Shared.Prototypes;
 using Content.Shared.Clock;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Examine;
 using Content.Shared.GameTicking;
 using Content.Shared._RMC14.RMCCustomHoliday;
@@ -30,7 +31,14 @@ public sealed partial class RMCCalendarSystem : EntitySystem
 
         foreach (var holiday in todayHolidays)
         {
-            args.PushMarkup(Loc.GetString("rmc-calendar-holiday-examine", ("holidayname", holiday.Name), ("holidaydescription", holiday.Description)));
+            var name = CMUPrototypeLocalization.GetPrototypeText(
+                "custom-holiday", holiday.ID, "name", holiday.Name);
+            var description = CMUPrototypeLocalization.GetPrototypeText(
+                "custom-holiday", holiday.ID, "description", holiday.Description);
+            args.PushMarkup(Loc.GetString(
+                "rmc-calendar-holiday-examine",
+                ("holidayname", name),
+                ("holidaydescription", description)));
         }
 
         args.PushMarkup(Loc.GetString("rmc-calendar-examine", ("time", time)));

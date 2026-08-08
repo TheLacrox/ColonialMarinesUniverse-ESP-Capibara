@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Content.Shared._RMC14.Medical.Surgery;
 using Content.Shared._RMC14.Medical.Surgery.Steps;
 using Content.Shared.Body.Part;
+using Robust.Shared.Localization;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 
@@ -33,6 +34,12 @@ public sealed partial class CMUSurgeryStepMetadataPrototype : IPrototype
     /// </summary>
     [DataField]
     public string? DisplayName;
+
+    /// <summary>
+    ///     Optional localization sidecar. <see cref="DisplayName"/> remains the literal fallback.
+    /// </summary>
+    [DataField]
+    public LocId? DisplayNameLocId;
 
     [DataField]
     public List<BodyPartType> ValidParts = new() { BodyPartType.Head, BodyPartType.Torso, BodyPartType.Arm, BodyPartType.Leg };
@@ -79,6 +86,12 @@ public sealed partial class CMUSurgeryStepMetadataEntry
 
     [DataField]
     public string Label = string.Empty;
+
+    /// <summary>
+    ///     Optional localization sidecar. <see cref="Label"/> remains the literal fallback.
+    /// </summary>
+    [DataField]
+    public LocId? LabelLocId;
 
     [DataField]
     public string? ToolCategory;

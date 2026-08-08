@@ -1,5 +1,6 @@
 using Content.Client._RMC14.UserInterface;
 using Content.Client.Message;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._RMC14.Construction;
 using Content.Shared._RMC14.Construction.Prototypes;
 using Content.Shared.FixedPoint;
@@ -8,6 +9,7 @@ using JetBrains.Annotations;
 using Robust.Client.GameObjects;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
+using Robust.Shared.Localization;
 using Robust.Shared.Prototypes;
 
 namespace Content.Client._RMC14.Construction;
@@ -16,6 +18,7 @@ namespace Content.Client._RMC14.Construction;
 public sealed partial class RMCConstructionBui : BoundUserInterface
 {
     [Dependency] private IComponentFactory _compFactory = default!;
+    [Dependency] private ILocalizationManager _localization = default!;
     [Dependency] private IPrototypeManager _prototype = default!;
 
     [ViewVariables]
@@ -30,7 +33,13 @@ public sealed partial class RMCConstructionBui : BoundUserInterface
         base.Open();
 
         _window = this.CreateWindow<RMCConstructionWindow>();
-        _window.Title = $"Construction using the {EntMan.GetComponent<MetaDataComponent>(Owner).EntityName}";
+        var titlePrefix = CMUPrototypeLocalization.GetStringOrFallback(
+            _localization,
+            "rmc-construction-ui",
+            "window",
+            "title",
+            "Construction using the");
+        _window.Title = $"{titlePrefix} {EntMan.GetComponent<MetaDataComponent>(Owner).EntityName}";
 
         if (!EntMan.TryGetComponent(Owner, out RMCConstructionItemComponent? constructionItem))
             return;
@@ -69,10 +78,11 @@ public sealed partial class RMCConstructionBui : BoundUserInterface
             return;
         }
 
-        var nameString = Loc.GetString("rmc-construction-list", ("name", build.Name));
+        var buildName = LocalizeBuildName(build);
+        var nameString = Loc.GetString("rmc-construction-list", ("name", buildName));
 
         if (build.MaterialCost != null)
-            nameString = Loc.GetString("rmc-construction-entry", ("name", build.Name), ("amount", build.MaterialCost), ("material", Owner));
+            nameString = Loc.GetString("rmc-construction-entry", ("name", buildName), ("amount", build.MaterialCost), ("material", Owner));
 
         var control = new RMCBuildChoiceControl();
         control.Set(nameString);
@@ -116,7 +126,7 @@ public sealed partial class RMCConstructionBui : BoundUserInterface
             return;
 
         var control = new RMCBuildChoiceControl();
-        control.Set(build.Name);
+        control.Set(LocalizeBuildName(build));
 
         control.Button.OnPressed += _ =>
         {
@@ -146,6 +156,24 @@ public sealed partial class RMCConstructionBui : BoundUserInterface
             return;
 
         if (EntMan.TryGetComponent(Owner, out StackComponent? stack))
-            _window.MaterialLabel.Text = $"Amount Left: {stack.Count}";
+        {
+            var amountPrefix = CMUPrototypeLocalization.GetStringOrFallback(
+                _localization,
+                "rmc-construction-ui",
+                "stack",
+                "amount",
+                "Amount Left:");
+            _window.MaterialLabel.Text = $"{amountPrefix} {stack.Count}";
+        }
+    }
+
+    private string LocalizeBuildName(RMCConstructionPrototype prototype)
+    {
+        return CMUPrototypeLocalization.GetStringOrFallback(
+            _localization,
+            "rmc-construction",
+            prototype.ID,
+            "name",
+            prototype.Name);
     }
 }

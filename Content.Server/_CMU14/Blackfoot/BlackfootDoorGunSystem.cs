@@ -1,6 +1,7 @@
 using System;
 using Content.Server._CMU14.ZLevels.Core;
 using Content.Shared._CMU14.Blackfoot;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._CMU14.ZLevels.Core.EntitySystems;
 using Content.Shared._RMC14.Vehicle;
 using Content.Shared.Actions;
@@ -88,7 +89,10 @@ public sealed partial class BlackfootDoorGunSystem : EntitySystem
             return;
 
         args.Cancel();
-        _popup.PopupCursor("Open the rear door before firing the M866.", ent.Owner, PopupType.SmallCaution);
+        _popup.PopupCursor(
+            Ui("cmu-blackfoot-door-gun-open-rear-door", "Open the rear door before firing the M866."),
+            ent.Owner,
+            PopupType.SmallCaution);
     }
 
     private void OnDoorGunActionsShutdown(Entity<BlackfootDoorGunActionComponent> ent, ref ComponentShutdown args)
@@ -107,7 +111,10 @@ public sealed partial class BlackfootDoorGunSystem : EntitySystem
             !HasComp<BlackfootFlightComponent>(vehicle) ||
             !IsUsingDoorGun(ent.Owner, vehicle))
         {
-            _popup.PopupCursor("Select the M866 automatic grenade launcher first.", ent.Owner, PopupType.SmallCaution);
+            _popup.PopupCursor(
+                Ui("cmu-blackfoot-door-gun-select-m866", "Select the M866 automatic grenade launcher first."),
+                ent.Owner,
+                PopupType.SmallCaution);
             UpdateZModeAction(ent.Owner, ent.Comp);
             return;
         }
@@ -120,8 +127,8 @@ public sealed partial class BlackfootDoorGunSystem : EntitySystem
         UpdateZModeAction(ent.Owner, ent.Comp);
 
         var message = shootDown
-            ? "M866 set to fire one Z-level below."
-            : "M866 set to fire on the current Z-level.";
+            ? Ui("cmu-blackfoot-door-gun-z-below", "M866 set to fire one Z-level below.")
+            : Ui("cmu-blackfoot-door-gun-z-current", "M866 set to fire on the current Z-level.");
 
         _popup.PopupCursor(message, ent.Owner);
     }
@@ -178,5 +185,10 @@ public sealed partial class BlackfootDoorGunSystem : EntitySystem
 
         _actions.RemoveAction(user, actionUid);
         action = null;
+    }
+
+    private string Ui(string id, string fallback)
+    {
+        return CMULocalization.GetTargetStringOrFallback(Loc, id, fallback);
     }
 }

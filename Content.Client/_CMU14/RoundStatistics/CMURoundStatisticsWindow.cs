@@ -3,12 +3,16 @@ using System.Linq;
 using System.Numerics;
 using Content.Client.Lobby.UI;
 using Content.Client.Stylesheets;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._CMU14.RoundStatistics;
+using Content.Shared.AU14.util;
 using Robust.Client.Graphics;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.CustomControls;
+using Robust.Shared.Localization;
 using Robust.Shared.Maths;
+using Robust.Shared.Prototypes;
 using static Robust.Client.UserInterface.Controls.BoxContainer;
 
 namespace Content.Client._CMU14.RoundStatistics;
@@ -36,14 +40,19 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
     private readonly BoxContainer _recent;
     private readonly Label _summary;
     private readonly Button _refresh;
+    private readonly ILocalizationManager _localization;
+    private readonly IPrototypeManager _prototypes;
 
     public event Action? OnRefresh;
 
     public CMURoundStatisticsWindow()
     {
+        _localization = IoCManager.Resolve<ILocalizationManager>();
+        _prototypes = IoCManager.Resolve<IPrototypeManager>();
+
         MinSize = new Vector2(900, 680);
         SetSize = new Vector2(980, 760);
-        Title = "CMU Round Outcomes";
+        Title = Localize("cmu-round-statistics-window-title", "CMU Round Outcomes");
 
         var root = new BoxContainer
         {
@@ -70,7 +79,7 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
 
         headerText.AddChild(new Label
         {
-            Text = "Operational Outcomes",
+            Text = Localize("cmu-round-statistics-header-title", "Operational Outcomes"),
             FontColorOverride = Text,
             StyleClasses = { StyleBase.StyleClassLabelHeading },
             ClipText = true,
@@ -79,7 +88,7 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
 
         _summary = new Label
         {
-            Text = "Waiting for data",
+            Text = Localize("cmu-round-statistics-waiting", "Waiting for data"),
             FontColorOverride = Muted,
             ClipText = true,
             HorizontalExpand = true,
@@ -89,7 +98,7 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
 
         _refresh = new Button
         {
-            Text = "Refresh",
+            Text = Localize("cmu-round-statistics-refresh", "Refresh"),
             MinSize = new Vector2(110, 34),
             VerticalAlignment = VAlignment.Center,
         };
@@ -106,7 +115,7 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
 
         var overviewTab = new BoxContainer
         {
-            Name = "Overview",
+            Name = Localize("cmu-round-statistics-tab-overview", "Overview"),
             Orientation = LayoutOrientation.Vertical,
             HorizontalExpand = true,
             VerticalExpand = true,
@@ -127,7 +136,7 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
 
         var recentTab = new BoxContainer
         {
-            Name = "Recent Rounds",
+            Name = Localize("cmu-round-statistics-tab-recent-rounds", "Recent Rounds"),
             Orientation = LayoutOrientation.Vertical,
             HorizontalExpand = true,
             VerticalExpand = true,
@@ -158,7 +167,11 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
     {
         var totalRounds = dashboard.Modes.Sum(mode => mode.Total);
         var decidedRounds = dashboard.Modes.Sum(mode => mode.DecidedTotal);
-        _summary.Text = $"{totalRounds} tracked endings, {decidedRounds} decided wins";
+        _summary.Text = Localize(
+            "cmu-round-statistics-summary",
+            $"{totalRounds} tracked endings, {decidedRounds} decided wins",
+            ("total", totalRounds),
+            ("decided", decidedRounds));
 
         _modes.DisposeAllChildren();
         foreach (var mode in dashboard.Modes)
@@ -167,7 +180,9 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
         _recent.DisposeAllChildren();
         if (dashboard.RecentRounds.Count == 0)
         {
-            _recent.AddChild(MakeEmptyPanel("No tracked rounds yet."));
+            _recent.AddChild(MakeEmptyPanel(Localize(
+                "cmu-round-statistics-no-tracked-rounds",
+                "No tracked rounds yet.")));
             return;
         }
 
@@ -188,7 +203,7 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
 
         container.AddChild(new Label
         {
-            Text = mode.Title,
+            Text = FormatPreset(mode.Preset),
             FontColorOverride = Text,
             StyleClasses = { StyleBase.StyleClassLabelHeading },
             ClipText = true,
@@ -196,8 +211,14 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
         });
         container.AddChild(new Label
         {
-            Text = $"{mode.Total} tracked endings / {mode.DecidedTotal} decided wins / " +
-                   $"{mode.Draws} draws / {mode.Unknown} unknown",
+            Text = Localize(
+                "cmu-round-statistics-mode-summary",
+                $"{mode.Total} tracked endings / {mode.DecidedTotal} decided wins / " +
+                $"{mode.Draws} draws / {mode.Unknown} unknown",
+                ("total", mode.Total),
+                ("decided", mode.DecidedTotal),
+                ("draws", mode.Draws),
+                ("unknown", mode.Unknown)),
             FontColorOverride = Muted,
             ClipText = true,
             HorizontalExpand = true,
@@ -240,17 +261,31 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
         };
 
         grid.AddChild(MakeMetric(
-            mode.SideA,
+            FormatSideA(mode.Preset),
             $"{FormatRate(mode.SideAWins, mode.DecidedTotal)}",
-            $"{mode.SideAWins} wins",
+            Localize(
+                "cmu-round-statistics-wins",
+                $"{mode.SideAWins} wins",
+                ("count", mode.SideAWins)),
             GetSideAColor(mode.Preset)));
         grid.AddChild(MakeMetric(
-            mode.SideB,
+            FormatSideB(mode.Preset),
             $"{FormatRate(mode.SideBWins, mode.DecidedTotal)}",
-            $"{mode.SideBWins} wins",
+            Localize(
+                "cmu-round-statistics-wins",
+                $"{mode.SideBWins} wins",
+                ("count", mode.SideBWins)),
             GetSideBColor(mode.Preset)));
-        grid.AddChild(MakeMetric("Draws", mode.Draws.ToString(), "excluded", DrawGray));
-        grid.AddChild(MakeMetric("Unknown", mode.Unknown.ToString(), "excluded", UnknownGray));
+        grid.AddChild(MakeMetric(
+            Localize("cmu-round-statistics-draws", "Draws"),
+            mode.Draws.ToString(),
+            Localize("cmu-round-statistics-excluded", "excluded"),
+            DrawGray));
+        grid.AddChild(MakeMetric(
+            Localize("cmu-round-statistics-unknown", "Unknown"),
+            mode.Unknown.ToString(),
+            Localize("cmu-round-statistics-excluded", "excluded"),
+            UnknownGray));
 
         return grid;
     }
@@ -266,25 +301,28 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
         };
 
         grid.AddChild(MakeMetric(
-            "Recent 10",
+            Localize("cmu-round-statistics-recent-ten", "Recent 10"),
             FormatRecentForm(mode),
-            $"{mode.RecentForm.Rounds} tracked",
+            Localize(
+                "cmu-round-statistics-tracked",
+                $"{mode.RecentForm.Rounds} tracked",
+                ("count", mode.RecentForm.Rounds)),
             Border));
         grid.AddChild(MakeMetric(
-            "Current Streak",
+            Localize("cmu-round-statistics-current-streak", "Current Streak"),
             FormatStreak(mode.CurrentStreak),
-            "decided endings",
+            Localize("cmu-round-statistics-decided-endings", "decided endings"),
             StreakColor(mode.CurrentStreak)));
         grid.AddChild(MakeMetric(
-            "Longest Streak",
+            Localize("cmu-round-statistics-longest-streak", "Longest Streak"),
             FormatStreak(mode.LongestStreak),
-            "decided endings",
+            Localize("cmu-round-statistics-decided-endings", "decided endings"),
             StreakColor(mode.LongestStreak)));
         grid.AddChild(MakeMetric(
-            "Avg Duration",
+            Localize("cmu-round-statistics-average-duration", "Avg Duration"),
             FormatDurationOrNone(mode.Durations.AverageSeconds),
-            $"{mode.SideA} {FormatDurationOrNone(mode.Durations.SideAAverageSeconds)} / " +
-            $"{mode.SideB} {FormatDurationOrNone(mode.Durations.SideBAverageSeconds)}",
+            $"{FormatSideA(mode.Preset)} {FormatDurationOrNone(mode.Durations.SideAAverageSeconds)} / " +
+            $"{FormatSideB(mode.Preset)} {FormatDurationOrNone(mode.Durations.SideBAverageSeconds)}",
             Border));
 
         return grid;
@@ -309,14 +347,20 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
         };
         header.AddChild(new Label
         {
-            Text = "Recent Form",
+            Text = Localize("cmu-round-statistics-recent-form", "Recent Form"),
             FontColorOverride = Text,
             ClipText = true,
             HorizontalExpand = true,
         });
         header.AddChild(new Label
         {
-            Text = $"{mode.SideA} {mode.RecentForm.SideAWins} / {mode.SideB} {mode.RecentForm.SideBWins}",
+            Text = Localize(
+                "cmu-round-statistics-recent-form-record",
+                $"{mode.SideA} {mode.RecentForm.SideAWins} / {mode.SideB} {mode.RecentForm.SideBWins}",
+                ("sideA", FormatSideA(mode.Preset)),
+                ("winsA", mode.RecentForm.SideAWins),
+                ("sideB", FormatSideB(mode.Preset)),
+                ("winsB", mode.RecentForm.SideBWins)),
             FontColorOverride = Muted,
             ClipText = true,
             MinWidth = 180,
@@ -334,7 +378,7 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
         {
             pips.AddChild(new Label
             {
-                Text = "No recent rounds",
+                Text = Localize("cmu-round-statistics-no-recent-rounds", "No recent rounds"),
                 FontColorOverride = Muted,
                 ClipText = true,
                 HorizontalExpand = true,
@@ -467,20 +511,32 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
             HorizontalExpand = true,
         };
 
-        box.AddChild(MakeSectionLabel("Outcome Breakdown"));
+        box.AddChild(MakeSectionLabel(Localize(
+            "cmu-round-statistics-outcome-breakdown",
+            "Outcome Breakdown")));
 
         if (mode.Outcomes.Count == 0)
         {
-            box.AddChild(MakeEmptyPanel("No outcomes recorded for this mode."));
+            box.AddChild(MakeEmptyPanel(Localize(
+                "cmu-round-statistics-no-outcomes",
+                "No outcomes recorded for this mode.")));
             return box;
         }
 
         foreach (var outcome in mode.Outcomes)
+        {
+            var winner = FormatWinner(outcome.Winner);
+            var rate = FormatRate(outcome.Count, mode.Total);
             box.AddChild(MakeBreakdownRow(
-                OutcomeName(outcome.Outcome),
-                $"{WinnerName(outcome.Winner)} / {FormatRate(outcome.Count, mode.Total)} of endings",
+                FormatOutcome(outcome.Outcome),
+                Localize(
+                    "cmu-round-statistics-outcome-detail",
+                    $"{winner} / {rate} of endings",
+                    ("winner", winner),
+                    ("rate", rate)),
                 outcome.Count,
                 WinnerColor(outcome.Winner)));
+        }
 
         return box;
     }
@@ -494,14 +550,20 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
             HorizontalExpand = true,
         };
 
-        box.AddChild(MakeSectionLabel("Manual Ending Reasons"));
+        box.AddChild(MakeSectionLabel(Localize(
+            "cmu-round-statistics-manual-ending-reasons",
+            "Manual Ending Reasons")));
 
         var manualTotal = mode.ManualReasons.Sum(reason => reason.Count);
         foreach (var reason in mode.ManualReasons)
         {
+            var rate = FormatRate(reason.Count, manualTotal);
             box.AddChild(MakeBreakdownRow(
                 FormatOutcomeSource(reason.Reason),
-                $"{FormatRate(reason.Count, manualTotal)} of manual endings",
+                Localize(
+                    "cmu-round-statistics-manual-detail",
+                    $"{rate} of manual endings",
+                    ("rate", rate)),
                 reason.Count,
                 UnknownGray));
         }
@@ -518,36 +580,28 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
             HorizontalExpand = true,
         };
 
-        box.AddChild(MakeSectionLabel("Distress Signal Major / Minor Split"));
+        box.AddChild(MakeSectionLabel(Localize(
+            "cmu-round-statistics-distress-split",
+            "Distress Signal Major / Minor Split")));
         box.AddChild(MakeOutcomeSplitRow(
             mode,
             CMURoundStatisticsOutcome.XenoMajorHijackWin,
-            "Xeno major",
-            "Hijack win",
             XenoRed));
         box.AddChild(MakeOutcomeSplitRow(
             mode,
             CMURoundStatisticsOutcome.XenoMinorHijackLoss,
-            "Xeno minor",
-            "Hijack loss",
             XenoRed));
         box.AddChild(MakeOutcomeSplitRow(
             mode,
             CMURoundStatisticsOutcome.MarineMinorHiveCollapse,
-            "Marine minor",
-            "Hive collapse",
             GovforBlue));
         box.AddChild(MakeOutcomeSplitRow(
             mode,
             CMURoundStatisticsOutcome.MarineMajorXenoWipe,
-            "Marine major",
-            "Pre-hijack xeno wipe",
             GovforBlue));
         box.AddChild(MakeOutcomeSplitRow(
             mode,
             CMURoundStatisticsOutcome.DrawAlmayerAutodestruct,
-            "Draw",
-            "Almayer autodestruct",
             DrawGray));
 
         return box;
@@ -556,15 +610,21 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
     private Control MakeOutcomeSplitRow(
         CMURoundModeStatistics mode,
         CMURoundStatisticsOutcome outcome,
-        string label,
-        string detail,
         Color color)
     {
         var count = mode.Outcomes
             .Where(entry => entry.Outcome == outcome)
             .Sum(entry => entry.Count);
 
-        return MakeBreakdownRow(label, $"{detail} / {FormatRate(count, mode.Total)}", count, color);
+        var rate = FormatRate(count, mode.Total);
+        return MakeBreakdownRow(
+            FormatOutcome(outcome),
+            Localize(
+                "cmu-round-statistics-share-of-endings",
+                $"{rate} of endings",
+                ("rate", rate)),
+            count,
+            color);
     }
 
     private Control MakeThreatBreakdown(CMURoundModeStatistics mode)
@@ -576,19 +636,26 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
             HorizontalExpand = true,
         };
 
-        box.AddChild(MakeSectionLabel("Threat Breakdown"));
+        box.AddChild(MakeSectionLabel(Localize(
+            "cmu-round-statistics-threat-breakdown",
+            "Threat Breakdown")));
 
         foreach (var threat in mode.Threats)
         {
             var decided = threat.SideAWins + threat.SideBWins;
-            var text = $"{mode.SideA} {FormatRate(threat.SideAWins, decided)} ({threat.SideAWins}) / " +
-                       $"{mode.SideB} {FormatRate(threat.SideBWins, decided)} ({threat.SideBWins})";
-            if (threat.Draws > 0)
-                text += $" / draws {threat.Draws}";
-            if (threat.Unknown > 0)
-                text += $" / unknown {threat.Unknown}";
+            var text = FormatVersusSummary(
+                mode,
+                threat.SideAWins,
+                threat.SideBWins,
+                threat.Draws,
+                threat.Unknown,
+                decided);
 
-            box.AddChild(MakeBreakdownRow(threat.ThreatId, text, threat.Total, Border));
+            box.AddChild(MakeBreakdownRow(
+                FormatThreat(threat.ThreatId),
+                text,
+                threat.Total,
+                Border));
         }
 
         return box;
@@ -603,20 +670,31 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
             HorizontalExpand = true,
         };
 
-        box.AddChild(MakeSectionLabel("Planet Breakdown"));
+        box.AddChild(MakeSectionLabel(Localize(
+            "cmu-round-statistics-planet-breakdown",
+            "Planet Breakdown")));
 
         foreach (var planet in mode.Planets)
         {
             var decided = planet.SideAWins + planet.SideBWins;
-            var text = $"{mode.SideA} {FormatRate(planet.SideAWins, decided)} ({planet.SideAWins}) / " +
-                       $"{mode.SideB} {FormatRate(planet.SideBWins, decided)} ({planet.SideBWins}) / " +
-                       $"avg {FormatDurationOrNone(planet.AverageDurationSeconds)}";
-            if (planet.Draws > 0)
-                text += $" / draws {planet.Draws}";
-            if (planet.Unknown > 0)
-                text += $" / unknown {planet.Unknown}";
+            var text = FormatVersusSummary(
+                mode,
+                planet.SideAWins,
+                planet.SideBWins,
+                planet.Draws,
+                planet.Unknown,
+                decided);
+            var average = FormatDurationOrNone(planet.AverageDurationSeconds);
+            text += Localize(
+                "cmu-round-statistics-average-suffix",
+                $" / avg {average}",
+                ("duration", average));
 
-            box.AddChild(MakeBreakdownRow(planet.PlanetId, text, planet.Total, Border));
+            box.AddChild(MakeBreakdownRow(
+                FormatPlanet(planet.PlanetId),
+                text,
+                planet.Total,
+                Border));
         }
 
         return box;
@@ -631,20 +709,29 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
             HorizontalExpand = true,
         };
 
-        box.AddChild(MakeSectionLabel("Platoon Matchups"));
+        box.AddChild(MakeSectionLabel(Localize(
+            "cmu-round-statistics-platoon-matchups",
+            "Platoon Matchups")));
 
         foreach (var matchup in mode.PlatoonMatchups)
         {
             var decided = matchup.SideAWins + matchup.SideBWins;
-            var text = $"{mode.SideA} {FormatRate(matchup.SideAWins, decided)} ({matchup.SideAWins}) / " +
-                       $"{mode.SideB} {FormatRate(matchup.SideBWins, decided)} ({matchup.SideBWins})";
-            if (matchup.Draws > 0)
-                text += $" / draws {matchup.Draws}";
-            if (matchup.Unknown > 0)
-                text += $" / unknown {matchup.Unknown}";
+            var text = FormatVersusSummary(
+                mode,
+                matchup.SideAWins,
+                matchup.SideBWins,
+                matchup.Draws,
+                matchup.Unknown,
+                decided);
+            var govfor = FormatPlatoon(matchup.GovforPlatoonId);
+            var opfor = FormatPlatoon(matchup.OpforPlatoonId);
 
             box.AddChild(MakeBreakdownRow(
-                $"{matchup.GovforPlatoonId} vs {matchup.OpforPlatoonId}",
+                Localize(
+                    "cmu-round-statistics-matchup",
+                    $"{govfor} vs {opfor}",
+                    ("govfor", govfor),
+                    ("opfor", opfor)),
                 text,
                 matchup.Total,
                 Border));
@@ -662,22 +749,73 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
             HorizontalExpand = true,
         };
 
-        box.AddChild(MakeSectionLabel("Player Count Bands"));
+        box.AddChild(MakeSectionLabel(Localize(
+            "cmu-round-statistics-player-count-bands",
+            "Player Count Bands")));
 
         foreach (var band in mode.PlayerCountBands)
         {
             var decided = band.SideAWins + band.SideBWins;
-            var text = $"{mode.SideA} {FormatRate(band.SideAWins, decided)} ({band.SideAWins}) / " +
-                       $"{mode.SideB} {FormatRate(band.SideBWins, decided)} ({band.SideBWins})";
-            if (band.Draws > 0)
-                text += $" / draws {band.Draws}";
-            if (band.Unknown > 0)
-                text += $" / unknown {band.Unknown}";
+            var text = FormatVersusSummary(
+                mode,
+                band.SideAWins,
+                band.SideBWins,
+                band.Draws,
+                band.Unknown,
+                decided);
 
-            box.AddChild(MakeBreakdownRow(band.Band, text, band.Total, Border));
+            box.AddChild(MakeBreakdownRow(
+                Localize(
+                    "cmu-round-statistics-player-band",
+                    $"{band.Band} players",
+                    ("band", band.Band)),
+                text,
+                band.Total,
+                Border));
         }
 
         return box;
+    }
+
+    private string FormatVersusSummary(
+        CMURoundModeStatistics mode,
+        int sideAWins,
+        int sideBWins,
+        int draws,
+        int unknown,
+        int decided)
+    {
+        var sideA = FormatSideA(mode.Preset);
+        var sideB = FormatSideB(mode.Preset);
+        var rateA = FormatRate(sideAWins, decided);
+        var rateB = FormatRate(sideBWins, decided);
+        var text = Localize(
+            "cmu-round-statistics-versus-summary",
+            $"{sideA} {rateA} ({sideAWins}) / {sideB} {rateB} ({sideBWins})",
+            ("sideA", sideA),
+            ("rateA", rateA),
+            ("winsA", sideAWins),
+            ("sideB", sideB),
+            ("rateB", rateB),
+            ("winsB", sideBWins));
+
+        if (draws > 0)
+        {
+            text += Localize(
+                "cmu-round-statistics-draws-suffix",
+                $" / draws {draws}",
+                ("count", draws));
+        }
+
+        if (unknown > 0)
+        {
+            text += Localize(
+                "cmu-round-statistics-unknown-suffix",
+                $" / unknown {unknown}",
+                ("count", unknown));
+        }
+
+        return text;
     }
 
     private Control MakeBreakdownRow(string left, string right, int count, Color color)
@@ -714,6 +852,13 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
     private Control MakeRecentRoundPanel(CMURoundOutcomeRecord record)
     {
         var color = WinnerColor(record.Winner);
+        var preset = FormatPreset(record.Preset);
+        var winner = FormatWinner(record.Winner);
+        var outcome = FormatOutcome(record.Outcome);
+        var sourceLabel = record.Outcome == CMURoundStatisticsOutcome.Unknown
+            ? Localize("cmu-round-statistics-manual-reason", "Manual reason")
+            : Localize("cmu-round-statistics-recorded-source", "Recorded source");
+        var source = FormatOutcomeSource(record.Source);
         var panel = MakePanel(CardQuiet, color.WithAlpha(BorderAlpha));
         var box = new BoxContainer
         {
@@ -725,36 +870,54 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
 
         box.AddChild(new Label
         {
-            Text = $"Round {record.RoundId} - {PresetName(record.Preset)} - {WinnerName(record.Winner)}",
+            Text = Localize(
+                "cmu-round-statistics-round-title",
+                $"Round {record.RoundId} - {preset} - {winner}",
+                ("round", record.RoundId),
+                ("preset", preset),
+                ("winner", winner)),
             FontColorOverride = color,
             ClipText = true,
             HorizontalExpand = true,
         });
         box.AddChild(new Label
         {
-            Text = OutcomeName(record.Outcome),
+            Text = outcome,
             FontColorOverride = Text,
             ClipText = true,
             HorizontalExpand = true,
         });
         box.AddChild(new Label
         {
-            Text = $"{(record.Outcome == CMURoundStatisticsOutcome.Unknown ? "Manual reason" : "Recorded source")}: {FormatOutcomeSource(record.Source)}",
+            Text = Localize(
+                "cmu-round-statistics-source-detail",
+                $"{sourceLabel}: {source}",
+                ("label", sourceLabel),
+                ("source", source)),
             FontColorOverride = Muted,
             ClipText = true,
             HorizontalExpand = true,
         });
 
         var threat = string.IsNullOrWhiteSpace(record.SelectedThreatId)
-            ? "no threat"
-            : $"threat {record.SelectedThreatId}";
+            ? Localize("cmu-round-statistics-no-threat", "no threat")
+            : FormatThreat(record.SelectedThreatId);
         var planet = string.IsNullOrWhiteSpace(record.PlanetId)
-            ? "no planet"
-            : $"planet {record.PlanetId}";
+            ? Localize("cmu-round-statistics-no-planet", "no planet")
+            : FormatPlanet(record.PlanetId);
+        var duration = FormatDuration(record.DurationSeconds);
+        var recordedAt = record.RecordedAt.ToUniversalTime().ToString("yyyy-MM-dd HH:mm");
 
         box.AddChild(new Label
         {
-            Text = $"{record.PlayerCount} players / {FormatDuration(record.DurationSeconds)} / {threat} / {planet} / {record.RecordedAt:yyyy-MM-dd HH:mm} UTC",
+            Text = Localize(
+                "cmu-round-statistics-round-metadata",
+                $"{record.PlayerCount} players / {duration} / {threat} / {planet} / {recordedAt} UTC",
+                ("players", record.PlayerCount),
+                ("duration", duration),
+                ("threat", threat),
+                ("planet", planet),
+                ("time", recordedAt)),
             FontColorOverride = Muted,
             ClipText = true,
             HorizontalExpand = true,
@@ -819,6 +982,18 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
         };
     }
 
+    private string Localize(
+        string messageId,
+        string fallback,
+        params (string, object)[] args)
+    {
+        return CMULocalization.GetTargetStringOrFallback(
+            _localization,
+            messageId,
+            fallback,
+            args);
+    }
+
     private static string FormatRate(int wins, int decided)
     {
         return decided <= 0
@@ -826,19 +1001,25 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
             : $"{wins * 100f / decided:0.0}%";
     }
 
-    private static string FormatRecentForm(CMURoundModeStatistics mode)
+    private string FormatRecentForm(CMURoundModeStatistics mode)
     {
         if (mode.RecentForm.Rounds == 0)
-            return "No data";
+            return Localize("cmu-round-statistics-no-data", "No data");
 
         return $"{mode.RecentForm.SideAWins}-{mode.RecentForm.SideBWins}";
     }
 
-    private static string FormatStreak(CMURoundStreak streak)
+    private string FormatStreak(CMURoundStreak streak)
     {
-        return streak.Count <= 0
-            ? "None"
-            : $"{WinnerName(streak.Winner)} x{streak.Count}";
+        if (streak.Count <= 0)
+            return Localize("cmu-round-statistics-none", "None");
+
+        var winner = FormatWinner(streak.Winner);
+        return Localize(
+            "cmu-round-statistics-streak",
+            $"{winner} x{streak.Count}",
+            ("winner", winner),
+            ("count", streak.Count));
     }
 
     private static Color StreakColor(CMURoundStreak streak)
@@ -854,74 +1035,144 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
         return $"{(int) duration.TotalHours:00}:{duration.Minutes:00}:{duration.Seconds:00}";
     }
 
-    private static string FormatDurationOrNone(int seconds)
+    private string FormatDurationOrNone(int seconds)
     {
         return seconds <= 0
-            ? "No data"
+            ? Localize("cmu-round-statistics-no-data", "No data")
             : FormatDuration(seconds);
     }
 
-    private static string FormatOutcomeSource(string source)
+    private string FormatOutcomeSource(string source)
     {
         if (string.IsNullOrWhiteSpace(source))
-            return "Unknown source";
+            return Localize(
+                "cmu-round-statistics-source",
+                "Unknown source",
+                ("source", "Unknown"));
 
         source = source.Trim();
-        if (source.Equals("Unknown", StringComparison.OrdinalIgnoreCase))
-            return "Unknown source";
-
-        if (source.Equals("NoPendingOutcome", StringComparison.OrdinalIgnoreCase) ||
-            source.Equals("RoundEndMessageEvent", StringComparison.OrdinalIgnoreCase))
-        {
-            return "No stats outcome was recorded before round end";
-        }
-
-        if (source.Equals("WithdrawConsoleStalemate", StringComparison.OrdinalIgnoreCase))
-            return "Withdraw console stalemate";
 
         const string withdrawPrefix = "WithdrawConsole:";
         if (source.StartsWith(withdrawPrefix, StringComparison.OrdinalIgnoreCase))
-            return $"Withdraw console: {FormatFaction(source[withdrawPrefix.Length..])}";
+        {
+            var faction = FormatFaction(source[withdrawPrefix.Length..]);
+            return Localize(
+                "cmu-round-statistics-source-withdrawal",
+                $"Withdraw console: {faction}",
+                ("faction", faction));
+        }
 
         const string objectivePrefix = "AuObjective:";
         if (source.StartsWith(objectivePrefix, StringComparison.OrdinalIgnoreCase))
-            return $"AU objective: {FormatFaction(source[objectivePrefix.Length..])}";
+        {
+            var faction = FormatFaction(source[objectivePrefix.Length..]);
+            return Localize(
+                "cmu-round-statistics-source-objective",
+                $"AU objective: {faction}",
+                ("faction", faction));
+        }
 
-        return source;
+        var sourceKey = source.ToLowerInvariant() switch
+        {
+            "majorxenovictory" => "MajorXenoVictory",
+            "minorxenovictory" => "MinorXenoVictory",
+            "minormarinevictory" => "MinorMarineVictory",
+            "majormarinevictory" => "MajorMarineVictory",
+            "alldied" => "AllDied",
+            "killallgovforrule" => "KillAllGovforRule",
+            "killallclfrule" => "KillAllClfRule",
+            "killallcolonistrule" => "KillAllColonistRule",
+            "killallhumanrule" => "KillAllHumanRule",
+            "threatsurviverule" => "ThreatSurviveRule",
+            "hivecollapserule" => "HiveCollapseRule",
+            "killallabominationsrule" => "KillAllAbominationsRule",
+            "killallaperule" => "KillAllApeRule",
+            "killalltriberule" => "KillAllTribeRule",
+            "killallxenorule" => "KillAllXenoRule",
+            "killallyautjarule" => "KillAllYautjaRule",
+            "withdrawconsolestalemate" => "WithdrawConsoleStalemate",
+            "nopendingoutcome" or "roundendmessageevent" => "NoPendingOutcome",
+            "unknown" => "Unknown",
+            _ => "Other",
+        };
+
+        return Localize(
+            "cmu-round-statistics-source",
+            sourceKey == "Other" ? source : sourceKey,
+            ("source", sourceKey));
     }
 
-    private static string FormatFaction(string faction)
+    private string FormatFaction(string faction)
     {
-        if (string.IsNullOrWhiteSpace(faction))
-            return "unknown faction";
+        var factionKey = faction.Trim().ToLowerInvariant() switch
+        {
+            "govfor" => "govfor",
+            "opfor" => "opfor",
+            "clf" => "clf",
+            "colony" or "colonist" => "colony",
+            "threat" => "threat",
+            "xeno" => "xeno",
+            _ => "unknown",
+        };
 
-        return faction.Trim().ToLowerInvariant() switch
+        var fallback = factionKey switch
         {
             "govfor" => "Govfor",
             "opfor" => "Opfor",
             "clf" => "CLF",
-            "colony" or "colonist" => "Colonists",
+            "colony" => "Colonists",
             "threat" => "Threat",
             "xeno" => "Xeno",
-            "unknown" => "unknown faction",
-            var other => other,
+            _ => "unknown faction",
         };
+
+        return Localize(
+            "cmu-round-statistics-faction",
+            fallback,
+            ("faction", factionKey));
     }
 
-    private static string PresetName(CMURoundStatisticsPreset preset)
+    private string FormatPreset(CMURoundStatisticsPreset preset)
     {
-        return preset switch
+        var fallback = preset switch
         {
             CMURoundStatisticsPreset.DistressSignal => "Distress Signal",
             CMURoundStatisticsPreset.Insurgency => "Insurgency",
             CMURoundStatisticsPreset.ColonyFall => "Colony Fall",
-            _ => preset.ToString(),
+            _ => "Unknown mode",
         };
+
+        return Localize(
+            "cmu-round-statistics-preset",
+            fallback,
+            ("preset", preset.ToString()));
     }
 
-    private static string WinnerName(CMURoundStatisticsWinner winner)
+    private string FormatSideA(CMURoundStatisticsPreset preset)
     {
-        return winner switch
+        return FormatWinner(preset switch
+        {
+            CMURoundStatisticsPreset.DistressSignal => CMURoundStatisticsWinner.Xeno,
+            CMURoundStatisticsPreset.Insurgency => CMURoundStatisticsWinner.Govfor,
+            CMURoundStatisticsPreset.ColonyFall => CMURoundStatisticsWinner.Colonists,
+            _ => CMURoundStatisticsWinner.Unknown,
+        });
+    }
+
+    private string FormatSideB(CMURoundStatisticsPreset preset)
+    {
+        return FormatWinner(preset switch
+        {
+            CMURoundStatisticsPreset.DistressSignal => CMURoundStatisticsWinner.Govfor,
+            CMURoundStatisticsPreset.Insurgency => CMURoundStatisticsWinner.Clf,
+            CMURoundStatisticsPreset.ColonyFall => CMURoundStatisticsWinner.Threat,
+            _ => CMURoundStatisticsWinner.Unknown,
+        });
+    }
+
+    private string FormatWinner(CMURoundStatisticsWinner winner)
+    {
+        var fallback = winner switch
         {
             CMURoundStatisticsWinner.Xeno => "Xeno",
             CMURoundStatisticsWinner.Govfor => "Govfor",
@@ -930,13 +1181,18 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
             CMURoundStatisticsWinner.Threat => "Threat",
             CMURoundStatisticsWinner.Draw => "Draw",
             CMURoundStatisticsWinner.Unknown => "Unknown",
-            _ => winner.ToString(),
+            _ => "Unknown",
         };
+
+        return Localize(
+            "cmu-round-statistics-winner",
+            fallback,
+            ("winner", winner.ToString()));
     }
 
-    private static string OutcomeName(CMURoundStatisticsOutcome outcome)
+    private string FormatOutcome(CMURoundStatisticsOutcome outcome)
     {
-        return outcome switch
+        var fallback = outcome switch
         {
             CMURoundStatisticsOutcome.XenoMajorHijackWin => "Xeno major - hijack win",
             CMURoundStatisticsOutcome.XenoMinorHijackLoss => "Xeno minor - hijack loss / xenowipe",
@@ -950,8 +1206,58 @@ public sealed class CMURoundStatisticsWindow : DefaultWindow
             CMURoundStatisticsOutcome.Stalemate => "Stalemate",
             CMURoundStatisticsOutcome.ObjectiveVictory => "Objective victory",
             CMURoundStatisticsOutcome.Unknown => "Unknown / manual ending",
-            _ => outcome.ToString(),
+            _ => "Unknown / manual ending",
         };
+
+        return Localize(
+            "cmu-round-statistics-outcome",
+            fallback,
+            ("outcome", outcome.ToString()));
+    }
+
+    private string FormatThreat(string threatId)
+    {
+        string? messageId = null;
+        if (threatId.Contains("cultist", StringComparison.OrdinalIgnoreCase))
+            messageId = "au14-threat-vote-option-cultist-xeno";
+        else if (threatId.Contains("tribal", StringComparison.OrdinalIgnoreCase))
+            messageId = "au14-threat-vote-option-tribal";
+        else if (threatId.Contains("abomination", StringComparison.OrdinalIgnoreCase))
+            messageId = "au14-threat-vote-option-abominations";
+        else if (threatId.Contains("xeno", StringComparison.OrdinalIgnoreCase))
+            messageId = "au14-threat-vote-option-xeno";
+        else if (threatId.Contains("ape", StringComparison.OrdinalIgnoreCase))
+            messageId = "au14-threat-vote-option-ape";
+        else if (threatId.Contains("wendigo", StringComparison.OrdinalIgnoreCase))
+            messageId = "au14-threat-vote-option-wendigo";
+
+        return messageId != null
+            ? _localization.GetString(messageId)
+            : Localize("cmu-round-statistics-threat-unknown", "Unknown threat");
+    }
+
+    private string FormatPlanet(string planetId)
+    {
+        return _prototypes.TryIndex<EntityPrototype>(planetId, out var prototype) &&
+               !string.IsNullOrWhiteSpace(prototype.Name)
+            ? prototype.Name
+            : Localize("cmu-round-statistics-planet-unknown", "Unknown planet");
+    }
+
+    private string FormatPlatoon(string platoonId)
+    {
+        if (!_prototypes.TryIndex<PlatoonPrototype>(platoonId, out var prototype) ||
+            string.IsNullOrWhiteSpace(prototype.Name))
+        {
+            return Localize("cmu-round-statistics-platoon-unknown", "Unknown platoon");
+        }
+
+        return CMUPrototypeLocalization.GetPrototypeText(
+            _localization,
+            "platoon",
+            prototype.ID,
+            "name",
+            prototype.Name);
     }
 
     private static Color WinnerColor(CMURoundStatisticsWinner winner)

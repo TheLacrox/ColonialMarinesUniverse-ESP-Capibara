@@ -2,6 +2,7 @@ using Content.Shared.Whitelist;
 using Robust.Shared.Audio;
 using Robust.Shared.Containers;
 using Robust.Shared.GameStates;
+using Robust.Shared.Localization;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
@@ -90,6 +91,13 @@ namespace Content.Shared.Containers.ItemSlots
         [DataField(readOnly: true)]
         [Access(typeof(ItemSlotsSystem), Other = AccessPermissions.ReadWriteExecute)] // FIXME Friends
         public string Name = string.Empty;
+
+        /// <summary>
+        ///     Optional localization key for <see cref="Name"/>. The literal name remains the fallback for locales
+        ///     that do not define this key.
+        /// </summary>
+        [DataField]
+        public LocId? NameLocId;
 
         /// <summary>
         ///     The entity prototype that is spawned into this slot on map init.
@@ -250,6 +258,7 @@ namespace Content.Shared.Containers.ItemSlots
             EjectSound = other.EjectSound;
 
             Name = other.Name;
+            NameLocId = other.NameLocId;
             Locked = other.Locked;
             DisableEject = other.DisableEject;
             InsertOnInteract = other.InsertOnInteract;

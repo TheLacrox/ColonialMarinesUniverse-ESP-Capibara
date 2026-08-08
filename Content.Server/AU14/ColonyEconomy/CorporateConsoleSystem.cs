@@ -5,6 +5,7 @@ using Content.Server.Popups;
 using Content.Server.Stack;
 using Content.Shared.AU14.ColonyEconomy;
 using Content.Shared._CMU14.Threats;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Stacks;
 using Content.Shared.Interaction;
 using Content.Shared.Tag;
@@ -112,8 +113,8 @@ public sealed partial class CorporateConsoleSystem : EntitySystem
         {
             var sound = new Robust.Shared.Audio.SoundPathSpecifier("/Audio/Announcements/announce.ogg");
             _chat.DispatchGlobalAnnouncement(
-                $"Corporate transit tariff has been set to {clamped:F0}%. Submission payouts to the colony have been adjusted.",
-                "Corporate Affairs",
+                Ui("cmu-colony-economy-transit-tariff-announcement", $"Corporate transit tariff has been set to {clamped:F0}%. Submission payouts to the colony have been adjusted.", ("percent", clamped.ToString("F0"))),
+                Ui("cmu-colony-economy-corporate-affairs-sender", "Corporate Affairs"),
                 playSound: true,
                 announcementSound: sound);
         }
@@ -138,7 +139,7 @@ public sealed partial class CorporateConsoleSystem : EntitySystem
 
         if (!_thirdParty.SpawnThirdParty(partyProto, spawnProto, false))
         {
-            _popup.PopupEntity("Unable to dispatch support at this time.", uid, msg.Actor);
+            _popup.PopupEntity(Ui("cmu-colony-economy-support-unavailable", "Unable to dispatch support at this time."), uid, msg.Actor);
             return;
         }
 
@@ -229,7 +230,11 @@ public sealed partial class CorporateConsoleSystem : EntitySystem
         {
             if (_proto.TryIndex<ThirdPartyPrototype>(id, out var proto) &&
                 _auRound.IsThirdPartyAllowedForCurrentContext(proto))
-                thirdParties[id] = (proto.DisplayName ?? proto.ID, cost);
+                thirdParties[id] = (CMUPrototypeLocalization.GetPrototypeText(
+                    "third-party",
+                    proto.ID,
+                    "display-name",
+                    proto.DisplayName ?? proto.ID), cost);
         }
         _ui.SetUiState(uid, CorporateConsoleThirdPartyUi.Key,
             new CorporateConsoleThirdPartyBuiState(comp.CorporateBudget, thirdParties, comp.CalledParties));
@@ -241,5 +246,9 @@ public sealed partial class CorporateConsoleSystem : EntitySystem
         while (q.MoveNext(out var uid, out var comp))
             UpdateUiState(uid, comp);
     }
-}
 
+    private string Ui(string id, string fallback, params (string, object)[] args)
+    {
+        return CMULocalization.GetTargetStringOrFallback(Loc, id, fallback, args);
+    }
+}

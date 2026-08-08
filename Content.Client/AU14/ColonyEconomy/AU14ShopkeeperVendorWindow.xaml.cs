@@ -1,3 +1,4 @@
+using static Content.Client.AU14.ColonyEconomy.ColonyEconomyLoc;
 using System.Linq;
 using Content.Shared.AU14.ColonyEconomy;
 using Content.Shared.Mobs;
@@ -31,15 +32,15 @@ public sealed partial class AU14ShopkeeperVendorWindow : DefaultWindow
 
     public void UpdateState(AU14ShopkeeperVendorShopState state, bool isShopkeeper)
     {
-        InsertedCashLabel.Text = $"Inserted: ${state.InsertedCash:F0}";
+        InsertedCashLabel.Text = Target("cmu-colony-economy-inserted-cash", $"Inserted: ${state.InsertedCash:F0}", ("cash", state.InsertedCash.ToString("F0")));
         SalesTaxLabel.Text = state.SalesTaxPercent > 0
-            ? $"Sales Tax: {state.SalesTaxPercent:F0}% (included in prices)"
-            : "No sales tax";
+            ? Target("cmu-colony-economy-sales-tax-included", $"Sales Tax: {state.SalesTaxPercent:F0}% (included in prices)", ("percent", state.SalesTaxPercent.ToString("F0")))
+            : Target("cmu-colony-economy-no-sales-tax", "No sales tax");
         // -- Shop section (visible to everyone) --
         ItemList.RemoveAllChildren();
         if (state.Listings.Count == 0)
         {
-            ItemList.AddChild(new Label { Text = "No items for sale." });
+            ItemList.AddChild(new Label { Text = Target("cmu-colony-economy-no-items-for-sale", "No items for sale.") });
         }
         else
         {
@@ -70,7 +71,9 @@ public sealed partial class AU14ShopkeeperVendorWindow : DefaultWindow
                     row.AddChild(new Control { MinSize = new System.Numerics.Vector2(32, 32) });
                 }
 
-                var countText = item.Count > 1 ? $" x{item.Count}" : "";
+                var countText = item.Count > 1
+                    ? Target("cmu-colony-economy-item-count", $" x{item.Count}", ("count", item.Count))
+                    : "";
                 row.AddChild(new Label
                 {
                     Text = $"{item.DisplayName}{countText}",
@@ -84,7 +87,7 @@ public sealed partial class AU14ShopkeeperVendorWindow : DefaultWindow
                     MinWidth = 50,
                     HorizontalAlignment = HAlignment.Right
                 });
-                var btn = new Button { Text = "Buy", MinWidth = 50 };
+                var btn = new Button { Text = Target("cmu-colony-economy-buy", "Buy"), MinWidth = 50 };
                 var idx = item.Index;
                 btn.Disabled = state.InsertedCash < item.EffectivePrice;
                 btn.OnPressed += _ => OnBuyPressed?.Invoke(idx);
@@ -128,7 +131,7 @@ public sealed partial class AU14ShopkeeperVendorWindow : DefaultWindow
         {
             ManageList.AddChild(new Label
             {
-                Text = "No stock. Use an item on this machine to add it.",
+                Text = Target("cmu-colony-economy-no-stock", "No stock. Use an item on this machine to add it."),
                 StyleClasses = { "LabelSubText" }
             });
             return;
@@ -145,17 +148,17 @@ public sealed partial class AU14ShopkeeperVendorWindow : DefaultWindow
                 Text = listing.DisplayName,
                 HorizontalExpand = true,
                 SizeFlagsStretchRatio = 3,
-                PlaceHolder = "Item name..."
+                PlaceHolder = Target("cmu-colony-economy-item-name-placeholder", "Item name...")
             };
             var priceEdit = new LineEdit
             {
                 Text = listing.BasePrice.ToString(),
                 HorizontalExpand = true,
                 SizeFlagsStretchRatio = 1,
-                PlaceHolder = "Price"
+                PlaceHolder = Target("cmu-colony-economy-price-placeholder", "Price")
             };
-            var saveBtn = new Button { Text = "Save" };
-            var removeBtn = new Button { Text = "Remove", StyleClasses = { "Caution" } };
+            var saveBtn = new Button { Text = Target("cmu-colony-economy-save", "Save") };
+            var removeBtn = new Button { Text = Target("cmu-colony-economy-remove", "Remove"), StyleClasses = { "Caution" } };
             var idxCopy = listing.Index;
             saveBtn.OnPressed += _ =>
             {
@@ -170,10 +173,12 @@ public sealed partial class AU14ShopkeeperVendorWindow : DefaultWindow
             row.AddChild(priceEdit);
             row.AddChild(saveBtn);
             row.AddChild(removeBtn);
-            var countText = listing.Count > 1 ? $" ({listing.Count} in stock)" : "";
+            var countText = listing.Count > 1
+                ? Target("cmu-colony-economy-stock-count", $" ({listing.Count} in stock)", ("count", listing.Count))
+                : "";
             var taxHint = new Label
             {
-                Text = $"  sells for ${listing.EffectivePrice} (after tax){countText}",
+                Text = Target("cmu-colony-economy-sells-for-after-tax", $"  sells for ${listing.EffectivePrice} (after tax){countText}", ("price", listing.EffectivePrice), ("count", countText)),
                 StyleClasses = { "LabelSubText" },
                 Margin = new Robust.Shared.Maths.Thickness(4, 0, 0, 4)
             };

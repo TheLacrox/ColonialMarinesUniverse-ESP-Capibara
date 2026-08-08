@@ -1,42 +1,43 @@
 <controls:AdminConsoleWindow
     xmlns="https://spacestation14.io"
+    xmlns:loc="clr-namespace:Content.Client._CMU14.Localizations"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:controls="clr-namespace:Content.Client.AU14.ColonyEconomy"
-    Title="Administration Console" MinSize="480 520">
+    Title="{loc:CMULoc 'cmu-colony-economy-admin-title', 'Administration Console'}" MinSize="480 520">
     <ScrollContainer HorizontalExpand="True" VerticalExpand="True">
         <BoxContainer Orientation="Vertical" HorizontalExpand="True" Margin="8">
-            <Label Name="ColonyBudgetLabel" Access="Public" Text="Colony Budget: $0"
+            <Label Name="ColonyBudgetLabel" Access="Public" Text="{loc:CMULoc 'cmu-colony-economy-colony-budget-placeholder', 'Colony Budget: $0'}"
                    StyleClasses="LabelHeading" Margin="0 4" />
 
-            <Label Text="-- Sales Tax --" Margin="0 6" />
-            <Label Name="CurrentTaxLabel" Access="Public" Text="Current Sales Tax: 0%"
+            <Label Text="{loc:CMULoc 'cmu-colony-economy-sales-tax-heading', '-- Sales Tax --'}" Margin="0 6" />
+            <Label Name="CurrentTaxLabel" Access="Public" Text="{loc:CMULoc 'cmu-colony-economy-current-sales-tax-placeholder', 'Current Sales Tax: 0%'}"
                    Margin="0 2" />
-            <Label Text="Applies to cash vendors and corporate ASRS orders. Tax revenue goes to the colony budget."
+            <Label Text="{loc:CMULoc 'cmu-colony-economy-sales-tax-description', 'Applies to cash vendors and corporate ASRS orders. Tax revenue goes to the colony budget.'}"
                    StyleClasses="LabelSubText" Margin="0 2" />
             <BoxContainer Orientation="Horizontal" SeparationOverride="4" Margin="0 4">
-                <Label Text="New Tax (0–50%): " />
-                <LineEdit Name="TaxInput" Access="Public" PlaceHolder="e.g. 10"
+                <Label Text="{loc:CMULoc 'cmu-colony-economy-new-tax-label', 'New Tax (0–50%): '}" />
+                <LineEdit Name="TaxInput" Access="Public" PlaceHolder="{loc:CMULoc 'cmu-colony-economy-example-10', 'e.g. 10'}"
                           HorizontalExpand="True" SizeFlagsStretchRatio="2" />
-                <Button Name="SetTaxButton" Access="Public" Text="Apply" />
+                <Button Name="SetTaxButton" Access="Public" Text="{loc:CMULoc 'cmu-colony-economy-apply', 'Apply'}" />
             </BoxContainer>
 
-            <Label Text="-- Income Tax --" Margin="0 6" />
-            <Label Name="CurrentIncomeTaxLabel" Access="Public" Text="Current Income Tax: 0%"
+            <Label Text="{loc:CMULoc 'cmu-colony-economy-income-tax-heading', '-- Income Tax --'}" Margin="0 6" />
+            <Label Name="CurrentIncomeTaxLabel" Access="Public" Text="{loc:CMULoc 'cmu-colony-economy-current-income-tax-placeholder', 'Current Income Tax: 0%'}"
                    Margin="0 2" />
-            <Label Text="Deducted from salary payouts and corporate cash withdrawals. Revenue goes to the colony budget."
+            <Label Text="{loc:CMULoc 'cmu-colony-economy-income-tax-description', 'Deducted from salary payouts and corporate cash withdrawals. Revenue goes to the colony budget.'}"
                    StyleClasses="LabelSubText" Margin="0 2" />
             <BoxContainer Orientation="Horizontal" SeparationOverride="4" Margin="0 4">
-                <Label Text="New Tax (0–50%): " />
-                <LineEdit Name="IncomeTaxInput" Access="Public" PlaceHolder="e.g. 10"
+                <Label Text="{loc:CMULoc 'cmu-colony-economy-new-tax-label', 'New Tax (0–50%): '}" />
+                <LineEdit Name="IncomeTaxInput" Access="Public" PlaceHolder="{loc:CMULoc 'cmu-colony-economy-example-10', 'e.g. 10'}"
                           HorizontalExpand="True" SizeFlagsStretchRatio="2" />
-                <Button Name="SetIncomeTaxButton" Access="Public" Text="Apply" />
+                <Button Name="SetIncomeTaxButton" Access="Public" Text="{loc:CMULoc 'cmu-colony-economy-apply', 'Apply'}" />
             </BoxContainer>
 
-            <Label Text="-- Colony Economy Overview --" Margin="0 6" />
+            <Label Text="{loc:CMULoc 'cmu-ambassador-ui-colony-economy-overview', '-- Colony Economy Overview --'}" Margin="0 6" />
             <BoxContainer Name="EconomyStatusPanel" Access="Public" Orientation="Vertical" Margin="4 2" />
 
-            <Label Text="-- Third Party Support --" Margin="0 6" />
-            <Button Name="OpenThirdPartyBtn" Access="Public" Text="Open Third Party Menu"
+            <Label Text="{loc:CMULoc 'cmu-ambassador-ui-third-party-support', '-- Third Party Support --'}" Margin="0 6" />
+            <Button Name="OpenThirdPartyBtn" Access="Public" Text="{loc:CMULoc 'cmu-ambassador-ui-open-third-party-menu', 'Open Third Party Menu'}"
                     HorizontalExpand="True" Margin="0 4" />
         </BoxContainer>
     </ScrollContainer>

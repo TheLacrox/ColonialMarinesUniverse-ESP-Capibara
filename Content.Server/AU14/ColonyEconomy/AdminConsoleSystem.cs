@@ -7,6 +7,7 @@ using Content.Server.Popups;
 using Content.Shared.AU14.Ambassador;
 using Content.Shared.AU14.ColonyEconomy;
 using Content.Shared._CMU14.Threats;
+using Content.Shared._CMU14.Localizations;
 using Robust.Server.GameObjects;
 using Robust.Shared.Prototypes;
 using ThirdPartySystem = Content.Server._CMU14.Ops.ThirdParty.ThirdPartySystem;
@@ -90,9 +91,9 @@ public sealed partial class AdminConsoleSystem : EntitySystem
         while (ambQ.MoveNext(out _, out var amb))
         {
             if (amb.EmbargoActive)
-                embargoes.Add(amb.FactionName ?? "Unknown Faction");
+                embargoes.Add(amb.FactionName ?? Ui("cmu-colony-economy-unknown-faction", "Unknown Faction"));
             if (amb.TradePactActive)
-                tradePacts.Add(amb.FactionName ?? "Unknown Faction");
+                tradePacts.Add(amb.FactionName ?? Ui("cmu-colony-economy-unknown-faction", "Unknown Faction"));
         }
 
         return new EconomyStatusState(salesTax, incomeTax, tariff, embargoes, tradePacts);
@@ -124,8 +125,8 @@ public sealed partial class AdminConsoleSystem : EntitySystem
         {
             var sound = new Robust.Shared.Audio.SoundPathSpecifier("/Audio/Announcements/announce.ogg");
             _chat.DispatchGlobalAnnouncement(
-                $"Colony sales tax has been set to {clamped:F0}%.",
-                "Administration",
+                Ui("cmu-colony-economy-sales-tax-announcement", $"Colony sales tax has been set to {clamped:F0}%.", ("percent", clamped.ToString("F0"))),
+                Ui("cmu-colony-economy-administration-sender", "Administration"),
                 playSound: true,
                 announcementSound: sound);
         }
@@ -147,8 +148,8 @@ public sealed partial class AdminConsoleSystem : EntitySystem
         {
             var sound = new Robust.Shared.Audio.SoundPathSpecifier("/Audio/Announcements/announce.ogg");
             _chat.DispatchGlobalAnnouncement(
-                $"Colony income tax has been set to {clamped:F0}%. This affects salary payouts and corporate withdrawals.",
-                "Administration",
+                Ui("cmu-colony-economy-income-tax-announcement", $"Colony income tax has been set to {clamped:F0}%. This affects salary payouts and corporate withdrawals.", ("percent", clamped.ToString("F0"))),
+                Ui("cmu-colony-economy-administration-sender", "Administration"),
                 playSound: true,
                 announcementSound: sound);
         }
@@ -173,7 +174,7 @@ public sealed partial class AdminConsoleSystem : EntitySystem
 
         if (!_thirdParty.SpawnThirdParty(partyProto, spawnProto, false))
         {
-            _popup.PopupEntity("Unable to dispatch support at this time.", uid, msg.Actor);
+            _popup.PopupEntity(Ui("cmu-colony-economy-support-unavailable", "Unable to dispatch support at this time."), uid, msg.Actor);
             return;
         }
 
@@ -200,7 +201,11 @@ public sealed partial class AdminConsoleSystem : EntitySystem
         {
             if (_proto.TryIndex<ThirdPartyPrototype>(id, out var proto) &&
                 _auRound.IsThirdPartyAllowedForCurrentContext(proto))
-                thirdParties[id] = (proto.DisplayName ?? proto.ID, cost);
+                thirdParties[id] = (CMUPrototypeLocalization.GetPrototypeText(
+                    "third-party",
+                    proto.ID,
+                    "display-name",
+                    proto.DisplayName ?? proto.ID), cost);
         }
         _ui.SetUiState(uid, AdminConsoleThirdPartyUi.Key,
             new AdminConsoleThirdPartyBuiState(_colonyBudget.GetBudget(), thirdParties, comp.CalledParties));
@@ -212,5 +217,9 @@ public sealed partial class AdminConsoleSystem : EntitySystem
         while (query.MoveNext(out var uid, out var comp))
             UpdateUiState(uid, comp);
     }
-}
 
+    private string Ui(string id, string fallback, params (string, object)[] args)
+    {
+        return CMULocalization.GetTargetStringOrFallback(Loc, id, fallback, args);
+    }
+}

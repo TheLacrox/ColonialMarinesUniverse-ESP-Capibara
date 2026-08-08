@@ -1,6 +1,8 @@
 using Content.Server.Ghost.Roles.Raffles;
 using Content.Server.Mind.Commands;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Roles;
+using Robust.Shared.Localization;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server.Ghost.Roles.Components;
@@ -40,7 +42,11 @@ public sealed partial class GhostRoleComponent : Component
     [Access(typeof(GhostRoleSystem), Other = AccessPermissions.ReadWriteExecute)] // FIXME Friends
     public string RoleName
     {
-        get => Loc.GetString(_roleName);
+        get => CMUPrototypeLocalization.GetLiteralText(
+            IoCManager.Resolve<ILocalizationManager>(),
+            "GhostRole",
+            "name",
+            _roleName);
         set
         {
             _roleName = value;
@@ -52,7 +58,11 @@ public sealed partial class GhostRoleComponent : Component
     [Access(typeof(GhostRoleSystem), Other = AccessPermissions.ReadWriteExecute)] // FIXME Friends
     public string RoleDescription
     {
-        get => Loc.GetString(_roleDescription);
+        get => CMUPrototypeLocalization.GetLiteralText(
+            IoCManager.Resolve<ILocalizationManager>(),
+            "GhostRole",
+            "description",
+            _roleDescription);
         set
         {
             _roleDescription = value;
@@ -64,7 +74,11 @@ public sealed partial class GhostRoleComponent : Component
     [Access(typeof(GhostRoleSystem), Other = AccessPermissions.ReadWriteExecute)] // FIXME Friends
     public string RoleRules
     {
-        get => Loc.GetString(_roleRules);
+        get => CMUPrototypeLocalization.GetLiteralText(
+            IoCManager.Resolve<ILocalizationManager>(),
+            "GhostRole",
+            "rules",
+            _roleRules);
         set
         {
             _roleRules = value;

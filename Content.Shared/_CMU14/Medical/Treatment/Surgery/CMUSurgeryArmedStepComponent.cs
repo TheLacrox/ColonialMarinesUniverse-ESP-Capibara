@@ -1,5 +1,6 @@
 using Content.Shared.Body.Part;
 using Robust.Shared.GameStates;
+using Robust.Shared.Localization;
 
 namespace Content.Shared._CMU14.Medical.Treatment.Surgery;
 
@@ -57,6 +58,9 @@ public sealed partial class CMUSurgeryArmedStepComponent : Component
 
     [DataField, AutoNetworkedField]
     public string StepLabel = string.Empty;
+
+    [DataField, AutoNetworkedField]
+    public LocId? StepLabelLocId;
 
     [DataField, AutoPausedField, AutoNetworkedField]
     public TimeSpan ArmedAt;

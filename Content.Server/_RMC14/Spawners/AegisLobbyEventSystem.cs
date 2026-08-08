@@ -131,7 +131,7 @@ public sealed partial class AegisLobbyEventSystem : EntitySystem
         var entityManager = EntityManager;
 
         // Send announcements to both marines and xenos
-        AegisSharedAnnouncement.AnnounceToBoth(systemManager, _scheduledMessage);
+        AegisSharedAnnouncement.AnnounceToBoth(systemManager, _scheduledMessage, Loc);
 
         // Send fax to Marine High Command
         if (!SendCICFax(systemManager, entityManager, _scheduledMessage, "RMCPaperAegisLobbyInfoFax", "UNS Oberon"))

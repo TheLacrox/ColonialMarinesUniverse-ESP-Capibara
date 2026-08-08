@@ -9,6 +9,7 @@ using Content.Server.GameTicking.Presets;
 using Content.Server.Maps;
 using Content.Server.Roles;
 using Content.Server.RoundEnd;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.CCVar;
 using Content.Shared.Chat;
 using Content.Shared.Database;
@@ -610,7 +611,11 @@ namespace Content.Server.Voting.Managers
                 if(_playerManager.PlayerCount > (preset.MaxPlayers ?? int.MaxValue))
                     continue;
 #endif
-                presets[preset.ID] = preset.ModeTitle;
+                presets[preset.ID] = CMUPrototypeLocalization.GetPrototypeText(
+                    "game-preset",
+                    preset.ID,
+                    "name",
+                    preset.ModeTitle);
             }
             return presets;
         }

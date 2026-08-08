@@ -172,7 +172,7 @@ public sealed partial class CMUAutodocBui : BoundUserInterface
 
         text.AddChild(new Label
         {
-            Text = $"{entry.SurgeryDisplayName} - {entry.PartDisplayName}",
+            Text = $"{ResolveLocalizedText(entry.SurgeryDisplayNameLocId, entry.SurgeryDisplayName)} - {entry.PartDisplayName}",
             ClipText = true,
             HorizontalExpand = true,
             FontColorOverride = CMUMedicalMachineStyle.Text,
@@ -347,7 +347,7 @@ public sealed partial class CMUAutodocBui : BoundUserInterface
 
         text.AddChild(new Label
         {
-            Text = surgery.DisplayName,
+            Text = ResolveLocalizedText(surgery.DisplayNameLocId, surgery.DisplayName),
             ClipText = true,
             HorizontalExpand = true,
             FontColorOverride = CMUMedicalMachineStyle.Text,
@@ -458,6 +458,14 @@ public sealed partial class CMUAutodocBui : BoundUserInterface
             return "-";
 
         return _localization.TryGetString(text, out var localized) ? localized : text;
+    }
+
+    private string ResolveLocalizedText(LocId? localizationId, string? fallback)
+    {
+        return CMUSurgeryLocalization.Resolve(
+            _localization,
+            localizationId,
+            ResolveLabel(fallback));
     }
 }
 

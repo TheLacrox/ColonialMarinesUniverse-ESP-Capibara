@@ -1,5 +1,6 @@
 using System.Linq;
 using System.Text;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._AU14.Radio;
 using Content.Shared.Chat;
 using Content.Shared.Paper;
@@ -407,32 +408,57 @@ public sealed partial class ANPRCRadioSystem
         var sb = new StringBuilder();
 
         sb.AppendLine(interceptsOnly
-            ? "[head=2]INTERCEPT LOG[/head]"
-            : "[head=2]NET LOG[/head]");
+            ? CMULocalization.GetTargetStringOrFallback(
+                Loc,
+                "cmu-anprc-paper-intercept-log-title",
+                "[head=2]INTERCEPT LOG[/head]")
+            : CMULocalization.GetTargetStringOrFallback(
+                Loc,
+                "cmu-anprc-paper-net-log-title",
+                "[head=2]NET LOG[/head]"));
 
         var station = !string.IsNullOrEmpty(ent.Comp.Callsign)
             ? ent.Comp.Callsign
             : GetWearerCallsign(ent.Owner);
 
         if (string.IsNullOrEmpty(station))
-            station = "UNKNOWN STATION";
+            station = CMULocalization.GetTargetStringOrFallback(
+                Loc,
+                "cmu-anprc-paper-unknown-station",
+                "UNKNOWN STATION");
 
-        sb.AppendLine($"[bold]STATION:[/bold] {station}");
-        sb.AppendLine($"[bold]ENTRIES:[/bold] {entries.Count}");
+        sb.AppendLine(CMULocalization.GetTargetStringOrFallback(
+            Loc,
+            "cmu-anprc-paper-station",
+            $"[bold]STATION:[/bold] {station}",
+            ("station", station)));
+        sb.AppendLine(CMULocalization.GetTargetStringOrFallback(
+            Loc,
+            "cmu-anprc-paper-entries",
+            $"[bold]ENTRIES:[/bold] {entries.Count}",
+            ("count", entries.Count)));
         sb.AppendLine();
 
         foreach (var entry in entries)
         {
             var ts = TimeSpan.FromSeconds(entry.Timestamp);
             var time = $"{(int) ts.TotalMinutes:D2}:{ts.Seconds:D2}";
-            var marker = entry.Intercepted ? " [bold](INTERCEPT)[/bold]" : string.Empty;
+            var marker = entry.Intercepted
+                ? " " + CMULocalization.GetTargetStringOrFallback(
+                    Loc,
+                    "cmu-anprc-paper-intercept-marker",
+                    "[bold](INTERCEPT)[/bold]")
+                : string.Empty;
 
             sb.AppendLine($"[{time}] {entry.SenderName} - {entry.ChannelDisplay}{marker}");
             sb.AppendLine($"  {entry.Message}");
         }
 
         sb.AppendLine();
-        sb.Append("[italic]Transcribed from an AN/PRC-117G net log. Times are set clock, not local.[/italic]");
+        sb.Append(CMULocalization.GetTargetStringOrFallback(
+            Loc,
+            "cmu-anprc-paper-log-footer",
+            "[italic]Transcribed from an AN/PRC-117G net log. Times are set clock, not local.[/italic]"));
 
         return sb.ToString();
     }
@@ -480,7 +506,11 @@ public sealed partial class ANPRCRadioSystem
         if (TryGetRadioSlot(ent.Owner, AntennaSlotId, out var antennaSlot) &&
             TryComp(antennaSlot.Item, out ANPRCAntennaComponent? antenna))
         {
-            antennaLabel = antenna.Label;
+            antennaLabel = CMUPrototypeLocalization.GetLiteralText(
+                Loc,
+                "ANPRCAntenna",
+                "label",
+                antenna.Label);
         }
 
         _ui.SetUiState(

@@ -1,5 +1,6 @@
 <cmu:UniversalPaperToolWindow xmlns="https://spacestation14.io"
     xmlns:cmu="clr-namespace:Content.Client._CMU14.Paper"
+    xmlns:loc="clr-namespace:Content.Client._CMU14.Localizations"
     SetSize="420 520"
     MinSize="360 360">
 
@@ -12,7 +13,7 @@
             <Label Name="PaperStatusLabel" StyleClasses="LabelSubText" />
 
                         <LineEdit Name="SearchBar"
-                      PlaceHolder="Search templates..."
+                      PlaceHolder="{loc:CMULoc 'cmu-universal-paper-tool-search-placeholder', 'Search templates...'}"
                       HorizontalExpand="True" />
 
             <ScrollContainer VerticalExpand="True" HScrollEnabled="False">
@@ -22,7 +23,7 @@
             </ScrollContainer>
 
             <Button Name="ExitButton"
-                    Text="Close"
+                    Text="{loc:CMULoc 'cmu-close-button', 'Close'}"
                     HorizontalAlignment="Center" />
         </BoxContainer>
     </PanelContainer>

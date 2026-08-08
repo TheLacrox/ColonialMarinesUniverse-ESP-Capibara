@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
 using Content.Client._AU14.UI;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Maps;
 using Robust.Client.Graphics;
 using Robust.Client.ResourceManagement;
@@ -13,6 +14,7 @@ using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.CustomControls;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Localization;
 using Robust.Shared.Serialization.Markdown.Sequence;
 using Robust.Shared.Serialization.Markdown.Value;
 
@@ -32,6 +34,7 @@ public sealed class MassEntitySelectorWindow : DefaultWindow
     private const int MaxParentOptions = 150;
 
     private readonly IPrototypeManager _prototype;
+    private readonly ILocalizationManager _localization;
     private readonly LineEdit _search;
     private readonly LineEdit _parentSearch;
     private readonly OptionButton _parentDropdown;
@@ -68,6 +71,7 @@ public sealed class MassEntitySelectorWindow : DefaultWindow
     public MassEntitySelectorWindow()
     {
         _prototype = IoCManager.Resolve<IPrototypeManager>();
+        _localization = IoCManager.Resolve<ILocalizationManager>();
 
         Title = Loc.GetString("construction-mass-selector-title");
         MinSize = new Vector2(560, 680);
@@ -217,7 +221,8 @@ public sealed class MassEntitySelectorWindow : DefaultWindow
             if (tile.Abstract || tile.ID == ContentTileDefinition.SpaceID)
                 continue;
 
-            _allTiles.Add((tile.ID, tile.ID, tile.ID.ToLowerInvariant()));
+            var name = CMUPrototypeLocalization.GetTileName(_localization, tile.ID, tile.Name);
+            _allTiles.Add((tile.ID, name, $"{name} {tile.ID}".ToLowerInvariant()));
         }
 
         _allTiles.Sort((a, b) => string.Compare(a.Id, b.Id, StringComparison.InvariantCultureIgnoreCase));

@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._CMU14.Round.Objectives;
 using Content.Shared._CMU14.Threats;
 using Content.Shared._RMC14.ARES;
@@ -58,7 +59,17 @@ public sealed partial class TechSystem : EntitySystem
 
     private void OnTechAnnounce(TechAnnounceEvent ev)
     {
-        var msg = Loc.GetString("rmc-announcement-message-raw", ("author", ev.Author), ("message", ev.Message));
+        var author = CMUPrototypeLocalization.GetLiteralText(
+            Loc,
+            "TechAnnounceEvent",
+            "author",
+            ev.Author);
+        var message = CMUPrototypeLocalization.GetLiteralText(
+            Loc,
+            "TechAnnounceEvent",
+            "message",
+            ev.Message);
+        var msg = Loc.GetString("rmc-announcement-message-raw", ("author", author), ("message", message));
         _marineAnnounce.AnnounceToMarines(msg, ev.Sound, faction: ev.Team);
     }
 
@@ -192,16 +203,21 @@ public sealed partial class TechSystem : EntitySystem
 
         _intel.UpdateTree(tree);
 
+        var optionName = CMUPrototypeLocalization.GetLiteralText(
+            Loc,
+            "IntelTechTree",
+            "name",
+            option.Name);
         if (_idCard.TryFindIdCard(args.Actor, out var idCard) && TryComp(idCard, out ItemIFFComponent? idCardIFF))
         {
             foreach (var faction in idCardIFF.Factions)
             {
-                _core.CreateARESLog(faction, LogCat, (string) $"{Name(args.Actor)} purchased intel node: {option.Name}");
+                _core.CreateARESLog(faction, LogCat, (string) $"{Name(args.Actor)} purchased intel node: {optionName}");
             }
         }
         else
         {
-            _core.CreateARESLog(ent, LogCat, (string) $"{Name(args.Actor)} purchased intel node: {option.Name}");
+            _core.CreateARESLog(ent, LogCat, (string) $"{Name(args.Actor)} purchased intel node: {optionName}");
         }
     }
 

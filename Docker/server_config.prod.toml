@@ -30,7 +30,11 @@ presets = "RMC14/rmc,Capibara/capibara"
 culture_name = "es-ES"
 
 [log]
-path = "logs"        # relativo a --data-dir -> /data/logs
+# RUTA ABSOLUTA a propósito. BaseServer resuelve un log.path relativo respecto al
+# EJECUTABLE (PathHelpers.ExecutableRelativeFile), no respecto a --data-dir, así que
+# "logs" a secas acabaría en /app/logs: efímero, se pierde en cada redeploy, y además
+# /app no es escribible por el usuario ss14.
+path = "/data/logs"
 level = 1
 enabled = true
 

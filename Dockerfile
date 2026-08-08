@@ -63,10 +63,13 @@ COPY --chown=ss14:ss14 entrypoint.sh /app/entrypoint.sh
 # sed: strip any CR in case entrypoint.sh was checked out with CRLF, or the shebang
 # fails with a misleading "no such file or directory".
 # chmod: the zip format does not preserve the unix exec bit on Robust.Server.
+# chown of /app itself (not -R): COPY --chown above only owns the copied *contents*;
+# the /app directory was created by WORKDIR as root, so without this the server cannot
+# create anything inside it and dies on startup with UnauthorizedAccessException.
 RUN sed -i 's/\r$//' /app/entrypoint.sh \
  && chmod +x /app/entrypoint.sh /app/Robust.Server \
  && mkdir -p /data \
- && chown ss14:ss14 /data
+ && chown ss14:ss14 /app /data
 
 USER ss14
 

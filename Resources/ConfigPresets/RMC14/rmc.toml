@@ -56,7 +56,7 @@ advertise = true
 
 # Comma-separated list of tags, useful for categorizing your server.
 # See https://docs.spacestation14.io/hosts/hub-rules for more details on this when it becomes relevant.
-tags = "lang:en,region:am_n_e,rp:med"
+tags = "lang:es,region:am_n_e,rp:med"
 
 [ic]
 flavor_text = true
@@ -71,6 +71,9 @@ github = "https://github.com/AU-14/ColonialMarinesUniverse"
 #patreon = "https://github.com/AU-14/ColonialMarinesUniverse"
 #website = ""
 wiki = "https://cm-ss13.com/wiki/Main_Page"
+
+[loc]
+culture_name = "es-ES"
 
 [net]
 tickrate = 25

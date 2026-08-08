@@ -724,6 +724,7 @@
 - type: entity
   parent: RMCBaseWeyaWall
   id: RMCWeyaWallStandard18=
+  localizationId: ent-RMCWeyaWallStandard18 # CMU14: Fluent message IDs cannot contain '='.
   components:
   - type: Sprite
     state: 18

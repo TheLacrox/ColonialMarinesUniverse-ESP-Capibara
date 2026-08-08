@@ -81,6 +81,7 @@
   id: RMCSynthSurgeryStepMetaReattachLimb
   surgery: RMCSynthSurgeryReattachLimb
   displayName: Reattach Synth Limb
+  displayNameLocId: cmu-medical-surgery-procedure-reattach-synth-limb
   validParts: [Arm, Hand, Leg, Foot]
   allowSelfSurgery: true
   selfSurgeryValidParts: [Arm, Hand, Leg, Foot]
@@ -88,13 +89,17 @@
   steps:
   - stepId: RMCSynthSurgeryStepCutChassis
     label: Cut Chassis Open
+    labelLocId: cmu-medical-surgery-step-cut-chassis-open-label
     toolCategory: blowtorch
   - stepId: RMCSynthSurgeryStepStripWires
     label: Strip Damaged Wiring
+    labelLocId: cmu-medical-surgery-step-strip-damaged-wiring-label
     toolCategory: cable_coil
   - stepId: RMCSynthSurgeryStepReattachLimb
     label: Reattach Synth Limb
+    labelLocId: cmu-medical-surgery-step-reattach-synth-limb-label
     toolCategory: severed_limb
   - stepId: RMCSynthSurgeryStepWeldChassis
     label: Weld Chassis Shut
+    labelLocId: cmu-medical-surgery-step-weld-chassis-shut-label
     toolCategory: blowtorch

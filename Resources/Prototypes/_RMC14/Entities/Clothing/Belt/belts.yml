@@ -362,6 +362,7 @@
     count: 12
     slot:
       name: Knife
+      nameLocId: rmc-item-slot-knife
       whitelist:
         tags:
         - ThrowingKnife
@@ -1110,6 +1111,7 @@
     slots:
       pouch:
         name: M63 holster
+        nameLocId: rmc-item-slot-m63-holster
         insertSound: /Audio/_RMC14/Weapons/Guns/gun_pistol_sheathe.ogg # TODO RMC14 sounds
         ejectSound: /Audio/_RMC14/Weapons/Guns/gun_pistol_draw.ogg
         whitelist:
@@ -1753,6 +1755,7 @@
     slots:
       pouch:
         name: M63 holster
+        nameLocId: rmc-item-slot-m63-holster
         startingItem: RMCWeaponSMGM63B2
         insertSound: /Audio/_RMC14/Weapons/Guns/gun_pistol_sheathe.ogg # TODO RMC14 sounds
         ejectSound: /Audio/_RMC14/Weapons/Guns/gun_pistol_draw.ogg
@@ -2431,6 +2434,7 @@
     slots:
       item:
         name: L49 assault shotgun
+        nameLocId: rmc-item-slot-l49-assault-shotgun
         insertVerbText: sheath-insert-verb
         ejectVerbText: sheath-eject-verb
         insertSound: /Audio/_RMC14/Weapons/Guns/gun_rifle_draw.ogg

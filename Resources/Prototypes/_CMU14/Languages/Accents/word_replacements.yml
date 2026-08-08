@@ -24,6 +24,8 @@
 
 - type: accent
   id: CMChatSanitizeMarine
+  caseSensitiveReplacements:
+  - cm-chatsan-word-se
   wordReplacements:
     cm-chatsan-word-slopcade: cm-chatsan-replacement-slopcade
     cm-chatsan-word-admins-marine: cm-chatsan-replacement-admins-marine
@@ -37,10 +39,10 @@
 - type: accent
   id: CMChatSanitizeXeno
   wordReplacements:
-    cm-chatsan-word-admins-xeno: cm-chatsan-replacement-admins-xeno
+
     cm-chatsan-word-eorg-xeno: cm-chatsan-replacement-eorg-xeno
     cm-chatsan-word-sniper: cm-chatsan-replacement-sniper
-    cm-chatsan-word-m34: cm-chatsan-replacement-m34
+    cm-chatsan-word-m34: cm-chatsan-word-replacement-m34
     cm-chatsan-word-flare: cm-chatsan-replacement-flare
     cm-chatsan-word-synth: cm-chatsan-replacement-synth
     cm-chatsan-word-synthetic: cm-chatsan-replacement-synthetic
@@ -148,8 +150,7 @@
     cm-chatsan-word-cats: cm-chatsan-replacement-cats
     cm-chatsan-word-kitties: cm-chatsan-replacement-cats
     cm-chatsan-word-kittens: cm-chatsan-replacement-cats
-    cm-chatsan-word-fish: cm-chatsan-replacement-fish
-    cm-chatsan-word-carp: cm-chatsan-replacement-fish
+
     cm-chatsan-word-rat: cm-chatsan-replacement-rat
     cm-chatsan-word-mouse: cm-chatsan-replacement-rat
     cm-chatsan-word-rats: cm-chatsan-replacement-rats
@@ -225,14 +226,12 @@
     cm-chatsan-word-mcxonald: cm-chatsan-replacement-mcxonald
     cm-chatsan-word-mcxonalds: cm-chatsan-replacement-mcxonalds
     cm-chatsan-word-slop: cm-chatsan-replacement-slop
-    cm-chatsan-word-spam: cm-chatsan-replacement-spam
+
     cm-chatsan-word-god: cm-chatsan-replacement-god
     cm-chatsan-word-xod: cm-chatsan-replacement-xod
     cm-chatsan-word-jesus: cm-chatsan-replacement-jesus
     cm-chatsan-word-xesus: cm-chatsan-replacement-xesus
-    cm-chatsan-word-christ: cm-chatsan-replacement-christ
-    cm-chatsan-word-jesus-christ: cm-chatsan-replacement-christ
-    cm-chatsan-word-froot: cm-chatsan-replacement-froot
+    cm-chatsan-word-jesus-christ: cm-chatsan-replacement-jesus-christ
     cm-chatsan-word-yung: cm-chatsan-replacement-yung
     cm-chatsan-word-croosh: cm-chatsan-replacement-croosh
     cm-chatsan-word-croosher: cm-chatsan-replacement-croosher
@@ -240,10 +239,7 @@
     cm-chatsan-word-woyer: cm-chatsan-replacement-woyer
     cm-chatsan-word-sigma: cm-chatsan-replacement-sigma
     cm-chatsan-word-xigma: cm-chatsan-replacement-xigma
-    cm-chatsan-word-para: cm-chatsan-replacement-parasite
-    cm-chatsan-word-parasite: cm-chatsan-replacement-parasite
-    cm-chatsan-word-paras: cm-chatsan-replacement-parasites
-    cm-chatsan-word-parasites: cm-chatsan-replacement-parasites
+
     cm-chatsan-word-barricade: cm-chatsan-replacement-barricades
     cm-chatsan-word-cade: cm-chatsan-replacement-barricades
     cm-chatsan-word-barricades: cm-chatsan-replacement-barricades
@@ -276,42 +272,32 @@
     cm-chatsan-word-bandages: cm-chatsan-replacement-bandages
     cm-chatsan-word-baton: cm-chatsan-replacement-baton
     cm-chatsan-word-batons: cm-chatsan-replacement-batons
-    cm-chatsan-word-flashbang: cm-chatsan-replacement-flashbang
+
     cm-chatsan-word-prisoner: cm-chatsan-replacement-prisoner
     cm-chatsan-word-battery: cm-chatsan-replacement-battery
-    cm-chatsan-word-console: cm-chatsan-replacement-console
-    cm-chatsan-word-radio: cm-chatsan-replacement-console
-    cm-chatsan-word-computer: cm-chatsan-replacement-console
-    cm-chatsan-word-terminal: cm-chatsan-replacement-console
-    cm-chatsan-word-tablet: cm-chatsan-replacement-console
+
     cm-chatsan-word-generator: cm-chatsan-replacement-generator
     cm-chatsan-word-generators: cm-chatsan-replacement-generators
-    cm-chatsan-word-disk: cm-chatsan-replacement-disk
-    cm-chatsan-word-disc: cm-chatsan-replacement-disk
+
     cm-chatsan-word-flashlight: cm-chatsan-replacement-flashlight
     cm-chatsan-word-flashlights: cm-chatsan-replacement-flashlights
-    cm-chatsan-word-window: cm-chatsan-replacement-window
-    cm-chatsan-word-windows: cm-chatsan-replacement-windows
+
     cm-chatsan-word-light-bulb: cm-chatsan-replacement-light-bulb
     cm-chatsan-word-lightbulb: cm-chatsan-replacement-light-bulb
     cm-chatsan-word-light-bulbs: cm-chatsan-replacement-light-bulbs
     cm-chatsan-word-lightbulbs: cm-chatsan-replacement-light-bulbs
-    cm-chatsan-word-crate: cm-chatsan-replacement-crate
-    cm-chatsan-word-crates: cm-chatsan-replacement-crates
+
     cm-chatsan-word-gunshot: cm-chatsan-replacement-gunshot
     cm-chatsan-word-gunshots: cm-chatsan-replacement-gunshots
     cm-chatsan-word-paper: cm-chatsan-replacement-paper
     cm-chatsan-word-folder: cm-chatsan-replacement-folder
     cm-chatsan-word-papers: cm-chatsan-replacement-papers
-    cm-chatsan-word-folders: cm-chatsan-replacement-folders
-    cm-chatsan-word-zerker: cm-chatsan-word-replacement-zerker
-    cm-chatsan-word-zerkers: cm-chatsan-word-replacement-zerkers
+
     cm-chatsan-word-rav: cm-chatsan-word-replacement-rav
     cm-chatsan-word-ravs: cm-chatsan-word-replacement-ravs
     cm-chatsan-word-prae: cm-chatsan-word-replacement-prae
     cm-chatsan-word-praes: cm-chatsan-word-replacement-praes
-    cm-chatsan-word-hivey: cm-chatsan-word-replacement-hivey
-    cm-chatsan-word-hiveys: cm-chatsan-word-replacement-hiveys
+
     cm-chatsan-word-cap: cm-chatsan-word-replacement-cap
     cm-chatsan-word-caps: cm-chatsan-word-replacement-caps
     cm-chatsan-word-capped: cm-chatsan-word-replacement-capped

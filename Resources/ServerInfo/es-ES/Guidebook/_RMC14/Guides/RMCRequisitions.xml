@@ -1,0 +1,150 @@
+<Document>
+#Requisiciones
+
+[bold]Atención, técnico de Requisiciones.[/bold]
+
+Inicia las operaciones: activa la consola, levanta las persianas y ocupa tu puesto. Eres el principal eslabón logístico de la red de suministros del Cuerpo de Marines. Es tu deber garantizar la distribución puntual de todo el material, desde la munición reglamentaria hasta los explosivos de gran potencia.
+
+[bold]Ten presente[/bold] que un marine sin suministros y con el cargador vacío es un efectivo comprometido y una amenaza para la eficacia operativa. Mantén en todo momento la integridad de los suministros.
+
+##La Línea
+Te damos la bienvenida al puesto técnico de la Línea. Esta es la columna vertebral de Requisiciones: trabajo básico, ordinario y esencial. Tu tarea es sencilla: pulsa el botón, levanta la persiana y ponte manos a la obra. Es hora punta y los marines se preparan para el despliegue. No les gustan los retrasos y no van a esperar.
+
+Los marines acudirán a ti para solicitar toda clase de suministros. Mantente alerta y no dejes que sus peticiones te desborden. Comprueba siempre que el marine lleve la armadura reglamentaria antes de aprobar cualquier pedido.
+
+Tienes autorización para denegar cualquier petición excesiva, poco razonable o destinada a un solo marine sin la debida justificación. Mantén la disciplina y haz cumplir el protocolo de suministros.
+<Box>
+  <GuideEntityEmbed Entity="RMCTheLineGuideBook" Caption="La Línea"/>
+</Box>
+Tú, técnico, tienes el control. Toma asiento y ponte cómodo, pero mantente alerta. Accionas las persianas mediante el botón de control naranja. Conserva el orden y la eficiencia en todo momento.
+<Box>
+  <GuideEntityEmbed Entity="ColMarTechCargoAttachments" Caption="expendedor de accesorios"/>
+  <GuideEntityEmbed Entity="ColMarTechCargoGuns" Caption="expendedor de armamento"/>
+</Box>
+<Box>
+  <GuideEntityEmbed Entity="ColMarTechCargoAmmo" Caption="expendedor de munición"/>
+  <GuideEntityEmbed Entity="ColMarTechCargoUniform" Caption="expendedor de excedentes"/>
+</Box>
+Tienes a tu disposición cuatro expendedores de suministros: [bold]Accesorios, Armamento, Munición y Excedentes[/bold]. Úsalos con criterio para equipar a nuestras fuerzas. Se espera precisión, rapidez y disciplina.
+
+De izquierda a derecha están los expendedores de accesorios, armamento y munición. El expendedor de excedentes se encuentra justo al sur, en el almacén.
+
+- Expendedor de accesorios: contiene todos los accesorios que un marine podría necesitar. Entrégales cualquier cosa que pidan si procede de este expendedor.
+- Expendedor de armamento: contiene armamento, como armas y granadas, además de cinturones, bolsas y mochilas. Entrégales a los marines cualquier cosa razonable de este expendedor.
+- Expendedor de munición: contiene munición de todo tipo, desde la reglamentaria hasta la AP e incluso tambores ML66A. Entrégales a los marines cualquier cosa razonable.
+- Expendedor de excedentes: contiene claves de auriculares, uniformes, armaduras y cascos. Entrégales a los marines cualquier cosa que pidan de este expendedor.
+
+##Terminal ASRS
+La terminal ASRS es una de tus herramientas más importantes en Requisiciones. Te permite pedir equipo especializado y no reglamentario que rara vez está disponible a bordo del Almayer. Sin embargo, actúa con cautela: trabajas con un presupuesto limitado. No destines todos tus recursos a una sola petición.
+
+[bold]Recuerda[/bold]: eres responsable de abastecer a todos los marines. Da prioridad a la eficiencia, el equilibrio y la previsión estratégica en cada decisión.
+
+<Box>
+  <GuideEntityEmbed Entity="CMASRSConsole" Caption="consola ASRS"/>
+</Box>
+
+No obstante, técnico, consulta siempre con tu [color=#FFA500]oficial de logística[/color] antes de realizar cualquier pedido o, en su ausencia, con el miembro de mayor rango del personal de Requisiciones. Supervisar las compras, el inventario y el presupuesto es esencial para que el departamento funcione con eficacia.
+
+[bold]Recuerda[/bold]: la comunicación es fundamental. Presta atención al tráfico de radio, mantén la conciencia situacional y asegúrate de saber qué escuadra ha solicitado cada suministro.
+
+[color=#FF0000][bold]¡¡¡ADVERTENCIA!!![bold][/color] Al pedir objetos [color=#FF0000][bold]NO[/bold][/color] aparece ninguna confirmación, así que ten cuidado, [bold]LEE[/bold] bien y [bold]ASEGÚRATE[/bold] de lo que estás pidiendo para no encargar por error suministros que acabarán desperdiciados ni malgastar el presupuesto.
+
+La terminal ASRS es sencilla pero eficaz:
+<Box>
+  <GuideEntityEmbed Entity="RMCASRSinterfaceGuideBook" Caption="interfaz ASRS"/>
+</Box>
+- Posición de la plataforma: puede estar bajada o elevada. Es posible pedir suministros sin importar la posición de la plataforma, incluso mientras se mueve. Sin embargo, los cajones solo aparecerán cuando la plataforma pase de estar bajada a elevada.
+- Presupuesto de suministros: muestra el presupuesto actual. Disminuirá y aumentará automáticamente.
+- Pedir objetos: permite pedir todos los objetos y suministros. Navega con cuidado. Si te pierdes, ¡recuerda usar la barra de búsqueda!
+
+La terminal ASRS contiene muchísimos objetos, la mayoría redundantes o directamente inútiles. Solo hay una selección esencial de artículos que pedirás habitualmente:
+- Munición para especialistas en armas: munición muy especializada que solo utilizan unos pocos marines. También resulta bastante cara.
+- Munición no reglamentaria: suele ser munición muy eficaz contra objetivos de gran valor, pero también cara, como la munición AP de 10x24mm, los proyectiles de mortero o los tambores ML66A para operadores de smartgun.
+- Explosivos de gran potencia: las variantes HIDP y HEDP de las granadas de 30mm son caras, pero pueden cambiar el curso de la partida. Asegúrate de suministrárselas a los marines si es posible.
+- Materiales de ingeniería: normalmente metal, plastiacero o baterías. Se recomienda [bold]ENCARECIDAMENTE[/bold] que no los pidas salvo que sea absolutamente necesario.
+
+[bold]Recuerda[/bold] pedir siempre materiales y suministros a otros departamentos antes de encargarlos. Ingeniería, por ejemplo, puede proporcionarte metal y baterías sin que tengas que gastar presupuesto. ¡Qué práctico!
+
+##El Foso
+Mantente alerta, técnico. Mira por dónde pisas si no quieres acabar como otro nombre más en la lista. Elimina de inmediato cualquier peligro y aléjate de la barandilla. Este es [bold]el Foso[/bold].
+
+Todos los objetos solicitados mediante la terminal ASRS o un envío de ARES se entregarán aquí. En esta estación pueden venderse cajones y devolverse facturas.
+
+[bold]Estámpalo todo. Sin excepciones.[/bold]
+<Box>
+  <GuideEntityEmbed Entity="RMCPitRasedGuideBook" Caption="Foso (elevado)"/>
+  <GuideEntityEmbed Entity="RMCPitLowerdGuideBook" Caption="Foso (bajado)"/>
+</Box>
+Mantente alerta cerca del Foso. Cuando desciende, se convierte en el mayor peligro de toda tu zona de trabajo. Si te duermes en el puesto, quizá no vuelvas a despertar.
+
+Como ya se ha indicado, los cajones se entregan con facturas. Retíralas. Estámpalas. Cobra el pago. A todo el mundo le gusta el dinero gratis, pero esto no es caridad. No hace falta que la factura esté unida al cajón para tramitarla; puede estar suelta. Lo importante es que [bold]no[/bold] la pierdas.
+<Box>
+ <GuideEntityEmbed Entity="RMCGuidebookPaperRequisitionsWritten" Caption="Una factura en blanco que no vale nada"/>
+ <GuideEntityEmbed Entity="CMStampApproved" Caption="Un sello de aprobación"/>
+ <GuideEntityEmbed Entity="RMCGuidebookPaperRequisitionsStamped" Caption="Una factura aprobada"/>
+ </Box>
+Escucha, técnico. Los cajones son uno de tus recursos más importantes; no lo olvides. Pueden venderse por un importe fijo, pero, sobre todo, se usan para entregar suministros. Mantén siempre unas existencias abundantes.
+
+Muestra cierto respeto por Ingeniería: si lo pides como es debido, pueden enviarte cajones desde distintos puntos del Almayer. Conserva una buena relación con ellos.
+
+Es posible fabricar cajones de madera con tablones, pero recuerda que no tienen valor de reventa. Su única finalidad es servir para las entregas de suministros. Úsalos en consecuencia.
+<Box>
+  <GuideEntityEmbed Entity="RMCCrateBase" Caption="Cajón metálico"/>
+</Box>
+##Entregas de suministros
+Bien, técnico, la hora punta de la mañana ha terminado, pero nuestro trabajo no. Es hora de preparar suministros para enviarlos al planeta: los marines se quedan enseguida sin balas y tenemos que abastecerlos. Prepara cuatro cajones y coloca cada uno en la plataforma de entrega de su escuadra.
+<Box>
+  <GuideEntityEmbed Entity="RMCSupplyDropPadsGuideBook" Caption="plataformas de suministros"/>
+</Box>
+Tienes cinco plataformas de entrega, técnico, pero escucha bien: utilizarás cuatro de ellas con regularidad.
+
+De izquierda a derecha se ordenan alfabéticamente: [color=#FF0000][bold]Alpha[/bold][/color], [color=#FFEF00][bold]Bravo[/bold][/color], [color=#800080][bold]Charlie[/bold][/color] y [color=#000080][bold]Delta[/bold][/color]. Son tus recursos principales, las plataformas ordinarias de las escuadras. Conócelas. Úsalas. Prepara bien sus cajones.
+
+La quinta plataforma es [color=#32CD32][bold]Echo[/bold][/color]. Es distinta: está reservada exclusivamente para entregas de emergencia, reabastecimientos prioritarios, equipo esencial y rescates de última hora. No la toques salvo que te lo ordenen.
+
+Usar mal Echo es una buena forma de disgustar enseguida a los marines y al CIC. Ponte manos a la obra y mantén abastecidas a las escuadras.
+
+El CIC controla los cuatro cajones de las escuadras. Solo ellos pueden autorizar una entrega en el planeta. Tu trabajo consiste en llenarlos bien y sellarlos. Si el cajón está abierto, no irá a ninguna parte.
+
+La plataforma Echo es distinta. Está bajo el control de Requisiciones, es decir, bajo tu control. Lanzarás la entrega desde la consola situada justo encima de la plataforma. Pero atención: las entregas de Echo necesitan coordenadas exactas de longitud y latitud. Un marine sobre el terreno te dará esas cifras. Sin coordenadas no hay entrega. No improvises.
+
+[bold]Llénalo. Séllalo. Termina el trabajo.[/bold]
+
+Los marines pueden solicitar toda clase de suministros, pero algunos deben incluirse siempre, sin importar lo que pidan. Estas son las dotaciones habituales, el mínimo imprescindible para que las escuadras conserven su eficacia de combate y sigan respirando.
+
+- Munición: las balas que necesita un marine para seguir luchando. Ejemplos: M54C estándar, M4SPR estándar, cartuchos de escopeta con postas, tambor de smartgun ML66A, etcétera.
+- Medicina: los primeros auxilios necesarios para que un marine siga adelante sobre el terreno. Ejemplos: gasas, pomada, recipientes presurizados, desfibriladores, etcétera.
+- Utilidad: las herramientas y el equipo que necesitan los marines para seguir siendo eficaces. Ejemplos: paquete de bengalas M-94, paquete de bengalas de señalización M-89S, detector de movimiento, designador láser, telémetro, etcétera.
+- Varios: cualquier otra cosa que solicite un marine y no figure arriba. Ejemplos: cascos, accesorios, raciones MRE, etcétera.
+
+##Empaquetado básico
+La Línea está asegurada. Los cajones están preparados. Los suministros se agotan. Es hora de moverse, técnico. El cartón está en el almacén sur, donde también se encuentra el expendedor de excedentes. Ve a buscarlo y empieza a fabricar cajas de munición.
+
+Requisiciones se ha quedado sin existencias y los expendedores están vacíos. Es hora de trasladarse a la sala de preparación de las escuadras, tu nueva estación para empaquetar munición. Escucha, técnico: no puedes utilizar los expendedores de munición de los marines. El [color=#FFA500]oficial de logística[/color] tendrá que entregarte todos los suministros de empaquetado. Procede en consecuencia.
+<Box>
+  <GuideEntityEmbed Entity="ColMarTechEquipment" Caption="estante de armas"/>
+</Box>
+Ya tenemos la munición; empecemos a empaquetarla, técnico. Vamos a preparar una caja. Pulsa ([color=yellow][keybind="g"][/color]) para abrir el menú de construcción y usa la barra de búsqueda para encontrar las cajas que vas a fabricar. Prepararás tres cajas básicas: M54C, SPR y M63. Pulsa ([color=yellow][keybind="z"][/color]) para colocarla, ábrela y usa ([color=yellow][keybind="alt left click"][/color]) para recogerla. A continuación, basta con usar ([color=yellow][keybind="left click"][/color]) sobre las cajas mientras sostienes un cargador para llenarlas.
+<Box>
+  <GuideEntityEmbed Entity="RMCBoxMagazineRifleM54C" Caption="M54C estándar"/>
+  <GuideEntityEmbed Entity="RMCBoxMagazineRifleM4SPR" Caption="M4SPR estándar"/>
+  <GuideEntityEmbed Entity="RMCBoxMagazineSMGM63" Caption="M63 estándar"/>
+</Box>
+Mantén en todo momento unas existencias constantes de munición reglamentaria. Sin excusas ni presupuesto malgastado. Los suministros ordinarios son esenciales para la misión. Asegúrate de que las reservas estén llenas y preparadas para desplegarlas entre los marines del planeta. Recuerda, técnico: eres un activo imprescindible para Requisiciones. Mantén esos cajones bien apilados y no dejes de prepararlos.
+
+##Técnico de Requisiciones
+Técnico de Requisiciones, eres la columna vertebral del departamento; no lo olvides nunca. Si subestimas tu función, todo el sistema empieza a venirse abajo. Sin ti, la logística se paraliza. Mantente alerta. Hazte imprescindible.
+<Box>
+  <GuideEntityEmbed Entity="RMCCargotechGuideBook" Caption="símbolo del técnico de Requisiciones"/>
+</Box>
+Como técnico de Requisiciones, respondes directamente ante el [color=#FFA500]oficial de logística[/color]. Sus órdenes son tu misión. Ejecútalas con rapidez para que el departamento siga abastecido y operativo. Comienzas con el rango E1, el punto de partida. Gánate los galones con disciplina y empuje. Asciende a E2 y después a E3. Mantente centrado. Sé tenaz. No te desvíes del rumbo, técnico.
+
+Puede que los marines tengan un rango superior al tuyo sobre el papel, pero el rango no equivale a autoridad dentro de Requisiciones. Tú tienes la potestad de aprobar o denegar sus solicitudes. Solo el [color=#FFA500]oficial de logística[/color] o el [color=#008000]comandante[/color] pueden anular tu decisión. No te dejes intimidar ni presionar. Mantente firme, técnico. Defiende la Línea.
+
+##Oficial de logística
+El [color=#FFA500]oficial de logística[/color] ocupa la cima de la cadena de mando de Requisiciones y es tu superior directo. Dirige todos los aspectos de las operaciones logísticas, de suministros y de carga. Ningún cajón se mueve sin su aprobación. Autoriza o deniega todo lo que considere necesario. Su palabra prevalece, dentro de lo razonable. Solo el [color=#008000]comandante[/color] del Almayer tiene autoridad sobre él. Ni siquiera un oficial de mayor rango puede invalidar las órdenes del [color=#FFA500]oficial de logística[/color] en asuntos de Requisiciones. Conoce la jerarquía. Respeta la cadena de mando.
+<Box>
+  <GuideEntityEmbed Entity="RMCLogisticsofficerGuideBook" Caption="símbolo del oficial de logística"/>
+</Box>
+El [color=#FFA500]oficial de logística[/color] comienza con el rango O1. Con tesón y buen desempeño, asciende a O2. Carga con el peso de Requisiciones y dirige todo su poder operativo. El [color=#FFA500]oficial de logística[/color] responde ante el [color=#008000]comandante[/color]. Solo el [color=#008000]comandante[/color] del Almayer puede darle órdenes. Pero recuerda que el [color=#FFA500]oficial de logística[/color] [bold]solo[/bold] tiene autoridad directa dentro de Requisiciones.
+</Document>

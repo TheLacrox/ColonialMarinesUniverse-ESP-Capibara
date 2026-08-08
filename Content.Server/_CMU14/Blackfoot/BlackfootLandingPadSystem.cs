@@ -1,5 +1,6 @@
 using System.Numerics;
 using Content.Shared._CMU14.Blackfoot;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Interaction;
 using Content.Shared.Maps;
 using Content.Shared.Physics;
@@ -63,7 +64,11 @@ public sealed partial class BlackfootLandingPadSystem : EntitySystem
             return;
 
         args.Handled = true;
-        _popup.PopupEntity("Use tools to pack the Blackfoot landing pad.", ent, args.User, PopupType.SmallCaution);
+        _popup.PopupEntity(
+            Ui("cmu-blackfoot-landing-pad-pack-tools", "Use tools to pack the Blackfoot landing pad."),
+            ent,
+            args.User,
+            PopupType.SmallCaution);
     }
 
     private void OnPadShutdown(Entity<BlackfootLandingPadComponent> ent, ref ComponentShutdown args)
@@ -78,7 +83,11 @@ public sealed partial class BlackfootLandingPadSystem : EntitySystem
 
         if (!TryGetPad(ent, out var pad))
         {
-            _popup.PopupEntity("No deployed Blackfoot landing pad is linked.", ent, args.User, PopupType.SmallCaution);
+            _popup.PopupEntity(
+                Ui("cmu-blackfoot-landing-pad-not-linked", "No deployed Blackfoot landing pad is linked."),
+                ent,
+                args.User,
+                PopupType.SmallCaution);
             return;
         }
 
@@ -86,7 +95,11 @@ public sealed partial class BlackfootLandingPadSystem : EntitySystem
 
         if (pad.Comp.ParkedAircraft == null)
         {
-            _popup.PopupEntity("No Blackfoot is parked on the landing pad.", ent, args.User, PopupType.SmallCaution);
+            _popup.PopupEntity(
+                Ui("cmu-blackfoot-landing-pad-aircraft-not-parked", "No Blackfoot is parked on the landing pad."),
+                ent,
+                args.User,
+                PopupType.SmallCaution);
             return;
         }
 
@@ -99,9 +112,9 @@ public sealed partial class BlackfootLandingPadSystem : EntitySystem
 
         var message = enabled
             ? pad.Comp.Refueling
-                ? "Blackfoot refuel and recharge cycle started."
-                : "No linked fuel pump found; Blackfoot recharge cycle started."
-            : "Blackfoot refuel and recharge cycle stopped.";
+                ? Ui("cmu-blackfoot-landing-pad-cycle-started", "Blackfoot refuel and recharge cycle started.")
+                : Ui("cmu-blackfoot-landing-pad-recharge-started-no-pump", "No linked fuel pump found; Blackfoot recharge cycle started.")
+            : Ui("cmu-blackfoot-landing-pad-cycle-stopped", "Blackfoot refuel and recharge cycle stopped.");
 
         _popup.PopupEntity(message, ent, args.User);
     }
@@ -311,7 +324,7 @@ public sealed partial class BlackfootLandingPadSystem : EntitySystem
             !TryComp(mapUid, out MapGridComponent? grid) ||
             !_map.TryGetTileRef(mapUid, grid, _transform.GetWorldPosition(pad.Owner), out var centerTile))
         {
-            reason = "The landing pad must be deployed on valid ground.";
+            reason = Ui("cmu-blackfoot-landing-pad-valid-ground", "The landing pad must be deployed on valid ground.");
             return false;
         }
 
@@ -327,7 +340,7 @@ public sealed partial class BlackfootLandingPadSystem : EntitySystem
                     tileRef.Tile.IsEmpty ||
                     _turf.IsTileBlocked(tileRef, PadBlockMask))
                 {
-                    reason = "The landing pad needs a clear 3x3 deployment area.";
+                    reason = Ui("cmu-blackfoot-landing-pad-clear-area", "The landing pad needs a clear 3x3 deployment area.");
                     return false;
                 }
             }
@@ -601,5 +614,10 @@ public sealed partial class BlackfootLandingPadSystem : EntitySystem
 
             PushComputerState((uid, computer), pad);
         }
+    }
+
+    private string Ui(string id, string fallback)
+    {
+        return CMULocalization.GetTargetStringOrFallback(Loc, id, fallback);
     }
 }

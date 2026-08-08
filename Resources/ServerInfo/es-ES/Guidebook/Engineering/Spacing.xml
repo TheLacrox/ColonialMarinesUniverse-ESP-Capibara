@@ -1,0 +1,23 @@
+﻿<Document>
+  # Despresurización
+  La despresurización es el incidente atmosférico más común que puede producirse en la estación.
+
+  Aunque reparar los daños que la provocaron suele llevar bastante tiempo, el problema de la despresurización se puede resolver rápidamente con solo volver a presurizar la zona tras [textlink="repararlos" link="ExpandingRepairingStation"].
+
+  Resolver una despresurización suele constar de dos pasos sencillos:
+
+  1. Identifica la zona despresurizada y [textlink="sella la brecha." link="ExpandingRepairingStation"]
+
+  - Si te cuesta encontrar la brecha, escucha con atención el sonido del aire al pasar junto a ti, si todavía se está escapando al espacio.
+  - Busca agujeros bajo las vigas que puedan ser difíciles de ver.
+
+  2. Vuelve a presurizar la zona.
+
+  - Las [textlink="rejillas de ventilación" link="AirVent"] activan el bloqueo por presión para no perder más aire durante una despresurización, así que tendrás que anularlas para volver a presurizar la zona. Puedes hacerlo poniendo la [textlink="alarma atmosférica" link="AirAlarms"] conectada en modo Llenado o haciendo clic derecho en la rejilla y seleccionando 'Desactivar bloqueo por presión' para anularlo temporalmente de forma manual.
+
+  ## Qué evitar
+  - Ten en cuenta que, aunque dispones de un suministro infinito de [textlink="gas extraído" link="GasMiningAndStorage"], no llega con suficiente rapidez para llenar varias salas a la vez. Poner las [textlink="alarmas atmosféricas" link="AirAlarms"] en modo Llenado [italic]antes[/italic] de solucionar la causa del problema suele hacerte perder tiempo y gas.
+
+  - Dejar [textlink="alarmas atmosféricas" link="AirAlarms"] en modo Llenado sin supervisión puede sobrepresurizar una sala y llegar a dañar a la tripulación si la situación se descontrola.
+
+</Document>

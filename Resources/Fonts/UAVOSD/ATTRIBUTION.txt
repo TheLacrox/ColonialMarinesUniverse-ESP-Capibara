@@ -2,3 +2,22 @@ UAV OSD Sans Mono
 Designer: Nicholas Kruse
 Source: https://www.dafont.com/uav-osd-sans.font
 License note from source: 100% free; author note says free for personal or commercial use.
+
+Modified for CMU-14 (es-ES support).
+The upstream font maps only ASCII 32-126, so every Spanish character fell through
+to the NotoSans fallback in StyleNano's uavOsdStack and rendered visibly smaller
+and lowercase next to the all-caps OSD glyphs.
+
+Added 18 glyphs, composed from the existing outlines rather than drawn from
+scratch, so the OSD style is preserved:
+
+  ÁÉÍÓÚ áéíóú   base letter + acute mark
+  Ü ü           base letter + dieresis
+  Ñ ñ           base letter + square tilde
+  ¡ ¿           exclam / question rotated 180 degrees
+  « »           two narrowed copies of less / greater
+
+The letters are NOT compressed to make room: in an all-caps face a shortened
+capital reads as a lowercase letter, which is the very defect being fixed. The
+accents sit above the em box instead, and hhea.ascent / OS/2 usWinAscent /
+OS/2 sTypoAscender were raised from 4096 to 5100 so they are not clipped.

@@ -1,0 +1,950 @@
+<Document>
+  # Ley espacial: lista de delitos
+  Los códigos de delito se colorean según los grupos de delitos vinculados, que reúnen delitos no acumulables. La guía rápida de delitos también incluye sufijos para identificar los delitos vinculados.
+
+  ## Guía rápida de delitos
+  <Table Columns="6">
+    <ColorBox>
+      <Box>
+        1-XX - Leves
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        2-XX - Moderados
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        3-XX - Graves
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        4-XX - Extremos
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        5-XX - Capitales
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Código
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Crueldad animal
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#593a4e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Desobediencia (E)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#593a4e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Quebrantamiento del arresto (E)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#593a4e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Quebrantamiento de custodia (E)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#593a4e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Quebrantamiento del confinamiento permanente (E)
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        00
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#2f3832">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Posesión: menor (P)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#2f3832">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Posesión: mayor (P)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#2f3832">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Posesión: Sindicato (P)
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        01
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#2e422e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Hurto menor (H)
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#2e422e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Hurto mayor (H)
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Secuestro
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        02
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#453a59">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Vandalismo (D)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#453a59">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Daños a la propiedad (D)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#453a59">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Destrucción masiva (D)
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#453a59">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Destrucción total de la estación (D)
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        03
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#59563a">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Intrusión (T)
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#59563a">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Intrusión en zona segura (T)
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        04
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#4d2e2e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Puesta en peligro (V)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#4d2e2e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Agresión (V)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#4d2e2e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Tentativa de asesinato (V)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#4d2e2e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Impedimento de la reanimación (V)
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        05
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#4d2e2e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Homicidio involuntario (V)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#4d2e2e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Asesinato (V)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#4d2e2e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Asesinato múltiple (V)
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        06
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#3b4354">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Alteración del orden (R)
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#3b4354">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Motín (R)
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#3b4354">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Negativa al blindaje mental (R)
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        07
+      </Box>
+    </ColorBox>
+  </Table>
+
+  ## Delitos leves
+  - En la primera infracción debería bastar con una advertencia.
+  - Si se han cometido varios delitos leves o se trata de una reincidencia, el máximo es de 5 minutos por cada delito leve.
+  <Table Columns="4">
+    <ColorBox>
+      <Box>
+        Delito
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Descripción
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Notas
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Código
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Crueldad animal
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Infligir sufrimiento o daño innecesarios a un ser no sapiente con intención maliciosa.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Esto no incluye las pruebas legítimas y autorizadas con animales y, por lo general, tampoco se aplica a alimañas o criaturas
+        que puedan suponer una amenaza para la estación.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        1-00
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Posesión/uso de contrabando menor
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Fabricar, poseer o usar contrabando menor sin autorización.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        El capitán o el jefe de seguridad pueden autorizar el uso individual de contrabando menor. Todo contrabando restringido a un departamento que no sea Mando o Seguridad se considera contrabando menor, salvo que se indique lo contrario.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        1-01
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Hurto menor
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Apoderarse sin consentimiento de bienes que no sean vitales ni costosos y pertenezcan a otra persona, organización
+        o al conjunto de la tripulación.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        La diferencia entre el hurto menor y el hurto mayor depende de lo esencial que sea el objeto sustraído. Los objetos como
+        instrumentos, prendas y herramientas se consideran hurto menor. En la mayoría de los casos basta con detener al ladrón,
+        devolver el objeto robado y dejarle marchar con una advertencia.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        1-02
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Vandalismo
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Desfigurar o causar daños superficiales de forma intencionada a bienes públicos o privados.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Pintar grafitis, romper vasos del bar y agrietar ventanas interiores es vandalismo; romper una ventana que dé al
+        espacio o a una zona segura no lo es.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        1-03
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Intrusión
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Entrar sin permiso en una zona no protegida.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Lo mejor es limitarse a expulsar a la persona de la zona, salvo que sea reincidente.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        1-04
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Alteración del orden
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Provocar una alteración del orden público.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        A veces se denomina gamberrismo. Es la categoría genérica para tripulantes molestos. Abarca conductas como la desnudez
+        pública, los insultos gratuitos, la obstrucción a las autoridades y la incitación al delito o a la violencia.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        1-07
+      </Box>
+    </ColorBox>
+  </Table>
+
+  ## Delitos moderados
+  - La condena máxima por cada delito moderado es de 5 minutos.
+  - Según las circunstancias, puede ser preferible dar una advertencia en lugar de detener a la persona.
+  <Table Columns="4">
+    <ColorBox>
+      <Box>
+        Delito
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Descripción
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Notas
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Código
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Desobediencia
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Oponerse a órdenes razonables impartidas por una autoridad. Esto también se aplica a los registros autorizados.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        La orden debe ser razonable y la persona debe haber recibido suficientes advertencias antes de que se dicte
+        el arresto.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        2-00
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Posesión/uso de contrabando mayor
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Fabricar, poseer o usar contrabando mayor sin autorización.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        El capitán puede autorizar el uso individual de contrabando mayor. Todo contrabando restringido a Mando o Seguridad se considera contrabando mayor, salvo que se indique lo contrario.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        2-01
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Daños/destrucción de la propiedad
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Dañar o desfigurar maliciosamente bienes o equipos públicos o privados.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Incluye destruir equipamiento de un puesto, como bandejas de cultivo, dispensadores de bebidas o dispensadores químicos. Es un grado superior al
+        vandalismo, pero inferior a la destrucción masiva.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        2-03
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Puesta en peligro
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Ponerse a uno mismo o a otras personas en peligro de forma temeraria, ya sea por acción directa o por omisión.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Abarca accidentes industriales, negligencia industrial, experimentación con uno mismo e incluso negligencia médica.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        2-05
+      </Box>
+    </ColorBox>
+  </Table>
+
+  ## Delitos graves
+  - La condena máxima por cada delito grave es de 10 minutos.
+  - La agresión y el homicidio involuntario son delitos vinculados y no pueden acumularse contra una misma persona sospechosa.
+  - Se recomienda no imponer la condena máxima a quien coopere.
+  <Table Columns="4">
+    <ColorBox>
+      <Box>
+        Delito
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Descripción
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Notas
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Código
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Quebrantamiento del arresto
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Oponer resistencia intencionadamente y huir de un arresto o detención practicados por personal autorizado.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Solo se aplica cuando alguien está siendo arrestado físicamente en ese momento. Quien quite las esposas a otra persona o le ayude a eludir
+        un arresto también puede recibir este cargo. El quebrantamiento de custodia es un delito distinto.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        3-00
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Posesión/uso de contrabando del Sindicato
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Fabricar, poseer o usar contrabando del Sindicato.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        El contrabando del Sindicato solo puede utilizarse en emergencias y únicamente para evitar la muerte o lesiones físicas graves.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        3-01
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Hurto mayor
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Apoderarse sin consentimiento de bienes críticos o irremplazables de otra persona u organización.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        La diferencia entre el hurto menor y el hurto mayor depende de lo esencial que sea el objeto sustraído; se aplica sobre todo
+        al robo de objetos del personal de mando, como mandos de puertas, trajes presurizados, mochilas propulsoras y piezas
+        irremplazables de maquinaria.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        3-02
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Destrucción masiva
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Causar daños masivos a una zona o a un sistema principal de la estación.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Se aplica sobre todo a atentados mortales con explosivos o al sabotaje de sistemas principales de la estación, como la producción eléctrica,
+        química, las subestaciones o los sistemas atmosféricos.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        3-03
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Intrusión en zona segura
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Entrar sin permiso en una zona protegida.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Abarca lugares como telecomunicaciones, despachos de jefatura, zonas de Seguridad, áreas de Mando, la cámara acorazada y la armería.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        3-04
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Amenaza/agresión
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Amenazar con usar o usar fuerza física contra alguien sin intención de matarlo.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        La tentativa de asesinato y la agresión son delitos distintos; una pelea a puñetazos será, con toda probabilidad, una agresión. Un tiroteo será, con toda probabilidad,
+        una tentativa de asesinato.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        3-05
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Homicidio involuntario
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Matar accidentalmente a una persona sin intención de hacerlo.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Incluye el homicidio involuntario en defensa propia y el homicidio por negligencia.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        3-06
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Motín
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Participar en un grupo numeroso de personal que provoque una alteración ilícita del orden público.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Es habitual añadir a este cargo otros delitos, como daños a la propiedad o agresión. Quienes lideren un motín pueden recibir cargos por todos los delitos cometidos bajo su dirección.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        3-07
+      </Box>
+    </ColorBox>
+  </Table>
+
+  ## Delitos extremos
+  - La condena máxima por cada delito extremo es de 15 minutos.
+  - Los delincuentes especialmente violentos pueden ser enviados a confinamiento permanente. (Atacar a agentes al intentar escapar de prisión)
+  - La tentativa de asesinato y el asesinato son delitos vinculados y no pueden acumularse.
+  - Quien cometa una tentativa de asesinato debería recibir una condena más leve que quien consume el asesinato.
+  <Table Columns="4">
+    <ColorBox>
+      <Box>
+        Delito
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Descripción
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Notas
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Código
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Quebrantamiento de custodia
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Escapar de una celda o de la custodia con intención de huir.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Incluye facilitar la fuga de otras personas.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        4-00
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Secuestro
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Retener, transportar, controlar o confinar ilegalmente a una persona contra su voluntad.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Abarca una gran variedad de conductas y se usa sobre todo como categoría genérica para el control ilícito de otro ser.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        4-02
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Tentativa de asesinato
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Intentar usar fuerza física contra alguien con la clara intención de matarlo.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Asegúrate de contar con pruebas que respalden la intención alegada, como demostrar que se usó un arma letal.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        4-05
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Asesinato
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Matar a una persona con intención maliciosa.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Solo pasa de tentativa a asesinato consumado si la víctima llega a fallecer y debe ser resucitada.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        4-06
+      </Box>
+    </ColorBox>
+  </Table>
+
+  ## Delitos capitales
+  - Los delitos capitales deberían conllevar normalmente una condena a muerte o una detención que dure todo el turno.
+  <Table Columns="4">
+    <ColorBox>
+      <Box>
+        Delito
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Descripción
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Notas
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Código
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Quebrantamiento del confinamiento permanente
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Ayudar a escapar de una celda o de la custodia, con intención de huir, a una persona condenada a confinamiento permanente.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Incluye facilitar la fuga de otras personas condenadas a confinamiento permanente.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        5-00
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Destrucción total de la estación
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Realizar actos destructivos maliciosos que amenacen con destruir, o lleguen a destruir, una nave o hábitat.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        En resumen: sabotaje extremo de los sistemas de la estación o activación de los sistemas de autodestrucción. Incluye cualquier medio que vuelva inhabitable toda la estación, como un sabotaje atmosférico generalizado.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        5-03
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Impedimento de la reanimación
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Dejar un cuerpo en un estado que impida resucitarlo.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Abarca descuartizarlo, expulsarlo al espacio, ocultarlo intencionadamente u otros medios de impedir que resucite un cuerpo con alma.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        5-05
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Asesinato múltiple
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Matar a tres o más personas con intención maliciosa.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Solo se aplica cuando ha habido varios asesinatos intencionados.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        5-06
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Negativa al blindaje mental
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Negarse a cumplir un procedimiento razonable de blindaje mental.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Se aplica si la persona sospechosa se niega de forma excesiva a cooperar o si el implante no funciona porque el estado mental de la persona presa ya está demasiado deteriorado. Si el implante falla, se recomienda encarecidamente la ejecución.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        5-07
+      </Box>
+    </ColorBox>
+  </Table>
+</Document>

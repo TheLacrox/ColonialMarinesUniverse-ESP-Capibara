@@ -1,0 +1,2 @@
+nuke-ops-no-more-threat-announcement-shuttle-call = Según los datos de nuestros sensores de largo alcance, la amenaza nuclear ha sido eliminada. Llamaremos al transbordador de emergencia, que llegará en breve. Tiempo estimado: {$time} {$units}. Puedes cancelar el transbordador para prolongar el turno.
+nuke-ops-no-more-threat-announcement = Según los datos de nuestros sensores de largo alcance, la amenaza nuclear ha sido eliminada. Ya se ha llamado al transbordador.

@@ -1,0 +1,48 @@
+﻿<Document>
+# Bombas
+  Las bombas son el medio principal para desplazar activamente gases por una [textlink="red de tuberías." link="PipeNetworks"]
+  Toman gas de un lado y lo empujan hacia el otro.
+  Hay dos tipos distintos de bombas:
+
+  <Box>
+    <GuideEntityEmbed Entity="GasPressurePump" Caption="bomba de presión"/>
+    <GuideEntityEmbed Entity="GasVolumePump" Caption="bomba volumétrica"/>
+  </Box>
+
+  Algunos aspectos importantes sobre las bombas:
+  - Las bombas [color=#a4885c]necesitan energía[/color] de un cable LV cercano para funcionar.
+  - Las bombas expulsan el gas por el lado de la franja roja.
+  - El gas no puede retroceder por las bombas (aunque, si utilizas una bomba solo para esto, deberías usar una [textlink="válvula pasiva" link="PassiveGate"] en su lugar).
+  - Las bombas no pueden introducir gases en tuberías cuyas presiones o volúmenes superen su [color=#a4885c]límite[/color]. Esto hace que queden [color=red]bloqueadas[/color].
+
+  Las bombas muestran una animación de colores cuando están funcionando.
+  Si no tienen gas que bombear o están bloqueadas, mostrarán una animación [color=red]roja[/color] intermitente.
+  Las bombas apagadas, sin energía o desancladas no mostrarán ninguna animación.
+
+  ## Bombas de presión
+  Las bombas de presión son el tipo más habitual.
+  Desplazan gas en función de la [color=#a4885c]presión[/color], por lo que resultan útiles para controlar la presión exacta de una tubería o generar vacío.
+
+  <Box>
+    <GuideEntityEmbed Entity="GasPressurePump" Caption="bomba de presión"/>
+  </Box>
+
+  Una bomba de presión [color=red]no puede[/color] desplazar gas hacia una tubería cuya presión sea igual o superior a la establecida en la bomba.
+
+  Por ejemplo, una bomba de presión no puede bombear gas a una tubería que esté a 500 kPa si la bomba está ajustada a 500 kPa.
+
+  Las bombas de presión pueden bombear hasta una presión máxima de [color=orange][protodata="GasPressurePump" comp="GasPressurePump" member="MaxTargetPressure"/] kPa[/color].
+  Quedarán [color=red]bloqueadas[/color] si intentan introducir gas en una tubería que supere esta presión.
+
+  ## Bombas volumétricas
+  Las bombas volumétricas son una alternativa que desplaza gas en función del [color=#a4885c]volumen[/color].
+
+  <Box>
+    <GuideEntityEmbed Entity="GasVolumePump" Caption="bomba volumétrica"/>
+  </Box>
+
+  Resultan muy útiles para desplazar rápidamente grandes cantidades de gas.
+  Por lo general, pueden alcanzar presiones superiores a las de una bomba de presión.
+
+  Aunque las bombas volumétricas funcionan según el principio del volumen, quedarán [color=red]bloqueadas[/color] si intentan introducir gas en una tubería que supere [color=orange][protodata="GasVolumePump" comp="GasVolumePump" member="HigherThreshold"/] kPa[/color].
+</Document>

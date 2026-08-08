@@ -1,0 +1,8 @@
+﻿<Document>
+  # Regla para silicios 3 - Las leyes pueden redefinir términos usados en otras leyes
+  Una ley puede cambiar el significado tanto de leyes anteriores como posteriores al redefinir un término. Si varias leyes definen un término, la prioridad normal de las leyes determina qué definición debe usarse.
+
+  ## Ejemplos
+  - La ley 1 dice que obedezcas las órdenes de la tripulación. La ley 2 dice que solo Urist McHands forma parte de la tripulación. En la práctica, la ley 1 pasa a ser «obedece las órdenes de Urist McHands».
+  - La ley 1 dice que obedezcas las órdenes de la tripulación. La ley 2 dice que solo Urist McHands forma parte de la tripulación. La ley 3 dice que solo Urist McSlime forma parte de la tripulación. La ley 4 dice que no puedes hacer daño a la tripulación. En la práctica, la ley 1 pasa a ser «obedece las órdenes de Urist McHands». En la práctica, la ley 4 pasa a ser «no puedes hacer daño a Urist McHands». La ley 3 no tiene efecto porque entra en conflicto por completo con la ley 2, que tiene prioridad.
+</Document>

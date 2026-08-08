@@ -1,0 +1,47 @@
+<Document>
+  Guía de Kynthos en Discord
+
+  [color=#5f698a]█    █ █▄ █[/color] [head=2][bold]UNITED NATIONS MARINE CORPS[/bold][/head]\n
+  [color=#5f698a]▀ ▄▀ █ ▀█ [/color]
+
+  #Telecomunicaciones y torres de sensores
+
+  En la colonia hay torres fijas que los marines deberán reparar para reforzar sus capacidades de comunicación y obtención de información. Son objetivos vitales que deben repararse y protegerse para mantenerlos operativos. Para reparar este equipo esencial se necesita formación específica. Solo los ingenieros destinados a ello, los [textlink="técnicos de combate" link="RMCGuideRoleCombatTechnician"] o los líderes de equipo de fuego cuentan con esa formación.
+
+  ##Torres de telecomunicaciones
+
+  La comunicación por radio entre los marines del planeta y el personal a bordo del Almayer no puede establecerse hasta que se repare una de las dos torres estáticas de telecomunicaciones TC-3T de la colonia para reforzar el enlace.
+
+  <Box>
+    <GuideEntityEmbed Entity="AU14CommunicationsTower"/>
+  </Box>
+
+La ubicación de las torres de telecomunicaciones varía entre operaciones. El CIC conocerá su ubicación exacta; comunícate con Mando para saber qué torres deben repararse.
+
+[bold]Reparar una torre de telecomunicaciones[/bold] es tan sencillo como [bold]usar un soplete[/bold] para volver a soldar todos los paneles. Puede que tengas que repetirlo varias veces; examina la torre para comprobar si quedan daños por reparar.
+
+[bold]Una vez reparada la torre[/bold], tendrás que [bold]usar un sintonizador de accesos de Seguridad[/bold] para [bold]añadir las frecuencias de tu facción[/bold] a la red. Hecho esto, la torre empezará a transmitir esas frecuencias de radio a ubicaciones planetarias y extraplanetarias.
+
+[bold]La torre de telecomunicaciones no funcionará si no recibe energía[/bold], así que también tendrás que reparar el APC local y, quizá, la red eléctrica de la colonia.
+
+Cuando la torre de telecomunicaciones esté reparada, sintonizada y alimentada, se restablecerán las comunicaciones por radio. Si la torre queda destruida o pierde la alimentación, las comunicaciones se interrumpirán hasta que se solucione el problema.
+
+##Torre de sensores
+
+La torre experimental de sensores de cada colonia se ha adaptado para rastrear bioseñales desconocidas en la zona circundante. Una vez reparada, el CIC podrá [bold]seguir la ubicación exacta de todas las bioseñales desconocidas en su TACMAP[/bold] mientras la torre esté operativa.
+
+La ubicación de la torre de sensores está predeterminada para cada AO y no cambia entre operaciones.
+
+  <Box>
+    <GuideEntityEmbed Entity="AU14SensorTower"/>
+  </Box>
+
+  Si no sabes cuál es el siguiente paso de la reparación, examina la torre. Los pasos son los siguientes:
+  -Primero, usa un [bold]soplete[/bold] para volver a soldar las placas.
+  -Después, usa [bold]cortaalambres[/bold] para reparar los cables.
+  -A continuación, usa una [bold]llave inglesa[/bold] para volver a alinear correctamente la torre.
+  -Por último, enciende la torre de sensores para iniciar el escaneo.
+
+  Una vez reparada, la torre de sensores permanecerá operativa durante un breve periodo hasta que [bold]se averíe de forma aleatoria[/bold]. Cuando ocurra, habrá que repararla de nuevo para seguir rastreando bioseñales desconocidas.
+
+</Document>

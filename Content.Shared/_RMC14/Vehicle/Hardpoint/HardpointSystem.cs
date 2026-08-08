@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared._CMU14.Blackfoot;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.DoAfter;
 using Content.Shared.Whitelist;
@@ -965,20 +966,20 @@ public sealed partial class HardpointSystem : EntitySystem
     {
         return failure switch
         {
-            VehicleHardpointFailure.ArmorCompromised => "armor plating breach",
-            VehicleHardpointFailure.FeedJam => "jammed feed system",
-            VehicleHardpointFailure.RunawayTrigger => "runaway trigger",
-            VehicleHardpointFailure.TurretTraverseDamage => "damaged traverse ring",
-            VehicleHardpointFailure.EngineMisfire => "engine misfire",
-            VehicleHardpointFailure.TransmissionSlip => "transmission slip",
-            VehicleHardpointFailure.WarpedFrame => "warped frame",
-            VehicleHardpointFailure.DamagedMount => "damaged mount",
-            VehicleHardpointFailure.TireBlowout => "tire blowout",
-            VehicleHardpointFailure.ThrownTread => "thrown tread",
-            VehicleHardpointFailure.EngineOverheat => "engine overheating",
-            VehicleHardpointFailure.ElectricalShort => "electrical short",
-            VehicleHardpointFailure.FuelLeak => "fuel leak",
-            _ => "hardpoint failure",
+            VehicleHardpointFailure.ArmorCompromised => Ui("cmu-rmc-vehicle-failure-name-armor", "armor plating breach"),
+            VehicleHardpointFailure.FeedJam => Ui("cmu-rmc-vehicle-failure-name-feed", "jammed feed system"),
+            VehicleHardpointFailure.RunawayTrigger => Ui("cmu-rmc-vehicle-failure-name-trigger", "runaway trigger"),
+            VehicleHardpointFailure.TurretTraverseDamage => Ui("cmu-rmc-vehicle-failure-name-traverse", "damaged traverse ring"),
+            VehicleHardpointFailure.EngineMisfire => Ui("cmu-rmc-vehicle-failure-name-misfire", "engine misfire"),
+            VehicleHardpointFailure.TransmissionSlip => Ui("cmu-rmc-vehicle-failure-name-transmission", "transmission slip"),
+            VehicleHardpointFailure.WarpedFrame => Ui("cmu-rmc-vehicle-failure-name-frame", "warped frame"),
+            VehicleHardpointFailure.DamagedMount => Ui("cmu-rmc-vehicle-failure-name-mount", "damaged mount"),
+            VehicleHardpointFailure.TireBlowout => Ui("cmu-rmc-vehicle-failure-name-tire", "tire blowout"),
+            VehicleHardpointFailure.ThrownTread => Ui("cmu-rmc-vehicle-failure-name-tread", "thrown tread"),
+            VehicleHardpointFailure.EngineOverheat => Ui("cmu-rmc-vehicle-failure-name-overheat", "engine overheating"),
+            VehicleHardpointFailure.ElectricalShort => Ui("cmu-rmc-vehicle-failure-name-electrical", "electrical short"),
+            VehicleHardpointFailure.FuelLeak => Ui("cmu-rmc-vehicle-failure-name-fuel", "fuel leak"),
+            _ => Ui("cmu-rmc-vehicle-failure-name-generic", "hardpoint failure"),
         };
     }
 
@@ -986,20 +987,20 @@ public sealed partial class HardpointSystem : EntitySystem
     {
         return failure switch
         {
-            VehicleHardpointFailure.ArmorCompromised => "Armor protection from this hardpoint is offline.",
-            VehicleHardpointFailure.FeedJam => "This weapon can randomly jam or misfire.",
-            VehicleHardpointFailure.RunawayTrigger => "This weapon can discharge on its own while mounted.",
-            VehicleHardpointFailure.TurretTraverseDamage => "Turret traverse speed is severely reduced.",
-            VehicleHardpointFailure.EngineMisfire => "Vehicle acceleration and top speed are reduced.",
-            VehicleHardpointFailure.TransmissionSlip => "Vehicle acceleration, reverse speed, and top speed are reduced.",
-            VehicleHardpointFailure.WarpedFrame => "The vehicle frame drags and reduces movement performance.",
-            VehicleHardpointFailure.DamagedMount => "This hardpoint's output is weakened until the mount is reseated.",
-            VehicleHardpointFailure.TireBlowout => "The vehicle loses speed and traction from a damaged tire.",
-            VehicleHardpointFailure.ThrownTread => "The vehicle can barely move until the tread is re-seated.",
-            VehicleHardpointFailure.EngineOverheat => "The engine bogs down and acceleration is heavily reduced.",
-            VehicleHardpointFailure.ElectricalShort => "This hardpoint's electrical output is unreliable and weakened.",
-            VehicleHardpointFailure.FuelLeak => "The Blackfoot leaks fuel over time until repaired.",
-            _ => "The hardpoint is malfunctioning.",
+            VehicleHardpointFailure.ArmorCompromised => Ui("cmu-rmc-vehicle-failure-effect-armor", "Armor protection from this hardpoint is offline."),
+            VehicleHardpointFailure.FeedJam => Ui("cmu-rmc-vehicle-failure-effect-feed", "This weapon can randomly jam or misfire."),
+            VehicleHardpointFailure.RunawayTrigger => Ui("cmu-rmc-vehicle-failure-effect-trigger", "This weapon can discharge on its own while mounted."),
+            VehicleHardpointFailure.TurretTraverseDamage => Ui("cmu-rmc-vehicle-failure-effect-traverse", "Turret traverse speed is severely reduced."),
+            VehicleHardpointFailure.EngineMisfire => Ui("cmu-rmc-vehicle-failure-effect-misfire", "Vehicle acceleration and top speed are reduced."),
+            VehicleHardpointFailure.TransmissionSlip => Ui("cmu-rmc-vehicle-failure-effect-transmission", "Vehicle acceleration, reverse speed, and top speed are reduced."),
+            VehicleHardpointFailure.WarpedFrame => Ui("cmu-rmc-vehicle-failure-effect-frame", "The vehicle frame drags and reduces movement performance."),
+            VehicleHardpointFailure.DamagedMount => Ui("cmu-rmc-vehicle-failure-effect-mount", "This hardpoint's output is weakened until the mount is reseated."),
+            VehicleHardpointFailure.TireBlowout => Ui("cmu-rmc-vehicle-failure-effect-tire", "The vehicle loses speed and traction from a damaged tire."),
+            VehicleHardpointFailure.ThrownTread => Ui("cmu-rmc-vehicle-failure-effect-tread", "The vehicle can barely move until the tread is re-seated."),
+            VehicleHardpointFailure.EngineOverheat => Ui("cmu-rmc-vehicle-failure-effect-overheat", "The engine bogs down and acceleration is heavily reduced."),
+            VehicleHardpointFailure.ElectricalShort => Ui("cmu-rmc-vehicle-failure-effect-electrical", "This hardpoint's electrical output is unreliable and weakened."),
+            VehicleHardpointFailure.FuelLeak => Ui("cmu-rmc-vehicle-failure-effect-fuel", "The Blackfoot leaks fuel over time until repaired."),
+            _ => Ui("cmu-rmc-vehicle-failure-effect-generic", "The hardpoint is malfunctioning."),
         };
     }
 
@@ -1070,18 +1071,38 @@ public sealed partial class HardpointSystem : EntitySystem
         return tool.ToString();
     }
 
+    private string GetFailureRepairInstruction(VehicleHardpointFailureRepairStep step)
+    {
+        return Ui(step.InstructionKey, step.Instruction);
+    }
+
     private string GetFailureStatus(VehicleHardpointFailureComponent failures, VehicleHardpointFailure failure)
     {
         var stepIndex = GetFailureRepairProgress(failures, failure);
         if (!TryGetFailureRepairStep(failure, stepIndex, out var step))
             return GetFailureName(failure);
 
-        return $"{GetFailureName(failure)} ({stepIndex + 1}/{GetFailureRepairSteps(failure).Count}: {GetFailureRepairToolName(step)})";
+        var name = GetFailureName(failure);
+        var tool = GetFailureRepairToolName(step);
+        var count = GetFailureRepairSteps(failure).Count;
+        return Ui(
+            "cmu-rmc-vehicle-failure-status",
+            $"{name} ({stepIndex + 1}/{count}: {tool})",
+            ("name", name),
+            ("step", stepIndex + 1),
+            ("count", count),
+            ("tool", tool));
     }
 
     private string GetFailureDiagnosticStatus(VehicleHardpointFailure failure)
     {
-        return $"{GetFailureName(failure)} - {GetFailureEffect(failure)}";
+        var name = GetFailureName(failure);
+        var effect = GetFailureEffect(failure);
+        return Ui(
+            "cmu-rmc-vehicle-failure-diagnostic-status",
+            $"{name} - {effect}",
+            ("name", name),
+            ("effect", effect));
     }
 
     private List<string> GetFailureStatuses(EntityUid uid, bool includeRepairStep)
@@ -1107,21 +1128,26 @@ public sealed partial class HardpointSystem : EntitySystem
     {
         return failure switch
         {
-            VehicleHardpointFailure.ArmorCompromised => "Armor plating breach",
-            VehicleHardpointFailure.FeedJam => "Weapon feed jam",
-            VehicleHardpointFailure.RunawayTrigger => "Runaway trigger",
-            VehicleHardpointFailure.TurretTraverseDamage => "Turret traverse damage",
-            VehicleHardpointFailure.EngineMisfire => "Engine misfire",
-            VehicleHardpointFailure.TransmissionSlip => "Transmission slip",
-            VehicleHardpointFailure.WarpedFrame => "Warped frame",
-            VehicleHardpointFailure.DamagedMount => "Damaged mount",
-            VehicleHardpointFailure.TireBlowout => "Tire blowout",
-            VehicleHardpointFailure.ThrownTread => "Thrown tread",
-            VehicleHardpointFailure.EngineOverheat => "Engine overheating",
-            VehicleHardpointFailure.ElectricalShort => "Electrical short",
-            VehicleHardpointFailure.FuelLeak => "Fuel leak",
-            _ => "Hardpoint failure",
+            VehicleHardpointFailure.ArmorCompromised => Ui("cmu-rmc-vehicle-failure-alert-armor", "Armor plating breach"),
+            VehicleHardpointFailure.FeedJam => Ui("cmu-rmc-vehicle-failure-alert-feed", "Weapon feed jam"),
+            VehicleHardpointFailure.RunawayTrigger => Ui("cmu-rmc-vehicle-failure-alert-trigger", "Runaway trigger"),
+            VehicleHardpointFailure.TurretTraverseDamage => Ui("cmu-rmc-vehicle-failure-alert-traverse", "Turret traverse damage"),
+            VehicleHardpointFailure.EngineMisfire => Ui("cmu-rmc-vehicle-failure-alert-misfire", "Engine misfire"),
+            VehicleHardpointFailure.TransmissionSlip => Ui("cmu-rmc-vehicle-failure-alert-transmission", "Transmission slip"),
+            VehicleHardpointFailure.WarpedFrame => Ui("cmu-rmc-vehicle-failure-alert-frame", "Warped frame"),
+            VehicleHardpointFailure.DamagedMount => Ui("cmu-rmc-vehicle-failure-alert-mount", "Damaged mount"),
+            VehicleHardpointFailure.TireBlowout => Ui("cmu-rmc-vehicle-failure-alert-tire", "Tire blowout"),
+            VehicleHardpointFailure.ThrownTread => Ui("cmu-rmc-vehicle-failure-alert-tread", "Thrown tread"),
+            VehicleHardpointFailure.EngineOverheat => Ui("cmu-rmc-vehicle-failure-alert-overheat", "Engine overheating"),
+            VehicleHardpointFailure.ElectricalShort => Ui("cmu-rmc-vehicle-failure-alert-electrical", "Electrical short"),
+            VehicleHardpointFailure.FuelLeak => Ui("cmu-rmc-vehicle-failure-alert-fuel", "Fuel leak"),
+            _ => Ui("cmu-rmc-vehicle-failure-alert-generic", "Hardpoint failure"),
         };
+    }
+
+    private string Ui(string key, string fallback, params (string, object)[] arguments)
+    {
+        return CMULocalization.GetTargetStringOrFallback(Loc, key, fallback, arguments);
     }
 
     internal bool HasMatchingFailureRepairStepInTree(
@@ -1187,7 +1213,8 @@ public sealed partial class HardpointSystem : EntitySystem
                 return;
 
             hasFailures = true;
-            args.PushMarkup($"[color={FailureHeaderColor}][bold]Vehicle malfunctions[/bold][/color]");
+            var header = Ui("cmu-rmc-vehicle-diagnostic-vehicle-header", "Vehicle malfunctions");
+            args.PushMarkup($"[color={FailureHeaderColor}][bold]{header}[/bold][/color]");
         }
 
         void PushFailures(string? label, EntityUid uid, bool includeRepairSteps)
@@ -1204,10 +1231,19 @@ public sealed partial class HardpointSystem : EntitySystem
             {
                 var title = string.IsNullOrWhiteSpace(label)
                     ? GetFailureAlertName(failure)
-                    : $"{GetFailureAlertName(failure)} on {label}";
+                    : Ui(
+                        "cmu-rmc-vehicle-diagnostic-failure-on",
+                        $"{GetFailureAlertName(failure)} on {label}",
+                        ("failure", GetFailureAlertName(failure)),
+                        ("hardpoint", label));
 
                 args.PushMarkup($"[color={FailureNameColor}]- {title}[/color]");
-                args.PushMarkup($"[color={FailureEffectColor}]  Effect: {GetFailureEffect(failure)}[/color]");
+                var effect = GetFailureEffect(failure);
+                var effectLine = Ui(
+                    "cmu-rmc-vehicle-diagnostic-effect",
+                    $"Effect: {effect}",
+                    ("effect", effect));
+                args.PushMarkup($"[color={FailureEffectColor}]  {effectLine}[/color]");
 
                 if (!includeRepairSteps)
                     continue;
@@ -1216,9 +1252,17 @@ public sealed partial class HardpointSystem : EntitySystem
                 if (!TryGetFailureRepairStep(failure, stepIndex, out var step))
                     continue;
 
-                args.PushMarkup(
-                    $"[color={FailureRepairColor}]  Repair: step {stepIndex + 1}/{GetFailureRepairSteps(failure).Count} - " +
-                    $"{step.Instruction} Use {GetFailureRepairToolName(step)}.[/color]");
+                var instruction = GetFailureRepairInstruction(step);
+                var tool = GetFailureRepairToolName(step);
+                var count = GetFailureRepairSteps(failure).Count;
+                var repairLine = Ui(
+                    "cmu-rmc-vehicle-diagnostic-repair",
+                    $"Repair: step {stepIndex + 1}/{count} - {instruction} Use {tool}.",
+                    ("step", stepIndex + 1),
+                    ("count", count),
+                    ("instruction", instruction),
+                    ("tool", tool));
+                args.PushMarkup($"[color={FailureRepairColor}]  {repairLine}[/color]");
             }
         }
 
@@ -1242,7 +1286,13 @@ public sealed partial class HardpointSystem : EntitySystem
 
         var frameFailures = GetFailureStatuses(vehicle, includeRepairStep: false);
         if (frameFailures.Count > 0)
-            lines.Add($"Hull: {string.Join(", ", frameFailures)}");
+        {
+            var failures = string.Join(", ", frameFailures);
+            lines.Add(Ui(
+                "cmu-rmc-vehicle-failure-summary-hull",
+                $"Hull: {failures}",
+                ("failures", failures)));
+        }
 
         if (!Resolve(vehicle, ref hardpoints, logMissing: false) ||
             !Resolve(vehicle, ref itemSlots, logMissing: false))
@@ -1293,9 +1343,17 @@ public sealed partial class HardpointSystem : EntitySystem
         if (recipients.Count == 0)
             return;
 
+        var alert = GetFailureAlertName(failure);
         var message = hardpoint == vehicle
-            ? $"{GetFailureAlertName(failure)} detected."
-            : $"{GetFailureAlertName(failure)} detected on {Name(hardpoint)}.";
+            ? Ui(
+                "cmu-rmc-vehicle-failure-detected",
+                $"{alert} detected.",
+                ("failure", alert))
+            : Ui(
+                "cmu-rmc-vehicle-failure-detected-on",
+                $"{alert} detected on {Name(hardpoint)}.",
+                ("failure", alert),
+                ("hardpoint", Name(hardpoint)));
 
         foreach (var recipient in recipients)
         {
@@ -1826,7 +1884,8 @@ public sealed partial class HardpointSystem : EntitySystem
             return;
         }
 
-        args.PushMarkup($"[color={FailureHeaderColor}][bold]Hardpoint malfunctions[/bold][/color]");
+        var header = Ui("cmu-rmc-vehicle-diagnostic-hardpoint-header", "Hardpoint malfunctions");
+        args.PushMarkup($"[color={FailureHeaderColor}][bold]{header}[/bold][/color]");
 
         foreach (var failure in failures.ActiveFailures)
         {
@@ -1834,14 +1893,26 @@ public sealed partial class HardpointSystem : EntitySystem
             var stepIndex = Math.Clamp(GetFailureRepairProgress(failures, failure), 0, Math.Max(steps.Count - 1, 0));
 
             args.PushMarkup($"[color={FailureNameColor}]- {GetFailureAlertName(failure)}[/color]");
-            args.PushMarkup($"[color={FailureEffectColor}]  Effect: {GetFailureEffect(failure)}[/color]");
+            var effect = GetFailureEffect(failure);
+            var effectLine = Ui(
+                "cmu-rmc-vehicle-diagnostic-effect",
+                $"Effect: {effect}",
+                ("effect", effect));
+            args.PushMarkup($"[color={FailureEffectColor}]  {effectLine}[/color]");
 
             if (!TryGetFailureRepairStep(failure, stepIndex, out var step))
                 continue;
 
-            args.PushMarkup(
-                $"[color={FailureRepairColor}]  Repair: step {stepIndex + 1}/{steps.Count} - " +
-                $"{step.Instruction} Use {GetFailureRepairToolName(step)}.[/color]");
+            var instruction = GetFailureRepairInstruction(step);
+            var tool = GetFailureRepairToolName(step);
+            var repairLine = Ui(
+                "cmu-rmc-vehicle-diagnostic-repair",
+                $"Repair: step {stepIndex + 1}/{steps.Count} - {instruction} Use {tool}.",
+                ("step", stepIndex + 1),
+                ("count", steps.Count),
+                ("instruction", instruction),
+                ("tool", tool));
+            args.PushMarkup($"[color={FailureRepairColor}]  {repairLine}[/color]");
         }
     }
 
@@ -2177,8 +2248,14 @@ public sealed partial class HardpointSystem : EntitySystem
 
             if (TryGetFailureRepairStep(args.Failure, nextStep, out var next))
             {
+                var failureName = GetFailureName(args.Failure);
+                var toolName = GetFailureRepairToolName(next);
                 _popup.PopupClient(
-                    $"{GetFailureName(args.Failure)} repair step complete. Next: {GetFailureRepairToolName(next)}.",
+                    Ui(
+                        "cmu-rmc-vehicle-failure-repair-step-complete",
+                        $"{failureName} repair step complete. Next: {toolName}.",
+                        ("failure", failureName),
+                        ("tool", toolName)),
                     ent.Owner,
                     args.User);
             }
@@ -2189,7 +2266,14 @@ public sealed partial class HardpointSystem : EntitySystem
         if (!RemoveHardpointFailure(vehicle, ent.Owner, args.Failure, ent.Comp))
             return;
 
-        _popup.PopupClient($"{GetFailureName(args.Failure)} repaired.", ent.Owner, args.User);
+        var repairedFailure = GetFailureName(args.Failure);
+        _popup.PopupClient(
+            Ui(
+                "cmu-rmc-vehicle-failure-repaired",
+                $"{repairedFailure} repaired.",
+                ("failure", repairedFailure)),
+            ent.Owner,
+            args.User);
     }
 
     private void OnHardpointRepair(Entity<HardpointIntegrityComponent> ent, ref InteractUsingEvent args)
@@ -2272,7 +2356,13 @@ public sealed partial class HardpointSystem : EntitySystem
 
         if (isFrame && HasDamagedMountedHardpoints(ent.Owner))
         {
-            _popup.PopupClient("Repair the vehicle's hardpoints to restore hull integrity.", ent.Owner, args.User, PopupType.SmallCaution);
+            _popup.PopupClient(
+                Ui(
+                    "cmu-rmc-vehicle-frame-repair-hardpoints-first",
+                    "Repair the vehicle's hardpoints to restore hull integrity."),
+                ent.Owner,
+                args.User,
+                PopupType.SmallCaution);
             args.Handled = true;
             return true;
         }
@@ -2287,14 +2377,26 @@ public sealed partial class HardpointSystem : EntitySystem
 
         if (usedWelder && isFrame && ent.Comp.Integrity >= weldCap - ent.Comp.FrameRepairEpsilon)
         {
-            _popup.PopupClient("Finish tightening the frame with a wrench.", ent.Owner, args.User, PopupType.SmallCaution);
+            _popup.PopupClient(
+                Ui(
+                    "cmu-rmc-vehicle-frame-repair-finish-wrench",
+                    "Finish tightening the frame with a wrench."),
+                ent.Owner,
+                args.User,
+                PopupType.SmallCaution);
             args.Handled = true;
             return true;
         }
 
         if (usedWrench && ent.Comp.Integrity < weldCap - ent.Comp.FrameRepairEpsilon)
         {
-            _popup.PopupClient("Weld the frame before tightening it.", ent.Owner, args.User, PopupType.SmallCaution);
+            _popup.PopupClient(
+                Ui(
+                    "cmu-rmc-vehicle-frame-repair-weld-first",
+                    "Weld the frame before tightening it."),
+                ent.Owner,
+                args.User,
+                PopupType.SmallCaution);
             args.Handled = true;
             return true;
         }

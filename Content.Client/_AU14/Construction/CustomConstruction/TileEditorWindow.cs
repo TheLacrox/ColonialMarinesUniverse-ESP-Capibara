@@ -7,6 +7,7 @@ using System.Globalization;
 using System.Numerics;
 using Content.Client._AU14.UI;
 using Content.Shared._AU14.Construction.CustomConstruction;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Maps;
 using Robust.Client.Graphics;
 using Robust.Client.ResourceManagement;
@@ -14,6 +15,7 @@ using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.CustomControls;
 using Robust.Shared.Maths;
+using Robust.Shared.Localization;
 using Robust.Shared.Prototypes;
 
 namespace Content.Client._AU14.Construction.CustomConstruction;
@@ -51,11 +53,13 @@ public sealed class TileEditorWindow : DefaultWindow
     private string _selectedTile = string.Empty;
 
     private readonly IPrototypeManager _prototype;
+    private readonly ILocalizationManager _localization;
     private readonly IResourceCache _resCache;
 
     public TileEditorWindow()
     {
         _prototype = IoCManager.Resolve<IPrototypeManager>();
+        _localization = IoCManager.Resolve<ILocalizationManager>();
         _resCache = IoCManager.Resolve<IResourceCache>();
 
         Title = Loc.GetString("construction-tile-editor-title");
@@ -164,7 +168,8 @@ public sealed class TileEditorWindow : DefaultWindow
         // Uncapped: the list must be scrollable through every tile (see EntitySelectorWindow).
         foreach (var tile in _tiles)
         {
-            if (needle.Length > 0 && !tile.ToLowerInvariant().Contains(needle))
+            var displayName = GetTileDisplayName(tile);
+            if (needle.Length > 0 && !displayName.ToLowerInvariant().Contains(needle))
                 continue;
 
             _rows.AddChild(MakeTileRow(tile));
@@ -173,6 +178,7 @@ public sealed class TileEditorWindow : DefaultWindow
 
     private Control MakeTileRow(string id)
     {
+        var displayName = GetTileDisplayName(id);
         // Show the tile's actual sprite next to its id so it can be picked visually.
         var preview = new TextureRect
         {
@@ -193,15 +199,24 @@ public sealed class TileEditorWindow : DefaultWindow
         {
             Orientation = BoxContainer.LayoutOrientation.Horizontal,
             Margin = new Thickness(4, 2, 4, 2),
-            Children = { preview, new Label { Text = id, VerticalAlignment = VAlignment.Center } },
+            Children = { preview, new Label { Text = displayName, VerticalAlignment = VAlignment.Center } },
         });
         GmodStyle.Modernize(row);
         row.OnPressed += _ =>
         {
             _selectedTile = id;
-            _selectedLabel.Text = Loc.GetString("construction-tile-editor-selected", ("tile", id));
+            _selectedLabel.Text = Loc.GetString("construction-tile-editor-selected", ("tile", displayName));
         };
         return row;
+    }
+
+    private string GetTileDisplayName(string id)
+    {
+        if (!_prototype.TryIndex<ContentTileDefinition>(id, out var tile))
+            return id;
+
+        var name = CMUPrototypeLocalization.GetTileName(_localization, tile.ID, tile.Name);
+        return $"{name} ({tile.ID})";
     }
 
     private void Submit()

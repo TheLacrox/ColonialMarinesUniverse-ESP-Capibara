@@ -1,0 +1,24 @@
+<Document>
+## Escáner de anomalías
+
+El escáner de anomalías sirve para recopilar información diversa sobre ellas. Se encuentra dentro de las taquillas del departamento de Ciencia.
+
+<Box>
+<GuideEntityEmbed Entity="AnomalyScanner"/>
+</Box>
+
+Al escanear una anomalía se muestran su gravedad, estabilidad general, producción aproximada de puntos, reacciones a los tipos de partículas y el tiempo hasta el siguiente pulso. Los tipos de reacción, en concreto, pueden utilizarse junto con el A.P.E. para manipular las anomalías.
+
+## Recipiente de anomalías
+
+El recipiente de anomalías es una máquina que genera puntos a partir de ellas. Usa el escáner de anomalías sobre un recipiente vacío y la última anomalía escaneada se sincronizará con él.
+
+<Box>
+<GuideEntityEmbed Entity="MachineAnomalyVessel"/>
+</Box>
+
+La cantidad de puntos que genera un recipiente por segundo depende de la gravedad, la estabilidad y la salud de una anomalía. Cuanto mayor sea cada uno de estos valores, mayor será la producción de puntos.
+
+Ten cuidado: si una anomalía se vuelve [color=#a4885c]supercrítica[/color], el recipiente al que está vinculada explotará. Esto puede dañar la estación y los equipos cercanos.
+
+</Document>

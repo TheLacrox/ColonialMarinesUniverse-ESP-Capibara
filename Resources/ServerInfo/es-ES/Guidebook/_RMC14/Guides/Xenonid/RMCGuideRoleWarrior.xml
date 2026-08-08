@@ -1,0 +1,21 @@
+<Document>
+  #Guerrero, nivel 2
+  <GuideEntityEmbed Entity="CMXenoWarrior"/>
+  ##Jugar como guerrero
+  A diferencia del Defensor, ahora actúas como atacante principal y permaneces en primera línea. Aísla a los huéspedes: usa Abalanzarse para agarrarlos y Lanzamiento para arrojarlos hacia la colmena. Después, puedes placarlos para capturarlos.
+
+  Ten en cuenta que dispones de menos reserva de armadura que el Defensor y resultarás fácil de matar si arrastras a un objetivo después de abalanzarte.
+
+  Aprovechar el entorno es clave para matar grupos de huéspedes; puedes lanzarlos y darles puñetazos contra las paredes para causar todavía más daño. Si quieres enfrentarte a una pareja, abalánzate sobre uno y lanza al otro. Así podrás debilitarlos poco a poco.
+
+  Recuerda que el aturdimiento de Abalanzarse dura mientras sigas sujetando al objetivo; si dejas de arrastrarlo, su aturdimiento se cancelará antes de tiempo. En otros casos, dura lo suficiente como para placarlo después de abalanzarte.
+
+  ##Habilidades:
+  - [bold][color=green]PASIVA[/color][/bold]: Tus tajos y habilidades tienen robo de vida, lo que te cura al impactar.
+  - [bold]Lanzamiento[/bold]: Lanza a un objetivo 3 casillas hacia atrás y le causa daño; también lo aturde brevemente.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoFling"/>
+  - [bold]Abalanzarse[/bold]: Te abalanzas hacia un objetivo y lo agarras. Arrastrarlo te deja MUY vulnerable y te ralentiza, así que asegúrate de saber cuándo dejar de hacerlo.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoLunge"/>
+  - [bold]Puñetazo[/bold]: Golpea al objetivo con un puñetazo, le causa mucho daño y lo empuja una casilla.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoPunch"/>
+</Document>

@@ -1,3 +1,4 @@
+using static Content.Client.AU14.ColonyEconomy.ColonyEconomyLoc;
 using Content.Shared.AU14.ColonyEconomy;
 using Robust.Client.UserInterface;
 
@@ -23,11 +24,11 @@ public sealed class ColonyAtmBui(EntityUid owner, Enum uiKey) : BoundUserInterfa
         if (_window == null || state is not ColonyAtmBuiState s)
             return;
 
-        _window.OwnerLabel.Text = $"Account: {s.OwnerName}";
-        _window.BalanceLabel.Text = $"Balance: ${s.Balance}";
+        _window.OwnerLabel.Text = Target("cmu-colony-economy-account", $"Account: {s.OwnerName}", ("owner", s.OwnerName));
+        _window.BalanceLabel.Text = Target("cmu-colony-economy-balance", $"Balance: ${s.Balance}", ("balance", s.Balance));
         _window.IncomeTaxLabel.Text = s.IncomeTaxPercent > 0
-            ? $"Income Tax: {s.IncomeTaxPercent:F0}% (applied on withdrawal)"
-            : "No income tax.";
+            ? Target("cmu-colony-economy-atm-income-tax", $"Income Tax: {s.IncomeTaxPercent:F0}% (applied on withdrawal)", ("percent", s.IncomeTaxPercent.ToString("F0")))
+            : Target("cmu-colony-economy-no-income-tax", "No income tax.");
     }
 }
 

@@ -1,0 +1,40 @@
+﻿<Document>
+  # Antecedentes penales
+  La consola de antecedentes penales está disponible en el departamento de Seguridad de todas las estaciones y sirve para consultar y gestionar el historial delictivo y el estado de cualquiera que figure en el manifiesto de tripulación.
+
+  <Box>
+  <GuideEntityEmbed Entity="ComputerCriminalRecords"/>
+  </Box>
+
+  Cualquiera puede abrir la interfaz de la consola, pero solo quienes tengan acceso de Seguridad pueden modificarla.
+
+  La interfaz se compone de los siguientes elementos:
+  - Una barra de búsqueda con un filtro al lado que permite filtrar a los tripulantes por nombre, huellas dactilares o ADN.
+
+  - Una lista de todos los tripulantes del manifiesto. Al seleccionar una entrada aparecerán los antecedentes penales del tripulante. La barra de búsqueda filtra la lista, así que asegúrate de vaciarla si quieres obtener una vista general.
+
+  - Los propios antecedentes penales.
+
+  - El botón de filtro situado bajo la lista de tripulantes permite mostrar solo a quienes estén en busca y captura, detenidos o en libertad condicional.
+  En la sección del expediente puedes:
+    - Consultar información relacionada con Seguridad sobre un tripulante, como su nombre, sus huellas dactilares y su ADN.
+
+    - Cambiar el estado de seguridad entre [color=gray]Ninguno[/color], [color=yellow]En busca y captura[/color] y [color=red]Detenido[/color]. Al seleccionar En busca y captura se te pedirá que indiques un motivo.
+
+    - Si está en busca y captura, puedes ver el motivo bajo el menú desplegable del estado.
+
+    - Cuando alguien haya sido detenido, actualiza su estado en la consola para que todo el mundo sepa que ya no hace falta capturarlo.
+
+    - Cuando haya cumplido su condena, ponlo en libertad y cambia su estado a Ninguno para que nadie piense que se ha fugado.
+
+    - Abrir la ventana Historial delictivo para consultarlo o modificarlo.
+
+  La ventana Historial delictivo enumera los delitos de una persona y puede modificarse de varias maneras:
+    - Automáticamente, con solo cambiar el estado de alguien a detenido. El motivo se añadirá a «ARRESTO:» para que las entradas automáticas resulten fáciles de identificar.
+
+    - Añadiendo una línea nueva al pulsar «Añadir» y escribir algo en el cuadro de texto. Cuando añadas una entrada, recuerda indicar el delito y la condena; la consola insertará automáticamente la hora del turno.
+
+    - Selecciona una línea del historial que no quieras conservar y pulsa «Eliminar» para borrarla. Perfecto para mantener los expedientes libres de las travesuras del payaso con identificaciones robadas.
+
+  Ahora puedes convertirte en el burócrata que siempre quisiste ser.
+</Document>

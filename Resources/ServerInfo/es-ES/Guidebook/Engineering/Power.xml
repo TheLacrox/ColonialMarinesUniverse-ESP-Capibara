@@ -1,0 +1,35 @@
+<Document>
+  # Energía
+  La energía es la sangre vital de la estación.
+  Sin ella, la estación caerá rápidamente en el caos.
+  Los ingenieros son responsables de mantener la red eléctrica de la estación, garantizar el suministro y la distribución de energía y satisfacer las necesidades de todos los departamentos.
+
+  <Box>
+    <GuideEntityEmbed Entity="SingularityGenerator" Caption=""/>
+    <GuideEntityEmbed Entity="TeslaGenerator" Caption=""/>
+    <GuideEntityEmbed Entity="AmeController" Caption=""/>
+    <GuideEntityEmbed Entity="SMESBasic" Caption=""/>
+    <GuideEntityEmbed Entity="SubstationBasic" Caption=""/>
+    <GuideEntityEmbed Entity="APCBasic" Caption=""/>
+  </Box>
+
+  El sistema de simulación eléctrica de Space Station 14 presenta muchos aspectos distintos, al igual que la experiencia de juego prevista para Ingeniería.
+
+  Conviene recordar algunos datos importantes:
+  - Los [textlink="generadores" link="Generators"] de la estación se dividen en niveles y siguen una jerarquía. Cuanto menor sea el nivel, menos sostenibles serán, pero más fáciles de instalar. Cuanto mayor sea, más sostenibles serán, aunque también más complejos de instalar.
+  - Space Station 14 incluye [textlink="redes de tensión" link="VoltageNetworks"] que distribuyen la energía por la estación; ciertas máquinas reducen su tensión para que otras puedan utilizarla.
+  - Los [textlink="generadores" link="Generators"] eléctricos presentan [textlink="incremento gradual" link="Ramping"], lo que significa que tardan un tiempo en adaptar su suministro a la demanda de la red.
+
+  ## Primeros pasos
+  Al comienzo del turno, la estación funciona exclusivamente con energía de [textlink="baterías" link="PowerStorage"].
+  Como máximo durará 5-10 minutos, según el consumo eléctrico de la estación.
+
+  Para prolongar este tiempo, puedes poner en marcha el [textlink="motor de antimateria" link="AME"] de la estación, o [textlink="AME." link="AME"]
+  Esto prolongará considerablemente la autonomía de las baterías de la estación y te dará más tiempo para instalar [textlink="generadores" link="Generators"] de nivel superior.
+  Puedes prolongarla aún más instalando [textlink="paneles solares" link="SolarPanels"], que generan energía gratis.
+
+  Después de instalar el [textlink="AME" link="AME"] y los [textlink="paneles solares" link="SolarPanels"], deberías estar generando una cantidad decente de energía.
+
+  Ahora que has ganado tiempo, puedes centrarte en instalar [textlink="generadores" link="Generators"] de nivel superior, como el [textlink="motor de singularidad" link="SingularityEngine"], capaz de suministrar energía durante el resto del turno.
+
+</Document>

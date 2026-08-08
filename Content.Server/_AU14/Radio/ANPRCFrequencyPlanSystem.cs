@@ -1,5 +1,6 @@
 using System.Linq;
 using System.Text;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._AU14.CCVar;
 using Content.Shared._AU14.Radio;
 using Content.Shared.Chat;
@@ -220,8 +221,14 @@ public sealed partial class ANPRCFrequencyPlanSystem : EntitySystem
     {
         var sb = new StringBuilder();
 
-        sb.AppendLine("[head=2]SIGNAL OPERATING INSTRUCTIONS[/head]");
-        sb.AppendLine("[head=3]AN/PRC-117G NET FREQUENCY ASSIGNMENTS[/head]");
+        sb.AppendLine(CMULocalization.GetTargetStringOrFallback(
+            Loc,
+            "cmu-anprc-paper-soi-title",
+            "[head=2]SIGNAL OPERATING INSTRUCTIONS[/head]"));
+        sb.AppendLine(CMULocalization.GetTargetStringOrFallback(
+            Loc,
+            "cmu-anprc-paper-frequency-assignments-title",
+            "[head=3]AN/PRC-117G NET FREQUENCY ASSIGNMENTS[/head]"));
         sb.AppendLine();
 
         var channels = _prototype.EnumeratePrototypes<RadioChannelPrototype>()
@@ -235,9 +242,15 @@ public sealed partial class ANPRCFrequencyPlanSystem : EntitySystem
         }
 
         sb.AppendLine();
-        sb.AppendLine("Enter a frequency in the radio panel's FREQ tab (with or without the dot, 2592 and 2.592 are the same) to assign the matching net to a preset slot.");
+        sb.AppendLine(CMULocalization.GetTargetStringOrFallback(
+            Loc,
+            "cmu-anprc-paper-frequency-instructions",
+            "Enter a frequency in the radio panel's FREQ tab (with or without the dot, 2592 and 2.592 are the same) to assign the matching net to a preset slot."));
         sb.AppendLine();
-        sb.Append("[italic]COMSEC NOTICE: This card is a controlled document. Destroy before capture. Frequencies are assigned per operation and expire with it.[/italic]");
+        sb.Append(CMULocalization.GetTargetStringOrFallback(
+            Loc,
+            "cmu-anprc-paper-comsec-notice",
+            "[italic]COMSEC NOTICE: This card is a controlled document. Destroy before capture. Frequencies are assigned per operation and expire with it.[/italic]"));
 
         return sb.ToString();
     }

@@ -1,0 +1,15 @@
+﻿<Document>
+  # Válvula pasiva
+  La válvula pasiva es una válvula unidireccional sencilla que impide que los gases fluyan hacia atrás.
+  <Box>
+    <GuideEntityEmbed Entity="GasPassiveGate"/>
+  </Box>
+
+  La entrada de la válvula está en el lado del círculo [color=red]rojo[/color].
+  Al examinarla, la válvula también muestra el caudal actual de la tubería.
+
+  Resulta útil en muchas aplicaciones, por ejemplo:
+  - Evitar que un gas puro se contamine porque un gas mezclado retroceda por la tubería.
+  - Evitar cambios de presión o temperatura entre dos [textlink="redes de tuberías" link="PipeNetworks"] en la dirección contraria.
+  - Comprobar rápidamente el caudal de una red de tuberías sin necesidad de un [textlink="analizador de gases" link="AtmosTools"].
+</Document>

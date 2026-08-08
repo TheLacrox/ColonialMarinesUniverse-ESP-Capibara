@@ -1,0 +1,15 @@
+names-regal-rat-kingdom-dataset-1 = Plaga
+names-regal-rat-kingdom-dataset-2 = Amoníaco
+names-regal-rat-kingdom-dataset-3 = Mantenimiento
+names-regal-rat-kingdom-dataset-4 = Basura
+names-regal-rat-kingdom-dataset-5 = Desperdicios
+names-regal-rat-kingdom-dataset-6 = Rata
+names-regal-rat-kingdom-dataset-7 = Alimañas
+names-regal-rat-kingdom-dataset-8 = Queso
+names-regal-rat-kingdom-dataset-9 = Mordisqueo
+names-regal-rat-kingdom-dataset-10 = Gran
+names-regal-rat-kingdom-dataset-11 = Mugre
+names-regal-rat-kingdom-dataset-12 = Alcantarilla
+names-regal-rat-kingdom-dataset-13 = Residuos
+names-regal-rat-kingdom-dataset-14 = Servicio
+names-regal-rat-kingdom-dataset-15 = El

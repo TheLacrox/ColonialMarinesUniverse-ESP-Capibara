@@ -13,6 +13,7 @@ using Content.Shared._RMC14.Intel;
 using Content.Shared._RMC14.Rules;
 using Content.Shared._RMC14.TacticalMap;
 using Content.Shared._CMU14.Threats;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.AU14.util;
 using Content.Shared.CCVar;
 using Content.Shared.Preferences;
@@ -892,7 +893,12 @@ namespace Content.Server.AU14.Round
                 foreach (var platoonId in govforPlatoons)
                 {
                     var platoon = _prototypeManager.Index<PlatoonPrototype>(platoonId);
-                    optionsplatoons.Add((platoon.Name, platoon));
+                    var name = CMUPrototypeLocalization.GetPrototypeText(
+                        "platoon",
+                        platoon.ID,
+                        "name",
+                        platoon.Name);
+                    optionsplatoons.Add((name, platoon));
                 }
 
                 var voteopt = new VoteOptions
@@ -949,7 +955,12 @@ namespace Content.Server.AU14.Round
                 foreach (var platoonId in opforPlatoons)
                 {
                     var platoon = _prototypeManager.Index<PlatoonPrototype>(platoonId);
-                    optionsplatoons.Add((platoon.Name, platoon));
+                    var name = CMUPrototypeLocalization.GetPrototypeText(
+                        "platoon",
+                        platoon.ID,
+                        "name",
+                        platoon.Name);
+                    optionsplatoons.Add((name, platoon));
                 }
 
                 var voteopt = new VoteOptions

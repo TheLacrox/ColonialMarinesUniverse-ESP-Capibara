@@ -1,0 +1,68 @@
+# Scurrets from Planet Wawa have two parts to their name - a 'chosen' and 'qualitative' name.
+
+# The qualitative name is usually related to an important feature
+# of Wawa's wetland habitats that the scurret is associated with
+# by their community.
+
+# Scurret pups, due to both their quantity and complete lack
+# of any survival instinct, lack a qualitative name entirely.
+# Researchers believe their parents simply give them a number.
+
+# Given that the scurret language is untranslated, these names are
+# usually deduced via the showing of photographs, annoyed and
+# repeated pointing at nearby objects, or games of Pictionary.
+
+# When all else fails, to NT and her crews, Wa is as good a name as any.
+
+names-scurret-last-dataset-1 = Wa
+names-scurret-last-dataset-2 = Árboles
+names-scurret-last-dataset-3 = Plantas
+names-scurret-last-dataset-4 = Rocas
+names-scurret-last-dataset-5 = Ríos
+names-scurret-last-dataset-6 = Arboledas
+names-scurret-last-dataset-7 = Lagos
+names-scurret-last-dataset-8 = Marismas
+names-scurret-last-dataset-9 = Manantiales
+names-scurret-last-dataset-10 = Cañas
+names-scurret-last-dataset-11 = Luz solar
+names-scurret-last-dataset-12 = Lluvia
+names-scurret-last-dataset-13 = Nubes
+names-scurret-last-dataset-14 = Nevadas
+names-scurret-last-dataset-15 = Piedras
+names-scurret-last-dataset-16 = Guijarros
+names-scurret-last-dataset-17 = Peces
+names-scurret-last-dataset-18 = Insectos
+names-scurret-last-dataset-19 = Frutas
+names-scurret-last-dataset-20 = Flores
+names-scurret-last-dataset-21 = Pimpollos
+names-scurret-last-dataset-22 = Nieblas
+names-scurret-last-dataset-23 = Sauces
+names-scurret-last-dataset-24 = Alisos
+names-scurret-last-dataset-25 = Abedules
+names-scurret-last-dataset-26 = Álamos
+names-scurret-last-dataset-27 = Caléndulas
+names-scurret-last-dataset-28 = Serbales
+names-scurret-last-dataset-29 = Orquídeas
+names-scurret-last-dataset-30 = Juncos
+names-scurret-last-dataset-31 = Lirios
+names-scurret-last-dataset-32 = Violetas
+names-scurret-last-dataset-33 = Arces
+names-scurret-last-dataset-34 = Robles
+names-scurret-last-dataset-35 = Avellanos
+# AND SIR GIDEON OFNIR
+names-scurret-last-dataset-36 = el Omnisciente
+names-scurret-last-dataset-37 = Lagunas de montaña
+names-scurret-last-dataset-38 = Aguas
+names-scurret-last-dataset-39 = Embalses
+names-scurret-last-dataset-40 = Presas
+names-scurret-last-dataset-41 = Páramos
+names-scurret-last-dataset-42 = Humedales
+names-scurret-last-dataset-43 = Templos
+names-scurret-last-dataset-44 = Colinas
+names-scurret-last-dataset-45 = Bosquecillos
+names-scurret-last-dataset-46 = Campos
+names-scurret-last-dataset-47 = Ancestros
+names-scurret-last-dataset-48 = Bosques
+names-scurret-last-dataset-49 = Secretos
+# Nobody's quite sure how this one is in the dictionary.
+names-scurret-last-dataset-50 = Hurón espacial

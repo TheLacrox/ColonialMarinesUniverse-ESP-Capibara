@@ -1,0 +1,46 @@
+﻿<Document>
+  # Depurador de aire
+  El depurador de aire es esencial para mantener una atmósfera libre de los gases residuales que emiten las criaturas al respirar y que generan las alteraciones atmosféricas.
+  Su función principal consiste en eliminar gases no deseados de la atmósfera a la que está expuesto.
+  <Box>
+    <GuideEntityEmbed Entity="GasVentScrubber"/>
+  </Box>
+  El depurador de aire necesita [textlink="energía" link="Power"] de un [textlink="cable LV" link="VoltageNetworks"] cercano para funcionar.
+
+  De forma predeterminada, el depurador elimina de la atmósfera a la que está expuesto todos los gases salvo el nitrógeno y el oxígeno. Continuará así salvo cuando actúe bajo control [textlink="vinculado" link="Networking"] de una [textlink="alarma de aire" link="AirAlarms"].
+
+  El depurador se puede soldar con cualquier herramienta de soldadura para impedir que funcione.
+
+  ## Opciones de configuración
+  Al [textlink="vincularlos" link="Networking"] a una [textlink="alarma de aire" link="AirAlarms"], los depuradores de aire obtienen más funciones.
+
+  Los gases que deben depurarse pueden elegirse en el desplegable «Filtros de gases». Ten en cuenta que la selección se restablece si cambias el modo de la [textlink="alarma de aire" link="AirAlarms"].
+
+  Los depuradores de aire tienen dos opciones de «dirección»: Depuración y Sifonado.
+  - Depuración elimina los gases definidos en los filtros de gases.
+  - Sifonado ignora todos los filtros de gases y extrae todos los gases de la atmósfera.
+
+  Ambos modos están limitados por el ajuste Caudal, que define la velocidad (en litros) a la que el depurador extrae gases de la atmósfera a la que está expuesto.
+
+  Los depuradores de aire también tienen un ajuste «WideNet», que amplía el radio de su zona de funcionamiento. Normalmente, el depurador limpia la atmósfera de la única casilla a la que está expuesto.
+  En modo WideNet, el depurador limpia el gas de las 4 casillas que lo rodean, como se muestra:
+
+  <Box>
+    <GuideEntityEmbed Entity="FloorTileItemSteel" Caption=""/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="FloorTileItemSteel" Caption=""/>
+    <GuideEntityEmbed Entity="GasVentScrubber" Caption=""/>
+    <GuideEntityEmbed Entity="FloorTileItemSteel" Caption=""/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="FloorTileItemSteel" Caption=""/>
+  </Box>
+
+  Esto multiplica su velocidad total, pues ahora los depuradores realizan su trabajo en 5 casillas a la vez.
+
+  Los depuradores [textlink="vinculados" link="Networking"] a una [textlink="alarma de aire" link="AirAlarms"] en modo automático activan WideNet cuando la [textlink="alarma de aire" link="AirAlarms"] entra en el modo «Filtrado (amplio)» tras detectar una alta concentración de gases no deseados en la atmósfera.
+
+  WideNet resulta muy útil para eliminar rápidamente grandes cantidades de tritio de las cámaras de combustión de plasma.
+
+</Document>

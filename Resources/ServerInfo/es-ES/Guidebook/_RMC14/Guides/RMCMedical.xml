@@ -1,0 +1,72 @@
+<Document>
+
+  #Medicina
+
+  ##RCP
+  - Quítale la mascarilla.
+  - Haz clic en el paciente para intentar practicarle la RCP.
+  - Hacerlo una vez cada 7 segundos reducirá el daño por falta de oxígeno.
+  - También prolongará ligeramente cada vez el periodo durante el que se puede reanimar un cadáver.
+
+  ##Tratamiento de {wounds}
+  - Cuando un marine recibe daño, sufre heridas que pueden tratarse.
+  - Las heridas sin tratar se indican mediante [bold]«{  }»[/bold] alrededor de las cifras de daño.
+  - Cuando se tratan las heridas, el marine comienza a curarse de forma pasiva, aunque muy despacio.
+  - Tratar las heridas también detiene cualquier hemorragia.
+  - Los medicamentos aceleran la curación del daño.
+  - [textlink="Medicamentos" link="RMCMedicine"]
+
+  ##Objetos que tratan {wounds}
+  - Los kits de trauma y para quemaduras tratan todas las heridas al usarlos y proporcionan una pequeña curación adicional.
+  - El hilo quirúrgico y el injerto sintético tratan algunas heridas con cada uso, además de curar un poco.
+  - La gasa y la pomada tratan todas las heridas al usarlas, pero solo la pomada proporciona una pequeña curación adicional.
+  - El hilo quirúrgico y el injerto sintético pueden seguir utilizándose después de aplicar un kit de trauma o para quemaduras.
+  <Box>
+    <GuideEntityEmbed Entity="CMTraumaKit10"/>
+    <GuideEntityEmbed Entity="CMBurnKit10"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="CMSurgicalLine"/>
+    <GuideEntityEmbed Entity="CMSynthGraft"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="CMGauze10"/>
+    <GuideEntityEmbed Entity="CMOintment10"/>
+  </Box>\n
+
+  ##Sangre y pérdida de sangre
+  - Cuando un marine tiene un nivel bajo de sangre, comienza a sufrir daño por falta de oxígeno.
+  - Usa bolsas de sangre para reponerla.
+  - Pueden administrarse al paciente a mano o mediante una vía intravenosa.
+  - Para usar a mano una bolsa de sangre, haz clic con ella sobre el paciente.
+  - Vuelve a hacer clic sobre el paciente para retirar el inyector.
+  - Para usar una vía intravenosa, introduce la bolsa y después arrastra la imagen de la vía sobre el paciente.
+  - Haz clic en la vía para retirársela al paciente.
+
+  <Box>
+    <GuideEntityEmbed Entity="CMBloodPackFull"/>
+    <GuideEntityEmbed Entity="CMIV"/>
+  </Box>\n
+
+  ##Desfibriladores
+  - Los desfibriladores pueden reanimar a un marine con menos de 200 de daño.
+  - La epinefrina puede utilizarse para curar a un marine cuando se le desfibrila.
+
+  <Box>
+    <GuideEntityEmbed Entity="CMDefibrillator"/>
+    <GuideEntityEmbed Entity="CMEpinephrineAutoInjector"/>
+  </Box>\n
+
+  ##Cirugía
+  - Para iniciar una operación, usa una herramienta quirúrgica sobre el paciente.
+  - Selecciona la parte del cuerpo en la que vas a trabajar y sigue los pasos de la operación elegida.
+  - Para extraer una larva, asegúrate de ser un médico cualificado, no un enfermero ni un sanitario de combate.
+  - Coloca al paciente en una mesa de operaciones y comienza la intervención.
+
+  <Box>
+    <GuideEntityEmbed Entity="CMCrateSecureSurgery"/>
+    <GuideEntityEmbed Entity="CMScalpel"/>
+    <GuideEntityEmbed Entity="CMOperatingTable"/>
+  </Box>\n
+
+</Document>

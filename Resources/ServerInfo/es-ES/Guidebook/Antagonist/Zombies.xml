@@ -1,0 +1,52 @@
+<Document>
+  # Zombis
+
+  <Box>
+    [color=#999999][italic]"¡Vienen a por ti, Barbara!"[/italic][/color]
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="SignBiohazard" Caption=""/>
+  </Box>
+
+  Los zombis son antagonistas que convierten a todos los seres que muerden al infectarlos con [color=#7e916e]Romerol[/color], un virus mortal y contagioso que puede propagarse con facilidad si no se contiene.
+
+  <Box>
+    <GuideReagentEmbed Reagent="Romerol"/>
+  </Box>
+
+  ## Infectado inicial
+  Eres el paciente cero. El [color=#7e916e]Romerol[/color] recorre tus venas y sientes un deseo enorme de compartirlo con cada ser de carne que veas.
+
+  Cuando se descubra tu infección, [italic]todo estará permitido[/italic]. Te queda poco tiempo antes de transformarte y quieres [bold]aumentar al máximo tus probabilidades de apoderarte de la estación.[/bold]
+  Aprovecha este tiempo para preparar armas, equipo y trampas. [italic]La Ley Espacial ya no significa nada para ti.[/italic]
+
+  ## Transmisión
+  Los zombis solo saben arrastrar los pies, morder y lanzarse contra las barricadas. Puede que sus mordiscos [bold]no siempre transmitan el [color=#7e916e]Romerol[/color][/bold] a través de capas gruesas de ropa, pero desde luego harán daño.
+
+  Los muertos vivientes también pueden devorar a una persona en estado crítico o un cadáver para [bold]convertirlo al instante[/bold] en zombi.
+
+  ## Características de los zombis
+  Puedes reconocer a un zombi por su piel verde oscura, sus ojos rojos, sus movimientos lentos, su olor a putrefacción y su falta de coordinación motora. Al transformarse, soltará los auriculares y los guantes, y las esposas no sirven contra su feroz mordisco.
+
+  Los zombis son conocidos por su [bold]resistencia a los cortes, los golpes, el veneno y el frío.[/bold] Pueden sobrevivir en el vacío y no necesitan comida, agua, aire ni sueño. Sin embargo, los muertos vivientes [italic]sufren más daño por quemaduras y descargas.[/italic]
+
+  ## Supervivencia
+  Cuando la infección arrase la estación y caiga [color=#cb0000]Seguridad[/color], los [bold]supervivientes[/bold] tendrán que intentar llegar al Mando Central.
+
+  [bold]Construir barricadas[/bold] alrededor de los departamentos o [bold]bloquear las puertas con sus pernos[/bold] puede dar tiempo suficiente para fabricar armas, salvar vidas o trazar un plan.
+
+  Recuerda que, cuando todo se vaya al garete, [italic]tendrás que hacer lo que haga falta[/italic], siempre que no sea a costa de otros supervivientes. Recoge lo que necesites de quienes no lo hayan conseguido.
+
+  ## Cura
+  [bold]Quienes ya sean muertos vivientes solo pueden curarse con la [color=red]muerte.[/color][/bold]
+
+  Si estás infectado pero aún no te has convertido en zombi, el [color=#86caf7]Ambuzol[/color] te curará, aunque no impedirá que vuelvas a infectarte. El [color=#1274b5]Ambuzol Plus[/color] te curará e impedirá que vuelvas a infectarte, pero solo mientras sigas con vida.
+
+  <Box>
+    <GuideReagentEmbed Reagent="Ambuzol"/>
+  </Box>
+  <Box>
+    <GuideReagentEmbed Reagent="AmbuzolPlus"/>
+  </Box>
+
+</Document>

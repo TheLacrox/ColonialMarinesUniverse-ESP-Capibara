@@ -3,6 +3,7 @@ using Robust.Shared.Console;
 using Content.Server._RMC14.Spawners;
 using Content.Shared._RMC14.AegisEvent;
 using Content.Shared._RMC14.Requisitions;
+using Robust.Shared.Localization;
 
 namespace Content.Server.Administration.Commands;
 
@@ -17,12 +18,13 @@ public sealed class AegisEventCommand : IConsoleCommand
     {
         var systemManager = IoCManager.Resolve<IEntitySystemManager>();
         var entityManager = IoCManager.Resolve<IEntityManager>();
+        var localization = IoCManager.Resolve<ILocalizationManager>();
         var reqSystem = systemManager.GetEntitySystem<SharedRequisitionsSystem>();
         var aegisSystem = systemManager.GetEntitySystem<AegisLobbyEventSystem>();
         var message = args.Length > 0 ? string.Join(" ", args) : "AEGIS event has been initiated.";
 
         // Announce to both marines and xenos
-        AegisSharedAnnouncement.AnnounceToBoth(systemManager, message);
+        AegisSharedAnnouncement.AnnounceToBoth(systemManager, message, localization);
         // Send fax to CIC
         aegisSystem.SendCICFax(systemManager, entityManager, message, "RMCPaperAegisInfoFax", "UNS Oberon");
 

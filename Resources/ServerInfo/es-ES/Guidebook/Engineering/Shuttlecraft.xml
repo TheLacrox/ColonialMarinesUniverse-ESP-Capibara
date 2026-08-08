@@ -1,0 +1,136 @@
+<Document>
+  # Lanzaderas
+
+  Construir una lanzadera es sencillo, aunque bastante caro y difícil de lograr en menos de una hora.
+
+  Es una buena actividad si te sobra bastante tiempo y te apetece un pequeño reto.
+
+  ## Primeros pasos
+  <Box>Piezas necesarias:</Box>
+  <Box>
+  <GuideEntityEmbed Entity="Thruster"/>
+  <GuideEntityEmbed Entity="Gyroscope"/>
+  <GuideEntityEmbed Entity="ComputerShuttle"/>
+  <GuideEntityEmbed Entity="SubstationBasic"/>
+  <GuideEntityEmbed Entity="PortableGeneratorPacman" Caption="P.A.C.M.A.N." />
+  </Box>
+  <Box>
+  <GuideEntityEmbed Entity="CableHVStack"/>
+  <GuideEntityEmbed Entity="CableMVStack"/>
+  <GuideEntityEmbed Entity="CableApcStack"/>
+  <GuideEntityEmbed Entity="APCBasic"/>
+  </Box>
+
+  <Box>Piezas opcionales:</Box>
+  <Box>
+  <GuideEntityEmbed Entity="AirCanister"/>
+  <GuideEntityEmbed Entity="LightTube" Caption="iluminación"/>
+  <GuideEntityEmbed Entity="AirlockGlassShuttle"/>
+  <GuideEntityEmbed Entity="SMESBasic"/>
+  </Box>
+  <Box>
+  <GuideEntityEmbed Entity="MobCorgiIan"/>
+  <GuideEntityEmbed Entity="NuclearBomb"/>
+  </Box>
+
+  ## Cimientos
+  Para este paso necesitarás chapas de acero, barras metálicas y baldosas (opcionales).
+
+  <Box>
+    <GuideEntityEmbed Entity="SheetSteel" Caption=""/>
+    <GuideEntityEmbed Entity="PartRodMetal" Caption=""/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="FloorTileItemSteel" Caption=""/>
+    <GuideEntityEmbed Entity="FloorTileItemDark" Caption=""/>
+    <GuideEntityEmbed Entity="FloorTileItemWhite" Caption=""/>
+  </Box>
+
+  Sal al espacio con chapas de acero y barras metálicas en la mano y haz clic en el borde de la estación para colocar entramado.
+
+  Coloca una línea de entramado a unas 3-4 casillas de la estación y empieza a construir una plataforma con él.
+
+  Continúa hasta tener una plataforma de al menos 3x3, conectada a la estación mediante una única línea de entramado.
+
+  Cuando termines de construir la base de la lanzadera, puedes usar el cortaalambres para cortar el entramado de conexión que une la nave nueva con la estación.
+
+  Esta plataforma se considera una estructura distinta de la estación, por lo que no tendrá gravedad ni quedará sujeta por un anclaje de estación: podrá moverse libremente.
+
+  Puedes ampliar aún más la plataforma de entramado haciendo clic justo fuera del borde con unas barras en la mano.
+
+  ## Puertos de acoplamiento
+  Las esclusas de lanzadera sirven como puertos de acoplamiento, donde las naves pueden atracar con seguridad en las estaciones.
+
+  La orientación de los puertos de acoplamiento es importante, pues determina por qué lado atracará la lanzadera.
+
+  La pequeña protuberancia de la parte inferior del puerto de acoplamiento indica su dirección.
+
+  <Box>
+    <GuideEntityEmbed Entity="AirlockShuttle"/>
+    <GuideEntityEmbed Entity="AirlockGlassShuttle"/>
+  </Box>
+
+  ## Control direccional
+  Cuando tengas la forma deseada, saca los propulsores e instálalos en los bordes.
+
+  <Box>
+    <GuideEntityEmbed Entity="Thruster" Caption="" Rotation="0"/>
+    <GuideEntityEmbed Entity="Thruster" Caption="" Rotation="90"/>
+    <GuideEntityEmbed Entity="Thruster" Caption="" Rotation="180"/>
+    <GuideEntityEmbed Entity="Thruster" Caption="" Rotation="270"/>
+  </Box>
+
+  Conviene instalar cuatro propulsores, uno en cada lado de la plataforma, para poder moverte en cualquier dirección.
+
+  Deben apuntar hacia fuera, al espacio, para funcionar, y no se activarán si hay una baldosa delante de la tobera.
+  Puedes girar los propulsores —incluso si están anclados— usando [color=yellow][bold][keybind="RotateObjectClockwise"][/bold][/color] o [color=yellow][bold][keybind="RotateObjectCounterclockwise"][/bold][/color] para hacerlo en sentido horario o antihorario.
+
+  Puedes activar o desactivar los propulsores usando [color=yellow][bold][keybind="Use"][/bold][/color] con la mano vacía o [color=yellow][bold][keybind="ActivateItemInWorld"][/bold][/color].
+
+  ## Control de rotación
+  Ahora que tienes control direccional, tendrás que instalar un giroscopio para controlar la rotación.
+
+  <Box>
+    <GuideEntityEmbed Entity="Gyroscope"/>
+  </Box>
+  La ubicación del giroscopio no es tan importante como la de los propulsores, pero debería quedar en un lugar cómodo para acceder a él y alimentarlo.
+
+  Ten en cuenta que los objetos de gran masa pueden necesitar más de un giroscopio para girar con eficacia.
+
+  ## Energía
+  Ahora que todos los sistemas están instalados, tendrás que suministrarles energía.
+
+  Para las lanzaderas pequeñas, un generador portátil de tipo J.R.P.A.C.M.A.N. es una buena opción. Suministra directamente energía de LV, así que no tendrás que preocuparte por los transformadores.
+  También es habitual encontrar combustible para el generador en los túneles de mantenimiento.
+
+  <Box HorizontalAlignment="Stretch">
+    <Box>
+      <GuideEntityEmbed Entity="PortableGeneratorJrPacman" Caption="J.R.P.A.C.M.A.N."/>
+    </Box>
+    <Box>
+      <GuideEntityEmbed Entity="WeldingFuelTankFull"/>
+    </Box>
+  </Box>
+
+  No obstante, algunas estaciones proporcionan generadores mucho mejores y soluciones compactas, como la APU de lanzadera o el generador estático.
+  Estos suministran HV, que habrá que reducir a MV y LV.
+  Por suerte, esas estaciones también suelen proporcionar placas para subestaciones de pared con este fin.
+
+  <Box HorizontalAlignment="Stretch">
+    <Box>
+      <GuideEntityEmbed Entity="GeneratorWallmountAPU"/>
+    </Box>
+    <Box>
+      <GuideEntityEmbed Entity="GeneratorBasic15kW"/>
+    </Box>
+    <Box>
+      <GuideEntityEmbed Entity="SubstationWallBasic"/>
+    </Box>
+  </Box>
+
+  ## Pilotaje
+  Por último, instala el ordenador de la lanzadera donde resulte cómodo y asegúrate de que todos los propulsores y giroscopios reciben energía (¡recuerda cablear las redes de MV y LV!).
+  Si es así, ¡enhorabuena! ¡Ya deberías tener una lanzadera funcional!
+
+  Hacerla habitable y atractiva queda como ejercicio para quien lea esta guía.
+</Document>

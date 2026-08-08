@@ -1,6 +1,7 @@
 using System.Linq;
 using System.Diagnostics.CodeAnalysis;
 using Content.Client.Stylesheets;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._RMC14.Requisitions;
 using Content.Shared._RMC14.Requisitions.Components;
 using JetBrains.Annotations;
@@ -9,6 +10,7 @@ using Robust.Client.Graphics;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared.GameObjects;
+using Robust.Shared.Localization;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using static Content.Shared._RMC14.Requisitions.Components.RequisitionsElevatorMode;
@@ -19,6 +21,7 @@ namespace Content.Client._RMC14.Requisitions;
 public sealed partial class RequisitionsBui(EntityUid owner, Enum uiKey) : BoundUserInterface(owner, uiKey)
 {
     [Dependency] private IEntityManager _entities = default!;
+    [Dependency] private ILocalizationManager _localization = default!;
     [Dependency] private IPrototypeManager _prototypes = default!;
 
     [ViewVariables]
@@ -75,35 +78,37 @@ public sealed partial class RequisitionsBui(EntityUid owner, Enum uiKey) : Bound
 
     private void UpdatePlatform(RequisitionsBuiState uiState)
     {
-        var platformLabel = "No platform";
-        var platformButtonLabel = "No platform";
+        var platformLabel = GetUiString("cmu-requisitions-no-platform", "No platform");
+        var platformButtonLabel = platformLabel;
         var platformButtonDisabled = false;
         bool? raise = null;
         switch (uiState.PlatformLowered)
         {
             case Lowered or Raised when uiState.Busy:
-                platformLabel = $"Platform: {uiState.PlatformLowered}";
-                platformButtonLabel = "ASRS busy";
+                platformLabel = uiState.PlatformLowered == Lowered
+                    ? GetUiString("cmu-requisitions-platform-lowered", "Platform: Lowered")
+                    : GetUiString("cmu-requisitions-platform-raised", "Platform: Raised");
+                platformButtonLabel = GetUiString("cmu-requisitions-asrs-busy", "ASRS busy");
                 platformButtonDisabled = true;
                 break;
             case Lowered:
-                platformButtonLabel = "Raise";
-                platformLabel = "Platform: Lowered";
+                platformButtonLabel = GetUiString("cmu-requisitions-raise", "Raise");
+                platformLabel = GetUiString("cmu-requisitions-platform-lowered", "Platform: Lowered");
                 raise = true;
                 break;
             case Raised:
-                platformButtonLabel = "Lower";
-                platformLabel = "Platform: Raised";
+                platformButtonLabel = GetUiString("cmu-requisitions-lower", "Lower");
+                platformLabel = GetUiString("cmu-requisitions-platform-raised", "Platform: Raised");
                 raise = false;
                 break;
             case Lowering:
-                platformButtonLabel = "Please wait";
-                platformLabel = "Lowering...";
+                platformButtonLabel = GetUiString("cmu-requisitions-please-wait", "Please wait");
+                platformLabel = GetUiString("cmu-requisitions-lowering", "Lowering...");
                 platformButtonDisabled = true;
                 break;
             case Raising:
-                platformButtonLabel = "Please wait";
-                platformLabel = "Raising...";
+                platformButtonLabel = GetUiString("cmu-requisitions-please-wait", "Please wait");
+                platformLabel = GetUiString("cmu-requisitions-raising", "Raising...");
                 platformButtonDisabled = true;
                 break;
             case null:
@@ -124,7 +129,10 @@ public sealed partial class RequisitionsBui(EntityUid owner, Enum uiKey) : Bound
 
     private void UpdateBudget(RequisitionsBuiState uiState)
     {
-        var text = $"Supply budget: ${uiState.Balance}";
+        var text = GetUiString(
+            "cmu-requisitions-supply-budget",
+            $"Supply budget: ${uiState.Balance}",
+            ("balance", $"${uiState.Balance}"));
         var budget = new FormattedMessage();
         budget.AddMarkupOrThrow($"[bold]{text}[/bold]");
         _window!.MainView.BudgetLabel.SetMessage(budget);
@@ -164,7 +172,7 @@ public sealed partial class RequisitionsBui(EntityUid owner, Enum uiKey) : Bound
     private void RebuildCategories(RequisitionsComputerComponent computer)
     {
         var categoryHeader = new FormattedMessage();
-        categoryHeader.AddMarkupOrThrow("[bold]CATEGORIES[/bold]");
+        categoryHeader.AddMarkupOrThrow($"[bold]{GetUiString("cmu-requisitions-categories", "CATEGORIES")}[/bold]");
         _window!.OrderCategoriesView.CategoryHeaderLabel.SetMessage(categoryHeader);
         _window.OrderCategoriesView.CategoriesContainer.DisposeAllChildren();
 
@@ -174,7 +182,7 @@ public sealed partial class RequisitionsBui(EntityUid owner, Enum uiKey) : Bound
             var selected = _selectedCategory == categoryIndex;
             var categoryButton = new Button
             {
-                Text = $"{(selected ? "> " : string.Empty)}{GetCategoryLabel(category.Name)}",
+                Text = $"{(selected ? "> " : string.Empty)}{GetCategoryLabel(GetConfiguredName(category.Name))}",
                 HorizontalExpand = true,
                 StyleClasses = { "ButtonSquare" },
             };
@@ -194,9 +202,9 @@ public sealed partial class RequisitionsBui(EntityUid owner, Enum uiKey) : Bound
 
         var filter = _window.OrderCategoriesView.SearchBar.Text?.Trim();
         var searching = !string.IsNullOrWhiteSpace(filter);
-        var header = "ALL CATEGORIES";
+        var header = GetUiString("cmu-requisitions-all-categories", "ALL CATEGORIES");
         if (searching)
-            header = "SEARCH RESULTS";
+            header = GetUiString("cmu-requisitions-search-results", "SEARCH RESULTS");
 
         (int Category, int Order)? firstVisible = null;
         var selectedVisible = false;
@@ -211,12 +219,12 @@ public sealed partial class RequisitionsBui(EntityUid owner, Enum uiKey) : Bound
 
             var category = computer.Categories[categoryIndex];
             if (!searching)
-                header = category.Name.ToUpperInvariant();
+                header = GetConfiguredName(category.Name).ToUpperInvariant();
 
             for (var orderIndex = 0; orderIndex < category.Entries.Count; orderIndex++)
             {
                 var entry = category.Entries[orderIndex];
-                if (searching && !MatchesFilter(category.Name, entry, filter!))
+                if (searching && !MatchesFilter(GetConfiguredName(category.Name), entry, filter!))
                     continue;
 
                 firstVisible ??= (categoryIndex, orderIndex);
@@ -240,7 +248,10 @@ public sealed partial class RequisitionsBui(EntityUid owner, Enum uiKey) : Bound
         }
 
         if (firstVisible == null)
-            _window.OrderCategoriesView.OrdersContainer.AddChild(new Label { Text = "No matching orders." });
+            _window.OrderCategoriesView.OrdersContainer.AddChild(new Label
+            {
+                Text = GetUiString("cmu-requisitions-no-matching-orders", "No matching orders."),
+            });
 
         var catalogHeader = new FormattedMessage();
         catalogHeader.AddMarkupOrThrow($"[bold]{header}[/bold]");
@@ -267,7 +278,7 @@ public sealed partial class RequisitionsBui(EntityUid owner, Enum uiKey) : Bound
     private void UpdatePreview(RequisitionsComputerComponent computer)
     {
         var previewHeader = new FormattedMessage();
-        previewHeader.AddMarkupOrThrow("[bold]ORDER PREVIEW[/bold]");
+        previewHeader.AddMarkupOrThrow($"[bold]{GetUiString("cmu-requisitions-order-preview", "ORDER PREVIEW")}[/bold]");
         _window!.OrderCategoriesView.PreviewHeaderLabel.SetMessage(previewHeader);
         _window.OrderCategoriesView.PreviewPanel.Visible = _previewOpen;
 
@@ -277,7 +288,9 @@ public sealed partial class RequisitionsBui(EntityUid owner, Enum uiKey) : Bound
         {
             _window.OrderCategoriesView.PreviewPanel.Visible = false;
             _window.OrderCategoriesView.PreviewTexture.Textures.Clear();
-            _window.OrderCategoriesView.PreviewNameLabel.Text = "No order selected";
+            _window.OrderCategoriesView.PreviewNameLabel.Text = GetUiString(
+                "cmu-requisitions-no-order-selected",
+                "No order selected");
             _window.OrderCategoriesView.PreviewCostLabel.Text = string.Empty;
             _window.OrderCategoriesView.PreviewStockLabel.Text = string.Empty;
             _window.OrderCategoriesView.PreviewDescriptionLabel.SetMessage(string.Empty);
@@ -288,7 +301,10 @@ public sealed partial class RequisitionsBui(EntityUid owner, Enum uiKey) : Bound
 
         SetPrototypeIcon(_window.OrderCategoriesView.PreviewTexture, entry);
         _window.OrderCategoriesView.PreviewNameLabel.Text = GetEntryName(entry);
-        _window.OrderCategoriesView.PreviewCostLabel.Text = $"Cost: ${entry.Cost}";
+        _window.OrderCategoriesView.PreviewCostLabel.Text = GetUiString(
+            "cmu-requisitions-cost",
+            $"Cost: ${entry.Cost}",
+            ("cost", $"${entry.Cost}"));
         _window.OrderCategoriesView.PreviewStockLabel.Text = GetStockText(_selectedCategory.Value, _selectedOrder.Value);
         _window.OrderCategoriesView.PreviewDescriptionLabel.SetMessage(GetEntryDescription(entry));
         _window.OrderCategoriesView.PreviewContentsLabel.SetMessage(GetContentsText(entry));
@@ -404,7 +420,7 @@ public sealed partial class RequisitionsBui(EntityUid owner, Enum uiKey) : Bound
     private string GetEntryName(RequisitionsEntry entry)
     {
         if (!string.IsNullOrWhiteSpace(entry.Name))
-            return entry.Name;
+            return GetConfiguredName(entry.Name);
 
         return _prototypes.TryIndex<EntityPrototype>(entry.Crate, out var prototype)
             ? prototype.Name
@@ -416,15 +432,15 @@ public sealed partial class RequisitionsBui(EntityUid owner, Enum uiKey) : Bound
         return _prototypes.TryIndex<EntityPrototype>(entry.Crate, out var prototype) &&
                !string.IsNullOrWhiteSpace(prototype.Description)
             ? prototype.Description
-            : "No manifest description.";
+            : GetUiString("cmu-requisitions-no-manifest-description", "No manifest description.");
     }
 
     private string GetContentsText(RequisitionsEntry entry)
     {
         if (entry.Entities.Count == 0)
-            return "Delivered as a sealed crate.";
+            return GetUiString("cmu-requisitions-sealed-crate", "Delivered as a sealed crate.");
 
-        var contents = "MANIFEST";
+        var contents = GetUiString("cmu-requisitions-manifest", "MANIFEST");
         foreach (var entity in entry.Entities)
         {
             contents += _prototypes.TryIndex<EntityPrototype>(entity, out var prototype)
@@ -438,19 +454,24 @@ public sealed partial class RequisitionsBui(EntityUid owner, Enum uiKey) : Bound
     private string GetStockText(int category, int order)
     {
         if (!_stock.TryGetValue((category, order), out var stock))
-            return "Stock: unlimited";
+            return GetUiString("cmu-requisitions-stock-unlimited", "Stock: unlimited");
 
         var refill = stock.Current < stock.Max
             ? $"  +{FormatTime(stock.SecondsUntilNextReplenish)}"
             : string.Empty;
 
-        return $"Stock: {stock.Current}/{stock.Max}{refill}";
+        return GetUiString(
+            "cmu-requisitions-stock",
+            $"Stock: {stock.Current}/{stock.Max}{refill}",
+            ("current", stock.Current),
+            ("maximum", stock.Max),
+            ("refill", refill));
     }
 
-    private static string FormatTime(int seconds)
+    private string FormatTime(int seconds)
     {
         if (seconds <= 0)
-            return "now";
+            return GetUiString("cmu-requisitions-now", "now");
 
         var time = TimeSpan.FromSeconds(seconds);
         return $"{(int) time.TotalMinutes:00}:{time.Seconds:00}";
@@ -560,5 +581,26 @@ public sealed partial class RequisitionsBui(EntityUid owner, Enum uiKey) : Bound
             label = label[..parenIndex];
 
         return Truncate(label, 21);
+    }
+
+    private string GetConfiguredName(string name)
+    {
+        return CMUPrototypeLocalization.GetLiteralText(
+            _localization,
+            "RequisitionsComputer",
+            "name",
+            name);
+    }
+
+    private string GetUiString(
+        LocId localizationId,
+        string fallback,
+        params (string, object)[] args)
+    {
+        return CMUPrototypeLocalization.GetOptionalStringOrFallback(
+            _localization,
+            localizationId,
+            fallback,
+            args);
     }
 }

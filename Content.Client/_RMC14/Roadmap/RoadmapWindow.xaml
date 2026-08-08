@@ -1,6 +1,7 @@
 ﻿<controls:RoadmapWindow
     xmlns="https://spacestation14.io"
     xmlns:controls="clr-namespace:Content.Client._RMC14.Roadmap"
+    xmlns:loc="clr-namespace:Content.Client._CMU14.Localizations"
     MinSize="900 800"
     Title="{Loc cm-ui-roadmap}">
     <ScrollContainer>
@@ -14,108 +15,108 @@
                                 Visible="False" StyleClasses="OpenRight" HorizontalExpand="True" />
                         <Button Name="PatreonButton" Access="Public" Text="{Loc 'rmc-ui-patreon'}"
                                 Visible="False" StyleClasses="OpenBoth" HorizontalExpand="True" />
-                        <Button Name="CreditsButton" Access="Public" Text="Credits" StyleClasses="OpenLeft" />
+                        <Button Name="CreditsButton" Access="Public" Text="{Loc credits-window-title}" StyleClasses="OpenLeft" />
                     </BoxContainer>
                     <Label HorizontalExpand="True" Align="Right" VerticalAlignment="Bottom"
-                           Text="*This is not an exhaustive list" />
+                           Text="{loc:CMULoc &quot;cmu-rmc-roadmap-note-not-exhaustive&quot;, &quot;*This is not an exhaustive list&quot;}" />
                 </BoxContainer>
             </BoxContainer>
             <BoxContainer Name="Columns" Access="Public" Orientation="Horizontal">
                 <BoxContainer Name="FirstVersion" Access="Public" Orientation="Vertical" HorizontalExpand="True" Margin="0 0 20 0">
-                    <controls:RoadmapVersionHeader Text="Current version" />
-                    <controls:RoadmapItem ItemState="Partial" HeaderText="PvE" Text="A separate player vs AI gamemode on a second server with campaigns ran by the community." />
-                    <controls:RoadmapItem ItemState="Partial" HeaderText="Whiskey Outpost gamemode" Text="A different PvP gamemode with infinite waves of xenos fighting against a team of marines." />
-                    <controls:RoadmapItem ItemState="Partial" HeaderText="Flamethrowers" Text="Werfs flammen" />
-                    <controls:RoadmapItem ItemState="Partial" HeaderText="Intelligence officer" />
-                    <controls:RoadmapItem ItemState="Partial" HeaderText="Engineering skill" Text="Allows you to repair and hack more advanced constructs" />
-                    <controls:RoadmapItem ItemState="Partial" HeaderText="Xeno strains" Text="Variations of a xeno caste with different stats and abilities" />
-                    <controls:RoadmapItem ItemState="Partial" HeaderText="Close air support" />
-                    <controls:RoadmapItem ItemState="Partial" HeaderText="Smart Gun Operator" Text="Stay behind marines and fire past friendlies and into the enemy!" />
+                    <controls:RoadmapVersionHeader Text="{loc:CMULoc &quot;cmu-rmc-roadmap-version-current&quot;, &quot;Current version&quot;}" />
+                    <controls:RoadmapItem ItemState="Partial" HeaderText="PvE" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-pve-description&quot;, &quot;A separate player vs AI gamemode on a second server with campaigns ran by the community.&quot;}" />
+                    <controls:RoadmapItem ItemState="Partial" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-whiskey-outpost-gamemode-name&quot;, &quot;Whiskey Outpost gamemode&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-whiskey-outpost-gamemode-description&quot;, &quot;A different PvP gamemode with infinite waves of xenos fighting against a team of marines.&quot;}" />
+                    <controls:RoadmapItem ItemState="Partial" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-flamethrowers-name&quot;, &quot;Flamethrowers&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-flamethrowers-description&quot;, &quot;Werfs flammen&quot;}" />
+                    <controls:RoadmapItem ItemState="Partial" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-intelligence-officer-name&quot;, &quot;Intelligence officer&quot;}" />
+                    <controls:RoadmapItem ItemState="Partial" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-engineering-skill-name&quot;, &quot;Engineering skill&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-engineering-skill-description&quot;, &quot;Allows you to repair and hack more advanced constructs&quot;}" />
+                    <controls:RoadmapItem ItemState="Partial" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-xeno-strains-name&quot;, &quot;Xeno strains&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-xeno-strains-description&quot;, &quot;Variations of a xeno caste with different stats and abilities&quot;}" />
+                    <controls:RoadmapItem ItemState="Partial" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-close-air-support-name&quot;, &quot;Close air support&quot;}" />
+                    <controls:RoadmapItem ItemState="Partial" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-smart-gun-operator-name&quot;, &quot;Smart Gun Operator&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-smart-gun-operator-description&quot;, &quot;Stay behind marines and fire past friendlies and into the enemy!&quot;}" />
                     <controls:RoadmapItem ItemState="Partial" HeaderText="Shivas Snowball" />
-                    <controls:RoadmapItem ItemState="Partial" HeaderText="Almayer" Text="Ship map for the marines" />
-                    <controls:RoadmapItem ItemState="Partial" HeaderText="LV-624" Text="Planet map" />
-                    <controls:RoadmapItem ItemState="Partial" HeaderText="Specialist's Demolitionist Kit" Text="M5-ATL!!!" />
-                    <controls:RoadmapItem ItemState="Partial" HeaderText="Requisitions" Text="Department that buys supplies for the rest of the marines" />
-                    <controls:RoadmapItem ItemState="Partial" HeaderText="Xeno Queen" Text="Head caste of the xenonids" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Specialist's Sniper Kit" Text="Sniper loadout for the squad weapons specialist. On completion, its ghillie suit will let you become partially cloaked, and the rifle will have special actions" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Mortars" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Dropship modifications" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Squad automated vendors" Text="Where the marine roles get their equipment at round start" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Mounted Weapons" Text="Mounted heavy machine guns are placeable machine guns with a high ammo count, usually placed behind barricades" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Specialist's Pyrotechnician Kit" Text="Flamethrower with special kinds of fuel." />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Nuke and King endgame" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Hedgehog Ravager strain" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Medical skill" Text="Allows more advanced medical procedures and increases their overall speed" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Plasma and flamethrower sentries" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Firearms skill" Text="Each marine role has a different firearms skill. This impacts how accurate they are with guns" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Orbital bombardment" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Squad Leader" Text="More equipment in the squad leader's equipment and gear racks" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Fireteam Leader" Text="More equipment in the fireteam leader's equipment and gear racks" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Specialist's Scout Kit" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Sorokyne Strata" Text="Planet map, ported by Tunguso4ka and Noctyrn" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Construction skill" Text="Allows you to build more advanced constructs" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Charger Crusher strain" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Berserker Ravager strain" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Tesla ComTech deployable" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Praetorian" Text="Tier 3 xeno" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Weather" Text="Depends on the planet map: rain on LV, sandstorms on Solaris, etc." />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Eggsac Carrier strain" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Vampire Lurker strain" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Specialist's AMR Kit" Text="Anti-materiel rifle that deals high burst damage and briefly stuns the target." />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Mess Technician" Text="Shipside Kitchen role" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="LV-759 Hybrisa Prospera planet" Text="A large city map from cmss13 by Zenith, mikoka wei, Drathek, Nanu, Cuberound, Almings, Crowford, Blundir, dimdimich1996, being ported to RMC-14 by Noctyrn." />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Oppressor Praetorian strain" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Ravager" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Marine squad orders" Text="The move, focus and hold orders. These are orders that specific marine roles can use to give a temporary buff to every marine around them" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Weapon attachments" Text="Each weapon will be able to be customized with different attachments, changing the weapon's stats" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Burrower" Text="Lay the foundations for resin traps in strategic locations or the Hive's flanks. Flank your way around the map with the tunnel ability and dig tunnels to allow for quick transportation of fellow Aliens from the hive to the frontlines" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Communications objective" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="New Varadero" Text="Planet map, ported by Aurallianz Star" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Survivors" Text="A role that starts on the planet and must try to survive until rescued by the Marines" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Engineering staff" Text="Maintenance technician and the Chief Engineer" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Carrier" Text="Carry parasites around, allowing the Hive to impregnate new hosts on the move. Use pheromones to assist fellow Aliens" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Power and evacuation" Text="Power simulation will allow marines to restore power to the colony if they secure the colony's reactors, with evacuation allowing them to fuel the lifeboats and flee the warship if hijacked" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Tactical Map" Text="A view of the planet map that shows the location of other members of your faction, and lets you plan strategies" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Bullet damage fall-off" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Crusher" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Specialist's Grenadier Kit" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Smoke grenades" />
+                    <controls:RoadmapItem ItemState="Partial" HeaderText="Almayer" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-almayer-description&quot;, &quot;Ship map for the marines&quot;}" />
+                    <controls:RoadmapItem ItemState="Partial" HeaderText="LV-624" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-lv-624-description&quot;, &quot;Planet map&quot;}" />
+                    <controls:RoadmapItem ItemState="Partial" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-specialist-s-demolitionist-kit-name&quot;, &quot;Specialist&#x27;s Demolitionist Kit&quot;}" Text="M5-ATL!!!" />
+                    <controls:RoadmapItem ItemState="Partial" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-requisitions-name&quot;, &quot;Requisitions&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-requisitions-description&quot;, &quot;Department that buys supplies for the rest of the marines&quot;}" />
+                    <controls:RoadmapItem ItemState="Partial" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-xeno-queen-name&quot;, &quot;Xeno Queen&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-xeno-queen-description&quot;, &quot;Head caste of the xenonids&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-specialist-s-sniper-kit-name&quot;, &quot;Specialist&#x27;s Sniper Kit&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-specialist-s-sniper-kit-description&quot;, &quot;Sniper loadout for the squad weapons specialist. On completion, its ghillie suit will let you become partially cloaked, and the rifle will have special actions&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-mortars-name&quot;, &quot;Mortars&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-dropship-modifications-name&quot;, &quot;Dropship modifications&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-squad-automated-vendors-name&quot;, &quot;Squad automated vendors&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-squad-automated-vendors-description&quot;, &quot;Where the marine roles get their equipment at round start&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-mounted-weapons-name&quot;, &quot;Mounted Weapons&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-mounted-weapons-description&quot;, &quot;Mounted heavy machine guns are placeable machine guns with a high ammo count, usually placed behind barricades&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-specialist-s-pyrotechnician-kit-name&quot;, &quot;Specialist&#x27;s Pyrotechnician Kit&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-specialist-s-pyrotechnician-kit-description&quot;, &quot;Flamethrower with special kinds of fuel.&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-nuke-and-king-endgame-name&quot;, &quot;Nuke and King endgame&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-hedgehog-ravager-strain-name&quot;, &quot;Hedgehog Ravager strain&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-medical-skill-name&quot;, &quot;Medical skill&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-medical-skill-description&quot;, &quot;Allows more advanced medical procedures and increases their overall speed&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-plasma-and-flamethrower-sentries-name&quot;, &quot;Plasma and flamethrower sentries&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-firearms-skill-name&quot;, &quot;Firearms skill&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-firearms-skill-description&quot;, &quot;Each marine role has a different firearms skill. This impacts how accurate they are with guns&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-orbital-bombardment-name&quot;, &quot;Orbital bombardment&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-squad-leader-name&quot;, &quot;Squad Leader&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-squad-leader-description&quot;, &quot;More equipment in the squad leader&#x27;s equipment and gear racks&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-fireteam-leader-name&quot;, &quot;Fireteam Leader&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-fireteam-leader-description&quot;, &quot;More equipment in the fireteam leader&#x27;s equipment and gear racks&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-specialist-s-scout-kit-name&quot;, &quot;Specialist&#x27;s Scout Kit&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="Sorokyne Strata" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-sorokyne-strata-description&quot;, &quot;Planet map, ported by Tunguso4ka and Noctyrn&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-construction-skill-name&quot;, &quot;Construction skill&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-construction-skill-description&quot;, &quot;Allows you to build more advanced constructs&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-charger-crusher-strain-name&quot;, &quot;Charger Crusher strain&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-berserker-ravager-strain-name&quot;, &quot;Berserker Ravager strain&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-tesla-comtech-deployable-name&quot;, &quot;Tesla ComTech deployable&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-praetorian-name&quot;, &quot;Praetorian&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-praetorian-description&quot;, &quot;Tier 3 xeno&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-weather-name&quot;, &quot;Weather&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-weather-description&quot;, &quot;Depends on the planet map: rain on LV, sandstorms on Solaris, etc.&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-eggsac-carrier-strain-name&quot;, &quot;Eggsac Carrier strain&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-vampire-lurker-strain-name&quot;, &quot;Vampire Lurker strain&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-specialist-s-amr-kit-name&quot;, &quot;Specialist&#x27;s AMR Kit&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-specialist-s-amr-kit-description&quot;, &quot;Anti-materiel rifle that deals high burst damage and briefly stuns the target.&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-mess-technician-name&quot;, &quot;Mess Technician&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-mess-technician-description&quot;, &quot;Shipside Kitchen role&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-lv-759-hybrisa-prospera-planet-name&quot;, &quot;LV-759 Hybrisa Prospera planet&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-lv-759-hybrisa-prospera-planet-description&quot;, &quot;A large city map from cmss13 by Zenith, mikoka wei, Drathek, Nanu, Cuberound, Almings, Crowford, Blundir, dimdimich1996, being ported to RMC-14 by Noctyrn.&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-oppressor-praetorian-strain-name&quot;, &quot;Oppressor Praetorian strain&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-ravager-name&quot;, &quot;Ravager&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-marine-squad-orders-name&quot;, &quot;Marine squad orders&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-marine-squad-orders-description&quot;, &quot;The move, focus and hold orders. These are orders that specific marine roles can use to give a temporary buff to every marine around them&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-weapon-attachments-name&quot;, &quot;Weapon attachments&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-weapon-attachments-description&quot;, &quot;Each weapon will be able to be customized with different attachments, changing the weapon&#x27;s stats&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-burrower-name&quot;, &quot;Burrower&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-burrower-description&quot;, &quot;Lay the foundations for resin traps in strategic locations or the Hive&#x27;s flanks. Flank your way around the map with the tunnel ability and dig tunnels to allow for quick transportation of fellow Aliens from the hive to the frontlines&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-communications-objective-name&quot;, &quot;Communications objective&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="New Varadero" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-new-varadero-description&quot;, &quot;Planet map, ported by Aurallianz Star&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-survivors-name&quot;, &quot;Survivors&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-survivors-description&quot;, &quot;A role that starts on the planet and must try to survive until rescued by the Marines&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-engineering-staff-name&quot;, &quot;Engineering staff&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-engineering-staff-description&quot;, &quot;Maintenance technician and the Chief Engineer&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-carrier-name&quot;, &quot;Carrier&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-carrier-description&quot;, &quot;Carry parasites around, allowing the Hive to impregnate new hosts on the move. Use pheromones to assist fellow Aliens&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-power-and-evacuation-name&quot;, &quot;Power and evacuation&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-power-and-evacuation-description&quot;, &quot;Power simulation will allow marines to restore power to the colony if they secure the colony&#x27;s reactors, with evacuation allowing them to fuel the lifeboats and flee the warship if hijacked&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-tactical-map-name&quot;, &quot;Tactical Map&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-tactical-map-description&quot;, &quot;A view of the planet map that shows the location of other members of your faction, and lets you plan strategies&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-bullet-damage-fall-off-name&quot;, &quot;Bullet damage fall-off&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-crusher-name&quot;, &quot;Crusher&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-specialist-s-grenadier-kit-name&quot;, &quot;Specialist&#x27;s Grenadier Kit&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-smoke-grenades-name&quot;, &quot;Smoke grenades&quot;}" />
                     <controls:RoadmapItem ItemState="Complete" HeaderText="Fiorina Science Annex" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Spitter" Text="Protect your fellow Aliens with a corrosive acid spit, allowing you to damage hosts from a distance and deny areas or lanes of fire to them. Use your strong acid to quickly destroy equipment" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="USS LCS-14 Savannah" Text="A new ship map for marines to spawn on. Contributed by Tunguso4ka" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Solaris Ridge" Text="A new planet-side map. Contributed by Tunguso4ka" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Larva removal surgery" Text="No longer a week away" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Treatable wounds" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="CPR and IVs" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Boiler" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Hivelord" Text="Shape the Hive to your will with a massive plasma reserve. Become one with weeds and sprint around weeded terrain like a Runner. Use pheromones to assist fellow Aliens" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Lurker" Text="Become the ultimate ambusher. Stalk behind the frontlines and on flanks, wound, capture and kill unsuspecting Marines. Harass support personnel" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Warrior" Text="Fight on the frontlines. Disable and capture lone prey. Punish reckless Marines by flinging them into Alien backlines. Act as one of the Hive's main line combatants" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Tier 1 xenos" />
-                    <controls:RoadmapItem ItemState="Complete" HeaderText="Tier 0 xenos" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-spitter-name&quot;, &quot;Spitter&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-spitter-description&quot;, &quot;Protect your fellow Aliens with a corrosive acid spit, allowing you to damage hosts from a distance and deny areas or lanes of fire to them. Use your strong acid to quickly destroy equipment&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="USS LCS-14 Savannah" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-uss-lcs-14-savannah-description&quot;, &quot;A new ship map for marines to spawn on. Contributed by Tunguso4ka&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="Solaris Ridge" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-solaris-ridge-description&quot;, &quot;A new planet-side map. Contributed by Tunguso4ka&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-larva-removal-surgery-name&quot;, &quot;Larva removal surgery&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-larva-removal-surgery-description&quot;, &quot;No longer a week away&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-treatable-wounds-name&quot;, &quot;Treatable wounds&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-cpr-and-ivs-name&quot;, &quot;CPR and IVs&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-boiler-name&quot;, &quot;Boiler&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-hivelord-name&quot;, &quot;Hivelord&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-hivelord-description&quot;, &quot;Shape the Hive to your will with a massive plasma reserve. Become one with weeds and sprint around weeded terrain like a Runner. Use pheromones to assist fellow Aliens&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-lurker-name&quot;, &quot;Lurker&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-lurker-description&quot;, &quot;Become the ultimate ambusher. Stalk behind the frontlines and on flanks, wound, capture and kill unsuspecting Marines. Harass support personnel&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-warrior-name&quot;, &quot;Warrior&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-warrior-description&quot;, &quot;Fight on the frontlines. Disable and capture lone prey. Punish reckless Marines by flinging them into Alien backlines. Act as one of the Hive&#x27;s main line combatants&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-tier-1-xenos-name&quot;, &quot;Tier 1 xenos&quot;}" />
+                    <controls:RoadmapItem ItemState="Complete" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-tier-0-xenos-name&quot;, &quot;Tier 0 xenos&quot;}" />
                 </BoxContainer>
                 <BoxContainer Name="SecondVersion" Access="Public" Orientation="Vertical"  HorizontalExpand="True" Margin="0 0 20 0">
-                    <controls:RoadmapVersionHeader Text="Upcoming" />
-                    <controls:RoadmapItem ItemState="InProgress" HeaderText="Synthetics" />
-                    <controls:RoadmapItem ItemState="InProgress" HeaderText="ARES" Text="Shipside AI with its own room that you need an access ticket to get into." />
-                    <controls:RoadmapItem ItemState="InProgress" HeaderText="Emergency response teams" Text="Factions that randomly spawn, are called to the Almayer through a distress signal sent by CIC, or spawned by admins. Each has their own objectives" />
-                    <controls:RoadmapItem ItemState="InProgress" HeaderText="Limb damage" Text="Each limb on a marine will be able to take damage separately, being able to detach upon receiving too much damage and requiring individual treatment" />
-                    <controls:RoadmapItem ItemState="InProgress" HeaderText="Fractures and internal bleeding" Text="Fractures are caused to a body part through physical damage. Internal bleeding is also caused by physical damage but also by moving with unsplinted fractures." />
-                    <controls:RoadmapItem ItemState="InProgress" HeaderText="Pain and painkillers" Text="Wounds will cause pain which can be dulled with painkillers" />
-                    <controls:RoadmapItem ItemState="InProgress" HeaderText="Vehicles, the tank and the ARC" Text="Driveable vehicles such as the colony van, which can be repaired. The tank unlocks at 200 players for the marines." />
-                    <controls:RoadmapItem ItemState="InProgress" HeaderText="Fire missions" Text="A second way for dropships to attack, where instead of shooting directly at a flare or laser they move in a direction away from it and shoot their weapons to each side. This method of attack takes camera offset into account and is much more effective at clearing an area." />
-                    <controls:RoadmapItem ItemState="Planned" HeaderText="Blood types" />
-                    <controls:RoadmapItem ItemState="Planned" HeaderText="Organ damage" Text="Caused by physical damage to unarmored parts, moving with unsplinted fractures, and overdoses." />
-                    <controls:RoadmapItem ItemState="Planned" HeaderText="More surgeries" Text="Foreign object removal, internal bleeding surgery, fractures" />
-                    <controls:RoadmapItem ItemState="Planned" HeaderText="Chemical research" Text="Chemicals with random recipes, ingredients and effects" />
-                    <controls:RoadmapItem ItemState="Planned" HeaderText="Trapper Boiler strain" />
+                    <controls:RoadmapVersionHeader Text="{loc:CMULoc &quot;cmu-rmc-roadmap-version-upcoming&quot;, &quot;Upcoming&quot;}" />
+                    <controls:RoadmapItem ItemState="InProgress" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-synthetics-name&quot;, &quot;Synthetics&quot;}" />
+                    <controls:RoadmapItem ItemState="InProgress" HeaderText="ARES" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-ares-description&quot;, &quot;Shipside AI with its own room that you need an access ticket to get into.&quot;}" />
+                    <controls:RoadmapItem ItemState="InProgress" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-emergency-response-teams-name&quot;, &quot;Emergency response teams&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-emergency-response-teams-description&quot;, &quot;Factions that randomly spawn, are called to the Almayer through a distress signal sent by CIC, or spawned by admins. Each has their own objectives&quot;}" />
+                    <controls:RoadmapItem ItemState="InProgress" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-limb-damage-name&quot;, &quot;Limb damage&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-limb-damage-description&quot;, &quot;Each limb on a marine will be able to take damage separately, being able to detach upon receiving too much damage and requiring individual treatment&quot;}" />
+                    <controls:RoadmapItem ItemState="InProgress" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-fractures-and-internal-bleeding-name&quot;, &quot;Fractures and internal bleeding&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-fractures-and-internal-bleeding-description&quot;, &quot;Fractures are caused to a body part through physical damage. Internal bleeding is also caused by physical damage but also by moving with unsplinted fractures.&quot;}" />
+                    <controls:RoadmapItem ItemState="InProgress" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-pain-and-painkillers-name&quot;, &quot;Pain and painkillers&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-pain-and-painkillers-description&quot;, &quot;Wounds will cause pain which can be dulled with painkillers&quot;}" />
+                    <controls:RoadmapItem ItemState="InProgress" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-vehicles-the-tank-and-the-arc-name&quot;, &quot;Vehicles, the tank and the ARC&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-vehicles-the-tank-and-the-arc-description&quot;, &quot;Driveable vehicles such as the colony van, which can be repaired. The tank unlocks at 200 players for the marines.&quot;}" />
+                    <controls:RoadmapItem ItemState="InProgress" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-fire-missions-name&quot;, &quot;Fire missions&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-fire-missions-description&quot;, &quot;A second way for dropships to attack, where instead of shooting directly at a flare or laser they move in a direction away from it and shoot their weapons to each side. This method of attack takes camera offset into account and is much more effective at clearing an area.&quot;}" />
+                    <controls:RoadmapItem ItemState="Planned" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-blood-types-name&quot;, &quot;Blood types&quot;}" />
+                    <controls:RoadmapItem ItemState="Planned" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-organ-damage-name&quot;, &quot;Organ damage&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-organ-damage-description&quot;, &quot;Caused by physical damage to unarmored parts, moving with unsplinted fractures, and overdoses.&quot;}" />
+                    <controls:RoadmapItem ItemState="Planned" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-more-surgeries-name&quot;, &quot;More surgeries&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-more-surgeries-description&quot;, &quot;Foreign object removal, internal bleeding surgery, fractures&quot;}" />
+                    <controls:RoadmapItem ItemState="Planned" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-chemical-research-name&quot;, &quot;Chemical research&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-chemical-research-description&quot;, &quot;Chemicals with random recipes, ingredients and effects&quot;}" />
+                    <controls:RoadmapItem ItemState="Planned" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-trapper-boiler-strain-name&quot;, &quot;Trapper Boiler strain&quot;}" />
                 </BoxContainer>
                 <BoxContainer Name="ThirdVersion" Access="Public" Orientation="Vertical"  HorizontalExpand="True" Margin="0 0 20 0">
-                    <controls:RoadmapVersionHeader Text="Future versions" />
-                    <controls:RoadmapItem ItemState="Planned" HeaderText="More lobby art and music" Text="We are always looking for people to contribute more lobby art and music!" />
-                    <controls:RoadmapItem ItemState="Planned" HeaderText="Clone damage and cryo cells" Text="Clone damage is rarely caused by some chemicals, cryo cells treats this kind of damage." />
-                    <controls:RoadmapItem ItemState="Planned" HeaderText="Autodoc and body scanners" Text="Automatically but very inefficiently treats marines in the medbay." />
-                    <controls:RoadmapItem ItemState="Planned" HeaderText="Ordnance Technician" Text="Shipside role in charge of making custom grenades, claymores, mortar shells, and rockets" />
+                    <controls:RoadmapVersionHeader Text="{loc:CMULoc &quot;cmu-rmc-roadmap-version-future&quot;, &quot;Future versions&quot;}" />
+                    <controls:RoadmapItem ItemState="Planned" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-more-lobby-art-and-music-name&quot;, &quot;More lobby art and music&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-more-lobby-art-and-music-description&quot;, &quot;We are always looking for people to contribute more lobby art and music!&quot;}" />
+                    <controls:RoadmapItem ItemState="Planned" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-clone-damage-and-cryo-cells-name&quot;, &quot;Clone damage and cryo cells&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-clone-damage-and-cryo-cells-description&quot;, &quot;Clone damage is rarely caused by some chemicals, cryo cells treats this kind of damage.&quot;}" />
+                    <controls:RoadmapItem ItemState="Planned" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-autodoc-and-body-scanners-name&quot;, &quot;Autodoc and body scanners&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-autodoc-and-body-scanners-description&quot;, &quot;Automatically but very inefficiently treats marines in the medbay.&quot;}" />
+                    <controls:RoadmapItem ItemState="Planned" HeaderText="{loc:CMULoc &quot;cmu-rmc-roadmap-ordnance-technician-name&quot;, &quot;Ordnance Technician&quot;}" Text="{loc:CMULoc &quot;cmu-rmc-roadmap-ordnance-technician-description&quot;, &quot;Shipside role in charge of making custom grenades, claymores, mortar shells, and rockets&quot;}" />
                 </BoxContainer>
             </BoxContainer>
         </BoxContainer>

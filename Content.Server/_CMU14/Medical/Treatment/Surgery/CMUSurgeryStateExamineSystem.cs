@@ -5,6 +5,7 @@ using Content.Shared._CMU14.Medical.Treatment.Surgery;
 using Content.Shared._RMC14.Marines.Skills;
 using Content.Shared.Body.Part;
 using Content.Shared.Examine;
+using Robust.Shared.Localization;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server._CMU14.Medical.Treatment.Surgery;
@@ -14,6 +15,7 @@ public sealed partial class CMUSurgeryStateExamineSystem : EntitySystem
     private static readonly EntProtoId<SkillDefinitionComponent> SurgerySkill = "RMCSkillSurgery";
 
     [Dependency] private SharedCMUSurgeryFlowSystem _flow = default!;
+    [Dependency] private ILocalizationManager _localization = default!;
     [Dependency] private CMUMedicalBodyIndexSystem _medicalIndex = default!;
     [Dependency] private SkillsSystem _skills = default!;
 
@@ -121,16 +123,24 @@ public sealed partial class CMUSurgeryStateExamineSystem : EntitySystem
             && armed.TargetPartType == bodyPart.PartType
             && armed.TargetSymmetry == bodyPart.Symmetry)
         {
-            return armed.StepLabel;
+            return ResolveLocalizedText(armed.StepLabelLocId, armed.StepLabel);
         }
 
         if (TryComp<CMUSurgeryInFlightComponent>(part, out var inFlight)
             && _flow.TryResolveNextStep(patient, part, inFlight.LeafSurgeryId, out var resolved))
         {
-            return resolved.StepLabel;
+            return ResolveLocalizedText(resolved.StepLabelLocId, resolved.StepLabel);
         }
 
         return Loc.GetString("cmu-medical-surgery-examine-no-active-step");
+    }
+
+    private string ResolveLocalizedText(LocId? localizationId, string fallback)
+    {
+        var resolvedFallback = _localization.TryGetString(fallback, out var localized)
+            ? localized
+            : fallback;
+        return CMUSurgeryLocalization.Resolve(_localization, localizationId, resolvedFallback);
     }
 
     private string ResolveAccessLabel(CMUSurgicalAccess access)

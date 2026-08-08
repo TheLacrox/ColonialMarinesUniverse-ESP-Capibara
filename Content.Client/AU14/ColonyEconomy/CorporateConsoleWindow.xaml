@@ -1,15 +1,16 @@
 <controls:CorporateConsoleWindow
     xmlns="https://spacestation14.io"
+    xmlns:loc="clr-namespace:Content.Client._CMU14.Localizations"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:controls="clr-namespace:Content.Client.AU14.ColonyEconomy"
-    Title="Corporate Affairs Console" MinSize="480 480">
+    Title="{loc:CMULoc 'cmu-colony-economy-corporate-title', 'Corporate Affairs Console'}" MinSize="480 480">
     <ScrollContainer HorizontalExpand="True" VerticalExpand="True">
         <BoxContainer Orientation="Vertical" HorizontalExpand="True" Margin="8">
-            <Label Name="CorporateBudgetLabel" Access="Public" Text="Corporate Budget: $0"
+            <Label Name="CorporateBudgetLabel" Access="Public" Text="{loc:CMULoc 'cmu-colony-economy-corporate-budget-placeholder', 'Corporate Budget: $0'}"
                    StyleClasses="LabelHeading" Margin="0 4" />
 
             <!-- Withdraw -->
-            <Label Text="-- Withdraw Cash --" Margin="0 4" />
+            <Label Text="{loc:CMULoc 'cmu-colony-economy-withdraw-heading', '-- Withdraw Cash --'}" Margin="0 4" />
             <Label Name="WithdrawTaxNote" Access="Public" Text=""
                    StyleClasses="LabelSubText" Margin="0 2" />
             <BoxContainer Orientation="Horizontal" SeparationOverride="4" Margin="0 2">
@@ -22,25 +23,25 @@
             </BoxContainer>
 
             <!-- Transit Tariff -->
-            <Label Text="-- Transit Tariff --" Margin="0 6" />
-            <Label Name="CurrentTariffLabel" Access="Public" Text="Current Transit Tariff: 0%"
+            <Label Text="{loc:CMULoc 'cmu-colony-economy-transit-tariff-heading', '-- Transit Tariff --'}" Margin="0 6" />
+            <Label Name="CurrentTariffLabel" Access="Public" Text="{loc:CMULoc 'cmu-colony-economy-current-transit-tariff-placeholder', 'Current Transit Tariff: 0%'}"
                    Margin="0 2" />
-            <Label Text="A percentage of all submission storage payouts that goes to the corporate budget instead of the colony."
+            <Label Text="{loc:CMULoc 'cmu-colony-economy-transit-tariff-description', 'A percentage of all submission storage payouts that goes to the corporate budget instead of the colony.'}"
                    StyleClasses="LabelSubText" Margin="0 2" />
             <BoxContainer Orientation="Horizontal" SeparationOverride="4" Margin="0 4">
-                <Label Text="New Tariff (0–50%): " />
-                <LineEdit Name="TariffInput" Access="Public" PlaceHolder="e.g. 15"
+                <Label Text="{loc:CMULoc 'cmu-colony-economy-new-tariff-label', 'New Tariff (0–50%): '}" />
+                <LineEdit Name="TariffInput" Access="Public" PlaceHolder="{loc:CMULoc 'cmu-colony-economy-example-15', 'e.g. 15'}"
                           HorizontalExpand="True" SizeFlagsStretchRatio="2" />
-                <Button Name="SetTariffButton" Access="Public" Text="Apply" />
+                <Button Name="SetTariffButton" Access="Public" Text="{loc:CMULoc 'cmu-colony-economy-apply', 'Apply'}" />
             </BoxContainer>
 
             <!-- Economy Overview -->
-            <Label Text="-- Colony Economy Overview --" Margin="0 6" />
+            <Label Text="{loc:CMULoc 'cmu-ambassador-ui-colony-economy-overview', '-- Colony Economy Overview --'}" Margin="0 6" />
             <BoxContainer Name="EconomyStatusPanel" Access="Public" Orientation="Vertical" Margin="4 2" />
 
             <!-- Third Party -->
-            <Label Text="-- Third Party Support --" Margin="0 6" />
-            <Button Name="OpenThirdPartyBtn" Access="Public" Text="Open Third Party Menu"
+            <Label Text="{loc:CMULoc 'cmu-ambassador-ui-third-party-support', '-- Third Party Support --'}" Margin="0 6" />
+            <Button Name="OpenThirdPartyBtn" Access="Public" Text="{loc:CMULoc 'cmu-ambassador-ui-open-third-party-menu', 'Open Third Party Menu'}"
                     HorizontalExpand="True" Margin="0 4" />
         </BoxContainer>
     </ScrollContainer>

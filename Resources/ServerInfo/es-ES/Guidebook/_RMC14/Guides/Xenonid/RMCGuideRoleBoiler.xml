@@ -1,0 +1,40 @@
+<Document>
+  #Bombardero, nivel 3
+  <GuideEntityEmbed Entity="RMCXenoBoiler"/>
+  ##Jugar como Bombardero
+  Conviértete en la guerrera a distancia definitiva de la Colmena gracias a tu característico Bombardeo, capaz de frenar a cualquier huésped. Ahora eres lenta y grande y vuelves a desempeñar una función de apoyo en el frente, con una versión mejorada de Ácido pulverizado y Ácido corrosivo, además de toxina en el aguijonazo de cola.
+
+  Procura permanecer siempre detrás de otras hermanas, pues eres débil a solas. Derrite siempre las bengalas verdes para evitar que el fuego del escupitajo del cielo (apoyo aéreo cercano) te mate al instante.
+
+  Tus glóbulos [color=green]ácidos[/color] pueden matar a cualquier huésped atrapado en ellos, mientras que la variante de [color=yellow]neurotoxina[/color] se extiende más y debilita a los huéspedes para facilitar su captura.
+  <Box>
+    <GuideEntityEmbed Entity="CMGuidebookXenoBombardAcidProjectile"/>
+    <GuideEntityEmbed Entity="CMGuidebookXenoBombardNeurotoxinProjectile"/>
+  </Box>\n
+
+  Recuerda derretir las bengalas verdes y mantenerte lejos de los puntos rojos, pues representan una gran amenaza procedente del cielo.
+
+  Debido a sus grandes reservas de ácido, el Bombardero brilla en la oscuridad y cualquier huésped puede verlo con facilidad; esto también lo vuelve increíblemente vulnerable al [color=red]fuego[/color].
+  <GuideEntityEmbed Entity="RMCTileFire"/>
+  ##Técnica de puertas
+  Para usar Bombardeo de forma segura, puedes situarte tras una puerta de resina cerrada y cargarlo. Apunta fuera del recorrido de la puerta; después, coloca el cursor sobre ella y pulsa [color=yellow][bold][keybind="ActivateItemInWorld"][/bold][/color] cuando el Bombardeo esté a punto de completarse. Si calculas bien el momento, la puerta de resina se abrirá y dejará pasar el glóbulo.
+  <GuideEntityEmbed Entity="DoorXenoResin"/>
+  ##Habilidades:
+  - [bold][color=#E61919]PASIVA[/color][/bold]: Es vulnerable al fuego y brilla en la oscuridad.
+  - [bold]Ácido corrosivo potente[/bold]: Secreta sobre los objetos un glóbulo de ácido que los disuelve.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoCorrosiveAcid"/>
+  - [bold]Alternar visión de largo alcance[/bold]: Mira más lejos en la dirección hacia la que estás orientada.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoToggleLongRangeSight"/>
+  - [bold]Bombardeo[/bold]: Se prepara para disparar un glóbulo ácido o neurotóxico. El proyectil superará la posición a la que apuntes si no choca con nada.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoBombard"/>
+  - [bold]Alternar tipo de gas[/bold]: Alterna entre ácido y neurotoxina.
+  - Ácido: Quema a los objetivos y las barricadas.
+  - Neurotoxina: Incapacita y debilita a los objetivos; su nube tiene mayor alcance.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoToggleGasType"/>
+  - [bold]Pulverizar ácido[/bold]: Pulveriza ácido en línea por el suelo, cubre las barricadas y aturde a los huéspedes que encuentre a su paso.
+  - También extingue el fuego de cualquier hermana que esté ardiendo.
+  - Si se usa contra un huésped afectado por el Escupitajo cargado de un Escupidor, mejora el escupitajo y lo aturde.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoSprayAcid"/>
+  - [bold]Manto ácido[/bold]: Crea a tu alrededor una nube de ácido que desactiva tus demás habilidades. Úsala como último recurso.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoAcidShroud"/>
+</Document>

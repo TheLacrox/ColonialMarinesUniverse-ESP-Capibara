@@ -1,0 +1,26 @@
+﻿<Document>
+  #Bombardero, nivel 3
+  <GuideEntityEmbed Entity="RMCXenoBoilerSapper"/>
+  ##Jugar como Zapador
+  Conviértete en una atacante de apoyo: sacrificas un mayor potencial de daño de área a cambio de tiempos de recarga más cortos y herramientas para preparar y ejecutar emboscadas. Atrapa con Desplegar trampas a los marines que se alejen demasiado de un lugar seguro, destruye a quienes se acerquen con Escopeta ácida o Aguijonazo de cola ácido y desgasta con rapidez la resistencia del frente de los marines mediante Mina ácida.
+
+  Heredas las debilidades del Bombardero, así que ten cuidado con el fuego y aléjate de las bengalas verdes y los puntos rojos que pueden atraer sobre ti el fuego del cielo.
+
+  Debido a sus grandes reservas de ácido, el Zapador brilla en la oscuridad y cualquier huésped puede verlo con facilidad; esto también lo vuelve increíblemente vulnerable al [color=red]fuego[/color].
+  <GuideEntityEmbed Entity="RMCTileFire"/>
+
+  ##Habilidades:
+  - [bold][color=#E61919]PASIVA[/color][/bold]: Es vulnerable al fuego y brilla en la oscuridad.
+  - [bold][color=#E61919]PASIVA[/color][/bold]: Obtienes Perspicacia cuando alcanzas objetivos con Escopeta ácida. Al reunir 10 acumulaciones, potenciarán tu próximo uso de Desplegar trampas. Alcanzar a un objetivo atrapado te concede al instante 10 acumulaciones.
+  - [bold]Ácido corrosivo potente[/bold]: Secreta sobre los objetos un glóbulo de ácido que los disuelve.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoCorrosiveAcid"/>
+  - [bold]Alternar visión de largo alcance[/bold]: Permite ver más lejos en todas las direcciones.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoToggleLongRangeSight"/>
+  - [bold]Escopeta ácida[/bold]: Una descarga de corto alcance compuesta por nueve perdigones de ácido que puede infligir mucho daño a los objetivos y concede una acumulación de Perspicacia por cada perdigón que impacte. Inflige más daño a los objetivos atrapados y maximiza las acumulaciones de Perspicacia.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoScatteredSpit"/>
+  - [bold]Desplegar trampas[/bold]: Despliega una línea de trampas que retienen a cualquier objetivo que las pise y aumentan el daño que le infligen tus habilidades mientras está atrapado. Si se lanza potenciada, retiene durante más tiempo y también potencia tu próxima Mina ácida.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoDeployTraps"/>
+  - [bold]Mina ácida[/bold]: Activa una detonación a distancia que explota tras una breve demora e inflige daño a objetivos, estructuras y emplazamientos. Si está potenciada, inflige más daño y aplica ácido persistente a los objetivos.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoAcidMine"/>
+
+</Document>

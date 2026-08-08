@@ -1,3 +1,4 @@
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._CMU14.Paper;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Hands.EntitySystems;
@@ -101,8 +102,12 @@ public sealed partial class UniversalPaperToolSystem : EntitySystem
 
             entries.Add(new UniversalPaperToolTemplateEntry(
                 template.Prototype.Id,
-                template.Name ?? prototype.Name,
-                template.Description ?? prototype.Description));
+                template.Name is { } name
+                    ? CMUPrototypeLocalization.GetLiteralText(Loc, "UniversalPaperTool", "name", name)
+                    : prototype.Name,
+                template.Description is { } description
+                    ? CMUPrototypeLocalization.GetLiteralText(Loc, "UniversalPaperTool", "description", description)
+                    : prototype.Description));
         }
 
         _ui.SetUiState(ent.Owner, UniversalPaperToolUiKey.Key, new UniversalPaperToolBuiState(entries, hasPaper));

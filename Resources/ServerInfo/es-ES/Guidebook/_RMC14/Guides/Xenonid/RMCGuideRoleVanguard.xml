@@ -1,0 +1,28 @@
+<Document>
+  #Vanguardia, nivel 3
+
+  <GuideEntityEmbed Entity="RMCXenoPraetorianVanguard"/>
+
+  ##Jugar como Vanguardia
+
+  Veamos primero qué ha cambiado respecto a tu forma básica. Pierdes parte de tu salud, pero ahora eres un poco más rápida que en la forma básica. También sacrificas Ácido corrosivo y Escupitajo para obtener un escudo regenerativo que bloquea por completo un ataque y se recarga fuera del combate.
+
+  Obtienes la capacidad de usar Atravesar, que atraviesa a los oponentes y recarga al instante tu escudo si alcanzas a 2 objetivos.
+
+  También obtienes Hendidura, que posee dos estados: Inmovilizar, que inmoviliza a un objetivo, y Lanzar, que arroja a un objetivo lejos de ti.
+
+  Tu Carrera también ha cambiado: ahora ejecuta un zarpazo de área después del desplazamiento. Puedes activar de nuevo Carrera para realizar el zarpazo de área.
+
+  La Vanguardia se parece a un Guerrero mejorado y se especializa en ataques cuerpo a cuerpo constantes o en infligir mucho daño de ráfaga, además de contar con una habilidad de Carrera. Puede combinar varias habilidades para infligir ráfagas de daño desde las esquinas o simplemente combatir en el frente.
+
+  ##Habilidades:
+  - [bold][color=green]PASIVA[/color][/bold]: Obtienes un escudo que bloquea por completo un ataque y se deteriora con rapidez después de recibir el golpe. El escudo se recarga fuera del combate.
+  - [bold]Atravesar[/bold]: Atraviesa a los huéspedes con la cola. Si atraviesas a dos personas, tu escudo se recarga al instante. Esta habilidad inflige un poco más de daño que un zarpazo normal y también posee una ligera capacidad AP (perforante de armadura).
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoPierce"/>
+  - [bold]Irrupción[/bold]: Carga a través de los enemigos con un alcance de 4 casillas. Al detenerte, actívala de nuevo para realizar un zarpazo AoE en una zona de 3x3 casillas; de lo contrario, la habilidad se activará automáticamente tras una demora de 3 segundos. Si el zarpazo AoE alcanza a alguien, tu escudo se regenerará al instante.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoDash"/>
+  - [bold]Inmovilizar[/bold]: Inmoviliza brevemente al objetivo y lo deja indefenso. Comparte el tiempo de recarga con Lanzar.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoCleaveRoot"/>
+  - [bold]Lanzar[/bold]: Lanza al objetivo lejos de ti y lo arroja hacia atrás. Comparte el tiempo de recarga con Inmovilizar.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoCleaveFling"/>
+</Document>

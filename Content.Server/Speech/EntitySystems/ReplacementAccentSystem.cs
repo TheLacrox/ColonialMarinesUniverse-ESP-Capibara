@@ -60,7 +60,7 @@ namespace Content.Server.Speech.EntitySystems
             {
                 var f = _loc.GetString(first);
                 var r = _loc.GetString(replace);
-                var regex = new Regex($@"(?<!\w){Regex.Escape(f)}(?!\w)", RegexOptions.IgnoreCase);
+                var regex = CreateWordRegex(f, prototype.CaseSensitiveReplacements.Contains(first));
                 // this is kind of slow but its not that bad
                 // essentially: go over all matches, try to match capitalization where possible, then replace
                 // rather than using regex.replace
@@ -97,6 +97,13 @@ namespace Content.Server.Speech.EntitySystems
             }
 
             return message;
+        }
+
+        [PublicAPI]
+        public static Regex CreateWordRegex(string word, bool caseSensitive)
+        {
+            var options = caseSensitive ? RegexOptions.None : RegexOptions.IgnoreCase;
+            return new Regex($@"(?<!\w){Regex.Escape(word)}(?!\w)", options);
         }
     }
 }

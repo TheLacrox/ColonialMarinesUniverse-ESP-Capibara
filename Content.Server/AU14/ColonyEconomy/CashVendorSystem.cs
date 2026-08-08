@@ -1,5 +1,6 @@
 using System.Linq;
 using Content.Server.Stack;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Access.Systems;
 using Content.Shared.AU14.ColonyEconomy;
 using Content.Shared.Popups;
@@ -70,7 +71,7 @@ public sealed partial class AU14CashVendorSystem : EntitySystem
 
         if (!_idCard.TryFindIdCard(mob, out var idCard))
         {
-            _popup.PopupCursor("No ID card found.", mob, PopupType.SmallCaution);
+            _popup.PopupCursor(Ui("cmu-colony-economy-no-id-card", "No ID card found."), mob, PopupType.SmallCaution);
             return;
         }
 
@@ -85,7 +86,7 @@ public sealed partial class AU14CashVendorSystem : EntitySystem
             return;
         }
 
-        _popup.PopupCursor("No department found for this ID card.", mob, PopupType.SmallCaution);
+        _popup.PopupCursor(Ui("cmu-colony-economy-no-department-for-id", "No department found for this ID card."), mob, PopupType.SmallCaution);
     }
 
     private void OnBuy(EntityUid uid, AU14CashVendorComponent comp, AU14CashVendorBuyBuiMsg msg)
@@ -137,8 +138,9 @@ public sealed partial class AU14CashVendorSystem : EntitySystem
         var tax = _adminConsole.GetSalesTax();
         var items = comp.Items.Select((entry, idx) =>
         {
-            var name = entry.Name
-                       ?? (_proto.TryIndex<EntityPrototype>(entry.ItemId, out var ep) ? ep.Name : entry.ItemId.Id);
+            var name = entry.Name is { } entryName
+                ? CMUPrototypeLocalization.GetLiteralText(Loc, "AU14CashVendor", "name", entryName)
+                : (_proto.TryIndex<EntityPrototype>(entry.ItemId, out var ep) ? ep.Name : entry.ItemId.Id);
             var effectivePrice = (int) Math.Ceiling(entry.BasePrice * (1f + tax));
             return new AU14CashVendorItemState(idx, name, effectivePrice, entry.ItemId);
         }).ToList();
@@ -158,5 +160,9 @@ public sealed partial class AU14CashVendorSystem : EntitySystem
         _ui.SetUiState(uid, AU14CashVendorUi.Key, new AU14CashVendorBuiState(
             comp.InsertedCash, items, tax * 100f, comp.AllowDepartmentBudget, hasDeptMode, deptBudget, deptName));
     }
-}
 
+    private string Ui(string id, string fallback, params (string, object)[] args)
+    {
+        return CMULocalization.GetTargetStringOrFallback(Loc, id, fallback, args);
+    }
+}

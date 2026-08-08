@@ -1,0 +1,150 @@
+﻿<Document>
+  # Delitos leves
+  - Estos delitos son de gravedad baja y pueden castigarse con un NJP.
+  <Table Columns="3">
+    <ColorBox>
+      <Box>
+        Cargo
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Descripción
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Pena
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Incumplimiento del procedimiento
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        No seguir las normas establecidas en el Procedimiento Operativo Estándar.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]10 minutos, confiscación del equipo cuando corresponda.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Fumar en áreas médicas
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Fumar en áreas designadas para el uso del personal médico, como todo el centro médico y las salas de cirugía.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]5 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Gamberrismo
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Comportamiento generalmente perturbador para la nave o base y su tripulación que se clasifica como travesuras de bajo nivel que no merecen un castigo más severo. Cosas como golpear ventanas en exceso, alimentar a alguien a la fuerza o no comportarse correctamente durante el briefing, como subirse a la maqueta del briefing. Esto puede agravarse a [bold]Alteración del orden[/bold].
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]NJP o 5 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Intrusión no autorizada
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Acceso no autorizado a un área a la que una persona no suele tener acceso, o sin la aprobación del mando o de un superior.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]Escolta fuera del área y, opcionalmente, 7,5 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Intoxicación
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Consumir alcohol, marihuana u otras sustancias, como drogas, y quedar mental o físicamente afectado.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]10 minutos, prorrogables hasta que la persona deje de estar afectada.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Hurto
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Tomar objetos (o bienes) de otra persona o entidad sin su permiso expreso, o conservar la posesión de objetos que se hayan tomado sin permiso. Esto incluye retirar expendedores de las áreas de los departamentos sin permiso.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]10 minutos, y devolución del/de los objeto(s) al propietario.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Falta de respeto a un oficial superior
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Dirigirse con nombres ofensivos o faltar directamente al respeto a un [bold]oficial[/bold] de mayor rango o posición.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]10 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Falso testimonio
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Mentir de forma intencionada y consciente a un MP/agente de las fuerzas del orden, o a un oficial designado, durante una investigación penal con la intención de entorpecer dicha investigación.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]5 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+  </Table>
+</Document>

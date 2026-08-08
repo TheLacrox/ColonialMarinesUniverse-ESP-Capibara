@@ -1,0 +1,88 @@
+﻿<Document>
+  # Delitos capitales
+  - Estos delitos son de extrema gravedad.
+  - Todos estos delitos pueden castigarse con [bold]confinamiento permanente y degradación, o ejecución y anulación de la ID.[/bold]
+  <Table Columns="2">
+    <ColorBox>
+      <Box>
+        Cargo
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Descripción
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Fuga/Evasión
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Escapar, ayudar a escapar, intentar escapar, o ser sacado de una celda de forma deliberada y consciente.
+      </Box>
+    </ColorBox>
+
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Tentativa de asesinato
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Intentar asesinar a una persona sin conseguirlo. Se aplica cuando las pruebas demuestran que la persona detenida intentaba claramente matar a alguien con mala intención, pero no logró consumar el hecho.
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Asesinato/Ejecución no autorizada
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Matar a alguien con intención maliciosa. Esto incluye a las unidades sintéticas. El cargo se aplica incluso si la víctima es reanimada más tarde. Las ejecuciones solo están autorizadas conforme a lo establecido en el Procedimiento de Ejecución.
+        \nEsto también incluye negarse a reanimar, o impedir que se reanime, a cualquier persona que no haya sido ejecutada conforme al procedimiento de ejecución.
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Sedición
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Llevar a cabo acciones o negarse a acatar órdenes con el fin de derrocar o usurpar la estructura de mando legítima.
+        Crear una amenaza masiva para la nave sin el conocimiento ni la aprobación del [color=#008000][bold]Comandante[/bold][/color] entra dentro de la sedición.
+        Un [color=#90EE90][bold]Oficial de Guardia[/bold][/color] no puede aprobar acciones que entren dentro de esta condición.
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Deserción
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Negarse a cumplir las funciones esenciales del propio puesto, o abandonarlo sin autorización y sin intención de volver. (Retirarse del planeta cuando la FOB es invadida no constituye deserción; negarse a volver cuando se ordena, sí).
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Crímenes de lesa humanidad
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Llevar a cabo acciones que violen los derechos humanos o que constituyan actos atroces contra la vida sapiente. Algunos ejemplos son la tortura, el canibalismo y la infección forzada de cualquier tipo.
+      </Box>
+    </ColorBox>
+
+  </Table>
+</Document>

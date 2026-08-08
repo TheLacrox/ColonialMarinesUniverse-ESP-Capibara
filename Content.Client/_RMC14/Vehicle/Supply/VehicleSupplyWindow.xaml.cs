@@ -13,6 +13,7 @@ using Robust.Client.Utility;
 using Robust.Shared.GameObjects;
 using Robust.Shared.IoC;
 using Robust.Shared.Maths;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using Robust.Client.GameObjects;
@@ -24,6 +25,7 @@ namespace Content.Client._RMC14.Vehicle.Supply;
 public sealed partial class VehicleSupplyWindow : FancyWindow
 {
     private readonly IEntityManager _entManager = IoCManager.Resolve<IEntityManager>();
+    private readonly IPrototypeManager _prototypes = IoCManager.Resolve<IPrototypeManager>();
     private bool _previewDirty;
     private readonly List<VehicleHardpointLayerState> _previewLayers = new();
     private bool _previewOverlaysDirty;
@@ -69,7 +71,7 @@ public sealed partial class VehicleSupplyWindow : FancyWindow
     {
         if (preview == null || string.IsNullOrWhiteSpace(preview.VehicleId))
         {
-            PreviewTitle.Text = "Vehicle Preview";
+            PreviewTitle.Text = VehicleLoc.Target("cmu-rmc-vehicle-supply-preview", "Vehicle Preview");
             VehiclePreview.SetPrototype(null);
             _previewLayers.Clear();
             _previewDirty = false;
@@ -81,7 +83,9 @@ public sealed partial class VehicleSupplyWindow : FancyWindow
             return;
         }
 
-        PreviewTitle.Text = preview.VehicleId;
+        PreviewTitle.Text = _prototypes.TryIndex<EntityPrototype>(preview.VehicleId, out var prototype)
+            ? prototype.Name
+            : preview.VehicleId;
         VehiclePreview.SetPrototype(preview.VehicleId);
         VehiclePreview.OverrideDirection = Direction.South;
 

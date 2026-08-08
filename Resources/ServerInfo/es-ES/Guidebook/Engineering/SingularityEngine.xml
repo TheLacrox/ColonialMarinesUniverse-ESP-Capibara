@@ -1,0 +1,108 @@
+﻿<Document>
+  # Motor de singularidad
+  El motor de singularidad es un potente generador que utiliza una singularidad contenida para producir energía para la estación.
+
+  <Box>
+    <GuideEntityEmbed Entity="SingularityGenerator"/>
+    <GuideEntityEmbed Entity="Singularity"/>
+  </Box>
+
+  Genera energía recogiendo, mediante colectores de radiación y plasma gaseoso, la radiación que emite la singularidad.
+
+  ## Puesta en marcha del motor de singularidad
+  Para poner en marcha el motor de singularidad, los ingenieros deben seguir estos pasos:
+  - Coloca el generador de singularidad en el centro del campo de contención. Algunas estaciones empiezan con el generador ya instalado, mientras que en otras los ingenieros deben traerlo del almacén frigorífico.
+  - Enciende los cuatro generadores de campo de contención.
+  - Enciende y bloquea los emisores.
+  - Confirma que los generadores de campo de contención han creado un campo alrededor de la singularidad.
+  - Enciende los colectores de radiación. Necesitan plasma para producir energía. Es posible que no vengan cargados, así que asegúrate de rellenarlos.
+  - Construye el acelerador de partículas.
+  - Enciende el ordenador de control del acelerador de partículas y establece el nivel de potencia deseado.
+
+  Una vez completados estos pasos, el motor de singularidad empezará a producir energía para la estación.
+  Vigila el nivel de potencia de la singularidad y el campo de contención para evitar que escape y destruya la estación.
+  Comprueba a menudo los colectores para rellenarlos, pues el plasma se agota con el tiempo.
+
+  ## Campo de contención
+  Para evitar que la singularidad escape y destruya la estación, los ingenieros deben mantenerla dentro de un campo de contención.
+
+  Se recomienda utilizar un campo de contención del tamaño máximo. Si es menor, la singularidad puede crecer más que el campo y escapar.
+
+  Los generadores de campo de contención deben disponerse formando un cuadrado, con 7 casillas de separación entre cada generador.
+
+  <Box>
+    <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption=""/>
+    <GuideEntityEmbed Entity="ContainmentField" Caption="" Rotation="90"/>
+    <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption=""/>
+  </Box>
+
+  ## Niveles de potencia y desintegración
+  Como las singularidades emiten radiación, se desintegran y pierden potencia con el tiempo.
+
+  Para contrarrestarlo, el acelerador de partículas emite partículas que chocan con la singularidad, alimentándola y manteniéndola.
+
+  Las singularidades tienen niveles de potencia definidos, que determinan su emisión de radiación.
+  Los ingenieros pueden aumentar o reducir el nivel de potencia de la singularidad ajustándolo en el ordenador de control del acelerador de partículas.
+
+  Los aceleradores de partículas suelen funcionar entre los niveles de potencia 1 y 3, que se traducen en un nivel de 1 a 3 en la singularidad.
+
+  Los niveles de potencia también determinan el tamaño de la singularidad: los niveles mayores mantienen singularidades más grandes capaces de producir más energía.
+
+  ## Producción de energía
+  El motor de singularidad produce energía capturando mediante colectores la radiación emitida por la singularidad.
+  <Box>
+    <GuideEntityEmbed Entity="RadiationCollector"/>
+    <GuideEntityEmbed Entity="PlasmaTank"/>
+  </Box>
+  Necesitan plasma gaseoso para funcionar. Los depósitos conectados a los colectores deben llenarse de plasma para producir energía.
+
+  Puedes encender los colectores interactuando con ellos mediante [color=yellow][bold][keybind="Use"][/bold][/color].
+
+  También puedes expulsar el depósito interactuando con el colector mediante [color=yellow][bold][keybind="AltActivateItemInWorld"][/bold][/color].
+  Después puedes rellenar el depósito con plasma usando una bombona de plasma y volver a insertarlo en el colector.
+
+  La potencia máxima que puede producir el colector de radiación viene determinada por:
+  - La cantidad de radiación que captura (que, en la práctica, equivale al nivel de potencia de la singularidad)
+  - La cantidad de plasma que contiene el depósito conectado
+
+  Con el tiempo, el colector consume el plasma del depósito, lo que reduce su potencia efectiva.
+  Al final, el depósito quedará vacío y el colector dejará de producir energía. ¡Asegúrate de rellenarlo a menudo!
+
+  ## Protección contra la radiación
+  La singularidad emite una cantidad enorme de radiación, capaz de matar a los tripulantes que no lleven la protección adecuada.
+  Ponte un traje antirradiación o un traje presurizado de ingeniería cuando trabajes cerca de la singularidad.
+  No anulará por completo la radiación, pero reducirá el daño que recibas.
+
+  <Box>
+    <GuideEntityEmbed Entity="ClothingOuterHardsuitEngineering"/>
+  </Box>
+
+  <Box>
+    <GuideEntityEmbed Entity="ClosetRadiationSuit"/>
+    <GuideEntityEmbed Entity="ClothingOuterSuitRad"/>
+    <GuideEntityEmbed Entity="GeigerCounter"/>
+  </Box>
+
+  El ingeniero jefe dispone de un traje presurizado especial que anula todo el daño por radiación, lo que le permite trabajar cerca de la singularidad sin temor a acumularlo con el tiempo.
+
+  ## Propiedades de la singularidad
+  La singularidad posee varias propiedades que la hacen peligrosa y, a la vez, útil para generar energía:
+  - Ejerce una intensa atracción gravitatoria que puede absorber objetos y tripulantes.
+  - Tiene un horizonte de sucesos capaz de destruir para siempre cualquier objeto que lo toque, ya sea un tripulante o equipamiento de la estación. Todo objeto engullido por la singularidad se pierde para siempre y la alimenta.
+  - Emite radiación constantemente, lo que puede dañar a los tripulantes que no lleven la protección adecuada.
+  - La singularidad puede desintegrarse con el tiempo y perder potencia y emisión de radiación.
+
+  ## Singularidad liberada (Singuloose)
+  Si la singularidad escapa del campo de contención, empezará a consumir la estación y destruirá todo a su paso.
+  Cuanto más consuma, más crecerá y más difícil será volver a contenerla.
+
+  La singularidad se puede destruir disparándole antipartículas con un desacelerador de partículas portátil, pero es una operación arriesgada y peligrosa que exige una planificación y ejecución cuidadosas.
+  A menudo hacen falta varios desaceleradores disparando a la vez para destruir una singularidad.
+
+  Los desaceleradores de partículas portátiles pueden investigarse y fabricarse en el departamento de Investigación o comprarse en Carga.
+
+  <Box>
+    <GuideEntityEmbed Entity="WeaponParticleDecelerator"/>
+  </Box>
+
+</Document>

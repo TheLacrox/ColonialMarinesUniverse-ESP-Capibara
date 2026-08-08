@@ -6,7 +6,9 @@ using Robust.Client.GameObjects;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared.GameObjects;
+using Robust.Shared.IoC;
 using Robust.Shared.Maths;
+using Robust.Shared.Prototypes;
 
 namespace Content.Client._RMC14.Vehicle.Supply;
 
@@ -23,6 +25,7 @@ public sealed class VehicleSupplyBui : BoundUserInterface
     private readonly Dictionary<string, BoxContainer> _copyContainers = new();
     private readonly Dictionary<string, List<HardpointButton>> _copyButtons = new();
     private readonly HashSet<string> _copyExpanded = new();
+    private readonly IPrototypeManager _prototypes = IoCManager.Resolve<IPrototypeManager>();
 
     public VehicleSupplyBui(EntityUid owner, Enum uiKey) : base(owner, uiKey)
     {
@@ -61,11 +64,29 @@ public sealed class VehicleSupplyBui : BoundUserInterface
         if (_window == null)
             return;
 
-        var modeText = state.LiftMode?.ToString() ?? "No lift";
-        var activeText = string.IsNullOrWhiteSpace(state.ActiveVehicleId) ? "none" : state.ActiveVehicleId;
-        var busyText = state.Busy ? "busy" : "idle";
+        var modeText = state.LiftMode switch
+        {
+            VehicleSupplyLiftMode.Lowered => VehicleLoc.Target("cmu-rmc-vehicle-lift-lowered", "Lowered"),
+            VehicleSupplyLiftMode.Raised => VehicleLoc.Target("cmu-rmc-vehicle-lift-raised", "Raised"),
+            VehicleSupplyLiftMode.Lowering => VehicleLoc.Target("cmu-rmc-vehicle-lift-lowering", "Lowering"),
+            VehicleSupplyLiftMode.Raising => VehicleLoc.Target("cmu-rmc-vehicle-lift-raising", "Raising"),
+            VehicleSupplyLiftMode.Preparing => VehicleLoc.Target("cmu-rmc-vehicle-lift-preparing", "Preparing"),
+            _ => VehicleLoc.Target("cmu-rmc-vehicle-lift-none", "No lift")
+        };
+        var activeText = string.IsNullOrWhiteSpace(state.ActiveVehicleId)
+            ? VehicleLoc.Target("cmu-rmc-vehicle-value-none", "none")
+            : GetVehicleName(state.ActiveVehicleId);
+        var busyText = state.Busy
+            ? VehicleLoc.Target("cmu-rmc-vehicle-status-busy", "busy")
+            : VehicleLoc.Target("cmu-rmc-vehicle-status-idle", "idle");
+        var fallback = $"Lift: {modeText} | Status: {busyText} | Active: {activeText}";
 
-        _window.StatusLabel.Text = $"Lift: {modeText} | Status: {busyText} | Active: {activeText}";
+        _window.StatusLabel.Text = VehicleLoc.Target(
+            "cmu-rmc-vehicle-supply-status",
+            fallback,
+            ("lift", modeText),
+            ("status", busyText),
+            ("active", activeText));
 
         var raising = state.LiftMode == VehicleSupplyLiftMode.Raising;
         var lowering = state.LiftMode == VehicleSupplyLiftMode.Lowering;
@@ -147,7 +168,9 @@ public sealed class VehicleSupplyBui : BoundUserInterface
             {
                 var copyToggle = new HardpointButton
                 {
-                    LabelText = _copyExpanded.Contains(vehicleId) ? "Copies v" : "Copies >",
+                    LabelText = _copyExpanded.Contains(vehicleId)
+                        ? VehicleLoc.Target("cmu-rmc-vehicle-supply-copies-expanded", "Copies v")
+                        : VehicleLoc.Target("cmu-rmc-vehicle-supply-copies-collapsed", "Copies >"),
                     MinSize = new Vector2(110, 0)
                 };
 
@@ -304,6 +327,13 @@ public sealed class VehicleSupplyBui : BoundUserInterface
         SendMessage(new VehicleSupplySelectMsg(vehicleId, copyIndex));
     }
 
+    private string GetVehicleName(string vehicleId)
+    {
+        return _prototypes.TryIndex<EntityPrototype>(vehicleId, out var prototype)
+            ? prototype.Name
+            : vehicleId;
+    }
+
     private void UpdateSelectionVisuals()
     {
         foreach (var (id, button) in _selectButtons)
@@ -336,7 +366,9 @@ public sealed class VehicleSupplyBui : BoundUserInterface
 
         var expanded = _copyExpanded.Contains(vehicleId);
         container.Visible = expanded;
-        toggle.LabelText = expanded ? "Copies v" : "Copies >";
+        toggle.LabelText = expanded
+            ? VehicleLoc.Target("cmu-rmc-vehicle-supply-copies-expanded", "Copies v")
+            : VehicleLoc.Target("cmu-rmc-vehicle-supply-copies-collapsed", "Copies >");
     }
 
     private static void ApplySelectionStyle(HardpointButton button, bool selected)

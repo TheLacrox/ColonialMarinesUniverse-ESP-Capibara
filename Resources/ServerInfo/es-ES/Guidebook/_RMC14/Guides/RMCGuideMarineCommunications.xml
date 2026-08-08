@@ -1,0 +1,199 @@
+<Document>
+#Comunicaciones de los marines
+
+##Introducción
+
+
+RMC es un juego de equipo que exige coordinación militar en tiempo real.
+Muchos puestos tienen como función principal o secundaria comunicarse con sus superiores o subordinados.
+
+Estos puestos son líder de equipo de fuego, líder de escuadra, piloto, jefe de tripulación de nave de descenso, oficial de logística, oficial de Estado Mayor, oficial de apoyo auxiliar, oficial ejecutivo y oficial al mando.
+
+Esta guía está dirigida a quienes hayan desbloqueado uno de estos puestos y enseña los fundamentos para comunicarse con rapidez y eficacia, reduciendo al mínimo el tiempo que se pierde pensando qué decir y a quién decírselo.
+
+También explica cómo desempeñar las principales funciones de dichos puestos mediante los sistemas de comunicación de los marines.
+
+Si ya entiendes estos sistemas, puedes saltar directamente al apartado correspondiente.
+
+Hay un principio aplicable a todos los métodos que se explican a continuación: cuanto más breve y claro sea el mensaje, mejor.
+Cuanto menos tengan que leer tus compañeros, más información podrán recibir por segundo y más cabrá en pantalla.
+Dada la movilidad de los xenoides y lo difícil que resulta leer y cambiar de posición a la vez, cada segundo cuenta al transmitir información que puede salvar vidas.
+Esto es aún más importante en las llamadas telefónicas y los anuncios del mando.
+
+Esta guía no trata de por qué alguien toma una decisión, sino de cómo comunicarla a sus compañeros de la mejor forma posible.
+
+
+##Herramientas del oficio.
+
+
+La UNMC dispone de dos tipos principales de herramientas de comunicación a los que tiene acceso todo puesto de liderazgo: el sistema de radio y el sistema telefónico.
+
+<Box>
+  <GuideEntityEmbed Entity="CMHeadsetAlphaTeamLeader" Caption="Auriculares Alpha"/>
+  <GuideEntityEmbed Entity="RMCBackpackRTO" Caption="Mochila de radio"/>
+</Box>
+
+###El sistema de radio
+
+
+La radio es el medio más rápido de comunicación bilateral disponible para los marines. Crea canales de chat adicionales en los que pueden hablar.
+Para hablar por un canal de radio, enfoca la ventana de chat con [color=#ffff00][bold][keybind="FocusChatInputWindow"][/bold][/color] y antepón al mensaje un punto «.» o dos puntos «:», seguido de la letra correspondiente al canal y un espacio.
+Cualquier marine que tenga la clave de cifrado adecuada podrá oír tu mensaje.
+Los mensajes de radio de los puestos de liderazgo y mando se muestran con un tamaño de letra mayor.
+Las herramientas utilizadas en los sistemas de radio son las siguientes:
+
+<Box>
+	<GuideEntityEmbed Entity="CMHeadsetAlphaTeamLeader" Caption="Auriculares Alpha"/> <GuideEntityEmbed Entity="CMHeadsetSeniorCommand" Caption="Auriculares del Alto Mando"/> <GuideEntityEmbed Entity="CMEncryptionKeyJTAC" Caption="Clave de cifrado"/>
+</Box>
+
+La mayoría de los puestos recibe auriculares de los dispensadores de equipamiento junto con el uniforme básico, mientras que los puestos de mando ya los llevan al aparecer.
+Las claves de cifrado pueden comprarse con puntos u obtenerse en Requisiciones. Puedes examinar tus auriculares con [color=#ffff00][bold][keybind="ExamineEntity"][/bold][/color] mientras pasas el cursor por encima para ver a qué canales tienen acceso y qué letra corresponde a cada uno.
+
+Puedes copiar el mensaje a otros canales añadiendo más letras antes del espacio. Por ejemplo: [bold]":abcd ¡La Reina está en Charlie!!"[/bold].
+Esta acción tiene un tiempo de espera que depende del puesto.
+[textlink="Recuerda que" link="RMCLanguage"] [textlink="las normas " link="RMCLanguage"][textlink="exigen que solo hables inglés por radio." link="RMCLanguage"]
+
+Aunque es el sistema de comunicación más cómodo, solo funciona en el Almayer y las naves de descenso, salvo que [textlink="la torre de comunicaciones " link="RMCGuideCommunicationsTowers"] [textlink="se haya reparado en la superficie." link="RMCGuideCommunicationsTowers"]
+
+Para asegurarte de que el mensaje se ha enviado, comprueba que aparezca tanto con el color del canal como con el [color=#808080][italic]color de susurro.[/italic][/color]
+Ten en cuenta que, si mantienes pulsada una tecla de movimiento antes de enfocar la ventana de chat, seguirás moviéndote en esa dirección mientras no la sueltes.
+
+Escuchar todos los canales puede resultar abrumador si ocupas un puesto de mando. En tu primera partida, puedes usar [color=#ffff00][bold][keybind="UIRightClick"][/bold][/color] sobre los auriculares y seleccionar [bold][italic]Sintonizar radio[/italic][/bold]. Así podrás silenciar cada canal por separado. Intenta escuchar más canales en cada ronda a medida que te acostumbres a leer con rapidez.
+
+
+###El sistema telefónico
+
+
+¿Qué puede hacer un marine cuando no hay cobertura de radio en la colonia? Aquí entra en juego el segundo gran sistema de comunicación.
+El sistema telefónico conecta dos teléfonos y permite que las personas de ambos extremos hablen entre sí como si estuvieran en la misma sala.
+Se puede acceder a él mediante el siguiente objeto y las siguientes estructuras:
+
+<Box>
+	<GuideEntityEmbed Entity="RMCBackpackRTO" Caption="Mochila de radio"/> <GuideEntityEmbed Entity="RMCRotaryPhone" Caption="Teléfono de disco"/> <GuideEntityEmbed Entity="RMCRotaryPhoneWallmount" Caption="Teléfono de pared"/>
+</Box>
+
+Los [bold]teléfonos de disco[/bold] y los [bold]teléfonos de pared[/bold] reciben al inicio de la ronda el nombre de su ubicación. Para usarlos, pasa el cursor por encima y pulsa [color=#ffff00][bold][keybind="ActivateItemInWorld"][/bold][/color]. Se abrirá la ventana del teléfono.
+La ventana está dividida en pestañas. Al seleccionar una, puedes pulsar cualquiera de los botones asociados a un teléfono para llamarlo.
+Ten en cuenta que quizá debas ampliar la ventana hacia la derecha para ver todas las pestañas. Al pulsar uno, recibirás un auricular telefónico en la mano.
+<Box>
+	<GuideEntityEmbed Entity="RMCTelephone" Caption="Auricular telefónico"/>
+</Box>
+
+El teléfono receptor emitirá un ruido fuerte durante un tiempo y, lo que es más importante, mostrará el gesto [italic]«El teléfono empieza a sonar con fuerza»[/italic]. La otra persona podrá entonces usar [color=#ffff00][bold][keybind="Use"][/bold][/color] en el teléfono para descolgarlo.
+Mientras ambos sostengáis el auricular, hablar por el canal local mostrará el mensaje a la otra persona en [color=#9066ff]morado[/color] y reproducirá un murmullo, pero no verá tu nombre.
+Esto solo funciona si ambos jugadores sostienen el auricular de forma activa.
+Encontrarás más consejos al respecto en el apartado «Consejos específicos para el teléfono».
+Para colgar, usa [color=#ffff00][bold][keybind="Use"][/bold][/color] en la estructura del teléfono. Si te alejas demasiado mientras sostienes el auricular, la llamada se cortará automáticamente.
+
+
+La [bold]mochila radiotelefónica[/bold] funciona del mismo modo y también sirve de macuto para marines.
+Puede encontrarse en la mayoría de los dispensadores de escuadra y en el dispensador de excedentes.
+Al llevarla puesta, añadirá una capacidad a la barra de acceso rápido. Para usarla, pulsa la tecla asignada a esa capacidad y se abrirá la ventana del teléfono. Así también podrás descolgar.
+Las mochilas radiotelefónicas aparecen en la pestaña [bold]«Marines»[/bold], donde se identifican mediante el puesto, el nombre y la escuadra de quien las lleva.
+De forma predeterminada, [bold]la comunidad espera que todos los líderes de escuadra y de equipo de fuego lleven una en todo momento.[/bold]
+
+##Comunicación no bilateral
+
+
+Además de los medios que permiten hablar de ida y vuelta con los marines, hay otros métodos de comunicación que solo funcionan en un sentido o de forma asíncrona. Aquí solo se explican tres: las consolas de mando y el mapa táctico.
+
+<Box>
+	<GuideEntityEmbed Entity="RMCOverwatchConsole" Caption="Consola de supervisión"/> <GuideEntityEmbed Entity="RMCGroundsideOperationsConsole" Caption="Consola de operaciones terrestres"/> <GuideEntityEmbed Entity="RMCTacticalMapTable" Caption="Mesa de mapas"/>
+</Box>
+
+Los oficiales de Estado Mayor, de apoyo auxiliar, ejecutivos y al mando pueden acceder a estas consolas, al igual que la mayoría de los oficiales que no sean [bold]médicos[/bold].
+Permiten consultar el mapa táctico y emitir anuncios que funcionan aunque no haya cobertura de radio.
+
+Las consolas de supervisión abren una ventana de estado. Desde ella puedes enviar anuncios a la escuadra correspondiente pulsando el botón [bold]Enviar mensaje a la escuadra[/bold] y consultar el estado de todos sus marines. Este mensaje aparece en [color=#3399ff][bold]azul[/bold][/color], reproduce un sonido de código Morse y no tiene tiempo de espera.
+Su finalidad es recordar a los marines que permanezcan junto a sus líderes y transmitir información importante, como la ubicación de la Reina, de los xenoides de nivel 3 o de otras escuadras.
+También permite al oficial de supervisión ver a través de los ojos de cualquier miembro de la escuadra que lleve una cámara, aunque no leer los mensajes que envíe o reciba, lo que ofrece comunicación unidireccional en el sentido contrario.
+
+La consola de operaciones terrestres emite anuncios, compuestos por un sonido fuerte y atronador y un mensaje firmado con tu nombre y coloreado en [color=#ff0000][bold]ROJO[/bold][/color], que oye toda la facción, incluido el personal no combatiente y FORECON, pero no los supervivientes. Por lo general, se encarga de ello el [color=#009900][bold]comandante[/bold][/color] o el [color=#99ff66][bold]oficial de guardia[/bold][/color]. Tiene un tiempo de espera breve.
+
+El comandante puede recoger una tableta de mando de un armario de pared situado junto a la puerta de la armería del CIC. Tiene un tiempo de espera independiente y permite consultar el mapa actualizado mientras caminas, pero por lo demás es idéntica a la G.O.C.
+
+
+Se puede acceder al mapa táctico desde cualquier consola o mesa de mapas, donde se actualiza en tiempo real.
+Todos los marines pueden ver una representación estática de dicho mapa pulsando el botón Mapa táctico de su interfaz.
+Para actualizarlo, cualquier miembro del mando puede acceder a una mesa de mapas o consola, abrir la pestaña Lienzo y dibujar un plan. Al enviarlo, todos los marines recibirán una captura del mapa con la ubicación de todas las facciones de marines y humanos, además de las órdenes dibujadas. A continuación, la actualización entra en un tiempo de espera largo compartido por todas las consolas y mesas de mapas.
+
+
+##Por qué importa una buena comunicación.
+
+
+Los xenoides se desplazan por el mapa a gran velocidad, eliminan a enemigos solitarios y rodean sin ser detectados a oponentes desprevenidos.
+
+En cambio, los marines avanzan al ritmo del miembro más lento de la escuadra mientras intentan mantener la cohesión y dependen mucho de la superioridad numérica para sobrevivir.
+
+Por tanto, es importante que, durante cada segundo que pasen en movimiento, avancen en la dirección correcta. Todo marine debe saber adónde ir, cuándo recibirá suministros y dónde se encuentran las mayores amenazas en cada momento.
+Un flujo adecuado de información permitirá que las escuadras del frente ganen mucho terreno mientras la Reina hostiga a otra escuadra, evitará emboscadas y aniquilaciones y, en general, reducirá el número de xenoides con pocas bajas.
+
+La comunicación también utiliza el canal local normal, y un buen líder sabrá dar órdenes a los marines cercanos de viva voz.
+Ten en cuenta que los cuadros de texto flotantes del [bold]líder de escuadra[/bold] y del [color=#009900][bold]comandante[/bold][/color] son más grandes precisamente para esto.
+Para poner el mensaje en negrita, añade «!!» al final y da órdenes claras y sencillas como [bold]«¡AVANZAD AL OESTE!!»[/bold] para asegurarte de que se oigan.
+
+
+###Cómo comunicarse como líder de equipo de fuego o de escuadra
+
+
+Una tercera parte del trabajo del líder de escuadra consiste en comunicarse con el Centro de Información de Combate, mientras que los líderes de equipo de fuego se encargan de pedir suministros y coordinar su entrega.
+Tú tomas las decisiones sobre el terreno, pero dispones de teléfonos y designadores láser para transmitir datos al CIC. Desde allí te proporcionan información que no puedes percibir porque estás demasiado cerca de la acción y demasiado ocupado evitando que te arrollen.
+Conviene que los escuches siempre que sea posible. Tu tiempo sobre el terreno es valioso, así que usa el teléfono únicamente para llamar a personas que estén siempre cerca de uno, como el personal del CIC, Requisiciones, la enfermería o la cañonera.
+
+Además, cuando llames a alguien, intenta empezar a escribir el mensaje en el canal local antes de que descuelgue. Así podrás enviarlo en cuanto oigas su saludo y cumplir antes tus objetivos.
+Al inicio de la operación, es buena idea informar al CIC del tipo de oposición al que os enfrentáis para que pueda tomar mejores decisiones.
+
+<Box>
+	<GuideEntityEmbed Entity="RMCLaserDesignator" Caption="Designador láser"/>
+</Box>
+
+El resto de las tareas de comunicación de los líderes consiste en servir de enlace con los departamentos de apoyo.
+
+Usa el designador láser en modo telémetro pulsando [color=#ffff00][bold][keybind="AltActivateItemInHand"][/bold][/color] o [color=#ffff00][bold][keybind="AltActivateItemInWorld"][/bold][/color] sobre él para obtener las coordenadas de las entregas de suministros.
+Envíaseselas al oficial de supervisión de tu escuadra y transmite cualquier petición de objetos de la escuadra a Requisiciones mediante el canal de Requisiciones (Req, [color=#b17324]:u[/color]) o el teléfono de Requisiciones, en la pestaña Almayer.
+
+Asegúrate de hablar por JTAC ([color=#ad3b98]:j[/color]) cuando uses el designador láser o lances bengalas para indicar al piloto que necesitas su atención.
+También puedes pedir por radio a los pilotos que observen las bengalas para reconocer la zona. Si usas el designador, añade tu ID de CAS, formado por la primera letra de tu escuadra y el número del LD, que puedes consultar examinando el LD con [color=#ffff00][bold][keybind="ExamineEntity"][/bold][/color].
+
+
+###Cómo comunicarse como tripulación de vuelo
+
+
+El apoyo aéreo cercano necesita comunicación para ser eficaz. Habla por JTAC y por Mando e informa de la ubicación de los xenoides de nivel 3 y de la Reina si los avistas. Pide a los líderes que vuelvan a designar el objetivo si desaparece antes de que puedas disparar.
+Si la torre de radio está operativa y no te hacen caso, usa el teléfono para lo que necesites, pero mantén la línea libre por si alguien requiere CAS urgente.
+Usa la radio para avisar cuando despegues o aterrices e indica por sus canales respectivos ([color=#009771]:m[/color] y [color=#059705]:t[/color]) si suben evacuaciones médicas o información de inteligencia.
+
+En situaciones de evacuación, si eres el piloto de la nave de descenso, llama al CIC y permanece a la escucha para recibir órdenes de evacuación.
+
+###Cómo comunicarse como personal del CIC.
+
+
+CIC significa Centro de [italic]Información[/italic] de Combate.
+Transmitir información es tu función principal.
+
+Es importante que te acostumbres a escuchar todos los canales de radio a los que tienes acceso. Si alguien dice algo importante en uno, plantéate repetir el mensaje en otros canales.
+Por ejemplo, [color=#FF0000]«Reina en Alpha»[/color] debe comunicarse por Mando ([color=#5b96d4]:v[/color]) para que todos los líderes y el personal del CIC puedan reaccionar.
+Usa las consolas de supervisión para pedir a los marines que permanezcan junto al líder de escuadra. Para mantener la cohesión, da las órdenes llamando por teléfono al líder de escuadra (SL), de modo que los marines de menor rango no se dispersen al intentar cumplirlas.
+Responde por radio a cualquier pregunta de la tropa.
+
+El uso de la consola de operaciones terrestres se rige por principios parecidos. Intenta emitir anuncios que resulten útiles para todas las escuadras. Debido a su tamaño, el límite de texto legible es de unas 2 o 3 frases. Como tiene un tiempo de espera breve y llama mucho la atención, debes usarla con prudencia. Plantéate si un mensaje de radio dirigido a una escuadra concreta bastaría para responder a la pregunta, formulada o no, a la que estás contestando.
+
+Indica siempre un rumbo, en forma de punto cardinal, cuando comuniques posiciones enemigas o menciones un lugar. Nunca se insistirá bastante en cuánto ayuda esto a quienes aún conocen poco el mapa.
+Tu consola de supervisión tiene el desafortunado efecto secundario de silenciar el sonido.
+Para no perder ninguna llamada, observa el cuadro de chat por si aparece un destello blanco repentino, pues suele indicar una notificación telefónica o un mensaje prioritario de tus superiores.
+
+Para asegurarte de que tu superior te preste atención, habla por el canal local.
+Esto funciona porque el canal local tiene el mismo color que las notificaciones telefónicas, y el personal veterano del CIC siempre está pendiente de ellas.
+Sal de las consolas y los mapas una vez cada uno a tres minutos para asegurarte de no haberte perdido nada.
+
+###Consejos específicos para el teléfono
+
+- Los teléfonos no muestran mensajes cuando están en el suelo; por tanto, para pasar el auricular usa siempre el menú de desvestir (haz clic y arrástralo hasta tu sprite) y colócalo en la mano de la otra persona. Así evitarás que se pierdan mensajes.
+- Al llamar, empieza a escribir en cuanto comience el sonido de marcación, ya que permanecer inmóvil con un auricular en la mano puede ser peligroso o molesto para la persona con la que hablas.
+- Por el mismo motivo, escribe mensajes claros y breves y termínalos con «cambio» si esperas respuesta o con «corto» si quieres finalizar. La otra persona no puede saber si piensas seguir escribiendo.
+- Los teléfonos sirven para impedir que departamentos como Enfermería o Requisiciones ignoren tu mensaje.
+- Úsalos con prudencia. Si ocupas la línea cuando alguien necesita transmitir información importante, podrían morir marines. Llama siempre por un motivo.
+
+###Guía creada por Gabrote42
+
+</Document>

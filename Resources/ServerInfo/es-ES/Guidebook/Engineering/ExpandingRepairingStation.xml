@@ -1,0 +1,39 @@
+﻿<Document>
+  # Ampliación y reparación de estaciones
+  En Space Station 14 es habitual que los jugadores quieran ampliar la estación o reparar los agujeros causados por meteoritos u otros daños.
+
+  ## Entramado
+  El entramado es una estructura de varillas al descubierto colocada en el espacio vacío. Se usa como cimiento para construir y anclar objetos a la estación.
+
+  <Box>
+    <GuideEntityEmbed Entity="SheetSteel" Caption=""/>
+    <GuideEntityEmbed Entity="PartRodMetal" Caption=""/>
+  </Box>
+
+  Puedes crear entramado colocando varillas en el espacio vacío con [color=yellow][bold][keybind="Use"][/bold][/color]. Recuerda que puedes transformar láminas de acero en varillas mediante el menú de construcción.
+
+  El entramado no puede mantener la presión y todos los gases se escaparán al espacio a través de él.
+
+  Puedes retirar el entramado con un cortaalambres usando [color=yellow][bold][keybind="Use"][/bold][/color] sobre él.
+
+  Si el juego te impide colocar entramado, se debe a que hay otra cuadrícula independiente demasiado cerca de la que intentas ampliar. Puedes utilizar un cortaalambres para retirar la cuadrícula que causa el problema.
+
+  ## Baldosas del casco
+  Las baldosas del casco constituyen una base sólida para la estación, sobre la que descansan las demás partes.
+
+  <Box>
+    <GuideEntityEmbed Entity="SheetSteel" Caption=""/>
+    <GuideEntityEmbed Entity="FloorTileItemSteel" Caption=""/>
+    <GuideEntityEmbed Entity="FloorTileItemDark" Caption=""/>
+    <GuideEntityEmbed Entity="FloorTileItemWhite" Caption=""/>
+  </Box>
+
+  El entramado puede convertirse en baldosas del casco utilizando acero o casi cualquier tipo de baldosa de suelo sobre él y pulsando [color=yellow][bold][keybind="Use"][/bold][/color].
+  Esto convertirá el entramado en una baldosa del casco, capaz de mantener la presión y contener los gases.
+
+  Se recomienda sustituir el entramado por baldosas de suelo en vez de láminas de acero, ya que puedes fabricar 4 baldosas de suelo con una sola lámina de acero.
+
+  Puedes utilizar un RCD para desmantelar las baldosas del casco y convertirlas en entramado.
+
+
+</Document>

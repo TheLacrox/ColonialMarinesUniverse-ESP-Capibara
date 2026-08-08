@@ -1,0 +1,22 @@
+<Document>
+  #Triturador, nivel 3
+  <GuideEntityEmbed Entity="RMCXenoCrusher"/>
+  ##Jugar como Triturador
+  Aprovecha tu gran reserva de armadura y resistencia a las explosiones para proteger a tus hermanas y avanzar sin descanso contra los enemigos. Los Trituradores son inmunes al aturdimiento de las granadas y cuentan con varias habilidades pasivas.
+
+  Nunca cargues a ciegas contra una horda de huéspedes: eres muy lento y resultarás vulnerable al especialista en demoliciones, pues careces de habilidades para escapar. Por tanto, debes jugar como Triturador con mucha información.
+
+  Para avanzar, empieza usando Embestida y Escudo defensivo, de modo que tus zarpazos reduzcan sus tiempos de recarga. Usa Pisotón para desorganizar a los huéspedes mientras los atacas y después retírate.
+
+  Tus zarpazos ralentizan a los objetivos e infligen daño adyacente a cualquiera que esté cerca; también reducen los tiempos de recarga de las habilidades.
+
+  ##Habilidades:
+  - [bold][color=green]PASIVA[/color][/bold]: Tus zarpazos golpean en arco, lo que les permite alcanzar a varios enemigos a la vez en la misma dirección, aunque infligen menos daño.
+  - [bold][color=green]PASIVA[/color][/bold]: Tus zarpazos reducen los tiempos de recarga de las habilidades y ralentizan a los enemigos.
+  - [bold]Embestida[/bold]: Haz clic en una casilla para cargar hacia ella. Tras una demora, arrollarás a todo el que se interponga, le infligirás un daño enorme y reducirás el tiempo de recarga de Embestida.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoCharge"/>
+  - [bold]Pisotón[/bold]: Pisa el suelo en un AOE que aturde brevemente a todos los objetivos cercanos. Si se usa justo encima de un objetivo derribado, le inflige mucho daño.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoStomp"/>
+  - [bold]Escudo defensivo[/bold]: Obtén un escudo temporal que bloquea y reduce el daño; también concede durante un breve periodo una gran invulnerabilidad a las explosiones.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoDefensiveShield"/>
+</Document>

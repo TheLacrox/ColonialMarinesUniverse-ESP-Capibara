@@ -1,0 +1,591 @@
+<Document>
+  # Referencia rápida de comunicaciones
+
+  Una referencia compacta de los controles de radio, los alcances y los efectos de estado.
+
+  Para obtener instrucciones detalladas, consulta [textlink="Radio AN/PRC-117G" link="AU14CommsANPRC"] y [textlink="Auriculares de campaña" link="AU14CommsHeadsets"].
+
+  ## Prefijos de chat
+
+  <Table Columns="2" MinForcedColumnWidth="120">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Prefijo[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Función[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[color=#a4885c]:h[/color]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Transmite por la red predeterminada de los auriculares.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[color=#a4885c]:v[/color], [color=#a4885c]:a[/color] y otros</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Transmite por otra red con clave de los auriculares. Examina los auriculares para consultar sus prefijos disponibles.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[color=#a4885c]:r[/color]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Transmite mediante la ranura activa del AN/PRC o su microteléfono.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[color=#a4885c]:x[/color]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Transmite por la frecuencia directa sintonizada de unos auriculares.</Box>
+    </ColorBox>
+  </Table>
+
+  Pueden utilizar el panel del AN/PRC:
+
+  - [bold]GOVFOR y OPFOR[/bold]: comandante, ayudante, oficiales de Estado Mayor, oficiales de ingeniería, oficiales de inteligencia, sintéticos, jefes de escuadra, jefes de equipo de fuego y operadores de tráfico de radio.
+  - [bold]CLF[/bold]: jefe de célula y operador de radio.
+  - Cualquiera que haya leído un [bold]manual del operador de radio de campaña[/bold].
+
+  Cualquiera que esté dentro del alcance puede usar el microteléfono, tenga formación o no.
+
+  ## Alcance de la señal
+
+  Los siguientes alcances del AN/PRC presuponen [bold]TX MED[/bold] y una antena de látigo.
+
+  <Table Columns="3" MinForcedColumnWidth="90">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Sistema[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Alcance nítido[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Degradación o pérdida[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Red con nombre mediante AN/PRC</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">0-30 casillas desde la radio.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Degradada hasta 45 casillas. Sin señal más allá de 45.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Frecuencia directa</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">0-30 casillas desde el transmisor.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Degradada hasta 50 casillas. Sin señal más allá de 50.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Enlace de frecuencia mediante AN/PRC</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Ambos usuarios a menos de 50 casillas de la radio.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Falla si alguno de los usuarios está fuera del alcance del enlace.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Mástil de antena de puesto de mando</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">0-75 casillas.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Degradada hasta 100 casillas. Sin señal más allá de 100.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Equipo de relé CLF (fijado al suelo)</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">0-35 casillas.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Degradada hasta 50 casillas. Sin señal más allá de 50.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Estación base CLF (fijada al suelo)</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">0-55 casillas.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Degradada hasta 80 casillas. Sin señal más allá de 80.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Conjunto de comunicaciones de a bordo</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Cubre la nave conectada mientras tenga alimentación.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">No proporciona cobertura si está destruido o no tiene alimentación.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Toma de alimentación CLF</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">La cobertura del mástil o conjunto que se haya pinchado.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Añade las redes CLF sin eliminar ninguna. El equipo anfitrión sigue funcionando con normalidad para sus propietarios.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Cable del microteléfono</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Aproximadamente dos casillas desde la radio.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Se desconecta cuando el usuario sale del alcance.</Box>
+    </ColorBox>
+  </Table>
+
+  La potencia de transmisión y el tipo de antena modifican el alcance del relé del AN/PRC.
+
+  Las redes de facción, incluidas squad, command, intelligence, JTAC y MP, necesitan cobertura de al menos uno de los siguientes elementos:
+
+  - Un AN/PRC encendido que lleve un operador cualificado.
+  - Una estación de retransmisión desplegada.
+  - Un mástil de antena de puesto de mando.
+  - Un conjunto de comunicaciones que tenga alimentación.
+  - Una radio instalada en una lanzadera o un vehículo (cuya cobertura apenas supera el casco).
+  - Un mástil de antena de campaña que haya levantado personal con formación de ingeniería usando diez láminas de metal.
+  - Una estación base clandestina o un equipo de relé CLF fijados al suelo (solo redes CLF).
+  - Cualquier mástil o conjunto que tenga instalada una toma de alimentación CLF (solo redes CLF, hasta que se retire la toma).
+
+  Los canales colony y civilian no dependen de un relé y conservan el comportamiento estándar.
+
+  ## Empalme de redes
+
+  Un operador de radio CLF que tenga un kit de empalme de red puede pinchar un mástil o conjunto y añadirle las redes de la célula. El equipo anfitrión no se desactiva y sigue prestando servicio a sus propietarios. Sondea la banda para encontrar cada portadora troncal oculta y después bloquéala. Los sondeos se comparten durante todo el trabajo. Si se agotan los sondeos o se llena el medidor de detección, el trabajo fracasará y la caja sufrirá una avería.
+
+  <Table Columns="4" MinForcedColumnWidth="80">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Objetivo[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Portadoras[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Sondeos[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Tiempo de apertura[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Mástil de antena de campaña</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">2</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">24</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">6 segundos</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Mástil de puesto de mando</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">3</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">32</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">8 segundos</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Conjunto de comunicaciones</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">4</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">40</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">12 segundos</Box>
+    </ColorBox>
+  </Table>
+
+  La señal da una lectura de cero a más de 30 posiciones de una portadora. Un bloqueo tiene éxito a menos de 4. Cada sondeo añade un 1.5% de detección. Un bloqueo fallido añade un 30% y cuesta 2 sondeos. El mástil suelta chispas durante todo el proceso y, si este fracasa, permanece averiado durante 90 segundos, en los que no se puede volver a empalmar.
+
+  Cualquiera puede arrancar una toma en ocho segundos y obtiene una tarjeta de claves CLF al hacerlo.
+
+  ## Antenas
+
+  <Table Columns="3" MinForcedColumnWidth="90">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Antena[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Funcionamiento[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Alcance[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]WHIP[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Móvil o fija.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Alcance estándar.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]MAST[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Funciona mejor cuando está fija.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Aproximadamente el doble de alcance cuando está fija y la mitad del alcance estándar cuando está en movimiento.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]WIRE[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Improvisada; solo se instala en el equipo de relé CLF.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">35 casillas de señal nítida y 50 de señal degradada cuando está fija; la mitad del alcance estándar cuando está en movimiento.</Box>
+    </ColorBox>
+  </Table>
+
+  ## Modos de funcionamiento
+
+  <Table Columns="4" MinForcedColumnWidth="80">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Modo[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Función[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Ventajas[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Limitaciones[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]FH[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Tráfico con salto de frecuencia.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Reduce las interferencias en un nivel y permite transmitir dentro del campo de un inhibidor.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Consume 1.5× de batería y genera una pequeña firma de radiogoniometría.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]SC[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Tráfico cifrado normal.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Consume 0.75× de batería y no genera ninguna firma de radiogoniometría mientras esté cifrado.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">No ofrece resistencia a las interferencias.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]CT[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Tráfico cifrado entre radios AN/PRC.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Queda oculto para los receptores que no tengan las mismas claves y no genera ninguna firma de radiogoniometría.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Necesita AN/PRC con claves cargadas y no ofrece resistencia a las interferencias.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]PT[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Emisión en texto claro.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Consume 0.5× de batería.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Cualquier receptor compatible puede leerlo, aumenta las interferencias en un nivel y genera el mayor riesgo de radiogoniometría.</Box>
+    </ColorBox>
+  </Table>
+
+  Las claves COMSEC coincidentes protegen el tráfico FH, SC y CT. El tráfico PT siempre se envía en claro.
+
+  ## Potencia de transmisión
+
+  <Table Columns="4" MinForcedColumnWidth="70">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]TX[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Alcance[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Consumo de batería[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Firma DF[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]LO[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">0.6×</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">0.5×</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">0.5×</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]MED[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">1×</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">1×</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">1×</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]HI[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">1.5×</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">2×</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">2×</Box>
+    </ColorBox>
+  </Table>
+
+  ## Silenciador
+
+  La calidad de la señal disminuye de forma gradual con la distancia al relé más cercano:
+  es nítida en las proximidades, presenta un ligero siseo en la franja exterior y llega en fragmentos
+  entrecortados en el límite. El silenciador determina cuánto oyes de ese tráfico deteriorado:
+  nunca repara una transmisión, solo la silencia.
+
+  <Table Columns="2" MinForcedColumnWidth="100">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]SQL[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Filtrado[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]0[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Deja pasar todo el tráfico, incluida la estática intensa.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]1[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Suprime la estática intensa y el tráfico cifrado que no se puede descodificar.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]2[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Suprime la degradación media causada por inhibidores.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]3[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Valor predeterminado. Suprime la degradación ligera causada por inhibidores y el tráfico entrecortado del límite del alcance.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]4[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Filtrado máximo. Se suprime incluso el tráfico de largo alcance con un ligero siseo.</Box>
+    </ColorBox>
+  </Table>
+
+  Los valores de SQL más bajos permiten oír más tráfico degradado. Aumentar el silenciador
+  ofrece silencio a cambio de perder por completo las estaciones débiles y lejanas.
+
+  ## Controles COMSEC
+
+  <Table Columns="2" MinForcedColumnWidth="110">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Acción[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Resultado[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Introducir una tarjeta de claves</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Protege el tráfico de facción compatible en los modos FH, SC y CT.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]ZEROIZE[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Expulsa la tarjeta cargada sin dañarla.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]DESTROY[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Elimina de forma permanente la tarjeta cargada.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]RECRYPTO[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Invalida todas las tarjetas anteriores de esa facción, incluidas las capturadas. Solo para autoridades del mando: comandante, ayudante y asesor.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Tarjeta vigente capturada</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Permite descodificar el tráfico cifrado compatible de esa facción hasta la recodificación.</Box>
+    </ColorBox>
+  </Table>
+
+  Las tarjetas de claves de repuesto se obtienen mediante el sistema de suministros habitual.
+
+  ## Radiogoniometría
+
+  Los siguientes tipos de tráfico generan una firma de radiogoniometría, ordenados de mayor a menor riesgo:
+
+  - Tráfico PT.
+  - Tráfico de una red de facción enviado sin las claves correspondientes.
+  - Tráfico FH cifrado.
+
+  El tráfico SC y CT cifrado no genera ninguna firma de radiogoniometría.
+
+  Las transmisiones repetidas que generan firma desde un mismo lugar aumentan la probabilidad de detección. El riesgo de radiogoniometría disminuye cuando pasa aproximadamente un minuto sin otra transmisión que cumpla esas condiciones.
+
+  [bold]RADIO CHECK[/bold] indica qué estaciones reciben la red activa con nitidez o con degradación.
+
+  Si se usa dentro del campo de un inhibidor, también indica la demora del inhibidor más potente.
+
+  ## SEARCH
+
+  [bold]START SEARCH[/bold] recorre la banda en busca de las frecuencias de otras facciones.
+
+  Durante la búsqueda:
+
+  <Table Columns="2" MinForcedColumnWidth="110">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Efecto[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Valor[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Redes cargadas</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Se descartan todas. No oyes nada.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Transmisión</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Inhibida.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Barrido completo de la banda</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Aproximadamente 80 segundos.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Captura una frecuencia si</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Ha transportado tráfico en los últimos 20 segundos, a menos de 60 casillas y en el mismo nivel.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Capturas necesarias para resolverla</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">4.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Pérdida de contacto parcial</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Se pierde por completo en unos 50 segundos si no se produce otra captura.</Box>
+    </ColorBox>
+  </Table>
+
+  Los contactos con menos de la mitad de confianza quedan ocultos; por encima de ese umbral muestran una frecuencia aproximada y, con confianza plena, se resuelven en una frecuencia y un nombre de red exactos.
+
+  ## Registro de red
+
+  Almacena las últimas [bold]50[/bold] entradas. El tráfico de otras facciones se marca como [bold]INTERCEPT[/bold].
+
+  [bold]PRINT LOG[/bold] y [bold]PRINT INTERCEPTS[/bold] lo transcriben en papel.
+</Document>

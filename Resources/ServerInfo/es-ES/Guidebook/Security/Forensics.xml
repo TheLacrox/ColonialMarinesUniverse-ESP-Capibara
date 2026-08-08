@@ -1,0 +1,48 @@
+<Document>
+  # Ciencia forense
+
+  Dispones de muchas herramientas para recoger y examinar las pruebas a tu alcance.
+
+  # LogProbe
+
+  Este pequeño complemento para la PDA resulta muy útil: basta con instalar el cartucho para que la PDA pueda escanear cualquier objeto con control de acceso (como las esclusas) y mostrar quién lo ha utilizado recientemente.
+
+  Normalmente se encuentra en la taquilla del detective. Tras introducirlo en la PDA, abre la pestaña de programas: allí debería aparecer la aplicación LogProbe. Para usarla, con la aplicación abierta, interactúa con la PDA sobre cualquier objeto que requiera acceso; la información aparecerá al instante.
+
+  Ten en cuenta que el nombre mostrado por la aplicación no resulta fiable el 100% de las veces, ya que se obtiene de la tarjeta de identificación de quien utilizó el objeto escaneado. Por ejemplo, si alguien abrió una esclusa sin tarjeta, la aplicación mostraría «Desconocido» como nombre.
+
+  <Box>
+    <GuideEntityEmbed Entity="LockerDetective"/>
+    <GuideEntityEmbed Entity="LogProbeCartridge"/>
+  </Box>
+
+  # ADN y huellas dactilares
+
+  ## ¿Cómo se obtiene el ADN de alguien?
+
+  Puedes escanear charcos de sangre, vómito, vasos, botellas, latas y otros recipientes de líquidos mediante el [color=#a4885c]escáner forense[/color] para obtener el ADN de cualquier persona.
+  <Box>
+    <GuideEntityEmbed Entity="ForensicScanner"/>
+  </Box>
+  Así que ten cuidado antes de pelearte con alguien.
+
+   Ese mismo escáner forense también permite averiguar quién ha tocado prácticamente cualquier objeto gracias a sus huellas dactilares. Si el posible autor llevaba guantes, el escáner imprimirá las fibras que dejó en la escena del crimen.
+
+  ## Tengo el ADN. ¿Cómo averiguo a quién pertenece?
+
+  Puedes imprimir la información forense del objeto escaneado para no perderla. Con el papel que contiene el ADN, basta con buscar un [color=#a4885c]ordenador de registros de la estación[/color] y localizar a una persona cuyo ADN coincida. Lo mismo se aplica a las huellas dactilares.
+
+  ## Toma de huellas dactilares
+  También se pueden tomar las huellas de alguien en el lugar de los hechos: pídele que se quite los guantes y aplícale una almohadilla forense en los dedos. No hace falta volver corriendo al [color=#a4885c]ordenador de registros de la estación[/color] para comprobar si fue el mayordomo.
+
+  <GuideEntityEmbed Entity="ForensicPad"/>
+
+  ## Fibras
+  Cuando alguien que lleva guantes toca algo en la estación, es inevitable que deje algunas fibras. Esto complica las cosas, pero nada es irresoluble para un verdadero detective.
+
+  Puede haber hasta [color=red]26[/color] tipos distintos de fibras. ¿Logrará eso impedirte resolver el caso?
+
+  <Box>
+    <GuideEntityEmbed Entity="ComputerStationRecords"/>
+  </Box>
+</Document>

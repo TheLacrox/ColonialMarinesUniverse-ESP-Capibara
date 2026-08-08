@@ -138,6 +138,7 @@
     count: 12
     slot:
       name: MRE
+      nameLocId: rmc-item-slot-mre
       whitelist:
         tags:
         - MRE
@@ -317,6 +318,7 @@
     count: 12
     slot:
       name: ORP
+      nameLocId: rmc-item-slot-orp
       whitelist:
         tags:
         - MRE

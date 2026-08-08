@@ -1,0 +1,26 @@
+<Document>
+  #Escupidor, nivel 2
+  <GuideEntityEmbed Entity="CMXenoSpitter"/>
+  ##Jugar como Escupidor
+  El Escupidor deja de ser un mero hostigador y ahora puede pasar a la ofensiva. Su menor velocidad queda compensada por una salud superior, escupitajos dañinos y un Ácido corrosivo más potente.
+
+  Sus nuevas habilidades ácidas le permiten infligir daño constante a distancia en el frente.
+
+  Su combinación exclusiva consiste en usar Escupitajo cargado, Escupitajo ácido y después Ácido pulverizado. Si se emplean contra el mismo huésped, lo aturdirán y derribarán, además de mejorar el Escupitajo cargado que lo afecta; así podrás acercarte y asestarle un aguijonazo de cola.
+
+  Permanece en el frente y escupe contra los huéspedes desde lejos; durante los periodos de inactividad, usa tu ácido para derretir bengalas y armas.
+
+  Recuerda que el movimiento adicional de Cargar escupitajo puede servir para escapar, pues dura bastante tiempo o hasta tu próximo escupitajo.
+
+  ##Habilidades:
+  - [bold]Escupitajo ácido[/bold]: Lanza un glóbulo de ácido que inflige daño a cualquier objetivo.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoSpit"/>
+  - [bold]Cargar escupitajo[/bold]: Te concede velocidad de movimiento y armadura adicionales y potencia tu próximo escupitajo, que infligirá más daño, pero tendrá menor alcance. Además, salpicará de ácido al objetivo.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoChargeSpit"/>
+  - [bold]Pulverizar ácido[/bold]: Pulveriza ácido en línea por el suelo, cubre las barricadas e inflige daño a los huéspedes.
+  - También extingue el fuego de cualquier hermana que esté ardiendo.
+  - Si se usa contra un huésped afectado por Escupitajo cargado, mejora el escupitajo y lo aturde.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoSprayAcid"/>
+  - [bold]Ácido corrosivo[/bold]: Secreta sobre los objetos un glóbulo de ácido que los disuelve.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoCorrosiveAcid"/>
+</Document>

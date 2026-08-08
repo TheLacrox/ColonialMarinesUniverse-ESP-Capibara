@@ -1,0 +1,28 @@
+﻿<Document>
+  # Radiadores
+  Los radiadores permiten intercambiar energía térmica entre una [textlink="red de tuberías" link="PipeNetworks"] y el entorno.
+
+  <Box>
+    <GuideEntityEmbed Entity="HeatExchanger"/>
+  </Box>
+
+  Los radiadores son completamente pasivos: no necesitan energía para funcionar.
+  Siempre igualarán la temperatura del gas de la [textlink="red de tuberías" link="PipeNetworks"] con la del entorno.
+
+  Los radiadores tienen dos métodos de transferencia de calor: convección y radiación.
+  - La convección es la transferencia de calor mediante el movimiento de gas.
+  - La radiación es la transferencia de calor mediante ondas electromagnéticas.
+
+  Si un radiador está en el vacío, solo podrá transferir calor por radiación.
+  Si está en una atmósfera, podrá transferir calor tanto por convección como por radiación.
+
+  Mediante convección, la temperatura mínima o máxima que podrás alcanzar será la de la atmósfera o la [textlink="red de tuberías" link="PipeNetworks"] con la que intercambies calor (siempre que la temperatura del gas de la [textlink="red de tuberías" link="PipeNetworks"] o de la atmósfera permanezca igual).
+
+  Si intercambias calor con el espacio, no podrás enfriar más allá de la temperatura del espacio.
+  Para aumentar la eficacia de la radiación, puedes construir radiadores sobre entramado, lo que les permitirá radiar más calor que si estuvieran fijados directamente a una baldosa del casco.
+
+  El gas fluirá de forma natural por el radiador debido a las diferencias de presión, pero puedes utilizar una bomba de gas para aumentar el caudal.
+
+  Aumentar el caudal de gas por el radiador incrementará la velocidad del intercambio de calor.
+
+  </Document>

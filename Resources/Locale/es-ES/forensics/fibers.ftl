@@ -1,0 +1,32 @@
+forensic-fibers = fibras {LOC($material)}
+forensic-fibers-colored = fibras {LOC($material)} de color {LOC($color)}
+
+fibers-insulative = aislantes
+fibers-insulative-frayed = aislantes deshilachadas
+fibers-synthetic = sintéticas
+fibers-leather = de cuero
+fibers-durathread = de durahilo
+fibers-latex = de látex
+fibers-nitrile = de nitrilo
+fibers-nanomachines = de nanomáquinas aislantes
+fibers-chameleon = camaleónicas holográficas
+fibers-rubber = de goma
+
+fibers-purple = morado
+fibers-red = rojo
+fibers-black = negro
+fibers-blue = azul
+fibers-teal = verde azulado
+fibers-brown = marrón
+fibers-light-brown = marrón claro
+fibers-grey = gris
+fibers-green = verde
+fibers-orange = naranja
+fibers-white = blanco
+fibers-yellow = amarillo
+fibers-regal-blue = azul real
+fibers-olive = oliva
+fibers-silver = plateado
+fibers-gold = dorado
+fibers-maroon = granate
+fibers-pink = rosa

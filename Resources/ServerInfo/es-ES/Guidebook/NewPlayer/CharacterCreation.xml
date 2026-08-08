@@ -1,0 +1,70 @@
+<Document>
+# Consejos importantes para crear tu personaje
+Esta guía explica las partes de la creación de personajes que afectan a la partida.
+
+[textlink="Para consultar una guía sobre cambios estéticos, haz clic aquí." link="YourFirstCharacter"]
+
+## Prioridad de aparición
+Esto determina dónde aparecerás si te unes a la partida cuando la ronda ya ha comenzado.
+
+Si eliges «Llegadas», aparecerás en una estación aparte, donde esperarás la llegada de un transbordador que te llevará a la estación principal.
+
+Si eliges «Criosueño», despertarás en una cámara de criosueño que ya se encuentra en la estación.
+
+Si eliges «Ninguna», el juego elegirá por ti o utilizará la única opción de aparición disponible en la estación actual.
+
+Esta elección es, en gran medida, arbitraria. Puedes dejarla en «Ninguna» sin sufrir ningún inconveniente importante.
+
+## Trabajos
+Puedes configurar tus preferencias de trabajo en la sala de espera. Aunque no [color=#a4885c]garantizan[/color] que obtengas el puesto, al comienzo de la ronda se seleccionará [color=#a4885c]al azar[/color] a una de las personas que lo hayan solicitado.
+Primero tendrás la oportunidad de recibir el trabajo de prioridad alta; después, uno de prioridad media y, por último, uno de prioridad baja.
+También puedes elegir entre convertirte automáticamente en pasajero o volver a la sala de espera si no obtienes ninguno de tus trabajos preferidos.
+
+Algunos trabajos permanecen bloqueados hasta que hayas jugado el tiempo suficiente en otros puestos iniciales.
+
+[textlink="Para obtener más información sobre los trabajos, haz clic aquí." link="Jobs"]
+
+## Equipamiento de trabajo
+También puedes elegir [color=#a4885c]equipamiento[/color] para cada trabajo. El equipamiento incluye las prendas y baratijas con las que apareces al entrar en la partida. Algunos objetos de equipamiento están bloqueados por requisitos de tiempo de juego.
+Esto puede afectar a la partida de varias formas, ya que algunas prendas ofrecen [color=#a4885c]protección de armadura[/color] o [color=#a4885c]reducen tu velocidad de movimiento[/color]. Esto se aplica especialmente a Mando y Seguridad.
+
+También puedes elegir con qué tipo de bolsa aparecerás.
+Las [color=#a4885c]mochilas[/color] son medianas, pero permiten llevar objetos grandes con mayor facilidad. Las [color=#a4885c]bandoleras[/color] tienen más espacio total que las mochilas, pero les cuesta alojar objetos grandes. Las [color=#a4885c]bolsas de lona[/color] son grandes, pero penalizan el movimiento.
+
+## Antagonistas
+Activar una opción de [color=#a4885c]antagonista[/color] te añadirá a la lista de posibles antagonistas al comienzo de la ronda. No garantiza que recibas ese rol; ¡no lo uses como excusa para actuar como antagonista por tu cuenta!
+En su lugar, al igual que con las prioridades de trabajo, se elige al azar a un pequeño grupo de jugadores aptos. Si perteneces a Mando o eres agente de Seguridad, no podrás recibir un rol de antagonista.
+
+[textlink="Para obtener más información sobre los antagonistas, haz clic aquí." link="Antagonists"]
+
+Entrar en varias partidas o convertirte en fantasma, desconectarte o suicidarte por no haber recibido un rol de antagonista se conoce como «antag-rolling» y está prohibido por las reglas.
+Muchas personas esperan pacientemente su turno para ser antagonistas, así que [color=#a4885c]te pedimos que no te apuntes a un rol de antagonista si no estás preparado[/color].
+
+## Rasgos
+Los rasgos del habla modifican tu forma de hablar, a veces de manera extrema.
+
+Entre ellos se incluyen:
+- Sin acento (desactiva el acento de la especie seleccionada)
+- Acento vaquero (sustituye palabras, compañero)
+- Ceceo frontal (se sustituye la «s» por «th»)
+- Acento italiano (Mamma-mia, sustituye palabras)
+- Mentiroso patológico (sustituye palabras y cambia términos como «sí» por «no»)
+- Acento pirata (Arrgh, sustituye palabras)
+- Ansiedad social (t-t-tartamudeo)
+- Acento sureño (sustituye «-ing» por «-in'» y realiza cambios similares)
+
+Antes de elegir acentos marcados como el italiano o el vaquero, conviene que te sientas cómodo hablando con normalidad o con un acento leve, como Ansiedad social o Acento sureño.
+
+También existen rasgos de discapacidad. Familiarízate con el juego y con el desarrollo habitual de una partida antes de elegir uno, ya que algunos pueden resultar difíciles para principiantes.
+
+Entre ellos se incluyen:
+- Ceguera (limita considerablemente la visión)
+- Poco aguante al alcohol (te emborrachas antes y sufres más sus efectos negativos)
+- Mudez (no puedes hablar ni susurrar, pero aún puedes comunicarte mediante gestos o con papel y bolígrafo)
+- Narcolepsia (te duermes al azar en momentos impredecibles y, a menudo, inoportunos)
+- Pacifista (no puedes golpear, disparar ni lanzar objetos afilados contra otras personas)
+- Paracusia (a veces oyes sonidos que no son reales)
+- Miopía (limita parcialmente la visión si no llevas gafas graduadas)
+- Ronquidos (roncas con fuerza mientras duermes)
+- No reanimable (no pueden reanimarte cuando encuentras un final prematuro)
+</Document>

@@ -1,0 +1,11 @@
+shuttle-timer-eta = Tiempo estimado de llegada
+shuttle-timer-etd = Tiempo estimado de salida
+shuttle-timer-shuttle-time = TiempoDelTransbordador
+shuttle-timer-source-time = TiempoDeOrigen
+shuttle-timer-dest-time = TiempoDeDestino
+shuttle-timer-shuttle-map = MapaDelTransbordador
+shuttle-timer-source-map = MapaDeOrigen
+shuttle-timer-dest-map = MapaDeDestino
+shuttle-timer-docked = Acoplado
+shuttle-timer-bye = ¡ADIÓS!
+shuttle-timer-kill = ELIMINAR

@@ -1,0 +1,58 @@
+﻿<Document>
+  # Sistemas atmosféricos
+  Atmósfera dispone de una gran variedad de dispositivos pensados para transportar, gestionar y manipular gases de otras formas.
+  Estos dispositivos suelen funcionar juntos para mantener un ambiente seguro y respirable para la tripulación o realizar una tarea común.
+
+  Esta sección explica los distintos sistemas de los que dispone Atmósfera, cómo se interconectan y cuál es su uso ideal.
+
+
+  <Box>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption=""/>
+    <GuideEntityEmbed Entity="GasPipeHalf" Caption=""/>
+    <GuideEntityEmbed Entity="GasPipeBend" Caption=""/>
+    <GuideEntityEmbed Entity="GasPipeTJunction" Caption=""/>
+    <GuideEntityEmbed Entity="GasPipeFourway" Caption=""/>
+    <GuideEntityEmbed Entity="GasPressurePump" Caption=""/>
+    <GuideEntityEmbed Entity="GasVolumePump" Caption=""/>
+  </Box>
+  <Box>
+    ## Redes de tuberías
+  </Box>
+  <Box>
+    [color=#999999][italic]Tuberías interconectadas con una tarea común — denominadas habitualmente redes de tuberías[italic][/color]
+  </Box>
+
+  <Box>
+    <GuideEntityEmbed Entity="ComputerAlert" Caption=""/>
+    <GuideEntityEmbed Entity="AirAlarm" Caption=""/>
+  </Box>
+  <Box>
+    ## Supervisión y control de dispositivos
+  </Box>
+  <Box>
+    [color=#999999][italic]Supervisión y control de los dispositivos que gestionan una atmósfera local[italic][/color]
+  </Box>
+
+  <Box>
+    <GuideEntityEmbed Entity="Firelock" Caption=""/>
+    <GuideEntityEmbed Entity="FireAlarm" Caption=""/>
+  </Box>
+  <Box>
+    ## Control de incendios y gases
+  </Box>
+  <Box>
+    [color=#999999][italic]Dispositivos para controlar y evitar fugas de gas e incendios[italic][/color]
+  </Box>
+
+  <Box>
+    <GuideEntityEmbed Entity="GasMinerOxygenStation" Caption=""/>
+    <GuideEntityEmbed Entity="AirCanister" Caption=""/>
+  </Box>
+  <Box>
+    ## Extracción y almacenamiento de gases
+  </Box>
+  <Box>
+    [color=#999999][italic] Dispositivos para extraer gas nuevo que pueda usar la estación y almacenarlo para más adelante[italic][/color]
+  </Box>
+
+</Document>

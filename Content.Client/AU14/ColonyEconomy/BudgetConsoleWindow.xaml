@@ -1,13 +1,14 @@
 <controls:BudgetConsoleWindow
     xmlns="https://spacestation14.io"
+    xmlns:loc="clr-namespace:Content.Client._CMU14.Localizations"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:controls="clr-namespace:Content.Client.AU14.ColonyEconomy"
-    Title="Budget Console" MinSize="450 420">
+    Title="{loc:CMULoc 'cmu-colony-economy-budget-console-title', 'Budget Console'}" MinSize="450 420">
     <BoxContainer Orientation="Vertical" SeparationOverride="4">
-        <Label Name="BudgetLabel" Access="Public" Text="Current Budget: $0.00" />
+        <Label Name="BudgetLabel" Access="Public" Text="{loc:CMULoc 'cmu-colony-economy-current-budget-placeholder', 'Current Budget: $0.00'}" />
 
         <!-- Withdraw Cash -->
-        <Label Text="Withdraw Cash:" StyleClasses="LabelSubText" />
+        <Label Text="{loc:CMULoc 'cmu-colony-economy-withdraw-cash-label', 'Withdraw Cash:'}" StyleClasses="LabelSubText" />
         <BoxContainer Orientation="Horizontal" SeparationOverride="4">
             <Button Name="Withdraw100" Access="Public" Text="$100"
                     StyleClasses="OpenBoth" HorizontalExpand="True" Margin="0 2" />
@@ -18,13 +19,13 @@
         </BoxContainer>
 
         <!-- Dispense Salaries -->
-        <Button Name="DispenseSalariesButton" Access="Public" Text="Dispense All Salaries"
+        <Button Name="DispenseSalariesButton" Access="Public" Text="{loc:CMULoc 'cmu-colony-economy-dispense-all-salaries', 'Dispense All Salaries'}"
                 Margin="0 4" />
 
         <!-- Transfer to Department -->
-        <Label Text="Transfer to Department:" StyleClasses="LabelSubText" />
+        <Label Text="{loc:CMULoc 'cmu-colony-economy-transfer-to-department', 'Transfer to Department:'}" StyleClasses="LabelSubText" />
         <BoxContainer Orientation="Horizontal" SeparationOverride="4">
-            <LineEdit Name="TransferAmountInput" Access="Public" PlaceHolder="Amount"
+            <LineEdit Name="TransferAmountInput" Access="Public" PlaceHolder="{loc:CMULoc 'cmu-colony-economy-amount-placeholder', 'Amount'}"
                       HorizontalExpand="True" SizeFlagsStretchRatio="1" />
         </BoxContainer>
         <ScrollContainer VerticalExpand="True" HScrollEnabled="False" MinSize="0 120">

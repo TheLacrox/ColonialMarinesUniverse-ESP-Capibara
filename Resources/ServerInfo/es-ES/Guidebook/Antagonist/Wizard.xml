@@ -1,0 +1,30 @@
+﻿<Document>
+  # El mago
+
+  <Box>
+    [color=#457573][italic]¡ES LA HORA DEL MAGO, HIJO DE P-...[italic][/color]
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ToyFigurineWizard" Caption=""/>
+  </Box>
+  Los magos son una fuerza del caos y la imprevisibilidad. Nunca sabes qué hará uno a continuación.
+  Por lo general, los envía la [color=#40E0D0]Federación de Magos Espaciales[/color], aunque algún pringado también puede convertirse en uno tras sacar un 20 natural con un dado maldito.
+  Y como los magos son sumamente imprevisibles, ¡puede aparecer uno cuando menos te lo esperes!
+
+  ## El grimorio
+  <Box>
+    <GuideEntityEmbed Entity="WizardsGrimoire" Caption="Grimorio del mago"/>
+  </Box>
+
+  [bold]Por la ancestral ley de los magos, tu grimorio está ligado a ti.[/bold] Esto significa que no puedes compartirlo con nadie. Los hechizos y el equipo de su interior son solo para ti.
+  El grimorio del mago sirve para obtener todo tipo de hechizos, equipo y criaturas mágicas. Lo que tienes a tu disposición es [italic]extremadamente poderoso[/italic], por lo que solo dispones de 10 [color=#FF0000]W[/color][color=#FFA500]i[/color][color=#FFFF00]z[/color][color=#00FF00]€[/color][color=#0000FF]o[/color][color=#4B0082]i[/color][color=#8F00FF]n[/color]™ para gastarlos.
+  Tu único límite, aparte del precio, es tu creatividad. ¡Intenta descubrir algunas combinaciones!
+
+  <Box>
+    <GuideEntityEmbed Entity="PonderingOrbWizard" Caption="El Orbe de la Contemplación"/>
+  </Box>
+
+  Si alguna vez te apetece entregarte a la contemplación, ¡no busques más! El [bold]Orbe de la Contemplación[/bold] permite al mago conectarse a la red de cámaras de la estación para espiar a los demás sin que sospechen nada.
+  Puede resultarte útil si tratas de urdir un plan o mantenerte un paso por delante de [color=red]Seguridad[/color].
+
+</Document>

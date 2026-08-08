@@ -1,0 +1,69 @@
+<Document>
+  # Ladrones
+
+  <Box>
+    [color=#999999][italic]"¡Me lo llevo! ¡Y eso también! Uy, ¡no te importará que coja esto!"[/italic][/color]
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ClothingNeckCloakVoid" Caption=""/>
+  </Box>
+
+  Los ladrones son [color=green]delincuentes[/color] de poca monta pero astutos que no saben tener las manos quietas. Tras tu última detención te implantaron a la fuerza un [bold]dispositivo de pacifismo[/bold], pero no permitirás que eso te impida intentar ampliar tu colección.
+
+  ## El arte del hurto
+  A diferencia de otros antagonistas, [bold]no meterte en líos es casi obligatorio[/bold] debido a tu implante.
+  Solo puedes huir si [color=#cb0000]Seguridad[/color] se mete contigo y, como trabajas en solitario, no tienes amigos que te saquen del apuro.
+
+  Pero, contra todo pronóstico, lograrás sisar lo que quieras gracias a tu determinación, tu prestidigitación, unas pocas herramientas y tus [color=cyan]dedos ágiles.[/color]
+
+  Los años de experiencia te han dado la capacidad de [bold]quitarle rápidamente objetos del cuerpo a otra persona sin que se dé cuenta.[/bold]
+  Con un poco de práctica, incluso puedes robarle la cartera y mantener una conversación al mismo tiempo.
+
+  ## Herramientas del oficio
+  Tienes otros dos ases bajo tus mangas robadas: tu [color=cyan]baliza[/color] y tu [color=cyan]bolsa.[/color]
+
+  Tu [color=cyan]baliza[/color] ofrece un viaje seguro a casa para las baratijas que quizá no puedas llevar contigo en la lanzadera de evacuación. Solo tienes que buscar un rincón apartado de la estación donde desplegarla y fijar sus coordenadas en tu escondite.
+  Todos los objetos relucientes que estén cerca [bold]se teletransportarán a tu cámara acorazada cuando termine el turno,[/bold] con lo que cumplirás tus objetivos.
+
+  Sin embargo, si la encuentran, te delatará al instante y permitirá que los demás recuperen con suma facilidad sus pertenencias «desaparecidas». [bold]¡Asegúrate de esconderla bien![/bold]
+
+  <Box>
+    <GuideEntityEmbed Entity="ThiefBeacon"/>
+  </Box>
+
+  Tu [color=cyan]bolsa[/color] contiene... bueno, lo que te hayas acordado de guardar. [bold]Puedes elegir dos equipos ya preparados[/bold] que te ayudarán a llevar a cabo golpes más ambiciosos.
+
+  <Box>
+    <GuideEntityEmbed Entity="SatchelThief"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="Implanter" Caption="Anatomía"/>
+    <GuideEntityEmbed Entity="C4" Caption="Asalto"/>
+    <GuideEntityEmbed Entity="ChameleonProjector" Caption="Camaleón"/>
+    <GuideEntityEmbed Entity="BaseUplinkRadio" Caption="Comunicador"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="NitrousOxideTank" Caption="Somnífero"/>
+    <GuideEntityEmbed Entity="Fulton" Caption="Contrabandista"/>
+    <GuideEntityEmbed Entity="Telecrystal" Caption="Sindicato"/>
+  </Box>
+
+  ## La joya de la colección
+  Tu cleptomanía te llevará lejos. Un día te apetecerá robar unas cuantas figuritas; otro, una máquina industrial.
+
+  Da igual. Tarde o temprano, todas formarán parte de tu colección.
+
+  Puedes robar objetos [bold]llevándolos encima[/bold] cuando llegues a CentComm. Si no es posible, puedes robar objetos más grandes [bold]dejándolos junto a tu baliza.[/bold]
+
+  Puede que algunos de los objetivos más [italic]animados[/italic] no quieran colaborar. Asegúrate de que estén vivos y contigo o junto a tu baliza cuando termine el turno.
+
+  Entre las cosas que podrías desear se incluyen, sin limitarse a ellas:
+
+  <Box>
+    <GuideEntityEmbed Entity="ToyFigurineGreytider" Caption="Figuritas"/>
+    <GuideEntityEmbed Entity="PassengerIDCard" Caption="Tarjetas ID"/>
+    <GuideEntityEmbed Entity="ChemDispenser" Caption="Estructuras"/>
+    <GuideEntityEmbed Entity="MobCorgiIan" Caption="Animales/mascotas"/>
+  </Box>
+
+</Document>

@@ -99,10 +99,12 @@ public sealed partial class IdModificationConsoleSystem : EntitySystem
 
         Dirty(uid.Value, access);
 
+        var accessGroupName = accessGroupPrototype.GetAccessGroupName();
+
         _adminLogger.Add(LogType.RMCIdModify,
             LogImpact.Low,
-            $"{ToPrettyString(args.Actor):player} has changed the accesses of {ToPrettyString(uid):entity} to {accessGroupPrototype.Name}");
-        _core.CreateARESLog(ent, LogCat, (string) $"{Name(args.Actor)} modified ID: {Name(uid.Value)} to {accessGroupPrototype.Name}");
+            $"{ToPrettyString(args.Actor):player} has changed the accesses of {ToPrettyString(uid):entity} to {accessGroupName}");
+        _core.CreateARESLog(ent, LogCat, (string) $"{Name(args.Actor)} modified ID: {Name(uid.Value)} to {accessGroupName}");
     }
 
     private void OnTerminateConfirmMsg(Entity<IdModificationConsoleComponent> ent,

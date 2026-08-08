@@ -1,0 +1,22 @@
+﻿<Document>
+  # Alteraciones atmosféricas
+  Las alteraciones atmosféricas son desviaciones de las condiciones normales que deben mantenerse en la estación.
+
+  Estas alteraciones pueden deberse a distintos factores, como [textlink="incendios" link="Fires"], [textlink="exposición al espacio" link="Spacing"] u otros sucesos que pueden propagarse rápidamente por la estación y volver inhabitable el ambiente para la tripulación.
+
+  Como referencia, las condiciones atmosféricas normales de la estación son una presión de 101.3 kPa y una temperatura de 293.15 K (20°C).
+  La mezcla estándar de la estación también contiene un 78% de nitrógeno y un 22% de oxígeno.
+
+  ## Control de daños
+  En cualquier emergencia atmosférica es importante actuar con rapidez para evitar que se propaguen las condiciones peligrosas y contenerlas tanto como sea posible.
+
+  Abrir las [textlink="compuertas cortafuegos" link="FireAndGasControl"] de la zona expuesta suele obligarte a resolver [italic]dos[/italic] problemas en vez de uno.
+
+  No olvides usar el [textlink="proyector holofán" link="AtmosTools"] para impedir que las condiciones peligrosas se propaguen entre las [textlink="zonas intermedias de las compuertas cortafuegos" link="FireAndGasControl"].
+
+  <Box>
+    <GuideEntityEmbed Entity="HolofanProjector"/>
+    <GuideEntityEmbed Entity="HoloFan"/>
+  </Box>
+
+</Document>

@@ -1,0 +1,33 @@
+﻿<Document>
+
+  # Medicamentos esenciales
+
+  Estos medicamentos casi siempre resultan útiles de un modo u otro.
+
+  <GuideReagentEmbed Reagent="CMTricordrazine"/>
+  <GuideReagentEmbed Reagent="CMBicaridine"/>
+  <GuideReagentEmbed Reagent="CMKelotane"/>
+  <GuideReagentEmbed Reagent="CMDylovene"/>
+  <GuideReagentEmbed Reagent="CMDexalin"/>
+  <GuideReagentEmbed Reagent="CMDexalinPlus"/>
+  <GuideReagentEmbed Reagent="CMMeralyne"/>
+  <GuideReagentEmbed Reagent="CMDermaline"/>
+
+  # Medicamentos especializados
+
+  Estos medicamentos suelen tener usos específicos.
+
+  <GuideReagentEmbed Reagent="CMInaprovaline"/>
+  <GuideReagentEmbed Reagent="CMEpinephrine"/>
+  <GuideReagentEmbed Reagent="CMEthylredoxrazine"/>
+  <GuideReagentEmbed Reagent="CMArithrazine"/>
+  <GuideReagentEmbed Reagent="CMLeporazine"/>
+  <GuideReagentEmbed Reagent="CMCryoxadone"/>
+
+  # Todos los medicamentos
+
+  Esta es una lista de -todos- los medicamentos disponibles, incluidos los ya mencionados.
+
+  <GuideReagentGroupEmbed Group="Medicine"/>
+
+</Document>

@@ -1,0 +1,150 @@
+<Document>
+  # La smartgun ML66A y tú: introducción
+
+  ## Introducción
+  ¡Enhorabuena, cabo segundo! Te han elegido para manejar uno de los mejores avances tecnológicos en armas de fuego del último siglo, si no [italic]el[/italic] mejor: ¡la [bold]smartgun ML66A[/bold]!
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCSmartGun" Caption="Smartgun ML66A"/>
+  </Box>
+
+  Esta obra cumbre de la ingeniería de los Marines cuenta con una [bold]capacidad de 500 cartuchos[/bold], incorpora de serie un [bold]arnés de combate con asistencia neumática[/bold] para facilitar su uso y, sobre todo, dispone de un [bold]sistema de identificación amigo-enemigo (IFF)[/bold] que evita incidentes de fuego amigo.
+
+  Esta arma te convertirá en un [bold]punto móvil de denegación[/bold] frente a las fuerzas enemigas y te permitirá proporcionar fuego de cobertura a todo tu batallón. Tal vez este poder recién adquirido se te suba a la cabeza, pero dominar sus particularidades te transformará de torreta ambulante en un [bold]recurso indispensable[/bold] para cualquier operación.
+
+  ## Al despertar
+  Procura contener la euforia por haber recibido este elevado puesto; puede que otros marines envidien tu suerte. Será mejor que te vistas y equipes deprisa antes de que se te note demasiado el orgullo.
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookRoleSGO" Caption="¡Tú!"/>
+  </Box>
+
+  Tu [bold]sala de preparación[/bold] siempre será la penúltima puerta antes de entrar en la [bold]zona principal de preparación[/bold] de cada sección de los barracones. Allí encontrarás dos expendedores que suministran tanto el equipo esencial como el opcional para el despliegue. [bold]Recuerda[/bold]: el [bold]expendedor de uniformes[/bold] proporciona el cinturón de munición, mientras que el [bold]expendedor de armas[/bold] contiene el arma, la munición y el arnés.
+
+  <Box>
+    <GuideEntityEmbed Entity="ColMarTechSGEquipment" Caption="Expendedor de uniformes"/>
+    <GuideEntityEmbed Entity="CMBeltSmartGunOperatorFilled" Caption="Cinturón de munición ML66A"/>
+  </Box>
+
+  Existe una [bold]variante con funda para arma corta[/bold] del cinturón de munición de la smartgun, que permite guardar un arma corta estándar a costa de un espacio para tambor. Algunos operadores de smartgun (SGO) confían plenamente en poder desenfundar con rapidez, mientras que otros lo consideran innecesario; elige según tus preferencias personales.
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCBeltSmartGunOperatorPistolFilled" Caption="Cinturón de munición con funda para arma corta"/>
+  </Box>
+
+  ## Equiparse
+  Tu [bold]expendedor de armas para operadores de smartgun[/bold] proporciona una caja que contiene:
+
+  <Box>
+  <GuideEntityEmbed Entity="ColMarTechSGGear" Caption="Expendedor de armas"/>
+    <GuideEntityEmbed Entity="CMSmartGunOperatorEquipmentCase" Caption="Caja de la smartgun ML66A"/>
+  </Box>
+
+  - [bold]1 smartgun ML66A (cargada)[/bold]
+  - [bold]1 arnés de combate ML66A[/bold]
+  - [bold]1 visor ML66A montado en la cabeza[/bold]
+  - [bold]1 batería de repuesto[/bold]
+  - [bold]3 tambores de munición de repuesto[/bold]
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCPowerCellSmartgun" Caption="Batería ML66A"/>
+    <GuideEntityEmbed Entity="RMCMagazineSmartGun" Caption="Tambores de munición ML66A"/>
+  </Box>
+
+  No se proporciona ningún bolsillo auxiliar de serie, así que equípalos según tus necesidades.
+
+  ### Notas importantes sobre el equipo:
+  - [italic]Debes[/italic] llevar el [bold]arnés de combate ML66A[/bold] para colgarte la smartgun a la espalda. [color=#249fde][bold]Quítate cualquier objeto del cinturón antes de equiparlo.[/bold][/color]
+  <Box>
+    <GuideEntityEmbed Entity="CMArmorSmartGunCombatHarness" Caption="Arnés de combate ML66A"/>
+  </Box>
+  - Una vez equipado, la [bold]óptica de visión nocturna (NV) montada en la cabeza[/bold] se activará automáticamente. No consume la batería del arma y puede activarse o desactivarse desde la interfaz.
+  <Box>
+    <GuideEntityEmbed Entity="RMCGlassesSmartGunSight" Caption="Visor ML66A montado en la cabeza"/>
+  </Box>
+  - Enciende la [bold]luz del arnés[/bold] para que otros marines puedan verte cuando haya poca visibilidad.
+  - [bold]Almacenamiento de munición[/bold]: al menos [bold]un (1) bolsillo general grande[/bold], capaz de guardar [bold]dos tambores de munición adicionales[/bold] u otro equipo.
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCPouchGeneralLargeFilledSmartGunDrums" Caption="Bolsillo general grande"/>
+  </Box>
+
+  Cuando termines de equiparte, comprueba el [bold]expendedor de munición especial[/bold] situado en el lado de tu escuadra de la sala de preparación para recoger [bold]tambores adicionales gratuitos[/bold]. Habrá más munición disponible a medida que despierten más marines, así que vuelve a comprobarlo antes del despliegue.
+
+  <Box>
+    <GuideEntityEmbed Entity="ColMarTechMunitions" Caption="Expendedor de munición especial"/>
+  </Box>
+
+  Si necesitas más munición, ve a [bold]Requisiciones[/bold], donde puedes solicitar hasta [bold]dos (2) tambores adicionales[/bold]. El [bold]LO[/bold] (oficial de logística) puede aprobar más solicitudes, pero no cuentes con ello: la munición es limitada y reabastecerse en la superficie llevará tiempo y coordinación.
+
+  ### Espacios del casco:
+  La mayoría de los [bold]mandos exigen que los marines especialistas lleven casco[/bold]. Aunque esto limita la expresión estética, proporciona dos espacios adicionales para [bold]autoinyectores, una cantimplora u objetos personales[/bold].
+
+  ## Cómo usar la smartgun
+  Ya te has equipado, has comido algo rápido y has asentido durante toda la sesión informativa. Ahora corres hacia la [bold]nave de descenso[/bold] con un cigarrillo entre los labios y te preguntas: [italic]«¿Y ahora qué?»[/italic]
+
+  ### Desembarco y posicionamiento:
+  1. [bold]Reúnete con tu líder de escuadrón (SL)[/bold] y cumple sus órdenes.
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookRoleSL"/>
+  </Box>
+
+  2. Mantente [bold]cerca del centro de desplazamiento de la escuadra[/bold] y presta atención a los marines que no lleven armas con IFF.
+
+  3. Tu función es proporcionar [bold]fuego de apoyo[/bold]: tu [bold]denegación de área[/bold] imita una torreta estacionaria, pero con movilidad y capacidad de adaptación.
+
+  4. [bold]No persigas a los enemigos[/bold]; apoya a los aliados que avanzan cubriéndolos.
+
+  5. Da prioridad a cubrir a los [bold]sanitarios de combate, los técnicos de combate y tu SL[/bold].
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookRoleHM"/>
+    <GuideEntityEmbed Entity="RMCGuidebookRoleCT"/>
+    <GuideEntityEmbed Entity="RMCGuidebookRoleSL"/>
+  </Box>
+
+  6. Si hay que recuperar [bold]personal esencial[/bold] (marines heridos o muertos), proporciona cobertura a quienes efectúen el rescate en lugar de encargarte tú.
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookCorpseMarine"/>
+  </Box>
+
+  ### Conciencia de la posición:
+  - Si te disparan, a menudo la culpa está repartida [bold]50/50[/bold]: puede que tus compañeros no vean que has cambiado de posición.
+  - Cuenta con que algunos [bold]marines demasiado impetuosos[/bold] avancen de forma temeraria. Retrocede detrás de ellos y mantén el fuego de supresión.
+  - Nunca seas el primero en entrar en una sala ni en doblar una esquina; avanza SOLO en grupo.
+
+  ### Uso del detector de movimiento:
+  - Mantén el [bold]detector de movimiento (MD) encendido en todo momento[/bold].
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookActionMotionDetector" Caption="Control del detector de movimiento" />
+  </Box>
+
+  - Ajústalo al alcance que prefieras después de desembarcar.
+  - Como no muestra el [bold]número de objetivos[/bold], [bold]comunica las señales[/bold] cuando detectes grandes grupos de enemigos o movimiento.
+  - Si otro marine ya comunica las señales del MD, usa el tuyo para la [bold]adquisición de objetivos[/bold] en vez de saturar la radio.
+
+  ### Sistema IFF:
+  - De forma predeterminada, el [bold]IFF está ACTIVADO[/bold], como indica la [bold]silueta con forma de persona[/bold] de la interfaz.
+  - [bold]NO desactives el IFF salvo que sea absolutamente necesario[/bold] (p. ej., para enfrentarte a amenazas «no designables»).
+  - Desactivar el IFF permite el [bold]fuego amigo[/bold] y exige una conciencia extrema de la situación.
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookActionIFF" Caption="Control del IFF activado" />
+  </Box>
+
+  ## Notas finales:
+  - [bold]No te separes de tu SL.[/bold] Cúbrelo, repite sus órdenes si hace falta y proporciona apoyo de fuego.
+  - Un [bold]buen operador de smartgun refuerza a la escuadra[/bold] al actuar como un escudo móvil de plomo candente.
+  - [bold]No[/bold] te tomes demasiado en serio: aunque seas esencial, [bold]no eres invencible[/bold].
+  - [bold]La cohesión es fundamental[/bold]: una escuadra desorganizada fracasará por muy bien que dispares.
+  - Mantén [bold]los ojos bien abiertos[/bold], [bold]el dedo en el gatillo[/bold] y [bold]las botas bien atadas[/bold]: ¡tienes trabajo que hacer!
+  - Habla con tu superior o con el SEA (asesor superior de tropa) si no tienes algo claro o te surge alguna pregunta.
+  <Box>
+    <GuideEntityEmbed Entity="CMGuidebookRoleSEA"/>
+  </Box>
+
+  ### Guía creada por GoodShowOldChap
+</Document>

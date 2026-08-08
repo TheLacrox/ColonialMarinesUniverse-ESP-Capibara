@@ -1,0 +1,38 @@
+<Document>
+  # Reglamentos de despliegue
+
+    - Medicina, Requisiciones, el Calabozo, el Taller de armamento y el CIC deben conservar en la nave/instalación al menos un miembro de su departamento para que cualquier otro integrante pueda desplegarse.
+    - El CMO, el CMP y el LO no pueden desplegarse nunca en la FOB ni en el frente, salvo que la nave/instalación haya sido invadida.
+    - Para desplegar al personal, la FOB debe haberse declarado segura. Si sufre una brecha o queda expuesta a una amenaza hostil considerable, todo el personal desplegado deberá regresar de inmediato a la nave o instalación principal.
+
+  ### Personal médico
+    - Los médicos, enfermeros y demás miembros del personal médico que no sean el CMO pueden desplegarse en la FOB con permiso del CMO o del comandante, y solo pueden ir al frente si se encuentran dentro de un vehículo.
+    - No deben conducir el vehículo de ningún modo y han de permanecer en su interior en todo momento; solo podrán huir de él en caso de peligro.
+
+  ### Personal de Requisiciones
+    - Los técnicos auxiliares y demás miembros del personal de Requisiciones que no sean el LO pueden desplegarse en la FOB con permiso del LO o del comandante, y solo pueden ir al frente si se encuentran dentro de un vehículo.
+    - Pueden conducir y salir del vehículo, pero solo deberían hacerlo para entregar suministros y deben permanecer a la vista del vehículo en todo momento.
+
+  ### Tripulación de vuelo
+    - La tripulación de vuelo puede desplegarse libremente en la FOB, pero nunca debe ir al frente
+
+  ### Técnicos de armamento
+    - Los técnicos de armamento pueden desplegarse en la FOB con permiso del EO o del comandante.
+
+  ### Unidades sintéticas
+    - Los sintéticos auxiliares pueden desplegarse libremente en la FOB y en el frente
+    - Las unidades Working Joe nunca deben desplegarse, pues perderán la conexión con APOLLO y dejarán de funcionar.
+
+  ### Policía Militar
+    - Los miembros de la Policía Militar y demás personal policial que no sean el CMP pueden desplegarse en la FOB con permiso del CMP o del comandante, y solo pueden ir al frente para efectuar una detención sobre el terreno.
+
+  ### Asesores
+    - Los asesores pueden desplegarse libremente en la FOB, pero nunca en el frente.
+
+  ### Personal de mando
+    - El comandante no puede desplegarse nunca salvo que la nave/instalación haya sido invadida. 
+    - El oficial ejecutivo puede desplegarse en la FOB y en el frente con permiso del comandante
+    - El oficial de ingeniería puede desplegarse libremente en la FOB, pero nunca en el frente.
+    - El oficial de inteligencia puede desplegarse libremente, incluido el frente, pero no para combatir, sino únicamente para recabar inteligencia, comunicarse con el CIC o actuar como jefe de escuadra.
+    - Los oficiales subalternos solo pueden desplegarse en la FOB con permiso del comandante y si la FOB cuenta, como mínimo, con un teléfono operativo y una consola de Overwatch.
+</Document>

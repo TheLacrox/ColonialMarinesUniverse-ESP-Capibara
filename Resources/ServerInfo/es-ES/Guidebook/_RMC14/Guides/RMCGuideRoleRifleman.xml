@@ -1,0 +1,60 @@
+<Document>
+[color=#5f698a]█    █ █▄ █[/color] [head=2][bold]CUERPO DE MARINES DE LAS NACIONES UNIDAS[/bold][/head]\n
+[color=#5f698a]▀ ▄▀ █ ▀█ [/color]
+
+#Manual básico del fusilero de la UNMC
+  - ¡Arriba, soldado! ¡En pie y listo para el combate!
+
+  - Acabas de despertarte, así que tendrás hambre. Ve al expendedor de comida, saca dos comidas de la máquina y cómetelas. Si tienes quejas sobre la comida, ¡dirígelas a alguien a quien le importe!
+  <Box>
+    <GuideEntityEmbed Entity="ColMarTechFood"/>
+    <GuideEntityEmbed Entity="CMMarinePreparedMealChicken"/>
+  </Box>
+   - No puedes llevarte esas bandejas, así que déjalas en una mesa cercana o tíralas al conducto de residuos. ¡Que Dios te ampare si te sorprendo tirándolas en otro sitio!
+  <Box>
+  [color=red]¡MARINE! ¡No puedes combatir en calzoncillos! ¡VÍSTETE! ¡A TODA PRISA! [/color]
+  </Box>
+  - Corre al expendedor automático de equipo y ponte el uniforme. Haz clic en la máquina expendedora y luego en «Indumentaria estándar de marine».
+  - Recibirás el uniforme, que incluye mono, botas, guantes, casco y auriculares; los llevarás puestos EN TODO MOMENTO.
+  <GuideEntityEmbed Entity="ColMarTechEquipment"/>
+
+  - Fíjate en los colores del casco, pues indican tu escuadra:\n
+  [color=#E61919]Rojo para Alpha[/color], [color=#FFC32D]amarillo para Bravo[/color], [color=#C864C8]morado para Charlie[/color] y [color=#4148C8]azul para Delta[/color].
+
+  - Ahora puedes elegir el equipo. Solo recibirás un objeto por categoría (dos en el caso de los bolsillos), así que elige bien. Todo lo marcado en [color=green]verde[/color] está recomendado para tu rol; recoge una armadura ligera o media, un aparejo de carga de munición M276, unos bolsillos de primeros auxilios y, si quieres, una máscara de gas o una capucha.
+    <Box>
+    <GuideEntityEmbed Entity="CMBeltMarine"/>
+    <GuideEntityEmbed Entity="RMCPouchFirstAid"/>
+    </Box>
+  - ¡Tienes 45 puntos para gastar en equipo adicional, como granadas, herramientas o munición especial! Cada objeto tiene su propio coste en puntos, y algunos salen más rentables que otros. Por ahora, recoge cargadores ampliados o perforantes para el M54C y guárdalos en el cinturón.
+
+  <Box>[color=red]¡Ahora sí pareces un marine![/color]
+  </Box>
+  - ¡Ya estás listo para el baile, pero no vas a salir de esta casa sin acompañante!
+  - Ve al armero automatizado y elige tu arma. Como antes, los objetos recomendados aparecen en [color=green]verde[/color].
+  <Box>
+  <GuideEntityEmbed Entity="ColMarTechGuns"/>
+  </Box>
+   - Conoce a tu nuevo mejor amigo: el [bold]fusil de asalto M54C MK2[/bold]. Recoge algunos cargadores adicionales, guárdalos en el cinturón o los bolsillos y no olvides cargar el arma.
+   - Puede que ahora quieras probar a tu nuevo compañero para conocerlo un poco mejor. Ve al campo de tiro si quieres practicar la puntería.
+   -Si no estás en el campo de tiro, [color=red]¡no[/color] dispares el arma!
+    <GuideEntityEmbed Entity="RMCWeaponRifleM54C"/>
+   - Asegúrate de llevar cargadores estándar y perforantes (AP). Los AP atravesarán objetivos más resistentes, incluidos otros marines, así que CUIDADO. CON. EL. FUEGO.
+  <Box>
+  <GuideEntityEmbed Entity="CMMagazineRifleM54C"/>
+  <GuideEntityEmbed Entity="CMMagazineRifleM54CAP"/>
+  </Box>
+  - En la armería también encontrarás máquinas que dispensan uniformes sobrantes, herramientas, munición y accesorios para armas. Ya hablaremos de estos accesorios con más detalle en otra ocasión.
+  <Box>[color=red]¡Eres duro, vistes de verde y eres marine de la ONU! ¡OORAH![/color]
+  </Box>
+
+  - Busca a tus compañeros de escuadra y ve a la sesión informativa. Si llegas tarde, dirígete de inmediato al oeste, hasta el hangar, y prepárate para el despliegue.
+
+  - Si necesitas ayuda, puedes preguntar a cualquiera de tus compañeros marines o a tu mentor local, el asesor superior de tropa.
+  - Si necesitas más ayuda o tienes algún problema, pulsa F1 para contactar con un mentor.
+  <Box>
+    <GuideEntityEmbed Entity="CMGuidebookRoleSEA"/>
+  </Box>
+<Box>[color=red]¡SEMPER FI, MARINE! ¡PUEDES RETIRARTE![/color]
+</Box>
+</Document>

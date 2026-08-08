@@ -1,0 +1,245 @@
+<Document>
+  # Auriculares de campaña
+
+  Los auriculares de campaña son las radios personales estándar que reciben las fuerzas terrestres. Permiten acceder a las redes de facción asignadas y, en los modelos compatibles, a una frecuencia directa sintonizable.
+
+  <Box>
+    <GuideEntityEmbed Entity="AU14HeadsetGovforMarineFTL" Caption="Auriculares de escuadra"/>
+    <GuideEntityEmbed Entity="AU14HeadsetGovforCommand" Caption="Auriculares de mando"/>
+  </Box>
+
+  ## Redes con nombre
+
+  Usa [color=#a4885c]:h[/color] para transmitir por la red predeterminada de los auriculares.
+
+  Algunos auriculares incluyen otras redes con clave. Examina los auriculares para consultar las redes y los prefijos de chat disponibles.
+
+  Por ejemplo:
+
+  - [color=#a4885c]:v[/color] transmite por command cuando los auriculares contienen la clave de command.
+  - [color=#a4885c]:a[/color] transmite por Alpha cuando los auriculares contienen la clave de Alpha.
+
+  Las redes de facción con nombre están protegidas mediante claves instaladas en los auriculares. Unos auriculares no pueden transmitir ni recibir por una red con nombre sin la clave correspondiente.
+
+  ## Cobertura de red
+
+  Las redes de combate necesitan la cobertura de un relé de radio o de una infraestructura fija de comunicaciones.
+
+  La cobertura puede proceder de:
+
+  - Un [textlink="AN/PRC-117G" link="AU14CommsANPRC"] encendido que lleve un operador cualificado.
+  - Una estación de retransmisión desplegada.
+  - Un conjunto de comunicaciones de a bordo que tenga alimentación.
+  - Un mástil de antena de puesto de mando.
+
+  Un AN/PRC puesto no funciona como relé si lo lleva alguien sin la formación necesaria.
+
+  La cobertura llega a un nivel por encima o por debajo del anclaje, por lo que los túneles profundos necesitan su propio relé. Los conjuntos de a bordo cubren todas las cubiertas.
+
+  Las redes de apoyo, incluidos MILP y los canales colony, no dependen de un relé y siguen disponibles sin ningún anclaje.
+
+  ### Alcance estándar de un relé
+
+  <Table Columns="2" MinForcedColumnWidth="120">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Distancia al relé[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Señal[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">0-30 casillas</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Transmisión y recepción nítidas.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">30-45 casillas</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Ligeramente degradada.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Más de 45 casillas</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Sin señal del relé.</Box>
+    </ColorBox>
+  </Table>
+
+  Estos alcances presuponen una potencia de transmisión estándar y una antena de látigo.
+
+  La potencia de transmisión y la antena de la radio afectan al alcance del relé:
+
+  - Una potencia de transmisión baja reduce el alcance.
+  - Una potencia de transmisión alta aumenta el alcance.
+  - Una antena de mástil fija proporciona mayor alcance que una antena de látigo.
+  - Los mástiles de antena de puesto de mando cubren aproximadamente 75 casillas.
+  - Los conjuntos de comunicaciones de a bordo cubren la nave a la que están conectados.
+
+  Si no hay disponible ningún relé ni anclaje fijo, las redes que dependen de un relé no se pueden usar en esa zona.
+
+  ## Uso de la red command
+
+  Los auriculares del jefe de escuadra incluyen las redes squad y JTAC, pero no la red command.
+
+  Un jefe de escuadra puede usar el microteléfono del AN/PRC de un jefe de equipo de fuego para comunicarse por command:
+
+  - Colócate cerca del jefe de equipo de fuego o de una radio desplegada.
+  - Haz Alt-click en quien lleve la radio o en la propia radio.
+  - Selecciona [bold]Take Handset[/bold].
+  - Transmite con [color=#a4885c]:r[/color].
+
+  El microteléfono tiene un alcance aproximado de dos casillas y se desconecta cuando el usuario sale de ese alcance.
+
+  Las transmisiones mediante el microteléfono emplean el indicativo de quien lo usa, no el del operador de radio.
+
+  ## Interferencias
+
+  Los inhibidores enemigos afectan al tráfico de los auriculares.
+
+  Mientras quien los lleva se encuentre dentro del campo de un inhibidor:
+
+  - Las transmisiones salientes de los auriculares quedan bloqueadas.
+  - El tráfico entrante puede degradarse.
+  - Cuanto más intensas sean las interferencias cercanas, mayor será la degradación.
+
+  El tráfico de frecuencia directa se ve afectado de la misma manera.
+
+  El AN/PRC puede seguir transmitiendo desde el interior del campo de un inhibidor cuando utiliza el modo FH. Los auriculares estándar no pueden hacerlo.
+
+  ## Sintonización de una frecuencia directa
+
+  Algunos auriculares pueden guardar una frecuencia directa adicional.
+
+  Usa [color=#a4885c]:x[/color] para transmitir por la frecuencia sintonizada.
+
+  El tráfico de frecuencia directa:
+
+  - No utiliza ninguna red con nombre.
+  - No necesita una clave de cifrado en los auriculares.
+  - No necesita una infraestructura fija de comunicaciones.
+  - Puede recibirlo cualquier radio compatible que esté sintonizada en la misma frecuencia.
+
+  Para sintonizar los auriculares:
+
+  - Haz Right-click en los auriculares.
+  - Selecciona [bold]Tune Frequency[/bold].
+  - Introduce una frecuencia entre [color=#a4885c]30.000[/color] y [color=#a4885c]87.999[/color] MHz.
+
+  Las frecuencias se pueden introducir con o sin punto decimal.
+
+  Por ejemplo:
+
+  - [color=#a4885c]30750[/color]
+  - [color=#a4885c]30.750[/color]
+
+  Ambos valores seleccionan la misma frecuencia.
+
+  Debes llevar los auriculares en la ranura de las orejas para transmitir o recibir.
+
+  ## Alcance de la frecuencia directa
+
+  Sin un AN/PRC que funcione como relé:
+
+  <Table Columns="2" MinForcedColumnWidth="120">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Distancia[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Señal[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">0-30 casillas</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Nítida.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">30-50 casillas</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Ligeramente degradada.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Más de 50 casillas</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Sin señal.</Box>
+    </ColorBox>
+  </Table>
+
+  Un AN/PRC encendido puede enlazar el tráfico de frecuencia directa cuando tiene cargada esa misma frecuencia en una de sus ranuras.
+
+  Ambos usuarios de los auriculares deben estar a menos de [bold]50 casillas[/bold] de la radio.
+
+  ## Borrar una frecuencia directa
+
+  Para eliminar la frecuencia sintonizada:
+
+  - Haz Right-click en los auriculares.
+  - Selecciona [bold]Clear Tuned Frequency[/bold].
+
+  Los auriculares que se entregan con una frecuencia preconfigurada también pueden ofrecer [bold]Reset to Default Frequency[/bold].
+
+  ## Resolución de problemas
+
+  <Table Columns="2" MinForcedColumnWidth="120">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Problema[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Comprobación[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]No frequency set[/bold] al usar [color=#a4885c]:x[/color]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Sintoniza una frecuencia directa antes de transmitir.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">El tráfico de una red con nombre llega distorsionado</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Comprueba la distancia al relé y si hay interferencias cerca.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">El tráfico del AN/PRC se recibe como estática</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Es posible que la radio transmisora o la receptora no tengan las mismas claves COMSEC.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">No se oye una red con nombre</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Examina los auriculares y confirma que contienen la clave de red correspondiente.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">No se oye el tráfico de frecuencia directa</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Confirma que ambos usuarios hayan introducido la misma frecuencia y estén dentro del alcance.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">No se recibe tráfico por una red de combate</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Confirma que haya disponible un relé encendido o un anclaje fijo de red.</Box>
+    </ColorBox>
+  </Table>
+
+  Los auriculares no utilizan tarjetas de claves COMSEC. Estas tarjetas se usan únicamente con el AN/PRC.
+</Document>

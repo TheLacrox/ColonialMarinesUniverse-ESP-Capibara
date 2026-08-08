@@ -1,0 +1,98 @@
+﻿<Document>
+  # Estructura de rangos
+
+  ## Autoridad de los rangos
+    La autoridad viene determinada por la estructura de mando. Los jefes de departamento tienen autoridad exclusiva sobre sus departamentos y solo pueden ser revocados por el comandante, el oficial ejecutivo o el CMP.
+
+  ## Autoridad departamental
+    Los jefes de departamento (LO, CMP, CMO y APOLLO) ostentan la máxima autoridad sobre quienes trabajan en su departamento; ninguna autoridad externa puede revocar las órdenes internas de un jefe de departamento a sus subordinados, salvo con la aprobación del comandante o del oficial ejecutivo.
+
+    Nadie puede revocar las órdenes de los miembros de un departamento sin la aprobación del comandante o del oficial ejecutivo.
+
+  El comandante y el oficial ejecutivo tienen la autoridad definitiva sobre todas las decisiones departamentales, incluido el cese de un jefe de departamento que infrinja el SOP o el UCMJ.
+
+  ## Autoridad especializada
+    Determinados puestos y funciones tienen una autoridad especializada en función de su ubicación y cometido; se detallan a continuación.
+      - Los técnicos de logística y el LO tienen autoridad sobre Requisiciones y pueden denegar el servicio o el uso del presupuesto por cualquier motivo que consideren oportuno.
+      - Los técnicos de armamento y el LO tienen autoridad sobre su taller; si alguien supone un peligro, pueden retirarle el objeto causante por cualquier motivo que consideren oportuno.
+      - Los DCC tienen la misma autoridad que un DP sobre el interior de las aeronaves y pueden expulsar a cualquiera si consideran que entorpece las operaciones, siempre que no infrinjan el SOP de las naves de desembarco.
+      - Los especialistas en armamento tienen autoridad exclusiva sobre la especialidad que prefieran. Ni el mando ni su SL pueden ordenarles que elijan una especialidad concreta.
+
+  ## Relevo del mando
+    Si en algún momento de una operación es necesario transferir el mando de la unidad, deben seguirse las siguientes normas del SOP.
+      - Si hay un oficial ejecutivo disponible, será el siguiente en la cadena de mando y asumirá el puesto de comandante
+      - Si no hay ningún oficial ejecutivo disponible, se nombrará comandante a un miembro del personal de mando
+      - Si no queda personal de mando, asumirá el mando el oficial de mayor rango.
+
+  ## Autoridad sobre el terreno & táctica
+    La autoridad táctica se refiere al derecho a dirigir el despliegue y el empleo de los miembros de una unidad de armas de combate y de la propia unidad.
+      - El jefe de escuadra y los oficiales de Estado Mayor correspondientes tienen autoridad táctica sobre su escuadra, y solo puede revocarla un miembro del personal de mando.
+      - El oficial al mando tiene plena autoridad sobre su unidad con independencia de que en la nave o instalación haya una persona de mayor rango, salvo que esta tenga rango O6 o superior, como un coronel o mariscal del Provost.
+      - Si es necesario asignar un jefe a un escuadrón, deberá ocupar el puesto el miembro de mayor rango de dicho escuadrón.
+
+  # Estructura de rangos vigente
+
+    A continuación se recoge la estructura de rangos que está actualmente en vigor; puede modificarse por orden del Alto Mando
+
+  ## El comandante
+    Los siguientes puestos dependen de este
+      - APOLLO
+      - Oficial ejecutivo
+
+  ## El oficial ejecutivo
+    Los siguientes puestos dependen de este
+      - Todos los jefes de departamento (LO, CMO, CMP)
+      - Todos los oficiales subalternos (IO, EO & Estado Mayor)
+
+  ## APOLLO
+    Los siguientes puestos dependen de este
+      - Sintéticos de apoyo
+      - Working Joe
+
+  ## El CMP
+    Los siguientes puestos dependen de este
+      - Policía Militar.
+
+  ## El CMO
+    Los siguientes puestos dependen de este
+      - Médicos
+      - Técnicos médicos
+
+  ## Los pilotos de naves de desembarco
+    Los siguientes puestos dependen de este
+      - Jefes de tripulación de naves de desembarco
+
+  ## El LO
+    Los siguientes puestos dependen de este
+      - Técnicos de logística
+
+  ## El oficial de ingeniería
+    Los siguientes puestos dependen de este
+      - Técnicos de taller
+      - Técnicos de mantenimiento
+
+  ## El oficial de inteligencia
+    Los siguientes puestos dependen de este
+    -  Técnico de inteligencia
+
+  ## El comandante de vehículo
+    Los siguientes puestos dependen de este
+      - Tripulación de vehículos
+
+  ## Los oficiales subalternos
+    Los siguientes puestos dependen de este
+      - Jefes de escuadra
+      - Tripulación mecanizada
+      - Tripulación de vuelo
+      - Asesores
+
+  ## Los jefes de escuadra
+    Los siguientes puestos dependen de este
+      - Jefe de equipo de fuego
+      - Operador de tráfico de radio
+      - Sanitario
+      - Técnico de combate
+      - Fusilero automático
+      - Fusilero
+      - Especialista en armamento
+</Document>

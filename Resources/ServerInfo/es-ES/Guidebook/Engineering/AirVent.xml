@@ -1,0 +1,64 @@
+﻿<Document>
+  # Conducto de ventilación
+  El conducto de ventilación es un conducto estándar que se encuentra en todas las salas que se quieren presurizar con una atmósfera respirable.
+  Su función principal consiste en transferir gases a la atmósfera a la que está expuesto hasta alcanzar una presión determinada.
+
+  <Box>
+    <GuideEntityEmbed Entity="GasVentPump"/>
+  </Box>
+
+  El conducto de ventilación necesita [textlink="energía" link="Power"] de un [textlink="cable LV" link="VoltageNetworks"] cercano para funcionar.
+
+  El conducto de ventilación puede soldarse con cualquier herramienta de soldadura para impedir que funcione.
+
+  ## Funcionamiento predeterminado
+  De forma predeterminada, el conducto de ventilación se limita a liberar gas en la atmósfera a la que está expuesto a una presión de [color=orange][protodata="GasVentPump" comp="GasVentPump" member="DefaultExternalBound"/] kPa[/color].
+
+  La velocidad del conducto de ventilación varía con la diferencia entre el doble de la presión de la [textlink="red de tuberías" link="PipeNetworks"] conectada y la presión de la atmósfera a la que está expuesto.
+  Expresado como una ecuación con palabras:
+  <Box>
+    [italic]Velocidad = 2 × presión de la red de tuberías - presión de la atmósfera expuesta[/italic]
+  </Box>
+
+  Por ejemplo, esto significa que un conducto de ventilación no podrá bombear hasta 101.3 kPa si el gas de su interior cae por debajo de la mitad de esa presión.
+
+  ## Bloqueo por presión insuficiente
+  Los conductos de ventilación entran en [color=red]bloqueo por presión insuficiente[/color] cuando la presión de la atmósfera a la que están expuestos es inferior a [color=orange][protodata="GasVentPump" comp="GasVentPump" member="UnderPressureLockoutThreshold"/] kPa[/color].
+  Esto evita desperdiciar gases útiles en el espacio si una sala no está sellada.
+  Las luces del conducto de ventilación se vuelven de color [color=yellow]amarillo[/color] para indicar este cambio.
+
+  Puedes [color=green]anular[/color] el bloqueo haciendo clic derecho en el conducto y seleccionando «Liberar bloqueo por presión insuficiente», o fijando el modo Llenado en una [textlink="alarma de aire" link="AirAlarms"] conectada.
+
+  Es importante tener en cuenta que los conductos en [color=red]bloqueo por presión insuficiente[/color] siguen dejando escapar gas muy lentamente.
+  La cantidad de gas que dejan escapar depende de la presión actual de la red de tuberías a la que están conectados.
+
+  ## Opciones de configuración
+  Al [textlink="vincularlos" link="Networking"] a una [textlink="alarma de aire" link="AirAlarms"], los conductos de ventilación obtienen más funciones.
+
+  Los conductos de ventilación tienen dos opciones de «dirección del conducto»: Liberación y Sifonado.
+  - Liberación se limita a liberar gases de la red de tuberías conectada en la atmósfera.
+  - Sifonado extrae el aire de la atmósfera y lo introduce en la red de tuberías conectada. Las luces del conducto se vuelven [color=red]rojas[/color] para indicar este cambio.
+
+  ## Límites de presión
+  Los conductos de ventilación tienen un sistema de límites de presión que controla la presión hasta la que presurizan una atmósfera o extraen de una red de tuberías conectada. Estos límites se tienen en cuenta tanto en el modo Liberación como en Sifonado.
+
+  El ajuste «PressureBound» tiene cuatro opciones:
+  - ExternalBound hace que el conducto respete los límites de presión definidos en la entrada Límite externo.
+  - InternalBound hace que el conducto respete los límites de presión definidos en la entrada Límite interno.
+  - Both hace que el conducto respete los límites de presión definidos en las entradas Límite externo y Límite interno.
+  - NoBound hace que el conducto no respete ningún límite.
+
+  Cuando el conducto está en modo Liberación:
+  - Si la presión del Límite externo se fija en 101.3 kPa, el conducto no presurizará la atmósfera por encima de 101.3 kPa.
+  - Si la presión del Límite interno se fija en 50 kPa, el conducto no extraerá gas de la tubería conectada si su presión es inferior a 50 kPa.
+
+  Cuando el conducto está en modo Sifonado:
+  - Si la presión del Límite externo se fija en 101.3 kPa, el conducto extraerá gases hasta que la atmósfera alcance 101.3 kPa.
+  - Si la presión del Límite interno se fija en 50 kPa, el conducto no introducirá gases en la red de tuberías si su presión supera los 50 kPa.
+
+  Si todavía te confunden los PressureBounds, puedes entenderlos de esta forma sencilla:
+  - Puedes considerar el Límite externo como el límite superior de la atmósfera expuesta. «No presurizaré la atmósfera expuesta por encima de esta presión ni extraeré de ella por debajo de esta presión».
+  - Puedes considerar el Límite interno como el límite inferior de la red de tuberías conectada. «No extraeré de mi fuente por debajo de esta presión ni introduciré aire en la red de tuberías por encima de esta presión».
+  - Los ajustes de «Límite de presión» solo definen qué límites se respetan y cuáles se ignoran.
+
+</Document>

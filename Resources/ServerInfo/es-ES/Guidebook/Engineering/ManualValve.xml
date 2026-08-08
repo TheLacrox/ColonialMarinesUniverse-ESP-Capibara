@@ -1,0 +1,15 @@
+﻿<Document>
+  # Válvula manual
+  La válvula manual no podría ser más sencilla.
+  Permite o bloquea el flujo de gases según esté abierta o cerrada.
+  <Box>
+    <GuideEntityEmbed Entity="GasValve"/>
+  </Box>
+
+  El gas puede fluir libremente entre ambos lados sin restricciones.
+
+  Las válvulas manuales se utilizan en diversas aplicaciones, por ejemplo:
+  - Permitir o bloquear el baipás de una red de reciclaje para expulsar directamente al espacio el gas residual
+  - Conectar o aislar calentadores/refrigeradores de la red Distro de la estación
+
+</Document>

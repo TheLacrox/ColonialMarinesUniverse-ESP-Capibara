@@ -1,0 +1,38 @@
+<Document>
+# Supervivencia
+Por lo general, conviene evitar las situaciones que puedan hacerte daño, ya que el personal médico solo puede curarte hasta cierto punto con sus limitadas existencias de sustancias químicas y material médico, sobre todo cuando hay agentes nucleares llamando a tu puerta.
+
+## Identificar tu situación
+Tu PDA contiene el nombre de la nave y la lista de los tripulantes que están activos en ella; además, te recuerda tu nombre si lo necesitas y el puesto que se te ha asignado para el turno, lo que te permite evaluar rápidamente la situación.
+
+## Tratamiento de emergencia
+En caso de emergencia grave, hay varias medidas que puedes tomar para mejorar tus probabilidades de supervivencia a largo plazo, entre ellas:
+- Si entras en estado crítico, usa el medipen de emergencia de tu caja de emergencia: evitará que quedes incapacitado. Los medipens de emergencia también pueden usarse para reanimar a quienes estén en estado crítico y tendidos en el suelo, además de darte más tiempo para tratar intoxicaciones y problemas similares.
+
+<Box>
+  <GuideEntityEmbed Entity="EmergencyMedipen"/>
+</Box>
+
+- Tu caja de emergencia contiene una máscara de respiración y una botella de oxígeno, que pueden ayudarte a sobrevivir más tiempo si te expones al vacío. Si eres una persona slime, recuerda que necesitas nitrógeno en lugar de oxígeno y que tu caja de emergencia incluirá una botella roja de nitrógeno en vez de la botella estándar azul y amarilla de oxígeno.
+
+<Box>
+  <GuideEntityEmbed Entity="ClothingMaskBreath"/>
+  <GuideEntityEmbed Entity="EmergencyOxygenTankFilled"/>
+</Box>
+
+- Si estás desangrándote o solo quieres prepararte, puedes cortar objetos de tela con un cuchillo u otro objeto afilado y usar la tela resultante para fabricar gasas en el menú de fabricación y contener la hemorragia; en una emergencia también puedes usar la tela sin más, aunque resulta menos eficaz.
+
+<Box>
+  <GuideEntityEmbed Entity="Gauze"/>
+  <GuideEntityEmbed Entity="MaterialCloth"/>
+</Box>
+
+## Otros consejos
+- A falta de un analizador de salud, basta con examinarte y usar el examen detallado para averiguar qué heridas tienes.
+- Si estás perdiendo la vista y tienes zanahorias a mano, también puedes usarlas para tratar el problema, pues contienen oculina, el fármaco utilizado contra la ceguera.
+- Las comidas bien preparadas (comida cocinada que no proceda de una máquina expendedora) suelen ser mucho mejores para tu salud general y pueden ayudar a curar antes las heridas menores.
+- El mero reposo en cama puede permitir que algunas heridas se cierren solas. Las camas médicas son las mejores para ello, pues ofrecen una superficie estéril y apoyo a todas las partes dañadas del cuerpo, pero cualquier cama sirve.
+- Dormir de verdad en una cama aumenta aún más la velocidad de curación.
+- Las comidas que contienen proteínas, como la carne, ayudarán muchísimo a que tu cuerpo se recupere después de una pérdida de sangre grave. Aun así, se recomienda acudir a un médico para recibir tratamiento.
+
+</Document>

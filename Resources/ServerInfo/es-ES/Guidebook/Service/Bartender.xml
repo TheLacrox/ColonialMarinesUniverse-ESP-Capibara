@@ -1,0 +1,27 @@
+<Document>
+# Camarero
+El trabajo del camarero es bastante sencillo: servir bebidas. La gente se acercará a pedirte bebidas y tu trabajo consiste simplemente en dárselas.
+
+[textlink="Haz clic aquí para ver la lista completa de bebidas." link="Drinks"]
+
+<Box>
+Los ingredientes para estas bebidas pueden encontrarse en distintos lugares:
+</Box>
+<Box>
+<GuideEntityEmbed Entity="BoozeDispenser"/>
+<GuideEntityEmbed Entity="SodaDispenser"/>
+<GuideEntityEmbed Entity="VendingMachineBooze"/>
+</Box>
+
+<Box>
+¡No olvides los recipientes en los que servirlas!
+</Box>
+<Box>
+<GuideEntityEmbed Entity="DrinkGlass" Caption="Vaso"/>
+<GuideEntityEmbed Entity="DrinkGlassCoupeShaped"/>
+<GuideEntityEmbed Entity="DrinkShaker"/>
+<GuideEntityEmbed Entity="DrinkJigger"/>
+</Box>
+
+Encontrarás una lista de todas las bebidas que pueden pedirte en la entrada «Tablas y referencias».
+</Document>

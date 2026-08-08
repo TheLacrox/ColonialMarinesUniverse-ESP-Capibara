@@ -1,0 +1,45 @@
+<Document>
+  # Recompensas de carga
+  Aunque [textlink="Carga" link="Cargo"] puede ganar [color=cyan]spesos[color] vendiendo casi cualquier cosa, obtendrá aún más si completa las [color=cyan]recompensas[/color] que aparecen en la consola de recompensas de suministros.
+
+  ## Iniciar recompensas
+
+  <Box>
+    <GuideEntityEmbed Entity="ComputerCargoBounty"/>
+    <GuideEntityEmbed Entity="PaperCargoBountyManifest"/>
+  </Box>
+
+  Para iniciar una recompensa, interactúa con la [color=cyan]consola de recompensas de suministros[/color] y abre la pantalla de recompensas. La consola conserva una lista de todas las recompensas actuales y te permite imprimir una etiqueta o saltarte una.
+
+  - Al imprimir la etiqueta obtendrás un [color=cyan]Manifiesto de Recompensa[/color] que enumera los bienes que deben conseguirse. Puedes imprimir infinitos Manifiestos de Recompensa, así que asegúrate de no repetir el mismo trabajo que otro Técnico de Carga.
+
+  - Si te saltas una recompensa, se sustituye por otra nueva, pues solo puede haber seis recompensas activas a la vez. Saltarte una activa un tiempo de espera de 15 minutos y la anula, lo que puede enfadar a otros Técnicos de Carga que trabajen en ella.
+
+  ## Completar recompensas
+
+  <Box>
+    <GuideEntityEmbed Entity="PaperCargoBountyManifest"/>
+    <GuideEntityEmbed Entity="CrateGenericSteel"/>
+    <GuideEntityEmbed Entity="AppraisalTool"/>
+  </Box>
+
+  Con el [color=cyan]Manifiesto de Recompensa[/color], ahora te corresponde reunir los bienes necesarios, aunque la mayoría de los departamentos te darán lo que necesitas si lo pides presentando el manifiesto.
+
+  Cuando hayas reunido los bienes, vuelve a la bahía de carga y mételos en una [color=cyan]Caja[/color] vacía. Una vez esté todo dentro, ciérrala y colócale el Manifiesto de Recompensa.
+
+  Para comprobar que has completado una recompensa, usa la [color=cyan]Herramienta de Tasación[/color] sobre la caja. Debería mostrar una confirmación de que se ha completado.
+
+  ## Vender recompensas
+
+  <Box>
+    <GuideEntityEmbed Entity="PaperCargoBountyManifest"/>
+    <GuideEntityEmbed Entity="CrateGenericSteel"/>
+    <GuideEntityEmbed Entity="CargoPalletSell"/>
+  </Box>
+
+  Cuando hayas comprobado que has completado la recompensa, sigue los mismos pasos que para vender cualquier otra cosa.
+
+  Solo tienes que transportarla hasta la [color=cyan]Estación Comercial[/color], venderla y habrás terminado.
+
+  Cuando regreses, debería haber una recompensa nueva en su lugar.
+</Document>

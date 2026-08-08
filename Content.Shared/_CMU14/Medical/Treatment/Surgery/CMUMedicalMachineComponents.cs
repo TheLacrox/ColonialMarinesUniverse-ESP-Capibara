@@ -4,6 +4,7 @@ using Content.Shared.DoAfter;
 using Content.Shared.FixedPoint;
 using Content.Shared.Stacks;
 using Robust.Shared.Containers;
+using Robust.Shared.Localization;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 
@@ -237,7 +238,9 @@ public sealed record CMUAutodocQueuedStep(
     int StepIndex,
     string StepLabel,
     string PartDisplayName,
-    float DurationSeconds);
+    float DurationSeconds,
+    LocId? SurgeryDisplayNameLocId = null,
+    LocId? StepLabelLocId = null);
 
 [RegisterComponent]
 public sealed partial class CMUAutodocContainedPatientComponent : Component

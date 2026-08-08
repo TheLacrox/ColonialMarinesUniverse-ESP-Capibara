@@ -1,0 +1,125 @@
+# Cañón de puerta M866
+cmu-blackfoot-door-gun-open-rear-door = Abre la puerta trasera antes de disparar el M866.
+cmu-blackfoot-door-gun-select-m866 = Selecciona primero el lanzagranadas automático M866.
+cmu-blackfoot-door-gun-z-below = M866 configurado para disparar un nivel Z por debajo.
+cmu-blackfoot-door-gun-z-current = M866 configurado para disparar en el nivel Z actual.
+
+# Vuelo
+cmu-blackfoot-flight-disconnect-tow-before-engines = Desacopla el equipo de remolque antes de arrancar los motores.
+cmu-blackfoot-flight-engines-idling = Motores del Blackfoot al ralentí.
+cmu-blackfoot-flight-engines-offline = Motores del Blackfoot apagados.
+cmu-blackfoot-flight-engines-invalid-state = No se pueden activar ni desactivar los motores durante la fase de vuelo actual.
+cmu-blackfoot-flight-takeoff-sequence-started = Secuencia de despegue del Blackfoot iniciada.
+cmu-blackfoot-flight-landing-sequence-started = Secuencia de aterrizaje del Blackfoot iniciada.
+cmu-blackfoot-flight-mode-engaged = Modo de vuelo del Blackfoot activado.
+cmu-blackfoot-flight-vtol-mode-engaged = Modo VTOL del Blackfoot activado.
+cmu-blackfoot-flight-mode-airborne-only = El modo de vuelo solo se puede cambiar cuando la aeronave está en el aire.
+cmu-blackfoot-flight-rear-door-controls-missing = Este Blackfoot no tiene controles para la puerta trasera.
+cmu-blackfoot-flight-rear-door-opened = Puerta trasera abierta.
+cmu-blackfoot-flight-rear-door-closed = Puerta trasera cerrada.
+cmu-blackfoot-flight-stowed = Blackfoot replegado.
+cmu-blackfoot-flight-deployed = Blackfoot desplegado.
+cmu-blackfoot-flight-stow-grounded-only = El Blackfoot debe estar en tierra para replegarlo o desplegarlo.
+cmu-blackfoot-flight-systems-restored-grounded = Sistemas del Blackfoot restablecidos. La aeronave está en tierra.
+cmu-blackfoot-flight-deploy-before-takeoff = Despliega el Blackfoot antes de despegar.
+cmu-blackfoot-flight-start-engines-before-takeoff = Arranca los motores del Blackfoot antes de despegar.
+cmu-blackfoot-flight-already-taking-off = El Blackfoot ya está despegando.
+cmu-blackfoot-flight-too-damaged-takeoff = El Blackfoot está demasiado dañado para despegar.
+cmu-blackfoot-flight-idling-before-takeoff = Los motores del Blackfoot deben estar al ralentí antes de despegar.
+cmu-blackfoot-flight-disconnect-tow-before-takeoff = Desacopla el equipo de remolque antes de despegar.
+cmu-blackfoot-flight-insufficient-fuel-takeoff = El Blackfoot no tiene combustible suficiente para despegar.
+cmu-blackfoot-flight-thrusters-required-takeoff = El Blackfoot necesita propulsores funcionales antes de despegar.
+cmu-blackfoot-flight-no-upper-z-takeoff = No hay ningún nivel Z superior disponible para despegar.
+cmu-blackfoot-flight-switch-vtol-before-landing = Cambia al modo VTOL antes de aterrizar.
+cmu-blackfoot-flight-vtol-airborne-before-landing = El Blackfoot debe estar en el aire y en modo VTOL antes de aterrizar.
+cmu-blackfoot-flight-no-lower-z-landing = No hay ningún nivel Z inferior disponible para aterrizar.
+cmu-blackfoot-flight-takeoff-failed-upper-z-move = Despegue fallido: el Blackfoot no pudo desplazarse al nivel Z superior.
+cmu-blackfoot-flight-airborne-vtol = Blackfoot en el aire y en modo VTOL.
+cmu-blackfoot-flight-landing-failed-lower-z-move = Aterrizaje fallido: el Blackfoot no pudo desplazarse al nivel Z inferior.
+cmu-blackfoot-flight-landed = Blackfoot aterrizado.
+cmu-blackfoot-flight-altitude-airborne-only = La altitud solo se puede cambiar cuando el Blackfoot está en el aire.
+cmu-blackfoot-flight-invalid-z-map = El Blackfoot no está en un mapa Z válido.
+cmu-blackfoot-flight-no-higher-z-climb = No hay ningún nivel Z superior al que pueda ascender el Blackfoot.
+cmu-blackfoot-flight-no-lower-z-descend = No hay ningún nivel Z inferior al que pueda descender el Blackfoot.
+cmu-blackfoot-flight-use-landing-sequence-ground = Usa la secuencia de aterrizaje para descender al nivel del suelo.
+cmu-blackfoot-flight-altitude-change-failed = El Blackfoot no pudo cambiar de altitud.
+cmu-blackfoot-flight-climbing-one-z = El Blackfoot asciende un nivel Z.
+cmu-blackfoot-flight-descending-one-z = El Blackfoot desciende un nivel Z.
+cmu-blackfoot-flight-takeoff-failed-thrusters = Despegue fallido: el Blackfoot necesita propulsores funcionales.
+cmu-blackfoot-flight-takeoff-failed-no-upper-z = Despegue fallido: no hay ningún nivel Z superior disponible.
+cmu-blackfoot-flight-takeoff-failed-reason = Despegue fallido: { $reason }
+cmu-blackfoot-flight-landing-failed-no-lower-z = Aterrizaje fallido: no hay ningún nivel Z inferior disponible.
+cmu-blackfoot-flight-landing-failed-reason = Aterrizaje fallido: { $reason }
+cmu-blackfoot-flight-no-upper-z-grid-takeoff = No hay ninguna cuadrícula de mapa disponible en el nivel Z superior para despegar.
+cmu-blackfoot-flight-no-lower-z-grid-landing = No hay ninguna cuadrícula de mapa disponible en el nivel Z inferior para aterrizar.
+cmu-blackfoot-flight-footprint-center-outside-map = El centro de la zona ocupada por el Blackfoot está fuera de las casillas válidas del mapa.
+cmu-blackfoot-flight-footprint-outside-map-offset = La zona ocupada por el Blackfoot está fuera de las casillas válidas del mapa en la posición relativa { $x },{ $y }.
+cmu-blackfoot-flight-footprint-blocked-offset = La zona ocupada por el Blackfoot está bloqueada en la posición relativa { $x },{ $y }.
+cmu-blackfoot-flight-airspace-blocked-offset = { $reason } Posición relativa: { $x },{ $y }.
+cmu-blackfoot-flight-footprint-no-area = La zona ocupada por el Blackfoot no tiene datos de área.
+cmu-blackfoot-flight-footprint-roofed = La zona ocupada por el Blackfoot está bloqueada por un techo.
+cmu-blackfoot-flight-footprint-outside-orbital-airspace = La zona ocupada por el Blackfoot está fuera del espacio autorizado para bombardeos orbitales al aire libre.
+cmu-blackfoot-flight-footprint-outside-cas-airspace = La zona ocupada por el Blackfoot está fuera del espacio aéreo autorizado para apoyo aéreo cercano.
+cmu-blackfoot-flight-footprint-outside-supply-drop-airspace = La zona ocupada por el Blackfoot está fuera del espacio aéreo autorizado para lanzamientos de suministros.
+cmu-blackfoot-flight-footprint-outside-mortar-fire-airspace = La zona ocupada por el Blackfoot está fuera del espacio aéreo autorizado para fuego de mortero.
+cmu-blackfoot-flight-footprint-outside-mortar-placement-airspace = La zona ocupada por el Blackfoot está fuera del espacio aéreo autorizado para emplazar morteros.
+cmu-blackfoot-flight-footprint-outside-lasing-airspace = La zona ocupada por el Blackfoot está fuera del espacio aéreo autorizado para designación láser.
+cmu-blackfoot-flight-footprint-outside-medevac-airspace = La zona ocupada por el Blackfoot está fuera del espacio aéreo autorizado para evacuaciones médicas.
+cmu-blackfoot-flight-footprint-outside-paradrop-airspace = La zona ocupada por el Blackfoot está fuera del espacio aéreo autorizado para lanzamientos paracaidistas.
+cmu-blackfoot-flight-pilot-only-control = Solo el piloto del Blackfoot puede usar este control.
+
+# Plataforma de aterrizaje
+cmu-blackfoot-landing-pad-pack-tools = Usa las herramientas para plegar la plataforma de aterrizaje del Blackfoot.
+cmu-blackfoot-landing-pad-not-linked = No hay enlazada ninguna plataforma de aterrizaje desplegada del Blackfoot.
+cmu-blackfoot-landing-pad-aircraft-not-parked = No hay ningún Blackfoot estacionado en la plataforma de aterrizaje.
+cmu-blackfoot-landing-pad-cycle-started = Ciclo de repostaje y recarga del Blackfoot iniciado.
+cmu-blackfoot-landing-pad-recharge-started-no-pump = No se encontró ninguna bomba de combustible enlazada; se inició el ciclo de recarga del Blackfoot.
+cmu-blackfoot-landing-pad-cycle-stopped = Ciclo de repostaje y recarga del Blackfoot detenido.
+cmu-blackfoot-landing-pad-valid-ground = La plataforma de aterrizaje debe desplegarse sobre terreno válido.
+cmu-blackfoot-landing-pad-clear-area = La plataforma de aterrizaje necesita una zona despejada de 3×3 para desplegarse.
+
+# Puerta trasera
+cmu-blackfoot-rear-door-control-not-linked = Este control no está enlazado a ninguna puerta trasera de Blackfoot.
+cmu-blackfoot-rear-door-opened = Puerta trasera abierta.
+cmu-blackfoot-rear-door-closed = Puerta trasera cerrada.
+cmu-blackfoot-look-outside = Mirar al exterior
+cmu-blackfoot-rear-door-open-before-boarding = Abre la puerta trasera antes de subir por detrás.
+cmu-blackfoot-rear-door-open-before-exiting = Abre la puerta trasera antes de salir por detrás.
+cmu-blackfoot-rear-door-too-fast = El Blackfoot se mueve demasiado rápido para saltar al exterior.
+
+# Equipo de apoyo
+cmu-blackfoot-support-deploy-on-pad = Coloca la caja del equipo de apoyo del Blackfoot sobre una plataforma de aterrizaje desplegada.
+cmu-blackfoot-support-deploy-on-pad-then-wrench = Coloca la caja del equipo de apoyo del Blackfoot sobre una plataforma de aterrizaje desplegada y fíjala al soporte con una llave.
+cmu-blackfoot-support-pad-fuel-pump-mounted = Esta plataforma de aterrizaje de Blackfoot ya tiene montada una bomba de combustible.
+cmu-blackfoot-support-pad-flight-computer-mounted = Esta plataforma de aterrizaje de Blackfoot ya tiene montado un ordenador de vuelo.
+cmu-blackfoot-support-valid-ground = El equipo de apoyo del Blackfoot debe desplegarse sobre terreno válido.
+cmu-blackfoot-support-floor-offset = El equipo de apoyo del Blackfoot necesita suelo en la posición relativa de despliegue { $x },{ $y }.
+cmu-blackfoot-support-unknown-blocker = algo
+cmu-blackfoot-support-blocked-offset = El equipo de apoyo del Blackfoot está bloqueado por { $blocker } en la posición relativa de despliegue { $x },{ $y }.
+cmu-blackfoot-support-stop-service-before-pack-pad = Detén el ciclo de servicio del Blackfoot antes de plegar la plataforma de aterrizaje.
+cmu-blackfoot-support-move-aircraft-before-pack-pad = Aparta el Blackfoot de la plataforma de aterrizaje antes de plegarla.
+cmu-blackfoot-support-pack-fuel-pump-before-pad = Guarda la bomba de combustible enlazada antes de plegar la plataforma de aterrizaje.
+cmu-blackfoot-support-stop-refueling-before-pack-pump = Detén el repostaje antes de guardar la bomba de combustible.
+cmu-blackfoot-support-stop-service-before-pack-computer = Detén el ciclo de servicio del Blackfoot antes de guardar el ordenador de vuelo.
+cmu-blackfoot-support-pack-wrench = Usa una llave para aflojar los pernos de anclaje.
+cmu-blackfoot-support-pack-screwdriver = Usa un destornillador para abrir el panel de servicio.
+cmu-blackfoot-support-pack-final-wrench = Usa una llave para plegar y guardar el equipo de apoyo.
+cmu-blackfoot-support-pack-tools = Usa una llave, después un destornillador y finalmente otra vez la llave para guardar este equipo de apoyo del Blackfoot.
+
+# Remolque
+cmu-blackfoot-tow-use-detach-verb = Usa el verbo «Desacoplar remolcador» para soltar el equipo de remolque.
+cmu-blackfoot-tow-verb-detach = Desacoplar remolcador
+cmu-blackfoot-tow-verb-attach = Acoplar remolcador
+cmu-blackfoot-tow-no-towable-nearby = No hay ningún Blackfoot remolcable lo bastante cerca.
+cmu-blackfoot-tow-tug-invalid-map = El remolcador no está en un mapa válido.
+cmu-blackfoot-tow-already-attached = Ese Blackfoot ya está acoplado a un equipo de remolque.
+cmu-blackfoot-tow-no-tug-under-cockpit = No hay ningún remolcador aeroespacial Blackfoot estacionado bajo la cabina.
+cmu-blackfoot-tow-cannot-move-target = Eso no se puede mover con el remolcador Blackfoot.
+cmu-blackfoot-tow-aircraft-invalid-map = El Blackfoot no está en un mapa válido.
+cmu-blackfoot-tow-airborne = El remolcador no puede acoplarse mientras el Blackfoot está en vuelo.
+cmu-blackfoot-tow-engines-running = Apaga los motores del Blackfoot antes de acoplar el equipo de remolque.
+cmu-blackfoot-tow-stowed = Este Blackfoot no se puede remolcar mientras está replegado.
+cmu-blackfoot-tow-crashed = Este Blackfoot no se puede remolcar mientras está siniestrado.
+cmu-blackfoot-tow-invalid-state = El Blackfoot no se puede remolcar en su estado actual.
+cmu-blackfoot-tow-attached = Remolcador acoplado. El piloto del Blackfoot puede rodar la aeronave.
+cmu-blackfoot-tow-detached = Remolcador desacoplado.

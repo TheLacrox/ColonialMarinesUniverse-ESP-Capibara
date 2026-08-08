@@ -23,8 +23,8 @@ public readonly record struct CMUSurgeryAttemptToken(CMUSurgerySessionId Session
 ///     a step is selected, re-selected, or advanced so delayed UI commands
 ///     cannot mutate a newer waiting state.
 /// </summary>
-[Serializable, NetSerializable]
-public readonly record struct CMUSurgeryArmedStateId(ulong Value);
+[DataRecord, Serializable, NetSerializable]
+public readonly partial record struct CMUSurgeryArmedStateId(ulong Value);
 
 [Serializable, NetSerializable]
 public enum CMUSurgerySessionPhase : byte

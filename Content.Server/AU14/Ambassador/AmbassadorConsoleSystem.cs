@@ -8,6 +8,7 @@ using Content.Server.Stack;
 using Content.Shared.AU14.Ambassador;
 using Content.Shared.AU14.ColonyEconomy;
 using Content.Shared._CMU14.Threats;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._RMC14.Intel.Tech;
 using Content.Shared._RMC14.Marines.Announce;
 using Content.Shared.Stacks;
@@ -163,7 +164,12 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
                     {
                         comp.Budget = 0;
                         comp.EmbargoActive = false;
-                        AnnounceStatus($"Trade embargo by {comp.FactionName} has ended due to insufficient funds.", comp.FactionName);
+                        AnnounceStatus(
+                            Ui(
+                                "cmu-ambassador-embargo-ended-insufficient-funds",
+                                $"Trade embargo by {comp.FactionName} has ended due to insufficient funds.",
+                                ("faction", comp.FactionName)),
+                            comp.FactionName);
                     }
                 }
             }
@@ -178,7 +184,12 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
                     {
                         comp.Budget = 0;
                         comp.TradePactActive = false;
-                        AnnounceStatus($"Trade pact by {comp.FactionName} has ended due to insufficient funds.", comp.FactionName);
+                        AnnounceStatus(
+                            Ui(
+                                "cmu-ambassador-trade-pact-ended-insufficient-funds",
+                                $"Trade pact by {comp.FactionName} has ended due to insufficient funds.",
+                                ("faction", comp.FactionName)),
+                            comp.FactionName);
                     }
                 }
             }
@@ -193,7 +204,12 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
                     {
                         comp.Budget = 0;
                         comp.CommsJamActive = false;
-                        AnnounceStatus($"Communications jamming by {comp.FactionName} has ended due to insufficient funds.", comp.FactionName);
+                        AnnounceStatus(
+                            Ui(
+                                "cmu-ambassador-comms-jam-ended-insufficient-funds",
+                                $"Communications jamming by {comp.FactionName} has ended due to insufficient funds.",
+                                ("faction", comp.FactionName)),
+                            comp.FactionName);
                     }
                 }
             }
@@ -234,7 +250,12 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
 
     private void AnnounceStatus(string message, string? factionName = null)
     {
-        var sender = factionName != null ? $"{factionName} Embassy" : "Ambassador Console";
+        var sender = factionName != null
+            ? Ui(
+                "cmu-ambassador-announcement-sender-embassy",
+                $"{factionName} Embassy",
+                ("faction", factionName))
+            : Ui("cmu-ambassador-announcement-sender-console", "Ambassador Console");
         _chat.DispatchGlobalAnnouncement(message, sender, playSound: true, announcementSound: MarineAnnouncementSound);
     }
 
@@ -277,7 +298,11 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
         var filtered = queued
             .Where(p => string.Equals(p.EntryMethod, "shuttle", StringComparison.OrdinalIgnoreCase))
             .ToList();
-        var names = filtered.Select(p => p.DisplayName ?? p.ID).ToList();
+        var names = filtered.Select(p => CMUPrototypeLocalization.GetPrototypeText(
+            "third-party",
+            p.ID,
+            "display-name",
+            p.DisplayName ?? p.ID)).ToList();
         for (int i = names.Count - 1; i > 0; i--)
         {
             int j = _random.Next(i + 1);
@@ -339,7 +364,11 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
         {
             if (_proto.TryIndex<ThirdPartyPrototype>(id, out var proto))
             {
-                var displayName = proto.DisplayName ?? proto.ID;
+                var displayName = CMUPrototypeLocalization.GetPrototypeText(
+                    "third-party",
+                    proto.ID,
+                    "display-name",
+                    proto.DisplayName ?? proto.ID);
                 thirdParties[id] = (displayName, cost);
             }
         }
@@ -383,7 +412,12 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
         if (!_proto.TryIndex(partyProto.PartySpawn, out var spawnProto)) return;
         if (!_thirdParty.SpawnThirdParty(partyProto, spawnProto, false))
         {
-            _popup.PopupEntity("Unable to dispatch support at this time.", uid, msg.Actor);
+            _popup.PopupEntity(
+                Ui(
+                    "cmu-ambassador-support-dispatch-unavailable",
+                    "Unable to dispatch support at this time."),
+                uid,
+                msg.Actor);
             return;
         }
 
@@ -399,11 +433,21 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
         {
             comp.EmbargoTimer = 0f;
             comp.TradePactActive = false;
-            AnnounceStatus($"A trade embargo has been activated by {comp.FactionName}. Submission point payouts are reduced by 20%.", comp.FactionName);
+            AnnounceStatus(
+                Ui(
+                    "cmu-ambassador-embargo-activated",
+                    $"A trade embargo has been activated by {comp.FactionName}. Submission point payouts are reduced by 20%.",
+                    ("faction", comp.FactionName)),
+                comp.FactionName);
         }
         else
         {
-            AnnounceStatus($"The trade embargo by {comp.FactionName} has been lifted.", comp.FactionName);
+            AnnounceStatus(
+                Ui(
+                    "cmu-ambassador-embargo-lifted",
+                    $"The trade embargo by {comp.FactionName} has been lifted.",
+                    ("faction", comp.FactionName)),
+                comp.FactionName);
         }
         UpdateAllFactionUi(comp);
     }
@@ -415,11 +459,21 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
         {
             comp.TradePactTimer = 0f;
             comp.EmbargoActive = false;
-            AnnounceStatus($"A trade pact has been activated by {comp.FactionName}. Submission point payouts are increased by 20%.", comp.FactionName);
+            AnnounceStatus(
+                Ui(
+                    "cmu-ambassador-trade-pact-activated",
+                    $"A trade pact has been activated by {comp.FactionName}. Submission point payouts are increased by 20%.",
+                    ("faction", comp.FactionName)),
+                comp.FactionName);
         }
         else
         {
-            AnnounceStatus($"The trade pact by {comp.FactionName} has ended.", comp.FactionName);
+            AnnounceStatus(
+                Ui(
+                    "cmu-ambassador-trade-pact-ended",
+                    $"The trade pact by {comp.FactionName} has ended.",
+                    ("faction", comp.FactionName)),
+                comp.FactionName);
         }
         UpdateAllFactionUi(comp);
     }
@@ -453,7 +507,10 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
         if (string.IsNullOrWhiteSpace(msg.Message)) return;
         if (comp.Budget < comp.BroadcastCost) return;
         comp.Budget -= comp.BroadcastCost;
-        var sender = $"{comp.FactionName} Embassy";
+        var sender = Ui(
+            "cmu-ambassador-announcement-sender-embassy",
+            $"{comp.FactionName} Embassy",
+            ("faction", comp.FactionName));
         _chat.DispatchGlobalAnnouncement(msg.Message, sender, playSound: true, announcementSound: MarineAnnouncementSound);
         _radio.SendRadioMessage(uid, msg.Message, "colonyAlert", uid);
         UpdateAllFactionUi(comp);
@@ -465,13 +522,28 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
         if (comp.CommsJamActive)
         {
             comp.CommsJamTimer = 0f;
-            AnnounceStatus($"Planeside communications have been jammed by {comp.FactionName}. All radio transmissions are blocked.", comp.FactionName);
+            AnnounceStatus(
+                Ui(
+                    "cmu-ambassador-comms-jam-activated",
+                    $"Planeside communications have been jammed by {comp.FactionName}. All radio transmissions are blocked.",
+                    ("faction", comp.FactionName)),
+                comp.FactionName);
         }
         else
         {
-            AnnounceStatus($"Communications jamming by {comp.FactionName} has been disabled. Radio transmissions are restored.", comp.FactionName);
+            AnnounceStatus(
+                Ui(
+                    "cmu-ambassador-comms-jam-disabled",
+                    $"Communications jamming by {comp.FactionName} has been disabled. Radio transmissions are restored.",
+                    ("faction", comp.FactionName)),
+                comp.FactionName);
         }
         UpdateAllFactionUi(comp);
+    }
+
+    private string Ui(string id, string fallback, params (string, object)[] args)
+    {
+        return CMULocalization.GetTargetStringOrFallback(Loc, id, fallback, args);
     }
 }
 

@@ -1,0 +1,47 @@
+﻿<Document>
+  #REGLAS DE INSURGENCIA
+    Estas reglas se aplican al modo de juego Insurgencia.
+
+  ##Reglas generales
+    Ningún jugador puede matar a otro durante los primeros 5 minutos de la ronda.
+
+    Los colonos y demás roles no afiliados deben tener un motivo válido dentro del personaje para participar en las hostilidades.
+
+    ##Reglas de los insurgentes
+
+    Eres un radical entregado a tu causa.
+    - Debes obedecer las órdenes directas del jefe de célula salvo que contradigan de forma directa la ideología insurgente o las reglas del servidor. Debes negarte a obedecer órdenes de matar civiles de manera indiscriminada.
+
+    Los insurgentes no pueden matar ni herir a civiles salvo que sean manifiestamente hostiles hacia la insurgencia.
+    - Los embajadores, enlaces, administradores y demás personal gubernamental o corporativo desarmado se consideran civiles a efectos de esta regla.
+    - Las fuerzas del orden coloniales, la seguridad corporativa y el personal gubernamental o corporativo armado no se consideran civiles a efectos de esta regla.
+
+    Los insurgentes NO pueden matar ni herir a miembros de las fuerzas del orden coloniales, de la seguridad corporativa o del personal gubernamental o corporativo armado hasta que hayan transcurrido 10 minutos de la ronda.
+
+    Los insurgentes NO pueden atacar bases terrestres de GOVFOR ni intentar abordar la nave de GOVFOR hasta que hayan transcurrido 30 minutos de la ronda. Las FOB no se consideran bases terrestres.
+
+    ##Reglas de GOVFOR
+
+    GOVFOR no puede entrar en la colonia salvo que:
+    - El mando colonial le haya dado la alerta de forma expresa.
+    - Hayan transcurrido 30 minutos desde el comienzo de la ronda.
+    - Si GOVFOR aparece en una nave, puede desplegarse en su LZ principal y asegurar una FOB antes de que transcurran treinta minutos, pero no debe abandonar la FOB.
+
+    GOVFOR no puede disparar contra civiles sin un motivo razonable, como:
+    - Desobedecer una advertencia clara de que se marchen mientras estén a la vista.
+    - Llevar o poseer armas de fuego o equipo ilegales.
+    - Haber sido denunciados por llevar explosivos.
+    - Estar empleando fuerza letal o haber sido vistos empleándola.
+
+    GOVFOR no puede asaltar una base insurgente salvo que:
+    - Esté siguiendo activamente hasta allí a un miembro insurgente.
+    - Haya recibido información creíble sobre su ubicación.
+
+    ##Reglas del mando colonial
+
+    Para solicitar ayuda de GOVFOR se requiere un motivo válido dentro del personaje, como:
+    - Insurgentes que porten abiertamente armas ilegales.
+    - El asesinato de miembros de las fuerzas del orden o de varios civiles.
+    - Amenazas de muerte explícitas IC.
+    - Un atentado contra la vida de un miembro del mando colonial.
+</Document>

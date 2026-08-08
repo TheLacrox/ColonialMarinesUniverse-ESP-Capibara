@@ -20,6 +20,7 @@ using Content.Shared.Verbs;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
+using Robust.Shared.Localization;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
@@ -37,6 +38,7 @@ public sealed partial class CMUAutodocSystem : EntitySystem
     [Dependency] private CMUSurgerySessionSystem _sessions = default!;
     [Dependency] private CMUMedicalBodyIndexSystem _medicalIndex = default!;
     [Dependency] private CMUMedicalPatientBaySystem _patientBay = default!;
+    [Dependency] private ILocalizationManager _localization = default!;
     [Dependency] private SharedBodyPartHealthSystem _partHealth = default!;
     [Dependency] private SharedRMCDamageableSystem _rmcDamageable = default!;
     [Dependency] private RMCSurgerySystem _rmcSurgery = default!;
@@ -190,7 +192,9 @@ public sealed partial class CMUAutodocSystem : EntitySystem
                     surgery.NextStepIndex,
                     "cmu-autodoc-automated-step-label",
                     part.DisplayName,
-                    GetProcedureDurationSeconds(surgery)));
+                    GetProcedureDurationSeconds(surgery),
+                    surgery.DisplayNameLocId,
+                    surgery.NextStepLabelLocId));
                 RefreshUi(ent.Owner, ent.Comp);
                 return;
             }
@@ -344,10 +348,11 @@ public sealed partial class CMUAutodocSystem : EntitySystem
 
     private string FormatQueuedStep(CMUAutodocQueuedStep queued)
     {
-        var step = ResolveAutodocStepLabel(queued.StepLabel);
+        var surgery = ResolveLocalizedText(queued.SurgeryDisplayNameLocId, queued.SurgeryDisplayName);
+        var step = ResolveAutodocStepLabel(queued.StepLabel, queued.StepLabelLocId);
         return Loc.GetString(
             "cmu-autodoc-current-step-detail",
-            ("surgery", queued.SurgeryDisplayName),
+            ("surgery", surgery),
             ("part", queued.PartDisplayName),
             ("step", step));
     }
@@ -357,9 +362,9 @@ public sealed partial class CMUAutodocSystem : EntitySystem
         return Loc.TryGetString(label, out var localized) ? localized : label;
     }
 
-    private string ResolveAutodocStepLabel(string label)
+    private string ResolveAutodocStepLabel(string label, LocId? labelLocId = null)
     {
-        var step = ResolveLabel(label);
+        var step = ResolveLocalizedText(labelLocId, label);
         if (step.Contains("scalpel", StringComparison.OrdinalIgnoreCase) ||
             step.Contains("hemostat", StringComparison.OrdinalIgnoreCase) ||
             step.Contains("retractor", StringComparison.OrdinalIgnoreCase) ||
@@ -369,6 +374,14 @@ public sealed partial class CMUAutodocSystem : EntitySystem
         }
 
         return step;
+    }
+
+    private string ResolveLocalizedText(LocId? localizationId, string fallback)
+    {
+        return CMUSurgeryLocalization.Resolve(
+            _localization,
+            localizationId,
+            ResolveLabel(fallback));
     }
 
     private bool TryApplyAutomatedProcedure(EntityUid patient, EntityUid operatorUid, CMUAutodocQueuedStep queued)
@@ -647,7 +660,9 @@ public sealed partial class CMUAutodocSystem : EntitySystem
             0,
             1,
             null,
-            AutodocWoundRepairCategory);
+            AutodocWoundRepairCategory,
+            "cmu-autodoc-repair-wounds-surgery",
+            "cmu-autodoc-automated-step-label");
     }
 
     private bool NeedsAutodocWoundRepair(EntityUid part, BodyPartType type, BodyPartSymmetry symmetry)
@@ -796,7 +811,9 @@ public sealed partial class CMUAutodocSystem : EntitySystem
                 queued.Category,
                 queued.StepIndex,
                 queued.StepLabel,
-                queued.DurationSeconds));
+                queued.DurationSeconds,
+                queued.SurgeryDisplayNameLocId,
+                queued.StepLabelLocId));
         }
 
         return entries;

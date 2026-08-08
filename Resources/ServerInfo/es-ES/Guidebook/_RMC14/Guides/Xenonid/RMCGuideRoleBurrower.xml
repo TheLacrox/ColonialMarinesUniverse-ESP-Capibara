@@ -1,0 +1,27 @@
+<Document>
+  #Excavador, nivel 2
+
+  <GuideEntityEmbed Entity="CMXenoBurrower"/>
+
+  ##Jugar como Excavador
+
+  Usa tus agujeros de resina para llenarlos con un tipo especial de ácido que aturde a cualquier huésped que entre en una casilla adyacente. Puedes combinarlo con Temblor y varias trampas para capturar huéspedes con facilidad tanto en el frente como en la retaguardia. Los Excavadores también pueden crear túneles que facilitan el transporte de huéspedes desde el frente hasta los nidos, aunque sus reservas máximas de plasma son escasas. Se recomienda actuar cerca de feromonas de recuperación.
+
+  También puedes usar Excavar para emerger bajo cualquier huésped situado sobre una línea de barricadas y aturdirlo. Así podrás derretir su arma antes de emplear Temblor y volver a excavar para escapar.
+
+  ##Cómo capturar
+
+  Para capturar en la retaguardia, intenta colocar agujeros de resina bajo restos que los oculten y llénalos de ácido. Cuando las trampas estén listas, quédate detrás de una pared cercana y atrae a un huésped lo bastante cerca como para usar Temblor y arrastrarlo hasta la trampa mientras lo placas.
+
+  ##Habilidades:
+  - [bold]Plantar maleza[/bold]: Coloca un nodo de resina que extiende maleza por una zona amplia.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoPlantWeeds"/>
+  - [bold]Plantar agujero de resina[/bold]: Coloca sobre la maleza un agujero que después puede llenarse con el ácido especial del Excavador haciendo clic en él con una mano vacía. También puede ocultarse bajo restos como tablones de madera o láminas de metal.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoPlantResinHole"/>
+  - [bold]Temblor[/bold]: Hace caer al suelo a los objetivos situados en una zona amplia a tu alrededor. Funciona a través de las paredes y resulta útil para escapar o capturar huéspedes.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoTremor"/>
+  - [bold]Excavar túnel[/bold]: Excava un túnel que sirve como punto de desplazamiento rápido. También puedes cambiar el nombre de los túneles.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoDigTunnel"/>
+  - [bold]Excavar[/bold]: Entiérrate y espera un breve periodo. Después podrás empezar a emerger haciendo clic en cualquier casilla a tu alrededor. Si lo haces debajo de un huésped, lo aturdirás durante mucho tiempo, lo que te permitirá capturarlo si está solo y tras las barricadas. Esta habilidad atraviesa paredes y el tiempo que tardas en emerger depende de la distancia a la que hagas clic.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoBurrow"/>
+</Document>

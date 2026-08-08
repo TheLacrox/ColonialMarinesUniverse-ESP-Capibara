@@ -1,6 +1,7 @@
 using System.Linq;
 using Content.Shared._CMU14.Medical.Treatment.Surgery;
 using Content.Shared.Body.Part;
+using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 
 namespace Content.IntegrationTests._CMU14.Medical.Treatment.Surgery;
@@ -36,14 +37,18 @@ public sealed class CMUSurgeryRegistryTest
         - type: cmuSurgeryStepMetadata
           id: CMUTestSurgeryRegistryOrderMetadata
           surgery: CMUTestSurgeryRegistryOrder
+          displayName: Registry Order Procedure
+          displayNameLocId: cmu-medical-surgery-procedure-set-fracture
           validParts: [Arm]
           category: general
           steps:
           - stepId: CMUTestSurgeryRegistryStepSecond
             label: Second metadata label
+            labelLocId: cmu-medical-surgery-step-close-incision-label
             toolCategory: cautery
           - stepId: CMUTestSurgeryRegistryStepFirst
             label: First metadata label
+            labelLocId: cmu-medical-surgery-step-amputate-limb-label
             toolCategory: scalpel
 
         - type: entity
@@ -60,6 +65,16 @@ public sealed class CMUSurgeryRegistryTest
           surgery: CMUTestSurgeryRegistryOrderAfter
           validParts: [Arm]
           category: general
+
+        - type: entity
+          id: CMUTestSurgeryLocalizedArmedState
+          components:
+          - type: CMUSurgeryArmedStep
+            surgeryId: CMUTestSurgeryRegistryOrder
+            leafSurgeryId: CMUTestSurgeryRegistryOrder
+            stepIndex: 0
+            stepLabel: First metadata label
+            stepLabelLocId: cmu-medical-surgery-step-amputate-limb-label
         """;
 
     [Test]
@@ -74,14 +89,44 @@ public sealed class CMUSurgeryRegistryTest
 
             Assert.Multiple(() =>
             {
+                Assert.That(flow.TryGetDefinition(TestSurgery, out var surgery), Is.True);
+                Assert.That(surgery.DisplayName, Is.EqualTo("Registry Order Procedure"));
+                Assert.That(surgery.DisplayNameLocId?.Id,
+                    Is.EqualTo("cmu-medical-surgery-procedure-set-fracture"));
+
                 Assert.That(flow.TryResolveStepAt(TestSurgery, 0, out var first), Is.True);
                 Assert.That(first.StepLabel, Is.EqualTo("First metadata label"));
+                Assert.That(first.StepLabelLocId?.Id,
+                    Is.EqualTo("cmu-medical-surgery-step-amputate-limb-label"));
                 Assert.That(first.ToolCategory, Is.EqualTo("scalpel"));
 
                 Assert.That(flow.TryResolveStepAt(TestSurgery, 1, out var second), Is.True);
                 Assert.That(second.StepLabel, Is.EqualTo("Second metadata label"));
+                Assert.That(second.StepLabelLocId?.Id,
+                    Is.EqualTo("cmu-medical-surgery-step-close-incision-label"));
                 Assert.That(second.ToolCategory, Is.EqualTo("cautery"));
             });
+
+            var patient = server.EntMan.SpawnEntity("CMUTestSurgeryLocalizedArmedState", MapCoordinates.Nullspace);
+            try
+            {
+                Assert.That(server.EntMan.TryGetComponent<CMUSurgeryArmedStepComponent>(patient, out var armed),
+                    Is.True);
+
+                var state = flow.BuildBuiState(patient, "Test Patient", [], armed);
+                Assert.Multiple(() =>
+                {
+                    Assert.That(state.CurrentArmedStep, Is.Not.Null);
+                    Assert.That(state.CurrentArmedStep!.SurgeryDisplayNameLocId?.Id,
+                        Is.EqualTo("cmu-medical-surgery-procedure-set-fracture"));
+                    Assert.That(state.CurrentArmedStep.StepLabelLocId?.Id,
+                        Is.EqualTo("cmu-medical-surgery-step-amputate-limb-label"));
+                });
+            }
+            finally
+            {
+                server.EntMan.DeleteEntity(patient);
+            }
         });
 
         await pair.CleanReturnAsync();

@@ -1,0 +1,48 @@
+﻿<Document>
+  # Cargos preventivos
+  - Se utilizan para confinar a personas por tiempo indefinido.
+  <Table Columns="2">
+    <ColorBox>
+      <Box>
+        Cargo
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Descripción
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Enajenación mental
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Declarada únicamente por el personal médico o por un sintético, cuando el infractor actúa de un modo que indica que no está en pleno uso de sus facultades mentales. Una vez que se determine que el sujeto está en pleno uso de sus facultades, podrá quedar exento de este cargo en particular.
+        \nEn ausencia de un CMO o de un sintético, el [color=#008000][bold]Comandante[/bold][/color] o el [color=#8B0000][bold]Jefe de la Policía Militar/Fuerzas del Orden[/bold][/color] puede designar a un oficial del departamento médico para que realice la evaluación en su lugar.
+        \nUna excepción a esto son los casos de suicidio confirmado o intento de suicidio, en los que el sujeto puede presentar un recurso, o dirigirse a cualquier miembro del personal médico.
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Prisionero de guerra
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Ser miembro hostil de una facción legítima y reconocida.
+        \nLos prisioneros de guerra no pueden ser ejecutados. Consulta [textlink="Personal de terceros no modificable" link="RMCMarineSOPNONModThirdparty"] para más información y excepciones.
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Detención discrecional
+      </Box>
+    </ColorBox>
+
+  </Table>
+</Document>

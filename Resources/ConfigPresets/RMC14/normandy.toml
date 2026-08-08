@@ -2,11 +2,11 @@
 server_name = "normandy"
 
 [game]
-desc = "Official RMC special PvE gamemode, run by a gamemaster."
-hostname = "[EN][HRP] PvE Rouny's Marine Corps Normandy [US East]"
+desc = "Modo de juego PvE especial oficial de RMC, dirigido por un director de juego."
+hostname = "[ES][RP ALTO] PvE Cuerpo de Marines de Rouny: Normandy [Este de EE. UU.]"
 
 [hub]
-tags = "lang:en,region:am_n_e,rp:high"
+tags = "lang:es,region:am_n_e,rp:high"
 
 [loki]
 name = "normandy"

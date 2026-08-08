@@ -1,0 +1,195 @@
+﻿<Document>
+  # Delitos de pena variable
+  - Estos delitos pueden variar en gravedad y tienen penas progresivas.
+  <Table Columns="4">
+    <ColorBox>
+      <Box>
+        Cargo
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Descripción
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Leve
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Grave
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Daños a la propiedad
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Dañar la propiedad de la facción o realizar modificaciones no autorizadas en ella, tal y como se establece en el Procedimiento Operativo Estándar.\nLos materiales para las reparaciones deben tomarse de los almacenes de mantenimiento.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Romper una ventana, dañar una pared, etc.\n[bold]Devolver la propiedad a su estado exacto anterior, o cumplir 7,5 minutos si no es posible.[/bold]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Infringir la ley de forma grave incluye romper/desmontar paredes o varias ventanas.\n[bold]10 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Insubordinación
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        No seguir una orden legítima de una persona de mayor rango o posición mientras se está bajo su mando. \n[italic]Esto no se aplica a las órdenes dadas a una persona con intención de arrestarla, lo cual se consideraría [bold]Resistencia al arresto[/bold] en su lugar.[/italic]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        No seguir una orden que no está dirigida personalmente.\n[bold]7,5 minutos.[/bold]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        No seguir una orden dirigida personalmente a la persona en cuestión, ya sea usando su nombre o comunicando claramente que va dirigida a ella.\n[bold]15 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Interferencia
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Interferir en un arresto legal que se esté llevando a cabo.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Interferir sin mala intención, como bloquear el paso o ayudar a alguien a levantarse.\n[bold]7,5 minutos.[/bold]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Interferir con mala intención o de forma clara para obstaculizar el arresto que se está llevando a cabo.\n[bold]15 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Uso ilegal de dispositivos de escucha
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        El uso no autorizado de dispositivos de escucha en violación del Procedimiento Operativo Estándar.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Colocar ilegalmente un dispositivo de escucha en una zona pública, como el gimnasio.\n[bold]7,5 minutos.[/bold]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Colocar ilegalmente un dispositivo de escucha en una zona segura, o en una zona con persianas de privacidad.\n[italic]Si el dispositivo de escucha también está vinculado a un gobierno extranjero o una organización terrorista, esto se considera además Subterfugio[/italic].\n[bold]15 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Resistencia al arresto
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Resistirse o negarse a cumplir un arresto, detención, registro o NJP legales.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Negarse a cumplir.\n[bold]5 minutos.[/bold]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Resistirse huyendo o empleando la fuerza.\n[bold]10 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Complicidad
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Ayudar a otras personas a cometer un delito, directa o indirectamente, o animarlas a cometerlo. Toda persona cómplice deberá ser informada de los delitos de la persona a la que ayudó.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]La misma pena que el delito cometido.[/bold]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]La misma pena que el delito cometido.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Alteración del orden durante el \nconfinamiento
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Causar alteraciones de forma significativa mientras se está en el calabozo y bajo arresto. Esto puede añadirse a cualquier cargo.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Incumplir un delito leve estando bajo arresto o en prisión.\n[bold]7,5 minutos.[/bold]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Incumplir un delito grave estando bajo arresto o en prisión.\n[bold]15 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Alteración pública intencionada
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Hacer una declaración falsa que acuse a alguien de haber cometido una infracción. \nHacer cualquier cosa con la intención de que se sospeche que alguien ha cometido una infracción que en realidad no cometió. \nPara desviar las sospechas de sí mismo, denunciar que se ha cometido una infracción cuando en realidad no se ha cometido. \nLas declaraciones falsas relacionadas con investigaciones se consideran [bold]Falso testimonio[/bold].
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        En relación con un delito leve.\n[bold]7,5 minutos.[/bold]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        En relación con un delito grave, o cualquier cosa por encima de este.\n[bold]15 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+  </Table>
+</Document>

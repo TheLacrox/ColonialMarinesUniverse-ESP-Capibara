@@ -1,10 +1,12 @@
 using System.Numerics;
 using Content.Client.Actions.UI;
 using Content.Client.Cooldown;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Alert;
 using Robust.Client.GameObjects;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
+using Robust.Shared.Localization;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 
@@ -13,6 +15,7 @@ namespace Content.Client.UserInterface.Systems.Alerts.Controls
     public sealed partial class AlertControl : BaseButton
     {
         [Dependency] private IEntityManager _entityManager = default!;
+        [Dependency] private ILocalizationManager _localization = default!;
 
         private readonly SpriteSystem _sprite;
 
@@ -94,8 +97,15 @@ namespace Content.Client.UserInterface.Systems.Alerts.Controls
 
         private Control SupplyTooltip(Control? sender)
         {
-            var msg = FormattedMessage.FromMarkupOrThrow(Loc.GetString(Alert.Name));
-            var desc = FormattedMessage.FromMarkupOrThrow(Loc.GetString(Alert.Description));
+            var nameFallback = _localization.GetString(Alert.Name);
+            var descriptionFallback = _localization.GetString(Alert.Description);
+            var name = CMUPrototypeLocalization.GetAlertName(_localization, Alert.ID, nameFallback);
+            var description = CMUPrototypeLocalization.GetAlertDescription(
+                _localization,
+                Alert.ID,
+                descriptionFallback);
+            var msg = FormattedMessage.FromMarkupOrThrow(name);
+            var desc = FormattedMessage.FromMarkupOrThrow(description);
             return new ActionAlertTooltip(msg, desc) { Cooldown = Cooldown, DynamicMessage = DynamicMessage };
         }
 

@@ -1,9 +1,11 @@
 using System.Linq;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._RMC14.Xenonids;
 using Content.Shared.Dataset;
 using Content.Shared.Examine;
 using Content.Shared.Humanoid;
 using Robust.Shared.Enums;
+using Robust.Shared.Localization;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared._RMC14.Marines.Roles.Ranks;
@@ -12,6 +14,7 @@ public abstract partial class SharedRankSystem : EntitySystem
 {
     [Dependency] private IPrototypeManager _prototypes = default!;
     [Dependency] private IEntityManager _entMan = default!;
+    [Dependency] private ILocalizationManager _localization = default!;
 
     public override void Initialize()
     {
@@ -90,7 +93,10 @@ public abstract partial class SharedRankSystem : EntitySystem
 
         if (isShort)
         {
-            var localizedPrefix = Loc.TryGetString($"rank-{rank.ID}.prefix", out var lp) ? lp : rank.Prefix;
+            var localizedPrefix = CMUPrototypeLocalization.GetRankPrefix(
+                _localization,
+                rank.ID,
+                rank.Prefix);
 
             if (rank.FemalePrefix == null || rank.MalePrefix == null)
                 return localizedPrefix;
@@ -100,18 +106,29 @@ public abstract partial class SharedRankSystem : EntitySystem
 
             var genderPrefix = humanoidAppearance.Gender switch
             {
-                Gender.Female => Loc.TryGetString($"rank-{rank.ID}.prefix-female", out var fp) ? fp : rank.FemalePrefix,
-                Gender.Male   => Loc.TryGetString($"rank-{rank.ID}.prefix-male",   out var mp) ? mp : rank.MalePrefix,
-                _             => localizedPrefix,
+                Gender.Female => CMUPrototypeLocalization.GetRankPrefix(
+                    _localization,
+                    rank.ID,
+                    rank.FemalePrefix,
+                    Gender.Female),
+                Gender.Male => CMUPrototypeLocalization.GetRankPrefix(
+                    _localization,
+                    rank.ID,
+                    rank.MalePrefix,
+                    Gender.Male),
+                _ => localizedPrefix,
             };
 
             return genderPrefix;
         }
 
-        if (hasPaygrade && rank.Paygrade != null)
-            return $"({Loc.GetString(rank.Paygrade)}) {Loc.GetString(rank.Name)}";
+        var fallbackName = _localization.GetString(rank.Name);
+        var localizedName = CMUPrototypeLocalization.GetRankName(_localization, rank.ID, fallbackName);
 
-        return Loc.TryGetString($"rank-{rank.ID}", out var localizedName) ? localizedName : rank.Name;
+        if (hasPaygrade && rank.Paygrade != null)
+            return $"({_localization.GetString(rank.Paygrade)}) {localizedName}";
+
+        return localizedName;
     }
 
     /// <summary>

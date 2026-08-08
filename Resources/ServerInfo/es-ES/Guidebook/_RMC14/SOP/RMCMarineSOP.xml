@@ -1,0 +1,20 @@
+﻿<Document>
+  # Procedimiento operativo estándar
+
+  Este es el conjunto de normas y políticas de GOVFOR/OPFOR y de todas las facciones relevantes.
+  \nEl incumplimiento del procedimiento operativo estándar puede derivar en cargos de [bold]Incumplimiento de procedimiento[/bold].
+
+ ## Categorías
+  - [textlink="Normativa general" link="RMCMarineSOPGeneral"]
+  - [textlink="Equipamiento" link="RMCMarineSOPEquipment"]
+  - [textlink="SOP no modificable" link="RMCMarineSOPNONMod"]
+
+  ## SOP no modificable
+
+  El SOP redactado en estas secciones solo puede modificarse con permiso del Alto Mando.
+
+  - [textlink="SOP no modificable de mando" link="RMCMarineSOPNONModCommand"]
+  - [textlink="Restricciones de despliegue no modificables" link="RMCMarineSOPNONModDeployment"]
+  - [textlink="Personal de terceros no modificable" link="RMCMarineSOPNONModThirdparty"]
+
+</Document>

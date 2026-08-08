@@ -1,0 +1,105 @@
+﻿<Document>
+  # Motor Tesla
+  El motor Tesla es un potente generador que utiliza una esfera de rayos contenida para producir energía para la estación.
+  <Box>
+    <GuideEntityEmbed Entity="TeslaGenerator"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="TeslaEnergyBall"/>
+  </Box>
+
+  Genera energía aprovechando mediante bobinas Tesla los rayos producidos por la esfera.
+
+  ## Campo de contención
+  El motor Tesla necesita un campo de contención para evitar que la esfera de rayos escape y destruya la estación.
+
+  Se recomienda utilizar un campo de contención del tamaño mínimo para la esfera de rayos.
+  Los campos de contención más grandes permiten que la esfera se acerque más a equipamiento sensible y pueda alcanzarlo, ignorando las varillas de puesta a tierra y las bobinas Tesla instaladas.
+
+  <Box>
+    <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="ContainmentField" Caption="" Rotation="90" Margin="0"/>
+    <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption="" Margin="0"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ContainmentField" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="TeslaGenerator" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="ContainmentField" Caption="" Margin="0"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="ContainmentField" Caption="" Rotation="90" Margin="0"/>
+    <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption="" Margin="0"/>
+  </Box>
+
+  ## Rayos
+  Cuando el motor Tesla está activo, la esfera de rayos alcanza periódicamente los objetos que la rodean.
+
+  La esfera Tesla prefiere alcanzar algunos objetos antes que otros, como las bobinas Tesla y las varillas de puesta a tierra.
+
+  Si la esfera Tesla no encuentra primero ninguna bobina Tesla o varilla de puesta a tierra, alcanzará casi cualquier objeto de la estación que pueda recibir energía, como subestaciones, APC y maquinaria en general.
+
+  Algunos objetos no reciben sus rayos, como las baterías, las luces, las PDA y otros artículos de mano.
+
+  También alcanza a seres vivos y tripulantes y les provoca una descarga. Asegúrate de llevar guantes aislantes antes de acercarte.
+
+  ## Bobinas Tesla
+  Los rayos se pueden aprovechar mediante bobinas Tesla, que los convierten en energía para la estación.
+
+  <Box>
+    <GuideEntityEmbed Entity="TeslaCoil" Caption=""/>
+    <GuideEntityEmbed Entity="TeslaCoil"/>
+    <GuideEntityEmbed Entity="TeslaCoil" Caption=""/>
+  </Box>
+
+  Las bobinas Tesla deben colocarse alrededor de la esfera de rayos para capturar su energía y evitar que alcancen equipamiento sensible más lejano.
+
+  Las bobinas Tesla sufren daños cada vez que reciben un rayo y terminarán rompiéndose si no se reparan.
+  Vigila el estado de las bobinas Tesla y repáralas cuando sea necesario.
+
+  Cuando un rayo alcanza las bobinas Tesla, carga una batería interna que se descarga rápidamente a la red.
+  La batería descarga esta energía aunque no haya ningún consumidor, por lo que conviene tener cerca un SMES para almacenarla y suministrarla de manera uniforme.
+
+  ## Varillas de puesta a tierra
+  Las varillas de puesta a tierra protegen el equipamiento sensible de los rayos y ayudan a evitar que se libere una esfera Tesla (tesloose).
+
+  <Box>
+    <Box>
+      <GuideEntityEmbed Entity="TeslaGroundingRod" Caption=""/>
+    </Box>
+    <Box>
+      <GuideEntityEmbed Entity="TeslaGroundingRod"/>
+    </Box>
+    <Box>
+      <GuideEntityEmbed Entity="TeslaGroundingRod" Caption=""/>
+    </Box>
+  </Box>
+
+  Las varillas de puesta a tierra no sufren daños al recibir rayos.
+  Por ello, conviene formar con ellas una red de seguridad para el caso de que las bobinas Tesla sufran daños o queden destruidas.
+
+  Los ingenieros deben usar varillas de puesta a tierra para proteger de los rayos el equipamiento sensible, como los emisores que alimentan los generadores del campo de contención.
+
+  ## Tesla liberada (Tesloose)
+  Si la esfera de rayos escapa del campo de contención, se considera una esfera Tesla liberada, o tesloose.
+
+  Una esfera Tesla liberada se desplazará al azar por la estación, atraída por objetos que puedan recibir energía, como APC, subestaciones y maquinaria.
+  También alcanzará encantada a tripulantes y otros seres vivos y les provocará una descarga.
+
+  Llevar guantes aislantes evitará que la esfera Tesla te electrocute, pero no impedirá que te alcance.
+
+  <Box>
+    <GuideEntityEmbed Entity="ClothingHandsGlovesColorYellow"/>
+  </Box>
+
+  La esfera Tesla se puede destruir disparándole antipartículas con un desacelerador de partículas portátil; sin embargo, es mucho más potente que la singularidad y harán falta muchísimas antipartículas para destruirla.
+  Se recomienda un grupo de personas con desaceleradores para destruir una tesloose.
+
+  Los desaceleradores de partículas portátiles pueden investigarse y fabricarse en el departamento de Investigación o comprarse en Carga.
+
+  <Box>
+    <GuideEntityEmbed Entity="WeaponParticleDecelerator"/>
+  </Box>
+
+
+</Document>

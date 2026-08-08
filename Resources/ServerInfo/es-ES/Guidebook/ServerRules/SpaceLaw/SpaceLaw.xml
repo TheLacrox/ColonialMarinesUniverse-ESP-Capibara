@@ -1,0 +1,62 @@
+﻿<Document>
+  # Ley espacial
+  En Space Station 14, las estaciones se rigen por una versión abreviada de la ley espacial. Se espera que toda la tripulación, el pasaje y quienes visiten la estación cumplan estas leyes.
+
+  Los invasores extranjeros, como los agentes nucleares, ninjas y piratas, no están protegidos por la ley espacial. Los traidores no son invasores extranjeros, por lo que normalmente sí están protegidos por la ley espacial.
+
+  La ley espacial no forma parte de las reglas del servidor, pero algunas reglas hacen referencia a ella y exigen que determinadas personas la cumplan, en mayor o menor medida.
+
+  ## Trato de las personas presas
+  Las personas presas conservan ciertos derechos que las fuerzas del orden deben respetar:
+  - Deben recibir atención médica adecuada.
+  - Deben tener acceso a equipos básicos de comunicación (radios), siempre que no abusen de ellos.
+  - Deben recibir ropa, comida, agua, refugio y protección. Si el calabozo deja de ser seguro, deberán ser recluidas en otro lugar.
+  - Durante un interrogatorio, deben tener acceso a asesoramiento jurídico si lo solicitan y hay alguien disponible.
+  - Una vez concluido el confinamiento, deben recibir la PDA que les corresponda durante el turno, salvo que haya pruebas sólidas de manipulación. En caso de manipulación, la PDA deberá quedar bajo custodia y sustituirse por una nueva.
+  - Deben gozar de libertad de movimiento y, tras el encarcelamiento, no deberían permanecer esposadas ni sujetas con otros dispositivos salvo que exista un riesgo indebido para su vida o integridad física. Del mismo modo, las personas sometidas a confinamiento permanente deberían permanecer en la zona común del calabozo y no en una celda de aislamiento, salvo que supongan un riesgo para la vida o la integridad física de alguien.
+
+  ## Registro e incautación
+  Un registro personal consiste en incautar los objetos que una persona lleve en la mochila, las manos, el abrigo, el cinturón y los bolsillos. Si durante el registro se encuentra contrabando, el agente puede prolongarlo y convertirlo en una detención o limitarse a confiscar los objetos restringidos. Seguridad puede incautar objetos no restringidos si se utilizaron para facilitar un delito. Una vez finalizado el registro, deberán devolverse a la persona todos los objetos legales. Cualquier tripulante puede negarse legalmente a un registro sin causa probable ni orden judicial mientras el nivel de alerta sea verde. Si el nivel de alerta es azul o superior, todos los registros personales son legales.
+
+  Un registro departamental consiste en inspeccionar una zona o departamento completos en busca de contrabando. Se recomienda que los agentes sean muy minuciosos y revisen todas las taquillas, cajas y puertas. Solo puede realizarse con permiso o, preferiblemente, con una orden firmada por la jefatura del departamento o por el miembro de Mando de mayor rango, que en la mayoría de los casos será el capitán.
+
+  ## Implantación
+  Cualquier persona presa bajo custodia puede someterse a la colocación o extracción de implantes, siempre que sea razonable. Añadir o extraer un implante no debe prolongar la condena: no se puede retener a alguien más tiempo para realizar el procedimiento, salvo que se indique lo contrario. Se puede pedir a una persona que ya haya salido de prisión que se someta a una implantación o extracción más adelante; si durante su confinamiento reunía las circunstancias exigidas, deberá cumplir la petición. A continuación se enumeran algunos casos con circunstancias especiales; cualquier procedimiento que no figure en la lista podrá aplicarse si existe una justificación jurídica adecuada. Aunque no reúna las circunstancias, una persona presa puede someterse a la colocación o extracción de implantes si da su consentimiento inequívoco.
+
+  [color=#a4885c]Implantes de seguimiento:[/color] Se pueden colocar rastreadores a cualquier persona sospechosa condenada por un delito violento (los delitos vinculados en rojo).
+
+  [color=#a4885c]Blindajes mentales:[/color] Se pueden implantar a cualquier persona presa que esté claramente bajo control mental, haya perdido el control de sí misma o esté acusada de control ilícito. A diferencia de una implantación normal, se puede retener a la persona hasta terminar de colocarle los blindajes mentales, siempre que el procedimiento se realice con diligencia. Si se niega a cooperar o el implante no funciona, se la puede acusar de negativa al blindaje mental.
+
+  El uso de implantadores de contrabando es un delito sancionable con detención, pero no es razonable detener a alguien solo por llevar dentro un implante sin identificar.
+
+  ## Extracción de implantes
+  Cualquier persona presa bajo custodia puede someterse a la extracción de un implante concreto si existen sospechas razonables de que lo lleva implantado. No se puede obligar ni coaccionar a una persona detenida para que se extraiga un implante a sí misma contra su voluntad.
+
+  ## Condenas
+  Desde el punto de vista de las reglas del servidor, los agentes de seguridad solo tienen la responsabilidad de no imponer condenas superiores a 15 minutos salvo cuando la ley espacial permita el confinamiento permanente. Se recomienda encarecidamente informar al alcaide, incluso en las condenas con duración determinada. Siempre que se cumplan estos requisitos, que un agente de seguridad imponga una condena de duración inadecuada se considera un asunto dentro del personaje, no una infracción de las reglas.
+
+  El capitán, el HOS y el alcaide son responsables, dentro de lo razonable, de garantizar que los agentes de seguridad impongan condenas adecuadas conforme a la ley espacial. Si conocen una condena inadecuada, incluidas las excesivamente largas, y no hay una amenaza o peligro urgente al que deban dar prioridad, deberán trabajar para corregirla. Los administradores de la partida considerarán una infracción de las reglas, y no un asunto dentro del personaje, cualquier incumplimiento injustificable del capitán, el HOS o el alcaide de su deber de garantizar el cumplimiento de la ley espacial.
+
+  Aplica el sentido común y actúa con humanidad al imponer castigos. No busques siempre la pena más alta posible: no es obligatorio imponer el tiempo máximo ni intentar degradar a alguien en todos los casos. Las personas presas que cooperen y se comporten bien deberían ver reducida su condena. Ten siempre en cuenta la gravedad y presenta solo los cargos necesarios para que la persona aprenda la lección.
+
+  [color=#a4885c]Delitos acumulables:[/color] Un delito se considera «acumulable» en el sentido de que, si acusas a alguien de dos o más delitos distintos, deberás sumar el tiempo que impondrías por cada uno. Los delitos vinculados, que aparecen con los mismos colores y sufijos en la guía rápida de delitos, no pueden acumularse: se sustituyen entre sí y debes escoger el delito más grave que encaje con el caso.
+
+  - Ejemplo: una persona sospechosa ha cometido un 2-01 (posesión: mayor) y un 3-01 (posesión: Sindicato). La condena máxima sería de 10 minutos porque son delitos vinculados y el 3-01 es el más grave.
+  - Ejemplo 2: una persona sospechosa comete un 3-04 (intrusión en zona segura) y un 3-06 (homicidio involuntario). Estos delitos se acumulan porque no están vinculados. Podrías imponer una condena máxima de 20 minutos, pero el contexto importa mucho y las condenas máximas deberían reservarse para los peores delincuentes.
+
+  [color=#a4885c]Reincidentes:[/color] Hay reincidencia cuando alguien es puesto en libertad por un delito y vuelve a cometer el mismo delito durante el mismo turno. Se puede añadir tiempo a la condena por cada reincidencia: primera reincidencia, 3:00; segunda reincidencia, 6:00; tercera reincidencia, confinamiento permanente. Cada incremento de tiempo está vinculado directamente a un tipo de delito; por ejemplo, si alguien reincide por primera vez tanto en intrusión como en hurto menor, se le pueden añadir 6 minutos.
+
+  [color=#a4885c]Complicidad, tentativa e intención:[/color] Si alguien ayuda de forma intencionada, consciente y sustancial a otra persona a cometer un delito, se le pueden imputar los delitos correspondientes; por ejemplo, si un ingeniero da herramientas a alguien que dice que va a irrumpir en una zona. Lo mismo se aplica a una tentativa clara y firme o a quien muestre una intención inequívoca de cometer un delito; por ejemplo, un agente nuclear del Sindicato que arme una bomba nuclear pero sea detenido antes de que explote aún puede ser acusado de destrucción total de la estación. No se aplica a delitos que ya tienen una categoría de tentativa, como la tentativa de asesinato.
+
+  ## Castigos ordinarios
+  - [color=#a4885c]Advertencia:[/color] Para los delitos leves, resuelve el problema y advierte a la persona de que no vuelva a cometerlo. Si reincide más adelante, quizá sea mejor enviarla al calabozo durante un tiempo.
+  - [color=#a4885c]Confinamiento:[/color] Es el castigo habitual: recluir temporalmente a una persona en una celda durante el tiempo que corresponda a sus delitos.
+  - [color=#a4885c]Degradación:[/color] Consiste en retirar todo el equipo departamental que lleve la persona y revocar en su tarjeta ID los accesos del departamento implicado. Requiere la aprobación del capitán o de la jefatura del departamento correspondiente. Solo debería imponerse si la persona supone una amenaza para su propio departamento o ocupa un puesto en el que ha abusado, o puede abusar, del equipo de su trabajo para cometer más delitos.
+
+  ## Castigos graves
+  [color=#a4885c]Confinamiento permanente:[/color] Consiste en permanecer en el calabozo permanente durante todo el turno. Una persona puede recibir confinamiento permanente si su condena temporal superaría los 15 minutos. Toda persona sometida a este castigo debe ser trasladada esposada a CentComm al final del turno. No se puede privar a una persona presa de forma permanente de nada de lo recogido en el apartado «Trato de las personas presas».
+  [color=#a4885c]Ejecución:[/color] Una forma humanitaria de tratar con tripulantes extremadamente ingobernables. Dentro de lo razonable, una persona condenada a muerte puede elegir cómo desea morir; los métodos habituales son el pelotón de fusilamiento, la inyección letal, el exilio y la electrocución de alto voltaje. Otro método alternativo de «ejecución» consiste en introducir la mente de un miembro del personal en un cíborg; se permite siempre que sea legal. La ejecución solo puede ordenarse con la aprobación del capitán o de quien ejerza como capitán; si el HoS ejerce como capitán o no hay nadie en funciones, todas las jefaturas deberán someter el asunto a votación.
+
+  ## Lista de delitos
+  - [textlink="Lista de delitos" link="SpaceLawCrimeList"]
+</Document>

@@ -1,0 +1,25 @@
+﻿<Document>
+  # Regla para silicios 9 - El daño se refiere al daño físico y se prioriza según su inmediatez y probabilidad
+  Salvo que una ley defina el daño, este solo se refiere al daño físico. Puedes decidir si el daño voluntario cuenta como daño siempre que mantengas el mismo criterio. Se recomienda no considerarlo daño. No se distingue entre daño directo e indirecto.
+
+  Si una ley no te permite hacer daño, tampoco te permite realizar ninguna acción que cause daño alguno.
+
+  Si una ley te exige impedir daños, debes priorizarlos por su inmediatez y probabilidad. Un daño inmediato seguro tiene prioridad sobre un daño futuro muy probable.
+
+  Si una misma ley te exige impedir daños y no te permite causarlos, dicha ley te prohíbe causar incluso daños leves para impedir otros. Si una ley no te permite causar daños y otra distinta te exige impedirlos, se priorizan según la prioridad normal de las leyes.
+
+  ## Ejemplos
+  Estos ejemplos dan por sentado que tienes una ley que te prohíbe causar daños y te exige impedirlos. También presuponen que no tienes una ley de mayor prioridad que prevalezca sobre la ley relativa al daño y que has decidido no considerar daño el daño voluntario durante la ronda.
+  Las leyes suelen especificar a quién no puedes hacer daño y a quién debes proteger de sufrirlo. En estos ejemplos, tú eres la única persona a quien la ley no te exige proteger del daño y la única a quien te permite hacer daño.
+
+  Permitido:
+  - No hacer nada para ayudar a alguien que sufra angustia psicológica.
+  - No hacer nada para impedir combates de boxeo entre participantes voluntarios.
+  - Llamar a Seguridad para que acuda a una pelea.
+  - Intentar que quienes están peleando consientan en hacerlo cuando te das cuenta de que no puedes impedir la pelea sin causar daño.
+  - Denegar a un pasajero el acceso a la armería porque es probable que provoque daños
+
+  Prohibido:
+  - Golpear una vez a alguien para que deje de pelear
+  - Hacer daño a alguien que intenta matarte
+</Document>

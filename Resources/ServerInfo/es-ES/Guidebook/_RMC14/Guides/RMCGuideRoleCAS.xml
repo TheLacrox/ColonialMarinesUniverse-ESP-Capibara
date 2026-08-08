@@ -1,0 +1,140 @@
+<Document>
+  #Guía de operaciones con naves de descenso
+
+  ## Apoyo aéreo & plataformas de despliegue
+
+  Las naves de descenso son la columna vertebral del despliegue táctico de la UNMC y una fuente esencial de potencia de fuego en el campo de batalla. El Almayer utiliza dos naves de descenso multifunción avanzadas: [color=#D2B48C]Alamo[/color] y [color=#808080]Normandy[/color].
+
+  [bold]Tanto la [color=#D2B48C]Alamo[/color] como la [color=#808080]Normandy[/color] están diseñadas para realizar misiones esenciales de transporte de tropas y devastadoras operaciones de apoyo aéreo cercano (CAS)[/bold], adaptándose a las necesidades cambiantes de cualquier operación.
+
+  Esta guía explica los aspectos generales del transporte de tropas y ofrece una visión de conjunto de los accesorios, antes de profundizar en cómo prestar apoyo aéreo cercano de forma eficaz.
+
+
+
+  ## I. Transporte de tropas: el salvavidas del frente
+
+  El transporte eficaz de tropas es vital. Aunque ambas naves de descenso pueden trasladar marines, la [color=#D2B48C]Alamo[/color] suele ser el principal caballo de batalla para llevar escuadras y suministros entre el Almayer y la LZ principal.
+
+  ### Cómo optimizar los trayectos de transporte:
+
+  -   [bold]Gestión de la LZ:[/bold] Asegúrate de seleccionar siempre la [color=#4CAF50][bold]LZ PRINCIPAL[/bold][/color].
+  -   [bold]Avisos de salida:[/bold] Anuncia las horas de partida por la [color=#808080]radio común de la nave[/color] para reducir el riesgo de dejar atrás a algún marine a bordo.
+  -   [bold]Deja que pilote el piloto:[/bold] Tener [color=#FFFF00]habilidad de pilotaje 2[/color] (lo habitual para pilotos de naves de descenso o cañoneras y oficiales de apoyo auxiliar) [color=#ADD8E6]reduce un 25% el tiempo de repostaje de la nave de descenso[/color]. [bold]Este efecto se acumula con el sistema de refrigeración.[/bold]
+
+  ## II. Armamento de las naves de descenso & accesorios del motor
+
+  Es fundamental conocer el equipo disponible antes de iniciar operaciones de CAS. Tanto la [color=#D2B48C]Alamo[/color] como la [color=#808080]Normandy[/color] pueden equiparse con 4 sistemas de armas, 2 accesorios de motor que mejoran el rendimiento y 3 soportes auxiliares.
+
+  ### A. Sistemas de armas
+
+     <GuideEntityEmbed Entity="RMCDropshipAttachmentGau21Cannon"/>
+  - [bold]Descripción general[/bold]: Es un potente cañón de tiro directo, versátil contra distintos objetivos según la munición seleccionada.
+  - [bold]Ventana de disparo[/bold]: Puede usarse durante el [color=#00FF00]tránsito y las pasadas de ataque[/color].
+  - [bold]Tipos de munición & características[/bold]:
+     <GuideEntityEmbed Entity="RMCDropshipAttachmentAmmoGAU"/>
+  [bold]Descripción general[/bold]: Este proyectil está diseñado para atacar [color=#FFA500]infantería, vehículos ligeros y estructuras sin reforzar[/color]. Destaca en la supresión de zonas y la eliminación de objetivos poco resistentes, pero no está pensado para amenazas con blindaje pesado. [color=#ADD8E6]Tiene un tiempo de vuelo de 10 segundos[/color]
+     <GuideEntityEmbed Entity="RMCDropshipAttachmentAmmoGAUAP"/>
+  [bold]Descripción general[/bold]: Un proyectil sabot perforante especializado, diseñado para derrotar [color=#FF6347]objetivos con blindaje pesado[/color]. Es menos eficaz contra infantería u objetivos sin blindaje. [color=#ADD8E6]Tiene un tiempo de vuelo de 6 segundos[/color]
+
+     <GuideEntityEmbed Entity="RMCDropshipAttachmentLaserCannon"/>
+  - [bold]Descripción general[/bold]: Un arma de denegación de zona que proyecta un láser para crear un campo de incendios intensos, aunque breves.
+  - [bold]Ventana de disparo[/bold]: Puede usarse durante el [color=#00FF00]tránsito y las pasadas de ataque[/color].
+  - [bold]Munición & características[/bold]:
+     <GuideEntityEmbed Entity="RMCDropshipAttachmentAmmoLaserCannon"/>
+  El cañón cubre aleatoriamente un [color=#FFA500]área de 7x7 con un total de 16 focos de fuego[/color]. Duran muy poco, pero son extremadamente intensos, por lo que resultan ideales para hacer salir al enemigo o denegar una zona temporalmente.
+  La munición es muy rentable: una recarga completa proporciona 10 disparos. Tiene el [color=#ADD8E6]tiempo de vuelo más rápido de todas las armas de CAS (1 segundo)[/color] y una imprecisión mínima de [color=#FFD700]1 casilla[/color].
+
+     <GuideEntityEmbed Entity="RMCDropshipAttachmentGuidedMissileLauncher"/>
+  - [bold]Descripción general[/bold]: Este sistema dispara cohetes guiados caros, de un solo uso y gran impacto, diseñados para destruir objetivos importantes.
+  - [bold]Ventana de disparo[/bold]: [color=#FF0000]SOLO puede usarse durante las pasadas de ataque de CAS[/color]. No puede dispararse mientras la nave de descenso se encuentra en tránsito normal.
+  - [bold]Características generales del lanzador[/bold]: Todos los misiles disparados por este lanzador tienen una imprecisión inherente de [color=#FFD700]3 casillas[/color].
+  - [bold]Opciones de misiles & características[/bold]:
+      <GuideEntityEmbed Entity="RMCDropshipAttachmentAmmoRocketWidowmaker"/>
+  Este misil tiene un [color=#FF6347]gran radio de explosión[/color]. Resulta más eficaz contra grandes concentraciones de enemigos u objetivos ligeros dispersos. [color=#ADD8E6]Tiene un tiempo de vuelo de 3 segundos[/color]
+      <GuideEntityEmbed Entity="RMCDropshipAttachmentAmmoRocketKeeper"/>
+  Este misil libera su carga en un [color=#FF6347]radio de explosión pequeño, pero muy concentrado[/color]. Está diseñado para ataques de precisión contra objetivos individuales resistentes. [color=#ADD8E6]Tiene un tiempo de vuelo de 2 segundos[/color]
+      <GuideEntityEmbed Entity="RMCDropshipAttachmentAmmoRocketNapalm"/>
+  Este misil tiene un [color=#FF6347]gran radio de explosión[/color] y, al impactar, provoca un incendio intenso en un [color=#FFA500]área de 7x7[/color]. Su función principal es la denegación extrema de una zona. [color=#ADD8E6]Tiene un tiempo de vuelo de 6 segundos[/color]
+
+  ### B. Accesorios del motor
+  Estos módulos se instalan en puntos específicos para accesorios del motor y mejoran el rendimiento de la nave de descenso.
+      <GuideEntityEmbed Entity="RMCDropshipAttachmentFuelEnhancer"/>
+    [color=#ADD8E6]Reduce el tiempo total de viaje[/color] y [color=#ADD8E6]aumenta un 25% el tiempo disponible para las pasadas de ataque[/color]. Es excelente para responder con rapidez, acortar los ciclos de transporte y prolongar la presencia de CAS.
+      <GuideEntityEmbed Entity="RMCDropshipAttachmentCoolingSystem"/>
+    [color=#ADD8E6]Reduce considerablemente, en un 50%, el tiempo de repostaje de la nave de descenso[/color], lo que disminuye el tiempo de inactividad en el Almayer o la LZ.
+  -   [bold]Nota sobre acumulación[/bold]: Ambos accesorios del motor pueden equiparse a la vez y sus efectos se acumulan, aunque con rendimientos decrecientes. La bonificación de la habilidad del piloto también se acumula con el sistema de refrigeración.
+
+  ### C. Módulos auxiliares internos
+    Las naves de descenso tienen [bold]3 puntos auxiliares[/bold] en el interior, cerca de la parte trasera. En estos soportes pueden instalarse módulos especializados que mejoran las capacidades de apoyo de la nave. Actualmente hay dos módulos auxiliares principales:
+
+       <GuideEntityEmbed Entity="RMCDropshipAttachmentFulton"/>
+    -   Al instalar este módulo, la nave de descenso puede [color=#ADD8E6]recuperar objetos o cadáveres enviados desde la superficie mediante un sistema Fulton[/color]. El piloto debe usar su consola para recuperar los objetos extraídos mediante Fulton.
+
+       <GuideEntityEmbed Entity="RMCDropshipAttachmentMedevac"/>
+    -   Equipar este módulo permite a la nave de descenso [color=#00FF00]recuperar directamente del campo de batalla al personal en estado crítico o abatido que esté en una camilla MEDEVAC[/color].
+    -   Para recuperar personal con el sistema MEDEVAC, el piloto debe seleccionarlo primero en la consola de armamento e interactuar manualmente con la camilla para activarla. El sistema MEDEVAC también tiene un tiempo de espera de 20 segundos.
+    -   [bold][color=#FF0000]Es vital para evacuar bajas. Recuerda atender al personal recuperado e informar a Enfermería de su estado; no lo dejes sin vigilancia tras aterrizar en el Almayer.[/color][/bold]
+
+
+  ### D. Adquisición de armamento & accesorios (fabricador de piezas de naves de descenso)
+  Los sistemas de armas, sus respectivas municiones y los accesorios del motor no están disponibles gratuitamente. Deben obtenerse en un fabricador de piezas de naves de descenso situado sobre las plataformas de aterrizaje.
+      <GuideEntityEmbed Entity="RMCDropshipFabricator"/>
+      <Box>Usa un sistema de [color=#FFFF00]«puntos de nave de descenso»[/color] para fabricar estos objetos.</Box>
+  -   [bold]Reposición de puntos de nave de descenso[/bold]: Hay dos formas principales de obtener o reponer estos valiosos puntos:
+
+  1. [bold]Regeneración pasiva[/bold]: Los puntos de nave de descenso se regeneran de forma pasiva con el tiempo, pero a un ritmo [color=#FFA500]muy lento[/color] (aproximadamente 1 punto cada 3 segundos).
+  Este método suele resultar insuficiente para rearmarse con rapidez durante una operación activa.
+
+  2. [bold]Intervención del mando[/bold]: [color=#FFD700]La forma más eficaz y rápida de reponer los puntos de nave de descenso gastados es mediante la intervención del mando.[/color] El personal de mando puede gastar [color=#00FF00]«puntos de inteligencia»[/color] para comprar puntos de nave de descenso,
+  que se abonan en los sistemas de la nave para fabricar de inmediato armamento y accesorios.
+
+  -    Este sistema implica que el equipamiento y la capacidad de rearme de la nave de descenso están ligados directamente a la gestión general de recursos estratégicos de la operación de los marines. Los pilotos deben usar la munición con prudencia, y es esencial comunicarse eficazmente con el mando sobre los puntos disponibles y las necesidades existentes.
+
+   ## A. Acceso & funcionamiento de la interfaz de CAS
+
+    Todos los aspectos de una misión de CAS se controlan desde la [bold]consola de control de armamento[/bold].
+    -   [bold]Dos monitores:[/bold] Al abrir la consola verás dos monitores. Ambos pueden mostrar la misma selección de ventanas y funcionan de forma independiente, por lo que puedes tener abiertas simultáneamente dos ventanas distintas de información o control (Target en uno y Cams en el otro).
+    -   [bold]Botones disponibles:[/bold] Las ventanas principales accesibles desde estos monitores son [bold]Equip[/bold], [bold]Target[/bold] y [bold]Cams[/bold].
+
+    ### B. Uso de los botones de control de armamento
+    1.  [bold]"Equip"[/bold]
+    -  Ofrece una descripción detallada del equipamiento actual de la nave de descenso.
+    -  Muestra qué sistemas de armas están acoplados a las ranuras de la nave, así como el tipo y la cantidad restante de munición de cada arma instalada.
+
+    2.  [bold]"Cams"[/bold]
+    -   Ofrece una vista de cámara centrada en el objetivo seleccionado y sus inmediaciones.
+    -   Cuando esta ventana está activa, muestra la señal visual de la zona que rodea al objetivo seleccionado.
+    <Box>[bold]Control de la cámara[/bold]:</Box>
+    -   Entre [italic]las dos ventanas principales de los monitores[/italic] encontrarás cuatro flechas de dirección.
+    -   Estas flechas permiten [color=#ADD8E6]desplazar ligeramente la vista de la cámara[/color] alrededor del objetivo seleccionado. Puedes usar el botón central para volver a centrar la cámara en el objetivo.
+    -   [color=#FFD700][bold]Nota importante[/bold]: Mover la vista de cámara en la ventana "Cams" [bold]NO cambia el lugar donde impactará el ataque de CAS[/bold]. El ataque siempre se dirige al desplazamiento del objetivo seleccionado en la ventana "Target".
+
+    3.  [bold]"Target"[/bold]
+    -   Esta es la interfaz principal para seleccionar objetivos y disparar los sistemas de armas de la nave.
+    <Box>[bold]Secuencia de disparo paso a paso:</Box>
+    -   [color=#FFA500][bold]Selecciona el objetivo[/bold][/color]: Debes elegir un objetivo. En el lado derecho de la ventana "Target" aparecerá una lista de los objetivos disponibles. Por lo general, son los que han designado los equipos de tierra mediante [color=#FF0000]designadores láser[/color] o [color=#00FF00]bengalas de señalización[/color]. Pulsa el objetivo deseado para seleccionarlo.
+    -   [color=#FFA500][bold]Selecciona "Strike"[/bold][/color]: Tras elegir un objetivo, pulsa el botón "Strike" de la ventana.
+    -   [color=#FFA500][bold]Selecciona "Weapon"[/bold][/color]: Aparecerá una lista con todos los sistemas de armas equipados.
+    -   [color=#FFA500][bold]Elige el arma[/bold][/color]: Selecciona el sistema de armas concreto que quieras disparar contra el objetivo elegido.
+    -   [color=#FF0000][bold]Selecciona "Fire"[/bold][/color]: Confirma las selecciones pulsando el botón "Fire".
+    -   [bold]Si has seguido la secuencia correctamente, deberías oír el sonido característico del arma seleccionada al disparar.[/bold]
+
+    <Box>[bold]Tiempos de espera de las armas & fuego rápido:</Box>
+    -   Cada arma tiene un [italic]breve tiempo de espera interno[/italic] antes de poder volver a disparar.
+    -   Sin embargo, [bold]no hay un intervalo obligatorio entre los disparos de armas distintas[/bold]. Esto significa que, después de disparar un arma (por ejemplo, una GAU-21), puedes repetir de inmediato la secuencia "Strike" -> "Weapon" (selecciona otra GAU-21 u otra arma) -> "Fire" para lanzar muy rápidamente otra salva con un sistema de armas distinto. Esto permite efectuar potentes ataques de armas combinadas.
+
+    ### C. Operaciones de CAS: buenas prácticas & lo que NO debes hacer
+
+    -   [bold]HAZLO: Verifica la designación del objetivo[/bold]: Asegúrate siempre de que el objetivo elegido en la ventana "Target" sea el correcto que han comunicado los equipos de tierra. Un error al seleccionarlo puede ser catastrófico.
+    -   [bold]HAZLO: Controla la munición[/bold]: Consulta con frecuencia la ventana "Equip" para llevar la cuenta de la munición restante de cada sistema de armas. Quedarse sin munición da muy mala imagen.
+    -   [bold]HAZLO: Utiliza bien ambos monitores[/bold]: Por ejemplo, mantén "Target" abierto en un monitor para controlar el disparo y "Cams" o "Equip" en el otro para conservar la conciencia situacional o comprobar la munición.
+    -   [bold]HAZLO: Practica el cambio rápido de arma[/bold]: Domina la secuencia "Strike -> Weapon -> Fire" para atacar rápidamente con varios sistemas de armas si la situación lo exige.
+    -   [color=#00FF00][bold]HAZLO: Restablece los desplazamientos del objetivo después de cada misión de fuego[/bold][/color]: [bold]Tras completar una misión de fuego, asegúrate de restablecer todos los desplazamientos del objetivo. No querrás alcanzar a tus aliados, ¿verdad?[/bold]
+
+    -   [color=#FF0000][bold]NO LO HAGAS: Disparar sin una identificación positiva del objetivo[/bold][/color]: Nunca dispares "a ciegas" contra un objetivo sin confirmar. El fuego amigo durante una misión de CAS es devastador.
+    -   [color=#FF0000][bold]NO LO HAGAS: Suponer que la vista de cámara es el punto de mira[/bold][/color]: Recuerda que la ventana "Cams" sirve para observar; los disparos se dirigen al objetivo seleccionado en la ventana "Target".
+    -   [color=#FF0000][bold]NO LO HAGAS: Descuidar la comunicación en situaciones de "Danger Close"[/bold][/color]: Si los equipos de tierra avisan "Danger Close" (peligro cercano), extrema la vigilancia. Asegúrate de que el ataque no los ponga en peligro. Si tienes dudas, no dispares.
+    -   [color=#FF0000][bold]NO LO HAGAS: Malgastar munición cara[/bold][/color]: Usa el arma adecuada para el objetivo. No dispares un costoso misil AGM-99 'Napalm' contra un solo dron.
+
+
+</Document>

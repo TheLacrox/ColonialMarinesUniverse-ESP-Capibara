@@ -1,0 +1,54 @@
+<Document>
+  #Estructuras de la Colmena
+  Los xenónidos prosperan construyendo distintas estructuras especializadas. Un miembro de la línea de castas del Dron debe crearlas mediante la habilidad Ordenar construcción sobre maleza de la colmena y después llenarlas de plasma.
+  <Box>
+    <GuideEntityEmbed Entity="XenoHiveWeeds"/>
+    <GuideEntityEmbed Entity="RMCGuidebookActionXenoOrderConstruction"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="HiveEggMorpherXeno"/>
+    <GuideEntityEmbed Entity="HiveCoreXeno"/>
+    <GuideEntityEmbed Entity="HivePylonXeno"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="HiveClusterXeno"/>
+    <GuideEntityEmbed Entity="HiveRecoveryNodeXeno"/>
+    <GuideEntityEmbed Entity="HivePlasmaTreeXeno"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="HiveAcidPillarXeno"/>
+  </Box>
+  ##¡Todas tienen límites!
+  - 1 núcleo de colmena
+  - 6 transformadores de huevos
+  - 6 nodos de recuperación
+  - 3 árboles de plasma
+  - 8 racimos de colmena
+  - 2 pilonos de colmena
+  - 1 pilar de ácido por Señor de la colmena o Reina
+
+  ## ¿Qué hacen?
+
+  [bold]Transformadores de huevos[/bold]: Los transformadores de huevos actúan como un gran huevo que lanza parásitos contra cualquier huésped que entre en sus inmediaciones. Producen de forma gradual hasta 6 parásitos y almacenan 12, que los xenónidos pueden recoger.
+
+  [bold]Núcleo de colmena[/bold]: Suele construirlo la Reina al comienzo de la partida para designar dónde se ubicará la Colmena y permitir la construcción de otras estructuras. Una vez construido, aumenta la velocidad de obtención de puntos de evolución, proporciona energía para producir drones menores, genera maleza de la colmena y ofrece cobertura frente al fuego del cielo (bombardeo orbital) y el escupitajo del cielo (apoyo aéreo cercano). ¡Si llevas una larva muerta al núcleo de colmena, concederá una larva enterrada para que pueda nacer una nueva hermana! Si destruyen el núcleo de colmena, habrá que esperar 5 minutos antes de poder construir otro, ¡así que no olvides protegerlo!
+
+  [bold]Pilono de colmena[/bold]: Se crea plantando un racimo de colmena cerca de una torre de señales y llenándolo de plasma. Cuando su maleza alcance la torre, se convertirá en un pilono. Genera drones menores y ofrece cobertura frente al escupitajo del cielo.
+
+  [bold]Racimo de colmena[/bold]: Los racimos de colmena emiten maleza de la colmena que permite construir otras estructuras a su alrededor. También pueden repararse con plasma si pierden maleza o salud.
+
+  [bold]Nodo de recuperación[/bold]: El nodo de recuperación cura a los xenónidos que descansan cerca de él. Solo puede curar a un xenónido a la vez.
+
+  [bold]Árbol de plasma[/bold]: Los árboles de plasma son como los nodos de recuperación, pero proporcionan plasma a los xenónidos en lugar de curarlos.
+
+  [bold]Pilar de ácido[/bold]: Extingue los incendios cercanos.
+
+  ## ¡Dónde colocarlas!
+  Como su número es limitado, siempre conviene comunicar a la Colmena que vas a colocar una.
+
+  Los racimos de colmena pueden usarse en el frente para frenar los avances de los huéspedes o en la retaguardia para crear lugares de anidación. Estos suelen estar acompañados de un túnel y también cuentan con 2 o más transformadores de huevos.
+
+  Los nodos de recuperación deben colocarse en el frente, cerca de un racimo de colmena, para ayudar a las hermanas en combates prolongados.
+
+  Los árboles de plasma pueden usarse tanto en el frente (para sanadoras y constructoras del frente) como en la retaguardia (para constructoras de la retaguardia).
+</Document>

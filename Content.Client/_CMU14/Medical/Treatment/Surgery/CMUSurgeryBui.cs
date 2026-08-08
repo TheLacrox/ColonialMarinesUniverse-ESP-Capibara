@@ -123,9 +123,13 @@ public sealed partial class CMUSurgeryBui : BoundUserInterface
 
         var subtitle = inFlight is not null
             ? Loc.GetString("cmu-medical-surgery-in-progress-subtitle",
-                ("surgery", inFlight.LeafSurgeryDisplayName),
+                ("surgery", ResolveLocalizedText(
+                    inFlight.LeafSurgeryDisplayNameLocId,
+                    inFlight.LeafSurgeryDisplayName)),
                 ("part", inFlight.PartDisplayName))
-            : armed?.SurgeryDisplayName ?? string.Empty;
+            : armed is null
+                ? string.Empty
+                : ResolveLocalizedText(armed.SurgeryDisplayNameLocId, armed.SurgeryDisplayName);
         _window.InProgressSubtitleLabel.Text = subtitle;
 
         if (inFlight is not null)
@@ -144,7 +148,7 @@ public sealed partial class CMUSurgeryBui : BoundUserInterface
 
         if (armed is not null)
         {
-            var stepLabel = ResolveLabel(armed.StepLabel);
+            var stepLabel = ResolveLocalizedText(armed.StepLabelLocId, armed.StepLabel);
             _window.InProgressStepLabel.Text = Loc.GetString(
                 "cmu-medical-surgery-step-now",
                 ("step", armed.StepIndex + 1),
@@ -160,7 +164,7 @@ public sealed partial class CMUSurgeryBui : BoundUserInterface
         }
         else if (inFlight is not null && TryGetInFlightEntry(state, inFlight, out var next))
         {
-            var stepLabel = ResolveLabel(next.NextStepLabel);
+            var stepLabel = ResolveLocalizedText(next.NextStepLabelLocId, next.NextStepLabel);
             _window.InProgressStepLabel.Text = Loc.GetString(
                 "cmu-medical-surgery-step-now",
                 ("step", next.NextStepIndex + 1),
@@ -218,7 +222,9 @@ public sealed partial class CMUSurgeryBui : BoundUserInterface
                 AddChoiceButton(
                     part,
                     entry,
-                    Loc.GetString("cmu-medical-surgery-continue-with-button", ("surgery", entry.DisplayName)),
+                    Loc.GetString(
+                        "cmu-medical-surgery-continue-with-button",
+                        ("surgery", ResolveLocalizedText(entry.DisplayNameLocId, entry.DisplayName))),
                     false);
                 continuationCount++;
             }
@@ -631,7 +637,7 @@ public sealed partial class CMUSurgeryBui : BoundUserInterface
         };
         labels.AddChild(new Label
         {
-            Text = entry.DisplayName,
+            Text = ResolveLocalizedText(entry.DisplayNameLocId, entry.DisplayName),
             FontColorOverride = TextPrimary,
             ClipText = true,
         });
@@ -639,7 +645,7 @@ public sealed partial class CMUSurgeryBui : BoundUserInterface
         {
             Text = Loc.GetString(
                 "cmu-medical-surgery-procedure-detail",
-                ("step", ResolveLabel(entry.NextStepLabel)),
+                ("step", ResolveLocalizedText(entry.NextStepLabelLocId, entry.NextStepLabel)),
                 ("tool", FormatToolCategory(entry.NextStepToolCategory))),
             FontColorOverride = TextSecondary,
             ClipText = true,
@@ -784,6 +790,14 @@ public sealed partial class CMUSurgeryBui : BoundUserInterface
         if (_localization.TryGetString(maybeKey, out var resolved))
             return resolved;
         return maybeKey;
+    }
+
+    private string ResolveLocalizedText(LocId? localizationId, string? fallback)
+    {
+        return CMUSurgeryLocalization.Resolve(
+            _localization,
+            localizationId,
+            ResolveLabel(fallback));
     }
 
     private string FormatToolCategory(string? category)

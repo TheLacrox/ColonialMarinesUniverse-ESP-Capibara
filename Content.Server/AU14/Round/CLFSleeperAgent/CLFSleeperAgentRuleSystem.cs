@@ -1,5 +1,6 @@
 using Content.Server.AU14.Systems;
 using Content.Server.GameTicking.Rules;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Paper;
 using CLFSleeperAgentComponent = Content.Shared._CMU14.Round.Antags.CLFSleeperAgent.CLFSleeperAgentComponent;
 using CLFSleeperAgentRuleComponent = Content.Shared._CMU14.Round.Antags.CLFSleeperAgent.CLFSleeperAgentRuleComponent;
@@ -20,7 +21,10 @@ public sealed partial class CLFSleeperAgentRuleSystem : GameRuleSystem<CLFSleepe
     {
         _wantedSystem.SendCustomFax(
             "Colony Liberation Front",
-            "Operational Briefing",
+            CMULocalization.GetTargetStringOrFallback(
+                Loc,
+                "cmu-clf-sleeper-fax-operational-briefing-title",
+                "Operational Briefing"),
             BuildClfFax(),
             "paper_stamp-clf",
             new List<StampDisplayInfo>
@@ -30,7 +34,10 @@ public sealed partial class CLFSleeperAgentRuleSystem : GameRuleSystem<CLFSleepe
 
         _wantedSystem.SendCustomFax(
             "govfor",
-            "Security Advisory",
+            CMULocalization.GetTargetStringOrFallback(
+                Loc,
+                "cmu-clf-sleeper-fax-security-advisory-title",
+                "Security Advisory"),
             BuildGovforFax(),
             "paper_stamp-centcom",
             new List<StampDisplayInfo>
@@ -39,9 +46,9 @@ public sealed partial class CLFSleeperAgentRuleSystem : GameRuleSystem<CLFSleepe
             });
     }
 
-    private static string BuildClfFax()
+    private string BuildClfFax()
     {
-        return "[head=3][color=#2e5a1e]Colony Liberation Front[/color][/head]\n\n" +
+        var fallback = "[head=3][color=#2e5a1e]Colony Liberation Front[/color][/head]\n\n" +
                "[color=#2e5a1e]▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄[/color]\n\n" +
                "[bold]To:[/bold] [italic]CLF Field Operatives[/italic]\n" +
                "[bold]From:[/bold] [bold]CLF High Command[/bold]\n" +
@@ -54,11 +61,16 @@ public sealed partial class CLFSleeperAgentRuleSystem : GameRuleSystem<CLFSleepe
                "Freedom or death,\n" +
                "[color=#2e5a1e][bolditalic]CLF High Command[/bolditalic][/color]\n" +
                "[color=#2e5a1e]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]";
+
+        return CMULocalization.GetTargetStringOrFallback(
+            Loc,
+            "cmu-clf-sleeper-fax-clf-body",
+            fallback);
     }
 
-    private static string BuildGovforFax()
+    private string BuildGovforFax()
     {
-        return "[head=3][color=#1a3a6e]Intelligence Advisory — CONFIDENTIAL[/color][/head]\n\n" +
+        var fallback = "[head=3][color=#1a3a6e]Intelligence Advisory — CONFIDENTIAL[/color][/head]\n\n" +
                "[color=#1a3a6e]▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄[/color]\n\n" +
                "[bold]To:[/bold] [italic]Platoon Commander[/italic]\n" +
                "[bold]From:[/bold] [bold]UA Intelligence Branch[/bold]\n" +
@@ -71,5 +83,10 @@ public sealed partial class CLFSleeperAgentRuleSystem : GameRuleSystem<CLFSleepe
                "Signed,\n" +
                "[color=#1a3a6e][bolditalic]UA Intelligence Branch[/bolditalic][/color]\n" +
                "[color=#1a3a6e]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]";
+
+        return CMULocalization.GetTargetStringOrFallback(
+            Loc,
+            "cmu-clf-sleeper-fax-govfor-body",
+            fallback);
     }
 }

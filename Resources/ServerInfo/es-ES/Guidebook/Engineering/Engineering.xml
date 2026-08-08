@@ -1,0 +1,31 @@
+<Document>
+  # Ingeniería
+  [color=#f39f27]Ingeniería[/color] combina labores de [textlink="construcción" link="Construction"] y [textlink="reparación" link="ExpandingRepairingStation"], el mantenimiento de una máquina mortífera que, casualmente, produce [textlink="energía" link="Power"] y la tarea de garantizar que la estación contenga [textlink="aire respirable" link="Atmospherics"].
+
+  ## Personal
+  El personal de [color=#f39f27]Ingeniería[/color] está compuesto por ayudantes técnicos, ingenieros de estación y técnicos de atmósfera.
+  Ingeniería está dirigida por el Ingeniero jefe.
+
+  <Box>
+    <GuideEntityEmbed Entity="ToyFigurineEngineer" Caption="Ingeniero"/>
+    <GuideEntityEmbed Entity="ToyFigurineAtmosTech" Caption="Atmosiano"/>
+    <GuideEntityEmbed Entity="ToyFigurineChiefEngineer" Caption="CE"/>
+  </Box>
+
+  ## Herramientas
+  <Box>
+    <GuideEntityEmbed Entity="Wrench"/>
+    <GuideEntityEmbed Entity="Crowbar"/>
+    <GuideEntityEmbed Entity="Screwdriver"/>
+    <GuideEntityEmbed Entity="Wirecutter"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="Welder"/>
+    <GuideEntityEmbed Entity="Multitool"/>
+    <GuideEntityEmbed Entity="NetworkConfigurator"/>
+  </Box>
+  Tu juego de herramientas básico consta de una pequeña variedad de herramientas.
+  Si eres ingeniero, deberías llevar en la cintura un cinturón con una de cada; si no, seguramente puedas encontrarlas en los túneles de mantenimiento y en almacenes de herramientas, dentro de diversas cajas de herramientas y máquinas expendedoras.
+
+  La mayoría de las tareas incluirán explicaciones de cómo llevarlas a cabo al examinarlas; por ejemplo, si estás [textlink="construyendo" link="Construction"] un muro, te indicará el siguiente paso si lo observas más de cerca.
+</Document>

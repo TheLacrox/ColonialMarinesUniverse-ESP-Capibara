@@ -1,0 +1,12 @@
+advertisement-smite-1 = ¡SMITE! ¡Banea tu sed!
+advertisement-smite-2 = ¡Una descarga sobrenatural de limón y lima!
+advertisement-smite-3 = ¡Más de 1 millón de bebidas vendidas!
+advertisement-smite-4 = ¡SMITE! Tira 2d8 para determinar el SABOR.
+advertisement-smite-5 = ¡SMITE! ¡Acabemos con ese papeleo!
+advertisement-smite-6 = ¡El conserje te la tiene jurada!
+advertisement-smite-7 = ¡SMITE! No te emborrachará.
+advertisement-smite-8 = ¡Es la hora del limón y la lima!
+thankyou-smite-1 = ¡Smite tiene la razón!
+thankyou-smite-2 = ¡SIN DUDA querías limón y lima!
+thankyou-smite-3 = En la oficina no sabrán qué les golpeó.
+thankyou-smite-4 = Destierra tu sed.

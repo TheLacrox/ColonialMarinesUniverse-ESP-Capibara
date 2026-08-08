@@ -1,0 +1,19 @@
+<Document>
+  #Vampiro, nivel 2
+  <GuideEntityEmbed Entity="RMCXenoLurkerVampire"/>
+  ##Jugar como Vampiro
+  Pierdes todas tus habilidades y sacrificas una parte considerable de tu salud y daño a cambio de mucha armadura, un poco de velocidad de movimiento, mayor velocidad de ataque y habilidades completamente nuevas que te convierten en una asesina en la retaguardia o, si eres lo bastante hábil, en un demonio del frente.
+
+  Abalánzate sobre tu oponente para desorientarlo y usa Ráfaga para desatar una hendidura frontal capaz de alcanzar y ralentizar a tres huéspedes, además de curarte por cada uno de ellos. Usa tu Aguijonazo de cola especial para apartar a los huéspedes. También infliges más daño y aturdes a los objetivos si chocan contra una pared. Por último, ejecuta a huéspedes inconscientes con un Mordisco craneal que ignora la armadura y te cura una gran cantidad de salud.
+
+  ##Habilidades:
+  - [bold]Abalanzarse[/bold]: Un salto de cuatro casillas que hace temblar la pantalla del objetivo. Esta habilidad no lo aturde.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoPounce"/>
+  - [bold]Ráfaga[/bold]: Un ataque con un alcance de 1x3 casillas que inflige daño moderado por objetivo y te cura. Al asestarlo, también se te aplica una breve ralentización.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoFlurry"/>
+  - [bold]Aguijonazo de cola[/bold]: Un ataque que inflige mucho daño al objetivo y lo empuja hacia atrás. Si choca contra un obstáculo, como una pared, ventana, puerta o barricada, recibirá más daño y quedará aturdido temporalmente.
+  - Como utilidad, permite romper ventanas al instante.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoPierce"/>
+  - [bold]Mordisco craneal[/bold]: Un ataque de gran daño que ignora toda la armadura, mata al objetivo al instante y te cura mucho. Requiere que el objetivo esté inconsciente y adyacente a ti, además de un tiempo de preparación antes de alcanzarlo.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoHeadbite"/>
+</Document>

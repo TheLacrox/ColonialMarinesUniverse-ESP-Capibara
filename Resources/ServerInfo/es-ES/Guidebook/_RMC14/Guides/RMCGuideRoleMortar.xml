@@ -1,0 +1,109 @@
+<Document>
+    # Operaciones con mortero: guía rápida
+
+    El mortero es una potente [italic]arma de apoyo de fuego indirecto[/italic], capaz de lanzar proyectiles explosivos por encima de obstáculos y a larga distancia. Dominarlo exige práctica y buena comunicación.
+    <GuideEntityEmbed Entity="RMCMortarKit"/>
+
+    ## Requisitos para manejarlo
+    Asegúrate de cumplir estos requisitos antes de manejar un mortero:
+
+    -[bold]Habilidad[/bold]: un mínimo de [color=#FFFF00]1 de habilidad de Ingeniería[/color]. Dentro del kit de mortero hay un folleto que te la otorgará si tu rol no la posee.
+    -[bold]Una llave inglesa[/bold]: sirve para desplazar el mortero. El kit incluye una de serie. Para desplegarlo, sostenlo en la mano y usa el botón de interacción [color=#FFA500][keybind="ActivateItemInHand"][/color]
+    -[bold]Ayuda de designación y clave JTAC[/bold]:
+    <Box>
+        <GuideEntityEmbed Entity="RMCRangefinder"/>
+        <GuideEntityEmbed Entity="RMCLaserDesignator"/>
+    </Box>  <Box>
+    <GuideEntityEmbed Entity="CMEncryptionKeyJTAC" Caption="Clave JTAC, esencial para recibir coordenadas de otros marines"/>
+</Box>
+
+    ## Tipos de proyectil
+
+    <Box HorizontalAlignment="Left">  <GuideEntityEmbed Entity="RMCMortarShellHE"/> </Box>
+
+    - Detona con una potente [color=#FFA500]explosión[/color] al impactar en las coordenadas del objetivo.
+    - Empuja y aturde todo lo que alcance el radio de la explosión.
+    - El daño que causa la explosión es, como mucho, reducido.
+    - El mejor uso de los proyectiles HE es aturdir hostiles y despejar posiciones enemigas
+    - Uso principal: [italic]daño directo a hostiles y estructuras.[/italic]
+
+    <Box HorizontalAlignment="Left"> <GuideEntityEmbed Entity="RMCMortarShellIncendiary"/> </Box>
+
+    - Al impactar, crea una [color=#00FF00]extensa zona de intenso fuego verde[/color].
+    - Este proyectil no causa daño a las estructuras
+    - Efectos sobre los xenónidos:
+    - Reduce su armadura.
+    - Inflige daño continuo.
+    - Ralentiza considerablemente su movimiento.
+    - Uso principal: [italic]denegación de área, bloqueo de retiradas y debilitamiento de objetivos resistentes.[/italic]
+
+
+    <Box HorizontalAlignment="Left"> <GuideEntityEmbed Entity="RMCMortarShellFlare"/> </Box>
+
+    - [color=#ADD8E6]No causa daño[/color]. Despliega una cámara al impactar.
+    - Proporciona una [bold]vista de 19x19 casillas[/bold] de la zona objetivo.
+    - La [bold]zona inmediata de impacto de 2x2 queda iluminada[/bold].
+    - La señal de la cámara dura aproximadamente [italic]3 minutos[/italic].
+    - Uso principal: [italic]reconocimiento, localización de objetivos y observación segura de los movimientos enemigos.[/italic]
+
+    ## Factores operativos & posicionamiento
+    Comprender estos puntos es [bold]fundamental[/bold] para manejar el mortero:
+    - [bold]Alcance de combate[/bold]: el mortero solo puede alcanzar objetivos situados entre [color=#FFFF00]15 casillas (mínimo)[/color] y [color=#FFFF00]65 casillas (máximo)[/color] de su posición desplegada.
+    Es imposible disparar fuera de este intervalo.
+    - [bold]Posicionamiento táctico y vulnerabilidad[/bold]: por su alcance, el mortero suele desplegarse [italic]detrás del frente principal[/italic].
+    Esta posición en retaguardia vuelve al operador del mortero [color=#ff0000]muy vulnerable a los flanqueos enemigos[/color].
+    Presta siempre atención a tu entorno, escucha los movimientos enemigos y solicita protección a tus compañeros de escuadra si la necesitas.
+
+    ## Ejemplo del sistema de coordenadas
+    La designación del mortero utiliza un sistema de coordenadas XY. Imagina una cuadrícula superpuesta al campo de batalla. Tu observador te dará coordenadas como «(X) Longitud: 50, (Y) Latitud: -30, proyectil HE»
+
+    Esta es una representación visual simplificada de un plano XY con un alcance de 1 metro (o 1 casilla, en términos del juego) desde el origen 0:
+
+    <Box>+Y</Box>
+    <Box>(+1m)</Box>
+    <Box>▲</Box>
+    <Box>|</Box>
+    <Box>|</Box>
+    <Box>(-1m) -X ◀-  -  -  -  -  -  0  -  -  -  -  -  -▶ +X (+1m)</Box>
+    <Box>|</Box>
+    <Box>|</Box>
+    <Box>▼</Box>
+    <Box>(-1m)</Box>
+    <Box>-Y</Box>
+
+    - El 0 es el origen (0,0).
+    - +Y es norte/arriba y -Y es sur/abajo.
+    - +X es este/derecha y -X es oeste/izquierda.
+    - Introducirás los valores X e Y del objetivo en la interfaz del mortero. Es esencial contar con coordenadas precisas.
+
+    #Uso & interfaz del mortero
+
+    El mortero funciona mediante coordenadas, pero también puedes cambiar el lugar donde dispara aplicando un desfase.
+    Cuando quieras usarlo, lo primero que debes hacer es obtener las coordenadas del lugar al que quieres enviar los proyectiles mediante un designador láser o un telémetro.
+    Después, solo tienes que introducirlas en la interfaz y [color=#00FF00]establecer las coordenadas[/color]; ya estarás listo para disparar.
+
+    Tras establecer las coordenadas, solo tienes que interactuar con el mortero mientras sostienes un proyectil.
+
+    <Box>[color=#ff0000]Ten presente que la interfaz no se actualiza en tiempo real: si cancelas la acción «Establecer coordenadas», mostrará las coordenadas nuevas, pero disparará a las anteriores.[/color]</Box>
+    El [bold]desfase[/bold] permite realizar pequeños ajustes en el punto de caída de los proyectiles; por «pequeños» se entiende hasta 10 casillas en cualquier dirección. Usa el ejemplo anterior para corregir bien las coordenadas si fuera necesario.
+
+    - Hay motivos para usar el desfase en vez de cambiar las coordenadas: si cuentas con buenas coordenadas y hay un proyectil con cámara en el aire, podrás usar el desfase para adaptarte rápidamente a la situación.
+    - A continuación explicaremos el verdadero motivo para usar desfases y el razonamiento que hay detrás
+
+    #Desfases & imprecisiones del mortero
+
+    El mortero tiene 2 parámetros de imprecisión, uno de los cuales podemos controlar.
+
+    -La primera imprecisión depende de la distancia. Cuanto más lejos esté el objetivo, menos preciso será el mortero. Aumenta en 1 cada 20 casillas.
+
+    -La segunda es bastante sencilla. Cada vez que disparas un proyectil de mortero, hay un %25 de probabilidades de que tus coordenadas caigan 1 casilla por encima o por debajo de las coordenadas previstas. No existe forma alguna de reducir este efecto.
+
+    <Box>Esta es la parte importante sobre las imprecisiones</Box>
+    Los desfases aplicados quedan [bold]FIJOS cada vez que estableces las coordenadas[/bold]. Si estableces las coordenadas 100 100, el juego elegirá entre +5 y -5 y te asignará un desfase aleatorio dentro de ese intervalo.
+    Por ejemplo, +3 y -2. A partir de entonces, puedes considerar que tus coordenadas son 103 98 en vez de 100 100.
+
+    <Box>[color=#ff0000]Hasta que vuelvas a pulsar el botón [/color][color=#00FF00]«Establecer coordenadas»[/color][color=#ff0000], conservarás siempre ese +3 y -2, y podrás compensar el desfase de los disparos del mortero para que sean precisos.[/color]</Box>
+    Esto resulta especialmente útil con los proyectiles con cámara. Una vez establecidas las coordenadas, dispara uno de estos proyectiles: caerá exactamente donde esté disparando el mortero, lo que te permitirá apuntar bien mediante la interfaz de desfase mientras observas por la cámara.
+
+</Document>
+

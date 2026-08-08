@@ -12,6 +12,7 @@ using Content.Server.GameTicking.Presets;
 using Content.Server.GameTicking.Rules.Components;
 using Content.Server.Maps;
 using Content.Server.RoundEnd;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Administration.Managers;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking.Components;
@@ -413,8 +414,10 @@ public sealed partial class ServerApi : IPostInjectInit
                 presets.Add(new PresetResponse.Preset
                 {
                     Id = preset.ID,
-                    ModeTitle = _loc.GetString(preset.ModeTitle),
-                    Description = _loc.GetString(preset.Description)
+                    ModeTitle = CMUPrototypeLocalization.GetPrototypeText(
+                        _loc, "game-preset", preset.ID, "name", preset.ModeTitle),
+                    Description = CMUPrototypeLocalization.GetPrototypeText(
+                        _loc, "game-preset", preset.ID, "description", preset.Description)
                 });
             }
 

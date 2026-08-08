@@ -1,0 +1,61 @@
+<Document>
+  #Diseñador, cepa de nivel 2
+  <GuideEntityEmbed Entity="CMXenoHivelordDesigner"/>
+  ##Jugar como Diseñador
+  Como Diseñador, renuncias a la capacidad de colocar directamente paredes y puertas de resina a cambio de mejorar la construcción de la Colmena para tus hermanas. Esta cepa pretende recompensar el tiempo que dedican las demás constructoras al facilitarles la vida y la ampliación de la Colmena.
+
+  Para ello, colocas distintos nodos que las demás constructoras de la Colmena pueden usar para levantar paredes y puertas con rapidez. Así puedes centrarte en garantizar que la Colmena se construya de forma rápida y eficiente, mientras tus hermanas se ocupan de extender resina y defenderla.
+
+  Puedes construir nodos a gran distancia y no necesitas una línea de visión directa (¡aunque ayuda!).
+
+  También obtienes feromonas más potentes, con una intensidad T3, ¡y tus placajes aturden durante más tiempo a los huéspedes!
+
+  ##Tipos de nodos: puede haber hasta 36 nodos al mismo tiempo:
+  -[bold]Nodo de construcción[/bold]: Permite que tus hermanas construyan con rapidez paredes y puertas ligadas a la maleza. Cualquier xeno con plasma puede interactuar con estos nodos para crear una pared ligada a la maleza en 4 segundos.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoDesignerConstructNode"/>
+  -[bold]Resina ligada a la maleza[/bold]: Las paredes y puertas de resina ligadas a la maleza se construyen a partir de nodos de construcción y se romperán cuando desaparezca la maleza que tienen debajo. Tampoco pueden mejorarse a variantes gruesas (¡[bold]son muy vulnerables al fuego![/bold])
+
+  Cuando los Señores de la colmena (no Diseñadores), los Portadores, los Excavadores o la Reina interactúan con nodos de construcción, estos se convierten en variantes gruesas.
+
+  Cuando se destruye la resina ligada a la maleza, se derrumba y deja resina pegajosa débil, o resina pegajosa normal si se había engrosado.
+<Box>
+  <GuideEntityEmbed Entity="RMCGuidebookEntityWeedboundResinWall"/>
+  <GuideEntityEmbed Entity="RMCGuidebookEntityWeedboundResinDoor"/>
+</Box>
+  -[bold]Nodo flexible (coste)[/bold]: Cualquier pared, puerta, etc. que se construya sobre este nodo obtiene un descuento del 50% en el coste de plasma.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoDesignerFlexibleNode"/>
+  -[bold]Nodo optimizado (velocidad)[/bold]: Cualquier pared, puerta, etc. que se construya sobre este nodo se completa un 50% más rápido.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoDesignerOptimizedNode"/>
+
+  ##Habilidades del Diseñador:
+  -[bold]Alternar visión de largo alcance[/bold]: Amplía tu visión para abarcar una parte mayor del campo de batalla. ¡Puedes colocar nodos hasta donde alcance la vista!
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoToggleLongRangeSight"/>
+  -[bold]Gran Oleada de Resina[/bold]: Transforma todos los nodos situados a 7 casillas de ti en paredes débiles de resina reflectante. Se desintegran en 13 segundos. Tienen muchas probabilidades de reflejar proyectiles, pero se rompen con 1 golpe cuerpo a cuerpo.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoGreaterResinSurge"/>
+  -[bold]Alternar tipo de nodo[/bold]: Alterna entre colocar nodos de pared y nodos de puerta. Solo afecta a los nodos de construcción. En los nodos flexibles y optimizados, sirve para mostrar a tus hermanas lo que pretendes construir.
+    <GuideEntityEmbed Entity="RMCGuidebookActionXenoToggleNodeType"/>
+  -[bold]Mejora a distancia[/bold]: Mejora a distancia las paredes y puertas de resina colocadas para convertirlas en versiones de resina gruesa.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoRemoteUpgrade"/>
+  -[bold]Eliminar nodos[/bold]: Elimina a distancia un nodo de diseño de la casilla seleccionada.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoRemoveNodes"/>
+  -[bold]Acciones heredadas[/bold]: Heredas todas las acciones de un Señor de la colmena normal, salvo transferir plasma y construir directamente con resina.
+
+  ##Jugar como Diseñador:
+  El Diseñador pertenece a la categoría: Apoyo/Contraavance
+
+  El objetivo general del Diseñador consiste en expandir la Colmena con ayuda de otras constructoras y beneficiarlas con una mayor velocidad de construcción o un menor coste. Hay muchas formas de pasar la ronda como Diseñador; estos son algunos ejemplos:
+
+
+  [bold]En solitario[/bold]
+  Esta opción no es recomendable, pues el Diseñador está pensado para cooperar con cualquiera. No obstante, si odias a todo el mundo o la Colmena carece de alguien que te ayude, puedes distribuir nodos de construcción y esperar a los marines. Después podrás usarlos para crear laberintos al instante para tus hermanas en retirada o para atrapar huéspedes.
+
+  [bold]Con otras constructoras[/bold]
+  Esta es la forma prevista de jugar con la cepa: cooperas con cualquier otra casta constructora. El modo de cooperar debe variar según «con quién» trabajes y «dónde»:
+
+  -[bold]Drones menores[/bold]: Al trabajar con drones menores, el uso de los nodos depende de la situación. Si estás cerca del frente y tienes drones menores intentando construir paredes o puertas, puedes ayudarlos colocando nodos optimizados y engrosando sus estructuras a distancia. Si estáis en un lugar seguro, usa nodos flexibles. Como los drones menores tienen pocas reservas de plasma, esto les permite construir más estructuras.
+  -[bold]Drones[/bold]: Si cooperas con drones, se recomienda usar nodos de velocidad para que construyan más deprisa; además, combinan bien con tu capacidad de engrosar estructuras a distancia. Como alternativa, los nodos de coste resultan algo más caros, pero reducen el uso de plasma en un 50%. Así, si engrosas sus estructuras y te quedas sin plasma, podrán darte el plasma ahorrado gracias a esos nodos.
+  -[bold]Señores de la colmena[/bold]: Esta opción depende de la situación. Se recomienda encarecidamente usar nodos flexibles, porque les permiten construir muchas más paredes y puertas de lo habitual. Los nodos optimizados solo son aconsejables cuando estás cerca del campo de batalla y necesitas levantar paredes con suma rapidez para frenar el avance enemigo.
+  -[bold]Reina[/bold]: Durante los primeros 30 minutos, la Reina no gasta plasma al construir, así que, si lo combinas con tus nodos optimizados, podréis levantar el doble de defensas. Cuando te quedes sin plasma, como la Reina no lo consume, podrá transferírtelo a distancia (salvo que otras hermanas estén muriendo a manos de los huéspedes del planeta). La situación cambia tras el despliegue: aún debes preferir los nodos de velocidad, pero, si a la Reina le escasean las reservas de plasma, conviene cambiar a nodos de coste cuando no haya otras constructoras cerca con las que cooperar.
+  -[bold]Otras castas con plasma[/bold]: Este es un caso especial, pues los nodos de construcción te permiten cooperar con cualquiera que tenga plasma. Sirven para crear paredes o puertas según el marcador que aparezca sobre ellos. Ten presente que quien aporte plasma creará variantes «ligadas a la maleza» que no pueden mejorarse y se romperán si desaparece la maleza; por tanto, es mejor recurrir a ellas en caso de emergencia o si no tienes cerca a nadie que te ayude. Puedes aportar tu propio plasma para construirlas, pero es preferible cooperar con alguien, porque pagas 70 de plasma para crear el nodo y otros 70 para que se construya por sí solo.
+
+</Document>

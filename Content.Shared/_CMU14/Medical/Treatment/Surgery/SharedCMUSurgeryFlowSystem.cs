@@ -34,6 +34,7 @@ using Content.Shared.Popups;
 using Content.Shared.Smoking;
 using Content.Shared.StatusEffectNew;
 using Robust.Shared.Configuration;
+using Robust.Shared.Localization;
 using Robust.Shared.Map;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
@@ -46,6 +47,7 @@ public abstract partial class SharedCMUSurgeryFlowSystem : EntitySystem
     [Dependency] protected IConfigurationManager Cfg = default!;
     [Dependency] protected IComponentFactory ComponentFactory = default!;
     [Dependency] protected INetManager Net = default!;
+    [Dependency] protected ILocalizationManager Localization = default!;
     [Dependency] protected IPrototypeManager Prototypes = default!;
     [Dependency] protected IGameTiming Timing = default!;
     [Dependency] protected SharedBodySystem Body = default!;
@@ -273,7 +275,9 @@ public abstract partial class SharedCMUSurgeryFlowSystem : EntitySystem
 
             CMUSurgeryStepMetadataEntry? stepMetadata = null;
             metadataByStep?.TryGetValue(stepId, out stepMetadata);
-            var label = stepMetadata?.Label ?? stepPrototype.Name;
+            var label = !string.IsNullOrWhiteSpace(stepMetadata?.Label)
+                ? stepMetadata.Label
+                : stepPrototype.Name;
             var toolCategory = stepMetadata is null
                 ? ResolveLegacyStepToolCategory(step)
                 : stepMetadata.ToolCategory;
@@ -290,6 +294,7 @@ public abstract partial class SharedCMUSurgeryFlowSystem : EntitySystem
                 stepId,
                 index,
                 label,
+                stepMetadata?.LabelLocId,
                 toolCategory,
                 organCondition,
                 reinsertOrganSlot);
@@ -303,12 +308,17 @@ public abstract partial class SharedCMUSurgeryFlowSystem : EntitySystem
         var validParts = metadata?.ValidParts.ToFrozenSet() ?? FrozenSet<BodyPartType>.Empty;
         var selfSurgeryValidParts = metadata?.SelfSurgeryValidParts.ToFrozenSet() ?? FrozenSet<BodyPartType>.Empty;
 
+        var displayName = !string.IsNullOrWhiteSpace(metadata?.DisplayName)
+            ? metadata.DisplayName
+            : surgeryPrototype.Name;
+
         return new CMUSurgeryDefinition(
             surgeryId,
             surgeryPrototype,
             surgery.Priority,
             requirement,
-            metadata?.DisplayName ?? surgeryPrototype.Name,
+            displayName,
+            metadata?.DisplayNameLocId,
             metadata?.Category ?? string.Empty,
             metadata?.MinSkill ?? 0,
             metadata?.AllowSelfSurgery ?? false,
@@ -540,6 +550,7 @@ public abstract partial class SharedCMUSurgeryFlowSystem : EntitySystem
         armed.TargetSymmetry = armedSymmetry;
         armed.RequiredToolCategory = resolved.ToolCategory;
         armed.StepLabel = resolved.StepLabel;
+        armed.StepLabelLocId = resolved.StepLabelLocId;
         armed.LeafSurgeryId = surgeryId;
         armed.AllowOptionalHemostasis = allowOptionalHemostasis;
         if (!preserveLeafProgress)
@@ -572,6 +583,9 @@ public abstract partial class SharedCMUSurgeryFlowSystem : EntitySystem
         var inFlight = EnsureComp<CMUSurgeryInFlightComponent>(part);
         inFlight.LeafSurgeryId = leafSurgeryId;
         inFlight.LeafSurgeryDisplayName = leafDisplayName;
+        inFlight.LeafSurgeryDisplayNameLocId = TryGetDefinition(leafSurgeryId, out var leafDefinition)
+            ? leafDefinition.DisplayNameLocId
+            : null;
         inFlight.Surgeon = surgeon;
         inFlight.SurgeonName = Name(surgeon);
         if (!alreadyInFlight)
@@ -1429,6 +1443,7 @@ public abstract partial class SharedCMUSurgeryFlowSystem : EntitySystem
             resolvedSurgeryProtoId,
             stepIdx,
             ResolveContextualStepLabel(step.Id, step.Label, targetPart),
+            step.LabelLocId,
             step.ToolCategory,
             definition.Steps.Length,
             // Gating prereq id only when the leaf surgery isn't the one
@@ -1774,6 +1789,7 @@ public abstract partial class SharedCMUSurgeryFlowSystem : EntitySystem
             step.ResolvedSurgeryId,
             step.StepIndex,
             step.StepLabel,
+            step.StepLabelLocId,
             step.ToolCategory,
             step.TotalSteps,
             step.ResolvedSurgeryId);
@@ -1791,6 +1807,7 @@ public abstract partial class SharedCMUSurgeryFlowSystem : EntitySystem
             surgeryId,
             stepIndex,
             ResolveContextualStepLabel(step.Id, step.Label, targetPart),
+            step.LabelLocId,
             step.ToolCategory,
             surgery.Steps.Length,
             null);
@@ -1964,8 +1981,18 @@ public abstract partial class SharedCMUSurgeryFlowSystem : EntitySystem
             // Surface the leaf the medic picked — SurgeryId may differ when
             // a prereq is currently being run.
             var leafId = string.IsNullOrEmpty(armed.LeafSurgeryId) ? armed.SurgeryId : armed.LeafSurgeryId;
-            string leafDisplayName = ResolveSurgeryDisplayName(leafId);
-            armedInfo = new CMUArmedStepInfo(armed.SurgeryId, leafDisplayName, armed.StepIndex, armed.StepLabel, armed.RequiredToolCategory);
+            var leafDisplayName = ResolveSurgeryDisplayName(leafId);
+            var leafDisplayNameLocId = TryGetDefinition(leafId, out var leafDefinition)
+                ? leafDefinition.DisplayNameLocId
+                : null;
+            armedInfo = new CMUArmedStepInfo(
+                armed.SurgeryId,
+                leafDisplayName,
+                armed.StepIndex,
+                armed.StepLabel,
+                armed.RequiredToolCategory,
+                leafDisplayNameLocId,
+                armed.StepLabelLocId);
         }
 
         CMUSurgeryInFlightInfo? inFlight = null;
@@ -1983,7 +2010,8 @@ public abstract partial class SharedCMUSurgeryFlowSystem : EntitySystem
                 flight.LeafSurgeryId,
                 flight.LeafSurgeryDisplayName,
                 flight.SurgeonName,
-                flight.StartedAt);
+                flight.StartedAt,
+                flight.LeafSurgeryDisplayNameLocId);
         }
 
         CMUSurgerySessionId? sessionId = null;
@@ -2018,6 +2046,21 @@ public abstract partial class SharedCMUSurgeryFlowSystem : EntitySystem
     {
         if (TryGetDefinition(surgeryId, out var definition))
             return definition.DisplayName;
+        return surgeryId;
+    }
+
+    public string LocalizeSurgeryDisplayName(string surgeryId)
+    {
+        if (TryGetDefinition(surgeryId, out var definition))
+        {
+            return CMUSurgeryLocalization.Resolve(
+                Localization,
+                definition.DisplayNameLocId,
+                definition.DisplayName,
+                definition.Prototype.Name,
+                surgeryId);
+        }
+
         return surgeryId;
     }
 

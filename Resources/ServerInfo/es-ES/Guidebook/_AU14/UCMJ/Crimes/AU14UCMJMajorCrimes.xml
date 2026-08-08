@@ -1,0 +1,37 @@
+﻿<Document>
+  # Delitos graves
+    Estos delitos revisten una gravedad elevada.
+
+  ## Alteración del orden
+    Interrumpir directa e intencionadamente las operaciones principales del grupo. Pelearse en la cola de Requisiciones o interrumpir de forma grave o reiterada la sesión informativa.
+      - 10 minutos.
+
+  ## Negligencia en el cumplimiento del deber
+    No desempeñar la función propia con un nivel aceptable. Por ejemplo, que un comandante no organice debidamente a su personal ni se asegure de que reciba órdenes, no seguir el procedimiento correcto en perjuicio de los propios deberes, o que la tripulación de la nave abandone la nave/instalación o su puesto sin autorización de su correspondiente jefe de departamento o del mando.
+      - 15 minutos.
+
+  ## Disposición indebida de bienes militares
+    Vender, regalar o proporcionar de cualquier otro modo bienes militares a civiles sin permiso del comandante.
+      - 15 minutos.
+
+  ## Agresión
+    Amenazar a alguien o ejercer fuerza física contra esa persona con intención maliciosa.
+      - 10 minutos, sin arma letal.
+      - 15 minutos, con arma letal.
+
+  ## Prevaricación
+    Ordenar intencionadamente el arresto de una persona bajo acusaciones falsas y que posteriormente sea declarada inocente, o imponer un NJP improcedente o abusivo. Esto incluye arrestar intencionadamente a una persona bajo acusaciones falsas por iniciativa propia y sin órdenes.
+      - 10 minutos
+
+  ## Homicidio involuntario
+    Matar a alguien sin intención maliciosa. Podrá aplicarse el homicidio involuntario si alguien muere como resultado de una pelea en la que no existía intención de matar.
+      - 15 minutos
+
+  ## Detención ilegal
+    Detener ilegalmente a una persona contra su voluntad. Incluye el secuestro, la toma de rehenes y el encierro de personas en celdas sin acusarlas de ningún delito. No se aplica a los prisioneros de guerra.
+      - 20 minutos.
+
+  ## Despliegue no autorizado
+    Desplegarse en la zona de operaciones sin permiso del mando correspondiente.
+      - 20 minutos.
+</Document>

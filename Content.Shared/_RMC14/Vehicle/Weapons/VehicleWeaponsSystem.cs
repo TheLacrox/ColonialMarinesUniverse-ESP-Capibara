@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Content.Shared._CMU14.Blackfoot;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Actions;
 using Content.Shared.Actions.Components;
 using Content.Shared._RMC14.Marines.Skills;
@@ -166,7 +167,12 @@ public sealed partial class VehicleWeaponsSystem : EntitySystem
 
     private void PopupRunawayFire(EntityUid vehicle, EntityUid gunUid)
     {
-        var message = $"{Name(gunUid)} discharges on its own!";
+        var gun = Name(gunUid);
+        var message = CMULocalization.GetTargetStringOrFallback(
+            Loc,
+            "cmu-rmc-vehicle-weapon-runaway-fire",
+            $"{gun} discharges on its own!",
+            ("gun", gun));
         var recipients = new HashSet<EntityUid>();
 
         if (TryComp(vehicle, out VehicleComponent? vehicleComp) && vehicleComp.Operator is { } driver)
@@ -365,14 +371,28 @@ public sealed partial class VehicleWeaponsSystem : EntitySystem
         if (!_hardpoints.IsHardpointFunctional(selectedWeapon))
         {
             args.Cancel();
-            _popup.PopupEntity("That hardpoint is too damaged to fire.", ent.Owner, ent.Owner, PopupType.SmallCaution);
+            _popup.PopupEntity(
+                CMULocalization.GetTargetStringOrFallback(
+                    Loc,
+                    "cmu-rmc-vehicle-weapon-too-damaged",
+                    "That hardpoint is too damaged to fire."),
+                ent.Owner,
+                ent.Owner,
+                PopupType.SmallCaution);
             return;
         }
 
         if (_hardpoints.ShouldVehicleGunMisfire(selectedWeapon))
         {
             args.Cancel();
-            _popup.PopupEntity("The hardpoint feed jams and the shot misfires.", ent.Owner, ent.Owner, PopupType.SmallCaution);
+            _popup.PopupEntity(
+                CMULocalization.GetTargetStringOrFallback(
+                    Loc,
+                    "cmu-rmc-vehicle-weapon-feed-misfire",
+                    "The hardpoint feed jams and the shot misfires."),
+                ent.Owner,
+                ent.Owner,
+                PopupType.SmallCaution);
             return;
         }
 

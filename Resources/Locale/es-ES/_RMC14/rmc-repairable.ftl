@@ -1,0 +1,9 @@
+rmc-repairable-need-blowtorch = ¡Necesitas un soplete más potente!
+rmc-repairable-not-damaged = {CAPITALIZE(THE($target))} no necesita reparaciones.
+rmc-repairable-too-damaged = {CAPITALIZE(THE($target))} ha sufrido demasiados daños estructurales para poder repararlo.
+rmc-repairable-not-trained = No tienes formación para reparar {THE($target)}...
+rmc-repairable-start-self = Empiezas a reparar {THE($target)}
+rmc-repairable-start-others = {$user} empieza a reparar {THE($target)}
+rmc-repairable-finish-self = Reparas {THE($target)}
+rmc-repairable-finish-others = {$user} repara {THE($target)}
+rmc-repairable-alt-repair = Reparar

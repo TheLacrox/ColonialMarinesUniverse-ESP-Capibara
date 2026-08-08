@@ -8,6 +8,7 @@ using Content.Server.GameTicking;
 using Content.Shared._RMC14.Rules;
 using Content.Shared.AU14.Util;
 using Content.Shared._CMU14.Threats;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.AU14.util;
 using Content.Shared.CharacterInfo;
 using Content.Shared.Inventory;
@@ -254,7 +255,9 @@ public sealed partial class CharacterInfoSystem : EntitySystem
             _prototypes.TryIndex(planetPrimerId, out LorePrimerPrototype? primer) &&
             !string.IsNullOrWhiteSpace(primer.PlanetText))
         {
-            lines.Add(primer.PlanetText);
+            // CMU14 - route the primer through the override catalog so es-ES can translate it.
+            lines.Add(CMUPrototypeLocalization.GetPrototypeText(
+                "lore-primer", primer.ID, "planet-text", primer.PlanetText));
             return;
         }
 
@@ -271,15 +274,22 @@ public sealed partial class CharacterInfoSystem : EntitySystem
             _prototypes.TryIndex(platoonPrimerId, out LorePrimerPrototype? primer) &&
             !string.IsNullOrWhiteSpace(primer.PlatoonInfo))
         {
-            var platoonInfo = primer.PlatoonInfo.Trim();
+            // CMU14 start - localize the primer body and the "Platoon:" label.
+            var platoonInfo = CMUPrototypeLocalization
+                .GetPrototypeText("lore-primer", primer.ID, "platoon-info", primer.PlatoonInfo)
+                .Trim();
             lines.Add(platoonInfo.StartsWith("Platoon:", StringComparison.OrdinalIgnoreCase)
                 ? platoonInfo
-                : $"Platoon: {platoonInfo}");
+                : Loc.GetString("cmu-lore-primer-platoon-line", ("info", platoonInfo)));
+            // CMU14 end
             return;
         }
 
         if (!string.IsNullOrWhiteSpace(platoon.Name))
-            lines.Add($"Platoon: {platoon.Name}");
+        {
+            var name = CMUPrototypeLocalization.GetPrototypeText("platoon", platoon.ID, "name", platoon.Name);
+            lines.Add(Loc.GetString("cmu-lore-primer-platoon-line", ("info", name))); // CMU14
+        }
     }
 
     private bool IsThreatMind(MindComponent mind)

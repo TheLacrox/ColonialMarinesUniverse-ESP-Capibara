@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Content.Shared.Body.Part;
+using Robust.Shared.Localization;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared._CMU14.Medical.Treatment.Surgery;
@@ -107,7 +108,9 @@ public sealed record CMUAutodocQueueEntry(
     string Category,
     int StepIndex,
     string StepLabel,
-    float DurationSeconds);
+    float DurationSeconds,
+    LocId? SurgeryDisplayNameLocId = null,
+    LocId? StepLabelLocId = null);
 
 [Serializable, NetSerializable]
 public sealed class CMUAutodocQueueStepMessage : BoundUserInterfaceMessage

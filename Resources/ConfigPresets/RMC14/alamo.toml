@@ -2,11 +2,11 @@
 server_name = "alamo"
 
 [game]
-desc = "Join and play as a marine, responding to a mysterious distress signal, or a xenonid, building out your hive and defending it from the marines."
-hostname = "[EN][MRP] Rouny's Marine Corps Alamo [US East]"
+desc = "Únete y juega como marine, respondiendo a una misteriosa señal de socorro, o como xenónido, expandiendo tu colmena y defendiéndola de los marines."
+hostname = "[ES][RP MEDIO] Cuerpo de Marines de Rouny: Alamo [Este de EE. UU.]"
 
 [hub]
-tags = "lang:en,region:am_n_e,rp:med"
+tags = "lang:es,region:am_n_e,rp:med"
 
 [loki]
 name = "alamo"

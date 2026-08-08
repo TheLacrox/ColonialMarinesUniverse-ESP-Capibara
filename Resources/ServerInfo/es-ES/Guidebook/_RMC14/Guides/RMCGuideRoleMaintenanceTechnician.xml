@@ -1,0 +1,79 @@
+﻿<Document>
+  Guía de Kynthos en Discord
+
+  [color=#5f698a]█    █ █▄ █[/color] [head=2][bold]UNITED NATIONS MARINE CORPS[/bold][/head]\n
+  [color=#5f698a]▀ ▄▀ █ ▀█ [/color]
+
+  ##Técnico de mantenimiento
+
+  El técnico de mantenimiento forma parte del departamento de Ingeniería de la nave. Su trabajo principal consiste en mantener la integridad de la nave, desde las complejas labores de ingeniería necesarias para conservar el suministro eléctrico hasta las tareas rutinarias de mantener limpios los pasillos. Con la autorización adecuada, puede encargarse de distintos proyectos de construcción, tanto en la nave como en la AO. Se espera que lleves a cabo las siguientes tareas:
+
+  #Mantenimiento del suministro eléctrico
+
+  El Almayer necesita generadores para disponer de electricidad.
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCGeneratorFusion"/>
+    <GuideEntityEmbed Entity="RMCGeneratorFusionColony"/>
+  </Box>
+
+  A bordo del Almayer, los [bold]reactores de fusión S-52[/bold] suministran la electricidad. Al inicio de cada operación están encendidos y plenamente operativos, y en la mayoría de los casos seguirán funcionando perfectamente aunque nadie los atienda.
+
+    #Recarga del cañón orbital
+
+    La proa del Almayer alberga el devastador cañón orbital, empleado para hacer llover fuego sobre los enemigos de la UNMC. Los técnicos de mantenimiento son responsables directos de mantenerlo en nombre del CIC y pueden acceder a él por los túneles de mantenimiento cercanos. Esta tarea solo debe realizarse por orden directa del comandante de la operación, para garantizar que se cargue la bomba correcta.
+
+    Al inicio, habrá ojivas aleatorias cerca del cañón orbital del Almayer, además de abundantes depósitos de combustible sólido para alimentar la máquina. El mando dispondrá de medios para obtener más ojivas si hacen falta.
+
+    Pueden pedirte que cargues varios tipos de bomba; examínala para confirmar el tipo de carga.
+
+    Tras confirmar el tipo de carga con el comandante, usa la consola del cañón orbital para determinar cuánto combustible hará falta para lanzarla. La cantidad variará entre operaciones.
+
+    Usa un cargador mecánico para transportar la ojiva y el número correcto de depósitos de combustible sólido e introducirlos en el cañón orbital. La consola del cañón mostrará lo que se ha cargado por si lo olvidas. Una vez cargado el cañón, usa la consola para introducir la carga y, después, colocarla en la recámara.
+
+    [bold]Aunque una carga introducida puede retirarse, una vez colocada en la recámara solo puede sacarse disparando el cañón.[/bold]
+
+    Al terminar, avisa a tus superiores, pues solo ellos tienen autorización para disparar un arma tan brutal. Hasta que haya que volver a cargar el cañón, tu trabajo aquí habrá concluido.
+
+  #Construcción de la FOB
+
+  Puede ser necesario enviar temporalmente a personal de la nave para construir y mantener la base de operaciones avanzada en la AO. Si ocurre, mantén un contacto constante con el ingeniero jefe, que asignará las tareas y velará por tu seguridad. Los trabajos peligrosos deben dejarse en manos de los técnicos de combate.
+
+  #Hackeo
+
+  En una emergencia o con la autorización correspondiente, quizá tengas que hackear obstáculos para acceder a una zona inaccesible. Para cualquier tarea de hackeo, debes llevar [bold]guantes aislantes[/bold], además de un destornillador, un cortaalambres y un sintonizador de accesos de seguridad. Para empezar:
+
+  <Box>
+    <GuideEntityEmbed Entity="CMHandsInsulated"/>
+    <GuideEntityEmbed Entity="CMScrewdriver"/>
+    <GuideEntityEmbed Entity="CMMultitool"/>
+  </Box>
+
+  - Usa un destornillador para abrir el panel de mantenimiento.
+  - Accede a la máquina para abrir el panel de cables.
+  - [bold]Mientras llevas puestos los guantes aislantes[/bold], usa un sintonizador de accesos de seguridad o un cortaalambres para enviar un pulso o cortar y reparar los cables, respectivamente. Cada cable corresponde a una función de la máquina que estás hackeando; al interactuar con él, desactivarás o alterarás el funcionamiento de esa función. Los cables que controlan cada función cambian entre operaciones.
+  - Cuando termines, usa un destornillador para cerrar el panel de mantenimiento.
+
+  La mayoría de las tareas de hackeo se realizan en puertas y máquinas expendedoras. Las aplicaciones más habituales son:
+
+  - [Bold]Bloquear o desbloquear una puerta con pernos[/bolt]: Para bloquear una puerta basta con enviar un pulso al cable que alimenta los pernos o cortarlo. Para desbloquearla, tendrás que reparar los cables de alimentación y después enviar un pulso al cable que controla los pernos. Reparar el cable no desbloqueará la puerta.
+  - [bold]Hackear una puerta para abrirla[/bold]: Para abrir una puerta a la que no tienes acceso, corta los dos cables que controlan su alimentación. Después usa una palanca para forzar la puerta sin corriente. Enviar un pulso a uno de los cables de alimentación desactivará temporalmente la corriente de la puerta.
+  - [bold]Acceder a una máquina expendedora bloqueada[/bold]: Para acceder a una máquina expendedora sin autorización, corta el cable que controla la comprobación de acceso de la ID; así cualquiera podrá obtener objetos. Si, en vez de cortarlo, envías un pulso, la comprobación de la ID solo se desactivará temporalmente.
+
+
+
+  Para conocer más secretos de hackeo, pregunta a otros técnicos de mantenimiento o a tu supervisor directo, el ingeniero jefe.
+
+  #Trabajos que nadie más quiere hacer
+
+  Entre las muchas tareas rutinarias que se te encomendarán están cambiar luces, recoger basura y reparar actos vandálicos. Todo forma parte del mantenimiento. Si te cansas, siempre puedes pedir autorización para hacer algo más creativo o recorrer los pasillos del Almayer hasta que surja una oportunidad.
+
+  Cuando domines tus conocimientos de Ingeniería, prueba a alistarte como [textlink="técnico de combate" link="RMCGuideRoleCombatTechnician"].
+
+  Si alguna vez no sabes qué hacer o adónde ir, busca al asesor superior de tropa para que te ayude.
+
+  <Box>
+    <GuideEntityEmbed Entity="CMGuidebookRoleSEA"/>
+  </Box>
+
+</Document>

@@ -1,0 +1,113 @@
+<Document>
+  # Especialista francotirador: la solución a larga distancia
+
+  ## Precisión, paciencia, potencia
+  Dificultad: [color=#4CAF50]Media-alta[/color]
+
+  Esta guía abarca tanto al francotirador antimaterial como al especialista francotirador.
+
+  Así que has elegido al especialista francotirador, ¿o vas a asumir el vital papel de observador? ¡Estupendo! Estás a punto de convertirte en un recurso esencial del campo de batalla, capaz de detener avances xenónidos, eliminar objetivos de alto valor e infundir una dosis saludable de miedo al enemigo. Empecemos, ¿te parece?
+
+  # Equipo del francotirador
+  Al abrir el kit de especialista, encontrarás varias piezas de equipo esenciales:
+  <Box><GuideEntityEmbed Entity="CMM96SSniperRifle"/> <GuideEntityEmbed Entity="RMCXM43E1AntiMaterielRifle"/> <GuideEntityEmbed Entity="CMGlassesM42ScoutSight"/></Box>
+
+  # Equipo del observador
+  <GuideEntityEmbed Entity="RMCKitSpotter"/>
+  <Box>Si asumes el papel crucial de observador, tu kit contendrá el siguiente equipo importante:</Box>
+  <Box><GuideEntityEmbed Entity="CMPamphletSpotter"/> <GuideEntityEmbed Entity="RMCLaserDesignatorSpotter"/> <GuideEntityEmbed Entity="CMGlassesM42ScoutSight"/></Box>
+
+  ## Comprender el disparo apuntado & sus mejoras: la base del oficio
+
+  El disparo apuntado es tu habilidad distintiva. Si completas su preparación y disparas con éxito, causa mucho daño y, sobre todo, aplica un [color=#ADD8E6][bold]perjuicio[/bold][/color] al objetivo que depende de la munición. Este perjuicio funciona contra [italic]CUALQUIER[/italic] objetivo, incluidas Reinas y xenónidos de nivel 3.
+
+  Tanto el láser de puntería del francotirador como la habilidad «Designar» del observador mejoran el disparo apuntado reduciendo su tiempo de preparación, al igual que hace una menor distancia al objetivo:
+
+  <Box>[bold]Láser de puntería del francotirador[/bold]:</Box>
+  -   Al activarlo, aparece un [color=#FF0000]haz láser rojo muy visible[/color] que te une al objetivo.
+  -   [italic]Ventaja[/italic]: reduce en un 50% el tiempo de preparación del disparo apuntado (lo divide por la mitad).
+  -   [italic]Inconveniente[/italic]: revela claramente al enemigo tu posición y tu objetivo.
+
+  <Box>[bold]Habilidad «Designar» del observador[/bold]:</Box>
+  -   Cuando un observador «designa» un objetivo, una [color=#FFA500]línea naranja[/color] une al observador con él si el primero está visible.
+  -   [color=#00FF00]Lo más importante: si el observador está camuflado, el láser de designación hereda la transparencia del camuflaje, por lo que resulta invisible y no revela su posición.[/color]
+
+  ### Controles del francotirador
+
+  Cuando sostengas el rifle de francotirador, tendrás acceso a dos botones adicionales en la interfaz:
+  -   [italic]Disparo apuntado[/italic]: inicia el potente disparo concentrado que constituye tu principal herramienta de daño y perjuicios.
+  -   [italic]Alternar láser[/italic]: activa un haz láser visible desde el rifle hasta el objetivo y acelera mucho el disparo apuntado.
+  -   Cuando Disparo apuntado esté activo en la barra de acceso rápido, usa [color=#FFA500][keybind="CMUniqueAction"][/color] para iniciar la preparación. Su velocidad dependerá de si el observador estaba designando el objetivo y de si tenías activado el láser. Al terminar, dispararás contra él un proyectil teledirigido.
+
+  ### Controles del observador
+
+  Como observador que utiliza el designador, dispones de una habilidad esencial:
+  -   [italic]Designar blanco[/italic]: marca a un enemigo y ayuda al francotirador al permitirle usar Disparo apuntado con mayor rapidez.
+  -   Cuando Designar blanco esté activo en la barra de acceso rápido, usa [color=#FFA500][keybind="CMUniqueAction"][/color] para empezar a designarlo para tu francotirador.
+
+  ## El traje ghillie: ¡conviértete en un baluarte invisible!
+  <GuideEntityEmbed Entity="CMArmorM45"/>
+  Tanto el francotirador como el observador pueden usar el traje ghillie, un camuflaje avanzado que es mucho más que un atuendo bonito.
+
+  -   [bold]Modo de sigilo inmóvil[/bold]: tras un [color=#FFA500]breve tiempo de preparación[/color], si permaneces [color=#ADD8E6]completamente quieto[/color], te vuelves [italic]invisible[/italic] para todo el mundo. Si te mueves, vuelves a ser visible.
+  -   [color=#00FF00][bold]¡Paso fantasmal![/bold][/color]: mientras estés invisible e inmóvil, las balas [italic]te atravesarán[/italic] como si no estuvieras allí. ¡Ya no bloquearás los disparos desde tu posición avanzada!
+  -   [bold]Usos tácticos[/bold]:
+  -   Establece [color=#DAA520]posiciones avanzadas atrevidas[/color] para disparar u observar.
+  -   Conviértete en el [color=#FF6347]eje invisible[/color] de una emboscada.
+  -   Cubre [color=#ADD8E6]ángulos inesperados[/color] durante la defensa.
+  -   [bold]¡Atención![/bold]: si te descubren mientras permaneces quieto, estarás atrapado. No sirve para escapar al instante.
+
+  ## Rifle de francotirador M96S & munición
+
+  El rifle de francotirador estándar está diseñado para realizar desde lejos disparos precisos e incapacitantes con munición especializada. Destaca al controlar los movimientos del enemigo y aplicar potentes efectos de estado a objetivos clave.
+
+  <Box> Tipos de munición & efectos en el disparo apuntado: </Box>
+  <Box>[bold]Munición de metralla[/bold]</Box>
+  -Disparo normal: causa daño directo y daño disperso en área a las entidades cercanas, por lo que resulta especialmente eficaz contra grupos o xenónidos.
+  -Efecto del disparo apuntado: si alcanza al blanco designado, causa más daño y aplica un potente perjuicio de [color=#ADD8E6]RALENTIZACIÓN EXTREMA[/color] que limita gravemente su movimiento.
+  <Box>[bold]Munición incendiaria[/bold]</Box>
+  -Disparo normal: causa daño directo y prende fuego a los objetivos con [color=#FFA500]llamas intensas[/color].
+  -Efecto del disparo apuntado: aplica efectos de fuego adicionales al objetivo y [color=#B0B0B0]le dificulta temporalmente la visión[/color].
+  <Box>[bold]Munición de tirador[/bold]</Box>
+  -Disparo normal: causa un daño perforante fiable.
+  -Efecto del disparo apuntado: eleva el daño hasta niveles asombrosos y permite eliminar con facilidad cualquier amenaza.
+
+  ## Rifle antimaterial XM43E1 & munición
+
+  Un rifle antimaterial diseñado para atravesar obstáculos y varios enemigos, capaz de asestar golpes devastadores que resultan especialmente eficaces contra las amenazas más grandes y resistentes.
+
+  <Box>Munición de tirador & efectos:</Box>
+  <Box>[bold]Disparo normal[/bold]:</Box>
+  -Realiza un disparo de daño muy elevado y gran penetración de blindaje.
+  -Los proyectiles pueden atravesar varios objetivos y coberturas. Cada entidad u obstáculo alcanzado reduce el daño posterior y el alcance efectivo del proyectil.
+  -Los objetivos más grandes o resistentes y los obstáculos más densos reducen el daño y el alcance de forma más acusada.
+  <Box>[bold]Efecto del disparo apuntado[/bold]:</Box>
+  -Además de su elevado daño básico (tras tener en cuenta la penetración), el disparo apuntado inflige [italic]mucho daño adicional[/italic].
+  -Este daño adicional suele aumentar según el tamaño y la salud actual del objetivo, lo que lo vuelve especialmente eficaz contra enemigos grandes y con mucha salud, como los xenónidos T3 o las Reinas; a menudo inflige como daño adicional un porcentaje considerable de su salud actual.
+  -[bold]Bonificación por impactos consecutivos:[/bold] acertar repetidamente al [italic]mismo objetivo[/italic] con disparos apuntados puede aumentar la potencia de este daño adicional, lo que recompensa mantener la atención sobre un único enemigo de alto valor. Acertar a otro objetivo reinicia este aumento progresivo del daño.
+
+  ## Tácticas generales del francotirador & el observador
+
+  -   [bold]El guiado facilita la puntería, pero la posición sigue siendo esencial[/bold]: aunque los disparos apuntados [color=#00FF00]se guían solos hacia el objetivo[/color], sigue siendo [color=#ADD8E6]esencial para combatir con eficacia[/color] elegir una buena posición inicial que ofrezca una línea de visión despejada y permita controlar el tiempo de apuntado, en el que influye la distancia.
+  -   [bold]Comprende la finalidad de la munición[/bold]:
+  -   Francotirador estándar: [color=#FFA500]usa metralla por su potente efecto ralentizador contra objetivos clave o munición incendiaria para causar daño de fuego prolongado y dificultar la visión. Elige según el resultado táctico que busques.[/color]
+  -   Francotirador pesado: [color=#FF6347]tu disparo apuntado está diseñado para incapacitar o eliminar a los enemigos más resistentes. Céntrate en acumular la bonificación por impactos consecutivos contra ellos. Comprende cómo afecta la penetración a los disparos cuando te enfrentes a grupos o coberturas.[/color]
+  -   [bold]Paciencia & oportunidad («la estrategia de ESPERAR»)[/bold]: [color=#ADD8E6]dejar que el enemigo avance demasiado para después atacarlo con un disparo apuntado incapacitante sigue siendo una táctica esencial y muy eficaz.[/color] Los proyectiles teledirigidos vuelven más fiables estas oportunidades decisivas.
+  -   [bold]Priorización estratégica de objetivos[/bold]:
+  -   Francotirador estándar: [color=#FFA500]¿qué perjuicio (ralentización extrema o fuego y visión borrosa) resulta más valioso para tu equipo en este momento?[/color]
+  -   Francotirador pesado: [color=#FF6347]¿conviene mantener el fuego sobre un T3 herido para maximizar la bonificación por impactos consecutivos, o cambiar a una amenaza nueva e inmediata? Valora cuándo debes disparar a través de enemigos menores para alcanzar a un objetivo situado detrás.[/color]
+  -   [bold]Uso prudente del láser de puntería del francotirador[/bold]: el láser del francotirador [color=#FFD700]acelera mucho los disparos apuntados, pero un haz claro revela su posición[/color]. Úsalo cuando la velocidad sea más importante que el sigilo o si el enemigo ya conoce tu ubicación aproximada.
+  -   [bold]El poder de un observador camuflado[/bold]: si el observador logra mantenerse oculto, poder reducir el tiempo de apuntado del francotirador [color=#00FF00]sin revelar su propia posición supone una ventaja táctica considerable[/color].
+
+  ## Reflexiones finales: muerte desde la distancia
+
+  Dominar el puesto de francotirador, ya sea en su versátil variante estándar o en la devastadora variante pesada, exige precisión, paciencia y una aguda conciencia táctica. No son puestos para personas impulsivas: recompensan los métodos sistemáticos, una selección cuidadosa de objetivos y una coordinación perfecta con el observador y el resto del equipo.
+
+  La capacidad de frenar un avance enemigo con un disparo de metralla bien colocado, abrasar hostiles con una carga incendiaria o vaporizar un objetivo de alto valor con un proyectil de tirador penetrante del XM43E1 puede cambiar por sí sola el curso de un enfrentamiento. Recuerda cuánto vale tu observador: multiplica tu fuerza, aporta un segundo par de ojos y resulta esencial para aprovechar la máxima velocidad de ataque del rifle.
+
+  Así que empuña el rifle, calibra la mira y comunícate con el equipo. Tanto si proporcionas vigilancia como si eliminas amenazas esenciales o actúas como potente elemento de disuasión psicológica, tu impacto desde lejos será innegable. Mantente alerta, ten paciencia y haz que cada disparo cuente.
+
+  Buena caza, francotirador.
+
+
+</Document>

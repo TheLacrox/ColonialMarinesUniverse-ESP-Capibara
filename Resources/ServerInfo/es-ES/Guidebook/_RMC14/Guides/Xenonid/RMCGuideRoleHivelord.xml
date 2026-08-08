@@ -1,0 +1,26 @@
+<Document>
+  #Señor de la colmena, nivel 2
+  <GuideEntityEmbed Entity="CMXenoHivelord"/>
+  ##Jugar como Señor de la colmena
+  Como Dron superior, puedes construir estructuras de resina gruesa a mayor velocidad. Ten cuidado al trabajar en el frente, pues las explosiones y el escupitajo del cielo (apoyo aéreo cercano) pueden matarte con facilidad. Quizá sea mejor trabajar en la retaguardia, ya que los Señores de la colmena también se desplazan deprisa sobre resina mediante su habilidad Caminante de resina.
+
+  Los Señores de la colmena también son excelentes placando, por lo que resultan competentes en el frente si algún huésped entra en su maleza.
+
+  ##Habilidades:
+  - [bold]Plantar maleza[/bold]: Coloca un nodo de resina que extiende maleza por una zona amplia.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoPlantWeeds"/>
+  - [bold]Elegir estructura de resina[/bold]: Elige qué estructura de resina crear para usarla después con Secretar resina.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoChooseResinStructure"/>
+  - [bold]Secretar resina[/bold]: Secreta la estructura de resina elegida en cualquier casilla sobre la que hagas clic.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoSecreteResin"/>
+  - [bold]Ordenar construcción[/bold]: Ordena que se construya una estructura de la Colmena.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoOrderConstruction"/>
+  - [bold]Transferir plasma[/bold]: Transfiere plasma de tu reserva a una hermana; es una versión mejorada.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoTransferPlasma"/>
+  - [bold]Ácido corrosivo[/bold]: Secreta sobre los objetos un glóbulo de ácido que los disuelve.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoCorrosiveAcid"/>
+  - [bold]Emitir feromonas[/bold]: Emite uno de los tres tipos de feromonas. Su intensidad depende de la casta y no se acumula con feromonas del mismo tipo.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoPheromones"/>
+  - [bold]Caminante de resina[/bold]: Aumenta tu velocidad mientras estás sobre resina, pero consume tu plasma con rapidez.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoResinWalker"/>
+</Document>

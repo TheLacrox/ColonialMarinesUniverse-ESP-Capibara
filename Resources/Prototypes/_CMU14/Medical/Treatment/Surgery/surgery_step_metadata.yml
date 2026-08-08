@@ -4,6 +4,7 @@
   id: CMUSurgeryStepMetaSetSimpleFracture
   surgery: CMUSurgerySetSimpleFracture
   displayName: Set Fracture
+  displayNameLocId: cmu-medical-surgery-procedure-set-fracture
   validParts: [Arm, Hand, Leg, Foot]
   allowSelfSurgery: true
   selfSurgeryValidParts: [Arm, Hand, Leg, Foot]
@@ -13,6 +14,7 @@
   id: CMUSurgeryStepMetaSetSimpleFractureCavity
   surgery: CMUSurgerySetSimpleFractureCavity
   displayName: Set Fracture
+  displayNameLocId: cmu-medical-surgery-procedure-set-fracture
   validParts: [Head, Torso]
   category: fracture
 
@@ -20,6 +22,7 @@
   id: CMUSurgeryStepMetaSetCompoundFracture
   surgery: CMUSurgerySetCompoundFracture
   displayName: Set Fracture
+  displayNameLocId: cmu-medical-surgery-procedure-set-fracture
   validParts: [Arm, Hand, Leg, Foot]
   allowSelfSurgery: true
   selfSurgeryValidParts: [Arm, Hand, Leg, Foot]
@@ -29,6 +32,7 @@
   id: CMUSurgeryStepMetaSetCompoundFractureCavity
   surgery: CMUSurgerySetCompoundFractureCavity
   displayName: Set Fracture
+  displayNameLocId: cmu-medical-surgery-procedure-set-fracture
   validParts: [Head, Torso]
   category: fracture
 
@@ -36,6 +40,7 @@
   id: CMUSurgeryStepMetaSetShatteredFracture
   surgery: CMUSurgerySetShatteredFracture
   displayName: Set Fracture
+  displayNameLocId: cmu-medical-surgery-procedure-set-fracture
   validParts: [Arm, Hand, Leg, Foot]
   allowSelfSurgery: true
   selfSurgeryValidParts: [Arm, Hand, Leg, Foot]
@@ -45,6 +50,7 @@
   id: CMUSurgeryStepMetaSetShatteredFractureCavity
   surgery: CMUSurgerySetShatteredFractureCavity
   displayName: Set Fracture
+  displayNameLocId: cmu-medical-surgery-procedure-set-fracture
   validParts: [Head, Torso]
   category: fracture
 
@@ -54,6 +60,7 @@
   id: CMUSurgeryStepMetaCauterizeInternalBleeding
   surgery: CMUSurgeryCauterizeInternalBleeding
   displayName: Stop Internal Bleeding
+  displayNameLocId: cmu-medical-surgery-procedure-stop-internal-bleeding
   validParts: [Head, Torso, Arm, Hand, Leg, Foot]
   allowSelfSurgery: true
   selfSurgeryValidParts: [Arm, Hand, Leg, Foot]
@@ -65,6 +72,7 @@
   id: CMUSurgeryStepMetaRemoveLiver
   surgery: CMUSurgeryRemoveLiver
   displayName: Remove Liver
+  displayNameLocId: cmu-medical-surgery-procedure-remove-liver
   validParts: [Torso]
   category: remove_organ
   minSkill: 2
@@ -73,6 +81,7 @@
   id: CMUSurgeryStepMetaRemoveLung
   surgery: CMUSurgeryRemoveLung
   displayName: Remove Lungs
+  displayNameLocId: cmu-medical-surgery-procedure-remove-lungs
   validParts: [Torso]
   category: remove_organ
   minSkill: 2
@@ -81,6 +90,7 @@
   id: CMUSurgeryStepMetaRemoveKidney
   surgery: CMUSurgeryRemoveKidney
   displayName: Remove Kidneys
+  displayNameLocId: cmu-medical-surgery-procedure-remove-kidneys
   validParts: [Torso]
   category: remove_organ
   minSkill: 2
@@ -89,6 +99,7 @@
   id: CMUSurgeryStepMetaRemoveHeart
   surgery: CMUSurgeryRemoveHeart
   displayName: Remove Heart
+  displayNameLocId: cmu-medical-surgery-procedure-remove-heart
   validParts: [Torso]
   category: remove_organ
   minSkill: 2
@@ -97,6 +108,7 @@
   id: CMUSurgeryStepMetaRemoveStomach
   surgery: CMUSurgeryRemoveStomach
   displayName: Remove Stomach
+  displayNameLocId: cmu-medical-surgery-procedure-remove-stomach
   validParts: [Torso]
   category: remove_organ
   minSkill: 2
@@ -107,6 +119,7 @@
   id: CMUSurgeryStepMetaReplaceLiver
   surgery: CMUSurgeryReplaceLiver
   displayName: Replace Liver
+  displayNameLocId: cmu-medical-surgery-procedure-replace-liver
   validParts: [Torso]
   category: transplant
   minSkill: 2
@@ -115,6 +128,7 @@
   id: CMUSurgeryStepMetaReplaceLung
   surgery: CMUSurgeryReplaceLung
   displayName: Replace Lungs
+  displayNameLocId: cmu-medical-surgery-procedure-replace-lungs
   validParts: [Torso]
   category: transplant
   minSkill: 2
@@ -123,6 +137,7 @@
   id: CMUSurgeryStepMetaReplaceKidney
   surgery: CMUSurgeryReplaceKidney
   displayName: Replace Kidneys
+  displayNameLocId: cmu-medical-surgery-procedure-replace-kidneys
   validParts: [Torso]
   category: transplant
   minSkill: 2
@@ -131,6 +146,7 @@
   id: CMUSurgeryStepMetaTransplantHeart
   surgery: CMUSurgeryTransplantHeart
   displayName: Transplant Heart
+  displayNameLocId: cmu-medical-surgery-procedure-transplant-heart
   validParts: [Torso]
   category: transplant
   minSkill: 2
@@ -139,6 +155,7 @@
   id: CMUSurgeryStepMetaReplaceStomach
   surgery: CMUSurgeryReplaceStomach
   displayName: Replace Stomach
+  displayNameLocId: cmu-medical-surgery-procedure-replace-stomach
   validParts: [Torso]
   category: transplant
   minSkill: 2
@@ -149,6 +166,7 @@
   id: CMUSurgeryStepMetaRepairLiver
   surgery: CMUSurgeryRepairLiver
   displayName: Suture Liver
+  displayNameLocId: cmu-medical-surgery-procedure-suture-liver
   validParts: [Torso]
   category: suture
   minSkill: 2
@@ -157,6 +175,7 @@
   id: CMUSurgeryStepMetaRepairLungs
   surgery: CMUSurgeryRepairLungs
   displayName: Suture Lungs
+  displayNameLocId: cmu-medical-surgery-procedure-suture-lungs
   validParts: [Torso]
   category: suture
   minSkill: 2
@@ -165,6 +184,7 @@
   id: CMUSurgeryStepMetaRepairKidneys
   surgery: CMUSurgeryRepairKidneys
   displayName: Suture Kidneys
+  displayNameLocId: cmu-medical-surgery-procedure-suture-kidneys
   validParts: [Torso]
   category: suture
   minSkill: 2
@@ -173,6 +193,7 @@
   id: CMUSurgeryStepMetaRepairHeart
   surgery: CMUSurgeryRepairHeart
   displayName: Suture Heart
+  displayNameLocId: cmu-medical-surgery-procedure-suture-heart
   validParts: [Torso]
   category: suture
   minSkill: 2
@@ -181,6 +202,7 @@
   id: CMUSurgeryStepMetaRepairStomach
   surgery: CMUSurgeryRepairStomach
   displayName: Suture Stomach
+  displayNameLocId: cmu-medical-surgery-procedure-suture-stomach
   validParts: [Torso]
   category: suture
   minSkill: 2
@@ -191,6 +213,7 @@
   id: CMUSurgeryStepMetaRepairBrain
   surgery: CMUSurgeryRepairBrain
   displayName: Repair Brain
+  displayNameLocId: cmu-medical-surgery-procedure-repair-brain
   validParts: [Head]
   category: head_organ
   minSkill: 2
@@ -199,6 +222,7 @@
   id: CMUSurgeryStepMetaRepairEyes
   surgery: CMUSurgeryRepairEyes
   displayName: Repair Eyes
+  displayNameLocId: cmu-medical-surgery-procedure-repair-eyes
   validParts: [Head]
   category: head_organ
   minSkill: 2
@@ -209,33 +233,40 @@
   id: CMUSurgeryStepMetaRemoveLimb
   surgery: CMUSurgeryRemoveLimb
   displayName: Remove Limb
+  displayNameLocId: cmu-medical-surgery-procedure-remove-limb
   validParts: [Arm, Leg]
   category: amputation
   minSkill: 2
   steps:
   - stepId: CMUSurgeryStepAmputateLimb
     label: Amputate Limb
+    labelLocId: cmu-medical-surgery-step-amputate-limb-label
     toolCategory: bone_saw
 
 - type: cmuSurgeryStepMetadata
   id: CMUSurgeryStepMetaReattachLimb
   surgery: CMUSurgeryReattachLimb
   displayName: Reattach Limb
+  displayNameLocId: cmu-medical-surgery-procedure-reattach-limb
   validParts: [Arm, Hand, Leg, Foot]
   category: reattach
   minSkill: 2
   steps:
   - stepId: CMUSurgeryStepRemoveStump
     label: Trim Necrotic Stump
+    labelLocId: cmu-medical-surgery-step-trim-necrotic-stump-label
     toolCategory: bone_saw
   - stepId: CMUSurgeryStepPrepReattachSocket
     label: Prep Reattachment Socket
+    labelLocId: cmu-medical-surgery-step-prep-reattachment-socket-label
     toolCategory: hemostat
   - stepId: CMUSurgeryStepReattachLimb
     label: Reattach Limb
+    labelLocId: cmu-medical-surgery-step-reattach-limb-label
     toolCategory: severed_limb
   - stepId: CMUSurgeryStepCloseReattach
     label: Close Incision
+    labelLocId: cmu-medical-surgery-step-close-incision-label
     toolCategory: cautery
 
 # ---- Larva extraction (torso only) ----------------------------------
@@ -244,6 +275,7 @@
   id: CMUSurgeryStepMetaAlienEmbryoRemoval
   surgery: CMUSurgeryAlienEmbryoRemoval
   displayName: Remove Larva
+  displayNameLocId: cmu-medical-surgery-procedure-remove-larva
   validParts: [Torso]
   category: parasite
   minSkill: 2
@@ -254,6 +286,7 @@
   id: CMUSurgeryStepMetaDebrideEschar
   surgery: CMUSurgeryDebrideEschar
   displayName: Debride Eschar
+  displayNameLocId: cmu-medical-surgery-procedure-debride-eschar
   validParts: [Head, Torso, Arm, Hand, Leg, Foot]
   allowSelfSurgery: true
   selfSurgeryValidParts: [Arm, Hand, Leg, Foot]
@@ -261,4 +294,5 @@
   steps:
   - stepId: CMUSurgeryStepDebrideEschar
     label: Debride Eschar
+    labelLocId: cmu-medical-surgery-step-debride-eschar-label
     toolCategory: scalpel_or_burn_kit

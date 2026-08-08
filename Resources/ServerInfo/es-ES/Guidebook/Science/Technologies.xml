@@ -1,0 +1,20 @@
+<Document>
+# Tecnologías
+
+Todas las tecnologías tienen un coste y un requisito de nivel para poder investigarse. Desbloquearlas añade distintas recetas que pueden imprimirse en diversos tornos.
+
+A continuación se enumeran las distintas tecnologías y sus disciplinas correspondientes.
+
+## Industrial
+<GuideTechDisciplineEmbed Discipline="Industrial"/>
+
+## Arsenal
+<GuideTechDisciplineEmbed Discipline="Arsenal"/>
+
+## Experimental
+<GuideTechDisciplineEmbed Discipline="Experimental"/>
+
+## Servicios civiles
+<GuideTechDisciplineEmbed Discipline="CivilianServices"/>
+
+</Document>

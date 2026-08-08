@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Content.Shared.Body.Part;
-using Robust.Shared.Prototypes;
+using Robust.Shared.GameStates;
+using Robust.Shared.Localization;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared._CMU14.Medical.Treatment.Surgery;
@@ -62,7 +63,8 @@ public sealed record CMUSurgeryInFlightInfo(
     string LeafSurgeryId,
     string LeafSurgeryDisplayName,
     string SurgeonName,
-    TimeSpan StartedAt);
+    TimeSpan StartedAt,
+    LocId? LeafSurgeryDisplayNameLocId = null);
 
 [Serializable, NetSerializable]
 public sealed record CMUSurgeryPartEntry(
@@ -84,7 +86,9 @@ public sealed record CMUSurgeryEntry(
     int NextStepIndex,
     int TotalSteps,
     string? GatingSurgeryId,
-    string Category);
+    string Category,
+    LocId? DisplayNameLocId = null,
+    LocId? NextStepLabelLocId = null);
 
 [Serializable, NetSerializable]
 public sealed record CMUArmedStepInfo(
@@ -92,7 +96,9 @@ public sealed record CMUArmedStepInfo(
     string SurgeryDisplayName,
     int StepIndex,
     string StepLabel,
-    string? ToolCategory);
+    string? ToolCategory,
+    LocId? SurgeryDisplayNameLocId = null,
+    LocId? StepLabelLocId = null);
 
 [Serializable, NetSerializable]
 public sealed class CMUSurgeryArmStepMessage : BoundUserInterfaceMessage
@@ -161,6 +167,7 @@ public readonly record struct CMUResolvedStep(
     string ResolvedSurgeryId,
     int StepIndex,
     string StepLabel,
+    LocId? StepLabelLocId,
     string? ToolCategory,
     int TotalSteps,
     string? GatingSurgeryId)

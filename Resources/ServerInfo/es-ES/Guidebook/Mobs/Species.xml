@@ -1,0 +1,19 @@
+<Document>
+  # Especies
+
+  Nanotrasen emplea a diversas especies sapientes.
+
+  <Box>
+  <GuideEntityEmbed Entity="MobArachnid" Caption="Arácnido"/>
+  <GuideEntityEmbed Entity="MobDiona" Caption="Diona"/>
+  <GuideEntityEmbed Entity="MobDwarf" Caption="Enano"/>
+  <GuideEntityEmbed Entity="MobHuman" Caption="Humano"/>
+  </Box>
+  <Box>
+  <GuideEntityEmbed Entity="MobMoth" Caption="Persona polilla"/>
+  <GuideEntityEmbed Entity="MobReptilian" Caption="Reptiliano"/>
+  <GuideEntityEmbed Entity="MobSlimePerson" Caption="Persona de limo"/>
+  <GuideEntityEmbed Entity="MobVox" Caption="Vox"/>
+  </Box>
+
+</Document>

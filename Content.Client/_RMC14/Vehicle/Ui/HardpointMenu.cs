@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
+using Content.Client._RMC14.Vehicle;
 using Content.Client.UserInterface.Controls;
 using Content.Shared._RMC14.Vehicle;
 using Robust.Client.GameObjects;
@@ -216,7 +217,14 @@ public sealed partial class HardpointMenu : FancyWindow
                 parentSlot = parentSlotId;
             }
 
-            var header = $"{displaySlot} ({hardpoint.HardpointType})";
+            var displaySlotName = VehicleLoc.SlotName(displaySlot);
+            var hardpointTypeName = VehicleLoc.TypeName(hardpoint.HardpointType);
+            var headerFallback = $"{displaySlotName} ({hardpointTypeName})";
+            var header = VehicleLoc.Target(
+                "cmu-rmc-vehicle-hardpoint-header",
+                headerFallback,
+                ("slot", displaySlotName),
+                ("type", hardpointTypeName));
             var nameText = hardpoint.HasItem
                 ? hardpoint.InstalledName ?? header
                 : Loc.GetString("rmc-hardpoint-ui-empty-slot");
@@ -227,9 +235,21 @@ public sealed partial class HardpointMenu : FancyWindow
                 FontColorOverride = Color.FromHex("#E1EEFF")
             });
 
-            var slotLine = hardpoint.HasItem ? header : $"Slot: {header}";
+            var slotLine = hardpoint.HasItem
+                ? header
+                : VehicleLoc.Target(
+                    "cmu-rmc-vehicle-hardpoint-slot-line",
+                    $"Slot: {header}",
+                    ("hardpoint", header));
             if (parentSlot != null)
-                slotLine += $" | Turret: {parentSlot}";
+            {
+                var parentSlotName = VehicleLoc.SlotName(parentSlot);
+                slotLine = VehicleLoc.Target(
+                    "cmu-rmc-vehicle-hardpoint-turret-line",
+                    $"{slotLine} | Turret: {parentSlotName}",
+                    ("hardpoint", slotLine),
+                    ("turret", parentSlotName));
+            }
 
             centerColumn.AddChild(new Label
             {

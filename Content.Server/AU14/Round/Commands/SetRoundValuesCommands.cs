@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using Content.Server.Administration;
 using Content.Shared._RMC14.Rules;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Administration;
 using Content.Shared.AU14.util;
 using Robust.Shared.Console;
@@ -40,7 +41,8 @@ namespace Content.Server.AU14.Round.Commands
                 return;
             }
             platoonSys.SelectedOpforPlatoon = platoon;
-            shell.WriteLine($"Opfor platoon set to: {platoon.Name} ({platoon.ID})");
+            var name = CMUPrototypeLocalization.GetPrototypeText("platoon", platoon.ID, "name", platoon.Name);
+            shell.WriteLine($"Opfor platoon set to: {name} ({platoon.ID})");
         }
 
         public CompletionResult GetCompletion(IConsoleShell _, string[] args)
@@ -78,7 +80,8 @@ namespace Content.Server.AU14.Round.Commands
                 return;
             }
             platoonSys.SelectedGovforPlatoon = platoon;
-            shell.WriteLine($"Govfor platoon set to: {platoon.Name} ({platoon.ID})");
+            var name = CMUPrototypeLocalization.GetPrototypeText("platoon", platoon.ID, "name", platoon.Name);
+            shell.WriteLine($"Govfor platoon set to: {name} ({platoon.ID})");
         }
 
         public CompletionResult GetCompletion(IConsoleShell _, string[] args)

@@ -1,0 +1,140 @@
+<Document>
+  # Liderazgo de escuadrón 101
+  [italic]Guía escrita por UnicornOnLSD en GitHub [/italic]
+
+  <Box>
+    [italic]«Muy bien, Alfa, avanzamos hacia el nor... Esperad, ¿dónde está todo el mundo? ¿Mi escuadrón solo tiene 5 personas? ¿Los han secuestrado a todos? ¿En qué momento salió todo mal?»[/italic]
+  </Box>
+
+  Puede que te hayas encontrado en esa situación: querías ser un líder carismático y acabaste entre las primeras bajas del escuadrón o tan perdido como cualquiera de sus integrantes.
+
+  Esta guía te enseñará a TI a convertirte en el líder de escuadrón que siempre soñaste ser.
+
+  ## Equipo y ventajas
+
+  Como líder de escuadrón, a diferencia del humilde fusilero, tienes acceso gratuito a bastante equipo limitado de mayor calidad y a varias habilidades. Conviene destacar lo siguiente:
+
+  - Una armadura B12 gratis. Robustez máxima.
+  <GuideEntityEmbed Entity="CMArmorB12"/>
+  - Acceso barato a una mochila RTO; hazte con ella.
+  <GuideEntityEmbed Entity="RMCBackpackRTO"/>
+  - Acceso barato a un silbato; hazte con él.
+  <GuideEntityEmbed Entity="RMCWhistle"/>
+  - Unas ópticas NVG por 25P, con una batería de 10 minutos. Pueden recargarse en cualquier cargador con corriente una vez desatornilladas del casco.
+  <GuideEntityEmbed Entity="RMCVisorNightVision"/>
+  - Habilidad de Medicina de nivel 1, que permite usar autoinyectores al instante.
+  - Bolsillos grandes para dar y tomar.
+
+  Además, posees el nivel más básico de la habilidad Liderazgo, que también se concede a quien sea asignado como líder de escuadrón en funciones (aSL). Al usarla, estas órdenes otorgan mejoras menores:
+
+  - [bold]Dar orden: avanzar[/bold]: otorga una pequeña bonificación a la velocidad de movimiento.
+
+  - [bold]Dar orden: mantener posición[/bold]: otorga una pequeña bonificación a la resistencia al daño.
+
+  - [bold]Dar orden: concentrar fuego[/bold]: otorga una pequeña bonificación a la precisión.
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCGuidebookActionMove"/>
+    <GuideEntityEmbed Entity="RMCGuidebookActionHold"/>
+	<GuideEntityEmbed Entity="RMCGuidebookActionFocus"/>
+  </Box>
+
+  # Cómo liderar
+
+  Bien, todo marcha: ya nos hemos equipado. ¿Y el trabajo de verdad? ¿Qué hacemos?
+
+  Lideras un escuadrón de 20 gusanos devoradores de ceras de colores que harán cuanto puedan por ignorarte. Por tanto, lo esencial para un líder de escuadrón es hacerse oír. Cuando la gente te escuche y obedezca tus órdenes, todo debería ir bien... por lo general.
+
+  Por suerte, como eres líder, hablas a lo GRANDE. Y cuando digo a lo GRANDE, LO DIGO EN SERIO. Puedes hablar [bold]TODO EN MAYÚSCULAS Y CON !![/bold] para que tus mensajes destaquen más, y el texto de tus intervenciones ya aparece más grande de forma innata.
+
+  ## Cómo hacerse oír
+  Entonces, ¿cómo aprovechamos nuestra voz GRAVE? Así:
+
+  - Usa el canal LOCAL. Garantiza que la gente vea las órdenes con facilidad.
+  - Da órdenes BREVES que puedan [bold]leerse y entenderse en un apuro[/bold], como la sagrada trinidad del SL: «[bold]ALTO[/bold]», «[bold]ATRÁS[/bold]» y «[bold]AVANZAD[/bold]».
+  - Usa el silbato como [bold]señal sonora para que la gente ESCUCHE[/bold].
+  - Repite la orden si hace falta. Mejor dos veces que nunca.
+
+
+  Ahora sabes cómo conseguir que los matones oigan lo que quieres. Pero ¿cómo haces que te [bold]ESCUCHEN DE VERDAD[/bold]?
+
+  ## El carisma y tú
+  Sabes qué decir, pero eso no basta. Debes reunir un recurso invisible llamado «cohesión del escuadrón». Imagínalo como una barra de moral que se agota sin parar y que quieres mantener tan ALTA como sea posible EN TODO MOMENTO.
+
+  Para mantenerla alta, puedes hacer lo siguiente:
+
+  - Habla con tus compañeros de escuadrón; no los dejes nunca colgados.
+  - Anímalos antes del despliegue. Un escuadrón motivado es un escuadrón letal. [bold]Una charla de escuadrón es perfecta para eso. Dala antes de la reunión informativa, en la nave de descenso o ya en tierra; en este último caso, sé breve.[/bold]
+  - Felicita a tus compañeros de escuadrón. Si saben que hacen un buen trabajo, seguirán haciéndolo.
+  - Consigue que los habituales permanezcan contigo; eso llegará con el tiempo si te mantienes fiel a un escuadrón. Cuantos más estén a tu lado, más se quedarán por efecto rebaño.
+
+  Todo eso está muy bien, pero ¿cómo se convierte uno en el tipo audaz y carismático? No te preocupes, también tengo la respuesta:
+
+  - Mantente en personaje y cíñete a una personalidad, como es debido. Sé ese tipo frío de operaciones especiales o un padre cariñoso con sus desprevenidos hijos devoradores de ceras de colores. Ya captas la idea.
+  - La destreza inspira confianza. Si demuestras a los marines que se te da bien tu trabajo —ya sea consiguiendo bajas, comunicándote bien o dirigiendo buenas rotaciones—, te seguirán de forma natural.
+
+  ## El dedo de Dios (señalar sin parar)
+
+  <Box>
+    [italic]«YO SEÑALO; vosotros MATÁIS, ABRÍS BRECHA y AVANZÁIS. ¿ENTENDIDO, CHARLIE?»[/italic]
+  </Box>
+
+
+  Por si nunca te habías fijado, la mayoría de los puestos de «liderazgo» dispone de una flecha especial para señalar. De forma predeterminada es verde. Como líder de escuadrón, la tuya será GRANDE y tendrá el color de tu escuadrón.
+
+  ¿Por qué es importante?, te preguntarás.
+
+  Porque es tu mejor herramienta para lograr que la gente haga lo que quieres y vaya adonde quieres: la técnica modestamente llamada «señalar sin parar».
+
+  Consiste en llamar la atención de la gente y después limitarte a señalar dónde quieres que vaya, dispare o destruya algo. Funciona siempre y es muy visual (MUCHO mejor que intentar que te escuchen).
+
+  ¿Ves resina? Señálala y grita: «¡DESTROZADLA!».
+
+  ¿Quieres que el escuadrón vaya hasta allí? Señala el camino sin parar.
+
+  ¿Ves a un enemigo grande y malvado contra el que quieres avanzar? Carga y señala, o carga y dispara.
+
+  # Planificación estratégica
+  Esta parte trata los aspectos más «estratégicos» de jugar como líder de escuadrón. Aunque van más allá de los fundamentos anteriores, son la clave para cumplir con tu parte y convertir una operación condenada al desastre en una GLORIOSA VICTORIA TOTAL DE LOS MARINES. ¡OORAH!
+
+  ## Las órdenes y tú
+
+  Un solo escuadrón que se declare AWOL (ausente sin permiso) y avance hasta una zona alejada de los demás sin recibir la orden puede arruinar una operación, y ya ha ocurrido muchas veces.
+
+  Como líder de escuadrón, eres uno de los cinco grandes pilares capaces de inclinar el resultado de la partida a favor de los marines. Los otros cuatro son los demás SL Y el [bold]comandante[/bold].
+  Ese [bold]comandante[/bold] dará a tu escuadrón órdenes concebidas por el bien de la operación. Sin importar tu rango, DEBES cumplirlas. Salvo que sean ilegales —como una carga suicida—; en ese caso, la Ley de los Marines te permite rechazar la orden ilegal si indicas el motivo.
+
+  ## Comunicaciones: hablar, ni más ni menos
+  Tan importante como hablar con tu escuadrón es hablar con los ojos de la escuadra: el CIC. Allí contemplan la situación general (casi siempre) y, si saben qué haces, adaptarán (con suerte) los planes para asegurar que podáis matar juntos a esos sucios bichos. ¿Juntos? Sí, todos los marines. Porque no estás solo. Hay otros tres escuadrones con sus tres líderes (no tan buenos como tú, porque tú has leído esto y ellos no, claro), pero ahí están.
+
+  Si se cortan las comunicaciones, usa una mochila telefónica; de lo contrario, informa con regularidad por el canal de mando o por el de tu escuadrón. Diablos, ¿tus hombres han matado a la Reina?
+
+  «:v Charlie ha matado a la Reina. Seguimos avanzando.»
+
+  Además, por ser líder de escuadrón, normalmente se espera que sepas solicitar mejor que nadie los bombardeos orbitales. Apareces con un designador láser que, al cambiar de modo, puede funcionar como telémetro. Úsalo sobre la zona que quieras arrasar por completo y comparte las coordenadas.
+
+  [bold]TEN MUCHO CUIDADO CUANDO AJUSTES LAS COORDENADAS POR TU CUENTA. [/bold]
+
+  ## ¿Avanzar? ¿Retirarse? Qué, cómo y por qué
+
+  Esos sucios xenos son listos, pero tú lo eres más. Debes saber cuándo es el momento de entrar y joderlo todo. Como es lógico, cuentas con las órdenes de escuadrón que te da el CIC. Cúmplelas con prioridad, pero asegúrate de que no acaben con todo tu escuadrón.
+
+  La orden AVANZAR resulta especialmente apropiada para ejecutar maniobras directas.
+
+  En última instancia, la posición de tu escuadrón depende de ti. La intuición necesaria para saber dónde estar, cuándo actuar y cuándo no avanzar llegará con el tiempo. Aun así, hay varias cosas que pueden ayudarte:
+
+  - Usa los prismáticos durante las rotaciones para saber dónde está y dónde no está el enemigo.
+  - Usa las NVG en los momentos adecuados (así no correrás hacia la oscuridad donde Juan el Acechador espera al acecho).
+  - Escucha las comunicaciones y céntrate en mensajes importantes como «¡DIOS MÍO, LA REINA ESTÁ EN DELTA! POR FAVOR, [insert your squad here], ID A SALVARLOS AL ESTE».
+  - CONOCE EL MAPA. Conoce el lugar, no te pierdas y usa el mapa táctico.
+
+  # Conclusión
+  El líder de escuadrón es el corazón, el cerebro y la voz del escuadrón, además de uno de los puestos más decisivos de la partida. De ti depende ser quien remate la operación sin piedad mediante tus tácticas y formaciones. No olvides comunicarte, mantener unido al escuadrón y adaptarte a las amenazas lo mejor posible para conservar de una pieza a tus queridos tiradores.
+
+  La verdad es que cualquiera puede liderar. Pero este puesto es para quienes quieren destacar al hacerlo.
+
+  Y recuerda siempre lo siguiente:
+
+  [bold]Estás aquí para conducir juntos a tus marines hacia la victoria o la perdición. Sé humilde y trata siempre de mejorar.[/bold]
+
+</Document>

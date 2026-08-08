@@ -1,11 +1,12 @@
 <cc:YautjaBadBloodWeaponChoiceWindow
     xmlns="https://spacestation14.io"
     xmlns:cc="clr-namespace:Content.Client._CMU14.Yautja"
-    Title="Choose Your Weapon"
+    xmlns:loc="clr-namespace:Content.Client._CMU14.Localizations"
+    Title="{loc:CMULoc 'cmu-yautja-weapon-choice-window-title', 'Choose Your Weapon'}"
     MinSize="300 200">
     <BoxContainer Orientation="Vertical" SeparationOverride="8" Margin="8 8 8 8">
         <Label Name="WarningLabel" Access="Public"
-               Text="This action is irreversible, are you sure?"
+               Text="{loc:CMULoc 'cmu-yautja-weapon-choice-confirmation', 'This action is irreversible, are you sure?'}"
                Visible="False"
                StyleClasses="LabelSubText"
                HorizontalAlignment="Center" />

@@ -1,4 +1,5 @@
 using Content.Client.Actions;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Actions;
 using Content.Shared.Mapping;
 using Content.Shared.Maps;
@@ -57,7 +58,8 @@ public sealed partial class MappingSystem : EntitySystem
                 if (!tileDef.MapAtmosphere && tileDef.Sprite is {} sprite)
                     _actions.SetIcon(action, new SpriteSpecifier.Texture(sprite));
                 ev.TileId = tileDef.ID;
-                _metaData.SetEntityName(action, Loc.GetString(tileDef.Name));
+                _metaData.SetEntityName(action,
+                    CMUPrototypeLocalization.GetTileName(Loc, tileDef.ID, tileDef.Name));
             }
             else if (permission.EntityType is {} id)
             {

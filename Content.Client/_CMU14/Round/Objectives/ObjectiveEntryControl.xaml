@@ -3,6 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:controls="clr-namespace:Content.Client._CMU14.Round.Objectives"
     xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+    xmlns:loc="clr-namespace:Content.Client._CMU14.Localizations"
     Margin="0 0 0 6">
     <PanelContainer Name="Background">
         <PanelContainer.PanelOverride>
@@ -26,7 +27,7 @@
             </BoxContainer>
             <BoxContainer Name="DetailsRow" Orientation="Horizontal" SeparationOverride="6">
                 <Label Name="DetailsLabel" HorizontalExpand="True" FontColorOverride="#AAAAAA" VerticalAlignment="Center" />
-                <Button Name="IntelButton" Text="Intel" />
+                <Button Name="IntelButton" Text="{loc:CMULoc 'cmu-objective-intel-button', 'Intel'}" />
             </BoxContainer>
         </BoxContainer>
     </PanelContainer>

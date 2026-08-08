@@ -4,6 +4,7 @@ using Content.Client.Lobby;
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Systems.MenuBar.Widgets;
 using Content.Shared._AU14.Construction;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._RMC14.Marines.Skills;
 using Content.Shared._RMC14.Prototypes;
 using Content.Shared.Construction.Prototypes;
@@ -17,6 +18,7 @@ using Robust.Client.Player;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared.Enums;
+using Robust.Shared.Localization;
 using Robust.Shared.Prototypes;
 
 namespace Content.Client.Construction.UI
@@ -35,6 +37,7 @@ namespace Content.Client.Construction.UI
         [Dependency] private IUserInterfaceManager _uiManager = default!;
         [Dependency] private IPlayerManager _playerManager = default!;
         [Dependency] private IClientPreferencesManager _preferencesManager = default!;
+        [Dependency] private ILocalizationManager _localization = default!;
         private readonly SpriteSystem _spriteSystem;
         private readonly SkillsSystem _skillsSystem;
 
@@ -576,7 +579,14 @@ namespace Content.Client.Construction.UI
                             materialStep.MaterialPrototypeId,
                             materialStep.Amount,
                             skillLevel);
-                        var materialName = Loc.GetString(material.Name, ("amount", amount));
+                        var materialFallback = Loc.GetString(material.Name, ("amount", amount));
+                        var materialName = CMUPrototypeLocalization.GetStringOrFallback(
+                            _localization,
+                            "stack",
+                            material.ID,
+                            "name",
+                            materialFallback,
+                            ("amount", (object) amount));
                         arguments = [("amount", amount), ("material", materialName)];
                     }
 

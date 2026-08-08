@@ -4,6 +4,7 @@ using Content.Shared._CMU14.Medical.Anatomy.Organs;
 using Content.Shared._RMC14.Medical.Surgery;
 using Content.Shared._RMC14.Medical.Surgery.Steps;
 using Content.Shared.Body.Part;
+using Robust.Shared.Localization;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared._CMU14.Medical.Treatment.Surgery;
@@ -20,6 +21,7 @@ public sealed class CMUSurgeryDefinition
     public int Priority { get; }
     public EntProtoId<CMSurgeryComponent>? Requirement { get; }
     public string DisplayName { get; }
+    public LocId? DisplayNameLocId { get; }
     public string Category { get; }
     public int MinSkill { get; }
     public bool AllowSelfSurgery { get; }
@@ -35,6 +37,7 @@ public sealed class CMUSurgeryDefinition
         int priority,
         EntProtoId<CMSurgeryComponent>? requirement,
         string displayName,
+        LocId? displayNameLocId,
         string category,
         int minSkill,
         bool allowSelfSurgery,
@@ -49,6 +52,7 @@ public sealed class CMUSurgeryDefinition
         Priority = priority;
         Requirement = requirement;
         DisplayName = displayName;
+        DisplayNameLocId = displayNameLocId;
         Category = category;
         MinSkill = minSkill;
         AllowSelfSurgery = allowSelfSurgery;
@@ -89,6 +93,7 @@ public sealed record CMUSurgeryStepDefinition(
     EntProtoId<CMSurgeryStepComponent> Id,
     int Index,
     string Label,
+    LocId? LabelLocId,
     string? ToolCategory,
     CMUSurgeryOrganCondition? OrganCondition,
     string? ReinsertOrganSlot);

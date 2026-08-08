@@ -1,0 +1,28 @@
+<Document>
+  #Agujeros de resina
+
+  El Excavador y el Portador pueden crear agujeros de resina, aunque cualquier casta con ácido puede llenarlos haciendo clic en ellos con el modo de daño desactivado.
+
+  <Box>
+    <GuideEntityEmbed Entity="CMXenoBurrower"/>
+    <GuideEntityEmbed Entity="CMXenoCarrier"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="XenoResinHole"/>
+  </Box>
+
+  ##¿Dónde colocarlos?
+  Puedes ocultar agujeros de resina plantándolos bajo restos como tablones y ciertas sillas. Aprovéchalo para sorprender a cualquier huésped y capturarlo. Se recomienda colocarlos en la retaguardia, pues las explosiones, muy habituales en el frente, los destruyen con facilidad.
+
+  Un consejo: rompe sillas y barricadas de madera para obtener tablones con los que ocultar las trampas.
+
+  También emiten una alerta cuando los destruyen. Puedes usarlos para recabar información o bloquear rutas de flanqueo que pudieran tomar los huéspedes.
+
+  ##Variantes
+  - [bold]Trampa de ácido débil[/bold]: La llenan los drones menores, los drones y los centinelas. Esta trampa inflige un daño mínimo y NO aturde.
+  - [bold]Trampa de ácido normal[/bold]: La llenan el Pretoriano básico, el Escupidor, la Reina y el Señor de la colmena. Inflige una cantidad considerable de daño y aturde durante poco tiempo.
+  - [bold]Trampas de ácido potente[/bold]: Las llenan los Excavadores; aturden durante mucho tiempo e infligen mucho daño.
+  - [bold]Trampa de gas neurotóxico[/bold]: La llena un Bombardero que tenga seleccionado el tipo de gas neurotóxico. Libera gas neurotóxico que aplica penalizaciones capaces de desorientar, aturdir e infligir daño
+  - [bold]Trampa de gas ácido[/bold]: La llenan los Bombarderos que tengan seleccionado el gas ácido. Libera gas ácido que inflige mucho daño a los huéspedes.
+  - [bold]Trampa de parásito[/bold]: Aturde a un huésped cuando la pisa. El parásito salta entonces para infectarlo. Puede llenarla cualquier casta capaz de recoger un parásito, aunque suelen hacerlo los Portadores.
+</Document>

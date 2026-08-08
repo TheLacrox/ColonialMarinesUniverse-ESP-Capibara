@@ -393,7 +393,7 @@ public sealed partial class CMUSurgeryDispatchSystem : EntitySystem
             _popup.PopupEntity(
                 Loc.GetString(
                     "cmu-medical-surgery-auto-armed",
-                    ("surgery", _flowSurgery.ResolveSurgeryDisplayName(displaySurgeryId))),
+                    ("surgery", _flowSurgery.LocalizeSurgeryDisplayName(displaySurgeryId))),
                 patient,
                 surgeon);
         }
@@ -713,7 +713,9 @@ public sealed partial class CMUSurgeryDispatchSystem : EntitySystem
         if (started)
         {
             _popup.PopupEntity(
-                Loc.GetString("cmu-medical-surgery-auto-armed", ("surgery", best.Entry.DisplayName)),
+                Loc.GetString(
+                    "cmu-medical-surgery-auto-armed",
+                    ("surgery", _flowSurgery.LocalizeSurgeryDisplayName(best.Entry.SurgeryId))),
                 patient,
                 surgeon);
         }

@@ -1,0 +1,51 @@
+﻿<Document>
+# Estación y turnos
+
+Cada ronda de SS14 es un [bold]turno independiente[/bold] que se desarrolla en una de las muchas estaciones disponibles.
+
+Las rondas suelen durar entre [color=cyan]45 y 90 minutos[/color], pero los jugadores pueden abandonar o unirse en cualquier momento.
+
+## Terminal de lanzaderas
+Si te unes a mitad de un turno, probablemente aparecerás en la [color=lime]terminal de lanzaderas[/color].
+Allí puedes tomar algo, conversar con otros jugadores y esperar a que la lanzadera te lleve a la estación.
+
+Las pantallas de las paredes mostrarán la hora estimada de llegada (ETA) de la lanzadera.
+Cuando llegue, basta con subir a ella para viajar a la estación.
+
+Asegúrate de permanecer dentro de la terminal y no te quedes en la zona de aterrizaje. [color=#EB2D3A][bold]Las lanzaderas que llegan pueden aplastarte[/bold][/color]
+
+## Navegación
+Todas las estaciones tienen muchos lugares distintos que visitar.
+Van desde departamentos concretos donde se trabaja hasta zonas comunes en las que relajarse y charlar.
+
+<Box>
+  <GuideEntityEmbed Entity="StationMap"/>
+  <GuideEntityEmbed Entity="SignDirectionalDorms" Caption="Señales direccionales"/>
+  <GuideEntityEmbed Entity="SignBridge" Caption="Señales indicadoras"/>
+</Box>
+
+Los [color=cyan]mapas de la estación[/color] ofrecen una vista general de toda ella, con marcadores de colores que indican la ubicación de distintos lugares.
+Las [color=cyan]señales[/color] normales de las paredes pueden orientarte hacia distintos departamentos.
+
+## Salida de la estación
+Al final del turno [color=gray](salvo que haya un [color=red][bold]desastre nuclear[/bold][/color])[/color], abandonarás la estación en la [color=lime]lanzadera de evacuación[/color].
+Cuando se llame, sonará un anuncio por la estación para alertar a la tripulación e indicar su [color=cyan]llegada dentro de 10 minutos.[/color]
+Cuando llegue, tendrás que dirigirte hasta ella, subir a bordo y sobrevivir al viaje hasta el [bold]Mando Central[/bold].
+
+La ronda no termina oficialmente hasta que llegas al [bold]Mando Central[/bold].
+
+<Box>
+  <GuideEntityEmbed Entity="CryogenicSleepUnit"/>
+</Box>
+
+Si necesitas abandonar una ronda antes de tiempo, puedes hacerlo mediante una [color=lime]unidad de sueño criogénico[/color].
+Basta con entrar y salir del juego para que tus pertenencias queden guardadas y nadie pueda robarlas ni usarlas indebidamente.
+
+## Más información
+¿Estás aprendiendo los controles? [textlink="Haz clic aquí para leer sobre los distintos controles" link="Controls"]
+
+¿No sabes cómo desempeñar un puesto? [textlink="Haz clic aquí para consultar una lista de departamentos" link="Jobs"]
+
+¿No paras de morir? [textlink="Haz clic aquí para ver una guía de supervivencia" link="Survival"]
+
+</Document>

@@ -1,0 +1,9 @@
+rmc-bullet-box-amount = Contiene {$amount} cartuchos.
+rmc-bullet-box-used-in = Se usa en: {$vehicle}
+rmc-bullet-box-wrong-rounds = Esos cartuchos no son del mismo tipo. Más vale no mezclarlos.
+rmc-bullet-box-box-empty = A la caja no le quedan balas que entregar.
+rmc-bullet-box-box-full = La caja no tiene más espacio para balas.
+rmc-bullet-box-mag-empty = Al cargador no le quedan balas que entregar.
+rmc-bullet-box-mag-full = El cargador no tiene más espacio para balas.
+rmc-bullet-box-transfer-done = Has transferido {$amount} cartuchos a {THE($used)}
+rmc-bullet-box-transferto = Llenar caja

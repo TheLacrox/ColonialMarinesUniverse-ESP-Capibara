@@ -1,0 +1,37 @@
+﻿<Document>
+# Sustancias químicas
+
+Las sustancias químicas son herramientas potentes que pueden provocar diversos efectos al consumirse. Algunas se encuentran en plantas, se compran en Requisiciones o se sintetizan combinándolas con otras sustancias químicas.
+
+Conocer los distintos tipos de sustancias químicas y sus efectos es importante para poder afrontar lesiones y peligros.
+
+## Elementos
+<GuideReagentGroupEmbed Group="Elements"/>
+
+## Medicina
+<GuideReagentGroupEmbed Group="Medicine"/>
+
+## Narcóticos
+<GuideReagentGroupEmbed Group="Narcotics"/>
+
+## Pirotecnia
+<GuideReagentGroupEmbed Group="Pyrotechnic"/>
+
+## Toxinas
+<GuideReagentGroupEmbed Group="Toxins"/>
+
+## Alimentos
+<GuideReagentGroupEmbed Group="Foods"/>
+
+## Botánica
+<GuideReagentGroupEmbed Group="Botanical"/>
+
+## Biológicos
+<GuideReagentGroupEmbed Group="Biological"/>
+
+## Especiales
+<GuideReagentGroupEmbed Group="Special"/>
+
+## Otros
+<GuideReagentGroupEmbed Group="Unknown"/>
+</Document>

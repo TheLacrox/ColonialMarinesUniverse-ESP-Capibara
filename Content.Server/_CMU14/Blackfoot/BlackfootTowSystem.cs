@@ -1,5 +1,6 @@
 using System.Numerics;
 using Content.Shared._CMU14.Blackfoot;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Ghost;
 using Content.Shared.Interaction;
 using Content.Shared.Movement.Pulling.Components;
@@ -42,7 +43,10 @@ public sealed partial class BlackfootTowSystem : EntitySystem
 
             if (ent.Comp.TowedEntity is { } towed && Exists(towed))
             {
-                Popup(args.User, "Use the Detach tug verb to release the tow gear.", PopupType.SmallCaution);
+                Popup(
+                    args.User,
+                    Ui("cmu-blackfoot-tow-use-detach-verb", "Use the Detach tug verb to release the tow gear."),
+                    PopupType.SmallCaution);
                 return;
             }
 
@@ -64,7 +68,10 @@ public sealed partial class BlackfootTowSystem : EntitySystem
         }
 
         args.Handled = true;
-        Popup(args.User, "Use the Detach tug verb to release the tow gear.", PopupType.SmallCaution);
+        Popup(
+            args.User,
+            Ui("cmu-blackfoot-tow-use-detach-verb", "Use the Detach tug verb to release the tow gear."),
+            PopupType.SmallCaution);
     }
 
     private void OnGetAlternativeVerbs(Entity<BlackfootTowComponent> ent, ref GetVerbsEvent<AlternativeVerb> args)
@@ -82,7 +89,9 @@ public sealed partial class BlackfootTowSystem : EntitySystem
         {
             args.Verbs.Add(new AlternativeVerb
             {
-                Text = ent.Comp.TowedEntity is { } towed && Exists(towed) ? "Detach tug" : "Attach tug",
+                Text = ent.Comp.TowedEntity is { } towed && Exists(towed)
+                    ? Ui("cmu-blackfoot-tow-verb-detach", "Detach tug")
+                    : Ui("cmu-blackfoot-tow-verb-attach", "Attach tug"),
                 Priority = 2,
                 Act = () => ToggleTug(ent.Owner, user),
             });
@@ -96,7 +105,7 @@ public sealed partial class BlackfootTowSystem : EntitySystem
         {
             args.Verbs.Add(new AlternativeVerb
             {
-                Text = "Detach tug",
+                Text = Ui("cmu-blackfoot-tow-verb-detach", "Detach tug"),
                 Priority = 2,
                 Act = () => Detach((tug, tugTow), user),
             });
@@ -108,7 +117,7 @@ public sealed partial class BlackfootTowSystem : EntitySystem
 
         args.Verbs.Add(new AlternativeVerb
         {
-            Text = "Attach tug",
+            Text = Ui("cmu-blackfoot-tow-verb-attach", "Attach tug"),
             Priority = 2,
             Act = () => Attach(nearbyTug, ent, user),
         });
@@ -163,13 +172,13 @@ public sealed partial class BlackfootTowSystem : EntitySystem
         out string reason)
     {
         target = default;
-        reason = "No towable Blackfoot is close enough.";
+        reason = Ui("cmu-blackfoot-tow-no-towable-nearby", "No towable Blackfoot is close enough.");
 
         var tugXform = Transform(tug);
         var tugMap = tugXform.MapUid;
         if (tugMap == null)
         {
-            reason = "The tug is not on a valid map.";
+            reason = Ui("cmu-blackfoot-tow-tug-invalid-map", "The tug is not on a valid map.");
             return false;
         }
 
@@ -206,7 +215,7 @@ public sealed partial class BlackfootTowSystem : EntitySystem
             if (tow.TowVehicle != null)
             {
                 foundBlocked = true;
-                reason = "That Blackfoot is already attached to towing gear.";
+                reason = Ui("cmu-blackfoot-tow-already-attached", "That Blackfoot is already attached to towing gear.");
                 continue;
             }
 
@@ -218,7 +227,7 @@ public sealed partial class BlackfootTowSystem : EntitySystem
             return true;
 
         if (!foundBlocked)
-            reason = "No towable Blackfoot is close enough.";
+            reason = Ui("cmu-blackfoot-tow-no-towable-nearby", "No towable Blackfoot is close enough.");
 
         return false;
     }
@@ -229,11 +238,11 @@ public sealed partial class BlackfootTowSystem : EntitySystem
         out string reason)
     {
         tug = default;
-        reason = "No Blackfoot aerospace tug is parked under the cockpit.";
+        reason = Ui("cmu-blackfoot-tow-no-tug-under-cockpit", "No Blackfoot aerospace tug is parked under the cockpit.");
 
         if (!TryComp(target, out BlackfootFlightComponent? flight))
         {
-            reason = "That cannot be moved with the Blackfoot tug.";
+            reason = Ui("cmu-blackfoot-tow-cannot-move-target", "That cannot be moved with the Blackfoot tug.");
             return false;
         }
 
@@ -241,7 +250,7 @@ public sealed partial class BlackfootTowSystem : EntitySystem
         var targetMap = targetXform.MapUid;
         if (targetMap == null)
         {
-            reason = "The Blackfoot is not on a valid map.";
+            reason = Ui("cmu-blackfoot-tow-aircraft-invalid-map", "The Blackfoot is not on a valid map.");
             return false;
         }
 
@@ -282,12 +291,12 @@ public sealed partial class BlackfootTowSystem : EntitySystem
             return true;
 
         if (!foundBlocked)
-            reason = "No Blackfoot aerospace tug is parked under the cockpit.";
+            reason = Ui("cmu-blackfoot-tow-no-tug-under-cockpit", "No Blackfoot aerospace tug is parked under the cockpit.");
 
         return false;
     }
 
-    private static bool CanTowState(
+    private bool CanTowState(
         BlackfootFlightState state,
         BlackfootTowComponent targetTow,
         BlackfootTowComponent tugTow,
@@ -308,19 +317,19 @@ public sealed partial class BlackfootTowSystem : EntitySystem
                 if (targetTow.AllowAirborneTowing && tugTow.AllowAirborneTowing)
                     return true;
 
-                reason = "The tug cannot attach while the Blackfoot is airborne.";
+                reason = Ui("cmu-blackfoot-tow-airborne", "The tug cannot attach while the Blackfoot is airborne.");
                 return false;
             case BlackfootFlightState.Idling:
-                reason = "Shut the Blackfoot engines down before attaching towing gear.";
+                reason = Ui("cmu-blackfoot-tow-engines-running", "Shut the Blackfoot engines down before attaching towing gear.");
                 return false;
             case BlackfootFlightState.Stowed:
-                reason = "This Blackfoot cannot be towed while stowed.";
+                reason = Ui("cmu-blackfoot-tow-stowed", "This Blackfoot cannot be towed while stowed.");
                 return false;
             case BlackfootFlightState.Crashed:
-                reason = "This Blackfoot cannot be towed while crashed.";
+                reason = Ui("cmu-blackfoot-tow-crashed", "This Blackfoot cannot be towed while crashed.");
                 return false;
             default:
-                reason = "The Blackfoot cannot be towed in its current state.";
+                reason = Ui("cmu-blackfoot-tow-invalid-state", "The Blackfoot cannot be towed in its current state.");
                 return false;
         }
     }
@@ -341,7 +350,9 @@ public sealed partial class BlackfootTowSystem : EntitySystem
         _transform.SetLocalRotation(tug.Owner, Angle.FromDegrees(tug.Comp.AttachRotationDegrees));
         SetTugCollision(tug.Owner, false);
 
-        Popup(user, "Tug attached. The Blackfoot pilot can taxi the aircraft.");
+        Popup(
+            user,
+            Ui("cmu-blackfoot-tow-attached", "Tug attached. The Blackfoot pilot can taxi the aircraft."));
     }
 
     private void Detach(Entity<BlackfootTowComponent> tug, EntityUid user)
@@ -380,7 +391,7 @@ public sealed partial class BlackfootTowSystem : EntitySystem
 
         SetTugCollision(tug.Owner, true);
         SetTugPullable(tug, true);
-        Popup(user, "Tug detached.");
+        Popup(user, Ui("cmu-blackfoot-tow-detached", "Tug detached."));
     }
 
     private void SetTugCollision(EntityUid tug, bool canCollide)
@@ -419,5 +430,10 @@ public sealed partial class BlackfootTowSystem : EntitySystem
     private bool IsGhost(EntityUid user)
     {
         return HasComp<GhostComponent>(user);
+    }
+
+    private string Ui(string id, string fallback)
+    {
+        return CMULocalization.GetTargetStringOrFallback(Loc, id, fallback);
     }
 }

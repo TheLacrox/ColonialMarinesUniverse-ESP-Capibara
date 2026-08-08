@@ -1,6 +1,7 @@
 using System.Linq;
 using Content.Server.Administration.Logs;
 using Content.Server.Pointing.Components;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._RMC14.Pointing;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
@@ -345,7 +346,7 @@ namespace Content.Server.Pointing.EntitySystems
 
                 var tileDef = _tileDefinitionManager[tileRef?.Tile.TypeId ?? 0];
 
-                var name = Loc.GetString(tileDef.Name);
+                var name = CMUPrototypeLocalization.GetTileName(Loc, tileDef.ID, tileDef.Name);
                 selfMessage = Loc.GetString("pointing-system-point-at-tile", ("tileName", name));
 
                 viewerMessage = Loc.GetString("pointing-system-other-point-at-tile", ("otherName", playerName), ("tileName", name));

@@ -1,0 +1,53 @@
+<Document>
+  # Revolucionarios
+
+  <Box>
+    [color=#999999][italic]«¡Viva la revolución!»[/italic][/color]
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="PosterContrabandRevolt" Caption=""/>
+  </Box>
+
+  Los revolucionarios son antagonistas de conversión patrocinados por el [color=#ff0000]Sindicato[/color] cuya misión es hacerse con el control de la estación. No tienen artilugios sofisticados ni trucos baratos: solo una causa y la fuerza de sus números.
+
+  ## Objetivos
+  Debes convertir, esposar o matar a todo el [textlink="personal de Mando" link="Command"] de la estación, sin importar el orden.
+
+  Tu objetivo [bold]no consiste en destruir la estación[/bold], sino [italic]en tomar su control[/italic], así que intenta reducir los daños en la medida de lo posible.
+
+  [bold]La revolución fracasará[/bold] si mueren todos los [bold][color=#5e9cff]Líderes revolucionarios[/color][/bold]; si esto ocurre, todos los [color=red]Revolucionarios[/color] volverán a la normalidad.
+
+  ## Líderes revolucionarios & conversión
+  Los [bold][color=#5e9cff]Líderes revolucionarios[/color][/bold] se eligen al comienzo del turno y empiezan con un [color=cyan]flash[/color] y unas [color=cyan]gafas de sol[/color].
+
+  <Box>
+    <GuideEntityEmbed Entity="Flash"/>
+    <GuideEntityEmbed Entity="ClothingEyesGlassesSunglasses"/>
+  </Box>
+
+  Puedes convertir a tripulantes a tu bando tomando cualquier [bold]flash[/bold] y atacando a alguien con él mientras usas el [color=#ff0000]modo de combate[/color].
+  Sin embargo, [bold]no puedes convertir a tu objetivo si lleva [color=cyan]protección contra destellos[/color][/bold], como gafas de sol o una máscara de soldadura.
+
+  <Box>
+    <GuideEntityEmbed Entity="ClothingEyesGlassesSunglasses"/>
+    <GuideEntityEmbed Entity="ClothingEyesGlassesSecurity"/>
+    <GuideEntityEmbed Entity="ClothingHeadHatWelding"/>
+  </Box>
+
+  Otro obstáculo son esos molestos [color=cyan]implantes de escudo mental[/color]. Estos dispositivos:
+  - Impiden que la persona implantada se convierta en [color=red]Revolucionario[/color]
+  - Revierten la conversión de los Revolucionarios y hacen que dejen de ser leales a tu causa
+  - [bold]Se destruyen de forma visible al implantarse en un [color=#5e9cff]Líder revolucionario[/color][/bold], lo que delata tu identidad
+  - NO protegen contra la desorientación provocada por un flash
+
+  Supón que todo el personal de [color=#cb0000]Seguridad[/color] y [color=#1b67a5]Mando[/color] ya tiene implantado un escudo mental, [bold]aunque puede extraerse con un implantador vacío que se obtiene en la MedFab del departamento de Medicina.[/bold]
+
+  <Box>
+    <GuideEntityEmbed Entity="MindShieldImplanter"/>
+  </Box>
+
+  ## Revolucionario
+  Un [color=red]Revolucionario[/color] es un tripulante convertido por un [bold][color=#5e9cff]Líder revolucionario[/color][/bold].
+
+  [bold]Los [color=red]Revolucionarios[/color] no pueden convertir a nadie por sí mismos,[/bold] pero son perfectamente capaces de hacer el trabajo sucio y cumplir órdenes.
+</Document>

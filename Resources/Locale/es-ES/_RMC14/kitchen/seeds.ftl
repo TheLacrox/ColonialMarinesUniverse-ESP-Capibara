@@ -1,0 +1,14 @@
+seeds-plump-name = seta plump helmet
+seeds-plump-display-name = setas plump helmet
+seeds-peanut-name = cacahuete
+seeds-peanut-display-name = plantas de cacahuete
+seeds-sunflower-name = girasol
+seeds-sunflower-display-name = girasoles
+seeds-whitebeet-name = remolacha blanca
+seeds-whitebeet-display-name = remolachas blancas
+seeds-grass-name = hierba
+seeds-grass-display-name = hierba
+seeds-rmc-grape-name = uva
+seeds-rmc-grape-display-name = vides
+seeds-mango-name = mango
+seeds-mango-display-name = árboles de mango

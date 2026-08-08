@@ -1,0 +1,65 @@
+﻿<Document>
+  # Alarmas atmosféricas
+  La alarma de aire es un dispositivo que permite supervisar y controlar de forma centralizada todos los dispositivos atmosféricos pertinentes vinculados a ella.
+
+  <Box>
+    <GuideEntityEmbed Entity="AirAlarm"/>
+  </Box>
+
+  La alarma de aire permite al personal de Atmósfera gestionar con rapidez y eficacia el ambiente de una zona determinada.
+
+  Las salas suelen tener una alarma de aire montada en la pared para controlar rápidamente varios dispositivos de la estancia.
+
+  Puedes consultar cómo vincular dispositivos en la guía de [textlink="vinculación" link="Networking"].
+
+  ## Interfaz de usuario
+  Al interactuar con una alarma de aire se abrirá un menú con 3 secciones:
+  - Superior: el estado actual de la alarma de aire. Incluye la presión y la temperatura actuales de la zona que supervisa.
+  - Central: listas de [textlink="conductos de ventilación" link="AirVent"] y [textlink="depuradores de aire" link="AirScrubber"] vinculados, además de todos los sensores que informan a la alarma de aire.
+  - Inferior: botones para controlar los modos de funcionamiento de la alarma de aire y una opción para activar o desactivar el cambio automático de modo.
+
+  ## Estado de la alarma
+  Las alarmas de aire comunican rápidamente el estado de la zona que supervisan mediante el color de la luz del dispositivo:
+  - [color=green]Normal[/color]: se puede respirar sin peligro en la zona.
+  - [color=yellow]Advertencia[/color]: la zona empieza a desviarse de las condiciones atmosféricas deseadas y se está volviendo peligrosa.
+  - [color=red]Peligro[/color]: la zona ya no es segura; se necesitan equipos de respiración interna o trajes presurizados.
+
+  Las alarmas de aire bajarán (cerrarán) automáticamente las [textlink="compuertas cortafuegos" link="FireAndGasControl"] vinculadas cuando se alcance el estado de [color=Red]Peligro[/color].
+  Estas [textlink="compuertas cortafuegos" link="FireAndGasControl"] se levantarán (abrirán) automáticamente cuando el estado vuelva a [color=green]Normal[/color].
+
+  Las alarmas de aire tienen salidas de [textlink="señal" link="Networking"] para cada uno de los tres estados; pueden usarse para activar otros dispositivos de [textlink="señal" link="Networking"] cuando cambie el estado.
+
+  ## Sensores
+  Todos los [textlink="conductos de ventilación" link="AirVent"] y [textlink="depuradores de aire" link="AirScrubber"] incorporan un sensor que informa a la alarma de aire.
+  Estos sensores se pueden ajustar en la pestaña [bold]Sensores[/bold] del menú de la alarma de aire.
+
+  El estado de una alarma de aire viene determinado directamente por los umbrales de cada sensor.
+  Si un sensor indica una presión, temperatura o composición de gases fuera de los umbrales establecidos, la alarma de aire cambiará de estado según corresponda.
+
+  Estos umbrales se pueden ajustar y desactivar cuando sea necesario.
+  Por ejemplo, si supervisas una sala que por naturaleza tiene una temperatura baja (como un congelador) o alta (como una cámara de combustión), puedes ajustar los umbrales de temperatura a los valores esperados.
+
+  También se puede construir un sensor de aire y [textlink="vincularlo" link="Networking"] a una alarma de aire.
+
+  <Box>
+    <GuideEntityEmbed Entity="AirSensor"/>
+  </Box>
+
+  Esto resulta útil para supervisar zonas que todavía no tengan un conducto de ventilación ni un depurador de aire.
+
+  ## Modos de funcionamiento
+  Para controlar rápidamente los dispositivos conectados, las alarmas de aire ofrecen modos de funcionamiento que cambian el comportamiento de todos los dispositivos vinculados para lograr el efecto deseado.
+  - Ninguno: desactiva todos los dispositivos vinculados a la alarma de aire.
+  - Filtrado: los [textlink="conductos de ventilación" link="AirVent"] se activan con el límite externo fijado en la presión atmosférica estándar. Los [textlink="depuradores de aire" link="AirScrubber"] se activan y depuran con normalidad todos los gases residuales.
+  - Filtrado (amplio): igual que Filtrado, pero todos los [textlink="depuradores de aire" link="AirScrubber"] vinculados activan el modo WideNet.
+  - Llenado: los [textlink="conductos de ventilación" link="AirVent"] se activan con el límite externo fijado en la presión máxima, [color=orange][protodata="GasVentPump" comp="GasVentPump" member="MaxPressure"/] kPa[/color]. Los [textlink="depuradores de aire" link="AirScrubber"] se desactivan.
+  - Pánico: los [textlink="conductos de ventilación" link="AirVent"] se desactivan y los [textlink="depuradores de aire" link="AirScrubber"] pasan al modo de sifonado.
+
+  Las alarmas de aire cambian automáticamente entre los modos Filtrado y Filtrado (amplio) según el estado actual de la zona que supervisan.
+  - Si la zona alcanza el estado de [color=red]Peligro[/color] o uno superior, la alarma de aire cambia al modo Filtrado (amplio).
+  - Si la zona alcanza el estado [color=green]Normal[/color] o [color=yellow]Advertencia[/color], la alarma de aire cambia al modo Filtrado.
+
+  Este comportamiento se puede desactivar mediante la casilla «Modo automático» de la sección inferior del menú de la alarma de aire.
+
+  Encontrarás consejos útiles para reparar la [textlink="exposición al espacio" link="Spacing"] y los [textlink="incendios" link="Fires"] en las guías correspondientes.
+</Document>

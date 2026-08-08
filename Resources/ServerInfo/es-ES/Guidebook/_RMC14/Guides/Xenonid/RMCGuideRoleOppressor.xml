@@ -1,0 +1,26 @@
+<Document>
+  #Opresor, nivel 3
+  <GuideEntityEmbed Entity="RMCXenoPraetorianOppressor"/>
+  ##Jugar como Opresor
+  Ahora te especializas en ser la Reina de la pesca. Veamos primero qué ha cambiado respecto a tu forma básica. Sacrificas parte de tu velocidad, un poco de daño con las garras, algo de armadura y tus habilidades ácidas para convertirte en un baluarte de la Reina resistente al aturdimiento de las granadas. Tus zarpazos infligen más daño a los objetivos tumbados y obtienes un latigazo que derriba y lanza por los aires a los oponentes que tienes delante, además de dos habilidades capaces de atraer huéspedes.
+
+  El Opresor tiene un estilo de juego único, especializado en capturar huéspedes desde lejos y retenerlos allí para que los capturen.
+
+  Tus habilidades de desplazamiento pueden resultar letales si se usan bien. La combinación habitual consiste en Abducir primero, Dislocar al objetivo, caminar después hasta situarte detrás de él para lanzarlo hacia la Colmena con Latigazo de cola y placarlo si es seguro hacerlo.
+
+  Recuerda aprovechar el fuego atrayendo a los huéspedes hacia las llamas: puedes colocarte detrás del fuego y usar Abducir o Presa de cola.
+
+  ##Habilidades:
+  - [bold][color=green]PASIVA[/color][/bold]: Tus zarpazos infligen daño adicional a los objetivos tumbados o derribados.
+  - [bold]Abducir[/bold]: Si esta habilidad de largo alcance alcanza a:
+  - 1 persona, la arrastrará frente a ti y la ralentizará.
+  - 2 personas, las arrastrará frente a ti, las ralentizará, las aturdirá y las inmovilizará brevemente.
+  - 3 personas o más, las arrastrará frente a ti, las ralentizará y las aturdirá brevemente.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoAbduct"/>
+  - [bold]Dislocar[/bold]: Un potente puñetazo parecido al del Guerrero. Inflige daño perforante contra la armadura, aún mayor si el enemigo está ralentizado. También inmoviliza a los objetivos ralentizados. Reduce los tiempos de recarga de otras habilidades.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoDislocate"/>
+  - [bold]Latigazo de cola[/bold]: Empuja y ralentiza a los huéspedes situados en una zona de 2x3 frente a ti. Ten en cuenta que esta habilidad necesita preparación.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoTailLash"/>
+  - [bold]Presa de cola[/bold]: El Opresor posee un aguijonazo de cola único llamado Presa de cola. Tiene un alcance de 3 casillas, inflige 40 de daño, atrae al objetivo hacia ti y lo ralentiza cuando llega.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoTailSeize"/>
+</Document>

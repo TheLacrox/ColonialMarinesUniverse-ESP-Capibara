@@ -1,0 +1,57 @@
+<Document>
+# Xenoarqueología
+La xenoarqueología es un subdepartamento de Ciencia centrado en investigar y experimentar con artefactos alienígenas.
+
+Al comienzo de cada turno, el departamento de Ciencia suele tener acceso al menos a dos artefactos con los que experimentar. Puedes comprar más hablando con el departamento de Carga.
+
+Al investigar las capacidades únicas de cada artefacto, obtienes puntos de investigación, aumentas el valor de venta del artefacto y quizá descubras una o dos propiedades útiles que puedan ayudar a tu departamento o a toda la estación.
+
+## Nodos de artefactos
+<Box>
+<GuideEntityEmbed Entity="ComplexXenoArtifact" Caption=""/>
+<GuideEntityEmbed Entity="ComplexXenoArtifactItem" Caption=""/>
+</Box>
+Los artefactos constan de un árbol de nodos generado al azar. Estos nodos tienen una «[color=#a4885c]profundidad[/color]», que representa el peligro del nodo, y cierto número de conexiones con otros nodos, denominadas «[color=#a4885c]aristas[/color]».
+
+Los artefactos siempre empiezan en la profundidad cero, la raíz del árbol. Recorrer el árbol para encontrar tantos nodos como sea posible es el objetivo principal de los científicos que trabajan con ellos. Se extrae conocimiento de los nodos para obtener puntos de investigación y aumentar el valor de venta del artefacto.
+
+Cada nodo tiene dos componentes: su [color=#a4885c]estímulo[/color] y una [color=#a4885c]reacción[/color].
+
+Un estímulo es el comportamiento externo que desencadena la reacción. Hay muchos distintos y los nodos más profundos presentan estímulos más difíciles de satisfacer. Para activar algunos habrá que improvisar y quizá necesites hablar con otros departamentos para conseguir todo lo necesario.
+
+Algunas reacciones producen efectos instantáneos, mientras que otras generan cambios permanentes. Al activar un artefacto, la reacción hace que se desplace al azar hasta otro nodo con el que esté conectado.
+
+Con un poco de ciencia experimental, puedes empezar a comprender cómo se conectan los distintos nodos de un artefacto y cómo desplazarte entre ellos mediante activaciones repetidas.
+
+Todos los nodos con una profundidad distinta de cero tienen exactamente una arista que asciende hasta su nodo padre. Todas las demás aristas del nodo descienden hasta la profundidad siguiente.
+
+## Analizador de artefactos y consola de análisis
+<Box>
+<GuideEntityEmbed Entity="MachineArtifactAnalyzer"/>
+<GuideEntityEmbed Entity="ComputerAnalysisConsole"/>
+</Box>
+Las principales máquinas que utilizarás para la xenoarqueología son el [color=#a4885c]analizador de artefactos[/color] y la [color=#a4885c]consola de análisis[/color]. Con ellas puedes crear informes que contienen información valiosa sobre un artefacto.
+
+Para prepararlos, solo tienes que vincularlos con un configurador de red y colocar un artefacto sobre el analizador. Todas las estaciones tienen al menos una de estas máquinas ya preparada.
+
+Usa el botón [color=#a4885c]escanear[/color] de la consola para descubrir qué estímulo necesita el artefacto y qué hará su reacción. El escaneo tarda treinta segundos.
+
+Usa el botón [color=#a4885c]imprimir[/color] para guardar el resultado del escaneo y consultarlo más adelante.
+
+Cuando hayas descubierto un nodo nuevo, podrás extraer puntos del artefacto con el botón [color=#a4885c]Extraer[/color].
+
+## Montaje de artefactos
+<GuideEntityEmbed Entity="ArtifactFragment" Caption="Fragmento de artefacto"/>
+
+Es posible reunir varios fragmentos de artefacto y montarlos para formar un artefacto funcional. Puedes pedírselos al personal de Salvamento, que suele encontrarlos al extraer minerales de asteroides o durante expediciones.
+
+## Sesgo de recorrido
+<Box>
+  <GuideEntityEmbed Entity="MachineArtifactAnalyzer"/>
+</Box>
+Los artefactos colocados sobre un analizador de artefactos encendido están sujetos a un sesgo que afecta al nodo al que se desplazarán tras activarse. El sesgo se configura en la consola de artefactos.
+
+Hay dos tipos de sesgo:
+- [color=#a4885c]Arriba:[/color] favorece los nodos más cercanos al origen. Reduce la profundidad.
+- [color=#a4885c]Abajo:[/color] favorece los nodos más alejados del origen. Aumenta la profundidad.
+</Document>

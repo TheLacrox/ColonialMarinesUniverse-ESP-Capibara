@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
@@ -673,7 +674,7 @@ namespace Content.Shared.Containers.ItemSlots
                         continue;
 
                     var verbSubject = slot.Name != string.Empty
-                        ? Loc.GetString(slot.Name)
+                        ? LocalizeSlotName(slot)
                         : Name(args.Using.Value);
 
                     AlternativeVerb verb = new()
@@ -727,7 +728,7 @@ namespace Content.Shared.Containers.ItemSlots
                     continue;
 
                 var verbSubject = slot.Name != string.Empty
-                    ? Loc.GetString(slot.Name)
+                    ? LocalizeSlotName(slot)
                     : Comp<MetaDataComponent>(slot.Item.Value).EntityName ?? string.Empty;
 
                 AlternativeVerb verb = new()
@@ -768,7 +769,7 @@ namespace Content.Shared.Containers.ItemSlots
                     continue;
 
                 var verbSubject = slot.Name != string.Empty
-                    ? Loc.GetString(slot.Name)
+                    ? LocalizeSlotName(slot)
                     : Name(slot.Item!.Value);
 
                 InteractionVerb takeVerb = new()
@@ -796,7 +797,7 @@ namespace Content.Shared.Containers.ItemSlots
                     continue;
 
                 var verbSubject = slot.Name != string.Empty
-                    ? Loc.GetString(slot.Name)
+                    ? LocalizeSlotName(slot)
                     : Name(args.Using.Value);
 
                 InteractionVerb insertVerb = new()
@@ -830,6 +831,31 @@ namespace Content.Shared.Containers.ItemSlots
                 insertVerb.Priority = slot.Priority;
                 args.Verbs.Add(insertVerb);
             }
+        }
+
+        private string LocalizeSlotName(ItemSlot slot)
+        {
+            if (slot.NameLocId is not { } localizationId)
+                return CMUPrototypeLocalization.GetLiteralText(Loc, "ItemSlots", "name", slot.Name);
+
+            var separator = slot.Name.LastIndexOf(' ');
+            if (separator >= 0 && int.TryParse(slot.Name[(separator + 1)..], out var index))
+            {
+                return CMUPrototypeLocalization.GetLiteralText(
+                    Loc,
+                    "ItemSlots",
+                    "name",
+                    slot.Name,
+                    localizationId,
+                    ("index", index));
+            }
+
+            return CMUPrototypeLocalization.GetLiteralText(
+                Loc,
+                "ItemSlots",
+                "name",
+                slot.Name,
+                localizationId);
         }
 
         #endregion

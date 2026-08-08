@@ -7,6 +7,7 @@ using Content.Client.Gameplay;
 using Content.Client.UserInterface.Controls;
 using Content.Client.UserInterface.Systems.Gameplay;
 using Content.Client.Verbs;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Administration;
 using Content.Shared.Decals;
 using Content.Shared.Input;
@@ -20,6 +21,7 @@ using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.CustomControls;
 using Robust.Shared.Enums;
 using Robust.Shared.Input.Binding;
+using Robust.Shared.Localization;
 using Robust.Shared.Map;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -42,6 +44,7 @@ public sealed partial class MappingState : GameplayStateBase
     [Dependency] private IEntityNetworkManager _entityNetwork = default!;
     [Dependency] private IInputManager _input = default!;
     [Dependency] private ILogManager _log = default!;
+    [Dependency] private ILocalizationManager _localization = default!;
     [Dependency] private IMapManager _mapMan = default!;
     [Dependency] private MappingManager _mapping = default!;
     [Dependency] private IOverlayManager _overlays = default!;
@@ -357,7 +360,10 @@ public sealed partial class MappingState : GameplayStateBase
             else
             {
                 var entity = prototype as EntityPrototype;
-                var name = entity?.Name ?? prototype.ID;
+                var tile = prototype as ContentTileDefinition;
+                var name = entity?.Name ?? (tile is null
+                    ? prototype.ID
+                    : CMUPrototypeLocalization.GetTileName(_localization, tile.ID, tile.Name));
 
                 if (!string.IsNullOrWhiteSpace(entity?.EditorSuffix))
                     name = $"{name} [{entity.EditorSuffix}]";

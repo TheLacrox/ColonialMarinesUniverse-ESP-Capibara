@@ -1,0 +1,10 @@
+marking-AU14HumanHairCIA2 = CIA 2
+marking-AU14HumanHairCIA3 = CIA 3
+marking-AU14HumanHairCIA5 = CIA 4
+marking-AU14HumanHairIRS = Agente del IRS
+marking-AU14HumanHairFlatPressed = Aplastado
+marking-AU14HumanHairWaver = Ondulado
+marking-AU14HumanHairElegant = Moño elegante
+marking-AU14HumanHairLowBun = Moño bajo
+marking-AU14HumanHairLowPonyTail = Coleta baja
+marking-AU14HumanHairLowPonyTailAlt = Coleta discreta

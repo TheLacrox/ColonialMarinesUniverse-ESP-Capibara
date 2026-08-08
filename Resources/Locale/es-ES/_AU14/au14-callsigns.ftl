@@ -1,0 +1,29 @@
+au14-callsign-console-title = Directorio de la red de comunicaciones
+au14-callsign-console-net = RED { $faction }
+au14-callsign-console-mode-edit = CONTROL DE RED
+au14-callsign-console-mode-readonly = SOLO LECTURA
+au14-callsign-console-stations = { $count } estaciones
+au14-callsign-console-command-element = MANDO
+au14-callsign-console-squad-element = ESCUADRÓN { $squad }
+au14-callsign-console-no-stations = - sin estaciones -
+au14-callsign-console-rename-placeholder = Nueva palabra
+au14-callsign-console-suffix-placeholder = Sufijo
+au14-callsign-console-set-button = ESTABLECER
+au14-callsign-console-footer = Los indicativos de las estaciones sustituyen los nombres en la red. 6 = comandante · 5 = segundo al mando · 7 = suboficial superior · ACTUAL = líder de escuadrón · ROMEO = operador de radio · PAPA = piloto · CHIEF = jefe de tripulación · OPS = personal de operaciones · N-N = número de equipo de fuego. El personal con formación en radio puede cambiar el nombre de los elementos, reasignar sufijos y formar agrupaciones tácticas.
+au14-callsign-console-not-authorized = No tienes formación para administrar la red de comunicaciones.
+au14-callsign-console-wrong-faction = Este directorio no está bajo tu autoridad.
+au14-callsign-console-suffix-taken = El sufijo de indicativo { $suffix } ya está en uso dentro de ese elemento.
+au14-callsign-console-group-element = AGRUPACIÓN TÁCTICA
+au14-callsign-console-category-air = TRIPULACIÓN AÉREA
+au14-callsign-console-category-armor = TRIPULACIÓN DE VEHÍCULOS
+au14-callsign-console-category-mp = POLICÍA MILITAR
+au14-callsign-console-category-medical = PERSONAL MÉDICO
+au14-callsign-console-category-intel = INTELIGENCIA
+au14-callsign-console-category-synth = SINTÉTICOS
+au14-callsign-console-group-taken = Esa palabra no está disponible o ya se usa en la red.
+au14-callsign-console-group-placeholder = Nueva palabra de grupo
+au14-callsign-console-create-group-button = CREAR GRUPO
+au14-callsign-console-delete-group-button = DISOLVER
+au14-callsign-console-group-none = - elemento -
+au14-callsign-headset-examine = En la red respondes al indicativo [color=#6BC7FF]{ $callsign }[/color].
+au14-overwatch-console-comms-directory = Directorio de la red de comunicaciones

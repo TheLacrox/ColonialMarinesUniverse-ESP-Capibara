@@ -1,0 +1,24 @@
+<Document>
+  # Informes de artefactos
+  Gran parte de la experiencia de juego de Xenoarqueología gira en torno a la interpretación de informes de artefactos, que se crean en la [color=#a4885c]consola de análisis[/color] después de escanear un artefacto. Los informes contienen la información siguiente:
+
+  - [color=#a4885c]ID del nodo:[/color] un ID numérico único que corresponde a este nodo del artefacto. Resulta útil junto con un [color=#a4885c]escáner de nodos[/color] para identificar rápidamente nodos recurrentes.
+
+  - [color=#a4885c]Profundidad:[/color] la distancia respecto al nodo inicial (profundidad 0). Es una buena referencia rápida del valor y el peligro de un nodo.
+
+  - [color=#a4885c]Estado de activación:[/color] indica si un nodo se ha activado anteriormente.
+
+  - [color=#a4885c]Estímulo:[/color] el estímulo de ese nodo concreto.
+
+  - [color=#a4885c]Reacción:[/color] la reacción que provoca el estímulo. Suele ser imprecisa, por lo que se recomienda actuar con cautela.
+
+  - [color=#a4885c]Aristas:[/color] la cantidad de nodos conectados al nodo actual. Con este dato puedes calcular el número total de nodos y organizar un mapa de sus conexiones.
+
+  - [color=#a4885c]Valor sin extraer:[/color] la cantidad de puntos de investigación que se pueden extraer del artefacto. La extracción reduce el valor a cero y recorrer nodos nuevos lo aumenta.
+
+  Los informes son una herramienta útil para manipular un artefacto, sobre todo en las etapas posteriores, cuando recorres nodos que ya se han activado.
+  <Box>
+  <GuideEntityEmbed Entity="PaperArtifactAnalyzer"/>
+  </Box>
+  Para facilitar este proceso, plantéate imprimir informes, anotar los detalles descubiertos durante la activación o guardarlos en una carpeta cercana.
+</Document>

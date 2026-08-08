@@ -1,0 +1,25 @@
+<Document>
+  # Atmósfera
+  Atmósfera es el subdepartamento de Ingeniería responsable de mantener el ambiente de la estación y garantizar que sea seguro y respirable para la tripulación.
+
+  Atmósfera está a cargo de los técnicos de atmósfera, bajo la supervisión del Ingeniero jefe.
+
+  <Box>
+    <GuideEntityEmbed Entity="ToyFigurineAtmosTech" Caption="Atmosiano"/>
+    <GuideEntityEmbed Entity="ToyFigurineChiefEngineer" Caption="CE"/>
+  </Box>
+  <Box>
+    [color=#999999][italic][italic][/color]
+  </Box>
+
+  ## Responsabilidades
+  Por lo general, responderás a [textlink="alteraciones atmosféricas" link="AtmosphericUpsets"] en distintos puntos de la estación.
+  Pueden ser desde fugas menores hasta [textlink="incendios" link="Fires"] graves o incidentes de [textlink="exposición al espacio" link="Spacing"].
+
+  El personal de otros departamentos también puede solicitar [textlink="gases en bombona" link="GasCanisters"] para sus labores, como [textlink="plasma" link="Gasses"] para el [textlink="Departamento de Investigación" link="Science"] o [textlink="dióxido de carbono" link="Gasses"] para [textlink="Química" link="Chemist"].
+
+  En tus ratos libres, puedes mejorar la estación preparando salas con atmósferas distintas para [textlink="los Vox" link="Vox"] y otras especies, o produciendo [textlink="gases exóticos" link="Gasses"] para las necesidades de la estación.
+
+  Cuando no haya trabajo, puede que se espere de ti que ayudes a los ingenieros de estación con sus tareas y formes a los ingenieros de estación y técnicos de atmósfera novatos.
+
+</Document>

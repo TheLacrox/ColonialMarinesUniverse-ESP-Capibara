@@ -251,7 +251,9 @@ public sealed partial class CMUSurgeryRulebookSystem : EntitySystem
             resolved.AbsoluteStepIndex,
             resolved.TotalSteps,
             resolved.GatingSurgeryId,
-            surgery.Category);
+            surgery.Category,
+            surgery.DisplayNameLocId,
+            resolved.StepLabelLocId);
     }
 
     private static bool IsSurgicallySupportedPart(BodyPartType type)
@@ -374,7 +376,9 @@ public sealed partial class CMUSurgeryRulebookSystem : EntitySystem
             resolved.AbsoluteStepIndex,
             resolved.TotalSteps,
             resolved.GatingSurgeryId,
-            "close_up"));
+            "close_up",
+            surgery.DisplayNameLocId,
+            resolved.StepLabelLocId));
     }
 
     private bool NeedsBoneCavityClosure(EntityUid part)
@@ -517,7 +521,9 @@ public sealed partial class CMUSurgeryRulebookSystem : EntitySystem
             resolved.AbsoluteStepIndex,
             resolved.TotalSteps,
             resolved.GatingSurgeryId,
-            "close_up"));
+            "close_up",
+            surgery.DisplayNameLocId,
+            resolved.StepLabelLocId));
     }
 
     private bool IsSurgeryEligible(

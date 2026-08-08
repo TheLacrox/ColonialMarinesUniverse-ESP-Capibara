@@ -1,0 +1,1 @@
+station-event-zombie-outbreak-announcement = Se han confirmado avistamientos de diversos muertos vivientes a bordo de la estación. Todo el personal debe armarse, atrancar las puertas y asegurar su ubicación para impedir que la infección siga propagándose.

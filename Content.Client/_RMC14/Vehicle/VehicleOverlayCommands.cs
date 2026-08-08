@@ -1,4 +1,5 @@
 using Content.Client.Administration.Managers;
+using Content.Client._RMC14.Vehicle;
 using Robust.Shared.Console;
 
 namespace Content.Client.Vehicle;
@@ -30,7 +31,9 @@ public sealed partial class VehicleOverlayCommands : EntitySystem
         if (_adminManager.IsAdmin())
             return true;
 
-        shell.WriteError("You must be an admin to use this command.");
+        shell.WriteError(VehicleLoc.Target(
+            "cmu-rmc-vehicle-overlay-admin-required",
+            "You must be an admin to use this command."));
         return false;
     }
 
@@ -40,7 +43,11 @@ public sealed partial class VehicleOverlayCommands : EntitySystem
             return;
 
         var enabled = _vehicleMover.ToggleDebugOverlay();
-        shell.WriteLine($"Vehicle debug overlay {(enabled ? "enabled" : "disabled")}.");
+        var state = GetState(enabled);
+        shell.WriteLine(VehicleLoc.Target(
+            "cmu-rmc-vehicle-overlay-debug-state",
+            $"Vehicle debug overlay {state}.",
+            ("state", state)));
     }
 
     private void ToggleHardpoints(IConsoleShell shell, string argstr, string[] args)
@@ -49,7 +56,11 @@ public sealed partial class VehicleOverlayCommands : EntitySystem
             return;
 
         var enabled = _vehicleMover.ToggleHardpointOverlay();
-        shell.WriteLine($"Vehicle hardpoint overlay {(enabled ? "enabled" : "disabled")}.");
+        var state = GetState(enabled);
+        shell.WriteLine(VehicleLoc.Target(
+            "cmu-rmc-vehicle-overlay-hardpoint-state",
+            $"Vehicle hardpoint overlay {state}.",
+            ("state", state)));
     }
 
     private void ToggleCollision(IConsoleShell shell, string argstr, string[] args)
@@ -58,7 +69,11 @@ public sealed partial class VehicleOverlayCommands : EntitySystem
             return;
 
         var enabled = _vehicleMover.ToggleCollisionOverlay();
-        shell.WriteLine($"Vehicle collision overlay {(enabled ? "enabled" : "disabled")}.");
+        var state = GetState(enabled);
+        shell.WriteLine(VehicleLoc.Target(
+            "cmu-rmc-vehicle-overlay-collision-state",
+            $"Vehicle collision overlay {state}.",
+            ("state", state)));
     }
 
     private void ToggleMovement(IConsoleShell shell, string argstr, string[] args)
@@ -67,6 +82,17 @@ public sealed partial class VehicleOverlayCommands : EntitySystem
             return;
 
         var enabled = _vehicleMover.ToggleMovementOverlay();
-        shell.WriteLine($"Vehicle movement overlay {(enabled ? "enabled" : "disabled")}.");
+        var state = GetState(enabled);
+        shell.WriteLine(VehicleLoc.Target(
+            "cmu-rmc-vehicle-overlay-movement-state",
+            $"Vehicle movement overlay {state}.",
+            ("state", state)));
+    }
+
+    private static string GetState(bool enabled)
+    {
+        return enabled
+            ? VehicleLoc.Target("cmu-rmc-vehicle-overlay-enabled", "enabled")
+            : VehicleLoc.Target("cmu-rmc-vehicle-overlay-disabled", "disabled");
     }
 }

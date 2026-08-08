@@ -1,0 +1,30 @@
+﻿<Document>
+  # Ordenador de alertas atmosféricas
+  El ordenador de alertas atmosféricas muestra información sobre todas las alarmas de aire y de incendio de la estación.
+
+  <Box>
+    <GuideEntityEmbed Entity="ComputerAlert"/>
+  </Box>
+
+  Es una herramienta útil para identificar rápidamente las zonas que requieren atención.
+
+  El ordenador de alertas atmosféricas suele encontrarse en Atmósfera, donde los técnicos de atmósfera lo utilizan para supervisar los ambientes de toda la estación.
+  Sin embargo, también sirve a los ingenieros en general para evaluar los daños sufridos por la estación.
+
+  El ordenador muestra listas de alarmas de aire en los niveles [color=orange]Advertencia[/color] y [color=red]Peligro[/color]. También muestra la ubicación de todas las alarmas de aire y las identifica por colores según su estado actual.
+
+  Las alarmas de aire con estado Normal están ocultas de forma predeterminada.
+  Puedes mostrar u ocultar las alarmas de aire normales ajustando los filtros de la parte inferior de la interfaz.
+
+  El mapa dibuja un recuadro alrededor de la zona que supervisa cada alarma de aire, lo que ayuda a identificar la zona en peligro.
+  Este recuadro cambia de color según el estado de la alarma de aire.
+
+  Si una alarma de aire no recibe energía, aparece atenuada tanto en la lista como en el mapa.
+
+  Al hacer clic en una alarma de aire de la lista o del mapa se muestra información detallada sobre la atmósfera de esa zona, lo que ayuda a determinar el tipo de emergencia en curso.
+
+  En otra pestaña del ordenador de alertas atmosféricas también aparece una lista de las [textlink="alarmas de incendio" link="FireAndGasControl"] activadas, que permite localizar rápidamente zonas donde podría haber un incendio.
+
+  Puedes silenciar alarmas concretas, como las que supervisan cámaras de combustión y congeladores, haciendo clic en la alarma de la lista y pulsando el botón «Silenciar alertas».
+  Esto ocultará la alarma de la lista, pero seguirá apareciendo en el mapa.
+</Document>

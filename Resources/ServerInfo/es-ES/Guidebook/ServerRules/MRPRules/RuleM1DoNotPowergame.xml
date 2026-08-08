@@ -1,0 +1,25 @@
+<Document>
+  # No saques ventaja sin justificación
+
+  Debes tener una justificación dentro del personaje para tus acciones. El director de investigación no necesita un arma cuando la estación está en alerta verde. El jefe de seguridad no necesita acceso total al inicio del turno si no se ha detectado ninguna amenaza.
+
+  ## Ejemplos
+
+ Aceptable:
+ - Que los miembros de Mando lleven armas no letales cuando exista una amenaza plausible
+ - Que los miembros de Mando lleven armas letales cuando exista una amenaza confirmada
+ - Que los miembros de Mando lleven en cualquier momento las armas (no) letales con las que empiezan en sus dependencias
+ - Que el capitán esconda la ID de repuesto en un lugar debidamente seguro
+ - Aumentar la seguridad (por ejemplo, bloqueando puertas, construyendo muros, etc.) durante una alerta roja o azul
+ - Al cabo de varios minutos de ronda, el capitán asciende al alcaide a HoS porque no hay ninguno en la estación
+ - En general, situaciones en las que un personaje reacciona a información recibida durante una ronda de una forma lógicamente coherente
+
+  No aceptable:
+  - Que, al inicio de la ronda, el capitán conceda AA a todos los jefes
+  - Que, al inicio de la ronda, el HoP lleve a Ian a ATS porque «es un objetivo de alto perfil»
+  - Crear duplicados de objetos únicos o de gran valor para entregárselos a otros
+  - Usar una interpretación superficial para eludir la metaprotección
+  - Bloquear las puertas de ciertas zonas para reforzar su seguridad antes de que se confirme una amenaza que justifique esa medida
+  - Establecer el nivel de alerta azul o rojo cuando la situación no justifique la gravedad implícita (esto incluye mantener esos niveles mucho después de que se haya confirmado que dichas amenazas ya no están activas)
+  - En general, situaciones en las que un personaje se prepara de manera preventiva para hechos que aún no han ocurrido y de formas que carecen de lógica
+</Document>

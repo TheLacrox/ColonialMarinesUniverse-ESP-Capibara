@@ -1,0 +1,94 @@
+﻿<Document>
+  # Definiciones
+
+  [italic]Estas definiciones se usan a lo largo del resto de la Ley Marine.[/italic]
+
+  \n
+
+  [color=#008000][bold]Comandante[/bold][/color] o [color=#008000][bold]Comandante en funciones[/bold][/color]
+  - El [color=#008000][bold]Comandante[/bold][/color] actual de una operación.
+  - Transferible a un nuevo [color=#008000][bold]Comandante[/bold][/color], según la [textlink="Cadena de mando" link="RMCCommandChain"].
+
+  Si el [color=#008000][bold]Comandante[/bold][/color] queda incapacitado para el mando de forma [bold]temporal[/bold], el [color=#90EE90][bold]Oficial de guardia[/bold][/color] hereda los derechos de [color=#008000][bold]Comandante[/bold][/color], pero si el [color=#008000][bold]Comandante[/bold][/color] regresa, sigue siendo el [color=#008000][bold]Comandante[/bold][/color]. Esto incluye, entre otros casos:
+
+  - Un corte de comunicaciones prolongado.
+  - Que el [color=#008000][bold]Comandante[/bold][/color] se despliegue sobre el terreno.
+
+  Si el [color=#008000][bold]Comandante[/bold][/color] queda incapacitado para el mando de forma [bold]permanente[/bold], el siguiente en la [textlink="Cadena de mando" link="RMCCommandChain"] pasa a ser el [color=#008000][bold]Comandante[/bold][/color], en lugar de convertirse en [color=#90EE90][bold]Oficial de guardia[/bold][/color]. Esto incluye, entre otros casos:
+  - Que el [color=#008000][bold]Comandante[/bold][/color] sea relevado del servicio por [bold]arresto[/bold] o [bold]motín[/bold].
+  - Que el [color=#008000][bold]Comandante[/bold][/color] quede [bold]imposible de reanimar[/bold].
+
+  \n
+
+  [color=#90EE90][bold]Oficial de guardia[/bold][/color]
+  - El oficial de mayor rango en la [textlink="Cadena de mando" link="RMCCommandChain"] que, en ausencia temporal del [color=#008000][bold]Comandante[/bold][/color], queda al mando del buque de guerra.
+  - A menos que se indique explícitamente lo contrario, el [color=#90EE90][bold]Oficial de guardia[/bold][/color] es intercambiable con el [color=#008000][bold]Comandante[/bold][/color] y hereda sus derechos en este caso.
+
+  \n
+
+  [color=#ff000d][bold]MP/Fuerzas del Orden[/bold][/color]
+  - Agentes de la Policía Militar y de las fuerzas del orden, incluido el personal debidamente nombrado por el [color=#00CBFE][bold]Comandante[/bold][/color], que se encargan del UCMJ.
+
+  \n
+
+  [bold]Oficial[/bold]
+  - Una persona que ostenta el rango de oficial con nombramiento (Commissioned Officer) o de oficial de warrant (Warrant Officer). Estos derechos no se pueden transferir.
+
+  \n
+
+  [bold]Alto Mando[/bold]
+  - Rangos de tu facción superiores a los disponibles normalmente en la partida, a los que normalmente solo se puede contactar por fax. Suele estar controlado por un administrador.
+
+  \n
+
+  [bold]Tripulación de vuelo[/bold]
+  - Pilotos designados y jefes de tripulación de la nave de descenso.
+
+  \n
+
+  [bold]Ayudar, encubrir, conspirar[/bold]
+  - Ayudar a otros a cometer un delito, directa o indirectamente, incitarlos a cometerlo (incluido el soborno), conspirar o intentar cometer un delito se tratará, a efectos de la pena, como haber cometido ese delito.
+
+  \n
+
+  [bold]Órdenes legales[/bold]
+  - El personal debe cumplir todas las órdenes legales de sus superiores y NO está obligado a cumplir órdenes ilegales.
+  - Si el personal se niega a cumplir una orden, debe explicar por qué considera que infringiría el UCMJ, lo que la convertiría en una orden ilegal.
+  - Los NJP válidos no son órdenes ilegales en los casos de incumplimiento de deberes.
+
+  \n
+
+  [bold]Equipo antidisturbios[/bold]
+  - Granadas cegadoras.
+  - Gas lacrimógeno.
+  - Escopetas antidisturbios con munición de saco de perdigones.
+  - Escudos y armadura antidisturbios.
+  - Lanzagranadas antidisturbios.
+
+  \n
+
+  [bold]Base de operaciones[/bold]
+  - La base de operaciones avanzada.
+  - Designada por el [color=#008000][bold]Comandante[/bold][/color]. Suele ser una zona reforzada, normalmente la zona de aterrizaje principal.
+  - Las bases de operaciones no tienen que estar ubicadas junto a una zona de aterrizaje.
+
+  \n
+
+  [bold]Área de operaciones (AO)[/bold]
+  - El área de operaciones es la zona amplia donde se despliega al personal para llevar a cabo una operación (todo el mapa de superficie).
+
+  \n
+
+  [bold]Hospital de campaña[/bold]
+  - Es una zona reforzada donde no ha habido combates ni amenazas recientes.
+  - Debe estar designada como [bold]Zona segura.[/bold]
+
+  \n
+
+  [bold]Niveles de alerta[/bold]
+  - Código [bold][color=lightgreen]Verde[/color][/bold]: todo despejado.
+  - Código [bold][color=lightblue]Azul[/color][/bold]: posible actividad hostil.
+  - Código [bold][color=red]Rojo[/color][/bold]: hay una amenaza inmediata para la nave o base, o para su personal. Ejemplos de uso incluyen: un problema de seguridad en el núcleo de la IA, una brecha de contención biológica o zafarrancho general. Se autoriza el uso de baliza de socorro, evacuación y sistemas centinela.
+  - Código [bold][color=black]Delta[/color][/bold]: se aplica de inmediato si el casco de un buque de guerra sufre una brecha importante causada por intrusos, o si hay combatientes enemigos dentro de la base o la nave. También se lo conoce como «Charlie In The Wire».
+
+</Document>

@@ -1,0 +1,37 @@
+cmu-balance-rating-title = Comentarios sobre el equilibrio
+cmu-balance-rating-question-weapon-power = ¿Cómo de potente parece esta arma?
+cmu-balance-rating-question-weapon-fun = ¿Cómo de divertido es usar esta arma?
+cmu-balance-rating-question-xeno-power = ¿Cómo de potente parece este xeno?
+cmu-balance-rating-question-xeno-fun = ¿Cómo de divertido es jugar con este xeno?
+cmu-balance-rating-question-map-fun = ¿Cómo de divertida es esta combinación de mapa y modo de juego?
+cmu-balance-rating-question-generic = ¿Cómo valorarías esto?
+cmu-balance-rating-endpoint-weak = Débil
+cmu-balance-rating-endpoint-powerful = Potente
+cmu-balance-rating-endpoint-unfun = Aburrido
+cmu-balance-rating-endpoint-fun = Divertido
+cmu-balance-rating-option-tooltip = Puntuar con {$rating} de 5
+cmu-balance-rating-time-left = Tiempo restante: {$time}
+
+cmd-startbalancerating-desc = Inicia una encuesta de valoración de equilibrio previa a la ronda para un arma de especialista, un xeno o un mapa.
+cmd-startbalancerating-help = Uso: {$command} <target> <power|fun> [duración en segundos]
+cmd-cancelbalancerating-desc = Cancela la encuesta de valoración de equilibrio activa.
+cmd-cancelbalancerating-help = Uso: {$command}
+
+cmu-balance-rating-command-lobby-only = Las valoraciones de equilibrio solo pueden iniciarse en la sala previa a la ronda.
+cmu-balance-rating-command-round-unavailable = La ronda actual no está disponible para valoraciones de equilibrio.
+cmu-balance-rating-command-already-active = Ya hay una encuesta de valoración de equilibrio activa.
+cmu-balance-rating-command-duration-range = La duración debe estar entre {$minimum} y {$maximum} segundos.
+cmu-balance-rating-command-invalid-target = Ningún objetivo configurado para valoraciones de equilibrio tiene el ID «{$target}».
+cmu-balance-rating-command-map-fun-only = Los mapas solo pueden valorarse en la categoría de diversión.
+cmu-balance-rating-command-no-players = No hay jugadores aptos en la sala para valorar este objetivo.
+cmu-balance-rating-command-lobby-ended = La sala previa a la ronda terminó antes de poder abrir la encuesta.
+cmu-balance-rating-command-start-cancelled = La encuesta de valoración de equilibrio se canceló antes de abrirse.
+cmu-balance-rating-command-started = Se inició una valoración de {$metric} para {$target} con {$players} jugadores aptos.
+cmu-balance-rating-command-database-error = No se pudo guardar la encuesta de valoración de equilibrio en la base de datos.
+cmu-balance-rating-command-invalid-metric = La métrica debe ser power o fun.
+cmu-balance-rating-command-invalid-duration = La duración debe ser una cantidad finita de segundos.
+cmu-balance-rating-command-target-hint = Arma de especialista, xeno u objetivo de mapa/modo
+cmu-balance-rating-command-metric-hint = Métrica de valoración
+cmu-balance-rating-command-duration-hint = Duración de la encuesta en segundos
+cmu-balance-rating-command-cancelled = Se canceló la encuesta de valoración de equilibrio activa.
+cmu-balance-rating-command-none-active = No hay ninguna encuesta de valoración de equilibrio activa.

@@ -1,0 +1,18 @@
+<Document>
+  #Centinela, nivel 1
+  <GuideEntityEmbed Entity="CMXenoSentinel"/>
+  ##Jugar como Centinela
+  Eres una casta a distancia relativamente frágil. Usa tus escupitajos para desorganizar a los huéspedes del frente y transportarlos.
+
+  Asómate desde las esquinas y combina Escupitajo disperso y Escupitajo ralentizador en la misma descarga. Así podrás escupir con el mínimo riesgo; si algún huésped se acerca demasiado, atácalo con Tajo paralizante.
+
+  También puedes capturar huéspedes aislados lanzándoles un Escupitajo disperso y atacándolos con Tajo paralizante. Espera a que caigan y después plácalos.
+
+  ##Habilidades:
+  - [bold]Escupitajo ralentizador[/bold]: Lanza un glóbulo que ralentiza a los huéspedes y agota sus sustancias químicas; si carecen de armadura, los aturde y derriba.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoSpit"/>
+  - [bold]Escupitajo disperso[/bold]: Lanza escupitajos como una escopeta que derriban brevemente a los huéspedes. Resulta muy útil contra cualquiera que esté avanzando.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoScatteredSpit"/>
+  - [bold]Tajo paralizante[/bold]: Potencia tu próximo ataque o aguijonazo de cola para inyectar neurotoxina, lo que hará caer al objetivo tras un breve periodo.
+  <GuideEntityEmbed Entity="RMCGuidebookActionXenoCripplingStrike"/>
+</Document>

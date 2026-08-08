@@ -1,0 +1,748 @@
+<Document>
+  # Radio AN/PRC-117G
+
+  La AN/PRC-117G es una radio de mochila que utilizan operadores de radio con formación. Puede almacenar varias redes, transmitir a larga distancia y retransmitir el tráfico de los auriculares aliados cercanos mientras está encendida.
+
+  <Box>
+    <GuideEntityEmbed Entity="ANPRC117GRadio" Caption="AN/PRC-117G"/>
+    <GuideEntityEmbed Entity="ANPRCFillCardGOVFOR" Caption="Tarjeta de claves COMSEC"/>
+  </Box>
+
+  ## Configuración rápida
+
+  Antes de abandonar la zona de preparación:
+
+  - Lleva la radio en la [bold]ranura de la espalda[/bold].
+  - Haz Alt-clic en la radio o abre su menú de verbos.
+  - Selecciona [bold]Abrir panel de la radio[/bold].
+  - Selecciona [bold]+ AÑADIR RED[/bold].
+  - Asigna una etiqueta breve a la presintonía, como [bold]CMD[/bold].
+  - Selecciona [bold]SINTONIZAR[/bold].
+  - Elige una red con nombre en la pestaña [bold]RED[/bold] o introduce una frecuencia directa.
+  - Selecciona la fila de la presintonía para activarla.
+  - Inserta una tarjeta de claves COMSEC que coincida cuando sea necesario.
+  - Comprueba el indicativo que aparece en el panel de la radio.
+
+  Transmite por la presintonía activa con:
+
+  [color=#a4885c]:r Message here.[/color]
+
+  Una radio que se lleva puesta suele transmitir con el indicativo asignado a quien la porta. Si no tiene ninguno asignado, transmite como [bold]ESTACIÓN DESCONOCIDA[/bold].
+
+  ## Acceso del operador
+
+  Solo los operadores con formación pueden abrir el panel de la radio y transmitir directamente mediante ella.
+
+  Una radio que se lleva puesta solo retransmite tráfico cuando la porta un operador con formación. Una estación retransmisora desplegada sigue retransmitiendo sin que nadie la lleve.
+
+  ### Puestos con formación de GOVFOR y OPFOR
+
+  Ambas facciones regulares disponen del mismo conjunto de puestos con formación.
+
+  - Comandante
+  - Ayudante
+  - Oficiales de Estado Mayor
+  - Oficiales de ingeniería
+  - Oficiales de inteligencia
+  - Sintéticos
+  - Líderes de escuadra
+  - Líderes de equipo de fuego
+  - Operadores de tráfico radiofónico
+
+  ### Puestos con formación de la CLF
+
+  - Líder de célula
+  - Operador de radio
+
+  Un personaje sin formación también puede instruirse sobre el terreno leyendo un [bold]panfleto de operador de radio de campaña[/bold]. La formación es permanente y funciona con independencia del puesto.
+
+  Los usuarios de auriculares cercanos no necesitan formación de radio. Solo tienen que estar al alcance de una radio encendida que lleve su red.
+
+  ## Auricular
+
+  Cualquier persona cercana puede usar el auricular de la radio sin tener formación de radio.
+
+  Haz Alt-clic en [bold]quien lleve la radio[/bold], o en una radio desplegada, y selecciona [bold]Tomar auricular[/bold]. El auricular transmite por la presintonía activa de la radio con [color=#a4885c]:r[/color].
+
+  El auricular:
+
+  - Alcanza aproximadamente dos casillas.
+  - Se desconecta cuando el usuario sale de su alcance.
+  - Utiliza el indicativo propio del usuario del auricular.
+  - Solo puede utilizarlo una persona a la vez.
+
+  Vuelve a hacer Alt-clic para devolver el auricular.
+
+  Un líder de escuadra puede usar el auricular de un líder de equipo de fuego adjunto para acceder a una red de mando que no esté disponible en el auricular del líder de escuadra.
+
+  ## Presintonías
+
+  La radio puede almacenar hasta [bold]cuatro[/bold] presintonías.
+
+  Cada presintonía puede contener una red con nombre o una frecuencia directa. Sus etiquetas solo se muestran en esa radio y no modifican la red seleccionada.
+
+  Selecciona la fila de una presintonía para activarla. [color=#a4885c]:r[/color] siempre transmite por la presintonía activa.
+
+  <Table Columns="3" MinForcedColumnWidth="80">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Control[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Función[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Detalles[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]RED[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Selecciona una red de facción con nombre.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Se utiliza para la configuración habitual de redes.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]FREQ[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Introduce una frecuencia directa.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">También sirve para vigilar frecuencias enemigas.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]BORRAR[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Retira la red o frecuencia seleccionada.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Conserva la presintonía y su etiqueta.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]DEL[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Elimina la presintonía.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Otra presintonía se activa cuando es necesario.</Box>
+    </ColorBox>
+  </Table>
+
+  Las frecuencias se pueden introducir con o sin punto decimal.
+
+  [color=#a4885c]1606[/color] y [color=#a4885c]1.606[/color] seleccionan la misma frecuencia.
+
+  ## Indicativos
+
+  El tráfico de radio de cada facción se identifica mediante indicativos.
+
+  El nombre y el puesto del personaje que transmite no se envían por los auriculares ni las radios de mochila. En su lugar, los oyentes aliados y hostiles ven el indicativo del transmisor.
+
+  El habla cara a cara no se ve afectada.
+
+  Los miembros de cada facción reciben indicativos de forma automática al desplegarse.
+
+  <Table Columns="2" MinForcedColumnWidth="100">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Ejemplo[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Estación[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">HAVOC 6</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Oficial al mando</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">HAVOC 5</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Oficial ejecutivo o segundo al mando</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">HAVOC 7</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Suboficial superior</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">HAVOC ROMEO</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Operador de radio del mando</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">HAVOC OPS</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Oficiales de Estado Mayor</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">SABRE ACTUAL</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Líder de la escuadra Sabre (Alpha)</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">SABRE ROMEO</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Operador de radio adjunto a Sabre (Alpha)</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">SABRE 1-1 ... 1-N</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Miembros de la escuadra Sabre (Alpha)</Box>
+    </ColorBox>
+  </Table>
+
+  [bold]ACTUAL[/bold] identifica a la persona al mando cuando habla personalmente, en lugar de a un operador que transmite en su nombre.
+
+  Los líderes de escuadra responden como la estación ACTUAL de su elemento, por ejemplo [bold]SABRE ACTUAL[/bold]. A nivel de pelotón, [bold]HAVOC 6 ACTUAL[/bold] significa que el comandante ha tomado el auricular personalmente en lugar del RTO.
+
+  ### Directorio de la red de comunicaciones
+
+  El [bold]Directorio de la red de comunicaciones[/bold] muestra qué persona tiene asignado cada indicativo. Está disponible en los portátiles de los puestos de mando y en las consolas de supervisión.
+
+  El personal de radio autorizado puede:
+
+  - Cambiar las palabras identificativas de los elementos.
+  - Reasignar sufijos individuales.
+  - Consultar las asignaciones de indicativos actuales.
+
+  Una AN/PRC que se lleva puesta suele adoptar el indicativo asignado a quien la porta. El panel lo muestra como [bold]AUTO[/bold].
+
+  La radio se actualiza automáticamente cuando:
+
+  - Se entrega a otra persona.
+  - Se cambia el indicativo de quien la porta.
+  - Quien la porta cambia de escuadra.
+
+  ### Indicativo fijo
+
+  Desde el panel de la radio se puede establecer un indicativo de estación fijo.
+
+  - Selecciona un indicativo en el menú [bold]PRESINTONÍAS[/bold] o introduce uno a mano.
+  - Los indicativos manuales pueden contener hasta 16 caracteres.
+  - Selecciona [bold]FIJAR[/bold] para aplicar el indicativo fijo.
+  - Vacía el campo y selecciona [bold]FIJAR[/bold] para retirarlo.
+
+  Los indicativos fijos pueden emplearse para puestos de mando, puntos de retransmisión u otras estaciones permanentes.
+
+  Para consultar el formato de los mensajes, las palabras de procedimiento y algunos ejemplos, véase [textlink="Procedimiento radiotelefónico" link="AU14CommsVoiceProcedure"].
+
+  ## Frecuencias directas
+
+  Una presintonía que contiene una frecuencia sin una red con nombre es una presintonía de frecuencia directa.
+
+  Un [textlink="auricular sintonizado" link="AU14CommsHeadsets"] puede comunicarse por la misma frecuencia con [color=#a4885c]:x[/color].
+
+  Sin un relé:
+
+  - El tráfico se recibe con claridad hasta [bold]30 casillas[/bold].
+  - El tráfico puede sufrir una degradación leve hasta [bold]50 casillas[/bold].
+  - El tráfico no se recibe más allá de [bold]50 casillas[/bold].
+
+  Con una AN/PRC encendida que lleve la frecuencia:
+
+  - La radio retransmite el tráfico entre los usuarios cercanos.
+  - Ambos usuarios deben estar a menos de [bold]50 casillas[/bold] de la radio.
+
+  Utiliza [color=#a4885c]:r[/color] cuando la presintonía de frecuencia directa esté activa en la radio.
+
+  Utiliza [color=#a4885c]:x[/color] desde un auricular sintonizado.
+
+  ## Modos de funcionamiento
+
+  Selecciona [bold]MODO[/bold] para cambiar cíclicamente el modo de funcionamiento de la radio.
+
+  <Table Columns="4" MinForcedColumnWidth="75">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Modo[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Finalidad[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Ventajas[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Limitaciones[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]FH[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Tráfico con salto de frecuencia.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Reduce la interferencia en un nivel.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Consume 1.5× de batería y crea una pequeña firma de radiogoniometría.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]SC[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Tráfico cifrado normal.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Eficiente. El tráfico protegido no crea firma de radiogoniometría.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">No ofrece resistencia a las interferencias.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]CT[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Tráfico cifrado entre radios AN/PRC.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Oculto e ilegible sin una carga coincidente. No produce firma de radiogoniometría.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Requiere una carga. Los auriculares normales no pueden recibirlo.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]PT[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Emisión en texto claro.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Consume 0.5× de batería.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Cualquier receptor compatible puede leerla y genera el mayor riesgo de radiogoniometría.</Box>
+    </ColorBox>
+  </Table>
+
+  ## Interferencias
+
+  FH reduce las interferencias en un nivel.
+
+  - Las interferencias intensas pasan a ser medias.
+  - Las interferencias medias pasan a ser leves.
+  - Las interferencias leves se ignoran.
+
+  A diferencia de un auricular normal, la AN/PRC puede transmitir dentro del campo de un inhibidor. El mensaje puede degradarse en lugar de bloquearse por completo.
+
+  ## MON, ESCANEO y SQL
+
+  ### MON
+
+  [bold]MON[/bold] activa la vigilancia en modo de solo recepción.
+
+  Mientras MON está activado:
+
+  - La radio recibe tráfico de las redes que tenga cargadas.
+  - Se bloquea la transmisión con [color=#a4885c]:r[/color].
+  - Las teclas de los canales del auricular siguen disponibles.
+
+  ### ESCANEO
+
+  [bold]ESCANEO[/bold] escucha todas las redes cargadas.
+
+  Cuando recibe tráfico, la radio cambia la presintonía activa a la que ha recibido el mensaje. No vuelve automáticamente a la anterior.
+
+  ### SQL
+
+  [bold]SQL[/bold] controla el silenciador. El silenciador filtra las señales degradadas y la estática, pero no bloquea el tráfico claro.
+
+  <Table Columns="2" MinForcedColumnWidth="90">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]SQL[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Filtrado[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]0[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Deja pasar todo el tráfico, incluida la estática intensa.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]1[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Bloquea la estática intensa.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]2[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Bloquea las distorsiones de los inhibidores de intensidad media.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]3[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Valor predeterminado. Bloquea las distorsiones normales de los inhibidores.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]4[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Filtrado máximo. También puede suprimir el tráfico débil de los relés.</Box>
+    </ColorBox>
+  </Table>
+
+  Reducir el SQL permite que pase más tráfico degradado.
+
+  ## Carga COMSEC
+
+  La carga COMSEC se almacena en una tarjeta física que se inserta en la radio.
+
+  La radio admite una sola tarjeta de claves a la vez. El panel COMSEC muestra [bold]PROTEGIDA[/bold] cuando la tarjeta cargada coincide con el tráfico que se utiliza.
+
+  Los auriculares de las facciones contienen sus propias claves de red. La AN/PRC necesita una tarjeta de claves coincidente para participar de forma segura.
+
+  Transmitir por una red de facción protegida sin una carga coincidente:
+
+  - Muestra una advertencia.
+  - Aun así, envía el mensaje.
+  - Envía el mensaje en claro.
+
+  Una radio puede aceptar la tarjeta de claves de otra facción. Una tarjeta capturada que esté vigente permite leer el tráfico protegido compatible de esa facción.
+
+  ## PONER A CERO, DESTRUIR y RECIFRAR
+
+  ### PONER A CERO
+
+  [bold]PONER A CERO[/bold] expulsa la tarjeta de claves cargada.
+
+  La tarjeta se coloca en una mano libre. Si no hay ninguna disponible, se deja caer cerca.
+
+  ### DESTRUIR
+
+  [bold]DESTRUIR[/bold] elimina de forma permanente la tarjeta de claves cargada.
+
+  ### RECIFRAR
+
+  [bold]RECIFRAR[/bold] avanza la generación de carga activa de la facción de la tarjeta.
+
+  Las tarjetas anteriores de esa facción quedan [bold]SUSTITUIDAS[/bold], incluidas las capturadas.
+
+  Una tarjeta sustituida:
+
+  - Sigue siendo identificable.
+  - No puede proteger el tráfico actual.
+  - No puede descifrar el tráfico protegido actual.
+  - Aparece marcada como [bold]SUSTITUIDA[/bold] al examinarla o verla en el panel de la radio.
+
+  Las tarjetas de nueva emisión utilizan la generación vigente de la facción. Las tarjetas de reemplazo se obtienen mediante el sistema de suministros habitual.
+
+  ## Potencia de transmisión
+
+  Selecciona [bold]TX[/bold] para cambiar la potencia de transmisión.
+
+  <Table Columns="4" MinForcedColumnWidth="75">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Potencia[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Alcance del relé[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Consumo de batería[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Firma DF[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]LO[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">60% del alcance estándar.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">La mitad.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">La mitad.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]MED[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Alcance estándar.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Estándar.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Estándar.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">[bold]HI[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Aproximadamente 150% del alcance estándar.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">El doble.</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">El doble.</Box>
+    </ColorBox>
+  </Table>
+
+  ## Radiogoniometría
+
+  Los equipos de guerra electrónica enemigos pueden localizar las transmisiones que crean una firma de radiogoniometría.
+
+  Pueden generar una firma:
+
+  - El modo PT.
+  - Tráfico de una red de facción enviado sin las claves correspondientes.
+  - El modo FH, incluido el tráfico FH protegido.
+  - Una potencia de transmisión más alta.
+  - Las transmisiones repetidas desde el mismo lugar.
+  - Transmitir cerca de las interferencias enemigas.
+
+  El tráfico SC y CT cifrado no genera ninguna firma de radiogoniometría.
+
+  ## Control de radio
+
+  Selecciona [bold]CONTROL DE RADIO[/bold] para comprobar la cobertura de la red activa.
+
+  La radio transmite:
+
+  [bold]CONTROL DE RADIO, ¿CÓMO RECIBES?, CAMBIO[/bold]
+
+  El operador recibe un informe privado que enumera las estaciones con cobertura clara o degradada.
+
+  Cuando se realiza dentro de las interferencias enemigas, el informe también incluye el rumbo hacia el inhibidor más potente.
+
+  ## Estaciones retransmisoras
+
+  Un operador con formación puede desplegar una radio con [bold]Instalar retransmisor[/bold].
+
+  Una estación retransmisora:
+
+  - Retransmite las redes de facción que tiene cargadas.
+  - Sigue registrando el tráfico.
+  - Consume batería.
+  - Conserva sus presintonías.
+  - Conserva su tarjeta de claves.
+  - Permite que los usuarios cercanos tomen su auricular.
+
+  Cualquier usuario puede seleccionar [bold]Recoger radio[/bold], incluido el personal hostil.
+
+  Por tanto, una estación retransmisora capturada puede facilitar el acceso a su radio, su auricular y la tarjeta de claves cargada.
+
+  ## Infraestructura fija
+
+  Las [bold]matrices de comunicaciones[/bold] de a bordo que están encendidas sostienen las redes de facción en toda la nave, incluidas todas las cubiertas.
+
+  Los [bold]mástiles de antena[/bold] de los puestos de mando proporcionan cobertura local sin energía eléctrica. Los mástiles, las radios que se llevan puestas y las estaciones retransmisoras alcanzan un nivel por encima o por debajo del suyo; solo una matriz cubre verticalmente todo un emplazamiento.
+
+  Las redes de combate necesitan cobertura de al menos uno de los siguientes elementos:
+
+  - Una AN/PRC que se lleve puesta.
+  - Una estación de retransmisión desplegada.
+  - Una matriz de comunicaciones.
+  - Un mástil de antena de puesto de mando.
+
+  Si todos los relés disponibles se desactivan o retiran, la red afectada pierde la cobertura.
+
+  ## Redes y estación base de la CLF
+
+  La CLF dispone de dos redes de combate:
+
+  - [bold]CLF[/bold]: la red de la célula, presente en todos los auriculares de la CLF.
+  - [bold]CLF Command[/bold]: solo está presente en equipos AN/PRC, no en los auriculares. El líder de la célula accede a ella mediante el auricular o el panel de un equipo.
+
+  Ambas redes dependen de los relés. La CLF no tiene ninguna matriz fija ni ningún mástil de puesto de mando, por lo que la cobertura procede de los equipos AN/PRC de la CLF: la radio de mochila que el operador lleva sobre el terreno y la estación base de la célula en el refugio.
+
+  Perder toda la cobertura no silencia a la célula. El canal [bold]Colony[/bold] de todos los auriculares de la CLF no depende de los relés, así que una célula aislada de sus propias redes vuelve a las conversaciones de la colonia, que no están cifradas, y cualquiera que barra la banda puede localizar y leer.
+
+  ### Estación base clandestina
+
+  La estación base también es un equipo AN/PRC de la CLF, pero pesa demasiado para llevarlo puesto. Solo funciona desplegado, por lo que se transporta a mano hasta un escondite y se instala allí.
+
+  - Viene sintonizado en ambas redes de la CLF, así que funciona nada más desplegarlo sin necesidad de abrir el panel.
+  - Una vez desplegada y equipada con una antena de mástil, la estación sostiene ambas redes de la CLF en un radio amplio, suficiente para cubrir un refugio y sus accesos.
+  - El líder de la célula la opera desde el auricular mientras el operador lleva la radio de mochila hacia el frente. Los dos equipos mantienen unida a la célula en todo el mapa.
+  - Es la única cobertura fija de la célula. Destruirla o capturarla deja a la célula dependiendo del alcance que aún proporcione la radio de mochila del frente.
+
+  ## Batería y antena
+
+  La radio utiliza una batería en su ranura interna.
+
+  Se consume energía:
+
+  - Lentamente mientras la radio está inactiva.
+  - Más deprisa al transmitir.
+  - Más deprisa al realizar controles de radio.
+  - En función del modo de funcionamiento y la potencia de transmisión seleccionados.
+
+  La [bold]antena de látigo[/bold] estándar permite utilizarla en movimiento.
+
+  Una [bold]antena de mástil[/bold]:
+
+  - Proporciona más alcance cuando está inmóvil.
+  - Proporciona menos alcance que la antena de látigo cuando está en movimiento.
+  - Está destinada a puestos de mando y puntos de retransmisión.
+
+  ## BÚSQUEDA (barrido de banda)
+
+  Para interceptar una red hay que conocer su frecuencia. Las frecuencias se reasignan en cada operación, por lo que una tarjeta de frecuencias capturada es una forma de averiguarlas; la otra es el receptor de búsqueda.
+
+  [bold]INICIAR BÚSQUEDA[/bold] desplaza el receptor de la radio por toda la banda a la caza de cualquiera que esté transmitiendo.
+
+  La búsqueda deja el equipo completamente fuera de servicio:
+
+  - La radio abandona [bold]todas[/bold] las redes cargadas. No oyes nada.
+  - Se inhibe la transmisión. No puedes responder al tráfico durante la búsqueda.
+  - La batería sigue consumiéndose mientras dure la búsqueda.
+
+  Un solo barrido rara vez encuentra algo. El receptor solo registra una frecuencia si alguien ha transmitido por ella muy recientemente justo cuando el cabezal de barrido pasa por ese punto, y el contacto debe estar dentro del alcance de intercepción.
+
+  Los contactos se consolidan tras varias detecciones:
+
+  - Por debajo de la mitad de confianza, el contacto no se muestra en absoluto.
+  - Por encima de la mitad de confianza, el panel solo muestra una frecuencia aproximada, como [bold]~1.60X MHz[/bold].
+  - Con plena confianza, el contacto se resuelve en una frecuencia y un nombre de red exactos y puede sintonizarse en la presintonía activa con [bold]SINTONIZAR[/bold].
+
+  Los contactos parciales se desvanecen. Obtener una localización exige una red que siga hablando y un operador dispuesto a permanecer cerca, sordo y en silencio, mientras lo hace. Permanecer cerca del enemigo no basta por sí solo.
+
+  Una localización resuelta es permanente durante toda la operación.
+
+  Las frecuencias directas personalizadas se encuentran del mismo modo. Una red de escuadra que no figure en el plan publicado no queda oculta para un receptor de búsqueda: el equipo solo acepta frecuencias directas dentro de la banda militar cubierta por la búsqueda de [bold]1.000-2.999 MHz[/bold] o en la banda softwave de los colonos ([bold]30.000+ MHz[/bold]). Softwave queda fuera de la cobertura del receptor de búsqueda, pero tiene poco alcance, no está cifrada y se comparte con todos los dispositivos portátiles de la colonia.
+
+  ## Interceptar tráfico enemigo
+
+  Introduce la frecuencia de otra facción con [bold]FREQ[/bold] o sintoniza directamente un contacto resuelto de [bold]BÚSQUEDA[/bold].
+
+  Cuando la señal alcanza la radio, el tráfico interceptado aparece en [color=#FF6B6B]rojo[/color] y queda anotado en el registro de red.
+
+  Lo que se puede recibir depende del modo y del estado COMSEC de la radio transmisora.
+
+  <Table Columns="2" MinForcedColumnWidth="110">
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Tráfico[/bold]</Box>
+    </ColorBox>
+    <ColorBox Color="#263238">
+      <Box Margin="4">[bold]Sin una carga coincidente[/bold]</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Tráfico de auriculares</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Se recibe como estática.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Tráfico AN/PRC protegido</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Se recibe como estática.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Tráfico AN/PRC sin carga</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Legible.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Tráfico PT</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Legible.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Tráfico FH</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Legible cuando se envía en claro, con interferencias leves.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Tráfico CT</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">No se muestra.</Box>
+    </ColorBox>
+  </Table>
+
+  Una tarjeta de claves vigente de la facción transmisora permite leer el tráfico protegido compatible hasta que esa facción ordene un recifrado.
+
+  El tráfico interceptado se identifica mediante el indicativo. No revela el nombre ni el puesto del personaje que lo ha enviado.
+
+  La radio solo retransmite las redes de su propia facción. Sintonizar la frecuencia de otra facción permite recibirla, pero no amplía la cobertura de esa facción.
+
+  ## Registro de red
+
+  La radio almacena las últimas [bold]50[/bold] entradas mientras está encendida.
+
+  El registro conserva:
+
+  - Las transmisiones enviadas con [color=#a4885c]:r[/color].
+  - Las transmisiones del auricular de quien lleva la radio.
+  - El tráfico entrante de la red activa.
+  - El tráfico entrante de todas las redes cargadas mientras MON o ESCANEO está activado.
+
+  El registro sirve para revisar el tráfico perdido o confirmar que se ha transmitido un mensaje.
+
+  El tráfico de la red de otra facción se marca como [bold]INTERCEPCIÓN[/bold] en el registro.
+
+  ### Imprimir el registro
+
+  El registro se sobrescribe al alcanzar las 50 entradas y se pierde con la radio. [bold]IMPRIMIR REGISTRO[/bold] lo transcribe en papel para poder transportarlo, entregarlo u ocultarlo.
+
+  [bold]IMPRIMIR INTERCEPCIONES[/bold] solo imprime el tráfico interceptado, que suele ser lo que el mando realmente necesita.
+
+  Al imprimirlo, el operador de radio convierte lo que escucha en información que el resto de la célula puede aprovechar.
+
+  ## Pantalla de estado
+
+  La parte superior del panel de la radio muestra su estado actual.
+
+  - [bold]PWR[/bold] muestra el estado de la alimentación.
+  - [bold]ENLACE[/bold] muestra el estado actual del enlace.
+  - [bold]MODO[/bold] muestra el modo de funcionamiento seleccionado.
+  - [bold]BIT[/bold] muestra el estado de la prueba integrada.
+  - [bold]FALLO[/bold] muestra los problemas detectados.
+
+  [bold]LISTO[/bold] significa que la radio se lleva puesta y tiene una red activa.
+
+  [bold]SIN RED[/bold], [bold]STBY[/bold] y [bold]NO EQUIPADA[/bold] indican que una parte de la configuración está incompleta.
+</Document>

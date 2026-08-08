@@ -1,6 +1,7 @@
 using System.Linq;
 using Content.Server.Administration;
 using Content.Shared._CMU14.Threats;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Administration;
 using Robust.Shared.Console;
 using Robust.Shared.Prototypes;
@@ -81,6 +82,10 @@ public sealed partial class SpawnThirdPartyCommand : LocalizedEntityCommands
             .OrderBy(prototype => prototype.ID)
             .Select(prototype => new CompletionOption(
                 prototype.ID,
-                prototype.DisplayName ?? prototype.ID));
+                CMUPrototypeLocalization.GetPrototypeText(
+                    "third-party",
+                    prototype.ID,
+                    "display-name",
+                    prototype.DisplayName ?? prototype.ID)));
     }
 }

@@ -14,6 +14,7 @@ using Content.Shared.Mobs.Components;
 using Content.Shared.Throwing;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Interaction;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared.Popups;
 using Content.Shared.Stacks;
 using Content.Shared.Verbs;
@@ -568,8 +569,19 @@ public sealed class SmeltingPotSystem : EntitySystem
         return null;
     }
 
-    private string GetStackName(ProtoId<StackPrototype> stackType) =>
-        _prototype.TryIndex(stackType, out var proto) ? Loc.GetString(proto.Name) : stackType.Id;
+    private string GetStackName(ProtoId<StackPrototype> stackType)
+    {
+        if (!_prototype.TryIndex(stackType, out var proto))
+            return stackType.Id;
+
+        var fallback = Loc.GetString(proto.Name);
+        return CMUPrototypeLocalization.GetStringOrFallback(
+            Loc,
+            "stack",
+            proto.ID,
+            "name",
+            fallback);
+    }
 
     // ---- examine ---------------------------------------------------------------------------------
 

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._RMC14.Intel;
 using Content.Shared._RMC14.Intel.Tech;
 using Content.Shared._RMC14.Requisitions;
@@ -1332,7 +1333,10 @@ public sealed partial class VehicleSupplySystem : EntitySystem
         if (hardpointKey == "rmcvehicletanksnowplow")
         {
             categoryKey = "tank-general";
-            categoryLabel = "General";
+            categoryLabel = CMULocalization.GetTargetStringOrFallback(
+                Loc,
+                "cmu-rmc-vehicle-loadout-general",
+                "General");
             categoryOrder = 3;
             return true;
         }
@@ -1344,22 +1348,34 @@ public sealed partial class VehicleSupplySystem : EntitySystem
         {
             case "cannon":
                 categoryKey = "tank-primary";
-                categoryLabel = "Primary";
+                categoryLabel = CMULocalization.GetTargetStringOrFallback(
+                    Loc,
+                    "cmu-rmc-vehicle-loadout-primary",
+                    "Primary");
                 categoryOrder = 0;
                 return true;
             case "launcher":
                 categoryKey = "tank-secondary";
-                categoryLabel = "Secondary";
+                categoryLabel = CMULocalization.GetTargetStringOrFallback(
+                    Loc,
+                    "cmu-rmc-vehicle-loadout-secondary",
+                    "Secondary");
                 categoryOrder = 1;
                 return true;
             case "armor":
                 categoryKey = "tank-armor";
-                categoryLabel = "Armor";
+                categoryLabel = CMULocalization.GetTargetStringOrFallback(
+                    Loc,
+                    "cmu-rmc-vehicle-loadout-armor",
+                    "Armor");
                 categoryOrder = 2;
                 return true;
             case "support":
                 categoryKey = "tank-support";
-                categoryLabel = "Support";
+                categoryLabel = CMULocalization.GetTargetStringOrFallback(
+                    Loc,
+                    "cmu-rmc-vehicle-loadout-support",
+                    "Support");
                 categoryOrder = 4;
                 return true;
             default:
@@ -1644,7 +1660,12 @@ public sealed partial class VehicleSupplySystem : EntitySystem
         {
             var options = new List<VehicleSupplyLoadoutOptionState>
             {
-                new(string.Empty, "None")
+                new(
+                    string.Empty,
+                    CMULocalization.GetTargetStringOrFallback(
+                        Loc,
+                        "cmu-rmc-vehicle-loadout-none",
+                        "None"))
             };
 
             foreach (var option in category.Options)
@@ -1674,13 +1695,22 @@ public sealed partial class VehicleSupplySystem : EntitySystem
     private string GetLoadoutCategoryName(VehicleSupplyLoadoutCategory category)
     {
         if (!string.IsNullOrWhiteSpace(category.Name))
-            return category.Name;
+            return CMUPrototypeLocalization.GetLiteralText(Loc, "VehicleSupplyConsole", "name", category.Name);
 
         return category.Id switch
         {
-            "primary" => "Primary",
-            "armor" => "Armor",
-            "support" => "Support",
+            "primary" => CMULocalization.GetTargetStringOrFallback(
+                Loc,
+                "cmu-rmc-vehicle-loadout-primary",
+                "Primary"),
+            "armor" => CMULocalization.GetTargetStringOrFallback(
+                Loc,
+                "cmu-rmc-vehicle-loadout-armor",
+                "Armor"),
+            "support" => CMULocalization.GetTargetStringOrFallback(
+                Loc,
+                "cmu-rmc-vehicle-loadout-support",
+                "Support"),
             _ => category.Id
         };
     }
@@ -1688,7 +1718,7 @@ public sealed partial class VehicleSupplySystem : EntitySystem
     private string GetLoadoutOptionName(VehicleSupplyLoadoutOption option)
     {
         if (!string.IsNullOrWhiteSpace(option.Name))
-            return option.Name;
+            return CMUPrototypeLocalization.GetLiteralText(Loc, "VehicleSupplyConsole", "name", option.Name);
 
         return GetPrototypeName(option.Item.Id);
     }
@@ -1779,7 +1809,7 @@ public sealed partial class VehicleSupplySystem : EntitySystem
     private string GetEntryName(VehicleSupplyEntry entry)
     {
         if (!string.IsNullOrWhiteSpace(entry.Name))
-            return entry.Name;
+            return CMUPrototypeLocalization.GetLiteralText(Loc, "VehicleSupplyConsole", "name", entry.Name);
 
         return GetPrototypeName(entry.Vehicle.Id);
     }

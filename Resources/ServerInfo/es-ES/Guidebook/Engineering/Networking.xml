@@ -1,0 +1,64 @@
+<Document>
+  # Redes
+  En la estación, los dispositivos necesitan comunicarse entre sí para cumplir sus funciones.
+  Las [textlink="alarmas de aire" link="AirAlarms"] deben comunicarse con sus respectivos dispositivos, las [textlink="puertas" link="Airlocks"] deben vincularse para formar esclusas adecuadas, y mucho más.
+
+  Esto se lleva a cabo mediante dos sistemas: el sistema de vínculos y el sistema de listas.
+
+  Puedes utilizar la multiherramienta o el configurador de redes para interactuar con estos sistemas.
+  Puedes cambiar de un sistema a otro mediante [color=yellow][bold][keybind="AltActivateItemInHand"][/bold][/color] o situando el cursor sobre el dispositivo y usando [color=yellow][bold][keybind="AltActivateItemInWorld"][/bold][/color].
+
+  <Box HorizontalAlignment="Stretch">
+    <Box>
+      <GuideEntityEmbed Entity="Multitool"/>
+    </Box>
+    <Box>
+      <GuideEntityEmbed Entity="NetworkConfigurator"/>
+    </Box>
+  </Box>
+
+  Algunos dispositivos exigirán acceso para poder vincular otros dispositivos a ellos.
+  Por ejemplo, necesitas acceso a Atmósfera para vincular dispositivos a una [textlink="alarma de aire" link="AirAlarms"].
+  En el caso de las puertas, necesitarás el nivel de acceso de la puerta a la que quieras vincularlos.
+
+  ## Sistema de vínculos
+  El sistema de vínculos sirve para vincular expresamente dos dispositivos, como una puerta a otra.
+
+  <Box>
+    <GuideEntityEmbed Entity="AirlockExternal"/>
+    <GuideEntityEmbed Entity="AirlockEngineering"/>
+    <GuideEntityEmbed Entity="BlastDoor"/>
+    <GuideEntityEmbed Entity="SignalButton"/>
+  </Box>
+
+  En el sistema de vínculos, los dispositivos tienen [bold]puertos[/bold] capaces de enviar o recibir señales.
+
+  Al situar el cursor sobre un puerto aparecerá una descripción emergente que indica su función.
+  Por ejemplo, los puertos de salida indicarán las condiciones en las que emitirán una señal, y los de entrada indicarán lo que hará el dispositivo si recibe una.
+
+  ## Sistema de listas
+  El sistema de listas sirve para vincular varios dispositivos a un único dispositivo principal, como varios dispositivos atmosféricos a una alarma de aire.
+
+  <Box>
+    <GuideEntityEmbed Entity="AirAlarm" Caption=""/>
+    <GuideEntityEmbed Entity="GasVentPump" Caption=""/>
+    <GuideEntityEmbed Entity="GasVentScrubber" Caption=""/>
+    <GuideEntityEmbed Entity="AirSensor" Caption=""/>
+    <GuideEntityEmbed Entity="Firelock" Caption=""/>
+  </Box>
+
+  Cada dispositivo tiene su propia dirección única, que permite identificarlo en el sistema de listas. Al vincular un dispositivo a otro principal, añades su dirección a una lista de dispositivos con los que se comunicará el principal.
+
+  Puedes guardar la dirección de un dispositivo en tu herramienta interactuando con él mediante [color=yellow][bold][keybind="Use"][/bold][/color].
+
+  Cuando tengas guardada una lista de dispositivos en la herramienta, puedes vincularlos a un dispositivo principal interactuando con este mediante [color=yellow][bold][keybind="Use"][/bold][/color], lo que abrirá una interfaz.
+
+  La interfaz ofrece varias opciones:
+  - Establecer: Sobrescribe la lista actual de dispositivos vinculados con los dispositivos guardados en la herramienta.
+  - Añadir: Añade los dispositivos guardados en la herramienta a la lista actual de dispositivos vinculados.
+  - Limpiar: Elimina todos los dispositivos vinculados de la alarma de aire.
+  - Copiar: Copia en la herramienta la lista de dispositivos vinculados actualmente.
+  - Mostrar: Dibuja una línea entre el dispositivo principal y todos los dispositivos vinculados. Esto resulta útil para visualizar la zona que cubre la alarma de aire.
+
+  Si necesitas limpiar la herramienta, puedes pulsar [color=yellow][bold][keybind="Use"][/bold][/color] sobre ella o usar [color=yellow][bold][keybind="ActivateItemInHand"][/bold][/color] para abrir una lista de dispositivos guardados y, después, pulsar el botón «Limpiar».
+</Document>

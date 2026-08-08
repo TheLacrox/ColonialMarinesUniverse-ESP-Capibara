@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._RMC14.Attachable.Events;
 using Content.Shared._RMC14.Emplacements;
 using Content.Shared._RMC14.Overwatch;
@@ -136,7 +137,17 @@ public abstract partial class SharedScopeSystem : EntitySystem
 
         var zoomLevel = GetCurrentZoomLevel(scope);
         if (zoomLevel.Name != null)
-            _popup.PopupClient(Loc.GetString("rcm-action-popup-scope-cycle-zoom", ("zoom", zoomLevel.Name)), args.Performer, args.Performer);
+        {
+            var zoomName = CMUPrototypeLocalization.GetLiteralText(
+                Loc,
+                "Scope",
+                "name",
+                zoomLevel.Name);
+            _popup.PopupClient(
+                Loc.GetString("rcm-action-popup-scope-cycle-zoom", ("zoom", zoomName)),
+                args.Performer,
+                args.Performer);
+        }
 
         Dirty(scope);
     }

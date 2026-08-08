@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Shared._CMU14.Localizations;
 using Content.Shared._RMC14.Attachable.Components;
 using Content.Shared._RMC14.Attachable.Events;
 using Content.Shared._RMC14.Slow;
@@ -266,7 +267,12 @@ public sealed partial class AttachableToggleableSystem : EntitySystem
 
         args.Cancelled = true;
 
-        _popupSystem.PopupClient(gun.Comp.Message, args.User, args.User);
+        var message = CMUPrototypeLocalization.GetLiteralText(
+            Loc,
+            "AttachableToggleablePreventShoot",
+            "message",
+            gun.Comp.Message);
+        _popupSystem.PopupClient(message, args.User, args.User);
     }
 
 /*    private void OnUniqueAction(Entity<AttachableToggleableComponent> attachable, ref UniqueActionEvent args)

@@ -46,14 +46,22 @@ public sealed class SapperWorkbenchSlotState
     public string SlotId { get; }
     public string SlotName { get; }
     public string? AttachmentName { get; }
+    public string? AttachmentPrototype { get; }
     public bool CanAdd { get; }
     public bool CanRemove { get; }
 
-    public SapperWorkbenchSlotState(string slotId, string slotName, string? attachmentName, bool canAdd, bool canRemove)
+    public SapperWorkbenchSlotState(
+        string slotId,
+        string slotName,
+        string? attachmentName,
+        string? attachmentPrototype,
+        bool canAdd,
+        bool canRemove)
     {
         SlotId = slotId;
         SlotName = slotName;
         AttachmentName = attachmentName;
+        AttachmentPrototype = attachmentPrototype;
         CanAdd = canAdd;
         CanRemove = canRemove;
     }

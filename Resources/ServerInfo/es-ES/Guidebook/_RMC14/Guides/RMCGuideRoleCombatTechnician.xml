@@ -1,0 +1,160 @@
+<Document>
+
+  #Técnico de combate
+
+
+  El técnico de combate es el ingeniero de primera línea de las escuadras de marines. Sus principales responsabilidades son restablecer la electricidad, abrir brechas en edificios y levantar fortificaciones avanzadas. Tu trabajo proporcionará cobertura a los demás marines para que puedan combatir desde posiciones en las que, de otro modo, no podrían hacerlo con seguridad.
+
+  ##Equipo previo al despliegue
+
+  Se espera que el técnico de combate lleve siempre encima los siguientes objetos:
+  - [bold]Un juego completo de herramientas[/bold]. Incluye el soplete, la palanca, la herramienta de atrincheramiento, el reemplazador de luces, el destornillador, el sintonizador de accesos de seguridad, el cortaalambres y la llave inglesa.
+
+  <Box>
+    <GuideEntityEmbed Entity="CMWelder"/>
+    <GuideEntityEmbed Entity="CMCrowbar"/>
+    <GuideEntityEmbed Entity="CMEntrenchingTool"/>
+  </Box>
+   <Box>
+    <GuideEntityEmbed Entity="CMScrewdriver"/>
+    <GuideEntityEmbed Entity="CMMultitool"/>
+    <GuideEntityEmbed Entity="CMWirecutter"/>
+  </Box>
+   <Box>
+    <GuideEntityEmbed Entity="CMWrench"/>
+    <GuideEntityEmbed Entity="CMBeltUtilityFilled" Caption="cinturón de herramientas"/>
+    <GuideEntityEmbed Entity="RMCBeltConstruction" Caption="cinturón de herramientas"/>
+  </Box>
+
+  - [bold]Protección para soldadura[/bold]. El casco estándar del técnico de combate protege al soldar, pero puedes encontrar gafas de soldadura en otros lugares si pierdes el casco.
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCWeldingGoggles"/>
+    <GuideEntityEmbed Entity="RMCHelmetWelding"/>
+    <GuideEntityEmbed Entity="RMCVisorWelding"/>
+  </Box>
+
+  - [bold]Materiales de construcción habituales[/bold] para levantar fortificaciones: sacos terreros, metal y plastiacero. Es muy recomendable usar una [bold]bolsa de construcción[/bold] para transportar estos objetos voluminosos con eficacia.
+
+  <Box>
+    <GuideEntityEmbed Entity="CMSandbagFull50"/>
+    <GuideEntityEmbed Entity="CMSheetMetal"/>
+    <GuideEntityEmbed Entity="CMSheetPlasteel50"/>
+    <GuideEntityEmbed Entity="RMCPouchConstruction"/>
+  </Box>
+
+  - [bold]Explosivos de brecha[/bold], que sirven para acceder a zonas inaccesibles abriendo una nueva entrada y para privar al enemigo de cobertura.
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCExplosivePlastic"/>
+    <GuideEntityEmbed Entity="RMCExplosiveBreachingCharge"/>
+  </Box>
+
+  - [bold]Tu fiel torreta centinela[/bold], que puedes desplegar para proporcionar fuego de cobertura en entornos hostiles. Si se rompe, no recibirás otra.
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCSentry"/>
+    <GuideEntityEmbed Entity="RMCTesla"/>
+    <GuideEntityEmbed Entity="RMCSentryFire"/>
+  </Box>
+
+  La mayoría de estos objetos se proporciona gratis en tu barracón especializado. Puedes obtener sin coste el conjunto esencial de ingeniería, una torreta centinela y un cinturón lleno de herramientas. Emplea tus puntos limitados en una mejora para la torreta, más explosivos de brecha o más materiales de construcción. Si necesitas cualquier otra cosa, haz cola en Requisiciones para pedirla.
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCSentry"/>
+    <GuideEntityEmbed Entity="CMBeltUtilityFilled" Caption="cinturón de herramientas"/>
+    <GuideEntityEmbed Entity="RMCEngineeringUpgrade"/>
+  </Box>
+
+  Cuando te hayas equipado y desplegado, se espera que cumplas las siguientes responsabilidades.
+
+  ##Restablecer la electricidad y reparar las luces
+
+  En la zona de operaciones (AO), la electricidad procede de los [bold]generadores geotérmicos G-11[/bold]. Cuando los marines aterricen, estarán apagados y averiados; normalmente serán los técnicos de combate quienes deban repararlos. El trabajo necesario dependerá de la magnitud de los daños. Para reparar un generador:
+
+  - Primero usa un [bold]soplete[/bold] para volver a soldar los paneles.
+  - Después usa el [bold]cortaalambres[/bold] para reparar los cables.
+  - Por último, usa una [bold]llave inglesa[/bold] para fijar la máquina en su sitio.
+
+  <Box>
+    <GuideEntityEmbed Entity="CMWelder"/>
+    <GuideEntityEmbed Entity="CMWirecutter"/>
+    <GuideEntityEmbed Entity="CMWrench"/>
+  </Box>
+
+  Cuando se encienda la pantalla azul, el generador estará funcionando y suministrando electricidad.
+
+  La electricidad generada se distribuirá automáticamente a los APC, que almacenan una pequeña cantidad en la batería instalada por si fallan los generadores. Después se distribuye a los dispositivos electrónicos cercanos, como puertas, luces y dispensadores. El consumo total aparece en la interfaz del APC. Si el APC local queda destruido o se agota su batería, la zona inmediata se quedará sin electricidad.
+
+  Para cambiar la batería de un APC, pasa primero tu tarjeta ID de Ingeniería o tus placas de identificación para desbloquear la interfaz y soltar el cierre de la cubierta. Después, usa una palanca para abrirla a la fuerza y acceder a la batería; puedes retirarla con una mano vacía y sustituirla por otra cargada. Tras el cambio, usa la palanca para cerrar el panel, activa el cierre de la cubierta y vuelve a pasar tu ID para bloquear la interfaz del APC. Esto permite mantener temporalmente una zona pequeña con electricidad aunque no haya generación.
+
+  Si el APC queda destruido, puede volver a montarse con un destornillador.
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCGeneratorFusionColony"/>
+  </Box>
+
+  Cuando se genere electricidad, tendrás que reparar los APC averiados para abastecer los dispositivos cercanos y usar el reemplazador de luces para cambiar las bombillas rotas. Los focos dañados exigirán algo más de trabajo, pues también habrá que sustituir el cableado interno. Lleva algo de [bold]bobina de cable[/bold] si prevés repararlos.
+
+  ##Reparación de equipos sensibles
+
+  El técnico de combate es uno de los pocos marines con formación especial para reparar equipos vitales de la colonia. Se te confiarán dos: la torre de telecomunicaciones y la torre de sensores, sobre las que puedes obtener más información [textlink="aquí" link="RMCGuideCommunicationsTowers"].
+
+  <Box>
+    <GuideEntityEmbed Entity="AU14CommunicationsTower"/>
+    <GuideEntityEmbed Entity="AU14SensorTower"/>
+  </Box>
+
+  ##Construcción de fortificaciones
+
+  El enemigo al que te enfrentas destaca en el combate cuerpo a cuerpo. En muchas situaciones, lo único que impide que un marine acabe despedazado es una simple barricada metálica, que bloquea el paso pero permite disparar por encima.
+
+  <Box>
+    <GuideEntityEmbed Entity="CMBarricadeMetal"/>
+    [color=#C68610]Todo lo que necesita el técnico de combate se encuentra en el menú de fabricación, cuya tecla predeterminada es G. Escribe «Bar» en el campo de búsqueda.[/color]
+  </Box>
+
+  - [bold]Barricada metálica[/bold]: Fortificación de combate estándar, fiable y de eficacia probada. Requiere 4 unidades de metal.
+  - [bold]Barricada metálica plegable[/bold]: Barricada metálica que puede plegarse para dejar paso. Es extremadamente frágil, así que no confíes en que te proteja demasiado. Requiere 6 unidades de metal.
+  - [bold]Barricada de plastiacero[/bold]: Versión mucho más resistente, pero cara, de la barricada metálica. Requiere 6 unidades de plastiacero.
+  - [bold]Barricada de plastiacero plegable[/bold]: Esta barricada plegable es más resistente que sus equivalentes metálicas, por lo que se recomienda para crear entradas en fortificaciones sólidas. Requiere 8 unidades de plastiacero.
+  - [bold]Barricada plegable MB-6[/bold]: Barricada portátil de material compuesto que se entrega en pilas de tres en los servicios de la escuadra o en Requisiciones. Úsala en la mano para desplegarla en la dirección a la que miras. Arrastra la barricada desplegada sobre ti para volver a plegarla, o usa una palanca si tienes formación de ingeniería. Puede llevarse a la espalda o en el espacio de almacenamiento del traje, pero no admite alambre ni mejoras.
+
+  <Box>
+    <GuideEntityEmbed Entity="CMBarricadeMetalDoor"/>
+    <GuideEntityEmbed Entity="RMCBarricadePlasteel"/>
+    <GuideEntityEmbed Entity="CMBarricadePlasteelDoor"/>
+    <GuideEntityEmbed Entity="CMFoldingBarricadesMB6x3"/>
+  </Box>
+
+  La alternativa barata a las barricadas metálicas son las [bold]barricadas de sacos terreros[/bold]. Se despliegan más rápido que una barricada y no exigen formación especializada, pero antes hay que llenar los sacos con una herramienta de atrincheramiento. Además, las opciones para repararlas son limitadas, por lo que solo resultan fiables durante cierto tiempo.
+
+  <Box>
+    <GuideEntityEmbed Entity="CMBarricadeSandbag"/>
+  </Box>
+
+  Una barricada no está terminada hasta que la cubres con alambre de espino, que puedes fabricar por 1 unidad de metal por barricada. Una barricada con alambre dañará a todo lo que la golpee e impedirá por completo que nadie salte por encima. [bold]Toda barricada que admita alambre debe tener alambre de espino[/bold]. Las barricadas portátiles MB-6 son la excepción: están diseñadas para plegarse y trasladarse, así que no admiten alambre ni mejoras permanentes.
+
+  <Box>
+    <GuideEntityEmbed Entity="BarbedWire1"/>
+  </Box>
+
+  Las barricadas no plegables tienen tres mejoras que requieren 2 unidades de metal:
+  - [bold]Contra riesgo biológico[/bold]: Ofrece resistencia a la corrosión provocada por diversos ataques de ácido.
+  - [bold]Resistente a explosiones[/bold]: Ofrece resistencia a las explosiones.
+  - [bold]Reforzada[/bold]: Ofrece resistencia a los ataques cuerpo a cuerpo.
+
+  Para mejorar una barricada, púlsala mientras sostienes láminas de metal en la mano activa.
+
+  <Box>
+    <GuideEntityEmbed Entity="CMBarricadeBurn"/>
+    <GuideEntityEmbed Entity="CMBarricadeExplosive"/>
+    <GuideEntityEmbed Entity="CMBarricadeBrute"/>
+  </Box>
+
+  Si una barricada sufre daños, puede repararse con un soplete. Es un proceso largo que no la repara por completo, por lo que los daños intensos terminarán por desgastar tus defensas. Al colocar barricadas, asegúrate de que permitan a los marines disparar al enemigo sin peligro y evita situarlas justo al lado de esquinas desde las que puedan atacarlas sin cesar a cubierto. Si te sobra tiempo, desmantela o vuela esa cobertura para abrir nuevas líneas de tiro.
+
+  ##Recuperación de materiales
+
+  [bold]Siempre[/bold] necesitarás más materiales de construcción, y la vida de los demás marines vale más que los edificios de alrededor. Puedes desmantelar rápidamente sillas, barandillas metálicas y marcos de ventanas para obtener metal; las paredes y puertas también pueden desmantelarse, aunque más despacio, con el mismo fin. Algunas zonas de operaciones tendrán fortificaciones ya instaladas que podrás aprovechar o desmantelar para recuperar sus materiales de construcción. Al examinarlas se muestran las instrucciones de desmontaje.
+</Document>

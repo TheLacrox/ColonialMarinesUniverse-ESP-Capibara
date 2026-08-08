@@ -319,7 +319,6 @@ ent-AU14WeaponRifleKramerLSWAP = arma ligera de apoyo Kramer (AP)
     .desc = También conocida como Kramer o KAR, el arma ligera de apoyo Kramer es una variante automática de apoyo de pelotón del fusil de asalto Kramer estándar. Fabricada por Kramer Metallarbeiten GmbH, la KAR se utiliza ampliamente por todas las Américas Unidas.
 
 ent-AU14WeaponRifleKramerMagazineLSWAP = Cargador de caja AP Kramer LSW (10x24mm)
-    .suffix = AP
 
 ent-AU14WeaponRifleKramerMagazineLSWStandard = cargador de caja para LSW Kramer (10x24mm)
 
@@ -337,7 +336,6 @@ ent-AU14WeaponRifleKramerARAP = Fusil de asalto Kramer (AP)
     .desc = También conocido como Kramer o KAR, es un fusil de asalto automático fabricado por Kramer Metallarbeiten GmbH y usado por numerosas fuerzas militares de las Américas Unidas.
 
 ent-AU14WeaponRifleKramerMagazineAP = cargador AP Kramer (10x24mm)
-    .suffix = AP
 
 ent-AU14WeaponRifleKramerMagazineStandard = cargador Kramer (10x24mm)
 
@@ -348,7 +346,6 @@ ent-AU14WeaponRifleprodigyrifleAR = fusil de pulsos MCS-X
     .desc = El Modular Combat System Mark X Pulse Rifle, o MCS-X Pulse Rifle, es el arma estándar de las fuerzas de seguridad de Prodigy Corporation. Tiene un diseño bullpup destinado a entornos urbanos estrechos. El MCS-X incorpora un contador digital de munición y admite noventa y cinco cartuchos.
 
 ent-AU14WeaponRifleprodigyrifleMagazineAP = cargador AP de fusil de pulsos MCS-X (10x24mm)
-    .suffix = AP
 
 ent-AU14WeaponRifleprodigyrifleMagazineStandard = cargador de fusil de pulsos MCS-X (10x24mm)
 
@@ -397,7 +394,6 @@ ent-AU14ShrapnelJaggedRMC = metralla dentada
     .desc = ¡Si puedes ver esto, probablemente estés muerto!
 
 ent-AU14MortarCameraRMC = Para-cam
-    .suffix = RM
 
 ent-AU14MortarKitRMC = Kit portátil de mortero ligero L53A1
     .desc = Un sistema de mortero ligero, manual y operado por una dotación, destinado a ofrecer apoyo de fuego móvil a una tropa de Royal Marines. Primero hay que colocarlo en el suelo.

@@ -2,7 +2,6 @@
 # Los identificadores ent-* son contratos del motor y no se traducen.
 
 ent-CMUSpawnMobCarp = generador de carpa
-    .suffix = CMU
 
 ent-CMURuinedDroneCore = núcleo de dron arruinado
     .desc = El núcleo de control chamuscado de un androide dron destruido. Ahora solo sirve como prueba.
@@ -62,13 +61,10 @@ ent-AU14Wendigo = Wendigo
     .desc = Una criatura alta y pálida con un aspecto inquietantemente humano. Lleva «Weyland-Yutani» marcado en la espalda.
 
 ent-AU14MobWorkingJoeColony = Urist McJoe
-    .suffix = AU14, civil
 
 ent-AU14MobWorkingJoeGOVFOR = Urist McJoe
-    .suffix = AU14, GOVFOR
 
 ent-AU14MobWorkingJoeOPFOR = Urist McJoe
-    .suffix = AU14, OPFOR
 
 ent-CMUAlphaHive = Colmena Alpha
 

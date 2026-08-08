@@ -40,33 +40,26 @@ ent-SquadPET = Equipo de Extracción de Prodigy
 ent-SquadTARS = escuadrón de asalto táctico y rescate Prodigy
 
 ent-AU14JobWanderingMissionary = misionero errante (civil)
-    .suffix = AU14, varios
 
 ent-AU14WanderingMissionaryPreset = preajuste de misionero errante
 
 ent-AU14JobMigratingColonist = nuevo colono (civil)
-    .suffix = AU14, varios
 
 ent-AU14JobMigratingColonistPreset = preajuste de colono retornado
 
 ent-AU14JobReturningColonist = Colono que regresa (civil)
-    .suffix = AU14, varios
 
 ent-AU14ReturningColonistPreset = preajuste de colono retornado
 
 ent-AU14JobReturningDoctor = colono retornado (médico)
-    .suffix = AU14, varios
 
 ent-AU14ReturningDoctorPreset = preajuste de médico que regresa
 
 ent-AU14JobForeignMobBoss = Jefe mafioso (criminal)
-    .suffix = AU14, varios
 
 ent-AU14JobForeignMobGoon = matón de la mafia (criminal)
-    .suffix = AU14, varios
 
 ent-AU14DrugSmuggler = traficante de drogas (criminal)
-    .suffix = AU14, varios
 
 ent-AU14DrugSmugglerPreset = preajuste de contrabandista de drogas
 
@@ -80,7 +73,6 @@ ent-AU14IDCardSquadK9Handler = tarjeta ID de guía k9
     .desc = Una lámina de fibra de vidrio comprimida y codificada. Se usa para identificación y control de acceso.
 
 ent-AU14IntelThirdPartyK9Handler = guía K9 de S&R
-    .suffix = AU14, varios
 
 ent-AU14SkillPresetThirdPartyK9Handler = Sanitario de hospital
 
@@ -93,7 +85,6 @@ ent-AU14SpawnPointOPFORK9Handler = (NO MAPEAR) Punto de aparición del adiestrad
     .suffix = aparición de puesto
 
 ent-AU14JobPizzaDeliveryBoy = Repartidor de pizza
-    .suffix = AU14, varios
 
 ent-AU14SlingSatchelBlueFilledPizza = Macuto azul de bandolera
     .desc = Una cartera muy resistente. Esta lleva una correa para colgarla.
@@ -104,7 +95,6 @@ ent-AU14M276ShotgunShellLoadingRigBlackVonBandolier = aparejo de carga de cartuc
     .suffix = lleno, profesor Von Bandolier
 
 ent-AU14PartyJobProfessorVonBandolier = Professor Von Bandolier
-    .suffix = AU14, varios
 
 ent-CMArmorDutchJacketVonBandolier = chaqueta de safari
     .desc = Una chaqueta de caza a medida, ingeniosamente forrada con placas de blindaje segmentadas. A veces la presa devuelve el disparo.
@@ -123,83 +113,58 @@ ent-RMCPouchMedkitVonBandolier = bolsa para botiquín médico
     .suffix = lleno, profesor Von Bandolier
 
 ent-AU14PartyJobTimeSharesSalesman = vendedor de multipropiedad
-    .suffix = AU14, varios
 
 ent-AU14SlingSatchelBlueTimeSharesSalesman = Cartera de cabestrillo negra
     .desc = Una cartera muy resistente. Esta lleva una correa para colgarla.
     .suffix = Lleno, vendedor de multipropiedad
 
 ent-AU14JobPARTDCC = jefe de tripulación de extracción de Prodigy (tercero)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobPARTPilot = piloto de extracción Prodigy (tercero)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobPARTExtractionRifleman = fusilero de extracción Prodigy (de terceros, M41A/2)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobHRTPartyEngineer = ingeniero de combate del grupo de riesgos Prodigy (tercero, M41A/2)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobHRTPartyLeader = líder del grupo de riesgos de Prodigy (tercero, M41A/2)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobHRTPartyMedic = socorrista de combate del grupo de riesgos Prodigy (de terceros, M41A/2)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobHRTPartySynthetic = sintético de apoyo del grupo de riesgos Prodigy (AU14, de terceros)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobPARTSPartyEngineer = ingeniero de combate del grupo Sierra de Prodigy (tercero, M41A/2)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobPARTSPartyLeader = líder del grupo PARTS Prodigy (tercero, M41A/2)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobPARTSPartyMedic = socorrista de combate del grupo Sierra Prodigy (tercero, M41A/2)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobPARTSPartyRifleman = fusilero del grupo Sierra Prodigy (de terceros, M41A/2)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobPARTSPartySynthetic = sintético de apoyo del grupo Sierra de Prodigy (AU14, tercero)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobProdigyPARTCombatSynth = sintético de combate Yankee Prodigy (AU14, de terceros)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobPARTYPartyEngineer = ingeniero de combate del grupo Yankee de Prodigy (tercero)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobProdigyPartyLeader = líder del grupo Yankee de Prodigy (tercero, M41A/2)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobWYProdigyPartyMedic = socorrista de combate Yankee Prodigy (tercero, M41A/2)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobProdigyPartySmartgunner = operador de smartgun Yankee Prodigy (de terceros)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobPARTYPartyRifleman = fusilero del grupo Yankee Prodigy (tercero, M41A/2)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobWYProdigyPartySpecialist = especialista en armas Yankee Prodigy (tercero)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobProdigyPARTSynth = sintético de apoyo del grupo Yankee de Prodigy (AU14, tercero)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobProdigyTARSPartyLeader = líder TARS Prodigy (de terceros, M20a)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobTARSPartyMedic = socorrista de combate TARS Prodigy (tercero, M20a)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobTARSPartyRifleman = fusilero del grupo TARS de Prodigy (tercero, M20a)
-    .suffix = AU14, Prodigy
 
 ent-AU14JobProdigyTARSPartySynth = sintético de apoyo TARS Prodigy (AU14, tercero)
-    .suffix = AU14, Prodigy
 
 ent-AU14PouchMagazineLargeFilledL42A = Bolsillo grande para cargadores
     .desc = Puede transportar muchos cargadores.
@@ -250,89 +215,62 @@ ent-AU14VAIMGPreset = preajuste de ametrallador vai
 ent-AU14VAIPreset = preajuste de mercenario de VAI
 
 ent-AU14VAISOMedic = especialista médico de VAISO
-    .suffix = AU14, UA, VAI
 
 ent-AU14VAIMedic = Especialista médico de VAIPO
-    .suffix = AU14, UA, VAI
 
 ent-AU14VAISPMedic = especialista médico de VAISP
-    .suffix = AU14, UA, VAI
 
 ent-AU14VAIMachinegunner = ametrallador VAIPO
-    .suffix = AU14, UA, VAI
 
 ent-AU14VAIEngi = Especialista en ingeniería de VAIPO
-    .suffix = AU14, UA, VAI
 
 ent-AU14VAIMercenary = mercenario VAIPO
-    .suffix = AU14, UA, VAI
 
 ent-AU14VAITeamLeader = líder de equipo de VAIPO
-    .suffix = AU14, UA, VAI
 
 ent-AU14VAISOMachinegunner = Ametrallador de VAISO
-    .suffix = AU14, UA, VAI
 
 ent-AU14VAISOMGPreset = preajuste de ametrallador vaiso
 
 ent-AU14VAISOEngi = especialista de ingeniería VAISO
-    .suffix = AU14, UA, VAI
 
 ent-AU14VAISOMercenary = mercenario VAISO
-    .suffix = AU14, UA, VAI
 
 ent-AU14VAISOPreset = preajuste de mercenario de VAISO
 
 ent-AU14VAISOTeamLeader = jefe de equipo VAISO
-    .suffix = AU14, UA, VAI
 
 ent-AU14VAISPMercenary = mercenario VAISP
-    .suffix = AU14, UA, VAI
 
 ent-AU14VAISPTeamLeader = líder de equipo de VAISP
-    .suffix = AU14, UA, VAI
 
 ent-AU14JobWYHTGoon = matón de transporte de riesgos WY (de terceros)
-    .suffix = AU14, WeYu
 
 ent-AU14JobWYHTLiaison = Enlace de transporte de riesgos WY (tercero)
-    .suffix = AU14, WeYu
 
 ent-AU14JobWYHTScientist = científico de transporte de materiales peligrosos de WY (tercero)
-    .suffix = AU14, WeYu
 
 ent-AU14JobIPIELawyer = abogado IPIE de WY (tercero)
-    .suffix = AU14, WeYu
 
 ent-AU14JobIPIELawyerSynth = abogado IPIE WY (de terceros, sintético)
-    .suffix = AU14, WeYu
 
 ent-AU14JobIPIEPPO = Oficial de protección personal IPIE de WY (tercero)
-    .suffix = AU14, WeYu
 
 ent-AU14JobWYPMCPartyEngineer = Ingeniero de combate del grupo PMC de WY (tercero, M41A/2)
-    .suffix = AU14, WeYu
 
 ent-AU14JobWYPMCPartyLeader = líder del grupo PMC WY (de terceros, M41A/2)
-    .suffix = AU14, WeYu
 
 ent-AU14JobWYPMCPartyMedic = socorrista de combate del grupo PMC de WY (tercero, M41A/2)
-    .suffix = AU14, WeYu
 
 ent-AU14JobWYPMCPartyContractor = Contratista del grupo PMC de WY (tercero, M41A/2)
-    .suffix = AU14, WeYu
 
 ent-AU14JobWYPMCPartyContractorM39B2 = contratista del grupo PMC WY (de terceros, M39B/2)
-    .suffix = AU14, WeYu
 
 ent-AU14JobWYPMCPartyContractorM42A = francotirador del grupo PMC de WY (tercero, M42A)
-    .suffix = AU14, WeYu
 
 ent-AU14JobWYPMCPartyContractorNSG23 = contratista del grupo PMC de WY (tercero, NSG-23)
-    .suffix = AU14, WeYu
 
 ent-AU14JobWYPMCPartySmartgunner = Operador de ametralladora inteligente del grupo PMC de WY (tercero)
-    .suffix = AU14, WeYu
 
 ent-AU14BackpackWeYuSurvSatchelFilledF44AA = mochila de combate We-Yu
     .desc = Una mochila pequeña y ligera para expediciones y operaciones de corto alcance, diseñada para el personal de seguridad y militar privado de Weyland-Yutani.
@@ -373,10 +311,8 @@ ent-AU14WYSurvRifleBackpackPreset = preajuste de mochila con fusil para superviv
 ent-AU14WYSurvRiflePreset = preajuste de fusilero superviviente de weyu
 
 ent-AU14JobWYSurvGoon = matón corporativo de WY (superviviente)
-    .suffix = AU14, WeYu
 
 ent-AU14JobWYSurvGoonShotgun = matón corporativo WY con escopeta (superviviente)
-    .suffix = AU14, WeYu
 
 ent-AU14JumpsuitVeteranPMCCorporateShotgun = uniforme de seguridad corporativa We-Yu
     .desc = Un uniforme blindado usado por miembros de la seguridad corporativa de We-Yu. Esta variante suele llevarla lo que se conoce como «matones».
@@ -387,40 +323,31 @@ ent-RMCWebbingShotgunSurv = Chaleco de correaje negro
     .suffix = Lleno, WEYU
 
 ent-AU14JobWYSurvLiaison = Enlace corporativo WY (superviviente)
-    .suffix = AU14, WeYu
 
 ent-AU14WEYULiasonSurvIntel = bolsa pequeña para documentos
     .desc = Una versión más pequeña del bolsillo para documentos. Puede contener papeles, carpetas, discos, manuales técnicos y portapapeles.
 
 ent-AU14JobWYSurvPMC = contratista PMC de WY (superviviente)
-    .suffix = AU14, WeYu
 
 ent-AU14JobWYSurvEngineer = Ingeniero de combate PMC de WY (superviviente)
-    .suffix = AU14, WeYu
 
 ent-AU14JobWYSurvScientist = científico de WY (superviviente)
-    .suffix = AU14, WeYu
 
 ent-CMUBeltMedicBagICRCDoctor = bolsa de salvamento modelo M276
     .desc = El M276 es un equipo de carga reglamentario. Esta configuración incorpora una bolsa de viaje llena de distintos inyectores y suministros médicos ligeros, y resulta habitual entre los sanitarios.
     .suffix = Lleno, médico ICRC
 
 ent-AU14PartyJobICRCCMO = CMO del personal médico del ICRC
-    .suffix = AU14, Cruz Roja
 
 ent-AU14PartyJobICRCDoctor = Médico del personal sanitario del ICRC
-    .suffix = AU14, Cruz Roja
 
 ent-AU14PartyJobICRCNurse = enfermero del personal médico de la ICRC
-    .suffix = AU14, Cruz Roja
 
 ent-AU14CLFGuerillaReinforcement = preajuste de colono retornado
 
 ent-AU14IntelThirdPartyCLFInsurgentReinforcements = refuerzos insurgentes
-    .suffix = AU14, CLF
 
 ent-AU14IntelThirdPartyCLFInsurgentReinforcementsMachineGunner = ametrallador insurgente
-    .suffix = AU14, varios
 
 ent-AU14BeltConstructionCLFSurv = Aparejo de construcción del patrón M277
     .desc = El M277 es un aparejo habitual entre técnicos de combate para transportar materiales y otros suministros. Consta de un cinturón modular con distintos enganches. Esta versión sacrifica espacio de almacenamiento a cambio de enganches especializados para cargar materiales.
@@ -497,15 +424,12 @@ ent-RMCJumpsuitCivilianCLFArmband = uniforme de faena gris
 ent-AU14CLFSurvMedicPreset = Preajuste de sanitario superviviente de la CLF
 
 ent-AU14JCLFSurvSurgeon = cirujano de la CLF (superviviente)
-    .suffix = AU14, CLF
 
 ent-AU14CLFSurvFighter = combatiente de la CLF (superviviente)
-    .suffix = AU14, CLF
 
 ent-AU14CLFSurvFighterPreset = preajuste de combatiente superviviente de la CLF
 
 ent-AU14CLFSurvLeader = Jefe de célula de la CLF (superviviente)
-    .suffix = AU14, CLF
 
 ent-AU14CLFSurvLeaderPreset = preajuste de jefe superviviente de la CLF
 
@@ -518,48 +442,36 @@ ent-AU14SatchelCMBShotgun = mochila policial UPE-4
     .suffix = Lleno, escopetero del CMB
 
 ent-CMBInvestigationPartyJobDeputy = Agente del CMB
-    .suffix = AU14, UA, CMB
 
 ent-CMBInvestigationPartyJobDeputyShotgun = escopetero ayudante del CMB
-    .suffix = AU14, UA, CMB
 
 ent-CMBInvestigationPartyJobMarshal = alguacil de la CMB
-    .suffix = AU14, UA, CMB
 
 ent-AU14JobParoleeReleaseCMBDeputy = Agente del CMB
-    .suffix = AU14, UA, CMB
 
 ent-AU14JobTransportParolee = Liberto condicional (civil)
-    .suffix = AU14, varios
 
 ent-AU14SatchelNSPAShotgun = mochila policial UPE-4
     .desc = Una mochila reglamentaria de la Autoridad Policial del Sector Neroid.
     .suffix = lleno, SMG de la NSPA
 
 ent-NSPAInvestigationPartyJobConstableSMG = Agente de la NSPA con SMG
-    .suffix = AU14, NSPA
 
 ent-NSPAInvestigationPartyJobConstableSMGArmor = agente blindado de SMG de la NSPA
-    .suffix = AU14, NSPA
 
 ent-NSPAInvestigationPartyJobInspectorArmored = armadura de inspector NSPA
-    .suffix = AU14, NSPA
 
 ent-AU14BeltHolsterPistolUPPPAP = aparejo con funda de pistola Type 47
     .desc = Este arnés para arma corta diseñado por la UPP permite guardar un Type-73, un NP92 o un ZHNK-72, junto con sus cargadores o cargadores rápidos, de forma muy ceñida y segura. Sin embargo, ofrece poca versatilidad en las armas que admite.
     .suffix = PaP, lleno, NP92
 
 ent-AU14JobPaPThirdpartyInvestigator = investigador PAP de la UPP
-    .suffix = AU14, UPP, PAP
 
 ent-AU14JobPaPThirdpartyInvestigatorSMG = investigador PAP UPP (SMG)
-    .suffix = AU14, UPP, PAP
 
 ent-AU14JobPAPThirdpartyObserver = observador PAP de la UPP
-    .suffix = AU14, UPP, PAP
 
 ent-AU14JobPaPThirdpartySeniorInvestigator = Investigador superior PAP de UPP
-    .suffix = AU14, UPP, PAP
 
 ent-AU14ArmorSmartGunJungleCombatHarnessForeconFilled = arnés M56 de jungla
     .desc = Un arnés de combate M56 fabricado especialmente para artilleros de smartgun.
@@ -570,52 +482,36 @@ ent-AU14BeltSmartGunOperatorPistolForeconFilled = aparejo para arma secundaria d
     .suffix = completo, AU14, FORECON
 
 ent-AU14JobFORECONMarksmanDetachment = Tirador FORECON (destacamento)
-    .suffix = AU14, FORECON, destacamento
 
 ent-AU14JobFORECONSniperDetachment = Francotirador FORECON (destacamento)
-    .suffix = AU14, FORECON, destacamento
 
 ent-AU14JobFORECONSpotterDetachment = observador FORECON (destacamento)
-    .suffix = AU14, FORECON, destacamento
 
 ent-AU14JobFORECONFirstReconCorpsman = enfermero FORECON (tercero)
-    .suffix = AU14, UA, FORECON
 
 ent-AU14JobFORECONFirstReconSmartGunOperator = Fusilero automático FORECON (tercero)
-    .suffix = AU14, UA, FORECON
 
 ent-AU14JobFORECONFirstReconRifleman = Fusilero FORECON (tercero)
-    .suffix = AU14, UA, FORECON
 
 ent-AU14JobFORECONFirstReconSquadleader = jefe de sección FORECON (tercero)
-    .suffix = AU14, UA, FORECON
 
 ent-AU14JobFORECONKillTeamSniper = francotirador de FORECON (equipo de eliminación)
-    .suffix = AU14, FORECON, KillTeam
 
 ent-AU14JobFORECONKillTeamSpotter = Observador FORECON (equipo de eliminación)
-    .suffix = AU14, FORECON, KillTeam
 
 ent-AU14JobFORECONCommander = comandante FORECON (superviviente)
-    .suffix = AU14, UA, FORECON
 
 ent-AU14JobFORECONMarksman = tirador de FORECON (superviviente)
-    .suffix = AU14, UA, FORECON
 
 ent-AU14JobFORECONRifleman = fusilero de FORECON (superviviente)
-    .suffix = AU14, UA, FORECON
 
 ent-AU14JobFORECONSmartGunOperator = operador de smartgun FORECON (superviviente)
-    .suffix = AU14, UA, FORECON
 
 ent-AU14JobFORECONSquadleader = Jefe de sección FORECON (superviviente)
-    .suffix = AU14, UA, FORECON
 
 ent-AU14JobFORECONSupportTech = técnico de apoyo de FORECON (superviviente)
-    .suffix = AU14, UA, FORECON
 
 ent-AU14JobFORECONSynth = sintético de FORECON (superviviente)
-    .suffix = AU14, UA, FORECON
 
 ent-AU14BeltHolsterPistolLACNTPR23B = cinturón de pistola
     .desc = Un cinturón de cuero marrón oscuro para pistola. Admite la mayoría de armas cortas junto con cargadores de repuesto. Es equipo estándar entre las fuerzas del orden, militares y de seguridad.
@@ -638,10 +534,8 @@ ent-AU14PouchSlingBinocsTwo = correa portafusil
     .suffix = lleno, prismáticos
 
 ent-AU14JobCommandoSniperTeamSniper = francotirador comando de la LACN (tercero)
-    .suffix = AU14, LACN
 
 ent-AU14JobCommandoSniperTeamSpotter = Observador de comando de la LACN (tercero)
-    .suffix = AU14, LACN
 
 ent-AU14RMCRRTBackpackBreacher = mochila pequeña de los Royal Marines
     .desc = La mochila reglamentaria de las fuerzas de la TWE. Diseñada para cargar equipo hasta el campo de batalla.
@@ -672,22 +566,16 @@ ent-RMCPouchDrumPMCFilled = bolsa para tambor de ametralladora inteligente
     .suffix = lleno, RMC, RRT
 
 ent-AU14JobRMCRRTBreacher = artificiero de la tropa de reacción RMC
-    .suffix = RMC14
 
 ent-AU14JobRMCRRTCommander = comandante de tropa de reacción del RMC
-    .suffix = RMC14
 
 ent-AU14JobRMCRRTCorpsman = sanitario de tropa de reacción RMC
-    .suffix = RMC14
 
 ent-AU14JobRMCRRTMarksman = tirador designado de tropa de reacción del RMC
-    .suffix = RMC14
 
 ent-AU14JobRMCRRTRifleman = fusilero de tropa de reacción RMC
-    .suffix = RMC14
 
 ent-AU14JobRMCRRTSmartgunner = ametrallador de la tropa de reacción RMC
-    .suffix = RMC14
 
 ent-AU14BackpackAmmoRCMSurvL90 = armazón de carga RCM
     .desc = Una mochila diseñada específicamente para llevar equipo de comandos RCM.
@@ -737,25 +625,18 @@ ent-RMCSatchelLightpackFilledParaSL = mochila de combate ligera
     .suffix = SL, superviviente, lleno
 
 ent-AU14IASFSurvCombatEngineer = Ingeniero de combate de la IASF (superviviente)
-    .suffix = RMC14
 
 ent-AU14IASFsurvMedicalTechnician = técnico médico de la IASF (superviviente)
-    .suffix = RMC14
 
 ent-AU14IASFSurvCommander = comandante de la IASF (superviviente)
-    .suffix = RMC14
 
 ent-AU14IASFSurvPilot = Piloto de la IASF (superviviente)
-    .suffix = RMC14
 
 ent-AU14IASFSurvRifleman = fusilero de la IASF (superviviente)
-    .suffix = RMC14
 
 ent-AU14IASFSurvRiflemanAmmo = transportista de munición de la IASF (superviviente)
-    .suffix = RMC14
 
 ent-AU14IASFSurvTeamLead = jefe de equipo de la IASF (superviviente)
-    .suffix = RMC14
 
 ent-AU14UACGAmmoBearerBelt = bolsa de uso general M276 G8-A
     .desc = Un bolsillo pequeño y ligero que puede engancharse a una armadura del patrón M3 para ofrecer almacenamiento adicional. El modelo G8-A más reciente, aunque incómodo, también puede sujetarse a la cintura.
@@ -842,62 +723,44 @@ ent-RMCSatchelSPPFullMarksman = mochila de combate UCP3
     .suffix = Completo, GROM
 
 ent-AU14JobUPPGROMCommander = Comandante GROM de UPP
-    .suffix = AU14, UPP, GROM
 
 ent-AU14JobUPPGROMMachinegunner = ametrallador GROM UPP
-    .suffix = AU14, UPP, GROM
 
 ent-AU14JobUPPGROMMarksman = tirador GROM de la UPP
-    .suffix = AU14, UPP, GROM
 
 ent-AU14JobUPPGROMPointman = soldado de vanguardia GROM de UPP
-    .suffix = AU14, UPP, GROM
 
 ent-AU14JobUPPGROMRifleman = fusilero GROM UPP
-    .suffix = AU14, UPP, GROM
 
 ent-AU14JobUPPGROMSquadleader = líder de escuadrón GROM de la UPP
-    .suffix = AU14, UPP, GROM
 
 ent-AU14JobUPPGROMSupportTech = técnico de apoyo GROM de UPP
-    .suffix = AU14, UPP, GROM
 
 ent-AU14BeltMarineArmyUPPTDFilled = Aparejo de munición del patrón 6B80
     .desc = El 6B80 es un arnés de munición anticuado pero fiable, anteriormente reglamentario en el Ejército de la UPP. Su cinturón modular contiene distintas municiones y las fuerzas de seguridad y los reservistas de la UPP aún lo utilizan por su diseño resistente.
     .suffix = TD, lleno, AK4047
 
 ent-AU14JobUPPTerritorialDefenseRifleman = fusilero TD UPP
-    .suffix = AU14, TD, UPP
 
 ent-AU14JobUPPTerritorialDefenseLoader = cargador TD de UPP
-    .suffix = AU14, TD, UPP
 
 ent-AU14JobUPPTerritorialDefenseSquadLeader = líder de escuadrón TD de la UPP
-    .suffix = AU14, TD, UPP
 
 ent-AU14JobUSArmyCETArmored = técnico ingeniero de combate del US Army (ERT)
-    .suffix = AU14, UA, US Army
 
 ent-AU14JobUSArmyCMTArmored = técnico médico de combate del US Army (ERT)
-    .suffix = AU14, UA, US Army
 
 ent-AU14JobUSArmyHeavyGunnerArmored = Artillero pesado del Ejército de EE. UU. (ERT)
-    .suffix = AU14, UA, US Army
 
 ent-AU14JobUSArmyMarksmanArmored = Tirador designado del Ejército de EE. UU. (ERT)
-    .suffix = AU14, UA, US Army
 
 ent-AU14JobUSArmySquadLeaderArmored = líder de escuadrón del US Army (ERT)
-    .suffix = AU14, UA, US Army
 
 ent-AU14JobUSArmySynthArmored = sintético del US Army (ERT)
-    .suffix = AU14, UA, US Army
 
 ent-AU14JobUSArmyTrooperArmored = Soldado del Ejército de EE. UU. (ERT)
-    .suffix = AU14, UA, US Army
 
 ent-AU14JobUSArmyTrooperArmoredLAT = Soldado LAT del Ejército de EE. UU. (ERT)
-    .suffix = AU14, UA, US Army
 
 ent-AU14AU14MolleBackpackCOFull = Mochila MOLLE M2
     .desc = Una mochila táctica fabricada por una de las filiales de Alphatech. Es muy ligera y utiliza los sistemas de sujeción MOLLE estándar de la UA, que facilitan el acceso y distribuyen el peso de forma óptima. Mochila reforzada reglamentaria para soldados del Ejército de los Estados Unidos.
@@ -908,47 +771,32 @@ ent-AU14BeltHolsterPistolUSArmyFull = arnés de funda de pistola general modelo 
     .suffix = Completo, AU14, Ejército de EE. UU.
 
 ent-AU14JobUSArmyTankCommander = Comandante de tanque del Ejército de EE. UU.
-    .suffix = AU14, UA, US Army
 
 ent-AU14JobUSArmyTankDriver = conductor de tanque del US Army
-    .suffix = AU14, UA, US Army
 
 ent-AU14JobUSArmyTankGunner = artillero de tanque del US Army
-    .suffix = AU14, UA, US Army
 
 ent-AU14JobUSArmyTankLoader = Cargador de tanque del Ejército de EE. UU.
-    .suffix = AU14, UA, US Army
 
 ent-AU14JobUSArmyCET = técnico ingeniero de combate del US Army (superviviente)
-    .suffix = AU14, UA, US Army
 
 ent-AU14JobUSArmyCMT = Técnico médico de combate del Ejército de EE. UU. (superviviente)
-    .suffix = AU14, UA, US Army
 
 ent-AU14JobUSArmyCommander = comandante del US Army (superviviente)
-    .suffix = AU14, UA, US Army
 
 ent-AU14JobUSArmyHeavyGunner = artillero pesado del US Army (superviviente)
-    .suffix = AU14, UA, US Army
 
 ent-AU14JobUSArmyMarksman = tirador del US Army (superviviente)
-    .suffix = AU14, UA, US Army
 
 ent-AU14JobUSArmySquadleader = jefe de escuadra del US Army (superviviente)
-    .suffix = AU14, UA, US Army
 
 ent-AU14JobUSArmySynth = sintético del US Army (superviviente)
-    .suffix = AU14, UA, US Army
 
 ent-AU14JobUSArmyTrooper = soldado del US Army (superviviente)
-    .suffix = AU14, UA, US Army
 
 ent-AU14JobMSGWatchStander = guardia de infantería de marina (de terceros)
-    .suffix = AU14, UA, FORECON
 
 ent-AU14JobMSGCommander = Comandante de la Marine Guard (tercero)
-    .suffix = AU14, UA, FORECON
 
 ent-CMUXenoParasiteRunner = ???
-    .suffix = Corredor
 

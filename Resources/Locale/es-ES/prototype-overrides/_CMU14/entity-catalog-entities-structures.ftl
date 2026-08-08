@@ -37,250 +37,168 @@ ent-DecorSignMinesProp = minas
     .suffix = objeto decorativo
 
 ent-CMAirlockCommandGovfor = Esclusa de aire
-    .suffix = mando, Govfor
 
 ent-CMAirlockCommandGovforGlass = Esclusa de aire de vidrio
-    .suffix = Mando, Govfor, cristal
 
 ent-CMAirlockCommandGovforGlassLocked = Esclusa de aire de vidrio
-    .suffix = mando, Govfor, cristal, bloqueado
 
 ent-CMAirlockCommandGovforLocked = Esclusa de aire
-    .suffix = mando, Govfor, bloqueada
 
 ent-CMAirlockEngineerGovfor = Esclusa de aire
-    .suffix = ingeniero, Govfor
 
 ent-CMAirlockEngineerGovforGlass = Esclusa de aire de vidrio
-    .suffix = ingeniería, Govfor, cristal
 
 ent-CMAirlockEngineerGovforGlassLocked = Esclusa de aire de vidrio
-    .suffix = Ingeniería, Govfor, cristal, con cierre
 
 ent-CMAirlockEngineerGovforLocked = Esclusa de aire
-    .suffix = ingeniero, Govfor, bloqueado
 
 ent-CMAirlockGovfor = Esclusa de aire
-    .suffix = Govfor
 
 ent-CMAirlockGovforGlass = Esclusa de aire de vidrio
-    .suffix = Govfor, cristal
 
 ent-CMAirlockGovforGlassLocked = Esclusa de aire de vidrio
-    .suffix = Govfor, cristal, con cierre
 
 ent-CMAirlockGovforGlassLockedFTL = Esclusa de aire
-    .suffix = FTL, Govfor, cristal, con cierre
 
 ent-CMAirlockGovforLocked = Esclusa de aire
-    .suffix = Govfor, con cierre
 
 ent-CMAirlockGovforLockedFTL = Esclusa de aire
-    .suffix = FTL, Govfor, bloqueado
 
 ent-CMAirlockLogisticsGovforGlassLocked = Esclusa de aire de vidrio
-    .suffix = logística, Govfor, cristal, bloqueado
 
 ent-CMAirlockLogisticsGovforLocked = Esclusa de aire
-    .suffix = logística, Govfor, bloqueada
 
 ent-CMAirlockMedicalGovfor = Esclusa de aire
-    .suffix = médico, Govfor
 
 ent-CMAirlockMedicalGovforGlass = Esclusa de aire de vidrio
-    .suffix = Medicina, Govfor, cristal
 
 ent-CMAirlockMedicalGovforGlassLocked = Esclusa de aire de vidrio
-    .suffix = médico, Govfor, cristal, bloqueado
 
 ent-CMAirlockMedicalGovforLocked = Esclusa de aire
-    .suffix = médico, Govfor, bloqueada
 
 ent-CMAirlockSecurityGovfor = Esclusa de aire
-    .suffix = seguridad, Govfor
 
 ent-CMAirlockSecurityGovforGlass = Esclusa de aire de vidrio
-    .suffix = seguridad, Govfor, cristal
 
 ent-CMAirlockSecurityGovforGlassLocked = Esclusa de aire de vidrio
-    .suffix = Seguridad, Govfor, cristal, con cierre
 
 ent-CMAirlockSecurityGovforLocked = Esclusa de aire
-    .suffix = seguridad, Govfor, bloqueado
 
 ent-CMDoubleDoorCommandGovfor = Puerta
-    .suffix = Mando, Govfor, maciza
 
 ent-CMDoubleDoorCommandGovforGlass = Puerta
-    .suffix = Mando, Govfor, cristal
 
 ent-CMDoubleDoorCommandGovforGlassLocked = Puerta
-    .suffix = mando, Govfor, cristal, bloqueado
 
 ent-CMDoubleDoorCommandGovforLocked = Puerta
-    .suffix = mando, Govfor, sólido, bloqueado
 
 ent-CMDoubleDoorEngineerGovfor = Puerta
-    .suffix = ingeniería, Govfor, maciza
 
 ent-CMDoubleDoorEngineerGovforGlass = Puerta
-    .suffix = ingeniería, Govfor, cristal
 
 ent-CMDoubleDoorEngineerGovforGlassLocked = Puerta
-    .suffix = Ingeniería, Govfor, cristal, con cierre
 
 ent-CMDoubleDoorEngineerGovforLocked = Puerta
-    .suffix = Ingeniería, Govfor, maciza, con cierre
 
 ent-CMDoubleDoorGovfor = Puerta
-    .suffix = Govfor, maciza
 
 ent-CMDoubleDoorGovforGlass = Puerta
-    .suffix = Govfor, cristal
 
 ent-CMDoubleDoorGovforGlassLocked = Puerta
-    .suffix = Govfor, cristal, con cierre
 
 ent-CMDoubleDoorGovforLocked = Puerta
-    .suffix = Govfor, maciza, con cierre
 
 ent-CMDoubleDoorLogisticsGovforGlassLocked = Puerta
-    .suffix = logística, Govfor, cristal, bloqueado
 
 ent-CMDoubleDoorLogisticsGovforLocked = Puerta
-    .suffix = Logística, Govfor, maciza, con cierre
 
 ent-CMDoubleDoorMedicalGovfor = Puerta
-    .suffix = Medicina, Govfor, maciza
 
 ent-CMDoubleDoorMedicalGovforGlass = Puerta
-    .suffix = Medicina, Govfor, cristal
 
 ent-CMDoubleDoorMedicalGovforGlassLocked = Puerta
-    .suffix = médico, Govfor, cristal, bloqueado
 
 ent-CMDoubleDoorMedicalGovforLocked = Puerta
-    .suffix = médico, Govfor, sólido, bloqueado
 
 ent-CMDoubleDoorSecurityGovfor = Puerta
-    .suffix = seguridad, Govfor, maciza
 
 ent-CMDoubleDoorSecurityGovforGlass = Puerta
-    .suffix = seguridad, Govfor, cristal
 
 ent-CMDoubleDoorSecurityGovforGlassLocked = Puerta
-    .suffix = Seguridad, Govfor, cristal, con cierre
 
 ent-CMDoubleDoorSecurityGovforLocked = Puerta
-    .suffix = Seguridad, Govfor, maciza, con cierre
 
 ent-CMUAirlockGlassGreenUPPGovforLocked = Esclusa de aire de vidrio
-    .suffix = Govfor, bloqueado, UPP
 
 ent-CMUAirlockGlassGreyUPPGovforLocked = Esclusa de aire de vidrio
-    .suffix = Govfor, bloqueado, UPP
 
 ent-CMUAirlockUPPGreenGovforLocked = Esclusa de aire
-    .suffix = Govfor, bloqueado, UPP
 
 ent-CMUAirlockUPPGreyGovforLocked = Esclusa de aire
-    .suffix = Govfor, bloqueado, UPP
 
 ent-CMUAirlockUPPMaintsGovforLocked = escotilla de mantenimiento
-    .suffix = Govfor, bloqueado, UPP
 
 ent-CMAirlockCommandOpforGlassLocked = Esclusa de aire de vidrio
-    .suffix = mando, Opfor, cristal, bloqueado
 
 ent-CMAirlockCommandOpforLocked = Esclusa de aire
-    .suffix = mando, Opfor, bloqueada
 
 ent-CMAirlockEngineerOpforGlassLocked = Esclusa de aire de vidrio
-    .suffix = ingeniero, Opfor, cristal, bloqueado
 
 ent-CMAirlockEngineerOpforLocked = Esclusa de aire
-    .suffix = ingeniería, Opfor, bloqueada
 
 ent-CMAirlockLogisticsOpforGlassLocked = Esclusa de aire de vidrio
-    .suffix = logística, Opfor, cristal, bloqueado
 
 ent-CMAirlockLogisticsOpforLocked = Esclusa de aire
-    .suffix = logística, Opfor, bloqueada
 
 ent-CMAirlockMedicalOpforGlassLocked = Esclusa de aire de vidrio
-    .suffix = Medicina, Opfor, cristal, con cierre
 
 ent-CMAirlockMedicalOpforLocked = Esclusa de aire
-    .suffix = médico, Opfor, bloqueado
 
 ent-CMAirlockOpforGlassLocked = Esclusa de aire de vidrio
-    .suffix = Opfor, cristal, con cierre
 
 ent-CMAirlockOpforGlassLockedFTL = Esclusa de aire
-    .suffix = FTL, Opfor, cristal, bloqueada
 
 ent-CMAirlockOpforLocked = Esclusa de aire
-    .suffix = Opfor, bloqueada
 
 ent-CMAirlockOpforLockedFTL = Esclusa de aire
-    .suffix = FTL, Opfor, con cierre
 
 ent-CMAirlockSecurityOpforGlassLocked = Esclusa de aire de vidrio
-    .suffix = seguridad, Opfor, cristal, bloqueada
 
 ent-CMAirlockSecurityOpforLocked = Esclusa de aire
-    .suffix = Seguridad, Opfor, con cierre
 
 ent-CMDoubleDoorCommandOpforGlassLocked = Puerta
-    .suffix = mando, Opfor, cristal, bloqueado
 
 ent-CMDoubleDoorCommandOpforLocked = Puerta
-    .suffix = Mando, Opfor, maciza, con cierre
 
 ent-CMDoubleDoorEngineerOpforGlassLocked = Puerta
-    .suffix = ingeniero, Opfor, cristal, bloqueado
 
 ent-CMDoubleDoorEngineerOpforLocked = Puerta
-    .suffix = Ingeniería, Opfor, maciza, con cierre
 
 ent-CMDoubleDoorLogisticsOpforGlassLocked = Puerta
-    .suffix = logística, Opfor, cristal, bloqueado
 
 ent-CMDoubleDoorLogisticsOpforLocked = Puerta
-    .suffix = Logística, Opfor, maciza, con cierre
 
 ent-CMDoubleDoorMedicalOpforGlassLocked = Puerta
-    .suffix = Medicina, Opfor, cristal, con cierre
 
 ent-CMDoubleDoorMedicalOpforLocked = Puerta
-    .suffix = médico, Opfor, maciza, bloqueada
 
 ent-CMDoubleDoorOpforGlassLocked = Puerta
-    .suffix = Opfor, cristal, con cierre
 
 ent-CMDoubleDoorOpforLocked = Puerta
-    .suffix = Opfor, maciza, con cierre
 
 ent-CMDoubleDoorSecurityOpforGlassLocked = Puerta
-    .suffix = seguridad, Opfor, cristal, bloqueada
 
 ent-CMDoubleDoorSecurityOpforLocked = Puerta
-    .suffix = seguridad, Opfor, sólido, bloqueado
 
 ent-CMUAirlockGlassGreenUPPOpforLocked = Esclusa de aire de vidrio
-    .suffix = Opfor, con cierre, UPP
 
 ent-CMUAirlockGlassGreyUPPOpforLocked = Esclusa de aire de vidrio
-    .suffix = Opfor, con cierre, UPP
 
 ent-CMUAirlockUPPGreenOpforLocked = Esclusa de aire
-    .suffix = Opfor, con cierre, UPP
 
 ent-CMUAirlockUPPGreyOpforLocked = Esclusa de aire
-    .suffix = Opfor, con cierre, UPP
 
 ent-CMUAirlockUPPMaintsOpforLocked = escotilla de mantenimiento
-    .suffix = Opfor, con cierre, UPP
 
 ent-CMUPodDoorButtonAdjutantLock = Control de persianas de la armería
     .desc = Un botón que se bloquea en posición abierta por sí solo si el mando no se presenta para accionarlo.
@@ -338,7 +256,6 @@ ent-AU14AICoreSubstrate = Sustrato APOLLO
     .desc = El sustrato de memoria de APOLLO, que contiene protocolos e información complejos. Algunas funciones limitadas pueden operar solo con el sustrato, sin que la unidad principal APOLLO esté activa.
 
 ent-AU14AreaGAAI = interfaz central de A.I. APOLLO
-    .suffix = área
 
 ent-AU14ChairComfyAI = Silla de interfaz de la I.A. central APOLLO
     .desc = Una silla funcional diseñada para que una persona se siente cómodamente y pueda interactuar con la IA de la nave.
@@ -447,7 +364,6 @@ ent-AU14AICoreSubstrateFARTHUR = sustrato A.I. FAR/TH/UR 2600
     .desc = El sustrato de memoria de FAR/TH/UR, que contiene protocolos e información complejos. Algunas funciones limitadas pueden operar solo con el sustrato, sin que la unidad principal FAR/TH/UR esté activa.
 
 ent-AU14AreaGAAIFARTHUR = interfaz A.I. FAR/TH/UR 2600
-    .suffix = área
 
 ent-AU14ChairComfyAIFARTHUR = silla de interfaz de A.I. FAR/TH/UR 2600
     .desc = Una silla funcional diseñada para que una persona se siente cómodamente y pueda interactuar con la IA de la nave.
@@ -467,7 +383,6 @@ ent-AU14AICoreSubstrateMUTHUR = sustrato A.I. MU/TH/UR 6000
     .desc = El sustrato de memoria de MU/TH/UR, que contiene protocolos e información complejos. Algunas funciones limitadas pueden operar solo con el sustrato, sin que la unidad principal MU/TH/UR esté activa.
 
 ent-AU14AreaGAAIMUTHUR = interfaz A.I. MU/TH/UR 6000
-    .suffix = área
 
 ent-AU14ChairComfyAIMUTHUR = Silla de interfaz de A.I. MU/TH/UR 6000
     .desc = Una silla funcional diseñada para que una persona se siente cómodamente y pueda interactuar con la IA de la nave.
@@ -1129,28 +1044,20 @@ ent-DecorStalagmite6 = estalagmita
 ent-Rails = vía férrea
 
 ent-RailsJunctionLeftBottom = vía férrea
-    .suffix = unión inferior izquierda
 
 ent-RailsJunctionLeftTop = vía férrea
-    .suffix = cruce superior izquierdo
 
 ent-RailsJunctionRightBottom = vía férrea
-    .suffix = unión derecha inferior
 
 ent-RailsJunctionRightTop = vía férrea
-    .suffix = unión superior derecha
 
 ent-RailsTurnNE = vía férrea
-    .suffix = giro noreste
 
 ent-RailsTurnNW = vía férrea
-    .suffix = giro noroeste
 
 ent-RailsTurnSE = vía férrea
-    .suffix = giro al sureste
 
 ent-RailsTurnWS = vía férrea
-    .suffix = giro suroeste
 
 ent-AU14NavalisSupportBeam = viga de soporte
 
@@ -1483,10 +1390,8 @@ ent-AU14CommunicationsTowerThirdParty = torre estática de telecomunicaciones TC
     .suffix = Apagado, comunicaciones de terceros
 
 ent-AU14SpawnerCommunicationsTowerOne = comunicaciones estáticas
-    .suffix = uno
 
 ent-AU14SpawnerCommunicationsTowerTwo = comunicaciones estáticas
-    .suffix = Dos
 
 ent-AU14SensorTower = torre experimental de matriz de sensores SA-2X
     .desc = Una torre con numerosos sensores delicados para registrar las condiciones meteorológicas. Esta se ha ajustado para rastrear biofirmas.

@@ -215,10 +215,8 @@ ent-RMCCircuitboardIndustrialChemMaster = Placa de máquina chem master
     .suffix = placa de máquina
 
 ent-RMCPortableGeneratorPacmanMachineCircuitBoard = placa de máquina de generador portátil tipo P.A.C.M.A.N.
-    .suffix = placa de máquina
 
 ent-RMCPortableGeneratorSuperPacmanMachineCircuitboard = placa de máquina para generador portátil de tipo S.U.P.E.R.P.A.C.M.A.N.
-    .suffix = placa de máquina
 
 ent-RMCCatClock = reloj de gato
     .desc = Un reloj de gato increíblemente siniestro que vigila la estancia con cada tic y cada tac.
@@ -988,46 +986,32 @@ ent-RMCIDCardTSEPASurvivor = insignia plateada de la TSEPA
     .suffix = superviviente
 
 ent-RMCCoal = roca carbonosa
-    .suffix = lleno
 
 ent-RMCCoal1 = roca carbonosa
-    .suffix = Individual
 
 ent-RMCDiamondOre = diamantes
-    .suffix = lleno
 
 ent-RMCDiamondOre1 = diamantes
-    .suffix = Individual
 
 ent-RMCGoldOre = mineral de oro nativo
-    .suffix = lleno
 
 ent-RMCGoldOre1 = mineral de oro nativo
-    .suffix = Individual
 
 ent-RMCIronOre = hematita
-    .suffix = lleno
 
 ent-RMCIronOre1 = hematita
-    .suffix = Individual
 
 ent-RMCPlasmaOre = cristales de phoron
-    .suffix = lleno
 
 ent-RMCPlasmaOre1 = cristales de phoron
-    .suffix = Individual
 
 ent-RMCPlatinumOre = platino en bruto
-    .suffix = lleno
 
 ent-RMCPlatinumOre1 = platino en bruto
-    .suffix = Individual
 
 ent-RMCSilverOre = Mineral de plata nativa
-    .suffix = lleno
 
 ent-RMCSilverOre1 = Mineral de plata nativa
-    .suffix = Individual
 
 ent-RMCUraniumOre = pechblenda
     .desc = Un mineral que contiene uranio. Solo mirarlo hace que se te embote la cabeza... emite un ligero resplandor.
@@ -2267,7 +2251,6 @@ ent-RMCBibleHEFA = textos sagrados de la granada de mano antipersonal explosiva 
     .suffix = lleno
 
 ent-RMCGuidebookBase = Libro
-    .suffix = guía
 
 ent-AU14GuidebookLawMarineProvost = Legislación de los Marines: edición limitada del provost
     .desc = Por lo general es la lectura favorita de cualquier miembro de la Policía Militar del ejército. Su razón de ser es actuar como balanza de la espada de la justicia que se blande a bordo de las naves de muchos ejércitos, para mantener la paz y el orden. Entre sus apodos se incluyen, sin limitarse a ellos: Libro Rojo del Diablo, Biblia de Todos los Pecadores, EL Libro, UCMJ, Ladrillo Rojo, Manual de Tortura y Biblia de Tortura del Diablo Rojo para Todos los Pecadores.
@@ -2296,211 +2279,142 @@ ent-RMCAlienBush1 = árbol extraño
     .suffix = RMCAlienBush1
 
 ent-RMCBusha1 = Arbusto
-    .suffix = RMCBusha1
 
 ent-RMCBusha2 = Arbusto
-    .suffix = RMCBusha2
 
 ent-RMCBusha3 = Arbusto
-    .suffix = RMCBusha3
 
 ent-RMCBushb1 = Arbusto
-    .suffix = RMCBushb1
 
 ent-RMCBushb2 = Arbusto
-    .suffix = RMCBushb2
 
 ent-RMCBushb3 = Arbusto
-    .suffix = RMCBushb3
 
 ent-RMCBushc1 = Arbusto
-    .suffix = RMCBushc1
 
 ent-RMCBushc2 = Arbusto
-    .suffix = RMCBushc2
 
 ent-RMCBushc3 = Arbusto
-    .suffix = RMCBushc3
 
 ent-RMCBushd1 = Arbusto
-    .suffix = RMCBushd1
 
 ent-RMCBushd2 = Arbusto
-    .suffix = RMCBushd2
 
 ent-RMCBushd3 = Arbusto
-    .suffix = RMCBushd3
 
 ent-RMCBushd4 = Arbusto
-    .suffix = RMCBushd4
 
 ent-RMCBushe1 = Arbusto
-    .suffix = RMCBushe1
 
 ent-RMCBushe2 = Arbusto
-    .suffix = RMCBushe2
 
 ent-RMCBushe3 = Arbusto
-    .suffix = RMCBushe3
 
 ent-RMCBushe4 = Arbusto
-    .suffix = RMCBushe4
 
 ent-RMCBushf1 = Arbusto
-    .suffix = RMCBushf1
 
 ent-RMCBushf2 = Arbusto
-    .suffix = RMCBushf2
 
 ent-RMCBushf3 = Arbusto
-    .suffix = RMCBushf3
 
 ent-RMCBushg1 = Arbusto
-    .suffix = RMCBushg1
 
 ent-RMCBushg2 = Arbusto
-    .suffix = RMCBushg2
 
 ent-RMCBushg3 = Arbusto
-    .suffix = RMCBushg3
 
 ent-RMCBushg4 = Arbusto
-    .suffix = RMCBushg4
 
 ent-RMCBushh1 = Arbusto
-    .suffix = RMCBushh1
 
 ent-RMCBushh2 = Arbusto
-    .suffix = RMCBushh2
 
 ent-RMCBushh3 = Arbusto
-    .suffix = RMCBushh3
 
 ent-RMCBushi1 = Arbusto
-    .suffix = RMCBushi1
 
 ent-RMCBushi2 = Arbusto
-    .suffix = RMCBushi2
 
 ent-RMCBushi3 = Arbusto
-    .suffix = RMCBushi3
 
 ent-RMCBushi4 = Arbusto
-    .suffix = RMCBushi4
 
 ent-RMCBushj1 = Arbusto
-    .suffix = RMCBushj1
 
 ent-RMCBushj2 = Arbusto
-    .suffix = RMCBushj2
 
 ent-RMCBushj3 = Arbusto
-    .suffix = RMCBushj3
 
 ent-RMCBushk1 = Arbusto
-    .suffix = RMCBushk1
 
 ent-RMCBushk2 = Arbusto
-    .suffix = RMCBushk2
 
 ent-RMCBushk3 = Arbusto
-    .suffix = RMCBushk3
 
 ent-RMCBushl1 = Arbusto
-    .suffix = RMCBushl1
 
 ent-RMCBushl2 = Arbusto
-    .suffix = RMCBushl2
 
 ent-RMCBushl3 = Arbusto
-    .suffix = RMCBushl3
 
 ent-RMCBushl4 = Arbusto
-    .suffix = RMCBushl4
 
 ent-RMCBushm1 = Arbusto
-    .suffix = RMCBushm1
 
 ent-RMCBushm2 = Arbusto
-    .suffix = RMCBushm2
 
 ent-RMCBushm3 = Arbusto
-    .suffix = RMCBushm3
 
 ent-RMCBushm4 = Arbusto
-    .suffix = RMCBushm4
 
 ent-RMCBushn1 = Arbusto
-    .suffix = RMCBushn1
 
 ent-RMCbushsnowa1 = Arbusto
-    .suffix = RMCbushsnowa1
 
 ent-RMCbushsnowa2 = Arbusto
-    .suffix = RMCbushsnowa2
 
 ent-RMCbushsnowa3 = Arbusto
-    .suffix = RMCbushsnowa3
 
 ent-RMCbushsnowb1 = Arbusto
-    .suffix = RMCbushsnowb1
 
 ent-RMCbushsnowb2 = Arbusto
-    .suffix = RMCbushsnowb2
 
 ent-RMCbushsnowb3 = Arbusto
-    .suffix = RMCbushsnowb3
 
 ent-RMCFlowersbr1 = flores
-    .suffix = RMCFlowersbr1
 
 ent-RMCFlowersbr2 = flores
-    .suffix = RMCFlowersbr2
 
 ent-RMCFlowersbr3 = flores
-    .suffix = RMCFlowersbr3
 
 ent-RMCFlowerspv1 = flores
-    .suffix = RMCFlowerspv1
 
 ent-RMCFlowerspv2 = flores
-    .suffix = RMCFlowerspv2
 
 ent-RMCFlowerspv3 = flores
-    .suffix = RMCFlowerspv3
 
 ent-RMCFlowersy1 = flores
-    .suffix = RMCFlowersy1
 
 ent-RMCFlowersy2 = flores
-    .suffix = RMCFlowersy2
 
 ent-RMCFlowersy3 = flores
-    .suffix = RMCFlowersy3
 
 ent-RMCFlowersy4 = flores
-    .suffix = RMCFlowersy4
 
 ent-RMCRock01 = rocas
-    .suffix = RMCRock01
 
 ent-RMCRock02 = rocas
-    .suffix = RMCRock02
 
 ent-RMCRock03 = rocas
-    .suffix = RMCRock03
 
 ent-RMCRock04 = rocas
-    .suffix = RMCRock04
 
 ent-RMCRock05 = rocas
-    .suffix = RMCRock05
 
 ent-RMCRock06 = rocas
-    .suffix = RMCRock06
 
 ent-RMCRock07 = rocas
-    .suffix = RMCRock07
 
 ent-RMCStump1 = tocón de árbol
     .desc = Aquí había un árbol.
@@ -2817,32 +2731,24 @@ ent-RMCMechPropArmorBooster = Módulo reforzador de blindaje (armamento para com
     .suffix = objeto decorativo
 
 ent-RMCMechPropClamp = abrazadera hidráulica
-    .suffix = objeto decorativo
 
 ent-RMCMechPropDrill = Taladro
     .desc = ¡Este es el taladro que perforará los cielos!
     .suffix = objeto decorativo
 
 ent-RMCDiskData1 = Disco
-    .suffix = Datos, 1
 
 ent-RMCDiskData2 = Disco
-    .suffix = datos, 2
 
 ent-RMCDiskData3 = Disco
-    .suffix = datos, 3
 
 ent-RMCDiskData4 = Disco
-    .suffix = Datos, 4
 
 ent-RMCDiskData5 = Disco
-    .suffix = datos, 5
 
 ent-RMCDiskData6 = Disco
-    .suffix = datos, 6
 
 ent-RMCDiskData7 = Disco
-    .suffix = Datos, 7
 
 ent-RMC80mmMortarCameraWarhead = ojiva de cámara para proyectil de mortero de 80mm
     .desc = Una ojiva con cámara para un mortero de 84mm.
@@ -6453,13 +6359,10 @@ ent-RMCWeaponRifleABR40Tactical = Fusil de caza táctico ABR-40
 ent-RMCMagazineRifleAK4047 = Cargador AK4047 (10x24mm)
 
 ent-RMCMagazineRifleAK4047AP = Cargador AP AK4047 (10x24mm)
-    .suffix = AP
 
 ent-RMCMagazineRifleAK4047HEAP = Cargador HEAP AK4047 (10x24mm)
-    .suffix = HEAP
 
 ent-RMCMagazineRifleAK4047Incendiary = cargador incendiario AK4047 (10x24mm)
-    .suffix = incendiario
 
 ent-RMCWeaponRifleAK4047 = Fusil de asalto AK-4047
     .desc = Un fusil de asalto de la UPP diseñado para imitar las prestaciones del M41A estadounidense. El 4047 adopta un enfoque más utilitario y soporta el uso en entornos hostiles siempre que su usuario lo mantenga con regularidad. Muchos aficionados civiles afirman que el arma es casi invencible, pero cualquiera que haya prestado servicio con ella te dirá que nada más lejos de la realidad.
@@ -6901,19 +6804,14 @@ ent-RMCWeaponRifleM54CE2 = fusil de pulsos pesado M41AE2
 ent-CMMagazineRifleM54CMK1 = cargador M41A MK1 (10x24mm)
 
 ent-CMMagazineRifleM54CMK1AP = cargador AP M41A MK1 (10x24mm)
-    .suffix = AP
 
 ent-CMMagazineRifleM54CMK1Tracer = Cargador trazador M41A MK1 (10x24mm)
-    .suffix = trazador
 
 ent-RMCMagazineRifleM54CMK1HEAP = cargador HEAP M41A MK1 (10x24mm)
-    .suffix = HEAP
 
 ent-RMCMagazineRifleM54CMK1Incendiary = Cargador incendiario M41A MK1 (10x24mm)
-    .suffix = AP
 
 ent-RMCMagazineRifleM54CMK1WP = cargador WP M54C MK1 (10x24mm)
-    .suffix = WP
 
 ent-RMCWeaponRifleM54CMK1 = Fusil de pulsos M41A MK1
     .desc = Un diseño anterior del Pulse Rifle utilizado habitualmente por el Cuerpo de Marines. Utiliza munición sin vaina de 10x24mm.
@@ -6946,7 +6844,6 @@ ent-CMCartridgeRifle10x24mmTracer = cartucho trazador (10x24mm)
 ent-CMMagazineRifleM54C = cargador M41A MK2 (10x24mm)
 
 ent-CMMagazineRifleM54CAP = cargador AP M41A MK2 (10x24mm)
-    .suffix = AP
 
 ent-CMMagazineRifleM54CExt = cargador ampliado M41A MK2 (10x24mm)
 
@@ -6969,16 +6866,12 @@ ent-RMCCartridgeRifle10x24mmWP = cartucho WP (10x24mm)
     .desc = Un cartucho perforante 10x24mm capaz de atravesar paredes. Cabe en cargadores WP de 10x24mm.
 
 ent-RMCMagazineRifleM54CHEAP = Cargador HEAP M41A MK2 (10x24mm)
-    .suffix = HEAP
 
 ent-RMCMagazineRifleM54CHEAPEmpty = Cargador HEAP M41A MK2 (10x24mm)
-    .suffix = HEAP, vacío
 
 ent-RMCMagazineRifleM54CIncendiary = cargador incendiario M41A MK2 (10x24mm)
-    .suffix = incendiario
 
 ent-RMCMagazineRifleM54CWP = cargador WP M41A MK2 (10x24mm)
-    .suffix = WP
 
 ent-RMCWeaponRifleM54C = Fusil de pulsos M41A MK2
     .desc = El fusil reglamentario de la UA. Lo lleva habitualmente la mayoría del personal de combate. Utiliza munición sin vaina de 10x24mm.
@@ -7104,7 +6997,6 @@ ent-RMCMagazineRifleSSG45Extended = Cargador ampliado NSG-23 (10x24mm)
 ent-RMCMagazineRifleSSG45HEAP = cargador HEAP NSG-23 (10x24mm)
 
 ent-RMCMagazineRifleSSG45HEAPEmpty = cargador HEAP NSG-23 (10x24mm)
-    .suffix = HEAP, vacío
 
 ent-RMCMagazineRifleSSG45Incend = cargador incendiario NSG-23 (10x24mm)
 
@@ -7520,16 +7412,12 @@ ent-RMCCartridge10x20mmIncendiary = cartucho incendiario (10x20mm)
 ent-RMCCartridge10x20mmWP = cartucho WP (10x20mm)
 
 ent-RMCMagazineSMGM63HEAP = Cargador HEAP M39 (10x20mm)
-    .suffix = HEAP
 
 ent-RMCMagazineSMGM63HEAPEmpty = Cargador HEAP M39 (10x20mm)
-    .suffix = HEAP, vacío
 
 ent-RMCMagazineSMGM63Incendiary = Cargador incendiario M63 (10x20mm)
-    .suffix = incendiario
 
 ent-RMCMagazineSMGM63WP = cargador WP M63 (10x20mm)
-    .suffix = WP
 
 ent-RMCWeaponSMGM63ExtendedFilled = subfusil M39
     .desc = El subfusil M39 de ARMAT Battlefield Armaments. A veces lo llevan infantería ligera, exploradores, ingenieros y médicos.
@@ -8135,7 +8023,6 @@ ent-RMCPacketGrenadeBatonSlugHIRRFilled = paquete de proyectiles bastón HIRR
     .suffix = lleno
 
 ent-RMCPacketGrenadeFlashBang = caja de granadas aturdidoras (ADVERTENCIA)
-    .suffix = lleno
 
 ent-RMCPacketGrenadeIncendiary = paquete de granadas HIAM
     .desc = Contiene tres granadas M77 de alto explosivo incendiario y antimovilidad.

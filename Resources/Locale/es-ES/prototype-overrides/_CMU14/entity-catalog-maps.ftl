@@ -2,40 +2,29 @@
 # Los identificadores ent-* son contratos del motor y no se traducen.
 
 ent-CMURandomClothingCivilian = generador de ropa civil aleatoria
-    .suffix = CMU
 
 ent-AU14SpawnerCorpseUSASFPilot = generador de cadáveres: piloto de la USASF
-    .suffix = RMC
 
 ent-AU14SpawnerCorpseUSASFPilot2 = generador de cadáver: piloto 2 de la USASF
-    .suffix = RMC
 
 ent-AU14SpawnerCorpseUSCMRifleman = Generador de cadáveres: fusilero de la USCM
-    .suffix = RMC
 
 ent-AU14SpawnerCorpseUSCMRifleman2 = generador de cadáveres: fusilero 2 del USCM
-    .suffix = RMC
 
 ent-AU14SpawnerCorpseUSCMRifleman3 = generador de cadáver: fusilero 3 del USCM
-    .suffix = RMC
 
 ent-AU14SpawnerCorpseUSCMSquadLeader = Generador de cadáveres: jefe de pelotón de la USCM
-    .suffix = RMC
 
 ent-AU14SpawnerRandomWeYuSupply = generador experimental de suministros WeYu
     .desc = Genera una caja de experimentos de investigación con fármacos y otras cosas interesantes para investigadores de WY.
 
 ent-CMURandomFloraTree = generador aleatorio de árboles
-    .suffix = CMU
 
 ent-CMURandomFloraTreeConifer = generador aleatorio de coníferas
-    .suffix = CMU
 
 ent-CMURandomFloraTreeLarge = generador de árboles grandes aleatorios
-    .suffix = CMU
 
 ent-CMURandomFloraTreeSnow = generador aleatorio de árboles nevados
-    .suffix = CMU
 
 ent-arrestclfobjective = Objetivo: detener a la CLF
 
@@ -131,22 +120,16 @@ ent-destroy_mineable_solaris_steel = Destruye la veta de acero de Solaris
     .desc = Destruye una veta explotable rica en acero del mapa.
 
 ent-fetchanprcobjective = Objetivo: recuperar el AN/PRC-982
-    .suffix = objetivo de búsqueda
 
 ent-fetchattmosdatastorageunitobjective = Objetivo: recuperar la ARDSU RCS-9
-    .suffix = objetivo de búsqueda
 
 ent-fetchblackboxobjective = recuperar el objetivo de caja negra CIR-60
-    .suffix = objetivo de búsqueda
 
 ent-fetchcrownobjective = Objetivo: recuperar la corona
-    .suffix = objetivo de búsqueda
 
 ent-fetchgenericmarker = Marcador genérico de recuperación
-    .suffix = objetivo de búsqueda
 
 ent-fetchnuclearlaunchcodesobjective = Objetivo de recuperar el folleto de códigos de lanzamiento nuclear
-    .suffix = objetivo de búsqueda
 
 ent-fetchoreobjective = recuperar el objetivo de mineral
 
@@ -157,10 +140,8 @@ ent-fetchreturngovfor = recuperar el punto genérico de entrega de GOVFOR
 ent-fetchreturnopfor = Punto genérico de devolución para recuperar de OPFOR
 
 ent-fetchtheaterhandbookobjective = Objetivo de recuperar el Manual de operaciones del teatro
-    .suffix = objetivo de búsqueda
 
 ent-fetchwylaptopobjective = recuperar el objetivo de portátil de WY
-    .suffix = objetivo de búsqueda
 
 ent-hackcomputerobjective = objetivo de piratear el ordenador
 
@@ -203,7 +184,6 @@ ent-ObjectiveMasterBaseDistress = objetivo maestro
 ent-ObjectiveMasterBaseFOF = objetivo maestro
 
 ent-CMURandomEngineering = generador aleatorio de ingeniería
-    .suffix = CMU
 
 ent-AuPlanetChances = Chances Claim
 
@@ -247,22 +227,14 @@ ent-AU14FlightStairs = escaleras
 ent-AU14LadderExit = salida de escalera
 
 ent-AU14TriggerTeleporterViewer = visor del teletransportador
-    .suffix = AU14
 
 ent-AU14WallInvisible = muro invisible
-    .suffix = AU14
 
 ent-AU14WindowFrameWhiteTextured = marco de ventana
     .desc = Un gran agujero en la pared donde antes había una ventana enorme. Se puede saltar a través de él.
 
 ent-AU14WindowTintedWhite = ventana tintada
     .desc = Una ventana de vidrio tintado con revestimiento resistente a impactos. Parece bastante resistente. Quizá hagan falta unos cuantos buenos golpes para romperla.
-
-ent-CMUFlightDisposalBend =
-    .suffix = vuelo
-
-ent-CMUFlightDisposalPipe =
-    .suffix = vuelo
 
 ent-CMUFogWall_distress_inverted30min = Niebla densa
     .desc = Parece demasiado peligroso atravesarlo. Será mejor esperar a que desaparezca.

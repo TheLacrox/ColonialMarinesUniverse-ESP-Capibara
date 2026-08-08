@@ -19,10 +19,8 @@ ent-CMFloorDeepWaterEntity = agua profunda
 ent-CMFloorShallowWaterEntity = agua poco profunda
 
 ent-RMCFloorShallowWaterEntityDarkRed = agua poco profunda
-    .suffix = rojo oscuro
 
 ent-RMCFloorShallowWaterEntityRed = agua poco profunda
-    .suffix = Rojo
 
 ent-RMCRiverSorokyne = río
 

@@ -23,13 +23,10 @@ ent-RMCAtmosTree = árbol enorme
 ent-RMCBlockerAirtight = Bloqueador hermético
 
 ent-RMCWallInvisibleBulletBlocker = bloqueador de muro
-    .suffix = Bloqueador de proyectiles
 
 ent-RMCWallInvisibleBulletLightBlocker = bloqueador de muro
-    .suffix = bloqueador de proyectiles y luz
 
 ent-RMCWallInvisibleBulletPassible = bloqueador de muro
-    .suffix = atravesable por proyectiles
 
 ent-RMCCanisterBase = bombona
     .desc = Una bombona de gas.
@@ -117,10 +114,8 @@ ent-RMCCommunicationsTowerPropAlt1 = torre de comunicaciones destruida
     .desc = Una antigua torre de comunicaciones de la Compañía usada para transmitir comunicaciones entre cuerpos subespaciales. Esta parece haber conocido tiempos mejores.
 
 ent-RMCSpawnerCommunicationsTowerOne = comunicaciones estáticas
-    .suffix = uno
 
 ent-RMCSpawnerCommunicationsTowerTwo = comunicaciones estáticas
-    .suffix = Dos
 
 ent-RMCContainerAegisLeft = Contenedor de carga de AEGIS
     .desc = Un enorme contenedor industrial de transporte.{ "\u000A" }Este procede de AEGIS, el contratista de defensa responsable del M54C y otras armas de los Marines.
@@ -573,337 +568,230 @@ ent-RMCContainerWeYaWhiteRight = Contenedor de carga
 ent-RMCPerspectiveDarkness = oscuridad
 
 ent-AUAirlockPrisonStaffLocked = puerta del personal
-    .suffix = Enlace, con cierre
 
 ent-CMAirlockChemistryLocked = esclusa médica
-    .suffix = química, bloqueada
 
 ent-CMAirlockEngineerLocked = Esclusa de aire de Ingeniería
-    .suffix = Ingeniería, con cierre
 
 ent-CMAirlockGlassEngineerLocked = Esclusa de aire de Ingeniería
-    .suffix = ingeniería, bloqueado, cristal
 
 ent-CMAirlockGlassKitchenLocked = Esclusa de aire de vidrio
-    .suffix = cocina, bloqueada, cristal
 
 ent-CMAirlockGlassMedicalLocked = esclusa médica
-    .suffix = médico, bloqueado, cristal
 
 ent-CMAirlockGlassPressLocked = Esclusa de aire de vidrio
-    .suffix = prensa, bloqueada, cristal
 
 ent-CMAirlockGlassSecurityLocked = esclusa de seguridad
-    .suffix = seguridad, bloqueado
 
 ent-CMAirlockKitchenLocked = Esclusa de aire
-    .suffix = Cocina, con cierre
 
 ent-CMAirlockLiaisonLocked = Aposentos del enlace corporativo
-    .suffix = Enlace, con cierre
 
 ent-CMAirlockMaintEngineerLocked = escotilla de mantenimiento
-    .suffix = ingeniería, bloqueada, mantenimiento
 
 ent-CMAirlockMaintKitchenLocked = escotilla de mantenimiento
-    .suffix = cocina, bloqueada, mantenimiento
 
 ent-CMAirlockMaintLiaisonLocked = escotilla de mantenimiento
-    .suffix = enlace, bloqueado, mantenimiento
 
 ent-CMAirlockMaintMedicalLocked = escotilla de mantenimiento
-    .suffix = médico, bloqueada, mantenimiento
 
 ent-CMAirlockMaintPressLocked = escotilla de mantenimiento
-    .suffix = Prensa, con cierre, mantenimiento
 
 ent-CMAirlockMaintRequisitionsLocked = escotilla de mantenimiento
-    .suffix = requisiciones, bloqueado, mantenimiento
 
 ent-CMAirlockMedicalLocked = esclusa médica
-    .suffix = Medicina, con cierre
 
 ent-CMAirlockMorgueLocked = esclusa médica
-    .suffix = morgue, bloqueada
 
 ent-CMAirlockOrdnanceLocked = Esclusa de aire de Ingeniería
-    .suffix = armamento, bloqueado
 
 ent-CMAirlockPressLocked = Esclusa de aire
-    .suffix = Prensa, bloqueada
 
 ent-CMAirlockRequisitionsLocked = bahía de requisiciones
-    .suffix = Requisiciones, con cierre
 
 ent-CMAirlockResearchLocked = esclusa médica
-    .suffix = Investigación, con cierre
 
 ent-CMAirlockSecurityLocked = esclusa de seguridad
-    .suffix = seguridad, bloqueado
 
 ent-CMAirlockCommandLockedColony = Esclusa de aire de Mando
-    .suffix = mando, colonia, bloqueado
 
 ent-CMAirlockEngineerLockedColony = Esclusa de aire de Ingeniería
-    .suffix = ingeniería, colonia, bloqueado
 
 ent-CMAirlockGlassEngineerLockedColony = Esclusa de aire de Ingeniería
-    .suffix = Ingeniería, colonia, cristal, con cierre
 
 ent-CMAirlockGlassLockedColony = Esclusa de aire de vidrio
-    .suffix = colonia, cristal, bloqueada
 
 ent-CMAirlockGlassMedicalLockedColony = esclusa médica
-    .suffix = Medicina, colonia, cristal, con cierre
 
 ent-CMAirlockGlassResearchLockedColony = esclusa médica
-    .suffix = investigación, colonia, cristal, bloqueada
 
 ent-CMAirlockGlassSecurityLockedColony = esclusa de seguridad
-    .suffix = seguridad, colonia, cristal, bloqueado
 
 ent-CMAirlockMaintLockedColony = escotilla de mantenimiento
-    .suffix = Mantenimiento, colonia, con cierre
 
 ent-CMAirlockMedicalLockedColony = esclusa médica
-    .suffix = médico, colonia, bloqueado
 
 ent-CMAirlockRequisitionsLockedColony = bahía de requisiciones
-    .suffix = Colonia, requisiciones, con cierre
 
 ent-CMAirlockResearchLockedColony = esclusa médica
-    .suffix = colonia, investigación, bloqueado
 
 ent-CMAirlockSecureLockedColony = esclusa segura
-    .suffix = colonia, bloqueada
 
 ent-CMAirlockSecurityLockedColony = esclusa de seguridad
-    .suffix = seguridad, colonia, bloqueada
 
 ent-RMCAirlockGlassSecurityLockedTSEPA = esclusa de seguridad
-    .suffix = TSEPA, colonia, cristal, bloqueada
 
 ent-RMCAirlockGlassSecurityLockedTSEPAAlt = Esclusa de aire
-    .suffix = TSEPA, colonia, cristal, bloqueada
 
 ent-RMCAirlockGlassSecurityLockedTSEPABrig = esclusa de seguridad
-    .suffix = calabozo TSEPA, colonia, cristal, bloqueada
 
 ent-RMCAirlockHybrisaPersonalLockedTSEPA = Esclusa de aire
-    .suffix = TSEPA, sólido, bloqueado
 
 ent-RMCAirlockHybrisaPersonalLockedTSEPABrig = Esclusa de aire
-    .suffix = Calabozo TSEPA, maciza, con cierre
 
 ent-RMCAirlockMaintLockedTSEPA = escotilla de mantenimiento
-    .suffix = TSEPA, mantenimiento, con cierre
 
 ent-RMCAirlockSecurityLockedTSEPA = esclusa de seguridad
-    .suffix = TSEPA, colonia, maciza, con cierre
 
 ent-RMCDoubleDoorSecurityGlassLockedTSEPA = Puerta
-    .suffix = TSEPA, cristal, bloqueada
 
 ent-RMCDoubleDoorSecurityGlassLockedTSEPAAlt = Puerta
-    .suffix = TSEPA, cristal, bloqueada
 
 ent-CMAirlockASOLocked = Esclusa de aire de Mando
-    .suffix = ASO, con cierre
 
 ent-CMAirlockCELocked = Esclusa de aire de Mando
-    .suffix = CE, bloqueado
 
 ent-CMAirlockCMOLocked = Esclusa de aire de Mando
-    .suffix = CMO, con cierre
 
 ent-CMAirlockCMPLocked = Esclusa de aire de Mando
-    .suffix = CMP, bloqueado
 
 ent-CMAirlockCOLocked = Esclusa de aire de Mando
-    .suffix = CO, bloqueada
 
 ent-CMAirlockCommandLocked = Esclusa de aire de Mando
-    .suffix = mando, bloqueada
 
 ent-CMAirlockHighCommandLocked = Esclusa de aire de Mando
-    .suffix = alto mando, bloqueada
 
 ent-CMAirlockMaintCommandLocked = escotilla de mantenimiento
-    .suffix = Mando, con cierre, mantenimiento
 
 ent-CMAirlockQuartermasterLocked = Esclusa de aire de Mando
-    .suffix = Oficial de logística, con cierre
 
 ent-CMAirlockSEALocked = Esclusa de aire de Mando
-    .suffix = SEA, bloqueado
 
 ent-CMAirlockSecureLockedCommand = esclusa segura
-    .suffix = mando, bloqueada
 
 ent-CMAirlockPrepAlphaCommon = preparativos del pelotón Alpha
-    .suffix = bloqueado, común
 
 ent-CMAirlockPrepAlphaEngineer = preparativos del técnico de combate del pelotón Alpha
-    .suffix = bloqueado
 
 ent-CMAirlockPrepAlphaFTL = Preparativos del jefe de equipo de fuego del pelotón Alpha
-    .suffix = bloqueado
 
 ent-CMAirlockPrepAlphaLocked = preparativos del pelotón Alpha
-    .suffix = bloqueado
 
 ent-CMAirlockPrepAlphaMedical = Preparativos médicos del pelotón Alpha
-    .suffix = bloqueado
 
 ent-CMAirlockPrepAlphaSL = preparativos del jefe del pelotón Alpha
-    .suffix = bloqueado
 
 ent-CMAirlockPrepAlphaSmart = Preparativos del operador de smartgun del pelotón Alpha
-    .suffix = bloqueado
 
 ent-CMAirlockPrepAlphaSpec = Preparativos del especialista del pelotón Alpha
-    .suffix = bloqueado
 
 ent-CMAirlockPrepBravoCommon = preparativos del pelotón Bravo
-    .suffix = bloqueado, común
 
 ent-CMAirlockPrepBravoEngineer = preparativos del técnico de combate del pelotón Bravo
-    .suffix = bloqueado
 
 ent-CMAirlockPrepBravoFTL = preparativos del jefe de equipo de fuego del escuadrón Bravo
-    .suffix = bloqueado
 
 ent-CMAirlockPrepBravoLocked = preparativos del pelotón Bravo
-    .suffix = bloqueado
 
 ent-CMAirlockPrepBravoMedical = preparativos médicos del escuadrón Bravo
-    .suffix = bloqueado
 
 ent-CMAirlockPrepBravoSL = preparativos del jefe del pelotón Bravo
-    .suffix = bloqueado
 
 ent-CMAirlockPrepBravoSmart = Preparativos del operador de smartgun del pelotón Bravo
-    .suffix = bloqueado
 
 ent-CMAirlockPrepBravoSpec = preparativos del especialista del escuadrón Bravo
-    .suffix = bloqueado
 
 ent-CMAirlockPrepCharlieCommon = preparativos del escuadrón Charlie
-    .suffix = bloqueado, común
 
 ent-CMAirlockPrepCharlieEngineer = preparativos del técnico de combate del escuadrón Charlie
-    .suffix = bloqueado
 
 ent-CMAirlockPrepCharlieFTL = Preparativos del jefe de equipo del pelotón Charlie
-    .suffix = bloqueado
 
 ent-CMAirlockPrepCharlieLocked = preparativos del escuadrón Charlie
-    .suffix = bloqueado
 
 ent-CMAirlockPrepCharlieMedical = Preparativos médicos del pelotón Charlie
-    .suffix = bloqueado
 
 ent-CMAirlockPrepCharlieSL = preparativos del líder del escuadrón Charlie
-    .suffix = bloqueado
 
 ent-CMAirlockPrepCharlieSmart = preparativos del operador de smartgun del pelotón Charlie
-    .suffix = bloqueado
 
 ent-CMAirlockPrepCharlieSpec = Preparativos del especialista del pelotón Charlie
-    .suffix = bloqueado
 
 ent-CMAirlockPrepDeltaCommon = preparativos del pelotón Delta
-    .suffix = Común, con cierre
 
 ent-CMAirlockPrepDeltaEngineer = preparativos del técnico de combate del pelotón Delta
-    .suffix = bloqueado
 
 ent-CMAirlockPrepDeltaFTL = preparativos del jefe de equipo de fuego del escuadrón Delta
-    .suffix = bloqueado
 
 ent-CMAirlockPrepDeltaLocked = preparativos del pelotón Delta
-    .suffix = bloqueado
 
 ent-CMAirlockPrepDeltaMedical = preparativos médicos del escuadrón Delta
-    .suffix = bloqueado
 
 ent-CMAirlockPrepDeltaSL = preparativos del jefe del pelotón Delta
-    .suffix = bloqueado
 
 ent-CMAirlockPrepDeltaSmart = Preparativos del operador de smartgun del pelotón Delta
-    .suffix = bloqueado
 
 ent-CMAirlockPrepDeltaSpec = preparativos del especialista del escuadrón Delta
-    .suffix = bloqueado
 
 ent-CMAirlockPrepEngineer = preparativos del técnico de combate de escuadra
-    .suffix = bloqueado
 
 ent-CMAirlockPrepFTL = preparativos del líder de equipo de fuego del escuadrón
-    .suffix = bloqueado
 
 ent-CMAirlockPrepLocked = esclusa de preparativos
-    .suffix = bloqueado
 
 ent-CMAirlockPrepMedical = preparativos médicos de escuadra
-    .suffix = bloqueado
 
 ent-CMAirlockPrepSL = preparativos del líder de escuadrón
-    .suffix = bloqueado
 
 ent-CMAirlockPrepSmart = preparativos del operador de smartgun de escuadra
-    .suffix = bloqueado
 
 ent-CMAirlockPrepSpec = preparativos del especialista de escuadrón
-    .suffix = bloqueado
 
 ent-CMAirlockArmoryLocked = esclusa de seguridad
-    .suffix = armería, bloqueada
 
 ent-CMAirlockBrigLocked = esclusa de seguridad
-    .suffix = calabozo, bloqueado
 
 ent-CMAirlockGlassArmoryLocked = esclusa de seguridad
-    .suffix = armería, bloqueada, cristal
 
 ent-CMAirlockGlassBrigLocked = esclusa de seguridad
-    .suffix = calabozo, bloqueada, cristal
 
 ent-CMAirlockMaintBrigLocked = escotilla de mantenimiento
-    .suffix = Calabozo, con cierre, mantenimiento
 
 ent-CMAirlock = Esclusa de aire
 
 ent-CMAirlockCell = puerta de celda
 
 ent-CMAirlockCommand = Esclusa de aire de Mando
-    .suffix = mando
 
 ent-CMAirlockEngineer = Esclusa de aire de Ingeniería
-    .suffix = ingeniería
 
 ent-CMAirlockGlass = Esclusa de aire de vidrio
 
 ent-CMAirlockGlassEngineer = Esclusa de aire de Ingeniería
-    .suffix = Ingeniería
 
 ent-CMAirlockGlassHybrisa = Esclusa de aire de vidrio
 
 ent-CMAirlockGlassHybrisaPersonal = Esclusa de aire de vidrio
 
 ent-CMAirlockGlassMedical = esclusa médica
-    .suffix = médico
 
 ent-CMAirlockGlassSecurity = esclusa de seguridad
-    .suffix = Seguridad
 
 ent-CMAirlockMaint = escotilla de mantenimiento
 
 ent-CMAirlockMaintReinforced = escotilla de mantenimiento reforzada
-    .suffix = reforzada
 
 ent-CMAirlockMedical = esclusa médica
-    .suffix = médico
 
 ent-CMAirlockPrep = esclusa de preparativos
 
@@ -920,17 +808,14 @@ ent-CMAirlockPrison = escotilla de mantenimiento
 ent-CMAirlockSecure = esclusa segura
 
 ent-CMAirlockSecurity = esclusa de seguridad
-    .suffix = Seguridad
 
 ent-CMAirlockShuttle = Esclusa de aire
-    .suffix = lanzadera
 
 ent-CMUAirlockGlassGreenUPP = Esclusa de aire de vidrio
 
 ent-CMUAirlockGlassGreyUPP = Esclusa de aire de vidrio
 
 ent-CMUAirlockUPPGreen = Esclusa de aire
-    .suffix = UPP
 
 ent-CMUAirlockUPPGrey = Esclusa de aire
 
@@ -962,166 +847,112 @@ ent-RMCAirlockLifeboat = escotilla de atraque del bote salvavidas
     .desc = Un mamparo de gran espesor para un bote salvavidas.
 
 ent-CMDoubleDoorChemistryGlassLocked = Puerta
-    .suffix = química, cristal, bloqueado
 
 ent-CMDoubleDoorChemistrySolidLocked = Puerta
-    .suffix = Química, maciza, con cierre
 
 ent-CMDoubleDoorEngineerGlassLocked = Puerta
-    .suffix = ingeniero, cristal, bloqueado
 
 ent-CMDoubleDoorEngineerSolidLocked = Puerta
-    .suffix = ingeniería, maciza, bloqueada
 
 ent-CMDoubleDoorMedicalGlassLocked = Puerta
-    .suffix = médico, cristal, bloqueada
 
 ent-CMDoubleDoorMedicalSolidLocked = Puerta
-    .suffix = médico, maciza, bloqueada
 
 ent-CMDoubleDoorMorgueSolidLocked = Puerta
-    .suffix = morgue, maciza, bloqueada
 
 ent-CMDoubleDoorPilotsGlassLocked = Puerta
-    .suffix = pilotos, cristal, bloqueada
 
 ent-CMDoubleDoorPilotsSolidLocked = Puerta
-    .suffix = Pilotos, maciza, con cierre
 
 ent-CMDoubleDoorRequisitionsGlassLocked = Puerta
-    .suffix = Requisiciones, cristal, bloqueada
 
 ent-CMDoubleDoorRequisitionsSolidLocked = Puerta
-    .suffix = Requisiciones, maciza, bloqueada
 
 ent-CMDoubleDoorResearchGlassLocked = esclusa de Investigación
-    .suffix = investigación, cristal, bloqueado
 
 ent-CMDoubleDoorResearchSolidLocked = Puerta
-    .suffix = investigación, sólido, bloqueado
 
 ent-CMDoubleDoorSecurityGlassLocked = Puerta
-    .suffix = seguridad, cristal, bloqueada
 
 ent-CMDoubleDoorSecuritySolidLocked = Puerta
-    .suffix = seguridad, sólido, bloqueado
 
 ent-CMDoubleDoorColonyCommandGlassLocked = Puerta
-    .suffix = Mando, colonia, cristal, con cierre
 
 ent-CMDoubleDoorColonyCommandSolidLocked = Puerta
-    .suffix = mando, colonia, maciza, bloqueada
 
 ent-CMDoubleDoorColonyEngineerGlassLocked = Puerta
-    .suffix = ingeniero, colonia, cristal, bloqueado
 
 ent-CMDoubleDoorColonyEngineerSolidLocked = Puerta
-    .suffix = ingeniería, colonia, maciza, bloqueada
 
 ent-CMDoubleDoorColonySecurityGlassLocked = Puerta
-    .suffix = seguridad, colonia, cristal, bloqueado
 
 ent-CMDoubleDoorColonySecuritySolidLocked = Puerta
-    .suffix = Seguridad, colonia, maciza, con cierre
 
 ent-CMDoubleDoorCommandGlassLocked = Puerta
-    .suffix = mando, cristal, bloqueado
 
 ent-CMDoubleDoorCommandSolidLocked = Puerta
-    .suffix = mando, maciza, bloqueada
 
 ent-CMDoublCMDoubleDoorPreparationsBravoLocked = Puerta
-    .suffix = preparativos, Bravo, bloqueado
 
 ent-CMDoublCMDoubleDoorPreparationsDeltaLocked = Puerta
-    .suffix = Preparativos, Delta, con cierre
 
 ent-CMDoubleDoorPreparationsAlphaLocked = Puerta
-    .suffix = Preparativos, Alpha, con cierre
 
 ent-CMDoubleDoorPreparationsCharlieLocked = Puerta
-    .suffix = preparativos, Charlie, bloqueada
 
 ent-RMCAirlockSecureSPPSecLocked = esclusa segura
-    .suffix = Seguridad SPP, con cierre
 
 ent-RMCAirlockSecuritySPPLocked = esclusa de seguridad
-    .suffix = SPP, maciza, bloqueada
 
 ent-RMCAirlockSecuritySPPSecLocked = esclusa de seguridad
-    .suffix = seguridad SPP, sólido, bloqueado
 
 ent-RMCDoubleDoorSecuritySPPGlassLocked = Puerta
-    .suffix = SPP, cristal, con cierre
 
 ent-CMDoubleDoorAlmayerGlass = Puerta
-    .suffix = Almayer, cristal
 
 ent-CMDoubleDoorAlmayerSolid = Puerta
-    .suffix = Almayer, maciza
 
 ent-CMDoubleDoorCommandGlass = Puerta
-    .suffix = Mando, cristal
 
 ent-CMDoubleDoorCommandSolid = Puerta
-    .suffix = mando, sólido
 
 ent-CMDoubleDoorEngineerGlass = Puerta
-    .suffix = Ingeniería, cristal
 
 ent-CMDoubleDoorEngineerSolid = Puerta
-    .suffix = ingeniero, sólido
 
 ent-CMDoubleDoorGenericGlass = Puerta
-    .suffix = Genérico, cristal
 
 ent-CMDoubleDoorGenericSolid = Puerta
-    .suffix = Genérico, maciza
 
 ent-CMDoubleDoorMedicalGlass = Puerta
-    .suffix = médico, cristal
 
 ent-CMDoubleDoorMedicalSolid = Puerta
-    .suffix = médico, sólido
 
 ent-CMDoubleDoorPersonalGlass = Puerta
-    .suffix = Personal, cristal
 
 ent-CMDoubleDoorPersonalSolid = Puerta
-    .suffix = personal, sólido
 
 ent-CMDoubleDoorPreparations = Puerta
-    .suffix = preparativos
 
 ent-CMDoubleDoorPreparationsAlpha = Puerta
-    .suffix = preparativos, Alfa
 
 ent-CMDoubleDoorPreparationsBravo = Puerta
-    .suffix = Preparativos, Bravo
 
 ent-CMDoubleDoorPreparationsCharlie = Puerta
-    .suffix = preparativos, Charlie
 
 ent-CMDoubleDoorPreparationsDelta = Puerta
-    .suffix = preparativos, Delta
 
 ent-CMDoubleDoorSecurityGlass = Puerta
-    .suffix = seguridad, cristal
 
 ent-CMDoubleDoorSecuritySolid = Puerta
-    .suffix = Seguridad, maciza
 
 ent-RMCDoubleDoorGlassHybrisa = Puerta
-    .suffix = Hybrisa, cristal
 
 ent-RMCDoubleDoorHybrisaGlassMecical = Puerta
-    .suffix = Hybrisa, cristal
 
 ent-RMCDoubleDoorHybrisaMecical = Puerta
-    .suffix = Hybrisa, maciza
 
 ent-RMCDoubleDoorSolidHybrisa = Puerta
-    .suffix = Hybrisa, maciza
 
 ent-RMCDoubleDoorAlmayerGlassCO = Puerta doble de los oficiales al mando
     .desc = Una puerta de cristal restringida al oficial al mando.
@@ -1220,133 +1051,90 @@ ent-RMCDoubleDoorGenericSolidPress = puerta doble de Prensa
     .suffix = genérico, sólido, bloqueado, Prensa
 
 ent-RMCDoubleDoorMedicalGlassMedical = Puerta
-    .suffix = Medicina, cristal, con cierre, medicina
 
 ent-RMCDoubleDoorMedicalGlassResearch = Puerta
-    .suffix = médico, cristal, bloqueado, investigación
 
 ent-RMCDoubleDoorMedicalSolidMedical = Puerta
-    .suffix = Medicina, maciza, con cierre, medicina
 
 ent-RMCDoubleDoorMedicalSolidMorgue = Puerta
-    .suffix = Morgue, maciza, con cierre, medicina
 
 ent-RMCDoubleDoorMedicalSolidResearch = Puerta
-    .suffix = médico, sólido, bloqueado, investigación
 
 ent-RMCDoubleDoorPreparationsAlphaAlpha = Puerta
-    .suffix = preparativos, Alpha, bloqueado, Alpha y mando
 
 ent-RMCDoubleDoorPreparationsAlphaPrep = Puerta
-    .suffix = preparativos, Alfa, bloqueada, Prep y mando
 
 ent-RMCDoubleDoorPreparationsBravoBravo = Puerta
-    .suffix = preparativos, Bravo, bloqueada, Bravo y mando
 
 ent-RMCDoubleDoorPreparationsBravoPrep = Puerta
-    .suffix = Preparativos, Bravo, con cierre, preparativos y mando
 
 ent-RMCDoubleDoorPreparationsCharlieCharlie = Puerta
-    .suffix = Preparativos, Charlie, con cierre, Charlie y mando
 
 ent-RMCDoubleDoorPreparationsCharliePrep = Puerta
-    .suffix = preparativos, Charlie, bloqueado, preparativos y mando
 
 ent-RMCDoubleDoorPreparationsDeltaDelta = Puerta
-    .suffix = preparativos, Delta, bloqueado, Delta y mando
 
 ent-RMCDoubleDoorPreparationsDeltaPrep = Puerta
-    .suffix = preparativos, Delta, bloqueada, Prep y mando
 
 ent-RMCDoubleDoorPreparationsMeetingRoom = Puerta
-    .suffix = preparativos, bloqueada, jefe de escuadra, mando
 
 ent-RMCDoubleDoorPreparationsPrep = Puerta
-    .suffix = Preparativos, con cierre, preparativos y mando
 
 ent-RMCDoubleDoorPreparationsReq = Puerta
-    .suffix = preparativos, bloqueado, requisiciones y mando
 
 ent-RMCDoubleDoorSecurityGlassArmory = Puerta
-    .suffix = Seguridad, cristal, con cierre, armería
 
 ent-RMCDoubleDoorSecurityGlassBrig = Puerta
-    .suffix = seguridad, cristal, bloqueado, calabozo
 
 ent-RMCDoubleDoorSecurityGlassBrigCommand = Puerta
-    .suffix = seguridad, cristal, bloqueada, calabozo y mando
 
 ent-RMCDoubleDoorSecurityGlassSeniorCommand = Puerta
-    .suffix = Seguridad, cristal, con cierre, mando superior
 
 ent-RMCDoubleDoorSecuritySolidArmory = Puerta
-    .suffix = seguridad, maciza, bloqueada, armería
 
 ent-RMCDoubleDoorSecuritySolidBrig = Puerta
-    .suffix = Seguridad, maciza, con cierre, calabozo
 
 ent-RMCDoubleDoorSecuritySolidBrigCommand = Puerta
-    .suffix = seguridad, sólido, bloqueado, calabozo y mando
 
 ent-RMCDoubleDoorSecuritySolidSeniorCommand = Puerta
-    .suffix = seguridad, maciza, bloqueada, alto mando
 
 ent-RMCDoubleDoorAlmayerGlass = Puerta
-    .suffix = Almayer, cristal
 
 ent-RMCDoubleDoorAlmayerSolid = Puerta
-    .suffix = Almayer, maciza
 
 ent-RMCDoubleDoorCommandGlass = Puerta
-    .suffix = Almayer, cristal
 
 ent-RMCDoubleDoorCommandSolid = Puerta
-    .suffix = mando, sólido
 
 ent-RMCDoubleDoorEngineerGlass = Puerta
-    .suffix = Ingeniería, cristal
 
 ent-RMCDoubleDoorEngineerSolid = Puerta
-    .suffix = ingeniero, sólido
 
 ent-RMCDoubleDoorGenericGlass = Puerta
-    .suffix = Genérico, cristal
 
 ent-RMCDoubleDoorGenericSolid = Puerta
-    .suffix = Genérico, maciza
 
 ent-RMCDoubleDoorMedicalGlass = Puerta
-    .suffix = médico, cristal
 
 ent-RMCDoubleDoorMedicalSolid = Puerta
-    .suffix = médico, sólido
 
 ent-RMCDoubleDoorPersonalGlass = Puerta
-    .suffix = Personal, cristal
 
 ent-RMCDoubleDoorPersonalSolid = Puerta
-    .suffix = personal, sólido
 
 ent-RMCDoubleDoorPreparations = Puerta
-    .suffix = preparativos
 
 ent-RMCDoubleDoorPreparationsAlpha = Puerta
-    .suffix = preparativos, Alfa
 
 ent-RMCDoubleDoorPreparationsBravo = Puerta
-    .suffix = Preparativos, Bravo
 
 ent-RMCDoubleDoorPreparationsCharlie = Puerta
-    .suffix = preparativos, Charlie
 
 ent-RMCDoubleDoorPreparationsDelta = Puerta
-    .suffix = preparativos, Delta
 
 ent-RMCDoubleDoorSecurityGlass = Puerta
-    .suffix = seguridad, cristal
 
 ent-RMCDoubleDoorSecuritySolid = Puerta
-    .suffix = Seguridad, maciza
 
 ent-RMCSandstoneDoor = puerta de arenisca
     .desc = Se abre y se cierra.
@@ -1725,21 +1513,16 @@ ent-RMCWindoorSoro = Puerta de vidrio
     .suffix = Azul
 
 ent-CMAlamoCockpit = Cabina de mando
-    .suffix = Alamo, Govfor
 
 ent-CMAlamoCockpitOpfor = Cabina de mando
-    .suffix = Alamo, Opfor
 
 ent-CMAlamoDoor = escotilla de tripulación del Fallujah
 
 ent-CMAlamoDoorAft = puerta de carga de Fallujah
-    .suffix = popa
 
 ent-CMAlamoDoorPort = escotilla de tripulación del Fallujah
-    .suffix = babor
 
 ent-CMAlamoDoorStarboard = escotilla de tripulación del Fallujah
-    .suffix = Estribor
 
 ent-CMAlamoWall1 = Pared de Fallujah
     .desc = Un enorme bloque de metal utilizado para separar estancias.
@@ -2543,26 +2326,20 @@ ent-RMCUtilityAttachmentPoint = punto de anclaje utilitario
 ent-RMCCLFCrewHatch = escotilla de tripulación de la CLF
 
 ent-RMCERTDoorAft = puerta de carga de la ERT
-    .suffix = popa
 
 ent-RMCERTDoorPort = escotilla de tripulación ERT
-    .suffix = babor
 
 ent-RMCPMCCrewHatch = escotilla de tripulación de PMC
 
 ent-RMCPMCDoorAft = puerta de carga PMC
-    .suffix = popa
 
 ent-RMCSPPDoorAft = puerta de carga de la SPP
-    .suffix = popa
 
 ent-RMCSPPDoorPort = escotilla de tripulación de la SPP
-    .suffix = babor
 
 ent-RMCTSECrewHatch = escotilla de tripulación de TSE
 
 ent-RMCTSEDoorAft = puerta de carga de la TSE
-    .suffix = popa
 
 ent-RMCERTShuttleEngineLeft01 = motor de lanzadera
     .desc = Un enorme bloque de metal utilizado para separar estancias.
@@ -2911,21 +2688,16 @@ ent-RMCERTShuttleWallWeYaEngineRight = motor de lanzadera WeYa
     .suffix = derecha
 
 ent-CMNormandyCockpit = Cabina de mando
-    .suffix = Normandy
 
 ent-CMNormandyCockpitOpfor = Cabina de mando
-    .suffix = Normandy, Opfor
 
 ent-CMNormandyDoor = escotilla de tripulación Lexington
 
 ent-CMNormandyDoorAft = Puerta de carga del Lexington
-    .suffix = popa
 
 ent-CMNormandyDoorPort = escotilla de tripulación Lexington
-    .suffix = babor
 
 ent-CMNormandyDoorStarboard = escotilla de tripulación Lexington
-    .suffix = Estribor
 
 ent-CMNormandyWall1 = pared Lexington
     .desc = Un enorme bloque de metal utilizado para separar estancias.
@@ -3530,7 +3302,6 @@ ent-RMCSPPSOFDropshipWallAlt9 = muro SPP-DS-3 «Volk»
     .desc = Un enorme bloque de metal utilizado para separar estancias.
 
 ent-CMSPPSOFCockpit = Cabina de mando
-    .suffix = Voron
 
 ent-RMCSPPSOFDropshipWall1 = pared SPP-DS-3 'Voron'
     .desc = Un enorme bloque de metal utilizado para separar estancias.
@@ -4575,67 +4346,46 @@ ent-RMCElevatorDoorBrokenRight = puerta de ascensor rota
     .desc = Está completamente roto; el ascensor no va a funcionar.
 
 ent-RMCDropshipGauBurst = ráfaga GAU multiuso de nave de descenso
-    .suffix = ¡Dispara una ráfaga GAU!
 
 ent-RMCDropshipGauBurstAntiTank = Ráfaga GAU antitanque de nave de descenso
-    .suffix = ¡Dispara una ráfaga GAU!
 
 ent-RMCDropshipLaserFire = láser de nave de descenso
-    .suffix = ¡dispara un láser!
 
 ent-RMCDropshipMiniRocketExplosionMiniMike = explosión AGR-59 «Mini-Mike»
-    .suffix = ¡Dispara un minicohete!
 
 ent-RMCDropshipMiniRocketExplosionMiniMikeIncindiary = Explosión del AGR-59-I 'Mini-Mike'
-    .suffix = ¡Dispara un minicohete!
 
 ent-RMCDropshipMissileExplosionBanshee = Explosión AGM-227 «Banshee»
-    .suffix = ¡Dispara un misil!
 
 ent-RMCDropshipMissileExplosionBansheeHorde = explosión del bastidor CBU-607 «Skeet Shooter»
-    .suffix = ¡Dispara un misil!
 
 ent-RMCDropshipMissileExplosionBurningPostman = explosión GBU-89B NT «Burning Postman»
-    .suffix = ¡Dispara un misil!
 
 ent-RMCDropshipMissileExplosionCBU250 = CBU-250 'Dinner Spread'
-    .suffix = ¡Dispara un misil!
 
 ent-RMCDropshipMissileExplosionDoubleWidow = explosión AIM-224A «Double Widow»
-    .suffix = ¡Dispara un misil!
 
 ent-RMCDropshipMissileExplosionDoubleWidowADMIN = explosión AIM-224A «Octuple Widow» (NO ABUSAR)
-    .suffix = ¡Dispara un misil!
 
 ent-RMCDropshipMissileExplosionHarpoon = Explosión del AGM-184 'Harpoon II'
-    .suffix = ¡Dispara un misil!
 
 ent-RMCDropshipMissileExplosionKeeper = explosión GBU-67 «Keeper II»
-    .suffix = ¡Dispara un misil!
 
 ent-RMCDropshipMissileExplosionNapalm = explosión AGM-99 «Napalm»
-    .suffix = ¡Dispara un misil!
 
 ent-RMCDropshipMissileExplosionOverpressure = explosión BLU-176 «Overpressure»
-    .suffix = ¡Dispara un misil!
 
 ent-RMCDropshipMissileExplosionPostman = explosión de GBU-89B «Postman»
-    .suffix = ¡Dispara un misil!
 
 ent-RMCDropshipMissileExplosionThermobaric = Explosión del BLU-200 'Dragon's Breath'
-    .suffix = ¡Dispara un misil!
 
 ent-RMCDropshipMissileExplosionWidowmaker = Explosión del AIM-224A 'Widowmaker'
-    .suffix = ¡Dispara un misil!
 
 ent-RMCMortarExplosionFlare = bengala/cámara de mortero
-    .suffix = ¡dispara un proyectil de mortero!
 
 ent-RMCMortarExplosionHE = Explosión de mortero HE
-    .suffix = ¡dispara un proyectil de mortero!
 
 ent-RMCMortarExplosionIncendiary = explosión de mortero incendiario
-    .suffix = ¡dispara un proyectil de mortero!
 
 ent-RMCFenceBroken = valla rota
     .desc = Una maraña de alambre roto tendida entre dos postes; no impide el paso.
@@ -4669,91 +4419,62 @@ ent-RMCCactus3 = cactus
     .desc = Es un cactus pequeño y espinoso.
 
 ent-RMCGrassDesert = hierba del desierto
-    .suffix = ligero
 
 ent-RMCGrassDesert1 = hierba del desierto
-    .suffix = ligero
 
 ent-RMCGrassDesert10 = hierba del desierto
-    .suffix = ligero
 
 ent-RMCGrassDesert11 = hierba del desierto
-    .suffix = ligero
 
 ent-RMCGrassDesert2 = hierba del desierto
-    .suffix = ligero
 
 ent-RMCGrassDesert3 = hierba del desierto
-    .suffix = ligero
 
 ent-RMCGrassDesert4 = hierba del desierto
-    .suffix = ligero
 
 ent-RMCGrassDesert5 = hierba del desierto
-    .suffix = ligero
 
 ent-RMCGrassDesert6 = hierba del desierto
-    .suffix = ligero
 
 ent-RMCGrassDesert7 = hierba del desierto
-    .suffix = ligero
 
 ent-RMCGrassDesert8 = hierba del desierto
-    .suffix = ligero
 
 ent-RMCGrassDesert9 = hierba del desierto
-    .suffix = ligero
 
 ent-RMCGrassDesertHeavy = hierba del desierto
-    .suffix = Pesado
 
 ent-RMCGrassDesertHeavy1 = hierba del desierto
-    .suffix = Pesado
 
 ent-RMCGrassDesertHeavy2 = hierba del desierto
-    .suffix = Pesado
 
 ent-RMCGrassDesertHeavy3 = hierba del desierto
-    .suffix = Pesado
 
 ent-RMCGrassDesertHeavy4 = hierba del desierto
-    .suffix = Pesado
 
 ent-RMCGrassDesertHeavy5 = hierba del desierto
-    .suffix = Pesado
 
 ent-RMCGrassDesertHeavy6 = hierba del desierto
-    .suffix = Pesado
 
 ent-RMCGrassDesertHeavy7 = hierba del desierto
-    .suffix = Pesado
 
 ent-RMCGrassDesertHeavy8 = hierba del desierto
-    .suffix = Pesado
 
 ent-RMCGrassDesertHeavy9 = hierba del desierto
-    .suffix = Pesado
 
 ent-RMCTyrargoStick01 = palo
-    .suffix = RMCTyrargoStick01
 
 ent-RMCTyrargoStick02 = palo
-    .suffix = RMCTyrargoStick02
 
 ent-RMCTyrargoStick03 = palo
-    .suffix = RMCTyrargoStick03
 
 ent-RMCTyrargoStick04 = palo
-    .suffix = RMCTyrargoStick04
 
 ent-RMCBushJungle1 = Arbusto
-    .suffix = RMCBaseBush
 
 ent-RMCBushJungle2 = Arbusto
-    .suffix = RMCBaseBush
 
 ent-RMCBushJungle3 = Arbusto
-    .suffix = RMCBaseBush
 
 ent-RMCRockColourable1 = rocas
     .desc = Una acumulación solidificada de minerales locales. Al fundirse, se convierte en una sustancia más conocida como lava.
@@ -4804,40 +4525,28 @@ ent-RMCRockColourable9 = rocas
     .suffix = RMCBaseRockNonCollide
 
 ent-RMCGrassTallCornerDesert = hierba alta
-    .suffix = esquina
 
 ent-RMCGrassTallCornerIce = hierba alta
-    .suffix = esquina
 
 ent-RMCGrassTallCornerJungle = hierba alta
-    .suffix = esquina
 
 ent-RMCGrassTallCornerStrata = hierba alta
-    .suffix = esquina
 
 ent-RMCGrassTallDesert = hierba alta
-    .suffix = centro
 
 ent-RMCGrassTallIce = hierba alta
-    .suffix = centro
 
 ent-RMCGrassTallJungle = hierba alta
-    .suffix = centro
 
 ent-RMCGrassTallSidesDesert = hierba alta
-    .suffix = laterales
 
 ent-RMCGrassTallSidesIce = hierba alta
-    .suffix = laterales
 
 ent-RMCGrassTallSidesJungle = hierba alta
-    .suffix = laterales
 
 ent-RMCGrassTallSidesStrata = hierba alta
-    .suffix = laterales
 
 ent-RMCGrassTallStrata = hierba alta
-    .suffix = centro
 
 ent-RMCTreeJoshua = árbol de Josué
     .desc = Un árbol alto con una especie de agujas espinosas que cubren el tronco.
@@ -5174,13 +4883,10 @@ ent-RMCCarpetGreyBlue9 = alfombra gris azulada
     .desc = Una superficie elegante por la que caminar.
 
 ent-RMCColourableRugBlue = alfombra
-    .suffix = Azul
 
 ent-RMCColourableRugGrey = alfombrilla de goma
-    .suffix = Gris
 
 ent-RMCColourableRugRed = alfombra
-    .suffix = Rojo
 
 ent-CMChair = silla
     .desc = Un armazón metálico rectangular sobre cuatro patas y con respaldo. Está diseñado para sentarse con más o menos comodidad.
@@ -5508,100 +5214,68 @@ ent-RMCMemorialWall = losa de la victoria
     .desc = Un monumento de la nave dedicado a los triunfos de los Marines y a los marines caídos de esta nave. A la izquierda hay grandes relatos de victorias grabados en la losa. A la derecha figura una lista de marines célebres que cayeron en combate al servicio del cuerpo.
 
 ent-CMPottedPlant0 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant1 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant10 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant11 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant12 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant13 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant14 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant15 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant16 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant17 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant18 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant19 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant2 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant20 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant21 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant22 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant23 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant24 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant25 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant26 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant27 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant28 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant29 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant3 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant30 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant4 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant5 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant6 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant7 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant8 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlant9 = planta en maceta
-    .suffix = RMC
 
 ent-CMPottedPlantRandom = generador aleatorio de plantas en maceta
-    .suffix = RMC
 
 ent-CMPortableSurgicalBed = cama quirúrgica portátil
     .desc = Una cama quirúrgica plegable. No es perfecta, pero es lo mejor que conseguirás sin una mesa de operaciones de verdad.
@@ -5822,7 +5496,6 @@ ent-RMCHefaDecalWallBee = marcas de pintura extrañas
     .suffix = Muro
 
 ent-RMCMachinePropBaseOverheadFlipped = maquinaria
-    .suffix = invertido
 
 ent-RMCMachinePropBig1 = maquinaria
 
@@ -5831,17 +5504,14 @@ ent-RMCMachinePropBig10 = maquinaria
 ent-RMCMachinePropBig11 = maquinaria
 
 ent-RMCMachinePropBig11Flipped = maquinaria
-    .suffix = invertido
 
 ent-RMCMachinePropBig12 = maquinaria
 
 ent-RMCMachinePropBig12Flipped = maquinaria
-    .suffix = invertido
 
 ent-RMCMachinePropBig13 = maquinaria
 
 ent-RMCMachinePropBig13Flipped = maquinaria
-    .suffix = invertido
 
 ent-RMCMachinePropBig2 = maquinaria
 
@@ -6480,10 +6150,8 @@ ent-RMCMedilatheLeft = torno médico
     .suffix = salida izquierda
 
 ent-CMMachineFrame = Armazón de máquina
-    .suffix = RMC14, listo
 
 ent-CMMachineFrameDestroyed = armazón de máquina destruido
-    .suffix = RMC14
 
 ent-CMMachineFrameUnfinished = Armazón de máquina
     .desc = Una máquina en construcción. Necesita más piezas.
@@ -6508,13 +6176,10 @@ ent-RMCMultiMonitorSmall = Monitor
 ent-RMCTelescreen = Monitor
 
 ent-RMCTelescreenBroken = Monitor
-    .suffix = roto
 
 ent-RMCTelescreenBrokenSparks = Monitor
-    .suffix = chispas
 
 ent-RMCPropPowerPort = Puerto de energía de la bahía de mecas
-    .suffix = objeto decorativo
 
 ent-CMBloodPack = bolsa de sangre
     .desc = Una bolsa de sangre. Contiene fluidos que suelen utilizarse en transfusiones.
@@ -6620,16 +6285,12 @@ ent-CMASRSConsolePowered = Consola ASRS
     .suffix = alimentado
 
 ent-CMCargoElevator = ascensor de carga
-    .suffix = rebajado, requisiciones
 
 ent-CMCargoElevatorColony = ascensor de carga (colonia)
-    .suffix = rebajado, requisiciones
 
 ent-CMCargoElevatorGovfor = Ascensor de carga (Govfor)
-    .suffix = rebajado, requisiciones
 
 ent-CMCargoElevatorOpfor = ascensor de carga (Opfor)
-    .suffix = rebajado, requisiciones
 
 ent-CMGear = engranaje
 
@@ -6896,19 +6557,14 @@ ent-RMCSupplyDropConsole = consola de lanzamiento de suministros
     .desc = Un ordenador anticuado conectado al sistema cercano de entrega de suministros.
 
 ent-RMCSupplyDropPadAlpha = plataforma de entrega de suministros
-    .suffix = Alpha
 
 ent-RMCSupplyDropPadBravo = plataforma de entrega de suministros
-    .suffix = Bravo
 
 ent-RMCSupplyDropPadCharlie = plataforma de entrega de suministros
-    .suffix = Charlie
 
 ent-RMCSupplyDropPadDelta = plataforma de entrega de suministros
-    .suffix = Delta
 
 ent-RMCSupplyDropPadEcho = plataforma de entrega de suministros
-    .suffix = Echo
 
 ent-RMCSyntheticMaintenanceStation = estación de mantenimiento de sintéticos
     .desc = Una base de mantenimiento de pared para unidades sintéticas.
@@ -7013,7 +6669,6 @@ ent-AU14VehicleSupplyConsoleUSCMLimited = consola de suministros de vehículo
     .desc = Una consola para solicitar vehículos y sus puntos de anclaje.
 
 ent-VehicleLift = elevador de vehículos
-    .suffix = bajado, suministros de vehículos
 
 ent-VehicleSupplyConsole = consola de suministros de vehículo
     .desc = Una consola para solicitar vehículos y sus puntos de anclaje.
@@ -7563,7 +7218,6 @@ ent-RMCAlienTank = tanque criogénico
     .suffix = alienígena
 
 ent-RMCAlienTankBroken = tanque criogénico
-    .suffix = averiado
 
 ent-RMCAlienTankEmpty = tanque criogénico
     .desc = Está vacío.
@@ -7695,25 +7349,18 @@ ent-RMCWallPropDeadPilotAlt = piloto de Weyland-Yutani decapitado
     .suffix = RMC14, Alt
 
 ent-RMCWallPropGraffiti = Grafiti
-    .suffix = Grafiti de muro, RMC14, uno
 
 ent-RMCWallPropGraffitiFive = Grafiti
-    .suffix = grafiti de pared, RMC14, cinco
 
 ent-RMCWallPropGraffitiFour = Grafiti
-    .suffix = grafiti de pared, RMC14, cuatro
 
 ent-RMCWallPropGraffitiSeven = Grafiti
-    .suffix = grafiti de pared, RMC14, siete
 
 ent-RMCWallPropGraffitiSix = Grafiti
-    .suffix = grafiti de pared, RMC14, seis
 
 ent-RMCWallPropGraffitiThree = Grafiti
-    .suffix = Grafiti de muro, RMC14, tres
 
 ent-RMCWallPropGraffitiTwo = Grafiti
-    .suffix = grafiti de pared, RMC14, dos
 
 ent-AU14OrbitalCannonGovfor = cañón orbital
     .desc = El sistema de cañón orbital de la UNMC. Se utiliza para disparar contra blancos grandes en el planeta orbitado. Acelera la carga mediante combustible sólido para producir resultados devastadores al impactar.
@@ -7743,16 +7390,12 @@ ent-RMCOrbitalCannonDerelict = cañón orbital
     .desc = El USCMC Orbital Cannon System. Se utiliza para disparar contra blancos grandes del planeta en torno al que orbita. Acelera su carga mediante combustible sólido y obtiene resultados devastadores al impactar.
 
 ent-RMCOrbitalCannonExplosionAegis = explosión de OB Aegis
-    .suffix = ¡¡¡DISPARA UN OB!!!
 
 ent-RMCOrbitalCannonExplosionCluster = Explosión OB de racimo
-    .suffix = ¡¡¡DISPARA UN OB!!!
 
 ent-RMCOrbitalCannonExplosionExplosive = explosión de proyectil OB explosivo
-    .suffix = ¡¡¡DISPARA UN OB!!!
 
 ent-RMCOrbitalCannonExplosionIncendiary = explosión incendiaria de OB
-    .suffix = ¡¡¡DISPARA UN OB!!!
 
 ent-RMCOrbitalCannonFuel = combustible sólido
 
@@ -7869,10 +7512,8 @@ ent-RMCOverheadFuelLine9 = conducto de combustible denso
     .desc = Es probable que sea increíblemente inflamable.
 
 ent-RMCOverheadPipeCap = Segmento de tubería elevada
-    .suffix = Tapa
 
 ent-RMCOverheadPipeCorner = Segmento de tubería elevada
-    .suffix = esquina
 
 ent-RMCOverheadSignBarCrow = bar El Cuervo Ahogado
     .desc = Un letrero del bar «The Drowning Crow». Está viejo y destartalado.
@@ -8188,7 +7829,6 @@ ent-CMUCircuitboardRecharger = placa de circuito (recargador)
 ent-RMCRecharger = recargador
 
 ent-RMCRechargerLocked = recargador
-    .suffix = bloqueado
 
 ent-CMSMESBasic = SMES
     .desc = Una unidad superconductora de almacenamiento de energía magnética (SMES) de gran capacidad.
@@ -10334,7 +9974,6 @@ ent-RMCPropTentMedical = tienda médica
 ent-RMCPropTentSmall = tienda pequeña
 
 ent-RMCPropTentSmallBack = tienda pequeña
-    .suffix = parte trasera
 
 ent-RMCPropTentSupply = tienda de suministros
 
@@ -10417,20 +10056,17 @@ ent-RMCPropTyrargoVehicleHumveeMedDestroyed = transporte blindado de reconocimie
 ent-RMCPropTyrargoVehicleHumveeTurret = cañón automático M356 'Rattlesnake' de 25mm
 
 ent-RMCPropTyrargoVehicleHumveeTurretDestroyed = cañón automático M356 'Rattlesnake' de 25mm
-    .suffix = Destruido
 
 ent-RMCPropTyrargoVehicleIFV = IFV M34 Marshal
     .desc = Desarrollado por Weston-Yamada, el RAT (Rover Armed Transport) se diseñó originalmente para el ejército de la TSE como versión armada de sus vehículos expedicionarios de la serie RT, aunque acabó adoptándolo el Cuerpo de Marines de las Naciones Unidas. Es más pesado y resistente que la serie M570 utilizada por los Marines, pues estos no necesitan APC que puedan transportarse en una nave de descenso.
 
 ent-RMCPropTyrargoVehicleTankBarrelDestroyed = cañón de tanque ligero M34A2 Longstreet
-    .suffix = Destruido
 
 ent-RMCPropTyrargoVehicleTankDestroyed = Tanque ligero M34A2 Longstreet
     .desc = Una gigantesca pieza de blindaje con un arma enorme; sabía lo que tenía que hacer y cumplió con su deber.
     .suffix = Destruido
 
 ent-RMCPropTyrargoVehicleTankGLDestroyed = lanzagranadas del tanque ligero M34A2 Longstreet
-    .suffix = Destruido
 
 ent-RMCPropTyrargoVehicleTankTurret = Torreta de tanque ligero M34A2 Longstreet
 
@@ -10594,7 +10230,6 @@ ent-RMCMonitorCameraAlmayer = cámaras de seguridad de la nave
     .suffix = Almayer
 
 ent-RMCMonitorCameraLandingZone = cámara de la zona de aterrizaje
-    .suffix = Detector LZ
 
 ent-RMCMonitorCameraNormandy = cámara de grado naval
     .desc = Se utiliza para vigilar la nave de descenso.
@@ -10806,7 +10441,6 @@ ent-RMCIronMetalFoamEffect = espuma metálica de hierro
 ent-RMCFogShockwave = humo de onda expansiva
 
 ent-RMCFogSpawner15 = Bloqueador de niebla
-    .suffix = 15 minutos
 
 ent-RMCFogWall15 = Niebla densa
     .desc = Parece demasiado peligroso atravesarlo. Será mejor esperar a que desaparezca.
@@ -10852,7 +10486,6 @@ ent-RMCGirderDamaged = Viga dañada
     .desc = Una viga retorcida que ya no bloquea el paso.
 
 ent-RMCGirderDisplaced = desplazado
-    .suffix = Viga
 
 ent-RMCGrille = rejilla
     .desc = Un endeble enrejado de varillas metálicas.
@@ -12152,7 +11785,6 @@ ent-DoorXenoResinImpenetrable = puerta de resina impenetrable
     .suffix = Invencible, 25 minutos
 
 ent-RMCBlockerMarine = Bloqueador de marines
-    .suffix = NO MAPEAR
 
 ent-WallXenoMembrane = membrana de resina
     .desc = Baba extraña lo bastante translúcida para dejar pasar la luz.

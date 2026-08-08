@@ -17,24 +17,6 @@ ent-PlatoonSpawn = aparición del pelotón
 ent-RemoveAllJobs = eliminar todos los puestos
     .desc = Elimina todos los puestos de la estación principal del planeta antes del inicio de la ronda. Opcionalmente elimina también los puestos de las estaciones-nave.
 
-ent-barrierremove =
-    .suffix = insurgencia
-
-ent-barrierremove_distresssignal =
-    .suffix = DistressSignal
-
-ent-barrierremove_distresssignal_inverted =
-    .suffix = DistressSignal invertido
-
-ent-barrierremove_fog =
-    .suffix = Niebla
-
-ent-barrierremove_fog_inverted =
-    .suffix = niebla invertida
-
-ent-barrierremove_inverted =
-    .suffix = Insurgencia invertida
-
 ent-junglevegetationremove = vegetación selvática
     .desc = Vegetación excepcionalmente densa a través de la cual no puedes ver.
     .suffix = insurgencia

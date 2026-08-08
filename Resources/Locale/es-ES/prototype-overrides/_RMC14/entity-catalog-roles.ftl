@@ -111,172 +111,116 @@ ent-CMSpawnPointFireteamLeaderDelta = Punto de aparición del jefe de equipo
     .suffix = Delta
 
 ent-RMCRandomHumanoidAlphaCombatTech = rol fantasma de técnico de combate de Alpha
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidAlphaFireteamLeader = Jefe de equipo Alpha como rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidAlphaHospitalCorpsman = Rol de fantasma de sanitario de hospital de Alpha
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidAlphaRifleman = rol fantasma de fusilero de Alpha
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidAlphaSmartGunOperator = Operador de smartgun Alpha como rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidAlphaSquadLeader = Rol de fantasma de jefe de pelotón Alpha
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidAlphaWeaponsSpecialist = rol fantasma de especialista en armas de Alpha
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidBravoCombatTech = rol fantasma de técnico de combate de Bravo
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidBravoFireteamLeader = Jefe de equipo Bravo como rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidBravoHospitalCorpsman = rol de fantasma de sanitario hospitalario de Bravo
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidBravoRifleman = rol fantasma de fusilero de Bravo
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidBravoSmartGunOperator = Operador de smartgun Bravo como rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidBravoSquadLeader = rol de fantasma de líder de escuadrón Bravo
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidBravoWeaponsSpecialist = rol fantasma de especialista en armas de Bravo
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidCharlieCombatTech = rol de fantasma de técnico de combate de Charlie
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidCharlieFireteamLeader = rol fantasma de jefe de escuadra de Charlie
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidCharlieHospitalCorpsman = Sanitario de hospital Charlie como rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidCharlieRifleman = rol de fantasma de fusilero de Charlie
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidCharlieSmartGunOperator = rol fantasma de operador de smartgun de Charlie
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidCharlieSquadLeader = Jefe de pelotón Charlie como rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidCharlieWeaponsSpecialist = rol de fantasma de especialista en armas de Charlie
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidDeltaCombatTech = rol fantasma de técnico de combate de Delta
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidDeltaFireteamLeader = Jefe de equipo Delta como rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidDeltaHospitalCorpsman = rol de fantasma de sanitario hospitalario de Delta
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidDeltaRifleman = rol fantasma de fusilero de Delta
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidDeltaSmartGunOperator = Operador de smartgun Delta como rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidDeltaSquadLeader = rol de fantasma de líder de escuadrón Delta
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidDeltaWeaponsSpecialist = rol fantasma de especialista en armas de Delta
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidEchoCombatTech = rol de fantasma de técnico de combate de Echo
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidEchoFireteamLeader = rol fantasma de jefe de escuadra de Echo
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidEchoHospitalCorpsman = Sanitario de hospital Echo como rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidEchoRifleman = rol de fantasma de fusilero de Echo
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidEchoSmartGunOperator = rol fantasma de operador de smartgun de Echo
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidEchoSquadLeader = Jefe de pelotón Echo como rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidEchoWeaponsSpecialist = rol de fantasma de especialista en armas de Echo
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidFoxtrotCombatTech = Técnico de combate Foxtrot como rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidFoxtrotFireteamLeader = rol de fantasma de jefe de equipo de fuego de Foxtrot
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidFoxtrotHospitalCorpsman = rol fantasma de enfermero hospitalario de Foxtrot
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidFoxtrotRifleman = Fusilero Foxtrot como rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidFoxtrotSmartGunOperator = rol de fantasma de operador de Smartgun de Foxtrot
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidFoxtrotSquadLeader = rol fantasma de jefe de pelotón de Foxtrot
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidFoxtrotWeaponsSpecialist = Especialista en armas Foxtrot como rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidIntelCombatTech = Técnico de combate de inteligencia como rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidIntelFireteamLeader = rol de fantasma de jefe de equipo de fuego de inteligencia
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidIntelHospitalCorpsman = rol fantasma de enfermero hospitalario de inteligencia
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidIntelRifleman = Fusilero de inteligencia como rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidIntelSmartGunOperator = rol de fantasma de operador de Smartgun de inteligencia
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidIntelSquadLeader = rol fantasma de jefe de pelotón de inteligencia
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidIntelWeaponsSpecialist = Especialista en armas de inteligencia como rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidUnassignedCombatTech = rol de fantasma sin asignar de técnico de combate
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidUnassignedFireteamLeader = rol de fantasma de jefe de equipo de fuego sin asignar
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidUnassignedHospitalCorpsman = sanitario hospitalario de rol fantasma sin asignar
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidUnassignedRifleman = rol de fantasma sin asignar de fusilero
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidUnassignedSmartGunOperator = rol de fantasma de operador de Smartgun sin asignar
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidUnassignedSquadLeader = jefe de escuadra de rol fantasma sin asignar
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidUnassignedWeaponsSpecialist = rol de fantasma sin asignar de especialista en armas
-    .suffix = generador, jugador
 
 ent-CMSpawnPointHospitalCorpsman = punto de aparición de sanitario hospitalario
     .desc = Un generador de puesto de RMC14. Se utiliza al inicio de la ronda y para incorporaciones tardías.
@@ -438,34 +382,24 @@ ent-CMSpawnPointMilitaryWarden = punto de aparición de alcaide militar
     .suffix = aparición de puesto
 
 ent-RMCRandomHumanoidCLFCellCommander = rol de fantasma de comandante de célula de la CLF
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidCLFEngineer = Ingeniero de la CLF como rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidCLFCellLeader = rol fantasma de jefe de célula de la CLF
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidCLFMedic = rol de fantasma de médico de la CLF
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidCLFSoldier = rol fantasma de soldado de la CLF
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidCLFSpecialist = Especialista de la CLF como rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidBureauDeputy = rol fantasma de ayudante de la Oficina
-    .suffix = Generador, jugador, aliado
 
 ent-RMCRandomHumanoidICBLiaison = Enlace de la Oficina de Comercio Interestelar como rol fantasma
-    .suffix = generador, jugador, neutral
 
 ent-RMCRandomHumanoidBureauMarshal = rol de fantasma de alguacil de la oficina
-    .suffix = Generador, jugador, aliado
 
 ent-RMCRandomHumanoidBureauObserver = Observador de derechos de formas de vida interestelares de la oficina como rol fantasma
-    .suffix = Generador, jugador, aliado
 
 ent-CMSpawnPointCorrespondent = punto de aparición de corresponsal
     .desc = Un generador de puesto de RMC14. Se utiliza al inicio de la ronda y para incorporaciones tardías.
@@ -496,34 +430,24 @@ ent-RMCIDCardWeYaResponder = tarjeta ID de ejecutivo de comunicaciones We-Ya
     .desc = Una elegante tarjeta de identificación chapada en oro falso. Una de tantas entregadas al ejército de operadores de fax de Weyland-Yutani.
 
 ent-RMCRandomHumanoidFreelancerLeaderFriendly = rol de fantasma de líder de Freelancer
-    .suffix = Generador, jugador, aliado
 
 ent-RMCRandomHumanoidFreelancerLeaderHostile = rol de fantasma de líder de Freelancer
-    .suffix = generador, jugador, hostil
 
 ent-RMCRandomHumanoidFreelancerMedicFriendly = rol fantasma de médico mercenario
-    .suffix = Generador, jugador, aliado
 
 ent-RMCRandomHumanoidFreelancerMedicHostile = rol fantasma de médico mercenario
-    .suffix = generador, jugador, hostil
 
 ent-RMCRandomHumanoidFreelancerStandardFriendly = Fusilero trabajador independiente como rol fantasma
-    .suffix = Generador, jugador, aliado
 
 ent-RMCRandomHumanoidFreelancerStandardHostile = Fusilero trabajador independiente como rol fantasma
-    .suffix = generador, jugador, hostil
 
 ent-RMCRandomHumanoidHEFAShrapnelswornFriendly = rol fantasma de gran maestre de HEFA
-    .suffix = Generador, jugador, aliado
 
 ent-RMCRandomHumanoidHEFAShrapnelswornHostile = rol fantasma de gran maestre de HEFA
-    .suffix = generador, jugador, hostil
 
 ent-RMCRandomHumanoidHEFAShrapnelswornMeleeFriendly = Juramentado de la metralla HEFA como rol fantasma
-    .suffix = Generador, jugador, aliado
 
 ent-RMCRandomHumanoidHEFAShrapnelswornMeleeHostile = Juramentado de la metralla HEFA como rol fantasma
-    .suffix = generador, jugador, hostil
 
 ent-RMCIDCardUNMCAdjutant = tarjeta de ID de ayudante de UNMC
     .desc = Una tarjeta de identificación elegante. Se entrega a los ayudantes del alto mando.
@@ -543,7 +467,6 @@ ent-CMSpawnPointMessTech = punto de aparición del técnico de cocina
     .suffix = aparición de puesto
 
 ent-RMCRandomHumanoidPizzaDeliveryBoy = rol de fantasma de repartidor de pizza
-    .suffix = generador, jugador, neutral
 
 ent-RMCRandomHumanoidSurvivorAdministrativeClerk = rol de fantasma de administrativo de Chances
 
@@ -802,7 +725,6 @@ ent-RMCDogtagMarineRaiderLeaderHidden = placa de identificación
     .desc = Una placa de identificación de marine.
 
 ent-RMCRandomHumanoidMarineRaiderLead = rol de fantasma de líder del equipo de incursores marines DEATHSQUAD
-    .suffix = Rol
 
 ent-RMCDogtagMarineRaider = Placas de identificación del Marine Raider
     .desc = Una placa de identificación de marine.
@@ -811,79 +733,54 @@ ent-RMCDogtagMarineRaiderHidden = placa de identificación
     .desc = Una placa de identificación de marine.
 
 ent-RMCRandomHumanoidMarineRaider = Marine raider de DEATHSQUAD como rol fantasma
-    .suffix = Rol
 
 ent-RMCRandomHumanoidSPPCommando = rol de fantasma de comando DEATHSQUAD de la SPP
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidSPPCommandoLeader = rol fantasma de jefe de comandos SPP del ESCUADRÓN DE LA MUERTE
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidSPPCommandoMedic = Sanitario de comando de la SPP de DEATHSQUAD como rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidSPPLeaderFriendly = líder de rol fantasma SPP
-    .suffix = Generador, jugador, aliado
 
 ent-RMCRandomHumanoidSPPLeaderHostile = líder de rol fantasma SPP
-    .suffix = generador, jugador, hostil
 
 ent-RMCRandomHumanoidSPPMedicFriendly = rol de fantasma de médico de SPP
-    .suffix = Generador, jugador, aliado
 
 ent-RMCRandomHumanoidSPPMedicHostile = rol de fantasma de médico de SPP
-    .suffix = generador, jugador, hostil
 
 ent-RMCRandomHumanoidSPPRiflemanFriendly = rol de fantasma de fusilero de la spp
-    .suffix = Generador, jugador, aliado
 
 ent-RMCRandomHumanoidSPPRiflemanHostile = rol de fantasma de fusilero de la spp
-    .suffix = generador, jugador, hostil
 
 ent-RMCRandomHumanoidSPPEngineerFriendly = rol de fantasma de ingeniero de la spp
-    .suffix = Generador, jugador, aliado
 
 ent-RMCRandomHumanoidSPPEngineerHostile = rol de fantasma de ingeniero de la spp
-    .suffix = generador, jugador, hostil
 
 ent-RMCRandomHumanoidSPPSpecialistFriendly = especialista de rol fantasma SPP
-    .suffix = Generador, jugador, aliado
 
 ent-RMCRandomHumanoidSPPSpecialistHostile = especialista de rol fantasma SPP
-    .suffix = generador, jugador, hostil
 
 ent-RMCRandomHumanoidSPPBattalionKommissarNeutral = Rol de fantasma de comisario de batallón
-    .suffix = generador, jugador, neutral
 
 ent-RMCRandomHumanoidSPPBrigadeKommissarNeutral = rol de fantasma de comisario de brigada
-    .suffix = generador, jugador, neutral
 
 ent-RMCRandomHumanoidSPPKommissarNeutral = Kommissar como rol fantasma
-    .suffix = generador, jugador, neutral
 
 ent-RMCRandomHumanoidSPPRegimentalKommissarNeutral = rol fantasma de Kommissar regimental
-    .suffix = generador, jugador, neutral
 
 ent-RMCRandomHumanoidSPPSrBattalionKommissarNeutral = rol de fantasma de comisario superior de batallón
-    .suffix = generador, jugador, neutral
 
 ent-RMCRandomHumanoidRoyalMarinesBreacher = rol de fantasma de especialista en irrupción de los Marines de la Corona Real
-    .suffix = Generador, jugador, aliado
 
 ent-RMCRandomHumanoidRoyalMarinesMarksman = rol de fantasma de tirador de los Marines de la Corona Real
-    .suffix = Generador, jugador, aliado
 
 ent-RMCRandomHumanoidRoyalMarinesMedic = médico de rol fantasma de los Royal Crown Marines
-    .suffix = Generador, jugador, aliado
 
 ent-RMCRandomHumanoidRoyalMarinesCommando = rol de fantasma de fusilero de los Marines de la Corona Real
-    .suffix = Generador, jugador, aliado
 
 ent-RMCRandomHumanoidRoyalMarinesSGO = rol de fantasma de operador de Smartgun de los Marines de la Corona Real
-    .suffix = Generador, jugador, aliado
 
 ent-RMCRandomHumanoidRoyalMarinesTeamlead = jefe de equipo de rol fantasma de los Royal Crown Marines
-    .suffix = Generador, jugador, aliado
 
 ent-RMCSpawnPointTSEPAConstable = punto de aparición de agente de la tsepa
     .desc = Un generador de puesto de RMC14. Se utiliza al inicio de la ronda y para incorporaciones tardías.
@@ -902,78 +799,60 @@ ent-RMCSpawnPointTSEPASynthetic = punto de aparición de sintético de TSEPA
     .suffix = aparición de puesto
 
 ent-RMCRandomHumanoidCorporateAssistantManager = rol fantasma de subdirector corporativo
-    .suffix = generador, jugador, neutral
 
 ent-RMCRandomHumanoidCorporateChiefExecutive = rol de fantasma de director ejecutivo corporativo
-    .suffix = generador, jugador, neutral
 
 ent-RMCRandomHumanoidCorporateDeputyDirector = rol fantasma de director adjunto corporativo
-    .suffix = generador, jugador, neutral
 
 ent-RMCRandomHumanoidCorporateDirector = Director corporativo como rol fantasma
-    .suffix = generador, jugador, neutral
 
 ent-RMCRandomHumanoidCorporateDivisionManager = rol de fantasma de gerente de división corporativa
-    .suffix = generador, jugador, neutral
 
 ent-RMCRandomHumanoidCorporateExecutiveSpecialistLegal = rol fantasma de especialista jurídico ejecutivo corporativo
-    .suffix = generador, jugador, neutral
 
 ent-RMCRandomHumanoidCorporateExecutiveSupervisor = rol de fantasma de supervisor ejecutivo corporativo
-    .suffix = generador, jugador, neutral
 
 ent-RMCRandomHumanoidCorporateExecutiveSupervisorLegal = Supervisor jurídico corporativo como rol fantasma
-    .suffix = generador, jugador, neutral
 
 ent-RMCRandomHumanoidPMCEngineer = ingeniero PMC WeYa de rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCSpawnPointPMCEngineer = punto de aparición de ingeniero PMC de weya
     .desc = Un generador de puesto de RMC14. Se utiliza al inicio de la ronda y para incorporaciones tardías.
     .suffix = aparición de puesto
 
 ent-RMCRandomHumanoidWeYaGoon = rol de fantasma de matón corporativo de weya
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidWeYaGoonLead = líder matón corporativo WeYa de rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidPMCGunner = rol de fantasma de artillero PMC de WeYa
-    .suffix = generador, jugador
 
 ent-RMCSpawnPointPMCGunner = punto de aparición de artillero PMC WeYa
     .desc = Un generador de puesto de RMC14. Se utiliza al inicio de la ronda y para incorporaciones tardías.
     .suffix = aparición de puesto
 
 ent-RMCRandomHumanoidWeYaLawyer = rol de fantasma de abogado corporativo de WeYa
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidWeYaLawyerSupervisor = rol de fantasma de abogado supervisor corporativo de weya
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidPMCLeader = rol de fantasma de líder PMC de weya
-    .suffix = generador, jugador
 
 ent-RMCSpawnPointPMCLeader = punto de aparición de líder de escuadrón PMC de WeYa
     .desc = Un generador de puesto de RMC14. Se utiliza al inicio de la ronda y para incorporaciones tardías.
     .suffix = aparición de puesto
 
 ent-RMCRandomHumanoidPMCMedic = médico PMC WeYa de rol fantasma
-    .suffix = generador, jugador
 
 ent-RMCSpawnPointPMCMedic = punto de aparición de médico PMC de WeYa
     .desc = Un generador de puesto de RMC14. Se utiliza al inicio de la ronda y para incorporaciones tardías.
     .suffix = aparición de puesto
 
 ent-RMCRandomHumanoidPMCDirector = rol de fantasma de director PMC de weya
-    .suffix = generador, jugador
 
 ent-RMCSpawnPointPMCSiteDirector = punto de aparición de director PMC de WeYa
     .desc = Un generador de puesto de RMC14. Se utiliza al inicio de la ronda y para incorporaciones tardías.
     .suffix = aparición de puesto
 
 ent-RMCRandomHumanoidPMCSniper = rol de fantasma de francotirador PMC de WeYa
-    .suffix = generador, jugador
 
 ent-RMCSpawnPointPMCSniper = punto de aparición de francotirador PMC WeYa
     .desc = Un generador de puesto de RMC14. Se utiliza al inicio de la ronda y para incorporaciones tardías.
@@ -984,13 +863,10 @@ ent-RMCPMCStandardM54C2 = punto de aparición de operador PMC de weya
     .suffix = M54C2
 
 ent-RMCRandomHumanoidPMCStandardM54C2 = rol de fantasma de soldado estándar PMC de weya
-    .suffix = generador, jugador, M54C2
 
 ent-RMCRandomHumanoidPMCStandardM63B2 = rol de fantasma de soldado estándar PMC de weya
-    .suffix = Generador, jugador, M63B2
 
 ent-RMCRandomHumanoidPMCStandardSSG45 = rol de fantasma de soldado estándar PMC de weya
-    .suffix = generador, jugador, SSG45
 
 ent-RMCSpawnPointPMCStandardM63B2 = punto de aparición de operador PMC de weya
     .desc = Un generador de puesto de RMC14. Se utiliza al inicio de la ronda y para incorporaciones tardías.
@@ -1001,10 +877,8 @@ ent-RMCSpawnPointPMCStandardSSG45 = punto de aparición de operador PMC de weya
     .suffix = SSG45
 
 ent-RMCRandomHumanoidPMCWhiteout = rol fantasma de PMC Whiteout del ESCUADRÓN DE LA MUERTE
-    .suffix = generador, jugador
 
 ent-RMCRandomHumanoidPMCWhiteoutGunner = Artillero whiteout PMC de DEATHSQUAD como rol fantasma
-    .suffix = generador, jugador
 
 ent-CMSpawnPointCargoTech = punto de aparición del técnico de requisiciones
     .desc = Un generador de puesto de RMC14. Se utiliza al inicio de la ronda y para incorporaciones tardías.

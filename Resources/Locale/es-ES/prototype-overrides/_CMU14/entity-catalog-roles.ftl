@@ -571,44 +571,33 @@ ent-CMUIDCardProvostTeamLeader = tarjeta ID de líder de equipo de preboste
     .desc = Suministrada a miembros de la Oficina del Preboste.
 
 ent-CMURandomHumanoidProvostAdvisor = rol de asesor del preboste
-    .suffix = fantasma
 
 ent-CMURandomHumanoidProvostEnforcer = rol de agente ejecutor del preboste
-    .suffix = fantasma
 
 ent-CMURandomHumanoidProvostEnforcerMedic = rol de agente ejecutor preboste (médico)
-    .suffix = fantasma
 
 ent-CMURandomHumanoidProvostInspector = rol de preboste de inspector
-    .suffix = fantasma
 
 ent-CMUSpawnPointProvostInspector = punto de aparición de inspector de preboste
     .desc = Un generador de puesto de RMC14. Se utiliza al inicio de la ronda y para incorporaciones tardías.
     .suffix = RMC, aparición de trabajo
 
 ent-CMURandomHumanoidProvostInspectorChief = rol de inspector jefe preboste
-    .suffix = fantasma
 
 ent-CMUGuidebookRolePvM = mariscal preboste
     .desc = Mariscal preboste.
 
 ent-CMURandomHumanoidProvostMarshal = rol de mariscal del preboste
-    .suffix = fantasma
 
 ent-CMURandomHumanoidProvostDeputyMarshal = rol de preboste de mariscal adjunto
-    .suffix = fantasma
 
 ent-CMURandomHumanoidProvostSpcAgent = rol de agente especial preboste
-    .suffix = fantasma
 
 ent-CMURandomHumanoidProvostSpcComms = rol de preboste de especialista en comunicaciones
-    .suffix = fantasma
 
 ent-CMURandomHumanoidProvostSpcMedic = rol de médico especialista del preboste
-    .suffix = fantasma
 
 ent-CMURandomHumanoidProvostTeamLeader = rol de líder de equipo preboste
-    .suffix = fantasma
 
 ent-SquadOpfor = Sierra
 

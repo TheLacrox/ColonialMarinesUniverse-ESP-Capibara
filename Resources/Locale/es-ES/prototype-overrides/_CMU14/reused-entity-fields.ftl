@@ -71,15 +71,12 @@ ent-AU14HeadCommandoBeanie = Gorro
 
 # _CMU14/ThirdParties/Military/UACG/LostTeam/Roles/UACGAmmobearer.yml — fuente 'Lost Ammo Bearer'; 1 referencia(s) interna(s)
 ent-AU14JobUACGLostAmmobearer = Portador de munición perdido
-    .suffix = AU14, UA, UACG
 
 # _CMU14/ThirdParties/Military/UACG/LostTeam/Roles/UACGRifleman.yml — fuente 'Lost Rifleman'; 1 referencia(s) interna(s)
 ent-AU14JobUACGLostRifleman = Fusilero perdido
-    .suffix = AU14, UA, UACG
 
 # _CMU14/ThirdParties/Military/UACG/LostTeam/Roles/UACGSquadLeader.yml — fuente 'Lost Squad Leader'; 1 referencia(s) interna(s)
 ent-AU14JobUACGLostSquadLeader = Jefe de la escuadra perdida
-    .suffix = AU14, UA, UACG
 
 # _CMU14/Economy/Recipes/Reagents/drugs.yml — fuente 'Speed Demon Pill'; 1 referencia(s) interna(s)
 ent-AU14PillSpeedDemon = Pastilla de Demonio de la velocidad
@@ -341,7 +338,6 @@ ent-ActionWorkingJoeVoice = Sintetizador de voz
 
 # _CMU14/ThirdParties/LawEnforcement/CMB/Investigation/Roles/InvestigationRightsObserver.yml — fuente 'Interstellar Human Rights Observer'; 3 referencia(s) interna(s)
 ent-CMBInvestigationPartyJobRightsObserver = Observador interestelar de derechos humanos
-    .suffix = AU14, UA, CMB
 
 # _CMU14/ZLevels/Entities/Actions/zLevels.yml — fuente 'Look up'; 1 referencia(s) interna(s)
 ent-CMUActionToggleLookUp = Mirar arriba
@@ -530,15 +526,12 @@ ent-MentorObserver =
 
 # _CMU14/ThirdParties/LawEnforcement/NSPA/Investigation/Roles/InvestigationConstable.yml — fuente 'NSPA Constable'; 1 referencia(s) interna(s)
 ent-NSPAInvestigationPartyJobConstable = Agente de la NSPA
-    .suffix = AU14, NSPA
 
 # _CMU14/ThirdParties/LawEnforcement/NSPA/Investigation/Roles/InvestigationICCLiaison.yml — fuente 'Interstellar Commerce Commission Liaison'; 2 referencia(s) interna(s)
 ent-NSPAInvestigationPartyJobICCLiaison = Enlace de la Comisión de Comercio Interestelar
-    .suffix = AU14, NSPA
 
 # _CMU14/ThirdParties/LawEnforcement/NSPA/Investigation/Roles/InvestigationInspector.yml — fuente 'NSPA Inspector'; 2 referencia(s) interna(s)
 ent-NSPAInvestigationPartyJobInspector = Inspector de la NSPA
-    .suffix = AU14, NSPA
 
 # _CMU14/Entities/Mobs/SpaceApe.yml — fuente 'liver'; 1 referencia(s) interna(s)
 ent-OrganApeLiver = hígado

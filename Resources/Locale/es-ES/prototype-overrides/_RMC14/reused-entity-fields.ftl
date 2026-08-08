@@ -6,7 +6,6 @@ ent-AU14SmokeExplosionProofJDAM = humo
 
 # _RMC14/Entities/Tiles/tile_fire.yml — fuente 'fire'; 1 referencia(s) interna(s)
 ent-AU14TileFire = fuego
-    .suffix = AU14, 15s
 
 # _RMC14/Entities/Objects/Materials/barbedwire.yml — fuente 'barbed wire'; 1 referencia(s) interna(s)
 ent-BarbedWire1 = alambre de espino
@@ -142,11 +141,9 @@ ent-CMMobMouse2 = ratón
 
 # _RMC14/Entities/Mobs/NPCs/monkeys.yml — fuente 'kobold'; 1 referencia(s) interna(s)
 ent-CMMobSmallHostKobold = kóbold
-    .suffix = RMC, huésped pequeño
 
 # _RMC14/Entities/Mobs/NPCs/monkeys.yml — fuente 'monkey'; 1 referencia(s) interna(s)
 ent-CMMobSmallHostMonkey = mono
-    .suffix = RMC, huésped pequeño
 
 # _RMC14/Entities/Objects/Medical/healing.yml — fuente 'ointment'; 1 referencia(s) interna(s)
 ent-CMOintment1 = ungüento
@@ -422,7 +419,6 @@ ent-RMCArmorHelmetSecurity = casco
 
 # _RMC14/Entities/guide_book_entities.yml — fuente 'Boiler'; 2 referencia(s) interna(s)
 ent-RMCBoilerMapIcon = Bombardero
-    .suffix = GuideBookEntity
 
 # _RMC14/Catalog/Fills/Boxes/general.yml — fuente 'box'; 1 referencia(s) interna(s)
 ent-RMCBoxCardboard = caja
@@ -434,7 +430,6 @@ ent-RMCBucket = cubo
 
 # _RMC14/Entities/guide_book_entities.yml — fuente 'Burrower'; 2 referencia(s) interna(s)
 ent-RMCBurrowerMapIcon = Excavador
-    .suffix = GuideBookEntity
 
 # _RMC14/Entities/Structures/Furniture/carpets.yml — fuente 'black carpet'; 1 referencia(s) interna(s)
 ent-RMCCarpetBlack1 = alfombra negra
@@ -546,7 +541,6 @@ ent-RMCCarpetPink9 = alfombra rosa
 
 # _RMC14/Entities/guide_book_entities.yml — fuente 'Carrier'; 2 referencia(s) interna(s)
 ent-RMCCarrierMapIcon = Portador
-    .suffix = GuideBookEntity
 
 # _RMC14/Entities/Structures/Machines/Science/Dispensers/chem.yml — fuente 'chemical dispenser'; 1 referencia(s) interna(s)
 ent-RMCChemDispenserGround = dispensador de sustancias químicas
@@ -579,14 +573,12 @@ ent-RMCCrateMetalBuildable = cajón
 
 # _RMC14/Entities/guide_book_entities.yml — fuente 'Defender'; 2 referencia(s) interna(s)
 ent-RMCDefenderMapIcon = Defensor
-    .suffix = GuideBookEntity
 
 # _RMC14/dog.yml — fuente 'dog'; 2 referencia(s) interna(s)
 ent-RMCDogLizard = perro
 
 # _RMC14/Entities/guide_book_entities.yml — fuente 'Drone'; 2 referencia(s) interna(s)
 ent-RMCDroneMapIcon = Dron
-    .suffix = GuideBookEntity
 
 # _RMC14/Entities/Structures/fence.yml — fuente 'fence'; 1 referencia(s) interna(s)
 ent-RMCFenceHybrisa = valla
@@ -637,83 +629,63 @@ ent-RMCGasPipeTJunction = tubería de gas
 
 # _RMC14/Entities/Objects/Misc/bushes.yml — fuente 'grass'; 2 referencia(s) interna(s)
 ent-RMCGrassa1 = hierba
-    .suffix = RMCGrassa1
 
 # _RMC14/Entities/Objects/Misc/bushes.yml — fuente 'grass'; 2 referencia(s) interna(s)
 ent-RMCGrassa2 = hierba
-    .suffix = RMCGrassa2
 
 # _RMC14/Entities/Objects/Misc/bushes.yml — fuente 'grass'; 2 referencia(s) interna(s)
 ent-RMCGrassa3 = hierba
-    .suffix = RMCGrassa3
 
 # _RMC14/Entities/Objects/Misc/bushes.yml — fuente 'grass'; 2 referencia(s) interna(s)
 ent-RMCGrassa4 = hierba
-    .suffix = RMCGrassa4
 
 # _RMC14/Entities/Objects/Misc/bushes.yml — fuente 'grass'; 2 referencia(s) interna(s)
 ent-RMCGrassa5 = hierba
-    .suffix = RMCGrassa5
 
 # _RMC14/Entities/Objects/Misc/bushes.yml — fuente 'grass'; 2 referencia(s) interna(s)
 ent-RMCGrassb1 = hierba
-    .suffix = RMCGrassb1
 
 # _RMC14/Entities/Objects/Misc/bushes.yml — fuente 'grass'; 2 referencia(s) interna(s)
 ent-RMCGrassb2 = hierba
-    .suffix = RMCGrassb2
 
 # _RMC14/Entities/Objects/Misc/bushes.yml — fuente 'grass'; 2 referencia(s) interna(s)
 ent-RMCGrassb3 = hierba
-    .suffix = RMCGrassb3
 
 # _RMC14/Entities/Objects/Misc/bushes.yml — fuente 'grass'; 2 referencia(s) interna(s)
 ent-RMCGrassb4 = hierba
-    .suffix = RMCGrassb4
 
 # _RMC14/Entities/Objects/Misc/bushes.yml — fuente 'grass'; 2 referencia(s) interna(s)
 ent-RMCGrassb5 = hierba
-    .suffix = RMCGrassb5
 
 # _RMC14/Entities/Objects/Misc/bushes.yml — fuente 'grass'; 2 referencia(s) interna(s)
 ent-RMCGrassc1 = hierba
-    .suffix = RMCGrassc1
 
 # _RMC14/Entities/Objects/Misc/bushes.yml — fuente 'grass'; 2 referencia(s) interna(s)
 ent-RMCGrassc2 = hierba
-    .suffix = RMCGrassc2
 
 # _RMC14/Entities/Objects/Misc/bushes.yml — fuente 'grass'; 2 referencia(s) interna(s)
 ent-RMCGrassc3 = hierba
-    .suffix = RMCGrassc3
 
 # _RMC14/Entities/Objects/Misc/bushes.yml — fuente 'grass'; 2 referencia(s) interna(s)
 ent-RMCGrassc4 = hierba
-    .suffix = RMCGrassc4
 
 # _RMC14/Entities/Objects/Misc/bushes.yml — fuente 'grass'; 2 referencia(s) interna(s)
 ent-RMCGrassd1 = hierba
-    .suffix = RMCGrassd1
 
 # _RMC14/Entities/Objects/Misc/bushes.yml — fuente 'grass'; 2 referencia(s) interna(s)
 ent-RMCGrassd2 = hierba
-    .suffix = RMCGrassd2
 
 # _RMC14/Entities/Objects/Misc/bushes.yml — fuente 'grass'; 2 referencia(s) interna(s)
 ent-RMCGrassd3 = hierba
-    .suffix = RMCGrassd3
 
 # _RMC14/Entities/Objects/Misc/bushes.yml — fuente 'grass'; 2 referencia(s) interna(s)
 ent-RMCGrasse1 = hierba
-    .suffix = RMCGrasse1
 
 # _RMC14/Entities/Objects/Misc/bushes.yml — fuente 'grass'; 2 referencia(s) interna(s)
 ent-RMCGrasse2 = hierba
-    .suffix = RMCGrasse2
 
 # _RMC14/Entities/Objects/Misc/bushes.yml — fuente 'grass'; 2 referencia(s) interna(s)
 ent-RMCGrasse3 = hierba
-    .suffix = RMCGrasse3
 
 # _RMC14/Entities/Tiles/desert_water.yml — fuente 'grate'; 1 referencia(s) interna(s)
 ent-RMCGrate = rejilla
@@ -742,11 +714,9 @@ ent-RMCGuidebookXenoQueen = Reina
 
 # _RMC14/Entities/Tiles/tile_fire.yml — fuente 'fire'; 1 referencia(s) interna(s)
 ent-RMCHijackPipeFire = fuego
-    .suffix = tubería de secuestro
 
 # _RMC14/Entities/guide_book_entities.yml — fuente 'Hivelord'; 2 referencia(s) interna(s)
 ent-RMCHivelordMapIcon = Señor de la colmena
-    .suffix = GuideBookEntity
 
 # _RMC14/Entities/Structures/weather.yml — fuente 'rain'; 1 referencia(s) interna(s)
 ent-RMCHybrisaRainProp = lluvia
@@ -813,7 +783,6 @@ ent-RMCLockerFridgeOrganic = orgánico
 
 # _RMC14/Entities/guide_book_entities.yml — fuente 'Lurker'; 2 referencia(s) interna(s)
 ent-RMCLurkerMapIcon = Acechador
-    .suffix = GuideBookEntity
 
 # _RMC14/Entities/Objects/Weapons/Guns/HMGs/weapon_mounts.yml — fuente 'The disassembled M2C HMG, with its telescopic tripods folded up and unable to fire.'; 1 referencia(s) interna(s)
 ent-RMCM2CMount = 
@@ -831,15 +800,12 @@ ent-RMCML66DMountWeaponAssembledLoaded =
 
 # _RMC14/Entities/Markers/Inserts/lv624.yml — fuente 'Armory'; 3 referencia(s) interna(s)
 ent-RMCMapInsertLV624Armory = Armería
-    .suffix = Inserción LV624
 
 # _RMC14/Entities/Markers/Inserts/lv624.yml — fuente 'Bridge'; 1 referencia(s) interna(s)
 ent-RMCMapInsertLV624Bridge = Puente
-    .suffix = Inserción LV624
 
 # _RMC14/Entities/Markers/Inserts/lv624.yml — fuente 'Medbay'; 2 referencia(s) interna(s)
 ent-RMCMapInsertLV624Medbay = Enfermería
-    .suffix = Inserción LV624
 
 # _RMC14/Entities/Objects/Consumables/Smokeables/matches.yml — fuente 'match'; 1 referencia(s) interna(s)
 ent-RMCMatchstick = cerilla
@@ -1079,15 +1045,12 @@ ent-RMCOverheadSignNeonWeYaMart = letrero
 
 # _RMC14/Entities/Structures/overhead_signs.yml — fuente 'sign'; 1 referencia(s) interna(s)
 ent-RMCOverheadSignNeonWeYaMartOffset = letrero
-    .suffix = desplazado
 
 # _RMC14/Entities/guide_book_entities.yml — fuente 'Parasite'; 2 referencia(s) interna(s)
 ent-RMCParasiteMapIcon = Parásito
-    .suffix = GuideBookEntity
 
 # _RMC14/Entities/guide_book_entities.yml — fuente 'Praetorian'; 2 referencia(s) interna(s)
 ent-RMCPraetorianMapIcon = Pretoriano
-    .suffix = GuideBookEntity
 
 # _RMC14/Entities/Structures/prop_vehicles3.yml — fuente 'ambulance'; 1 referencia(s) interna(s)
 ent-RMCPropVehicleAmbulance = ambulancia
@@ -1130,14 +1093,12 @@ ent-RMCPropVehicleTruckSnow = camión
 
 # _RMC14/Entities/guide_book_entities.yml — fuente 'Queen'; 5 referencia(s) interna(s)
 ent-RMCQueenMapIcon = Reina
-    .suffix = GuideBookEntity
 
 # _RMC14/Entities/Objects/Devices/binoculars.yml — fuente 'laser'; 1 referencia(s) interna(s)
 ent-RMCRangefinderTarget = láser
 
 # _RMC14/Entities/guide_book_entities.yml — fuente 'Ravager'; 2 referencia(s) interna(s)
 ent-RMCRavagerMapIcon = Devastador
-    .suffix = GuideBookEntity
 
 # _RMC14/Entities/flora.yml — fuente 'rock'; 1 referencia(s) interna(s)
 ent-RMCRock = roca
@@ -1145,7 +1106,6 @@ ent-RMCRock = roca
 
 # _RMC14/Entities/guide_book_entities.yml — fuente 'Runner'; 3 referencia(s) interna(s)
 ent-RMCRunnerMapIcon = Corredor
-    .suffix = GuideBookEntity
 
 # _RMC14/Entities/Structures/Storage/securecrates.yml — fuente 'chest'; 1 referencia(s) interna(s)
 ent-RMCSecureCaseChest = cofre
@@ -1153,7 +1113,6 @@ ent-RMCSecureCaseChest = cofre
 
 # _RMC14/Entities/guide_book_entities.yml — fuente 'Sentinel'; 2 referencia(s) interna(s)
 ent-RMCSentinelMapIcon = Centinela
-    .suffix = GuideBookEntity
 
 # _RMC14/Entities/Objects/Materials/Sheets/other.yml — fuente 'aluminum'; 1 referencia(s) interna(s)
 ent-RMCSheetAluminum = aluminio
@@ -1300,7 +1259,6 @@ ent-RMCSpaceHeater = calefactor
 
 # _RMC14/Entities/guide_book_entities.yml — fuente 'Spitter'; 2 referencia(s) interna(s)
 ent-RMCSpitterMapIcon = Escupidor
-    .suffix = GuideBookEntity
 
 # _RMC14/Entities/Objects/Misc/stamps.yml — fuente 'A rubber stamp for stamping important documents.'; 1 referencia(s) interna(s)
 ent-RMCStampCLF = 
@@ -1354,7 +1312,6 @@ ent-RMCTileFireBrute = fuego
 
 # _RMC14/Entities/Tiles/tile_fire.yml — fuente 'fire'; 1 referencia(s) interna(s)
 ent-RMCTileFireEthanol = fuego
-    .suffix = Etanol
 
 # _RMC14/Entities/Tiles/tile_fire.yml — fuente 'fire'; 1 referencia(s) interna(s)
 ent-RMCTileFireForever = fuego
@@ -1401,7 +1358,6 @@ ent-RMCTileFireGreen = fuego
 
 # _RMC14/Entities/Tiles/tile_fire.yml — fuente 'fire'; 1 referencia(s) interna(s)
 ent-RMCTileFireHCNapalm = fuego
-    .suffix = napalm HC
 
 # _RMC14/Entities/Tiles/tile_fire.yml — fuente 'fire'; 1 referencia(s) interna(s)
 ent-RMCTileFireLaser = fuego
@@ -1414,15 +1370,12 @@ ent-RMCTileFireNapalm = fuego
 
 # _RMC14/Entities/Tiles/tile_fire.yml — fuente 'fire'; 1 referencia(s) interna(s)
 ent-RMCTileFireNapalmBase = fuego
-    .suffix = napalm base
 
 # _RMC14/Entities/Tiles/tile_fire.yml — fuente 'fire'; 1 referencia(s) interna(s)
 ent-RMCTileFireNapalmE = fuego
-    .suffix = napalm E
 
 # _RMC14/Entities/Tiles/tile_fire.yml — fuente 'fire'; 1 referencia(s) interna(s)
 ent-RMCTileFireNapalmEX = fuego
-    .suffix = napalm EX
 
 # _RMC14/Entities/Tiles/tile_fire.yml — fuente 'fire'; 1 referencia(s) interna(s)
 ent-RMCTileFireOB = fuego
@@ -1432,26 +1385,21 @@ ent-RMCTileFireOBAegis = fuego
 
 # _RMC14/Entities/Tiles/tile_fire.yml — fuente 'fire'; 1 referencia(s) interna(s)
 ent-RMCTileFireR189 = fuego
-    .suffix = R189
 
 # _RMC14/Entities/Tiles/tile_fire.yml — fuente 'fire'; 1 referencia(s) interna(s)
 ent-RMCTileFireStickyNapalm = fuego
-    .suffix = StickyNapalm
 
 # _RMC14/Entities/Tiles/tile_fire.yml — fuente 'fire'; 1 referencia(s) interna(s)
 ent-RMCTileFireThermobaric = fuego
 
 # _RMC14/Entities/guide_book_entities.yml — fuente 'Tunnel'; 1 referencia(s) interna(s)
 ent-RMCTunnelMapIcon = Túnel
-    .suffix = GuideBookEntity
 
 # _RMC14/Entities/Structures/Flora/Grass/tyrargo_wood_flora.yml — fuente 'trunk'; 1 referencia(s) interna(s)
 ent-RMCTyrargoTrunk01 = tronco
-    .suffix = RMCTyrargoTrunk01
 
 # _RMC14/Entities/Structures/Flora/Grass/tyrargo_wood_flora.yml — fuente 'trunk'; 1 referencia(s) interna(s)
 ent-RMCTyrargoTrunk02 = tronco
-    .suffix = RMCTyrargoTrunk02
 
 # _RMC14/Entities/Objects/Misc/vehicle_keys.yml — fuente 'vehicle key'; 1 referencia(s) interna(s)
 ent-RMCVehicleKey = llave de vehículo
@@ -1463,15 +1411,12 @@ ent-RMCVultureSpotterScope = mira de observador M707
 
 # _RMC14/Entities/Structures/Misc/wall_props.yml — fuente 'blood'; 1 referencia(s) interna(s)
 ent-RMCWallPropBloodWall = sangre
-    .suffix = sangre en pared, RMC14
 
 # _RMC14/Entities/Structures/Misc/wall_props.yml — fuente 'blood'; 1 referencia(s) interna(s)
 ent-RMCWallPropBloodWallAlt = sangre
-    .suffix = Sangre de muro, RMC14, alternativo
 
 # _RMC14/Entities/Structures/Misc/wall_props.yml — fuente 'blood'; 1 referencia(s) interna(s)
 ent-RMCWallPropBloodWallFloor = sangre
-    .suffix = sangre en pared, sangre en suelo, RMC14
 
 # _RMC14/Entities/Structures/Walls/spp_walls.yml — fuente 'reinforced wall'; 1 referencia(s) interna(s)
 ent-RMCWallSPPGreyReinforced = muro reforzado
@@ -1490,7 +1435,6 @@ ent-RMCWallSPPWhiteReinforced = muro reforzado
 
 # _RMC14/Entities/guide_book_entities.yml — fuente 'Warrior'; 2 referencia(s) interna(s)
 ent-RMCWarriorMapIcon = Guerrero
-    .suffix = GuideBookEntity
 
 # _RMC14/Entities/Objects/Devices/whistle.yml — fuente 'whistle'; 1 referencia(s) interna(s)
 ent-RMCWhistle = silbato

@@ -816,16 +816,12 @@ ent-AU14JumpsuitArmyUPP = uniforme de faena del ejército de UPP
     .suffix = AU14
 
 ent-AU14JumpsuitEngiUPP = uniforme de faena de ingeniero UPP
-    .suffix = AU14
 
 ent-AU14JumpsuitMedicUPP = uniforme de faena de médico de UPP
-    .suffix = AU14
 
 ent-AU14JumpsuitMPUPP = uniforme de faena de policía militar UPP
-    .suffix = AU14
 
 ent-AU14JumpsuitOfficerUPP = uniforme de faena de oficial UPP
-    .suffix = AU14
 
 ent-AU14ServiceFatiguesUPP = uniforme de servicio UPP
     .desc = Uniforme de servicio reglamentario del Ejército de la UPP. Lo suelen llevar los oficiales.
@@ -1259,10 +1255,8 @@ ent-AU14ArmyJumpsuit = uniforme de campaña del US Army
     .desc = Un uniforme de faena estándar del Ejército de los Estados Unidos. Incorpora fragmentos de kevlar ligero que protegen de la metralla.
 
 ent-AU14ArmyJumpsuitArmored = objeto
-    .suffix = Blindado
 
 ent-AU14ArmyJumpsuitCavalry = objeto
-    .suffix = caballería
 
 ent-AU14ArmyJumpsuitTanker = uniforme de faena de tanquista del US Army
     .desc = Un uniforme de faena estándar del Ejército de los Estados Unidos. Incorpora fragmentos de kevlar ligero que protegen de la metralla.

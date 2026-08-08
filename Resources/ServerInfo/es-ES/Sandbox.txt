@@ -1,0 +1,16 @@
+
+[color=#ffffff]Opciones del panel de generación de entidades[/color]
+[color=#a4885c]Default[/color] genera entidades pequeñas, como tazas, sin alinearlas a nada, mientras que alinea a la rejilla las entidades de bloque, como las paredes.
+[color=#a4885c]PlaceFree[/color] genera todas las entidades sin alinearlas.
+[color=#a4885c]PlaceNearby[/color] limita el radio de generación a unas 2 casillas.
+[color=#a4885c]SnapgridCenter[/color] alinea la entidad al centro de la casilla.
+[color=#a4885c]SnapgridBorder[/color] alinea la entidad al borde de la casilla.
+
+[color=#ffffff]Opciones de alineación a la rejilla[/color]
+[color=#a4885c]AlignSimilar[/color] ajusta la entidad a entidades similares. Actualmente no funciona.
+[color=#a4885c]AlignTileAny[/color] alinea la entidad a la rejilla.
+[color=#a4885c]AlignTileEmpty[/color] la casilla de destino debe estar vacía.
+[color=#a4885c]AlignTileNonDense[/color] no se permiten colisionadores en la casilla de destino.
+[color=#a4885c]AlignTileDense[/color] debe haber colisionadores en la casilla de destino.
+[color=#a4885c]AlignWall[/color] ajusta a las medias casillas verticales.
+[color=#a4885c]AlignWallProper[/color] ajusta la entidad al centro de los bordes de la casilla.

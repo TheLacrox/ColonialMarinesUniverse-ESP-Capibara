@@ -1,0 +1,9 @@
+La guía del juego se irá actualizando con información nueva a medida que avance el desarrollo. Es recomendable leer esa en su lugar.
+
+Si eres nuevo en el rol o no conoces los conceptos de IC y OOC, sigue leyendo. Si ya los conoces, salta a la siguiente sección.
+
+CMU-14 es, en esencia, un juego de rol: interpretas un papel a través de tu personaje, al que puedes personalizar desde el lobby antes de entrar en la partida. También puedes elegir los roles o puestos que desempeña tu personaje desde el menú de personalización. Cuando estás en una partida interpretando a tu personaje, estás IC o In Character (dentro del personaje). Cuando estás dentro del personaje, olvidas cualquier conocimiento de partidas anteriores o del mundo exterior y juegas como si fueras un personaje del juego.
+
+Por tanto, OOC u Out of Character (fuera del personaje) es cualquier conversación que mantienes fuera del mundo del juego, por ejemplo en el chat OOC, en Discord o con tus amigos. No debes hablar de la partida en curso ni de nada que sea IC en conversaciones OOC. Del mismo modo, nada de lo que veas o leas en OOC puede usarlo tu personaje dentro del juego.
+
+En resumen: mientras estés en la partida, no hables de ella en ningún otro sitio hasta que termine, y no compartas información de la partida por OOC, como que te estás muriendo o dónde te encuentras.

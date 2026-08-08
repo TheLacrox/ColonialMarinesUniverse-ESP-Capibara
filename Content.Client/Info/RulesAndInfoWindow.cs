@@ -1,4 +1,6 @@
+using System.Globalization; // CMU14
 using System.Numerics;
+using Content.Client.Guidebook; // CMU14
 using Content.Client.Lobby.UI;
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Systems.EscapeMenu;
@@ -8,6 +10,8 @@ using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.CustomControls;
 using Robust.Shared.ContentPack;
 using Robust.Shared.Configuration;
+using Robust.Shared.Localization; // CMU14
+using Robust.Shared.Utility; // CMU14
 
 namespace Content.Client.Info
 {
@@ -16,6 +20,7 @@ namespace Content.Client.Info
         [Dependency] private IResourceManager _resourceManager = default!;
         [Dependency] private IConfigurationManager _cfg = default!;
         [Dependency] private IStylesheetManager _stylesheetManager = default!;
+        [Dependency] private ILocalizationManager _localization = default!; // CMU14
 
         public RulesAndInfoWindow()
         {
@@ -107,13 +112,22 @@ namespace Content.Client.Info
 
         private void AddSection(Info info, string title, string path, bool markup = false)
         {
-            AddSection(info, MakeSection(title, path, markup, _resourceManager));
+            AddSection(info, MakeSection(title, path, markup, _resourceManager, _localization.DefaultCulture)); // CMU14
         }
 
-        private static Control MakeSection(string title, string path, bool markup, IResourceManager res)
+        // CMU14 start - resolve the culture mirror, matching DocumentParsingManager.ResolveDocumentPath,
+        // so /ServerInfo/<culture>/<file> overrides the English original when it exists.
+        private static Control MakeSection(
+            string title,
+            string path,
+            bool markup,
+            IResourceManager res,
+            CultureInfo? culture)
         {
-            return new InfoSection(title, res.ContentFileReadAllText($"/ServerInfo/{path}"), markup);
+            var resolved = GuidebookDocumentResolver.Resolve(res, new ResPath($"/ServerInfo/{path}"), culture);
+            return new InfoSection(title, res.ContentFileReadAllText(resolved), markup);
         }
+        // CMU14 end
 
     }
 }

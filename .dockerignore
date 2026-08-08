@@ -1,0 +1,39 @@
+# Capibara Colonial Marines — build context exclusions.
+#
+# WARNING before touching the bin/obj lines: this repo has a TRACKED source file at
+#   Resources/Locale/en-US/entity-systems/bin/bin-system.ftl
+# inside a directory literally named "bin". A bare `**/bin/` therefore drops it from
+# the build context, and the packaged server plus the hybrid-ACZ client ship without
+# those strings — the bin UI renders raw Fluent keys, with no error anywhere.
+# The `!Resources/**` line below re-includes it (last matching pattern wins).
+# Verify after any edit here:
+#   docker build --target build -t ctx . && docker run --rm ctx \
+#     ls /src/Resources/Locale/en-US/entity-systems/bin/
+
+# Build output
+**/bin/
+**/obj/
+!Resources/**
+
+/release/
+/artifacts/
+*.binlog
+*.user
+
+# Editors / local tooling
+.vs/
+.vscode/
+.idea/
+.run/
+.pytest_cache/
+**/__pycache__/
+
+# Scratch dir for the optional private-audio overlay (see docs/deployment-docker.md)
+__audio-overlay/
+
+# Deliberately NOT ignored — all of these are required by the build:
+#   .git/                    `git submodule update --init --recursive` needs it
+#   .gitmodules              submodule URLs
+#   RobustToolbox/, RSI.NET/ submodule mount points
+#   nuget.config             dotnet-eng feed + package source mapping for
+#                            Microsoft.DotNet.RemoteExecutor; restore fails without it

@@ -1,0 +1,58 @@
+# Capibara Colonial Marines — superposición de marca y comunidad.
+#
+# Se carga DESPUÉS de RMC14/rmc.toml a través de config.presets
+# (ver Docker/server_config.prod.toml), así que cada clave de aquí pisa el valor
+# AU-14 / rouny que rmc.toml establece.
+#
+# Todo lo de este fichero es un DEFAULT de configuración: server_config.toml,
+# ROBUST_CVAR_* y --cvar siguen ganando. game.hostname en particular lo suele
+# gobernar $SS14_HOSTNAME desde Dokploy.
+#
+# NO editar Resources/ConfigPresets/RMC14/rmc.toml para meter marca aquí: es un
+# fichero de alto tráfico upstream y el flujo del fork es upstream -> fork, así
+# que cualquier cambio ahí genera conflicto en el próximo sync/upstream-*.
+
+[adminlogs]
+server_name = "capibara"
+
+[loki]
+name = "capibara"
+
+[game]
+hostname = "[ES] Capibara Colonial Marines [Español]"
+desc = "Servidor en español de Colonial Marines. Únete y juega como marine, respondiendo a una misteriosa señal de socorro, o como xenónido, expandiendo tu colmena y defendiéndola de los marines."
+# rmc.toml trae 500/350, dimensionado para un host grande. Estos valores son el
+# principal motor del consumo de RAM y del coste por tick; ajustar al VPS real.
+maxplayers = 100
+soft_max_players = 60
+
+[replay]
+# rmc.toml activa auto_record y escribe un .zip por ronda en <data-dir>/done/.
+# En Docker eso es el volumen /data y crece sin límite. Desactivado.
+auto_record = false
+
+[hub]
+advertise = true
+hub_urls = "https://hub.spacestation14.com/"
+# OJO: rmc.toml hereda region:am_n_e (Este de EE. UU., de rouny). Esta línea debe
+# reflejar dónde está REALMENTE el host de Dokploy — una región equivocada filtra
+# el servidor fuera de las búsquedas de su propio público.
+tags = "lang:es,region:eu_w,rp:med"
+
+[infolinks]
+# Sustituye los enlaces AU-14 / cm-ss13 de rmc.toml por los de Capibara.
+discord = "https://discord.gg/xRsRcpmCVX"
+website = "https://estacioncapibara.com/"
+wiki = "https://estacioncapibara.com/wiki"
+github = "https://github.com/TheLacrox/ColonialMarinesUniverse-ESP-Capibara"
+bug_report = "https://github.com/TheLacrox/ColonialMarinesUniverse-ESP-Capibara/issues"
+# rmc.toml apunta forum a forum.cm-ss13.com (el foro de upstream). Vacío oculta el botón.
+forum = ""
+
+[status]
+# El launcher solo exige aceptación si link + identifier + version son los tres
+# no vacíos. Un identifier nuevo hace que a cada jugador se le pregunte una vez.
+# La página de estacioncapibara.com/privacidad debe existir ANTES del lanzamiento público.
+privacy_policy_link = "https://estacioncapibara.com/privacidad"
+privacy_policy_identifier = "capibara-cm"
+privacy_policy_version = "2026-08-08"

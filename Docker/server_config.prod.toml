@@ -1,0 +1,81 @@
+# Capibara Colonial Marines — configuración de producción, horneada en la imagen Docker.
+#
+# Precedencia, de más débil a más fuerte (verificada en RobustToolbox):
+#   1. Defaults de CVar en C#
+#   2. ContentLocalizationManager.Initialize() -> OverrideDefault
+#   3. /ConfigPresets/*.toml nombrados en config.presets   (SOLO defaults)
+#   4. ESTE FICHERO                                        (valores reales)
+#   5. ROBUST_CVARS / ROBUST_CVAR_* (variables de entorno)
+#   6. --cvar en entrypoint.sh
+#
+# Los presets se cargan en EntryPoint.Init(), después de este fichero, pero solo
+# escriben DefaultValue, así que nunca pisan los niveles 4/5/6.
+#
+# Regla: marca y gameplay van al preset (nivel 3); aquí solo overrides críticos
+# de despliegue.
+
+[config]
+# RMC14/rmc         -> preset de gameplay de producción del fork (modo de juego,
+#                      shuttles, tickrate, reglas, tips). Propiedad de upstream, no se toca.
+# Capibara/capibara -> superposición de marca Capibara. Se carga en segundo lugar,
+#                      así que gana en toda clave que redefina.
+presets = "RMC14/rmc,Capibara/capibara"
+
+[loc]
+# Override DURO, no un default de preset. Es la única garantía de que el servidor
+# corre en español aunque un sync con upstream revierta
+# ContentLocalizationManager.DefaultCultureName a "en-US".
+# Requiere ICU: la imagen dotnet/runtime:10.0 (Debian) lo trae. NUNCA poner
+# DOTNET_SYSTEM_GLOBALIZATION_INVARIANT ni cambiar a -alpine sin icu-libs.
+culture_name = "es-ES"
+
+[log]
+path = "logs"        # relativo a --data-dir -> /data/logs
+level = 1
+enabled = true
+
+[net]
+port = 1212          # interno del contenedor; el puerto publicado en el host es $SS14_PORT
+bindto = "::,0.0.0.0"
+# tickrate (25) y max_connections (1024) vienen de RMC14/rmc.toml
+
+[status]
+# El lado TCP, usado por el launcher para resolver versión de motor y descargar el
+# cliente por ACZ. Desactivarlo deja al launcher sin poder conectar.
+enabled = true
+# status.bind por defecto es *:<net.port> -> *:1212, que es lo que proxea Traefik.
+# status.connectaddress se inyecta en runtime desde $SS14_DOMAIN (entrypoint.sh).
+
+[console]
+# SEGURIDAD: en Docker tras un proxy inverso, "local" es el contenedor o el proxy,
+# nunca tú. entrypoint.sh lo vuelve a forzar con --cvar.
+loginlocal = false
+
+[admin]
+# Sin esto, el admin host siempre conectado hace que /status reporte 0 jugadores
+# en el hub y en el launcher aunque haya gente dentro.
+admins_count_in_playercount = true
+
+[auth]
+mode = 1             # 0=opcional 1=requerido 2=desactivado. Servidor público -> requerido.
+
+[server]
+# 0 = nunca reiniciar por tiempo de actividad. `restart: unless-stopped` en compose
+# sigue recuperando el proceso tras un crash o un reinicio del host.
+uptime_restart_minutes = 0
+
+[update]
+# Segundos que el servidor debe permanecer VACÍO antes de que un reinicio pendiente
+# se ejecute de verdad. Cualquier jugador que entre en esa ventana lo aborta.
+restart_delay = 600
+
+[database]
+engine = "sqlite"
+sqlite_dbpath = "preferences.db"   # relativo a --data-dir -> /data/preferences.db
+
+[build]
+# Aísla la caché local de cliente del launcher para este despliegue. Sin fork_id,
+# StatusHost reporta "custom", compartido con cualquier otro servidor sin marca.
+# Deliberadamente NO es "cmu": ese es el fork del CDN de upstream
+# (Tools/publish_multi_request.py).
+fork_id = "capibara-colonial-marines"

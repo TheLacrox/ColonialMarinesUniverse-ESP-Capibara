@@ -25,6 +25,7 @@ chat-radio-CLFCommand = Mando CLF
 chat-radio-mob = FAMLY
 
 chat-radio-hivemind = HIVE
+chat-radio-mycelium-link = MICEL
 chat-radio-ai = IA
 chat-radio-colony-softwave = SWAVE
 

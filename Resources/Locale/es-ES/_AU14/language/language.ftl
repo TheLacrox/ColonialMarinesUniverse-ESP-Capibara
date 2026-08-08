@@ -140,6 +140,9 @@ language-Yautja-description = Antiguo idioma alienígena de cazadores y guerrero
 language-Arcturian-name = Arcturiano
 language-Arcturian-description = Idioma alienígena de Arcturus con tonos armónicos y patrones de habla inusuales.
 
+language-Pathogen-name = Patogénico
+language-Pathogen-description = La lengua común de la Confluencia Micelial: un idioma húmedo y chasqueante que se transmite mediante esporas.
+
 # First contact descriptions
 language-Xeno-first-contact = Los sonidos siguen un patrón alienígena de colmena.
 language-Yautja-first-contact = Los sonidos siguen el patrón de un cazador alienígena.

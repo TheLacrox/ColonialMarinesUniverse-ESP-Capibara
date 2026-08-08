@@ -1,0 +1,202 @@
+﻿<Document>
+  # Delitos graves
+  - Estos delitos son de alta gravedad.
+  <Table Columns="3">
+    <ColorBox>
+      <Box>
+        Cargo
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Descripción
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Pena
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Alteración del orden
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Interrumpir directa e intencionadamente las operaciones principales de la facción. Pelearse en la cola de Requisiciones, o interrumpir la sesión informativa de forma extensa o repetida.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]10 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Subterfugio
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Llevar a cabo objetivos o estar vinculado a material que describa acciones planeadas en contra de su facción. Se requiere una prueba sólida de que la persona está actuando en contra de su facción.\n[italic]Un cargo grave de Uso no autorizado de un dispositivo de escucha también se considera Subterfugio cuando dicho dispositivo está además vinculado a un gobierno extranjero o una organización terrorista.[/italic]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]15 minutos, retirada de la identificación y baja al planeta.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Negligencia en el cumplimiento del deber
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        No desempeñar el propio rol con un nivel aceptable.\n[italic]Por ejemplo, que un [color=#008000][bold]Comandante[/bold][/color] no organice debidamente a su personal ni se asegure de que reciban órdenes, que no se siga el procedimiento correcto en perjuicio de las propias obligaciones, o que la tripulación de la nave abandone la nave o su puesto sin autorización del [color=#008000][bold]Comandante[/bold][/color] o de su jefe de departamento.[/italic]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]15 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Agresión
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Amenazar a alguien o ejercer fuerza física contra esa persona con intención maliciosa, pero sin intención de matar.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]15 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Prevaricación
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Ordenar intencionadamente el arresto de una persona bajo acusaciones falsas y que posteriormente sea declarada inocente, o imponer un NJP improcedente o abusivo. Esto incluye arrestar intencionadamente a una persona bajo acusaciones falsas por iniciativa propia y sin órdenes.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]20 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Homicidio imprudente
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Matar a alguien sin intención maliciosa. El homicidio imprudente puede aplicarse si alguien muere como resultado de una pelea en la que no existía intención de matar.
+        \nEsto también incluye no reanimar a alguien sin haberlo intentado razonablemente, cuando no se trata del procedimiento de ejecución.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]20 minutos, y/o degradación.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Agresión con arma letal
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Amenazar o usar fuerza física contra alguien con intención maliciosa y con un arma letal, como una pistola, una hoja o un rifle, pero sin intentar asesinarlo.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]20 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Detención ilegal
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Detener ilegalmente a una persona contra su voluntad. Incluye el secuestro, la toma de rehenes y el encierro de personas en celdas sin acusarlas de ningún delito. No se aplica a los prisioneros de guerra.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]20 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Crueldad animal
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Herir o matar a cualquier animal doméstico o silvestre con intención maliciosa. Quedan exentos los monos de laboratorio utilizados en investigación química o con fines científicos, así como la fauna hostil.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]30 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Abuso de autoridad
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        El ejercicio del poder de forma [bold]maliciosa[/bold] por parte de la [color=#ff000d][bold]MP/fuerzas del orden[/bold][/color] o de personal delegado que actúe como [color=#ff000d][bold]MP/fuerzas del orden[/bold][/color].
+        \n[italic]Algunos ejemplos incluyen golpear a un preso ya reducido, el uso excesivo de fuerza dañina o no letal, u otras acciones abusivas que provoquen daño a una persona bajo custodia.[/italic]\nA los sospechosos detenidos no se les debe aplicar más fuerza de la necesaria para reducirlos.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]20 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Despliegue no autorizado
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Desplegarse en la zona de operaciones sin permiso del jefe de departamento correspondiente o del [color=#008000][bold]Comandante[/bold][/color], según corresponda, mientras se siguen desempeñando las funciones asignadas. (Por ejemplo, un médico que se despliega sin permiso con la intención de realizar cirugía de campo.) Desplegarse sin intención de desempeñar las funciones asignadas se sigue considerando deserción.
+        \n- El jefe de departamento correspondiente o el [color=#008000][bold]Comandante[/bold][/color], según corresponda, puede autorizar el despliegue de forma retroactiva. El [color=#008000][bold]Comandante[/bold][/color] puede anular al jefe de departamento en este asunto.
+        \n- El jefe de departamento correspondiente o el [color=#008000][bold]Comandante[/bold][/color] puede designar a otra persona para desplegarse en lugar de la persona no autorizada, en cuyo caso la [color=#ff000d][bold]MP/fuerzas del orden[/bold][/color] debe coordinarse con la persona designada para reducir la interrupción sobre el terreno. El retraso máximo para este periodo es de cinco minutos.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]10 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+  </Table>
+</Document>

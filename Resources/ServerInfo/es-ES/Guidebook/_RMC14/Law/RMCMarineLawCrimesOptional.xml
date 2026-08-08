@@ -1,0 +1,90 @@
+﻿<Document>
+  # Delitos de persecución discrecional
+  - Estos delitos pueden añadirse a cargos existentes cuando corresponda.
+  <Table Columns="4">
+    <ColorBox>
+      <Box>
+        Cargo
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Descripción
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Leve
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Grave
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Resistencia al arresto
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Resistirse a un arresto o registro legal por parte de un oficial.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Negarse a cumplir un registro o arresto legal.\n[bold]5 minutos.[/bold]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Resistirse a un arresto legal huyendo o empleando la fuerza.\n[bold]10 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Complicidad
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Ayudar a otras personas a cometer un delito, directa o indirectamente, o animarlas a cometerlo. Toda persona cómplice deberá ser informada de los delitos de la persona a la que ayudó.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]La misma pena que el delito cometido.[/bold]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]La misma pena que el delito cometido.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Alteración del orden durante el confinamiento
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Causar alteraciones de forma significativa mientras se está en el calabozo y bajo arresto. Esto puede añadirse a cualquier cargo.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Incumplir un delito leve estando bajo arresto o en prisión.\n[bold]7,5 minutos.[/bold]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Incumplir un delito grave estando bajo arresto o en prisión.[bold]15 minutos.[/bold]
+      </Box>
+    </ColorBox>
+
+  </Table>
+</Document>

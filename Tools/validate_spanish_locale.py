@@ -1648,6 +1648,7 @@ def validate_prototype_override(
             ("customHoliday", r"custom-holiday-(.+)-(name|description)"),
             ("objectiveIntelTier", r"objective-intel-tier-(.+)-(title|description)"),
             ("material", r"material-(.+)-(name)"),
+            ("lorePrimer", r"lore-primer-(.+)-(planet-text|platoon-info|threat-text)"),
         )
         visible_metadata_match = None
         visible_metadata_type = ""
@@ -1929,6 +1930,7 @@ def load_prototype_owners(
         "gamePreset",
         "guideEntry",
         "job",
+        "lorePrimer",
         "material",
         "npcFaction",
         "objectiveIntelTier",

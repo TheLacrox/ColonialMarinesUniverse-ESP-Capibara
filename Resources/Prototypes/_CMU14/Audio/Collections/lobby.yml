@@ -1,10 +1,14 @@
+# CMU14: pista fija del lobby. Un solo archivo => la playlist da la vuelta
+# sobre si misma y repite el mismo tema (ContentAudioSystem.LobbyMusic.cs).
+# Para volver a la rotacion AU14, restaurar la lista comentada de abajo.
 - type: soundCollection
   id: LobbyMusic
   files:
-  - /Audio/_AU14/Lobby/AliensTitle.ogg
-  - /Audio/_AU14/Lobby/DarkDiscovery.ogg
-  - /Audio/_AU14/Lobby/LV426.ogg
-  - /Audio/_AU14/Lobby/AlienMainTitle.ogg
-  - /Audio/_AU14/Lobby/HyperSleep.ogg
-  - /Audio/_AU14/Lobby/TheSurvivorIsAWoman.ogg
-  - /Audio/_AU14/Lobby/Morgue.ogg
+  - /Audio/_CMU14/Lobby/KlendathuDrop.ogg
+#  - /Audio/_AU14/Lobby/AliensTitle.ogg
+#  - /Audio/_AU14/Lobby/DarkDiscovery.ogg
+#  - /Audio/_AU14/Lobby/LV426.ogg
+#  - /Audio/_AU14/Lobby/AlienMainTitle.ogg
+#  - /Audio/_AU14/Lobby/HyperSleep.ogg
+#  - /Audio/_AU14/Lobby/TheSurvivorIsAWoman.ogg
+#  - /Audio/_AU14/Lobby/Morgue.ogg

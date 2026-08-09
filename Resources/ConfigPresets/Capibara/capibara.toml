@@ -26,6 +26,14 @@ desc = "Servidor en español de Colonial Marines. Únete y juega como marine, re
 maxplayers = 100
 soft_max_players = 60
 
+[rmc]
+# rmc.lobby_min_players hereda 20 de upstream (RMCCVars.cs), dimensionado para el
+# servidor grande de AU-14. Por debajo del umbral el lobby no arranca la cuenta
+# atrás (GameTicker.Lobby.cs -> UpdateLobbyCountdownForPlayerCount) NI la secuencia
+# de votos de mapa y facción (AuVoteRuleSystem.cs -> AuLobbyVoteGate), así que con
+# el valor de upstream una ronda nunca empieza sola en un servidor pequeño.
+lobby_min_players = 1
+
 [replay]
 # rmc.toml activa auto_record y escribe un .zip por ronda en <data-dir>/done/.
 # En Docker eso es el volumen /data y crece sin límite. Desactivado.

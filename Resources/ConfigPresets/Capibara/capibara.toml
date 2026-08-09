@@ -34,6 +34,17 @@ soft_max_players = 60
 # el valor de upstream una ronda nunca empieza sola en un servidor pequeño.
 lobby_min_players = 1
 
+[movement]
+# Empuje entre mobs. Las especies de RMC14 y los xenos ya traen MobCollision +
+# RMCMobCollision (Mobs/Species/base.yml, base_xeno.yml) y RMCMovementSystem les
+# crea la fixture blanda rmc_mob_collision, pero MobCollisionSystem.Update() sale
+# inmediatamente si este CVar es false, que es el default de CCVars.Movement.cs.
+# Sin esto los marines se atraviesan entre sí. Es REPLICATED: el cliente lo recibe
+# del servidor y activa su mitad del sistema, no hay que tocar el cliente.
+# Coste: recorre cada tick todas las entidades con MobCollisionComponent. Vigilar
+# el tickrate con la sala llena.
+mob_pushing = true
+
 [replay]
 # rmc.toml activa auto_record y escribe un .zip por ronda en <data-dir>/done/.
 # En Docker eso es el volumen /data y crece sin límite. Desactivado.
